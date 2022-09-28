@@ -1,6 +1,6 @@
 ---
 title: Android
-category: Devices
+category: Resources
 order: 2
 ---
 
