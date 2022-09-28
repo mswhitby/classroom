@@ -2,37 +2,13 @@
 title: Welcome
 ---
 
-This is the **Edition** template from [CloudCannon](http://cloudcannon.com/).
-**Edition** is perfect for documenting your product, application or service.
-It's populated with example content to give you some ideas.
+This is the online  companion for [Ms. Whitby’s](https://www.judsonisd.org/Domain/6785) Computer Science course at Wagner High School. Parents and students can reference this site for assignment details, project ideas, and reference materials. 
 
-ChatApp is a fictional chat application for sending messages and media to others.
-Teams and friend groups would use ChatApp to stay up to date if it existed.
+# Computer Science Fundamentals
+The Computer Science Fundamentals course follows [Project STEM’s](https://projectstem.org) Computer Science Explorations 1  curriculum. CS Explorations 1 is an introductory computer science course that empowers students to create authentic artifacts and engage with computer science as a medium for creativity, communication, problem solving, and fun. Students learn the foundational concepts and skills of computer science. They will explore using computers to solve problems and to express themselves. The course is designed to be engaging and relevant to student lives. Students build, remix and share animations, games, stories, music and art in [Scratch](https://scratch.mit.edu/).
 
-> [Sign up](http://example.com/signup) or learn more about ChatApp at [example.com](http://example.com/).
+# Computer Science I
+The Computer Science I course follows [Project STEM’s](https://https://projectstem.org/high-school/cs-fundamentals) Computer Science Explorations 1  curriculum. CS Python Fundamentals is an introductory-level course. Students learn problem-solving strategies, software design, and the foundations of computer science using two key tools in the Project STEM programming environment.
 
-### Getting Started
-
-Getting a message sent is quick and easy with ChatApp:
-
-1. Sign up for an account
-2. Add your friends from their email addresses
-3. Type a message or send a photo
-
-> Feel free to send us a message at [feedback@example.com](mailto:feedback@example.com) with your feedback.
-
-### Features
-
-Explore more of ChatApp by reading about our features:
-
-#### Media
-
-Send images, videos and other media to people. Sources include your computer, phone and Facebook.
-
-#### Contact Syncing
-
-Sync your contact list with your phone and/or Facebook contacts. Never lose your contacts between devices again!
-
-#### Devices
-
-ChatApp is available everywhere. Find out how to set it up on your all your devices.
+# Project-Based Alternative
+All students in any of Ms. Whitby’s courses are encouraged to produce a guided project. Past students have worked on projects related to data science, sports analytics, business productivity, music production, and gaming—the range of projects available to students is only limited by their own creativity. Students who chose the project-based alternative will be evaluated on the progress of their projects rather than on the standard curriculums.
