@@ -7,15 +7,15 @@ $baseurl: "{{ site.baseurl }}";
 $body-background-color: #2B2E31;
 
 $content-max-width: 800px;
-$content-color: #fff;
-$content-background-color: #222;
+$content-color: #ECEFF4;
+$content-background-color: #2E3440;
 
 $brand-colour: #cc0000;
 $brand-colour-light: mix($brand-colour, $content-background-color, 10%);
 
 $nav-header-background-color: $brand-colour;
 $nav-header-height: 60px;
-$nav-background-color: #36454F;
+$nav-background-color: #434C5E;
 $nav-width: 300px;
 
 $space: 20px;
