@@ -1,5 +1,6 @@
 ---
 title: Projects
+permalink: /projects
 ---
 
 Use ChatApp on all of your Android devices. Every version is supported.
