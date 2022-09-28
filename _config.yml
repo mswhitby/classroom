@@ -71,6 +71,11 @@ defaults:
       _comments:
         type: Marks the impact of this release
 
+navigation:
+  - title: Courses
+  - title: Project Ideas
+  - title: Challenges
+
 # -----------
 # CloudCannon
 
