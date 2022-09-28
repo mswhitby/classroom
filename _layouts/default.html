@@ -46,11 +46,28 @@
 				</ul>
 
 				<ul>
-					{% assign navlist = site.navigation %}
+					{% assign grouped = site.docs | group_by: 'category' %}
+					{% for nav in site.navigation %}
+					<li class="nav-item top-level">{{ nav.title }}</li>
+						{% for group in grouped %}
+							{% if group.name == nav.title %}
+							<a href="{{ site.baseurl }}{{ items.first.url }}">{{ nav.title }}</a>
+								{% assign items = group.items | sort: 'order' %}
+								<ul>
+									{% for item in items %}
+										<li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+									{% endfor %}
+								</ul>
+							{% endif %}
+						{% endfor %}
+					</li>
+					{% endfor %}
+
+					<!-- {% assign navlist = site.navigation %}
 					{% assign grouped = site.docs | group_by: 'category' %}
 					{% for category in navlist %}
 						{% for group in grouped %}
-						<li class="nav-item top-level {% if group.name == page.category == category.title %}current{% endif %}">
+						<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
 							{% assign items = group.items | sort: 'order' %}
 							<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
 							<ul>
@@ -60,7 +77,7 @@
 							</ul>
 						</li>
 						{% endfor %}
-					{% endfor %}
+					{% endfor %} -->
 				</ul>
 
 				<ul>
