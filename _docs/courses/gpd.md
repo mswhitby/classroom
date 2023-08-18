@@ -4,15 +4,7 @@ category: Courses
 order: 3
 ---
 
-Sync your phone contacts with ChatApp. ChatApp saves your phone contacts and adds anyone with an email address to your contact list!
+# Course Description
 
-> Syncing contacts with your phone restores any previously synced contacts.
+[Game Programming and Design](https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=19&pt=2&ch=127&rl=767) will foster student creativity and innovation by presenting students with opportunities to design, implement, and present meaningful programs through a variety of media. Students will collaborate with one another, their instructor, and various electronic communities to solve gaming problems. Through data analysis, students will include the identification of task requirements, plan search strategies, and use programming concepts to access, analyze, and evaluate information needed to design games. By acquiring programming knowledge and skills that support the work of individuals and groups in solving problems, students will select the technology appropriate for the task, synthesize knowledge, create solutions, and evaluate the results. Students will learn digital citizenship by researching current laws and regulations and by practicing integrity and respect. Students will create a computer game that is presented to an evaluation panel. The six strands include creativity and innovation; communication and collaboration; research and information fluency; critical thinking; problem solving, and decision making; digital citizenship; and technology operations and concepts.
 
-To sync your contacts:
-
-1. Open your *User Settings* on your phone app
-2. Select the **Sync Contacts** button
-3. Authorise ChatApp permissions
-4. Select some or all of your contacts
-
-![](//placehold.it/800x600)

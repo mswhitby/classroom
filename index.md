@@ -2,13 +2,11 @@
 title: Welcome
 ---
 
-This is the online  companion for [Ms. Whitby’s](https://www.judsonisd.org/Domain/6785) Computer Science course at Wagner High School. Parents and students can reference this site for assignment details, project ideas, and reference materials. 
+## Introduction
 
-### Computer Science Fundamentals
-The Computer Science Fundamentals course follows [Project STEM’s](https://projectstem.org) Computer Science Explorations 1  curriculum. CS Explorations 1 is an introductory computer science course that empowers students to create authentic artifacts and engage with computer science as a medium for creativity, communication, problem solving, and fun. Students learn the foundational concepts and skills of computer science. They will explore using computers to solve problems and to express themselves. The course is designed to be engaging and relevant to student lives. Students build, remix and share animations, games, stories, music and art in [Scratch](https://scratch.mit.edu/).
+This is the online  companion for [Ms. Whitby’s](https://www.judsonisd.org/Domain/6785) course's at Wagner High School. Ms. Whitby teaches Fundamentals of Computer Science, Computer Science I, Game Program and Design, and Mobile Application Development Parents and students can reference this site for assignment details, project ideas, and reference materials.
 
-### Computer Science I
-The Computer Science I course follows [Project STEM’s](https://https://projectstem.org/high-school/cs-fundamentals) Computer Science Explorations 1  curriculum. CS Python Fundamentals is an introductory-level course. Students learn problem-solving strategies, software design, and the foundations of computer science using two key tools in the Project STEM programming environment.
+## Fundamentals of Computer Science
+[Fundamentals of Computer Science](https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=19&pt=2&ch=127&rl=788) is intended as a first course for those students just beginning the study of computer science. Students will learn about the computing tools that are used every day. Students will foster their creativity and innovation through opportunities to design, implement, and present solutions to real-world problems. Students will collaborate and use computer science concepts to access, analyze, and evaluate information needed to solve problems. Students will learn computational thinking, problem-solving, and reasoning skills that are the foundation of computer science. By using computer science knowledge and skills that support the work of individuals and groups in solving problems, students will select the technology appropriate for the task, synthesize knowledge, create solutions, and evaluate the results. Students will learn digital citizenship by researching current laws, regulations, and best practices and by practicing integrity and respect. Students will gain an understanding of the principles of computer science through the study of technology operations and concepts.
 
-### Project-Based Alternative
-All students in any of Ms. Whitby’s courses are encouraged to produce a guided project. Past students have worked on projects related to data science, sports analytics, business productivity, music production, and gaming—the range of projects available to students is only limited by their own creativity. Students who chose the project-based alternative will be evaluated on the progress of their projects rather than on the standard curriculums.
+
