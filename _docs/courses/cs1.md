@@ -1,7 +1,7 @@
 ---
-title: 4th Period
+title: Computer Science I
 category: Courses
-order: 3
+order: 2
 ---
 
 Sync your phone contacts with ChatApp. ChatApp saves your phone contacts and adds anyone with an email address to your contact list!
