@@ -1,7 +1,8 @@
 # Ms. Whitby's Computer Science Class
 
 ## Contact
-**Webpage:** [Wagner High School](https://judsonisd.org/domain/6785)<br>
+**Ms. Whitby's Website:** [mswhitby.com](https://mswhitby.com)<br>
+**School Webpage:** [Wagner High School](https://judsonisd.org/domain/6785)<br>
 **Email:** <dwhitby@judsonisd.org><br>
 **Phone:** 210.662.5000 ext. 17620<br>
 
