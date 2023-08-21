@@ -50,12 +50,9 @@ order: 1
 
 ### Agenda
 **General Agenda**
-- Visit [Hour of Code](https://hourofcode.com/) and select an activity for Grades 9+.
-- Create a new GitHub journal entry explaining the activity you selected (include a link to the activity).
-- Please fill out the [User Names Form](https://forms.gle/W9AinBmFJYDqwMq37).
-
 - Fill out the [User Names Form](https://forms.gle/W9AinBmFJYDqwMq37).
 - Visit [CodeHS](https://codehs.com/go/29EC0) and create an account (you can sign up with Google using your JISD email).
+- **Class Code: 29EC0**
 - Create a new GitHub journal entry detailing your progress on CodeHS.
 
 **Sports Data Agenda**

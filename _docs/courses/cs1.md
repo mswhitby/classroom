@@ -55,6 +55,7 @@ order: 2
 **General Agenda**
 - Fill out the [User Names Form](https://forms.gle/W9AinBmFJYDqwMq37).
 - Visit [CodeHS](https://codehs.com/go/125C3) and create an account (you can sign up with Google using your JISD email).
+- **Class Code: 125C3**
 - Create a new GitHub journal entry detailing your progress on CodeHS.
 
 **Sports Data Agenda**
