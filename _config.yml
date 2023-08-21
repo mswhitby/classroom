@@ -74,10 +74,10 @@ defaults:
 navigation:
   - title: Courses
     url: /courses.html
-  - title: Project Ideas
-    url: /projects.html
-  - title: Challenges
-    url: /challenges.html
+  - title: Class Links
+    url: /class-links.html
+  - title: Resources
+    url: /resources.html
 
 # -----------
 # CloudCannon
