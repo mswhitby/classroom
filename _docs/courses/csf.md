@@ -54,6 +54,10 @@ order: 1
 - Create a new GitHub journal entry explaining the activity you selected (include a link to the activity).
 - Please fill out the [User Names Form](https://forms.gle/W9AinBmFJYDqwMq37).
 
+- Fill out the [User Names Form](https://forms.gle/W9AinBmFJYDqwMq37).
+- Visit [CodeHS](https://codehs.com/go/29EC0) and create an account (you can sign up with Google using your JISD email).
+- Create a new GitHub journal entry detailing your progress on CodeHS.
+
 **Sports Data Agenda**
 - Create a [Kaggle](https://www.kaggle.com/) account.
 - Create a new notebook and name it "sports_data".
