@@ -1,68 +1,46 @@
-# Edition
+# Ms. Whitby's Computer Science Class
 
-Product documentation template for Jekyll. Browse through a [live demo](https://long-pig.cloudvent.net/).
-Start documenting your product, application, service or website with this configurable theme.
+## Contact
+**Webpage:** [Wagner High School](https://judsonisd.org/domain/6785)<br>
+**Email:** <dwhitby@judsonisd.org><br>
+**Phone:** 210.662.5000 ext. 17620<br>
 
-![Edition template screenshot](images/_screenshot.png)
+## Tutoring
+- Wednesdays 4:35pm - 5:20pm
+- Thursdays 8:00am - 8:25am
+- By Appointment
 
-Edition was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
+## Courses
+- [Computer Science Fundamentals](https://github.com/mswhitby/classroom/blob/main/_docs/courses/csf.md)
+- [Computer Science I](https://github.com/mswhitby/classroom/blob/main/_docs/courses/cs1.md)
+- Game Program and Design
+- Mobile & Web App Development
 
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
+## Resources
+- [Markdown Guide](https://www.markdownguide.org/)
 
-[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/edition-jekyll-template)
+- [Learn Python The Right Way](https://learnpythontherightway.com/#read)
 
-## Features
+- [Replit](https://replit.com/team/whs-tbirds)
 
-* Two column layout
-* Full text search
-* Pre-styled components
-* Auto-generated navigation based on category
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* Change log
-* RSS/Atom feed
-* SEO tags
-* Google Analytics
+- [Python Code Compiler](https://www.onlinegdb.com/)
 
-## Setup
+- [Trinket](https://trinket.io/library/trinkets/create?lang=python3)
 
-1. Add your site and author details in `_config.yml`.
-2. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+- [Python Visualizer](https://pythontutor.com/visualize.html#mode=edit)
 
-## Develop
+- [Kaggle](https://www.kaggle.com/)
 
-Edition was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
+- [Canva](https://www.canva.com/brand/join?token=iPrenhf0dFJZAWE5VFeLBg&brandingVariant=edu&referrer=team-invite)
 
-Install the dependencies with [Bundler](http://bundler.io/):
+---
 
-~~~bash
-$ bundle install
-~~~
+## Cheat Sheets
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
+- [pythoncheatsheet.org](https://www.pythoncheatsheet.org/)
 
-~~~bash
-$ bundle exec jekyll serve
-~~~
+- [Python Cheat Sheet - PDF](https://websitesetup.org/wp-content/uploads/2021/04/Python-cheat-sheet-April-2021.pdf)
 
-## Editing
+- [Python 3 Cheat Sheet](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-english.pdf)
 
-Edition is already optimised for adding, updating and removing documentation pages in CloudCannon.
-
-### Documentation pages
-
-* Add, update or remove a documentation page in the *Documentation* collection.
-* Change the category of a documentation page to move it to another section in the navigation.
-* Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
-
-### Change log
-
-* Add, update or remove change log entries from your posts.
-* Tag entries as minor or major in the front matter.
-
-### Search
-
-* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
-
-### Navigation
-
-* Change `site.show_full_navigation` to control all or only the current navigation group being open.
+- [Hoja Resumen de Python 3](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-espanol.pdf)
