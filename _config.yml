@@ -74,8 +74,6 @@ defaults:
 navigation:
   - title: Courses
     url: /courses.html
-  - title: Class Links
-    url: /class-links.html
   - title: Resources
     url: /resources.html
 

@@ -3,7 +3,9 @@ title: Resources
 permalink: /resources
 ---
 
-### Resources
+### Websites
+- [CodeHS](https://codehs.com)
+
 - [Markdown Guide](https://www.markdownguide.org/)
 
 - [Learn Python The Right Way](https://learnpythontherightway.com/#read)
