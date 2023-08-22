@@ -65,6 +65,30 @@ order: 2
 - Fill out the [User Names Form](https://forms.gle/W9AinBmFJYDqwMq37).
 - Create a new GitHub journal entry detailing your progress on Fantasy Data Pros.
 
+----
+## August 22, 2023
 
+### TEKS
+- participate with electronic communities as a learner, initiator, and contributor
+- use program design problem-solving strategies to create program solutions
+- define and specify the purpose and goals of solving a problem
+- employ effective technical reading and writing skills
 
+### Objectives
+- Student will be able to create headers, text, and link entries in a digital journal using Markdown language.
+- Student will be explore different roles and skill sets in computer science.
+
+### Agenda
+- Fill out the [User Names Form](https://forms.gle/W9AinBmFJYDqwMq37) if you have not yet done so.
+- **General:**
+    - Visit [CodeHS](https://codehs.com/go/125C3) and continue modules. 
+    - Create an account if you do not have one (you can sign up with Google using your JISD email).
+    - **Class Code: 125C3**
+- **Sports Data Only:** 
+    - Create a [Kaggle](https://www.kaggle.com/) account if you do not have one.
+    - create a new notebook and name it "sports_data".
+    - Share your notebook with "mswhitby".
+    - Complete the modules on [Fantasy Data Pros](https://fantasydatapros.com).
+    - Use your Kaggle notebook to run your code.
+- Draft an entry in your GitHub journal detailing your progress today.
 
