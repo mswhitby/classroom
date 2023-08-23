@@ -34,8 +34,9 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - README.md
+  - README.mdb
   - LICENCE
+  - instructions.md
 
 collections:
   docs:
