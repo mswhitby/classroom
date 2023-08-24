@@ -93,7 +93,7 @@ order: 2
 - Draft an entry in your GitHub journal detailing your progress today.
 
 ----
-## August 23, 2023
+## August 24, 2023
 
 ### TEKS
 - participate with electronic communities as a learner, initiator, and contributor
@@ -118,4 +118,6 @@ order: 2
     - Complete the modules on [Fantasy Data Pros](https://fantasydatapros.com).
     - Use your Kaggle notebook to run your code.
 - Draft an entry in your GitHub journal detailing your progress today.
+
+
 
