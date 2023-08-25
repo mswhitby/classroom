@@ -120,7 +120,7 @@ order: 2
 - Draft an entry in your GitHub journal detailing your progress today.
 
 ----
-## August 24, 2023
+## August 25, 2023
 
 ### TEKS
 - participate with electronic communities as a learner, initiator, and contributor
