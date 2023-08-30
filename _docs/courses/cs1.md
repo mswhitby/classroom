@@ -20,20 +20,21 @@ order: 2
 
 ### Agenda
 
+#### General Agenda
+
+- Visit [CodeHS](https://codehs.com/go/125C3) and continue modules.
+- Create an account if you do not have one (you can sign up with Google using your JISD email).
+- **Class Code: 125C3**
+- Draft an entry in your GitHub journal detailing your progress today.
+
+#### Sports Data Agenda
+
+- Create a [Kaggle](https://www.kaggle.com/) account if you do not have one.
+- create a new notebook and name it "sports_data".
+- Share your notebook with "mswhitby".
+- Complete the modules on [Fantasy Data Pros](https://fantasydatapros.com).
+- Use your Kaggle notebook to run your code.
 - Fill out the [User Names Form](https://forms.gle/W9AinBmFJYDqwMq37) if you have not yet done so.
-
-- **General:**
-  - Visit [CodeHS](https://codehs.com/go/125C3) and continue modules.
-  - Create an account if you do not have one (you can sign up with Google using your JISD email).
-  - **Class Code: 125C3**
-
-- **Sports Data Only:** 
-  - Create a [Kaggle](https://www.kaggle.com/) account if you do not have one.
-  - create a new notebook and name it "sports_data".
-  - Share your notebook with "mswhitby".
-  - Complete the modules on [Fantasy Data Pros](https://fantasydatapros.com).
-  - Use your Kaggle notebook to run your code.
-
 - Draft an entry in your GitHub journal detailing your progress today.
 
 ----
