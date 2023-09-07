@@ -33,6 +33,7 @@ order: 1
 
 #### Sports Data Agenda
 
+- [FantasyCalc API Intro with Python](https://www.fantasydatapros.com/fantasyfootball/blog/fantasycalc/1)
 - Create a [Kaggle](https://www.kaggle.com/) account.
 - Create a new notebook and name it "sports_data".
 - Share your notebook with either "mswhitby".
