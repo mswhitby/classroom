@@ -9,6 +9,8 @@ order: 1
 ![2023 San Antonio Community Code Jam](https://youthcodejam.charityproud.org/EventRegistration/DisplayEventPicture/13038)
 [2023 San Antonio Community Code Jam](https://youthcodejam.charityproud.org/EventRegistration/Index/13038)
 
+----
+
 ## September 8, 2023
 
 ### TEKS
