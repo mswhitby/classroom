@@ -11,6 +11,44 @@ order: 1
 
 ----
 
+## September 19, 2023
+
+### TEKS
+
+- solve problems and think critically
+- demonstrate planning and time-management skills
+- employ effective technical reading and writing skills
+
+### Objectives
+
+- Student will be able to create headers, text, and list entries in a digital journal using Markdown language.
+- Student will understand basic syntax of Python coding language.
+
+### Agenda
+
+#### General Agenda
+
+- Fill out the [User Names Form](https://forms.gle/W9AinBmFJYDqwMq37).
+- Visit [CodeHS](https://codehs.com/go/29EC0) and create an account (you can sign up with Google using your JISD email).
+- **Class Code: 29EC0**
+- Create a new GitHub journal entry detailing your progress on CodeHS.
+
+#### Sports Data Agenda
+
+- [FantasyCalc API Intro with Python](https://www.fantasydatapros.com/fantasyfootball/blog/fantasycalc/1)
+- Create a [Kaggle](https://www.kaggle.com/) account.
+- Create a new notebook and name it "sports_data".
+- Share your notebook with either "mswhitby".
+- Please fill out the [User Names Form](https://forms.gle/W9AinBmFJYDqwMq37).
+
+#### Alternate Assignments
+
+- [Code Combat](https://codecombat.com/students?_cc=StarDreamShow) - **Class Code:** StarDreamShow
+- [EarSketch](https://earsketch.gatech.edu/landing/#/learn)
+- [Hour of Code](https://hourofcode.com/us)
+
+----
+
 ## September 18, 2023
 
 ### TEKS
