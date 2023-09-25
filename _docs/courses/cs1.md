@@ -4,10 +4,13 @@ category: Courses
 order: 2
 ---
 
-## Announcements
+# September 25, 2023
 
-![2023 San Antonio Community Code Jam](https://youthcodejam.charityproud.org/EventRegistration/DisplayEventPicture/13038)
-[2023 San Antonio Community Code Jam](https://youthcodejam.charityproud.org/EventRegistration/Index/13038)
+Howdy! Unfortunately, I’m not feeling well and will not be able to make it in today (and no it has nothing to do with the Cowboys of Colorado losing).
+
+For today, please continue working on your CodeHS modules. If you’ve been working on Code Combat or with sports data instead, you may continue with either of those. 
+
+Thanks! And I will see you all tomorrow.
 
 ----
 
