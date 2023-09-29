@@ -4,6 +4,10 @@ category: Courses
 order: 1
 ---
 
+# September 29, 2023
+
+Howdy! I'm away from campus to do and will return during 5th period. Please work on your CodeHS modules. We will continue with the Zumi cars on Monday. Have a great weekend!
+
 # September 25, 2023
 
 Howdy! Unfortunately, I’m not feeling well and will not be able to make it in today (and no it has nothing to do with the Cowboys of Colorado losing).
