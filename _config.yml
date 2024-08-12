@@ -73,8 +73,10 @@ defaults:
         type: Marks the impact of this release
 
 navigation:
-  - title: Courses
-    url: /courses.html
+  # - title: Courses
+  #   url: /courses.html
+  - title: Classes
+    url: /classes.html
   - title: Resources
     url: /resources.html
 
