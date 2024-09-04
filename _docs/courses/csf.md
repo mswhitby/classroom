@@ -14,16 +14,13 @@ If you have not yet created a GitHub account, please do so and submit the Google
 
 #### 2. Sphero BOLT
 
-> - Sign in with a Class Code 
->
-> - **Clase Code:** MN9DKZ
-> 
-> - Use 1 person’s name; fill out card with group members 
-
-Go to the **"Lessons"** tab and complete the following lessons:
-1. Meet Sphero BOLT
-2. BOLT: Light Sensor 
-3. BOLT: Compass 
+- Sign in with a Class Code
+- **Clase Code:** 8KXFH3
+- Use 1 person’s name; fill out card with group members 
+- Go to the **"Lessons"** tab and complete the following lessons:
+    - 1. Meet Sphero BOLT
+    - 2. BOLT: Light Sensor 
+    - 3. BOLT: Compass 
 
 
 
