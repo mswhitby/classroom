@@ -1,5 +1,5 @@
 ---
-title: 1st Period
+title: 1st Period - Fundamentals of Computer Science
 subtitle: Fundamentals of Computer Science
 category: Classes
 order: 1
