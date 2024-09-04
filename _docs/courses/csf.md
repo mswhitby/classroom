@@ -5,21 +5,21 @@ order: 1
 ---
 
 
-# September 4, 2024 
+## September 4, 2024 
 
-## Agenda: 
+### Agenda: 
 
-### I.  GitHub Account and User Names Form 
+#### I.  GitHub Account and User Names Form 
 If you have not yet created a GitHub account, please do so and submit the Google form with your username. Ask me for the QR code if you need it.
 
-### II. Sphero BOLT **Class Codes:**
+#### II. Sphero BOLT **Class Codes:**
 - Meet Sphero BOLT
 - BOLT: Light Sensor 
 - BOLT: Compass 
 
 > **Clase Code:** MN9DKZ
 
-### III. Journal Entry
+#### III. Journal Entry
 1. List 3 sensors found on the Sphero BOLT
 2. Choose one of the sensors, and write a paragraph explaining how that sensor functions.
 
