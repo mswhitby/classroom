@@ -1,6 +1,6 @@
 ---
 title: Fundamentals of Computer Science
-category: Courses
+category: Courses 2023
 order: 1
 ---
 
