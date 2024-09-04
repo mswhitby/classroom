@@ -204,19 +204,19 @@ $nav-image: $baseurl + "/images/menu.svg";
 		letter-spacing: -1px;
 	}
 
-	@media (min-width: $mobile-break) {
-		h2 {
-			font-size: 2.65rem;
-		}
+	// @media (min-width: $mobile-break) {
+	// 	h2 {
+	// 		font-size: 2.65rem;
+	// 	}
 
-		h3 {
-			font-size: 5.4rem;
-		}
-	}
+	// 	h3 {
+	// 		font-size: 5.4rem;
+	// 	}
+	// }
 
-	@media (min-width: $full-width-break) {
-		margin-top: 55px;
-	}
+	// @media (min-width: $full-width-break) {
+	// 	margin-top: 55px;
+	// }
 }
 
 nav,
