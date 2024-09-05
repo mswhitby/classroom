@@ -11,7 +11,7 @@ order: 1
 
 #### 1. Sphero BOLT
 
-- Join using Class Code
+- "Sign In" using Class Code
 - Class Code: **KF45LH**
 - Enter one person’s name if it is not already in the list.
 - Fill out index card with all group members .
@@ -49,7 +49,7 @@ If you have not yet created a GitHub account, please do so and submit the Google
 
 #### 2. Sphero BOLT
 
-- Join using Class Code
+- "Sign In" using Class Code
 - Class Code: **KF45LH**
 - Enter one person’s name if it is not already in the list.
 - Fill out index card with all group members .
