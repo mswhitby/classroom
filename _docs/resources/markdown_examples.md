@@ -1,7 +1,7 @@
 ---
 title: Markdown Examples for Journal
 category: Resources
-order: 2
+order: 3
 ---
 
 ## Creating A Heading
