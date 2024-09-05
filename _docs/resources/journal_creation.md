@@ -1,5 +1,5 @@
 ---
-title: Setup Your Journal
+title: Create Your Journal
 category: Resources
 order: 2
 ---

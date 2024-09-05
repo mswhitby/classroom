@@ -11,7 +11,8 @@ order: 1
 
 #### 1. Sphero BOLT
 
-- "Sign In" using Class Code
+- Sign In
+- Join using Class Code
 - Class Code: **KF45LH**
 - Enter one person’s name if it is not already in the list.
 - Fill out index card with all group members .
