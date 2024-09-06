@@ -177,12 +177,6 @@ header {
 }
 
 .page-header {
-	h2,
-	h3 {
-		margin: 0;
-		line-height: 1.2;
-		letter-spacing: -1px;
-	}
 
 	h2 {
 		font-size: 2rem;
@@ -192,8 +186,10 @@ header {
 	}
 
 	h3 {
-		font-size: 4rem;
-		margin-left: -4px;
+		font-size: 3rem;
+		margin: 0 0 0 -4px;
+		line-height: 1.2;
+		letter-spacing: -1px;
 	}
 
 	@media (min-width: $mobile-break) {
