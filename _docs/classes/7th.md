@@ -5,11 +5,11 @@ category: Classes
 order: 6
 ---
 
-## September 5, 2024
+# September 5, 2024
 
-### Agenda
+## Agenda
 
-#### 1. CoDrone EDU
+### 1. CoDrone EDU
 
 - [tinyurl.com/whscs3](https://tinyurl.com/whscs3)
 
@@ -21,17 +21,17 @@ order: 6
 - 1.7: For Loops
   - for_loops.py
 
-#### 2. Journal Entry
+### 2. Journal Entry
 
 In a paragraph or more, reflect on your experience learning Python so far. What do you find most interesting or challenging about the language?
 
 > Note: Think about the basic concepts you’ve learned, such as variables, data types, or loops. How do you think these fundamentals will help you as you continue to learn more advanced programming concepts? Provide specific examples from your experience to explain your thoughts.
 
-## September 4, 2024
+# September 4, 2024
 
-### Agenda
+## Agenda
 
-#### 1. CoDrone EDU
+### 1. CoDrone EDU
 
 - [tinyurl.com/whscs3](https://tinyurl.com/whscs3)
 
@@ -43,7 +43,7 @@ In a paragraph or more, reflect on your experience learning Python so far. What 
 - 1.6: Conditionals
   - conditionals.py
 
-#### 2. Journal Entry
+### 2. Journal Entry
 
 In a paragraph or more, reflect on your experience learning Python so far. What do you find most interesting or challenging about the language?
 

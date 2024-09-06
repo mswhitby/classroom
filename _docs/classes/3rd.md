@@ -5,11 +5,11 @@ category: Classes
 order: 2
 ---
 
-## September 6, 2024
+# September 6, 2024
 
-### Agenda
+## Agenda
 
-#### 1. Sphero BOLT
+### 1. Sphero BOLT
 
 - Sign In
 - Join using Class Code
@@ -21,7 +21,7 @@ order: 2
     2. BOLT: Light Sensor
     3. BOLT: Compass
 
-#### 2. Journal Entry
+### 2. Journal Entry
 
 Answer the following in your GitHub Journal:
 
@@ -40,11 +40,11 @@ date. If you do not use this format, the grading program will not recognize your
 entry.
 ```
 
-## September 5, 2024
+# September 5, 2024
 
-### Agenda
+## Agenda
 
-#### 1. Sphero BOLT
+### 1. Sphero BOLT
 
 - Sign In
 - Join using Class Code
@@ -56,7 +56,7 @@ entry.
     2. BOLT: Light Sensor
     3. BOLT: Compass
 
-#### 2. Journal Entry
+### 2. Journal Entry
 
 Answer the following in your GitHub Journal:
 
@@ -75,15 +75,15 @@ date. If you do not use this format, the grading program will not recognize your
 entry.
 ```
 
-## September 4, 2024
+# September 4, 2024
 
-### Agenda
+## Agenda
 
-#### 1.  GitHub Account and User Names Form
+### 1.  GitHub Account and User Names Form
 
 If you have not yet created a GitHub account, please do so and submit the Google form with your username. Ask me for the QR code if you need it.
 
-#### 2. Sphero BOLT
+### 2. Sphero BOLT
 
 - "Sign In" using Class Code
 - Class Code: **MN9DKZ**
@@ -94,7 +94,7 @@ If you have not yet created a GitHub account, please do so and submit the Google
     2. BOLT: Light Sensor
     3. BOLT: Compass
 
-#### 3. Journal Entry
+### 3. Journal Entry
 
 Answer the following in your GitHub Journal:
 
