@@ -5,6 +5,40 @@ category: Classes
 order: 1
 ---
 
+## September 6, 2024
+
+### Agenda
+
+#### 1. Sphero BOLT
+
+- Sign In
+- Join using Class Code
+- Class Code: **KF45LH**
+- Enter one person’s name if it is not already in the list.
+- Fill out index card with all group members .
+- Go to the **"Lessons"** tab and complete the following lessons:
+    1. BOLT: Compass
+    2. BOLT: Introduction to Infrared
+
+#### 2. Weekly Journal Entry
+
+Answer the following in your GitHub Journal:
+
+1. List 3 sensors found on the Sphero BOLT
+2. Choose one of the sensors, and write a paragraph explaining how that sensor functions.
+
+> Note: In your paragraph, describe how the sensor you chose works and how it helps the Sphero BOLT operate. Does it measure light, speed, direction, or something else? Provide details about how the sensor gathers data and how the robot uses that information to move or react to its surroundings. Try to give an example of how this sensor might be used in a specific activity or challenge.
+
+Remember to use the appropriate structure so that you receive credit for your work.
+
+``` markdown
+# September 6, 2024
+
+First use the date as your heading. Then start writing your journal entry below the
+date. If you do not use this format, the grading program will not recognize your
+entry.
+```
+
 ## September 5, 2024
 
 ### Agenda
