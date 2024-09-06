@@ -17,9 +17,10 @@ order: 1
 - Enter one person’s name if it is not already in the list.
 - Fill out index card with all group members .
 - Go to the **"Lessons"** tab and complete the following lessons:
-    1. BOLT: Compass
-    2. BOLT: Introduction to Infrared
-
+    1. Meet Sphero BOLT
+    2. BOLT: Light Sensor
+    3. BOLT: Compass
+       
 #### 2. Weekly Journal Entry
 
 Answer the following in your GitHub Journal:
