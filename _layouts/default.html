@@ -75,7 +75,8 @@
 		<section class="main">
 			<div class="page-header">
 				<h2>{% if page.category %}{{ page.category }}{% else %}{{ site.title }}{% endif %}</h2>
-				<h3>{{ page.title }}</h3>
+				<h3>{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.title }}{% endif %}</h3>
+<!--				<h3>{{ page.title }}</h3>-->
 <!--				<h1>{{ page.title }}</h1>-->
 <!--				<h2>{{ page.subtitle }}</h2>-->
 			</div>
