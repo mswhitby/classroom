@@ -23,11 +23,11 @@ $space: 20px;
 $mobile-break: 700px;
 $full-width-break: $nav-width + ($space * 4) + $content-max-width;
 
-@import "@primer/css/core/index.scss";
-// @import "mixins";
-// @import "normalize";
+//@import "@primer/css/core/index.scss";
+@import "mixins";
+@import "normalize";
 @import "pygments";
-// @import "typography";
-// @import "code";
-// @import "tables";
-// @import "layout";
+@import "typography";
+@import "code";
+@import "tables";
+@import "layout";

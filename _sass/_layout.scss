@@ -177,12 +177,7 @@ $nav-image: $baseurl + "/images/menu.svg";
 }
 
 .page-header {
-	h2,
-	// h3 {
-	// 	margin: 0;
-	// 	line-height: 1.2;
-	// 	letter-spacing: -1px;
-	// }
+
 
 	h1 {
 		font-size: 3rem;
@@ -203,6 +198,12 @@ $nav-image: $baseurl + "/images/menu.svg";
 		line-height: 1.2;
 		letter-spacing: -1px;
 	}
+
+	// h3 {
+	// 	margin: 0;
+	// 	line-height: 1.2;
+	// 	letter-spacing: -1px;
+	// }
 
 	// @media (min-width: $mobile-break) {
 	// 	h2 {
