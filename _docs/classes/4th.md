@@ -5,6 +5,13 @@ category: Classes
 order: 3
 ---
 
+# September 7, 2024
+
+## Agenda
+
+### 1. Apple "It's Glowtime Event
+
+
 # September 6, 2024
 
 ## Agenda

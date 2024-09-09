@@ -5,7 +5,7 @@ category: Classes
 order: 1
 ---
 
-# September 7, 2024
+# September 9, 2024
 
 ## Agenda
 
