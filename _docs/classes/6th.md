@@ -18,8 +18,8 @@ order: 5
 - Fill out index card with all group members .
 - Go to the **"Lessons"** tabs:
     1. BOLT: Introduction to Infrared
-    2. Read Steps 1 - 4.
-    3. We will complete step 5 as a class.
+    2. Read Steps 1 - 3.
+    3. We will complete step 4 as a class.
 
 # September 6, 2024
 
