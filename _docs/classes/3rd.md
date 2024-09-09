@@ -5,6 +5,20 @@ category: Classes
 order: 2
 ---
 
+# September 7, 2024
+
+## Agenda
+
+### 1. Sphero BOLT
+
+- Sign In
+- Join using Class Code
+- Class Code: **MN9DKZ**
+- Enter one person’s name if it is not already in the list.
+- Fill out index card with all group members .
+- Go to the **"Lessons"** tab, and we will complete the following lesson as a class:
+    1. BOLT: Introduction to Infrared
+
 # September 6, 2024
 
 ## Agenda
