@@ -5,6 +5,26 @@ category: Classes
 order: 3
 ---
 
+# September 10, 2024
+
+## Agenda
+
+- Sign-in to your GitHub account (you may use a computer)
+- In a separate tab, open [https://tinyurl.com/whscs5](https://tinyurl.com/whscs5).
+- Wait for further instructions.
+
+## Weekly Journal Prompt
+
+_Reflecting on Our GitHub Journal Process_
+
+As a class, we followed the instructions to set up our GitHub journals. However, only a small number of journals were set up in a way that I could access them. Let’s figure out together what went wrong and how we can improve the process.
+
+- **For Me:** What could I have done differently in drafting or explaining the instructions? Were there any parts that were unclear or confusing?
+- **For You:** Did you encounter any challenges while following the steps? If so, what were they? What do you think may have been missed or misunderstood?
+
+Please share your thoughts, as we’ll use this feedback to make sure everyone’s journals are properly set up moving forward.
+
+
 # September 7, 2024
 
 ## Agenda
