@@ -5,6 +5,34 @@ category: Classes
 order: 2
 ---
 
+# September 11, 2024
+
+## Agenda
+
+### 1. Sphero BOLT
+
+- Sign In
+- Join using Class Code
+- Class Code: **MN9DKZ**
+- Enter one person’s name if it is not already in the list.
+- Fill out index card with all group members.
+- Go to the **"Lessons"** tab and complete the following lessons:
+    1. Text 1: Hello World!
+    2. Text 2: Conditionals
+
+### 2. Daily GitHub Journal Entry
+
+In your digital GitHub journal, write a paragraph explaining why following instructions exactly as they are given is important when learning how to code?
+
+In your response, consider the following:
+
+- How does precision affect the outcome of a program?
+- What can happen if steps or details are missed in coding?
+- Why is it important to develop good habits of attention to detail early in your coding journey?
+
+Remember to use Claim, Evidence, and Reasoning (C.E.R.) to structure your response.
+
+
 # September 10, 2024
 
 ## Agenda
