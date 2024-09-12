@@ -5,6 +5,73 @@ category: Classes
 order: 2
 ---
 
+# September 12, 2024
+
+## Agenda
+
+### 1. Journal Audit
+Everyone needs to make sure that there journal is properly setup and that all entries have been written. There are three prompts that were assigned previously and a fourth prompt from today.
+
+---
+
+#### September 4, 2024
+
+Answer the following in your GitHub Journal:
+
+1. List 3 sensors found on the Sphero BOLT
+2. Choose one of the sensors, and write a paragraph explaining how that sensor functions.
+
+> Note: In your paragraph, describe how the sensor you chose works and how it helps the Sphero BOLT operate. Does it measure light, speed, direction, or something else? Provide details about how the sensor gathers data and how the robot uses that information to move or react to its surroundings. Try to give an example of how this sensor might be used in a specific activity or challenge.
+
+Remember to use the appropriate structure so that you receive credit for your work.
+
+---
+
+#### September 10, 2024
+
+_Reflecting on Our GitHub Journal Process_
+
+As a class, we followed the instructions to set up our GitHub journals. However, only a small number of journals were set up in a way that I could access them. Let’s figure out together what went wrong and how we can improve the process.
+
+- **For Me:** What could I have done differently in drafting or explaining the instructions? Were there any parts that were unclear or confusing?
+- **For You:** Did you encounter any challenges while following the steps? If so, what were they? What do you think may have been missed or misunderstood?
+
+Please share your thoughts, as we’ll use this feedback to make sure everyone’s journals are properly set up moving forward.
+
+---
+
+#### September 11, 2024
+
+In your digital GitHub journal, write a paragraph explaining why following instructions exactly as they are given is important when learning how to code?
+
+In your response, consider the following:
+
+- How does precision affect the outcome of a program?
+- What can happen if steps or details are missed in coding?
+- Why is it important to develop good habits of attention to detail early in your coding journey?
+
+Remember to use Claim, Evidence, and Reasoning (C.E.R.) to structure your response.
+
+---
+
+#### September 12, 2024
+
+- List The 5 P's of Wagner's Core Values.
+- Choose one of The 5 P's and write a paragraph explaining how implementing this Core Value would benefit you in Computer Science Class.
+
+---
+
+### 2. Sphero BOLT
+- Sign In
+- Join using Class Code
+- Class Code: **MN9DKZ**
+- Enter one person’s name if it is not already in the list.
+- Fill out index card with all group members.
+- Go to the **"Lessons"** tab and complete the following lessons:
+    1. Text 2: Conditionals
+    2. Text 3: Loops!
+
+
 # September 11, 2024
 
 ## Agenda
