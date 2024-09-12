@@ -12,7 +12,7 @@ order: 5
 ### 1. Code Combat
 
 - You're allowed to use the computers today.
-- Go to [codecombat.com](codecombat.com)
+- Go to [https://codecombat.com](codecombat.com)
 - Select "student"
 - Class Code: StarDreamShow
 - Create an account
