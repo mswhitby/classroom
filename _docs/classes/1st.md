@@ -13,7 +13,7 @@ order: 1
 
 - Sign In
 - Join using Class Code
-- Class Code: **NW0VT2**
+- Class Code: **KF45LH**
 - Enter one person’s name if it is not already in the list.
 - Fill out index card with all group members.
 - Go to the **"Lessons"** tab and complete the following lessons:
