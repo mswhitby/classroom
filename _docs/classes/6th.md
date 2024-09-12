@@ -5,6 +5,32 @@ category: Classes
 order: 5
 ---
 
+# September 12, 2024
+
+## Agenda
+
+### 1. Code Combat
+
+- You're allowed to use the computers today.
+- Go to [codecombat.com](codecombat.com)
+- Select "student"
+- Class Code: StarDreamShow
+- Create an account
+- Start your first mission
+
+> Note: We're doing this because a number of you asked if you could learn Python. This is a one-day experiment, and we'll discuss your thoughts towards the end of class.
+
+### 2. Weekly Journal Prompt
+
+_Reflecting on Our GitHub Journal Process_
+
+As a class, we followed the instructions to set up our GitHub journals. However, only a small number of journals were set up in a way that I could access them. Let’s figure out together what went wrong and how we can improve the process.
+
+- **For Me:** What could I have done differently in drafting or explaining the instructions? Were there any parts that were unclear or confusing?
+- **For You:** Did you encounter any challenges while following the steps? If so, what were they? What do you think may have been missed or misunderstood?
+
+Please share your thoughts, as we’ll use this feedback to make sure everyone’s journals are properly set up moving forward.
+
 # September 11, 2024
 
 ## Agenda

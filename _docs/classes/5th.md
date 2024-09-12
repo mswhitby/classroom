@@ -5,6 +5,96 @@ category: Classes
 order: 4
 ---
 
+# September 12, 2024
+
+## Assignments
+
+### Game Program & Design
+
+**Unity Essentials:** [Mission 2 - 3D Essentials](https://learn.unity.com/mission/mission-2-3d-essentials?pathwayId=664b6225edbc2a01973f4f19)
+
+### Mobile App Development
+
+**CodeHS Modules:** Continue the App Development modules on [CodeHS](https://codehs.com/).
+
+## Weekly Journal Prompt
+
+_Reflecting on Our GitHub Journal Process_
+
+As a class, we followed the instructions to set up our GitHub journals. However, only a small number of journals were set up in a way that I could access them. Let’s figure out together what went wrong and how we can improve the process.
+
+- **For Me:** What could I have done differently in drafting or explaining the instructions? Were there any parts that were unclear or confusing?
+- **For You:** Did you encounter any challenges while following the steps? If so, what were they? What do you think may have been missed or misunderstood?
+
+Please share your thoughts, as we’ll use this feedback to make sure everyone’s journals are properly set up moving forward.
+
+
+# September 11, 2024
+
+## Agenda
+
+### Game Program & Design
+
+#### 1. Unity Essentials
+
+Missions:
+- [Open the Unity Essentials project](https://learn.unity.com/tutorial/open-the-unity-essentials-project-1?pathwayId=664b6225edbc2a01973f4f19&missionId=664bdda6edbc2a09177bccae)
+
+- [Explore the Editor Interface](https://learn.unity.com/tutorial/explore-the-editor-interface-1-1?pathwayId=664b6225edbc2a01973f4f19&missionId=664bdda6edbc2a09177bccae)
+
+- [Master 3D scene navigation](https://learn.unity.com/tutorial/master-3d-scene-navigation-1?pathwayId=664b6225edbc2a01973f4f19&missionId=664bdda6edbc2a09177bccae)
+
+- [Pass the Scene view flying test](https://learn.unity.com/tutorial/pass-the-scene-view-flying-test?pathwayId=664b6225edbc2a01973f4f19&missionId=664bdda6edbc2a09177bccae)
+
+- [Design a mural in the Scene view](https://learn.unity.com/tutorial/design-a-mural-in-scene-view?pathwayId=664b6225edbc2a01973f4f19&missionId=664bdda6edbc2a09177bccae)
+
+- [Editor Essentials: More things to try](https://learn.unity.com/tutorial/editor-essentials-more-things-to-try?pathwayId=664b6225edbc2a01973f4f19&missionId=664bdda6edbc2a09177bccae)
+
+### Mobile App Development
+
+#### 1. CodeHS Modules
+
+Continue the App Development modules on CodeHS.
+
+## Weekly Journal Prompt
+
+_Reflecting on Our GitHub Journal Process_
+
+As a class, we followed the instructions to set up our GitHub journals. However, only a small number of journals were set up in a way that I could access them. Let’s figure out together what went wrong and how we can improve the process.
+
+- **For Me:** What could I have done differently in drafting or explaining the instructions? Were there any parts that were unclear or confusing?
+- **For You:** Did you encounter any challenges while following the steps? If so, what were they? What do you think may have been missed or misunderstood?
+
+Please share your thoughts, as we’ll use this feedback to make sure everyone’s journals are properly set up moving forward.
+
+
+# September 11, 2024
+
+## Agenda
+
+### Game Program & Design
+
+#### 1. Unity Essentials
+
+Missions:
+- [Open the Unity Essentials project](https://learn.unity.com/tutorial/open-the-unity-essentials-project-1?pathwayId=664b6225edbc2a01973f4f19&missionId=664bdda6edbc2a09177bccae)
+
+- [Explore the Editor Interface](https://learn.unity.com/tutorial/explore-the-editor-interface-1-1?pathwayId=664b6225edbc2a01973f4f19&missionId=664bdda6edbc2a09177bccae)
+
+- [Master 3D scene navigation](https://learn.unity.com/tutorial/master-3d-scene-navigation-1?pathwayId=664b6225edbc2a01973f4f19&missionId=664bdda6edbc2a09177bccae)
+
+- [Pass the Scene view flying test](https://learn.unity.com/tutorial/pass-the-scene-view-flying-test?pathwayId=664b6225edbc2a01973f4f19&missionId=664bdda6edbc2a09177bccae)
+
+- [Design a mural in the Scene view](https://learn.unity.com/tutorial/design-a-mural-in-scene-view?pathwayId=664b6225edbc2a01973f4f19&missionId=664bdda6edbc2a09177bccae)
+
+- [Editor Essentials: More things to try](https://learn.unity.com/tutorial/editor-essentials-more-things-to-try?pathwayId=664b6225edbc2a01973f4f19&missionId=664bdda6edbc2a09177bccae)
+
+### Mobile App Development
+
+#### 1. CodeHS Modules
+
+Continue the App Development modules on CodeHS.
+
 # September 10, 2024
 
 ## Agenda
