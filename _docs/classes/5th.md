@@ -67,34 +67,6 @@ As a class, we followed the instructions to set up our GitHub journals. However,
 
 Please share your thoughts, as we’ll use this feedback to make sure everyone’s journals are properly set up moving forward.
 
-
-# September 11, 2024
-
-## Agenda
-
-### Game Program & Design
-
-#### 1. Unity Essentials
-
-Missions:
-- [Open the Unity Essentials project](https://learn.unity.com/tutorial/open-the-unity-essentials-project-1?pathwayId=664b6225edbc2a01973f4f19&missionId=664bdda6edbc2a09177bccae)
-
-- [Explore the Editor Interface](https://learn.unity.com/tutorial/explore-the-editor-interface-1-1?pathwayId=664b6225edbc2a01973f4f19&missionId=664bdda6edbc2a09177bccae)
-
-- [Master 3D scene navigation](https://learn.unity.com/tutorial/master-3d-scene-navigation-1?pathwayId=664b6225edbc2a01973f4f19&missionId=664bdda6edbc2a09177bccae)
-
-- [Pass the Scene view flying test](https://learn.unity.com/tutorial/pass-the-scene-view-flying-test?pathwayId=664b6225edbc2a01973f4f19&missionId=664bdda6edbc2a09177bccae)
-
-- [Design a mural in the Scene view](https://learn.unity.com/tutorial/design-a-mural-in-scene-view?pathwayId=664b6225edbc2a01973f4f19&missionId=664bdda6edbc2a09177bccae)
-
-- [Editor Essentials: More things to try](https://learn.unity.com/tutorial/editor-essentials-more-things-to-try?pathwayId=664b6225edbc2a01973f4f19&missionId=664bdda6edbc2a09177bccae)
-
-### Mobile App Development
-
-#### 1. CodeHS Modules
-
-Continue the App Development modules on CodeHS.
-
 # September 10, 2024
 
 ## Agenda
