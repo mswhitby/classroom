@@ -5,6 +5,29 @@ category: Classes
 order: 4
 ---
 
+# September 13, 2024
+
+## Assignments
+
+### Game Program & Design
+
+**Unity Essentials:** [Mission 2 - 3D Essentials](https://learn.unity.com/mission/mission-2-3d-essentials?pathwayId=664b6225edbc2a01973f4f19)
+
+### Mobile App Development
+
+**CodeHS Modules:** Continue the App Development modules on [CodeHS](https://codehs.com/).
+
+## Weekly Journal Prompt
+
+_Reflecting on Our GitHub Journal Process_
+
+As a class, we followed the instructions to set up our GitHub journals. However, only a small number of journals were set up in a way that I could access them. Let’s figure out together what went wrong and how we can improve the process.
+
+- **For Me:** What could I have done differently in drafting or explaining the instructions? Were there any parts that were unclear or confusing?
+- **For You:** Did you encounter any challenges while following the steps? If so, what were they? What do you think may have been missed or misunderstood?
+
+Please share your thoughts, as we’ll use this feedback to make sure everyone’s journals are properly set up moving forward.
+
 # September 12, 2024
 
 ## Assignments
