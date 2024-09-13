@@ -5,6 +5,32 @@ category: Classes
 order: 3
 ---
 
+# September 13, 2024
+
+## Agenda
+
+### 1. Sphero BOLT
+
+- Sign In
+- Join using Class Code
+- Class Code: **8KXFH3**
+- Enter one person’s name if it is not already in the list.
+- Fill out index card with all group members.
+- Go to the **"Lessons"** tab and complete the following lessons:
+    1. Text 3: Loops!
+    2. Text 4: Variables
+
+### 2. Weekly Journal Prompt
+
+_Reflecting on Our GitHub Journal Process_
+
+As a class, we followed the instructions to set up our GitHub journals. However, only a small number of journals were set up in a way that I could access them. Let’s figure out together what went wrong and how we can improve the process.
+
+- **For Me:** What could I have done differently in drafting or explaining the instructions? Were there any parts that were unclear or confusing?
+- **For You:** Did you encounter any challenges while following the steps? If so, what were they? What do you think may have been missed or misunderstood?
+
+Please share your thoughts, as we’ll use this feedback to make sure everyone’s journals are properly set up moving forward.
+
 # September 12, 2024
 
 ## Agenda
