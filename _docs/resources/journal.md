@@ -4,6 +4,12 @@ category: Resources
 order: 1
 ---
 
+# September 16, 2024
+
+Write the following as your journal entry: This is a free week.
+
+---
+
 # September 9, 2024
 
 _Reflecting on Our GitHub Journal Process_
@@ -15,7 +21,7 @@ As a class, we followed the instructions to set up our GitHub journals. However,
 
 Please share your thoughts, as we’ll use this feedback to make sure everyone’s journals are properly set up moving forward.
 
-----
+---
 
 # September 2, 2024
 
@@ -40,7 +46,7 @@ In a paragraph or more, reflect on your experience learning Python so far. What 
 
 > Note: Think about the basic concepts you’ve learned, such as variables, data types, or loops. How do you think these fundamentals will help you as you continue to learn more advanced programming concepts? Provide specific examples from your experience to explain your thoughts.
 
-----
+---
 
 # August 27, 2024
 
