@@ -15,7 +15,7 @@ order: 2
 - Bring me your maze for approval
 - After approval, trace over your maze with markers
 
-### 2. Maze Solution - BLock Code
+### 2. Maze Solution - Block Code
 
 - Sign into Sphero using the class code: **MN9DKZ**
 - Create a solution to your own maze using the Sphero blocks
@@ -23,7 +23,6 @@ order: 2
 ### Daily Journal Prompt
 
 Reflect on your experience designing your Sphero BOLT maze. What challenges did you encounter when designing the maze? How did you overcome them?
-
 
 ---
 

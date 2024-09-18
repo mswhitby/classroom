@@ -11,14 +11,15 @@ order: 3
 
 ### 1. Create Maze
 
-- Finish drawing your maze with pencil
-- Bring me your maze for approval
-- After approval, trace over your maze with markers
+- Finish drawing your maze with pencil.
+- Bring me your maze for approval.
+- After approval, trace over your maze with markers.
 
-### 2. Maze Solution - BLock Code
+### 2. Maze Solution - Block Code
 
 - Sign into Sphero using the class code: **8KXFH3**
-- Create a solution to your own maze using the Sphero blocks
+- Create a new program and choose "blocks."
+- Use the blocks to code a solution to navigate your maze.
 
 # September 13, 2024
 
