@@ -21,6 +21,10 @@ order: 3
 - Create a new program and choose "blocks."
 - Use the blocks to code a solution to navigate your maze.
 
+### Weekly Journal Entry
+
+Write the following as your journal entry: This is a free week.
+
 # September 13, 2024
 
 ## Agenda
