@@ -5,6 +5,21 @@ category: Classes
 order: 3
 ---
 
+# September 18, 2024
+
+## Agenda
+
+### 1. Create Maze
+
+- Finish drawing your maze with pencil
+- Bring me your maze for approval
+- After approval, trace over your maze with markers
+
+### 2. Maze Solution - BLock Code
+
+- Sign into Sphero using the class code: **8KXFH3**
+- Create a solution to your own maze using the Sphero blocks
+
 # September 13, 2024
 
 ## Agenda
