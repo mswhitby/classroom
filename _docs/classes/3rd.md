@@ -11,6 +11,26 @@ order: 2
 
 ### 1. Create Maze
 
+- If you have not yet completed your maze, please see yesterday's agenda.
+
+### 2. Maze Solution - Block Code
+
+- Sign into Sphero using the class code: **MN9DKZ**
+- Create a solution to your own maze using the Sphero blocks
+- Name your program "My Maze Solution"
+
+### Daily Journal Prompt
+
+Reflect on your experience programming your Sphero BOLT to navigate the maze. How did you approach programming the Sphero to successfully complete the maze? What adjustments did you have to make during testing?
+
+---
+
+# September 18, 2024
+
+## Agenda
+
+### 1. Create Maze
+
 - Finish drawing your maze with pencil
 - Bring me your maze for approval
 - After approval, trace over your maze with markers
