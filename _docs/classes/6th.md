@@ -5,6 +5,23 @@ category: Classes
 order: 5
 ---
 
+# September 19, 2024
+
+## Agenda
+
+### 1. Code Combat
+
+- You're allowed to use the computers today.
+- Go to [codecombat.com](https://codecombat.com)
+- Select "student"
+- Class Code: StarDreamShow
+- Create an account
+- Start your first mission
+
+## Weekly Journal Prompt
+
+Write the following as your journal entry: This is a free week.
+
 # September 12, 2024
 
 ## Agenda
