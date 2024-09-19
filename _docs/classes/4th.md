@@ -15,7 +15,7 @@ order: 3
 
 ### 2. Maze Solution - Block Code
 
-- Sign into Sphero using the class code: **MN9DKZ**
+- Sign into Sphero using the class code: **8KXFH3**
 - Create a solution to your own maze using the Sphero blocks
 - Name your program "My Maze Solution"
 
