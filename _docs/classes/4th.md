@@ -5,6 +5,25 @@ category: Classes
 order: 3
 ---
 
+# September 19, 2024
+
+## Agenda
+
+### 1. Create Maze
+
+- If you have not yet completed your maze, please see yesterday's agenda.
+
+### 2. Maze Solution - Block Code
+
+- Sign into Sphero using the class code: **MN9DKZ**
+- Create a solution to your own maze using the Sphero blocks
+- Name your program "My Maze Solution"
+
+### Weekly Journal Entry
+
+Write the following as your journal entry: This is a free week.
+
+
 # September 18, 2024
 
 ## Agenda
