@@ -5,6 +5,23 @@ category: Classes
 order: 2
 ---
 
+# September 20, 2024
+
+Howdy! I am out today and will return on Monday. Please behave for your sub. If I have already given you an alternate assignment, please continue with that assignment. If I have not given you an alternate assignment, please complete the Hour of Code assignment.
+
+Every should be at their own computer or at a table with their own Chromebook. No one should be partnered up or sharing a computer.
+
+## Agenda
+
+### 1. Hour of Code
+
+- Open [hourofcode.com](https://hourofcode.com/us) in a new tab.
+- Choose any activity that interest you to complete.
+
+### 2. Daily Journal Prompt
+
+- What Hour of Code activity did you complete? What is something you found interesting about the activity? What difficulties did you have with the activity?
+
 # September 19, 2024
 
 ## Agenda

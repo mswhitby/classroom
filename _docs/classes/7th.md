@@ -5,6 +5,18 @@ category: Classes
 order: 6
 ---
 
+# September 20, 2024
+Howdy! I am out today and will return on Monday. Please behave for your sub. Have a great T-Bird day!
+
+## Agenda
+- Eveyrone should have their individual python assingnments. Please continue with your individual assignment. 
+
+## Weekly Journal Prompt
+
+- Write the following as your journal entry: This is a free week.
+
+
+
 # September 10, 2024
 
 ## Agenda
