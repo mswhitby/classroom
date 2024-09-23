@@ -5,6 +5,27 @@ category: Classes
 order: 2
 ---
 
+# September 23, 2024
+
+## Agenda
+
+### 1. Create Maze
+
+- Finish drawing your maze with pencil
+- Bring me your maze for approval
+- After approval, trace over your maze with markers
+
+### 2. Maze Solution - Block Code
+
+- Sign into Sphero using the class code: **MN9DKZ**
+- Create a solution to your own maze using the Sphero blocks
+
+### 3. Journal Audit
+
+Everyone needs to make sure that there journal is properly setup. All entries should have an appropriate heading. If you need any assistance, please let me know.
+
+---
+
 # September 20, 2024
 
 Howdy! I am out today and will return on Monday. Please behave for your sub. If I have already given you an alternate assignment, please continue with that assignment. If I have not given you an alternate assignment, please complete the Hour of Code assignment.
