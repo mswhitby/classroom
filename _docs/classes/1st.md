@@ -5,6 +5,22 @@ category: Classes
 order: 1
 ---
 
+# September 23, 2024
+
+## Agenda
+
+### 1. Create Maze
+
+- If you have not yet completed your maze, please see yesterday's agenda.
+
+### 2. Maze Solution - Block Code
+
+- Sign into Sphero using the class code: **KF45LH**
+- Create a solution to your own maze using the Sphero blocks
+- Name your program "My Maze Solution"
+
+----
+
 # September 20, 2024
 
 Howdy! I am out today and will return on Monday. Please behave for your sub. If I have already given you an alternate assignment, please continue with that assignment. If I have not given you an alternate assignment, please complete the Hour of Code assignment.
