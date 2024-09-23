@@ -5,6 +5,29 @@ category: Classes
 order: 3
 ---
 
+# September 23, 2024
+
+## Agenda
+
+### 1. Create Maze
+
+- If you have not yet completed your maze, please see yesterday's agenda.
+- Give your maze it's own name, and write it at the top of your maze.
+- Write the names of all group members on the back of your maze. 
+
+### 2. Maze Solution - Block Code
+
+- Sign into Sphero using the class code: **8KXFH3**
+- Create a solution to your own maze using the Sphero blocks
+- Name your program "My Maze Solution"
+
+### 2.Trade Mazes
+
+- Trade mazes with another group.
+- Create a new program with the name of the other group's maze as the title.
+- Create a solution to the other group's maze using the Sphero blocks.
+- Repeat this with 3 separate  groups.
+
 # September 20, 2024
 
 Howdy! I am out today and will return on Monday. Please behave for your sub. If I have already given you an alternate assignment, please continue with that assignment. If I have not given you an alternate assignment, please complete the Hour of Code assignment.
