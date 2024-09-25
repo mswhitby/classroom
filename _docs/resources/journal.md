@@ -4,6 +4,32 @@ category: Resources
 order: 1
 ---
 
+# September 23, 2024
+
+## Periods 1, 5, 6, 7, & Practicum
+
+In your digital GitHub journal, write a paragraph explaining why following instructions exactly as they are given is important when learning how to code?
+
+In your response, consider the following:
+
+- How does precision affect the outcome of a program?
+- What can happen if steps or details are missed in coding?
+- Why is it important to develop good habits of attention to detail early in your coding journey?
+
+Remember to use Claim, Evidence, and Reasoning (C.E.R.) to structure your response.
+
+## Periods 3 & 4
+
+This week, we began learning Python programming. In your journal, write a paragraph comparing the experience of using Sphero block coding to writing Python code. Consider the following:
+
+1. **Ease of Use:** Which did you find easier to understand and why?
+2. **Problem-Solving:** How did the two approaches help you solve coding challenges?
+3. **Flexibility:** In which environment did you feel you had more control or creative freedom?
+4. **Real-World Application:** How do you think Python programming might be more useful or versatile compared to block coding in Sphero?
+
+Be sure to give specific examples from your experiences with both platforms.
+
+
 # September 16, 2024
 
 Write the following as your journal entry: This is a free week.
