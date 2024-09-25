@@ -5,8 +5,7 @@ category: Classes
 order: 4
 ---
 
-# September 24, 2024
-Howdy! I am out today and will return on Monday. Please behave for your sub. Have a great T-Bird day!
+# September 25, 2024
 
 ## Assignments
 
@@ -20,7 +19,41 @@ Howdy! I am out today and will return on Monday. Please behave for your sub. Hav
 
 ## Weekly Journal Prompt
 
-- Write the following as your journal entry: This is a free week.
+In your digital GitHub journal, write a paragraph explaining why following instructions exactly as they are given is important when learning how to code?
+
+In your response, consider the following:
+
+- How does precision affect the outcome of a program?
+- What can happen if steps or details are missed in coding?
+- Why is it important to develop good habits of attention to detail early in your coding journey?
+
+Remember to use Claim, Evidence, and Reasoning (C.E.R.) to structure your response.
+
+----
+
+# September 24, 2024
+
+## Assignments
+
+### Game Program & Design
+
+**Unity Essentials:** [Mission 2 - 3D Essentials](https://learn.unity.com/mission/mission-2-3d-essentials?pathwayId=664b6225edbc2a01973f4f19)
+
+### Mobile App Development
+
+**CodeHS Modules:** Continue the App Development modules on [CodeHS](https://codehs.com/).
+
+## Weekly Journal Prompt
+
+In your digital GitHub journal, write a paragraph explaining why following instructions exactly as they are given is important when learning how to code?
+
+In your response, consider the following:
+
+- How does precision affect the outcome of a program?
+- What can happen if steps or details are missed in coding?
+- Why is it important to develop good habits of attention to detail early in your coding journey?
+
+Remember to use Claim, Evidence, and Reasoning (C.E.R.) to structure your response.
 
 # September 20, 2024
 Howdy! I am out today and will return on Monday. Please behave for your sub. Have a great T-Bird day!
