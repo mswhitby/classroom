@@ -5,6 +5,23 @@ category: Classes
 order: 4
 ---
 
+# September 24, 2024
+Howdy! I am out today and will return on Monday. Please behave for your sub. Have a great T-Bird day!
+
+## Assignments
+
+### Game Program & Design
+
+**Unity Essentials:** [Mission 2 - 3D Essentials](https://learn.unity.com/mission/mission-2-3d-essentials?pathwayId=664b6225edbc2a01973f4f19)
+
+### Mobile App Development
+
+**CodeHS Modules:** Continue the App Development modules on [CodeHS](https://codehs.com/).
+
+## Weekly Journal Prompt
+
+- Write the following as your journal entry: This is a free week.
+
 # September 20, 2024
 Howdy! I am out today and will return on Monday. Please behave for your sub. Have a great T-Bird day!
 
