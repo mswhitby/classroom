@@ -5,6 +5,24 @@ category: Classes
 order: 6
 ---
 
+# September 26, 2024
+
+## Agenda
+
+- Everyone should have their individual python assignments. Please continue with your individual assignment.
+
+## Weekly Journal Prompt
+
+In your digital GitHub journal, write a paragraph explaining why following instructions exactly as they are given is important when learning how to code?
+
+In your response, consider the following:
+
+- How does precision affect the outcome of a program?
+- What can happen if steps or details are missed in coding?
+- Why is it important to develop good habits of attention to detail early in your coding journey?
+
+Remember to use Claim, Evidence, and Reasoning (C.E.R.) to structure your response.
+
 # September 24, 2024
 
 ## Agenda
