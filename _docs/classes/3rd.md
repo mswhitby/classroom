@@ -5,6 +5,38 @@ category: Classes
 order: 2
 ---
 
+# September 27, 2024
+
+## Agenda
+
+### 1. Code Combat
+
+- You're allowed to use the computers today.
+- Go to [codecombat.com](https://codecombat.com)
+- Select "student"
+- Class Code: StarDreamShow
+- Create an account
+- Continue your missions
+
+### 2. A Visual Introduction to Python
+
+- English: [A Visual Introduction to Python](https://hourofpython.trinket.io/a-visual-introduction-to-python#/welcome/an-hour-of-code)
+
+- Spanish: [Una introducción visual a Python](https://hourofpython.com/una-introduccion-visual-a-python/index.html)
+
+
+## Weekly Journal Prompt
+
+This week, we began learning Python programming. In your journal, write a paragraph comparing the experience of using Sphero block coding to writing Python code. Consider the following:
+
+1. **Ease of Use:** Which did you find easier to understand and why?
+2. **Problem-Solving:** How did the two approaches help you solve coding challenges?
+3. **Flexibility:** In which environment did you feel you had more control or creative freedom?
+4. **Real-World Application:** How do you think Python programming might be more useful or versatile compared to block coding in Sphero?
+
+Be sure to give specific examples from your experiences with both platforms.
+
+
 # September 26, 2024
 
 ## Agenda
