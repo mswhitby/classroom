@@ -5,6 +5,33 @@ category: Classes
 order: 1
 ---
 
+# September 26, 2024
+
+## Agenda
+
+### 1. Code Combat
+
+- You're allowed to use the computers today.
+- Go to [codecombat.com](https://codecombat.com)
+- Select "student"
+- Class Code: StarDreamShow
+- Create an account
+- Continue with your missions
+
+## Weekly Journal Prompt
+
+In your digital GitHub journal, write a paragraph explaining why following instructions exactly as they are given is important when learning how to code?
+
+In your response, consider the following:
+
+- How does precision affect the outcome of a program?
+- What can happen if steps or details are missed in coding?
+- Why is it important to develop good habits of attention to detail early in your coding journey?
+
+Remember to use Claim, Evidence, and Reasoning (C.E.R.) to structure your response.
+
+----
+
 # September 25, 2024
 
 ## Agenda
