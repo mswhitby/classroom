@@ -5,6 +5,31 @@ category: Classes
 order: 1
 ---
 
+# September 30, 2024
+
+## Agenda
+
+### 1. Code Combat
+
+- You're allowed to use the computers today.
+- Go to [codecombat.com](https://codecombat.com)
+- Select "student"
+- Class Code: StarDreamShow
+- Create an account
+- Continue with your missions
+
+### 2. A Visual Introduction to Python
+
+- English: [A Visual Introduction to Python](https://hourofpython.trinket.io/a-visual-introduction-to-python#/welcome/an-hour-of-code)
+
+- Spanish: [Una introducción visual a Python](https://hourofpython.com/una-introduccion-visual-a-python/index.html)
+
+## Weekly Journal Prompt
+
+Think about your daily routine and activities. Identify one task or process where computer science plays a role, either directly or indirectly. Write a paragraph describing how computer science is used and how it impacts your life. Consider things like apps you use, websites you visit, or even the technology behind devices you rely on. How would your day be different without this use of computer science?
+
+----
+
 # September 27, 2024
 
 ## Agenda
@@ -36,6 +61,7 @@ In your response, consider the following:
 
 Remember to use Claim, Evidence, and Reasoning (C.E.R.) to structure your response.
 
+----
 
 # September 26, 2024
 
