@@ -21,7 +21,6 @@ Think about your daily routine and activities. Identify one task or process wher
 
 ----
 
-
 # September 30, 2024
 
 ## Agenda
