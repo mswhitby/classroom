@@ -5,6 +5,31 @@ category: Classes
 order: 5
 ---
 
+# October 1, 2024
+
+## Agenda
+
+### 1. Join Khan Academy Class
+
+- Go to **khanacademy.org/join**
+- Enter your class code **M9H6BSDA**
+- Press **Continue**
+- If you don’t already have an account, press **Create a new account** - Enter your date of birth, then sign up using Google, your school email, or by creating a username 
+- Enter your grade and course.
+- Now you’re ready to start learning!
+
+### 2. Khan Academy Lesson 1: The programming platform
+
+- Welcome to Intro to Computer Science - Python!
+- Course overview
+- What is computer science?
+- Using the development environment
+- Challenge: Platform tour
+
+## Weekly Journal Prompt
+
+Think about your daily routine and activities. Identify one task or process where computer science plays a role, either directly or indirectly. Write a paragraph describing how computer science is used and how it impacts your life. Consider things like apps you use, websites you visit, or even the technology behind devices you rely on. How would your day be different without this use of computer science?
+
 # September 30, 2024
 
 ## Agenda
