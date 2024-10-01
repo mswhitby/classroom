@@ -12,9 +12,9 @@ order: 6
 - Everyone should have their individual python assignments. Please continue with your individual assignment.
 
 ## Weekly Journal Prompt
-_Assigned_: September 30, 2024
-
-_Due_: October 4, 2024
+> Assigned: September 30, 2024
+>
+>Due: October 4, 2024
 
 Think about your daily routine and activities. Identify one task or process where computer science plays a role, either directly or indirectly. Write a paragraph describing how computer science is used and how it impacts your life. Consider things like apps you use, websites you visit, or even the technology behind devices you rely on. How would your day be different without this use of computer science?
 
@@ -25,9 +25,9 @@ Think about your daily routine and activities. Identify one task or process wher
 - Everyone should have their individual python assignments. Please continue with your individual assignment.
 
 ## Weekly Journal Prompt
-_Assigned_: September 30, 2024
-
-_Due_: October 4, 2024
+> Assigned: September 30, 2024
+>
+>Due: October 4, 2024
 
 Think about your daily routine and activities. Identify one task or process where computer science plays a role, either directly or indirectly. Write a paragraph describing how computer science is used and how it impacts your life. Consider things like apps you use, websites you visit, or even the technology behind devices you rely on. How would your day be different without this use of computer science?
 
