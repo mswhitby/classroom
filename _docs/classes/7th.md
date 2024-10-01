@@ -12,6 +12,8 @@ order: 6
 - Everyone should have their individual python assignments. Please continue with your individual assignment.
 
 ## Weekly Journal Prompt
+>[!NOTE]
+>
 > Assigned: September 30, 2024
 >
 >Due: October 4, 2024
