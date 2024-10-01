@@ -5,6 +5,24 @@ category: Classes
 order: 4
 ---
 
+# October 1, 2024
+
+## Assignments
+
+### Game Program & Design
+
+**Unity Essentials:** [Mission 2 - 3D Essentials](https://learn.unity.com/mission/mission-2-3d-essentials?pathwayId=664b6225edbc2a01973f4f19)
+
+### Mobile App Development
+
+**CodeHS Modules:** Continue the App Development modules on [CodeHS](https://codehs.com/).
+
+## Weekly Journal Prompt
+
+Think about your daily routine and activities. Identify one task or process where computer science plays a role, either directly or indirectly. Write a paragraph describing how computer science is used and how it impacts your life. Consider things like apps you use, websites you visit, or even the technology behind devices you rely on. How would your day be different without this use of computer science?
+
+----
+
 # September 30, 2024
 
 ## Assignments
@@ -20,6 +38,8 @@ order: 4
 ## Weekly Journal Prompt
 
 Think about your daily routine and activities. Identify one task or process where computer science plays a role, either directly or indirectly. Write a paragraph describing how computer science is used and how it impacts your life. Consider things like apps you use, websites you visit, or even the technology behind devices you rely on. How would your day be different without this use of computer science?
+
+----
 
 # September 27, 2024
 
