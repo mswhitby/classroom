@@ -11,7 +11,7 @@ order: 4
 
 ### Game Program & Design
 
-**Unity Essentials:** [Mission 2 - 3D Essentials](https://learn.unity.com/mission/mission-2-3d-essentials?pathwayId=664b6225edbc2a01973f4f19)
+**Unity Essentials:** [Mission 3 - Audio Essentials](https://learn.unity.com/mission/mission-3-audio-essentials?pathwayId=664b6225edbc2a01973f4f19)
 
 ### Mobile App Development
 
