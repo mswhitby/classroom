@@ -21,6 +21,10 @@ order: 5
 
 ## Weekly Journal Prompt
 
+Assigned           | Due             |
+:----------------: | :-------------: |
+September 30, 2024 | October 4, 2024 |
+
 Think about your daily routine and activities. Identify one task or process where computer science plays a role, either directly or indirectly. Write a paragraph describing how computer science is used and how it impacts your life. Consider things like apps you use, websites you visit, or even the technology behind devices you rely on. How would your day be different without this use of computer science?
 
 # October 1, 2024
@@ -46,6 +50,10 @@ Think about your daily routine and activities. Identify one task or process wher
 
 ## Weekly Journal Prompt
 
+Assigned           | Due             |
+:----------------: | :-------------: |
+September 30, 2024 | October 4, 2024 |
+
 Think about your daily routine and activities. Identify one task or process where computer science plays a role, either directly or indirectly. Write a paragraph describing how computer science is used and how it impacts your life. Consider things like apps you use, websites you visit, or even the technology behind devices you rely on. How would your day be different without this use of computer science?
 
 # September 30, 2024
@@ -70,6 +78,10 @@ Think about your daily routine and activities. Identify one task or process wher
 - Challenge: Platform tour
 
 ## Weekly Journal Prompt
+
+Assigned           | Due             |
+:----------------: | :-------------: |
+September 30, 2024 | October 4, 2024 |
 
 Think about your daily routine and activities. Identify one task or process where computer science plays a role, either directly or indirectly. Write a paragraph describing how computer science is used and how it impacts your life. Consider things like apps you use, websites you visit, or even the technology behind devices you rely on. How would your day be different without this use of computer science?
 
