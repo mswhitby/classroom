@@ -5,7 +5,7 @@ category: Classes
 order: 4
 ---
 
-# October 2, 2024
+# October 3, 2024
 
 ## Assignments
 
