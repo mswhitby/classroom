@@ -33,7 +33,7 @@ Think about your daily routine and activities. Identify one task or process wher
 
 ### 1. Join Khan Academy Class
 
-- Go to **khanacademy.org/join**
+- Go to [**khanacademy.org/join**](https://www.khanacademy.org/join)
 - Enter your class code **M9H6BSDA**
 - Press **Continue**
 - If you don’t already have an account, press **Create a new account** - Enter your date of birth, then sign up using Google, your school email, or by creating a username 
@@ -62,7 +62,7 @@ Think about your daily routine and activities. Identify one task or process wher
 
 ### 1. Join Khan Academy Class
 
-- Go to **khanacademy.org/join**
+- Go to [**khanacademy.org/join**](https://www.khanacademy.org/join)
 - Enter your class code **M9H6BSDA**
 - Press **Continue**
 - If you don’t already have an account, press **Create a new account** - Enter your date of birth, then sign up using Google, your school email, or by creating a username 
