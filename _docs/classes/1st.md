@@ -5,6 +5,32 @@ category: Classes
 order: 1
 ---
 
+# October 4, 2024
+
+## Agenda
+
+### 1. A Visual Introduction to Python
+
+- English: [A Visual Introduction to Python](https://hourofpython.trinket.io/a-visual-introduction-to-python#/welcome/an-hour-of-code)
+
+    - Logical Turtles
+    - Tina asks how old you are
+    - How High Up is Tina?
+    - Functions are recipes!
+    - Make 5 cakes
+    - Say hello!
+
+
+## Weekly Journal Prompt
+
+Assigned           | Due             |
+:----------------: | :-------------: |
+September 30, 2024 | October 4, 2024 |
+
+Think about your daily routine and activities. Identify one task or process where computer science plays a role, either directly or indirectly. Write a paragraph describing how computer science is used and how it impacts your life. Consider things like apps you use, websites you visit, or even the technology behind devices you rely on. How would your day be different without this use of computer science?
+
+----
+
 # October 3, 2024
 
 ## Agenda
