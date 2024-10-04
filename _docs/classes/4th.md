@@ -5,6 +5,28 @@ category: Classes
 order: 3
 ---
 
+# October 4, 2024
+
+## Agenda
+
+### 1. Khan Academy Lesson 2: Program execution
+
+[**khanacademy.org**](https://www.khanacademy.org/)
+
+- Data types
+- Print statements and adding values
+- Tracing program execution
+- Syntax, runtime, and logic errors
+- Trace program execution
+- Debugging with stack traces
+- Challenge: Pair programming
+
+## Weekly Journal Prompt
+
+Think about your daily routine and activities. Identify one task or process where computer science plays a role, either directly or indirectly. Write a paragraph describing how computer science is used and how it impacts your life. Consider things like apps you use, websites you visit, or even the technology behind devices you rely on. How would your day be different without this use of computer science?
+
+----
+
 # October 3, 2024
 
 ## Agenda
@@ -18,7 +40,7 @@ order: 3
 - Enter your grade and course.
 - Now you’re ready to start learning!
 
-### 2. Khan Academy Lesson 1: The programming platform
+### 2. Khan Academy - Lesson 1: The programming platform
 
 - Welcome to Intro to Computer Science - Python!
 - Course overview
