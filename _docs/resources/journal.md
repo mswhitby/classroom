@@ -6,11 +6,19 @@ order: 1
 
 # September 30, 2024
 
+Assigned            | Due             |
+:-----------------: | :-------------: |
+September 30, 2024  | October 4, 2024 |
+
 Think about your daily routine and activities. Identify one task or process where computer science plays a role, either directly or indirectly. Write a paragraph describing how computer science is used and how it impacts your life. Consider things like apps you use, websites you visit, or even the technology behind devices you rely on. How would your day be different without this use of computer science?
 
 ----
 
 # September 23, 2024
+
+Assigned            | Due                |
+:-----------------: | :----------------: |
+September 23, 2024  | September 27, 2024 |
 
 ## Periods 1, 5, 6, 7, & Practicum
 
@@ -38,11 +46,19 @@ Be sure to give specific examples from your experiences with both platforms.
 
 # September 16, 2024
 
+Assigned            | Due                |
+:-----------------: | :----------------: |
+September 16, 2024  | September 20, 2024 |
+
 Write the following as your journal entry: This is a free week.
 
 ---
 
 # September 9, 2024
+
+Assigned           | Due                |
+:----------------: | :----------------: |
+September 9, 2024  | September 13, 2024 |
 
 _Reflecting on Our GitHub Journal Process_
 
@@ -55,7 +71,11 @@ Please share your thoughts, as weâ€™ll use this feedback to make sure everyoneâ€
 
 ---
 
-# September 2, 2024
+# September 3, 2024
+
+Assigned           | Due               |
+:----------------: | :---------------: |
+September 3, 2024  | September 6, 2024 |
 
 ## Periods 1, 3, 4, & 6 - Sphero BOLT
 1. List 3 sensors found on the Sphero BOLT
