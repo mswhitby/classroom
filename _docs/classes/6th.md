@@ -11,7 +11,7 @@ order: 5
 
 ### 1. Khan Academy - Lesson 4: Arithmetic expressions
 
-[khanacademy.org](khanacademy.org)
+[khanacademy.org](https://www.khanacademy.org/)
 
 - Arithmetic operators (Article)
 - Type casting (Video · 4 minutes)
