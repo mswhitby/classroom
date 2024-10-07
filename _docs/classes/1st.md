@@ -32,7 +32,7 @@ Assigned        | Due              |
 :-------------: | :--------------: |
 October 7, 2024 | October 11, 2024 |
 
-Research a job or career path in the field of computer science that interests you. In your journal entry, address the following:
+Research a job or career path in the field of computer science that interests you. In your journal entry, write a paragraph or more addressing the following:
 
 1. **Job Title:** What is the job or career path you researched?
 2. **Job Description:** What are the main responsibilities or tasks for this role?
