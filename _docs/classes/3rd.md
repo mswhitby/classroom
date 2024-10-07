@@ -23,7 +23,7 @@ order: 2
 
 Assigned        | Due              |
 :-------------: | :--------------: |
-October 7, 2024 | October 11, 2024 |
+October 7, 2024 | October 10, 2024 |
 
 Research a job or career path in the field of computer science that interests you. In your journal entry, write a paragraph or more addressing the following:
 
