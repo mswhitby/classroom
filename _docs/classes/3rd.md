@@ -11,6 +11,8 @@ order: 2
 
 ### 1. Khan Academy Lesson 2: Program execution
 
+[**khanacademy.org**](https://www.khanacademy.org/)
+
 - Data types
 - Print statements and adding values
 - Tracing program execution
