@@ -5,6 +5,44 @@ category: Classes
 order: 1
 ---
 
+# October 7, 2024
+
+## Agenda
+
+### 1. Join Khan Academy Class
+
+- Go to [**khanacademy.org/join**](https://www.khanacademy.org/join)
+- Enter your class code **W7J6URVM**
+- Press **Continue**
+- If you don’t already have an account, press **Create a new account** - Enter your date of birth, then sign up using Google, your school email, or by creating a username.
+- Enter your grade and course.
+- Now you’re ready to start learning!
+
+### 2. Khan Academy Lesson 1: The programming platform
+
+- Welcome to Intro to Computer Science - Python!
+- Course overview
+- What is computer science?
+- Using the development environment
+- Challenge: Platform tour
+
+## Weekly Journal Prompt
+
+Assigned        | Due              |
+:-------------: | :--------------: |
+October 7, 2024 | October 11, 2024 |
+
+Research a job or career path in the field of computer science that interests you. In your journal entry, address the following:
+
+1. **Job Title:** What is the job or career path you researched?
+2. **Job Description:** What are the main responsibilities or tasks for this role?
+3. **Skills Required:** What programming languages, tools, or skills are important for this position?
+4. **Education and Experience:** What level of education or experience is typically needed for this role?
+5. **Career Growth:** What opportunities for growth or advancement are available in this career?
+6. **Reflection:** How does this job align with your interests and goals in computer science?
+
+----
+
 # October 4, 2024
 
 ## Agenda
