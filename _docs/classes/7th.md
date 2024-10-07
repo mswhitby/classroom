@@ -5,6 +5,29 @@ category: Classes
 order: 6
 ---
 
+# October 7, 2024
+
+## Agenda
+
+- Everyone should have their individual python assignments. Please continue with your individual assignment.
+
+## Weekly Journal Prompt
+
+Assigned        | Due              |
+:-------------: | :--------------: |
+October 7, 2024 | October 10, 2024 |
+
+Research a job or career path in the field of computer science that interests you. In your journal entry, write a paragraph or more addressing the following:
+
+1. **Job Title:** What is the job or career path you researched?
+2. **Job Description:** What are the main responsibilities or tasks for this role?
+3. **Skills Required:** What programming languages, tools, or skills are important for this position?
+4. **Education and Experience:** What level of education or experience is typically needed for this role?
+5. **Career Growth:** What opportunities for growth or advancement are available in this career?
+6. **Reflection:** How does this job align with your interests and goals in computer science?
+
+----
+
 # October 3, 2024
 
 ## Agenda
