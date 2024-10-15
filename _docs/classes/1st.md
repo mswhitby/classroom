@@ -50,6 +50,8 @@ Write a paragraph or more focused on the following:
 
 Provide examples where coding knowledge might benefit professionals in various fields. Remember to use specific examples and reflect on how coding can impact your future career path, even if it’s not directly related to computer science.
 
+You can use the following video to help inform your response: [Computer Science is Changing Everything](https://www.youtube.com/watch?v=QvyTEx1wyOY)
+
 ----
 
 # October 10, 2024
