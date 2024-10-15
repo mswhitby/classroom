@@ -5,6 +5,32 @@ category: Classes
 order: 6
 ---
 
+# October 15, 2024
+
+## Agenda
+
+- Everyone should have their individual python assignments. Please continue with your individual assignment.
+
+## Weekly Journal Prompt
+
+Assigned         | Due              |
+:--------------: | :--------------: |
+October 15, 2024 | October 18, 2024 |
+
+Last week we looked at computer science jobs. This week we'll look at applying computer science to jobs in any industry. I'd like you to consider why is learning to code valuable regardless of the industry you choose to work in?
+
+Write a paragraph or more focused on the following:
+
+1. How can coding improve problem-solving skills?
+2. How might understanding code help you in industries that aren’t directly related to technology, such as healthcare, finance, or education?
+3. How does coding enhance creativity or collaboration?
+
+Provide examples where coding knowledge might benefit professionals in various fields. Remember to use specific examples and reflect on how coding can impact your future career path, even if it’s not directly related to computer science.
+
+You can use the following video to help inform your response: [Computer Science is Changing Everything](https://www.youtube.com/watch?v=QvyTEx1wyOY)
+
+----
+
 # October 8, 2024
 
 ## Agenda
