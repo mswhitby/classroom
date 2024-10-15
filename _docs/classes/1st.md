@@ -5,6 +5,53 @@ category: Classes
 order: 1
 ---
 
+# October 15, 2024
+
+## Python Flashcards Poster Assignment Instructions
+
+1. Get Your Flashcard:
+    - Each student or group gets one Python term (e.g., Variables, Strings, Comments).
+
+2. Create a Poster:
+
+    - Write your term at the top.
+    - Include a simple definition.
+    - Add a code example that shows how the term is used in Python.
+
+3. Work Together (for groups):
+
+    - If you’re in a group, split the work and help each other create the poster.
+
+4. Prepare to Present:
+
+    - Get ready to explain your term, definition, and example to the class.
+
+5. Present to the Class:
+
+    - Share your poster, explain your term, and show your code example.
+
+6. Classroom Display:
+
+    - After presenting, we will hang the posters around the room to use as references.
+
+## Weekly Journal Prompt
+
+Assigned        | Due               |
+:-------------: | :---------------: |
+October 15, 2024 | October 18, 2024 |
+
+Last week we looked at computer science jobs. This week we'll look at applying computer science to jobs in any industry. I'd like you to consider why is learning to code valuable regardless of the industry you choose to work in?
+
+Write a paragraph or more focused on the following:
+
+1. How can coding improve problem-solving skills?
+2. How might understanding code help you in industries that aren’t directly related to technology, such as healthcare, finance, or education?
+3. How does coding enhance creativity or collaboration?
+
+Provide examples where coding knowledge might benefit professionals in various fields. Remember to use specific examples and reflect on how coding can impact your future career path, even if it’s not directly related to computer science.
+
+----
+
 # October 10, 2024
 
 ## Agenda
