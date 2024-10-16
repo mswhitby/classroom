@@ -5,6 +5,38 @@ category: Classes
 order: 5
 ---
 
+# October 16, 2024
+
+## Python Flashcards Poster Assignment Instructions
+
+1. **Get Your Flashcard**:
+
+    - Each student or group gets one Python term (e.g., Variables, Strings, Comments).
+
+2. **Create a Poster**:
+
+    - Write your term at the top.
+    - Include a simple definition.
+    - Add a code example that shows how the term is used in Python.
+    - Write everyone's name on the back.
+
+    _Visit [w3schools](https://www.w3schools.com/python/default.asp) if you need more examples._
+
+3. Work Together (for groups):
+
+    - If you’re in a group, split the work and help each other create the poster.
+
+4. Prepare to Present:
+
+    - Get ready to explain your term, definition, and example to the class.
+    - Share your poster, explain your term, and show your code example.
+
+5. Classroom Display:
+
+    - After presenting, we will hang the posters around the room to use as references.
+
+----
+
 # October 15, 2024
 
 ## Journal Entry
