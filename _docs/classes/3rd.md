@@ -5,6 +5,24 @@ category: Classes
 order: 2
 ---
 
+# October 17, 2024
+
+## Python Flashcards Poster Assignment Instructions
+
+1. Prepare to Present:
+
+    - Get ready to explain your term, definition, and example to the class.
+
+2. Present to the Class:
+
+    - Share your poster, explain your term, and show your code example.
+
+3. Classroom Display:
+
+    - After presenting, we will hang the posters around the room to use as references.
+
+----
+
 # October 16, 2024
 
 ## Python Flashcards Poster Assignment Instructions
