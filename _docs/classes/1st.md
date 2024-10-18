@@ -5,6 +5,24 @@ category: Classes
 order: 1
 ---
 
+# October 17, 2024
+
+## Agenda
+
+### 1. Khan Academy Lesson 2: Program execution
+
+[**khanacademy.org**](https://www.khanacademy.org/)
+
+- Data types
+- Print statements and adding values
+- Tracing program execution
+- Syntax, runtime, and logic errors
+- Trace program execution
+- Debugging with stack traces
+- Challenge: Pair programming
+
+----
+
 # October 16, 2024
 
 ## Journal Entry
