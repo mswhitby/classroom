@@ -5,6 +5,24 @@ category: Classes
 order: 2
 ---
 
+# October 18, 2024
+
+## Agenda
+
+### 1. Khan Academy - Lesson 4: Arithmetic expressions
+
+[khanacademy.org](https://www.khanacademy.org/)
+
+- Arithmetic operators (Article)
+- Type casting (Video · 4 minutes)
+- Built-in functions (Article)
+- Tracing arithmetic expressions (Video · 5 minutes)
+- Evaluate arithmetic expressions (Exercise · 4 questions)
+- Python style guide (Article)
+- Challenge: Coupon codes (Challenge)
+
+----
+
 # October 17, 2024
 
 ## Python Flashcards Poster Assignment Instructions

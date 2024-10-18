@@ -5,7 +5,7 @@ category: Classes
 order: 1
 ---
 
-# October 17, 2024
+# October 18, 2024
 
 ## Agenda
 
@@ -23,7 +23,7 @@ order: 1
 
 ----
 
-# October 16, 2024
+# October 17, 2024
 
 ## Journal Entry
 
@@ -41,7 +41,7 @@ You can use the following video to help inform your response: [Computer Science 
 
 ----
 
-# October 15, 2024
+# October 16, 2024
 
 ## Python Flashcards Poster Assignment Instructions
 
