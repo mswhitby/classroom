@@ -5,6 +5,19 @@ category: Classes
 order: 3
 ---
 
+# October 18, 2024
+
+## Agenda
+
+### 1. Khan Academy - Templating webpages
+
+[khanacademy.org](https://www.khanacademy.org/)
+
+- Instructions: Profile page (Article)
+- Profile page (Project)
+
+----
+
 # October 17, 2024
 
 ## Python Flashcards Poster Assignment Instructions
