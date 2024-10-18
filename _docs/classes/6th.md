@@ -5,6 +5,25 @@ category: Classes
 order: 5
 ---
 
+# October 18, 2024
+
+## Agenda
+
+### 1. Khan Academy - Lesson 4: Arithmetic expressions
+
+[khanacademy.org](https://www.khanacademy.org/)
+
+- Make sure you've completed the first four lessons:
+
+    - The programming platform
+    - Program execution
+    - Variables
+    - Arithmetic expressions
+
+- Retry any assignments that you do not have 100% on.
+
+----
+
 # October 17, 2024
 
 ## Python Flashcards Poster Assignment Instructions
