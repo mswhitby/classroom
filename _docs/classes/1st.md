@@ -25,7 +25,6 @@ You can use the following resources to inform your response:
 - [Ethics & AI: Equal Access and Algorithmic Bias](https://www.youtube.com/watch?v=tJQSyzBUAew)
 - [Ethics & AI: Privacy & the Future of Work](https://www.youtube.com/watch?v=zNxw5gJtHLc)
 
-
 ----
 
 # October 18, 2024
