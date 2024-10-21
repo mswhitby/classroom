@@ -4,6 +4,50 @@ category: Resources
 order: 1
 ---
 
+# October 21, 2024
+
+Assigned         | Due              |
+:--------------: | :--------------: |
+October 21, 2024 | October 25, 2024 |
+
+The Benefits and Risks of Artificial Intelligence
+
+Artificial Intelligence (AI) is transforming industries like healthcare, education, and business, but it also comes with challenges. In this journal entry, write about how AI has the potential to help improve our lives. Then, consider some ways in which AI could cause harm, especially in areas like privacy, jobs, and security. Be sure to support your thoughts with examples for both sides.
+
+- Helpful: How does AI improve efficiency and innovation in industries like healthcare, education, or transportation?
+- Harmful: What are some risks AI poses, such as job automation, bias in algorithms, or cybersecurity threats?
+
+Write two paragraphs—one focusing on the benefits and one on the potential risks.
+
+You can use the following resources to inform your response:
+
+- [How AI Works](https://www.youtube.com/watch?v=Ok-xpKjKp2g)
+- [Why AI Matters](https://www.youtube.com/watch?v=dWRnCXbUDgA)
+- [Ethics & AI: Equal Access and Algorithmic Bias](https://www.youtube.com/watch?v=tJQSyzBUAew)
+- [Ethics & AI: Privacy & the Future of Work](https://www.youtube.com/watch?v=zNxw5gJtHLc)
+
+----
+
+# October 15, 2024
+
+Assigned         | Due              |
+:--------------: | :--------------: |
+October 15, 2024 | October 18, 2024 |
+
+Last week we looked at computer science jobs. This week we'll look at applying computer science to jobs in any industry. I'd like you to consider why is learning to code valuable regardless of the industry you choose to work in?
+
+Write a paragraph or more focused on the following:
+
+1. How can coding improve problem-solving skills?
+2. How might understanding code help you in industries that aren’t directly related to technology, such as healthcare, finance, or education?
+3. How does coding enhance creativity or collaboration?
+
+Provide examples where coding knowledge might benefit professionals in various fields. Remember to use specific examples and reflect on how coding can impact your future career path, even if it’s not directly related to computer science.
+
+You can use the following video to help inform your response: [Computer Science is Changing Everything](https://www.youtube.com/watch?v=QvyTEx1wyOY)
+
+----
+
 # October 10, 2024
 
 Assigned        | Due              |
