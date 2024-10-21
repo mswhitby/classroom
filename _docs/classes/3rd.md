@@ -5,8 +5,6 @@ category: Classes
 order: 2
 ---
 
----
-
 # October 21, 2024
 
 ## Journal Entry
