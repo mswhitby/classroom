@@ -55,3 +55,4 @@ Dec 16 | Portfolio Submission Submit the final portfolio website link and projec
 - [How to Create and Host Your First Website With Github](https://dev.to/alanjc/how-to-create-and-host-your-first-website-with-github-3ga4)
 - [How to Build Portfolio Website And Host It on GitHub Pages?](https://medium.com/@mansi21021/how-to-build-portfolio-website-and-host-it-on-github-pages-d9b8e277f475)
 - [IBM Web Development Basics](https://skillsbuild.org/adult-learners/explore-learning/web-developer)
+- [How to Make a Website Outline](https://colibriwp.com/blog/website-outline/)
