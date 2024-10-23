@@ -5,6 +5,26 @@ category: Classes
 order: 2
 ---
 
+# October 23, 2024
+
+## Agenda
+
+### Introduction to Zumi
+
+- Setup Zumi autonomous cars
+- Create Zumi account
+- Create GitHub Repository for Zumi Assignments
+
+# October 22, 2024
+
+## Agenda
+
+### Introduction to Zumi
+
+- Setup Zumi autonomous cars
+- Create Zumi account
+- Create GitHub Repository for Zumi Assignments
+
 # October 21, 2024
 
 ## Journal Entry
