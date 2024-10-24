@@ -5,6 +5,18 @@ category: Classes
 order: 2
 ---
 
+
+# October 24, 2024
+
+## Agenda
+
+### Zumi Robo Cars
+
+- Finish Lesson 1.1 if you did not finish yesterday.
+- Lesson 1.2
+- Show me your notebook when you've finished so that I can give you your tickets.
+- Create GitHub Repository for Zumi Assignments
+
 # October 23, 2024
 
 ## Agenda
