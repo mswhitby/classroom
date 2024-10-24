@@ -5,6 +5,49 @@ category: Classes
 order: 4
 ---
 
+# October 24, 2024
+
+## Assignments
+
+### Game Program & Design
+
+**Unity Essentials:** [Mission 5 - 2D Essentials](https://learn.unity.com/mission/mission-5-2d-essentials?pathwayId=664b6225edbc2a01973f4f19)
+
+### Mobile App Development
+
+**CodeHS Modules:** Continue the App Development modules on [CodeHS](https://codehs.com/).
+
+----
+
+# October 23, 2024
+
+## Assignments
+
+### Game Program & Design
+
+**Unity Essentials:** [Mission 4 - Programming Essentials](https://learn.unity.com/mission/mission-4-programming-essentials?pathwayId=664b6225edbc2a01973f4f19)
+
+### Mobile App Development
+
+**CodeHS Modules:** Continue the App Development modules on [CodeHS](https://codehs.com/).
+
+----
+
+# October 22, 2024
+
+## Assignments
+
+### Game Program & Design
+
+**Unity Essentials:** [Mission 4 - Programming Essentials](https://learn.unity.com/mission/mission-4-programming-essentials?pathwayId=664b6225edbc2a01973f4f19)
+
+### Mobile App Development
+
+**CodeHS Modules:** Continue the App Development modules on [CodeHS](https://codehs.com/).
+
+----
+
+
 # October 21, 2024
 
 The Benefits and Risks of Artificial Intelligence
