@@ -5,6 +5,56 @@ category: Classes
 order: 5
 ---
 
+# October 25, 2024
+
+## Agenda
+
+### Zumi Robo Cars
+
+- Finish Lessons 1.1, 1.2, and 1.3 if you have not finished them yet.
+- Lesson 1.4
+- Show me your notebook when you've finished so that I can give you your tickets.
+
+---
+
+# October 24, 2024
+
+## Agenda
+
+### Zumi Robo Cars
+
+- Finish Lessons 1.1 and 1.2 if you did not finish yesterday.
+- Lesson 1.3
+- Show me your notebook when you've finished so that I can give you your tickets.
+- Create GitHub Repository for Zumi Assignments
+
+----
+
+# October 23, 2024
+
+## Agenda
+
+### Introduction to Zumi
+
+- Finish Lesson 1.1 if you did not finish yesterday.
+- Lesson 1.2
+- Create GitHub Repository for Zumi Assignments
+
+----
+
+# October 22, 2024
+
+## Agenda
+
+### Introduction to Zumi
+
+- Setup Zumi autonomous cars
+- Create Zumi account
+- Lesson 1.1
+- Create GitHub Repository for Zumi Assignments
+
+----
+
 # October 21, 2024
 
 The Benefits and Risks of Artificial Intelligence
