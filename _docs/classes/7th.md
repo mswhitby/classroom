@@ -5,7 +5,145 @@ category: Classes
 order: 6
 ---
 
+# October 25, 2024
+
+## Agenda
+
+- Everyone should have their individual python assignments. Please continue with your individual assignment.
+- Let me know if you have any questions.
+
+## Weekly Journal Prompt
+
+Assigned         | Due              |
+:--------------: | :--------------: |
+October 21, 2024 | October 25, 2024 |
+
+The Benefits and Risks of Artificial Intelligence
+
+Artificial Intelligence (AI) is transforming industries like healthcare, education, and business, but it also comes with challenges. In this journal entry, write about how AI has the potential to help improve our lives. Then, consider some ways in which AI could cause harm, especially in areas like privacy, jobs, and security. Be sure to support your thoughts with examples for both sides.
+
+- Helpful: How does AI improve efficiency and innovation in industries like healthcare, education, or transportation?
+- Harmful: What are some risks AI poses, such as job automation, bias in algorithms, or cybersecurity threats?
+
+Write two paragraphs—one focusing on the benefits and one on the potential risks.
+
+You can use the following resources to inform your response:
+
+- [How AI Works](https://www.youtube.com/watch?v=Ok-xpKjKp2g)
+- [Why AI Matters](https://www.youtube.com/watch?v=dWRnCXbUDgA)
+- [Ethics & AI: Equal Access and Algorithmic Bias](https://www.youtube.com/watch?v=tJQSyzBUAew)
+- [Ethics & AI: Privacy & the Future of Work](https://www.youtube.com/watch?v=zNxw5gJtHLc)
+
+----
+
+
+# October 24, 2024
+
+## Agenda
+
+- Everyone should have their individual python assignments. Please continue with your individual assignment.
+- Let me know if you have any questions.
+
+## Weekly Journal Prompt
+
+Assigned         | Due              |
+:--------------: | :--------------: |
+October 21, 2024 | October 25, 2024 |
+
+The Benefits and Risks of Artificial Intelligence
+
+Artificial Intelligence (AI) is transforming industries like healthcare, education, and business, but it also comes with challenges. In this journal entry, write about how AI has the potential to help improve our lives. Then, consider some ways in which AI could cause harm, especially in areas like privacy, jobs, and security. Be sure to support your thoughts with examples for both sides.
+
+- Helpful: How does AI improve efficiency and innovation in industries like healthcare, education, or transportation?
+- Harmful: What are some risks AI poses, such as job automation, bias in algorithms, or cybersecurity threats?
+
+Write two paragraphs—one focusing on the benefits and one on the potential risks.
+
+You can use the following resources to inform your response:
+
+- [How AI Works](https://www.youtube.com/watch?v=Ok-xpKjKp2g)
+- [Why AI Matters](https://www.youtube.com/watch?v=dWRnCXbUDgA)
+- [Ethics & AI: Equal Access and Algorithmic Bias](https://www.youtube.com/watch?v=tJQSyzBUAew)
+- [Ethics & AI: Privacy & the Future of Work](https://www.youtube.com/watch?v=zNxw5gJtHLc)
+
+----
+
+
+# October 23, 2024
+
+## Agenda
+
+- Everyone should have their individual python assignments. Please continue with your individual assignment.
+- Let me know if you have any questions.
+
+## Weekly Journal Prompt
+
+Assigned         | Due              |
+:--------------: | :--------------: |
+October 21, 2024 | October 25, 2024 |
+
+The Benefits and Risks of Artificial Intelligence
+
+Artificial Intelligence (AI) is transforming industries like healthcare, education, and business, but it also comes with challenges. In this journal entry, write about how AI has the potential to help improve our lives. Then, consider some ways in which AI could cause harm, especially in areas like privacy, jobs, and security. Be sure to support your thoughts with examples for both sides.
+
+- Helpful: How does AI improve efficiency and innovation in industries like healthcare, education, or transportation?
+- Harmful: What are some risks AI poses, such as job automation, bias in algorithms, or cybersecurity threats?
+
+Write two paragraphs—one focusing on the benefits and one on the potential risks.
+
+You can use the following resources to inform your response:
+
+- [How AI Works](https://www.youtube.com/watch?v=Ok-xpKjKp2g)
+- [Why AI Matters](https://www.youtube.com/watch?v=dWRnCXbUDgA)
+- [Ethics & AI: Equal Access and Algorithmic Bias](https://www.youtube.com/watch?v=tJQSyzBUAew)
+- [Ethics & AI: Privacy & the Future of Work](https://www.youtube.com/watch?v=zNxw5gJtHLc)
+
+----
+
+
+# October 22, 2024
+
+## Agenda
+
+- Everyone should have their individual python assignments. Please continue with your individual assignment.
+- Let me know if you have any questions.
+
+## Weekly Journal Prompt
+
+Assigned         | Due              |
+:--------------: | :--------------: |
+October 21, 2024 | October 25, 2024 |
+
+The Benefits and Risks of Artificial Intelligence
+
+Artificial Intelligence (AI) is transforming industries like healthcare, education, and business, but it also comes with challenges. In this journal entry, write about how AI has the potential to help improve our lives. Then, consider some ways in which AI could cause harm, especially in areas like privacy, jobs, and security. Be sure to support your thoughts with examples for both sides.
+
+- Helpful: How does AI improve efficiency and innovation in industries like healthcare, education, or transportation?
+- Harmful: What are some risks AI poses, such as job automation, bias in algorithms, or cybersecurity threats?
+
+Write two paragraphs—one focusing on the benefits and one on the potential risks.
+
+You can use the following resources to inform your response:
+
+- [How AI Works](https://www.youtube.com/watch?v=Ok-xpKjKp2g)
+- [Why AI Matters](https://www.youtube.com/watch?v=dWRnCXbUDgA)
+- [Ethics & AI: Equal Access and Algorithmic Bias](https://www.youtube.com/watch?v=tJQSyzBUAew)
+- [Ethics & AI: Privacy & the Future of Work](https://www.youtube.com/watch?v=zNxw5gJtHLc)
+
+----
+
 # October 21, 2024
+
+## Agenda
+
+- Everyone should have their individual python assignments. Please continue with your individual assignment.
+- Let me know if you have any questions.
+
+## Weekly Journal Prompt
+
+Assigned         | Due              |
+:--------------: | :--------------: |
+October 21, 2024 | October 25, 2024 |
 
 The Benefits and Risks of Artificial Intelligence
 
