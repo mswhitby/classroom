@@ -48,7 +48,7 @@ You can use the following video to help inform your response: [Computer Science 
 
 ----
 
-# October 10, 2024
+# October 7, 2024
 
 Assigned        | Due              |
 :-------------: | :--------------: |
