@@ -5,6 +5,14 @@ category: Classes
 order: 3
 ---
 
+# October 28, 2024
+
+## Journal Entry
+
+With the upcoming election, technology plays a huge role in various aspects, from voting machines to social media. How do you think computer science and technology impact the election process? Discuss one positive impact and one potential challenge or concern. Be sure to provide specific examples of how programming, security, or technology influences elections today.
+
+----
+
 # October 25, 2024
 
 ## Agenda
