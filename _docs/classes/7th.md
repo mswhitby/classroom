@@ -36,7 +36,6 @@ You can use the following resources to inform your response:
 
 ----
 
-
 # October 24, 2024
 
 ## Agenda
@@ -68,7 +67,6 @@ You can use the following resources to inform your response:
 
 ----
 
-
 # October 23, 2024
 
 ## Agenda
@@ -99,7 +97,6 @@ You can use the following resources to inform your response:
 - [Ethics & AI: Privacy & the Future of Work](https://www.youtube.com/watch?v=zNxw5gJtHLc)
 
 ----
-
 
 # October 22, 2024
 

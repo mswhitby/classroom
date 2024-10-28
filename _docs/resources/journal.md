@@ -4,6 +4,16 @@ category: Resources
 order: 1
 ---
 
+# October 28, 2024
+
+Assigned         | Due              |
+:--------------: | :--------------: |
+October 28, 2024 | November 1, 2024 |
+
+With the upcoming election, technology plays a huge role in various aspects, from voting machines to social media. How do you think computer science and technology impact the election process? Discuss one positive impact and one potential challenge or concern. Be sure to provide specific examples of how programming, security, or technology influences elections today.
+
+----
+
 # October 21, 2024
 
 Assigned         | Due              |
