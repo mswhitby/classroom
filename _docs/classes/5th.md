@@ -5,6 +5,28 @@ category: Classes
 order: 4
 ---
 
+# October 28, 2024
+
+## Journal Entry
+
+With the upcoming election, technology plays a huge role in various aspects, from voting machines to social media. How do you think computer science and technology impact the election process? Discuss one positive impact and one potential challenge or concern. Be sure to provide specific examples of how programming, security, or technology influences elections today.
+
+----
+
+# October 25, 2024
+
+## Assignments
+
+### Game Program & Design
+
+**Unity Essentials:** [Mission 5 - 2D Essentials](https://learn.unity.com/mission/mission-5-2d-essentials?pathwayId=664b6225edbc2a01973f4f19)
+
+### Mobile App Development
+
+**CodeHS Modules:** Continue the App Development modules on [CodeHS](https://codehs.com/).
+
+----
+
 # October 24, 2024
 
 ## Assignments
