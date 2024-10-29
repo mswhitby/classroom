@@ -5,6 +5,18 @@ category: Classes
 order: 2
 ---
 
+# October 29, 2024
+
+## Agenda
+
+### Zumi Robo Cars
+
+- Finish Lessons 1.1 through 1.3 if you have not finished them yet.
+- Lesson 1.4
+- Show me your notebook when you've finished so that I can give you your tickets.
+
+---
+
 # October 28, 2024
 
 ## Journal Entry
