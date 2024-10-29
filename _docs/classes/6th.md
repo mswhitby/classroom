@@ -12,7 +12,7 @@ order: 5
 ### Zumi Robo Cars
 
 - Finish Lessons 1.1 through 1.4 if you have not finished them yet.
-- Lesson 1.5
+- Lesson 2.1
 - Show me your notebook when you've finished so that I can give you your tickets.
 
 ---
