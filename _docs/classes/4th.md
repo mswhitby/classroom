@@ -5,6 +5,18 @@ category: Classes
 order: 3
 ---
 
+# October 31, 2024
+
+## Agenda
+
+### Python Fundamentals: Test 1
+
+- The test is posted on Canvas under the "Tests" Module
+- You can use the [W3Schools](https://www.w3schools.com/python/trypython.asp?filename=demo_default) Online Python Compiler to check your answers.
+- You have unlimited attempts, and I encourage you to retake the test as many times as you need to increase your score.
+
+----
+
 # October 30, 2024
 
 ## Agenda
