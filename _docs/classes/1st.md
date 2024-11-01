@@ -5,6 +5,24 @@ category: Classes
 order: 1
 ---
 
+# November 1, 2024
+
+## Agenda
+
+### Python Fundamentals: Test 1
+
+- Complete Python Fundamentals: Test 1 if you did not complete it yesterday.
+- The test is posted on Canvas under the "Tests" Module
+- You can use the [W3Schools](https://www.w3schools.com/python/trypython.asp?filename=demo_default) Online Python Compiler to check your answers.
+- You have unlimited attempts, and I encourage you to retake the test as many times as you need to increase your score.
+
+### Make-Up Missing Journals
+
+- If you have any missing journals, today is the last day to make them up before progress reports.
+- You can find the journal prompts [here](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md).
+
+----
+
 # October 31, 2024
 
 ## Agenda
