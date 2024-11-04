@@ -5,6 +5,28 @@ category: Classes
 order: 2
 ---
 
+# November 4, 2024
+
+## Agenda
+
+### Journal Entry
+
+In today’s digital world, sharing and publishing content online is more common than ever. Whether you’re contributing to a project, posting on social media, or submitting work for class, it’s important to think about the kinds of information you’re sharing and how it can be used.
+
+Reflect on the following questions:
+
+1. Why is it important to protect your personal and sensitive information when publishing online?
+
+2. What steps can you take to ensure that the information you share on platforms like GitHub or social media remains secure?
+
+3. Have you ever shared something online that you later realized was too personal? How would you handle that differently now?
+
+4. How can you balance being open and collaborative in online spaces (like working with others on coding projects) while still protecting your privacy?
+
+Write a paragraph or more considering these questions. Include examples of actions you can take to safeguard your own data, and reflect on why being cautious online is important for your personal and professional life.
+
+----
+
 # November 1, 2024
 
 ## Agenda
