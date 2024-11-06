@@ -5,6 +5,14 @@ category: Classes
 order: 5
 ---
 
+# November 6, 2024
+
+Howdy! I'm out for today and will be back tomorrow. Please behave for your sub. 
+
+Your assignment is posted on canvas—Calculations with Variables. If you cannot access the assignment on Canvas.
+
+Have a great day, and I’ll see you tomorrow!
+
 # November 4, 2024
 
 ## Agenda
