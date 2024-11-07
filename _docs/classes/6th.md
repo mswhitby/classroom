@@ -5,6 +5,26 @@ category: Classes
 order: 5
 ---
 
+# November 7, 2024
+
+## Agenda
+
+### 1. Calculations with Variables
+
+- Finish **Calculations with Variables** on Canvas if you did not finish yesterday
+
+### 2. Zumi Robo Cars
+
+- Lesson 2.3 - Shapes with Loops
+- Show me your notebook when you've finished so that I can give you your tickets.
+
+### 3. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Monday.
+
+----
+
 # November 6, 2024
 
 Howdy! I'm out for today and will be back tomorrow. Please behave for your sub. 
