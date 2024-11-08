@@ -9,10 +9,9 @@ order: 5
 
 ## Agenda
 
-### 1. Zumi Robo Cars
+### 1. Inputs and Variables
 
-- Lesson 2.2 - Gyroscope
-- Show me your notebook when you've finished so that I can give you your tickets.
+- Your assignment is posted on Canvas under the "Assignments" module.
 
 ### 2. Journal
 
