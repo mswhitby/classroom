@@ -5,6 +5,22 @@ category: Classes
 order: 5
 ---
 
+# November 8, 2024
+
+## Agenda
+
+### 1. Zumi Robo Cars
+
+- Lesson 2.2 - Gyroscope
+- Show me your notebook when you've finished so that I can give you your tickets.
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Monday.
+
+----
+
 # November 7, 2024
 
 ## Agenda
