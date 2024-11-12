@@ -9,15 +9,15 @@ order: 2
 
 ## Agenda
 
-### Journal Entry
+### 1. Journal Entry
 
 Choose a current event that interests you or impacts your community.
 
-1. In a paragraph, briefly summarize the event and explain how it relates to any of the concepts we’ve been learning in class (e.g., problem-solving, technology, or data analysis).
+- In a paragraph, briefly summarize the event and explain how it relates to any of the concepts we’ve been learning in class (e.g., problem-solving, technology, or data analysis).
 
-2. In a second paragraph, reflect on how advancements in computer science or technology could play a role in addressing this event or similar issues in the future.
+- In a second paragraph, reflect on how advancements in computer science or technology could play a role in addressing this event or similar issues in the future.
 
-### 1. Zumi Robo Cars
+### 2. Zumi Robo Cars
 
 - Lesson 2.3 - Shapes with Loops
 - Show me your notebook when you've finished so that I can give you your tickets.
