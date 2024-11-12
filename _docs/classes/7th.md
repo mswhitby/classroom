@@ -15,7 +15,7 @@ Choose a current event that interests you or impacts your community.
 
 - In a second paragraph, reflect on how advancements in computer science or technology could play a role in addressing this event or similar issues in the future.
 
-### 2. Python Coding Project
+## 2. Python Coding Project
 
 I've posted an out line for your Python Project. I will provide more detailed instructions by next week. This week, you should focus on your project proposal. You can find the project details [here](https://github.com/mswhitby/WHSTechNotes/blob/main/cs1_project.md).
 
