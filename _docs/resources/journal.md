@@ -4,6 +4,14 @@ category: Resources
 order: 1
 ---
 
+# November 12, 2024
+
+Choose a current event that interests you or impacts your community.
+
+1. In a paragraph, briefly summarize the event and explain how it relates to any of the concepts we’ve been learning in class (e.g., problem-solving, technology, or data analysis).
+
+2. In a second paragraph, reflect on how advancements in computer science or technology could play a role in addressing this event or similar issues in the future.
+
 # November 4, 2024
 
 In today’s digital world, sharing and publishing content online is more common than ever. Whether you’re contributing to a project, posting on social media, or submitting work for class, it’s important to think about the kinds of information you’re sharing and how it can be used.
