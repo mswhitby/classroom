@@ -7,13 +7,17 @@ order: 6
 
 # November 12, 2024
 
-## Journal Entry
+## 1. Journal Entry
 
 Choose a current event that interests you or impacts your community.
 
 - In a paragraph, briefly summarize the event and explain how it relates to any of the concepts we’ve been learning in class (e.g., problem-solving, technology, or data analysis).
 
 - In a second paragraph, reflect on how advancements in computer science or technology could play a role in addressing this event or similar issues in the future.
+
+### 2. Python Coding Project
+
+I've posted an out line for your Python Project. I will provide more detailed instructions by next week. This week, you should focus on your project proposal. You can find the project details [here](https://github.com/mswhitby/WHSTechNotes/blob/main/cs1_project.md).
 
 # November 4, 2024
 
