@@ -7,8 +7,13 @@ order: 1
 
 # November 12, 2024
 
-Choose a current event that interests you or impacts your community. Briefly summarize the event and explain how it relates to any of the concepts we’ve been learning in class (e.g., problem-solving, technology, or data analysis). Reflect on how advancements in computer science or technology could play a role in addressing this event or similar issues in the future.”
+### Journal Entry
 
+Choose a current event that interests you or impacts your community.
+
+1. In a paragraph, briefly summarize the event and explain how it relates to any of the concepts we’ve been learning in class (e.g., problem-solving, technology, or data analysis).
+
+2. In a second paragraph, reflect on how advancements in computer science or technology could play a role in addressing this event or similar issues in the future.
 
 # November 8, 2024
 
