@@ -5,6 +5,22 @@ category: Classes
 order: 1
 ---
 
+# November 13, 2024
+
+## Agenda
+
+### 1. Zumi Robo Cars
+
+- Lesson 2.3 - Shapes with Loops
+- Show me your notebook when you've finished so that I can give you your tickets.
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Tuesday, November 12, 2024.
+
+----
+
 # November 12, 2024
 
 ### Journal Entry
