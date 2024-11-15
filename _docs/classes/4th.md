@@ -5,6 +5,22 @@ category: Classes
 order: 3
 ---
 
+# November 14, 2024
+
+## Agenda
+
+### 1. Zumi Robo Cars
+
+- Make sure you've finished all Zumi lessons up to 3.1
+- Show me your notebook when you've finished so that you can receive credit
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Tuesday, November 12, 2024.
+
+----
+
 # November 15, 2024
 
 ## Agenda
