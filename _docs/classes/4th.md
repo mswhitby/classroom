@@ -5,6 +5,40 @@ category: Classes
 order: 3
 ---
 
+# November 15, 2024
+
+## Agenda
+
+### 1. Zumi Robo Cars
+
+- Lesson 3.1 - IR Sensors
+- Show me your notebook when you've finished so that I can give you your tickets.
+- Finish any Zumi assignments you have not finished yet.
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Tuesday, November 12, 2024.
+
+----
+
+# November 14, 2024
+
+## Agenda
+
+### 1. Zumi Robo Cars
+
+- Lesson 2.4 - Driving Decisions
+- Show me your notebook when you've finished so that I can give you your tickets.
+- Finish any Zumi assignments you have not finished yet.
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Tuesday, November 12, 2024.
+
+----
+
 # November 13, 2024
 
 ## Agenda
