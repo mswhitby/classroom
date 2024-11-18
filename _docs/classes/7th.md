@@ -5,6 +5,16 @@ category: Classes
 order: 6
 ---
 
+# November 18, 2024
+
+## Agenda
+
+### 1. Journal
+
+The holiday season is a time of celebration, which often revolves around food. From harvesting crops to transporting goods to local stores, technology plays a major role in getting our holiday meals onto our tables. Check out this video: [Transforming the Food Industry with Technology](https://www.youtube.com/watch?v=KtgCVfPdlNo).
+
+**Prompt:** Reflect on how technology has changed the way we grow, distribute, and purchase food. In what ways does technology make food more affordable and accessible during the holiday season? Are there any negative effects of relying on technology for our food supply? Write a paragraph explaining your thoughts with examples.
+
 # November 12, 2024
 
 ## 1. Journal Entry
