@@ -15,7 +15,10 @@ order: 1
 
 ### 2. Journal 
 
-- What holiday are we celebrating next week?
+#### Prompt
+What holiday are we celebrating next week?
+
+#### Make-Up
 - Make up any Journal Entries you have not yet completed
 - This is the last week to turn them in
 
