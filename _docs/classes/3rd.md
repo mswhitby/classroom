@@ -5,6 +5,18 @@ category: Classes
 order: 2
 ---
 
+# November 18, 2024
+
+## Agenda
+
+### 1. Zumi Robo Cars
+
+- Lesson 3.2 - Obstacle Avoidance
+- Show me your notebook when you've finished so that you will receive
+credit. 
+
+----
+
 # November 15, 2024
 
 ## Agenda
