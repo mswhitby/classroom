@@ -5,7 +5,7 @@ category: Classes
 order: 3
 ---
 
-# November 14, 2024
+# November 18, 2024
 
 ## Agenda
 
