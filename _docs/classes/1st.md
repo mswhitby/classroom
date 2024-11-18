@@ -5,6 +5,20 @@ category: Classes
 order: 1
 ---
 
+# November 18, 2024
+
+## Agenda
+
+### 1. Inputs and Variables
+
+- The assignment is on Canvas
+
+### 2. Journal 
+
+- What holiday are we celebrating next week? 
+- Make up any Journal Entries you have not yet completed
+- This is the last week to turn them in
+
 # November 14, 2024
 
 ## Agenda
