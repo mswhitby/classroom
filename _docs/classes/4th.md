@@ -5,13 +5,14 @@ category: Classes
 order: 3
 ---
 
+
 # November 19, 2024
 
 ## Agenda
 
-### 1. Robot Island
+### 1. Inputs and Variables
 
-- Complete all levels of [Robot Island](https://www.abcya.com/games/robot_islands)
+- You can find your assignment on Canvas under "Modules"
 
 ### 2. Journal
 

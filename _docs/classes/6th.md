@@ -5,11 +5,37 @@ category: Classes
 order: 5
 ---
 
+# November 19, 2024
+
+## Agenda
+
+### 1. Robot Island
+
+- Complete all levels of [Robot Island](https://www.abcya.com/games/robot_islands)
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Tuesday, November 18, 2024.
+
+----
+
 # November 18, 2024
+
+## Agenda
+
+### 1. Journal
 
 The holiday season is a time of celebration, which often revolves around food. From harvesting crops to transporting goods to local stores, technology plays a major role in getting our holiday meals onto our tables. Check out this video: [Transforming the Food Industry with Technology](https://www.youtube.com/watch?v=KtgCVfPdlNo).
 
 **Prompt:** Reflect on how technology has changed the way we grow, distribute, and purchase food. In what ways does technology make food more affordable and accessible during the holiday season? Are there any negative effects of relying on technology for our food supply? Write a paragraph explaining your thoughts with examples.
+
+### 2. Zumi Robo Cars
+
+- Make sure you've finished all Zumi lessons up to 3.1
+- Show me your notebook when you've finished so that you can receive credit
+
+----
 
 # November 14, 2024
 
