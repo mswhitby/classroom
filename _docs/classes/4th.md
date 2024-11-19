@@ -9,6 +9,21 @@ order: 3
 
 ## Agenda
 
+### 1. Inputs and Variables
+
+- You can find your assignment on Canvas under "Modules"
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Tuesday, November 12, 2024.
+
+----
+
+# November 18, 2024
+
+## Agenda
+
 ### 1. Journal
 
 The holiday season is a time of celebration, which often revolves around food. From harvesting crops to transporting goods to local stores, technology plays a major role in getting our holiday meals onto our tables. Check out this video: [Transforming the Food Industry with Technology](https://www.youtube.com/watch?v=KtgCVfPdlNo).
