@@ -9,6 +9,16 @@ order: 1
 
 ## Agenda
 
+### 1. Test - Jet's Pizza
+
+- [Jet's Pizza](https://github.com/deandrawhitby/jets_pizza_2024/tree/main)
+- Fork my Jet's Pizza repository
+- Write your solution in the file main.py
+
+# November 18, 2024
+
+## Agenda
+
 ### 1. Inputs and Variables
 
 - The assignment is on Canvas
