@@ -14,6 +14,8 @@ order: 1
 - [Jet's Pizza](https://github.com/deandrawhitby/jets_pizza_2024/tree/main)
 - Fork my Jet's Pizza repository
 - Write your solution in the file main.py
+- You can use [Programiz](https://www.programiz.com/python-programming/online-compiler/) to test your solution.
+- You can use [W3schools](https://www.w3schools.com/python/default.asp) for a reference.
 
 # November 18, 2024
 
