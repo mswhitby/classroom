@@ -5,18 +5,18 @@ category: Classes
 order: 3
 ---
 
-# November 18, 2024
+# November 19, 2024
 
 ## Agenda
 
-### 1. Inputs and Variables
+### 1. Robot Island
 
-- You can find your assignment on Canvas under "Modules"
+- Complete all levels of [Robot Island](https://www.abcya.com/games/robot_islands)
 
 ### 2. Journal
 
 - Complete your journal entry for this week if you have not completed it yet.
-- The journal entry was assigned Tuesday, November 12, 2024.
+- The journal entry was assigned Tuesday, November 18, 2024.
 
 ----
 
