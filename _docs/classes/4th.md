@@ -5,6 +5,23 @@ category: Classes
 order: 3
 ---
 
+# November 20, 2024
+
+## Agenda
+
+### 1. Extra Credit: Robot Islands
+
+If you would like to replace a missing assignment grade, you can complete Robot Islands. You must complete all levels to replace a grade. 
+
+- [Robot Islands 1](https://www.abcya.com/games/robot_islands) (1 grade)
+- [Robot Islands 2](https://www.abcya.com/games/robot_islands_2) (A 2nd grade)
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Tuesday, November 18, 2024.
+
+----
 
 # November 19, 2024
 
