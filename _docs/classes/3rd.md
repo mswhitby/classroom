@@ -5,6 +5,21 @@ category: Classes
 order: 2
 ---
 
+# November 20, 2024
+
+## Agenda
+
+### 1. Inputs and Variables
+
+- Complete **Inputs and Variables** on Canvas.
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Tuesday.
+
+----
+
 # November 19, 2024
 
 The holiday season is a time of celebration, which often revolves around food. From harvesting crops to transporting goods to local stores, technology plays a major role in getting our holiday meals onto our tables. Check out this video: [Transforming the Food Industry with Technology](https://www.youtube.com/watch?v=KtgCVfPdlNo).
