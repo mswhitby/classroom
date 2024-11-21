@@ -5,6 +5,24 @@ category: Classes
 order: 2
 ---
 
+# November 21, 2024
+
+## Agenda
+
+### Python Fundamentals: Test 2
+
+- Complete Python Fundamentals: Test 2
+- The test is posted on Canvas under the "Tests" Module
+- You can use the [W3Schools Online Python Compiler](https://www.w3schools.com/python/trypython.asp?filename=demo_default) to check your answers.
+- You have unlimited attempts, and I encourage you to retake the test as many times as you need to increase your score.
+
+### Make-Up Missing Journals
+
+- If you have any missing journals, today is the last day to make them up before progress reports.
+- You can find the journal prompts [here](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md).
+
+----
+
 # November 20, 2024
 
 ## Agenda
