@@ -5,6 +5,31 @@ category: Classes
 order: 1
 ---
 
+# November 22, 2024
+
+## Agenda
+- Complete the Jet's Pizza test problem
+- Complete this week's journal, which was assigned November 18, 2024
+- Check your grade on Skyward and make-up any missing work
+- Today is the last day to turn in late work
+- Enjoy your week off!
+
+----
+
+# November 21, 2024
+
+## Agenda
+
+### 1. Test - Jet's Pizza
+
+- Continue your test: [Jet's Pizza](https://github.com/deandrawhitby/jets_pizza_2024/tree/main)
+- Fork my Jet's Pizza repository
+- Write your solution in the file main.py
+- You can use [Programiz](https://www.programiz.com/python-programming/online-compiler/) to test your solution.
+- You can use [W3schools](https://www.w3schools.com/python/default.asp) for a reference.
+
+----
+
 # November 20, 2024
 
 ## Agenda
