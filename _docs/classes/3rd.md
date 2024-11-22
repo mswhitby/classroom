@@ -5,6 +5,17 @@ category: Classes
 order: 2
 ---
 
+# November 22, 2024
+
+## Agenda
+- Complete or retake **Python Fundamentals: Test 2**
+- Complete this week's journal, which was assigned November 19, 2024
+- Check your grade on Skyward and turn in any missing work
+- Today is the last day to turn in late work
+- Enjoy your week off!
+
+----
+
 # November 21, 2024
 
 ## Agenda
