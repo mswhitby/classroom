@@ -4,6 +4,30 @@ category: Resources
 order: 1
 ---
 
+# December 2, 2024
+
+## Agenda
+
+### Journal Entry
+
+**1. Prompt:**
+
+Artificial intelligence (AI) continues to shape the way we live and work. This week, research one recent development in AI or another emerging technology (e.g., quantum computing, renewable energy tech, AR/VR, etc.). Summarize what you learned and share your thoughts on how it could impact society, your future career, or daily life.
+
+**2. Follow-Up Questions:**
+
+• What excites or concerns you about this technology?
+
+• Can you think of an innovative way this technology could be used in your field of interest?
+
+• What ethical considerations might need to be addressed as this technology evolves?
+
+**Tip:**
+
+Include the source of your research and make your response at least 5-7 sentences.
+
+----
+
 # November 18, 2024
 
 The holiday season is a time of celebration, which often revolves around food. From harvesting crops to transporting goods to local stores, technology plays a major role in getting our holiday meals onto our tables. Check out this video: [Transforming the Food Industry with Technology](https://www.youtube.com/watch?v=KtgCVfPdlNo).
@@ -15,7 +39,6 @@ The holiday season is a time of celebration, which often revolves around food. F
 Choose a current event that interests you or impacts your community.
 
 1. In a paragraph, briefly summarize the event and explain how it relates to any of the concepts we’ve been learning in class (e.g., problem-solving, technology, or data analysis).
-s
 2. In a second paragraph, reflect on how advancements in computer science or technology could play a role in addressing this event or similar issues in the future.
 
 # November 4, 2024
