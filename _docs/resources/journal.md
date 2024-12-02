@@ -34,12 +34,16 @@ The holiday season is a time of celebration, which often revolves around food. F
 
 **Prompt:** Reflect on how technology has changed the way we grow, distribute, and purchase food. In what ways does technology make food more affordable and accessible during the holiday season? Are there any negative effects of relying on technology for our food supply? Write a paragraph explaining your thoughts with examples.
 
+----
+
 # November 12, 2024
 
 Choose a current event that interests you or impacts your community.
 
 1. In a paragraph, briefly summarize the event and explain how it relates to any of the concepts we’ve been learning in class (e.g., problem-solving, technology, or data analysis).
 2. In a second paragraph, reflect on how advancements in computer science or technology could play a role in addressing this event or similar issues in the future.
+
+----
 
 # November 4, 2024
 
