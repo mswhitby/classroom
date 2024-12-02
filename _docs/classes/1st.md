@@ -5,6 +5,30 @@ category: Classes
 order: 1
 ---
 
+# November 12, 2024
+
+## Agenda
+
+### Journal Entry
+
+1. Prompt:
+
+Artificial intelligence (AI) continues to shape the way we live and work. This week, research one recent development in AI or another emerging technology (e.g., quantum computing, renewable energy tech, AR/VR, etc.). Summarize what you learned and share your thoughts on how it could impact society, your future career, or daily life.
+
+2. Follow-Up Questions:
+
+• What excites or concerns you about this technology?
+
+• Can you think of an innovative way this technology could be used in your field of interest?
+
+• What ethical considerations might need to be addressed as this technology evolves?
+
+Tip:
+
+Include the source of your research and make your response at least 5-7 sentences.
+
+----
+
 # November 22, 2024
 
 ## Agenda
