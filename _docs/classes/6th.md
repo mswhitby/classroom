@@ -5,6 +5,21 @@ category: Classes
 order: 5
 ---
 
+# December 3, 2024
+
+## Agenda
+
+### 1. Python Printing
+
+- Complete **Python Printing** on Canvas
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Monday, December 2, 2024.
+
+----
+
 # December 2, 2024
 
 ## Agenda
