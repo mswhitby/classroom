@@ -9,7 +9,7 @@ order: 1
 
 ## Agenda
 
-### 1. Minecraft Hour of Code Designer
+### 1. Minecraft Designer
 
 To aceess the assignment, you must log into Code.org using your Clever account. Please do the following:
 
