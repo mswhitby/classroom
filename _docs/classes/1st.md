@@ -5,6 +5,32 @@ category: Classes
 order: 1
 ---
 
+# December 4, 2024
+
+## Agenda
+
+### 1. Lesson 1: Minecraft Hour of Code Designer
+
+To aceess the assignment, you must log into Code.org using your Clever account. Please do the following:
+
+1. Log in to their Clever account:
+
+  a. Go to [clever.com](https://www.clever.com/).
+  b. Click on 'Sign in as a student' at the top right.
+  c. Search for **Karen Wagner** 
+  d. Log in with Google
+
+2. Click on the Code.org logo on the Clever dashboard. The logo looks like this:
+   ![Code.org logo](https://studio.code.org/shared/images/clever_code_org_logo.png)
+
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Monday, December 2, 2024.
+
+----
+
 # December 3, 2024
 
 ## Agenda
