@@ -14,12 +14,13 @@ order: 1
 To aceess the assignment, you must log into Code.org using your Clever account. Please do the following:
 
   1. Log in to their Clever account:
+     
     - Go to [clever.com](https://www.clever.com/).
     - Click on 'Sign in as a student' at the top right
     - Search for **Karen Wagner**
     - Log in with Google
   
-  2. Click on the Code.org logo on the Clever dashboard. The logo looks like this:
+  3. Click on the Code.org logo on the Clever dashboard. The logo looks like this:
      
      ![Code.org logo](https://studio.code.org/shared/images/clever_code_org_logo.png)
 
