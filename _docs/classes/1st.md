@@ -14,8 +14,7 @@ order: 1
 To aceess the assignment, you must log into Code.org using your Clever account. Please do the following:
 
   1. Log in to your Clever account:
-      - Go to [clever.com](https://www.clever.com/).
-      - Click on 'Sign in as a student' at the top right
+      - [Clever](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8)
       - Search for **Karen Wagner**
       - Log in with Google
   
