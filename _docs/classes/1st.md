@@ -5,6 +5,26 @@ category: Classes
 order: 1
 ---
 
+# December 5, 2024
+
+## Agenda
+
+### 1. Minecraft Designer
+
+- To access the assignment, you must log into Code.org using your Clever account. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Finish **Lesson 1: Minecraft Hour of Code Designer**.
+    - If your wifi is not working, **use the lab computers**!
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Monday, December 2, 2024.
+
+----
+
 # December 4, 2024
 
 ## Agenda
