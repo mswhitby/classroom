@@ -6,10 +6,6 @@ order: 1
 
 # December 9, 2024
 
-## Agenda
-
-### Journal Entry
-
 The Oxford Word of the Year for 2024 is “brain rot”, a term reflecting concerns about the negative effects of excessive digital consumption on mental well-being and intellectual capacity. With so much of our time spent online, it’s easy to see why this term resonates. Platforms filled with trivial content can entertain, but they might also distract us from more meaningful pursuits.
 
 The shortlist of runner-ups adds further layers to this theme. Words like “slop” (low-quality, often AI-generated content) and “dynamic pricing” (highlighting economic shifts influenced by technology) show the power and pitfalls of a tech-driven world. Meanwhile, terms like “romantasy” and “lore” reflect how storytelling and creativity thrive in our digital spaces, blending genres and preserving traditions. Further, words like “demure” gained prominence through viral social media posts.
@@ -22,7 +18,6 @@ Write a paragraph or more reflecting on the following:
 - In your opinion, is it possible to balance meaningful engagement with technology while avoiding “brain rot”? If so, how?
 
 Please be very “demure” and very mindful in your response. You can learn more about the the Oxford word of the year [here](https://corp.oup.com/word-of-the-year/).
-
 
 ----
 
