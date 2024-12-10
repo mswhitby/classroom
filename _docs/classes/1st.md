@@ -45,7 +45,6 @@ Write a paragraph or more reflecting on the following:
 
 Please be very “demure” and very mindful in your response. You can learn more about the the Oxford word of the year [here](https://corp.oup.com/word-of-the-year/).
 
-
 ----
 
 # December 6, 2024
