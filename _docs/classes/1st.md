@@ -24,6 +24,7 @@ order: 1
 - Complete your journal entry for this week if you have not completed it yet.
 - The journal entry was assigned Monday, December 9, 2024.
 
+![alt text](../../media/2024_exams_wide.png)
 ----
 
 # December 10, 2024
