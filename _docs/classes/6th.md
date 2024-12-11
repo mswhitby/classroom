@@ -5,6 +5,29 @@ category: Classes
 order: 5
 ---
 
+# December 11, 2024
+
+## Agenda
+
+### 1. Hello World: Retro
+
+- To access the assignment, you must log into Code.org using your Clever account. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Hello World: Retro**.
+
+- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/s/hello-world-retro-2021?section_id=56934799).
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Monday, December 9, 2024.
+
+![alt text](../../media/2024_exams_wide.png)
+
+----
+
 # December 10, 2024
 
 ## Agenda

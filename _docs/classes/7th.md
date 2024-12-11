@@ -5,6 +5,10 @@ category: Classes
 order: 6
 ---
 
+![alt text](../../media/2024_exams_wide.png)
+
+----
+
 # December 9, 2024
 
 ## Agenda
