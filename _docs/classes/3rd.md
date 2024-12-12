@@ -5,6 +5,47 @@ category: Classes
 order: 2
 ---
 
+
+# December 11, 2024
+
+## Agenda
+
+### 1. Missing Assignments
+
+Make up any assignments that you have not yet completed. You should be finished with:
+
+- **Discovery Education**
+    - [Calculations with Variables](https://classlink.discoveryeducation.com/learn/player/8d57f853-c9f1-4678-ab23-517bbc6693fc) - Assigned on November 6, 2024
+     - [Inputs and Variables](https://classlink.discoveryeducation.com/learn/player/3db4dc12-e275-470d-bb2e-efec6773aea1) - Assigned on November 20, 2024
+     - [Python Printing](https://classlink.discoveryeducation.com/learn/player/22fb87f8-f7cd-43de-96f1-63100b1bb239) - Assigned on December 3, 2024
+
+- **Code.org**
+    - [Minecraft Designer](https://studio.code.org/s/minecraft?section_id=5693479) - Assigned on December 4, 2024
+    - [Minecraft: Hero's Journey](https://studio.code.org/s/hero?section_id=5693468) - Assigned on December 5, 2024
+    - [Minecraft Adventurer](https://studio.code.org/s/mc?section_id=5693479) - Assigned on December 6, 2024
+    - [Classic Maze](https://studio.code.org/s/hourofcode?section_id=5693479) - Assigned on December 10, 2024
+    - [Hello World: Retro](https://studio.code.org/s/hello-world-retro-2021?section_id=56934799) - Assigned on December 11, 2024
+
+### 2. Missing Journals
+
+You can find all assigned journal prompts [here](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md). Use this time to make up any journal entries that you've missed. The journals assigned on the followig dates are the only entries that can still be submitted:
+
+- [October 15, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#october-15-2024)
+- [October 21, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#october-21-2024)
+- [October 28, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#october-28-2024)
+- [November 4, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#november-4-2024)
+- [November 12, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#november-12-2024)
+- [November 18, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#november-18-2024)
+- [December 2, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#december-2-2024)
+- [December 9, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#december-9-2024)
+
+**Important:** If you complete any journal entries from prior weeks, you must **email** me at <dwhitby@judsonisd.org> to and let me know what dates you have completed. If you do not email me, I will not know that you have completed your missed journal entries, and I will not be able to update your grade.
+
+![alt text](../../media/2024_exams_wide.png)
+
+
+----
+
 # December 11, 2024
 
 ## Agenda
@@ -24,7 +65,7 @@ order: 2
 - Complete your journal entry for this week if you have not completed it yet.
 - The journal entry was assigned Monday, December 9, 2024.
 
-![alt text](../../media/2024_exams_wide.png)
+<!-- ![alt text](../../media/2024_exams_wide.png) -->
 
 ----
 
