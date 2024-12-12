@@ -5,7 +5,7 @@ category: Classes
 order: 1
 ---
 
-# December 12, 2024
+# December 14, 2024
 
 ## Agenda
 
@@ -25,6 +25,14 @@ order: 1
 - The journal entry was assigned Monday, December 9, 2024.
 
 ![alt text](../../media/2024_exams_wide.png)
+
+----
+
+# December 13, 2024
+
+## Agenda
+
+### Virtual Field Trip - The Science Behind Crashes
 
 ----
 
