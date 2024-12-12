@@ -19,6 +19,9 @@ Make up any assignments that you have not yet completed. You should be finished 
      - [Python Printing](https://classlink.discoveryeducation.com/learn/player/22fb87f8-f7cd-43de-96f1-63100b1bb239) - Assigned on December 3, 2024
 
 - **Code.org**
+
+    Before completing any Code.org assignments, please make sure that you have signed in with Clever. You can sign in using this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8). If you do not sign in, your work will not be saved.
+
     - [Minecraft Designer](https://studio.code.org/s/minecraft?section_id=5693479) - Assigned on December 4, 2024
     - [Minecraft: Hero's Journey](https://studio.code.org/s/hero?section_id=5693468) - Assigned on December 5, 2024
     - [Minecraft Adventurer](https://studio.code.org/s/mc?section_id=5693479) - Assigned on December 6, 2024
