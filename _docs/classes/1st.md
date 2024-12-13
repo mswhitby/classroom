@@ -70,6 +70,9 @@ If you complete any missing assignments or journal entries from prior weeks, you
 
 ![alt text](../../media/2024_exams_wide.png)
 
+![alt text](../../media/2024_christmas_spirit_week.png)
+
+
 ----
 
 # December 12, 2024
