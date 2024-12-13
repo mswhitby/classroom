@@ -5,6 +5,31 @@ category: Classes
 order: 2
 ---
 
+# December 13, 2024
+
+## Agenda
+
+### 1. Dance Party
+
+- To access the assignment, you must log into Code.org using your Clever account. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Dance Party**.
+
+- If you're already logged in and cannot find the assignment, you can use this link: [Dance Party](https://studio.code.org/s/dance?section_id=5693479).
+
+### 2. Missing Work
+
+If you have any missing work, please see the instructions from [December 12, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#december-12-2024) on how to turn in late assignments.
+
+
+### 3. Semester Exam Schedule
+
+![alt text](../../media/2024_exams_wide.png)
+
+----
+
 # December 12, 2024
 
 ## Agenda
@@ -30,7 +55,7 @@ Make up any assignments that you have not yet completed. You should be finished 
 
 ### 2. Missing Journals
 
-You can find all assigned journal prompts [here](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md). Use this time to make up any journal entries that you've missed. The journals assigned on the followig dates are the only entries that can still be submitted:
+You can find all assigned journal prompts [here](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md). Use this time to make up any journal entries that you've missed. The journals assigned on the following dates are the only entries that can still be submitted:
 
 - [October 15, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#october-15-2024)
 - [October 21, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#october-21-2024)
@@ -45,9 +70,9 @@ You can find all assigned journal prompts [here](https://github.com/mswhitby/cla
 
 If you complete any missing assignments or journal entries from prior weeks, you must **email** me at <dwhitby@judsonisd.org> to and let me know what you have completed. If you do not email me, I will not know that you have made up your missing work or journal entries, and I will not be able to update your grade.
 
-### 4. Semester Exam Schedule
+<!-- ### 4. Semester Exam Schedule
 
-![alt text](../../media/2024_exams_wide.png)
+![alt text](../../media/2024_exams_wide.png) -->
 
 ----
 
