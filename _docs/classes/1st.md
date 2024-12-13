@@ -47,7 +47,7 @@ Make up any assignments that you have not yet completed. You should be finished 
     - [Minecraft: Hero's Journey](https://studio.code.org/s/hero?section_id=5693468) - Assigned on December 6, 2024
     - [Minecraft Adventurer](https://studio.code.org/s/mc?section_id=5693479) - Assigned on December 10, 2024
     - [Classic Maze](https://studio.code.org/s/hourofcode?section_id=5693479) - Assigned on December 11, 2024
-    - [Hello World: Retro](https://studio.code.org/s/hello-world-retro-2021?section_id=56934799) - Will be assigned on December 16, 2024
+    <!-- - [Hello World: Retro](https://studio.code.org/s/hello-world-retro-2021?section_id=56934799) - Will be assigned on December 16, 2024 -->
 
 ### 2. Missing Journals
 
