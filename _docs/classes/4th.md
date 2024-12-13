@@ -5,6 +5,32 @@ category: Classes
 order: 3
 ---
 
+# December 13, 2024
+
+## Agenda
+
+### 1. Dance Party
+
+- To access the assignment, you must log into Code.org using your Clever account. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Dance Party**.
+
+- If you're already logged in and cannot find the assignment, you can use this link: [Dance Party](https://studio.code.org/s/dance?section_id=5693479).
+
+### 2. Missing Work
+
+If you have any missing work, please see the instructions from [December 12, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#december-12-2024) on how to turn in late assignments.
+
+
+### 3. Semester Exam Schedule
+
+![alt text](../../media/2024_exams_wide.png)
+
+----
+
+
 # December 12, 2024
 
 ## Agenda
