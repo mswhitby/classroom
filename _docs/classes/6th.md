@@ -72,7 +72,7 @@ Make up any assignments that you have not yet completed. You should be finished 
 
 ### 2. Missing Journals
 
-You can find all assigned journal prompts [here](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md). Use this time to make up any journal entries that you've missed. The journals assigned on the You can find all assigned journal prompts [here](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md). Use this time to make up any journal entries that you've missed. The journals assigned on the following dates are the only entries that can still be submitted:
+You can find all assigned journal prompts [here](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md). Use this time to make up any journal entries that you've missed. The journals assigned on the following dates are the only entries that can still be submitted:
  dates are the only entries that can still be submitted:
 
 - [October 15, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#october-15-2024)
