@@ -4,6 +4,12 @@ category: Resources
 order: 1
 ---
 
+# December 16, 2024
+
+Are you looking forward to the winter break
+
+----
+
 # December 9, 2024
 
 The Oxford Word of the Year for 2024 is “brain rot”, a term reflecting concerns about the negative effects of excessive digital consumption on mental well-being and intellectual capacity. With so much of our time spent online, it’s easy to see why this term resonates. Platforms filled with trivial content can entertain, but they might also distract us from more meaningful pursuits.

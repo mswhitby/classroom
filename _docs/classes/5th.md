@@ -27,7 +27,11 @@ You can find all assigned journal prompts [here](https://github.com/mswhitby/cla
 - [December 2, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#december-2-2024)
 - [December 9, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#december-9-2024)
 
-### 3. Semester Exam Schedule
+### 3. Important: You Must Email Me
+
+If you complete any missing assignments or journal entries from prior weeks, you must **email** me at <dwhitby@judsonisd.org> to and let me know what you have completed. If you do not email me, I will not know that you have made up your missing work or journal entries, and I will not be able to update your grade.
+
+### 4. Semester Exam Schedule
 ![alt text](../../media/2024_exams_wide.png) -->
 
 ----
