@@ -19,7 +19,7 @@ Are you looking forward to the winter break?
 If you have any missing work, please see the instructions from [December 13, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#december-13-2024) on how to turn in late assignments.
 
 ### 3. Semester Exam Schedule
-![alt text](../../media/2024_exams_wide.png) -->
+![alt text](../../media/2024_exams_wide.png)
 
 <!-- # December 16, 2024
 

@@ -32,7 +32,7 @@ You can find all assigned journal prompts [here](https://github.com/mswhitby/cla
 If you complete any missing assignments or journal entries from prior weeks, you must **email** me at <dwhitby@judsonisd.org> to and let me know what you have completed. If you do not email me, I will not know that you have made up your missing work or journal entries, and I will not be able to update your grade.
 
 ### 4. Semester Exam Schedule
-![alt text](../../media/2024_exams_wide.png) -->
+![alt text](../../media/2024_exams_wide.png)
 
 ----
 
