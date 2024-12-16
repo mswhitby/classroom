@@ -5,7 +5,30 @@ category: Classes
 order: 4
 ---
 
-![alt text](../../media/2024_exams_wide.png)
+# December 16, 2024
+
+## Agenda
+
+### 1. Journal Entry
+
+Are you looking forward to the winter break?
+
+### 2. Missing Work
+
+You can find all assigned journal prompts [here](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md). Use this time to make up any journal entries that you've missed. The journals assigned on the You can find all assigned journal prompts [here](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md). Use this time to make up any journal entries that you've missed. The journals assigned on the following dates are the only entries that can still be submitted:
+ dates are the only entries that can still be submitted:
+
+- [October 15, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#october-15-2024)
+- [October 21, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#october-21-2024)
+- [October 28, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#october-28-2024)
+- [November 4, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#november-4-2024)
+- [November 12, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#november-12-2024)
+- [November 18, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#november-18-2024)
+- [December 2, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#december-2-2024)
+- [December 9, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#december-9-2024)
+
+### 3. Semester Exam Schedule
+![alt text](../../media/2024_exams_wide.png) -->
 
 ----
 
