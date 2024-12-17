@@ -18,6 +18,11 @@ Your Semester Exam is on Canvas. You m
 - You can use the [W3Schools](https://www.w3schools.com/python/trypython.asp?filename=demo_default) Online Python Compiler to check your answers.
 - You have unlimited attempts, and I encourage you to retake the exam as many times as you need to increase your score.
 
+### 2. Semester Exam Schedule
+![alt text](../../media/2024_exams_wide.png)
+
+![alt text](../../media/2024_christmas_spirit_week.png)
+
 ----
 
 # December 16, 2024
@@ -32,10 +37,10 @@ Are you looking forward to the winter break?
 
 If you have any missing work, please see the instructions from [December 13, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#december-13-2024) on how to turn in late assignments.
 
-### 3. Semester Exam Schedule
+<!-- ### 3. Semester Exam Schedule
 ![alt text](../../media/2024_exams_wide.png)
 
-![alt text](../../media/2024_christmas_spirit_week.png)
+![alt text](../../media/2024_christmas_spirit_week.png) -->
 
 
 <!-- # December 16, 2024
