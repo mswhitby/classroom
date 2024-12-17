@@ -5,6 +5,24 @@ category: Classes
 order: 6
 ---
 
+<!-- # December 17, 2024
+
+## Agenda
+
+### 1. Semester Exam
+
+Your Semester Exam is on Canvas. You m
+
+- Your Semester Exam is on Canvas.
+- The test is posted under the "Tests" Module
+- You can use the [W3Schools](https://www.w3schools.com/python/trypython.asp?filename=demo_default) Online Python Compiler to check your answers.
+- You have unlimited attempts, and I encourage you to retake the exam as many times as you need to increase your score.
+
+### 2. Semester Exam Schedule
+![alt text](../../media/2024_exams_wide.png)
+
+---- -->
+
 # December 16, 2024
 
 ## Agenda
@@ -31,8 +49,8 @@ You can find all assigned journal prompts [here](https://github.com/mswhitby/cla
 
 If you complete any missing assignments or journal entries from prior weeks, you must **email** me at <dwhitby@judsonisd.org> to and let me know what you have completed. If you do not email me, I will not know that you have made up your missing work or journal entries, and I will not be able to update your grade.
 
-### 4. Semester Exam Schedule
-![alt text](../../media/2024_exams_wide.png)
+<!-- ### 4. Semester Exam Schedule
+![alt text](../../media/2024_exams_wide.png) -->
 
 ----
 
