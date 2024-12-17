@@ -5,6 +5,20 @@ category: Classes
 order: 1
 ---
 
+# December 17, 2024
+
+## Agenda
+
+### 1. Semester Exam
+
+Your Semester Exam is on Canvas. You m
+
+- Your Semester Exam is on Canvas.
+- The test is posted under the "Tests" Module
+- You can use the [W3Schools](https://www.w3schools.com/python/trypython.asp?filename=demo_default) Online Python Compiler to check your answers.
+- You have unlimited attempts, and I encourage you to retake the exam as many times as you need to increase your score.
+
+----
 
 # December 16, 2024
 
@@ -20,6 +34,9 @@ If you have any missing work, please see the instructions from [December 13, 202
 
 ### 3. Semester Exam Schedule
 ![alt text](../../media/2024_exams_wide.png)
+
+![alt text](../../media/2024_christmas_spirit_week.png)
+
 
 <!-- # December 16, 2024
 
@@ -87,9 +104,9 @@ If you complete any missing assignments or journal entries from prior weeks, you
 
 ### 4. Semester Exam Schedule
 
-![alt text](../../media/2024_exams_wide.png)
+<!-- ![alt text](../../media/2024_exams_wide.png) -->
 
-![alt text](../../media/2024_christmas_spirit_week.png)
+<!-- ![alt text](../../media/2024_christmas_spirit_week.png) -->
 
 
 ----
