@@ -5,15 +5,13 @@ category: Classes
 order: 6
 ---
 
-<!-- # December 17, 2024
+# December 18, 2024
 
 ## Agenda
 
-### 1. Semester Exam
-
-Your Semester Exam is on Canvas. You m
-
-- Your Semester Exam is on Canvas.
+### 1. Python Fundamentals: Test 3
+ 
+- Your test on Canvas.
 - The test is posted under the "Tests" Module
 - You can use the [W3Schools](https://www.w3schools.com/python/trypython.asp?filename=demo_default) Online Python Compiler to check your answers.
 - You have unlimited attempts, and I encourage you to retake the exam as many times as you need to increase your score.
@@ -21,7 +19,16 @@ Your Semester Exam is on Canvas. You m
 ### 2. Semester Exam Schedule
 ![alt text](../../media/2024_exams_wide.png)
 
----- -->
+----
+
+# December 17, 2024
+
+## Agenda
+
+### 1. No Internet - Free Day
+
+----
+
 
 # December 16, 2024
 

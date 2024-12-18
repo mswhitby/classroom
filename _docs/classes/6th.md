@@ -5,13 +5,11 @@ category: Classes
 order: 5
 ---
 
-# December 17, 2024
+# December 18, 2024
 
 ## Agenda
 
 ### 1. Semester Exam
-
-Your Semester Exam is on Canvas. You m
 
 - Your Semester Exam is on Canvas.
 - The test is posted under the "Tests" Module
@@ -22,6 +20,15 @@ Your Semester Exam is on Canvas. You m
 ![alt text](../../media/2024_exams_wide.png)
 
 ----
+
+# December 17, 2024
+
+## Agenda
+
+### 1. No Internet - Free Day
+
+----
+
 
 # December 16, 2024
 
