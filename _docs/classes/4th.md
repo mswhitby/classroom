@@ -5,6 +5,19 @@ category: Classes
 order: 3
 ---
 
+# December 19, 2024
+
+## Agenda
+
+### 1. Congratulations! You survived the semester!
+
+- The grade you see on Skyward is your final grade for this semester.
+- You have until Friday to retake your Semester Exam or turn in any missing work.
+- Here is the information for your Semester Exam: [December 18, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#december-18-2024)
+- Here is the information for your completing missing work: [December 12, 2024](https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#december-12-2024)
+
+----
+
 # December 18, 2024
 
 ## Agenda
