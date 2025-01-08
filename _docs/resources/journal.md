@@ -6,10 +6,6 @@ order: 1
 
 # January 8, 2025
 
-## Agenda
-
-### 1. Journal Prompt: Reflect and Share
-
 1. Looking Back:
 
     Reflect on last semester. What did you enjoy most about the class? What could be improved? Feel free to share any specific feedback about the lessons, projects, or activities we did.
