@@ -17,7 +17,7 @@ order: 2
     - Log in with Google using your school email address.
     - Complete **Code your own sports game**.
 
-- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/s/sports?section_id=5693468).
+- **If you're already logged in** and cannot find the assignment, you can use this [link](https://studio.code.org/s/sports?section_id=5693468).
 
 ### 2. Journal
 
