@@ -5,6 +5,26 @@ category: Classes
 order: 3
 ---
 
+# January 13, 2025
+
+## Agenda
+
+### 1. Journal
+
+**Read this article**: [Why The Once-Mighty Tech Career Is No Longer Safe](https://www.forbes.com/sites/jackkelly/2024/09/23/why-the-once-mighty-tech-career-is-no-longer-safe/)
+
+**Write a paragraph reflecting on the following**: The tech industry is shifting towards prioritizing artificial intelligence (AI) skills over traditional tech roles. What are your thoughts on this shift? Do you think AI tools will enhance opportunities for workers or limit them? How would you prepare yourself for a career in a rapidly changing job market like this one?
+
+### 2. Minecraft: Voyage Aquatic
+
+If you have not completed **[Minecraft: Voyage Aquatic](https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#january-9-2025)**, please complete it today.
+
+### 3. Code your own sports game
+
+If you have not completed **[Code your own sports game](https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#january-10-2025)**, please complete it today.
+
+----
+
 # January 10, 2025
 
 ## Agenda
