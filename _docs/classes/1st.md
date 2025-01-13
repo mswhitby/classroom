@@ -15,6 +15,10 @@ order: 1
 
 **Write a paragraph reflecting on the following**: The tech industry is shifting towards prioritizing artificial intelligence (AI) skills over traditional tech roles. What are your thoughts on this shift? Do you think AI tools will enhance opportunities for workers or limit them? How would you prepare yourself for a career in a rapidly changing job market like this one?
 
+### 2. Minecraft: Voyage Aquatic
+
+If you have not completed **[Minecraft: Voyage Aquatic](https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-10-2025)**, please complete it today.
+
 ----
 
 # January 10, 2025
