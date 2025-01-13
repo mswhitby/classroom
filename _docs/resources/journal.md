@@ -4,6 +4,14 @@ category: Resources
 order: 1
 ---
 
+# January 13, 2025
+
+**Read this article**: [Why The Once-Mighty Tech Career Is No Longer Safe](https://www.forbes.com/sites/jackkelly/2024/09/23/why-the-once-mighty-tech-career-is-no-longer-safe/)
+
+**Write a paragraph reflecting on the following**: The tech industry is shifting towards prioritizing artificial intelligence (AI) skills over traditional tech roles. What are your thoughts on this shift? Do you think AI tools will enhance opportunities for workers or limit them? How would you prepare yourself for a career in a rapidly changing job market like this one?
+
+----
+
 # January 8, 2025
 
 1. Looking Back:
