@@ -5,6 +5,16 @@ category: Classes
 order: 2
 ---
 
+# January 14, 2025
+
+## Agenda
+
+### 1. Desert Drones
+
+Desert Drones TSTEM Presentation
+
+----
+
 # January 13, 2025
 
 ## Agenda
