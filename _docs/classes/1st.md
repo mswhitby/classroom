@@ -5,6 +5,32 @@ category: Classes
 order: 1
 ---
 
+# January 16, 2025
+
+## Agenda
+
+### 1. Moneyball Movie
+
+Moneyball is a compelling story about how data and technology revolutionized the way baseball teams approach player evaluation and team building. The movie follows Billy Beane, the general manager of the Oakland Athletics, as he confronts the challenge of competing against wealthier teams with a fraction of their budget. Instead of relying on traditional methods of scouting and intuition, Beane adopts a data-driven approach introduced by Peter Brand, a young economist.
+
+The movie highlights the importance of data science, critical thinking, and problem-solving in real-world scenarios. It demonstrates how technology, algorithms, and creative use of data can disrupt industries, foster innovation, and achieve success even with limited resources. Just as Beane used analytics to make strategic decisions, students in computer science, game programming, and app development can apply similar principles of logic and data analysis to solve complex problems in various fields.
+
+### 2. Moneyball Questions
+
+As we watch the movie, please answer the discussion questions posted on Canvas.
+
+### 3. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Monday, January 13, 2025.
+
+### 4. Missing Assignments
+
+- Please complete any missing assignments.
+- All missing assignments will be entered as **zeros** on Friday.
+
+----
+
 # January 15, 2025
 
 ## Agenda
