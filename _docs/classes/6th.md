@@ -27,7 +27,7 @@ As we watch the movie, please answer the discussion questions posted on Canvas.
 ### 4. Missing Assignments
 
 - Please complete any missing assignments.
-- All missing assignments will be entered as **zeros** on Friday.
+<!-- - All missing assignments will be entered as **zeros** on Friday. -->
 
 ----
 
