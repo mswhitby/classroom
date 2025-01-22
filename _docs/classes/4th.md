@@ -5,6 +5,31 @@ category: Classes
 order: 3
 ---
 
+# January 22, 2025
+
+## Agenda
+
+### 1. Journal: The TikTok Ban and Its Implications for Technology and Security
+
+**Prompt:**
+
+Recently, TikTok faced a potential nationwide ban in the United States due to national security concerns over its ownership by the Chinese company ByteDance. The situation raises important questions about the intersection of technology, privacy, and government regulation.
+
+**Reflect on the following:**
+
+- How do you think government intervention impacts technology companies and their users?
+- In your opinion, how could companies like TikTok address security concerns while continuing to operate globally?
+- Imagine you’re a developer at TikTok working on a new feature to increase user privacy. Describe one feature or policy you would implement and why.
+- What lessons can you take from this situation to apply to your own projects in this course?
+
+**Submission Instructions:**
+
+- Write at least **TWO** paragraphs responding to the prompt using clear and complete sentences.
+- Include at least one reference to how this relates to concepts we’ve covered in class, such as data privacy, app development, or software ethics.
+<!-- - Post your response in your GitHub journal under today’s date as the heading: January 22, 2025. -->
+
+----
+
 # January 15, 2025
 
 ## Agenda

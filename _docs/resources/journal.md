@@ -4,7 +4,7 @@ category: Resources
 order: 1
 ---
 
-# January 21, 2025
+# January 22, 2025
 
 ## The TikTok Ban and Its Implications for Technology and Security
 
@@ -23,7 +23,7 @@ Recently, TikTok faced a potential nationwide ban in the United States due to na
 
 - Write at least **TWO** paragraphs responding to the prompt using clear and complete sentences.
 - Include at least one reference to how this relates to concepts we’ve covered in class, such as data privacy, app development, or software ethics.
-<!-- - Post your response in your GitHub journal under today’s date as the heading: January 21, 2025. -->
+<!-- - Post your response in your GitHub journal under today’s date as the heading: January 22, 2025. -->
 
 ----
 
