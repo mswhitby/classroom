@@ -5,6 +5,31 @@ category: Classes
 order: 3
 ---
 
+# January 23, 2025
+
+## Agenda
+
+### 1. Disney Infinity Play Lab
+
+- To access the assignment, **you must log into Code.org using your Clever account**. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Disney Infinity Play Lab**.
+
+- **If you're already logged in** and cannot find the assignment, you can use this [link](https://studio.code.org/s/infinity).
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Monday, January 22, 2025.
+
+### 3. Moneyball Movie Questions
+
+- If you have not completed the Moneyball movie discussion questions posted on Canvas yet, please complete them today.
+
+----
+
 # January 22, 2025
 
 ## Agenda
