@@ -5,6 +5,26 @@ category: Classes
 order: 3
 ---
 
+# January 24, 2025
+
+## Agenda
+
+### 1. Coding Pathway Form
+- Please fill out this [Coding Pathway Form](https://docs.google.com/forms/d/e/1FAIpQLSdU-fJCVQ4eKwm1jIp2qo3tg2qHhYucMDzJJjSUs42JYHc0xQ/viewform?usp=sharing)
+- This will count as a test grade
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Monday, January 22, 2025.
+
+### 3. Missing Work
+
+- Check Skyward and complete any missing work.
+- Today is the last day of the grading period and the last day to submit any missing work.
+
+----
+
 # January 23, 2025
 
 ## Agenda
