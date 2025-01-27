@@ -11,6 +11,16 @@ order: 1
 
 ### 1. Journal: Apprentice Mechanic Mishaps Logic Puzzle
 
+Four apprentice mechanics work at Rusty's Repair Shop. They are generally well-regarded by management, but last week with less supervision there were some mistakes that led to a number of angry customers. Using the clues provided, can you determine which apprentice worked on which car, and the mistake that was made?
+
+#### Clues
+
+1. Bart didn't work on the Sierra, nor did he leave the oil cap off.
+2. The four apprentices are Kayla, the one who worked on the Honda Civic, the one who left the oil cap off, and the one who left stains on the carpet.
+3. The receptionist was in tears after dealing with the customer who had found a hole was accidentally drilled in their gas tank (oops!). This wasn't the Sierra.
+4. Jimmy didn't leave the oil cap off nor leave stains on the carpet of the vehicle he worked on.
+5. Harrison worked on the Forester, and disliked every minute of it.
+
 #### Directions
 - Complete the puzzle, and submit the answer as a [Markdown Table](https://www.markdownguide.org/extended-syntax/#tables) in your journal
 - Example:
@@ -23,16 +33,6 @@ order: 1
     | Harrison |     |         |
 
 - If you need a printed grid to work through the puzzle, they are available  up front.
-
-#### Clues
-
-Four apprentice mechanics work at Rusty's Repair Shop. They are generally well-regarded by management, but last week with less supervision there were some mistakes that led to a number of angry customers. Using the clues provided, can you determine which apprentice worked on which car, and the mistake that was made?
-
-1. Bart didn't work on the Sierra, nor did he leave the oil cap off.
-2. The four apprentices are Kayla, the one who worked on the Honda Civic, the one who left the oil cap off, and the one who left stains on the carpet.
-3. The receptionist was in tears after dealing with the customer who had found a hole was accidentally drilled in their gas tank (oops!). This wasn't the Sierra.
-4. Jimmy didn't leave the oil cap off nor leave stains on the carpet of the vehicle he worked on.
-5. Harrison worked on the Forester, and disliked every minute of it.
 
 ----
 
