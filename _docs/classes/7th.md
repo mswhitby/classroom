@@ -25,12 +25,12 @@ Four apprentice mechanics work at Rusty's Repair Shop. They are generally well-r
 - Complete the puzzle, and submit the answer as a [Markdown Table](https://www.markdownguide.org/extended-syntax/#tables) in your journal
 - Example:
 
-    | Name     | Car | Mistake |
-    | :------- | :-- | :------ |
-    | Jimmy    |     |         |
-    | Kayla    |     |         |
-    | Bart     |     |         |
-    | Harrison |     |         |
+| Name     | Car | Mistake |
+| :------- | :-- | :------ |
+| Jimmy    |     |         |S
+| Kayla    |     |         |
+| Bart     |     |         |
+| Harrison |     |         |
 
 - If you need a printed grid to work through the puzzle, they are available  up front.
 - You can find an interactive version of the puzzle here: [Apprentice Mechanic Mishaps Logic Puzzle](https://daydreampuzzles.com/logic-puzzles/apprentice-mechanic-mishaps/)
