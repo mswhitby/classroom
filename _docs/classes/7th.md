@@ -27,7 +27,7 @@ Four apprentice mechanics work at Rusty's Repair Shop. They are generally well-r
 
 | Name     | Car | Mistake |
 | :------- | :-- | :------ |
-| Jimmy    |     |         |S
+| Jimmy    |     |         |
 | Kayla    |     |         |
 | Bart     |     |         |
 | Harrison |     |         |
