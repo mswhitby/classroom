@@ -5,6 +5,22 @@ category: Classes
 order: 5
 ---
 
+# January 30, 2025
+
+## Agenda
+
+### 1. Star Wars: Building a Galaxy With Code
+
+- To access the assignment, **you must log into Code.org using your Clever account**. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Star Wars: Building a Galaxy With Code**.
+
+- **If you're already logged in** and cannot find the assignment, you can use this [link](https://studio.code.org/s/starwarsblocks).
+
+----
+
 # January 29, 2025
 
 ## Agenda
