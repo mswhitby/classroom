@@ -5,7 +5,7 @@ category: Classes
 order: 1
 ---
 
-# January 29, 2025
+# January 30, 2025
 
 ## Agenda
 
