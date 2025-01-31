@@ -19,6 +19,10 @@ order: 1
 
 - **If you're already logged in** and cannot find the assignment, you can use this [link](https://studio.code.org/s/starwarsblocks).
 
+### 2. Vote for Marcus Johnson
+
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson.png)
+
 ----
 
 # January 30, 2025
