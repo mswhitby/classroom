@@ -21,7 +21,7 @@ order: 1
 
 ### 2. Vote for Marcus Johnson
 
-![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson.png)
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
 
 ----
 
