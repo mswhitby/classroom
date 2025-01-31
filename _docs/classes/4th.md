@@ -5,6 +5,44 @@ category: Classes
 order: 3
 ---
 
+# January 31, 2025
+
+## Agenda
+
+### 1. Missing Assignments
+
+Make up any assignments that you have not yet completed. You should be finished with:
+
+- [Star Wars: Building a Galaxy With Code](https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#january-30-2025)
+- [Flappy Code](https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#1-flappy-code)
+- [Hello World: Transformers One](https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#january-28-2025)
+- [Disney Infinity Play Lab](https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#january-23-2025)
+- [Moneyball Questions](https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#january-15-2025)
+- [Code your own sports game](https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#january-10-2025)
+- [Minecraft: Voyage Aquatic](https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#january-9-2025)
+
+All assignments are also posted on Canvas.
+
+### 2. Missing Journals
+
+You can find all assigned journal prompts [here](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md). Use this time to make up any journal entries that you've missed. The journals assigned on the following dates are the only entries that can still be submitted:
+
+- [January 27, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#january-27-2025)
+- [January 22, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#january-22-2025)
+- [January 13, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#january-13-2025)
+- [January 8, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#january-8-2025)
+
+### 3. Vote for Marcus Johnson!
+
+Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
+
+[Vote Here!](https://woobox.com/hzdfnk)
+
+
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+
+----
+
 # January 30, 2025
 
 ## Agenda
