@@ -19,7 +19,12 @@ order: 1
 
 - **If you're already logged in** and cannot find the assignment, you can use this [link](https://studio.code.org/s/starwarsblocks).
 
-### 2. Vote for Marcus Johnson
+### 2. Missing Assignments
+
+- Complete your journal entry from [January 27, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#january-27-2025) if you have not done so yet.
+- Complete any coding assignments that you have not submitted. All coding assignments are posted on Canvas.
+
+### 3. Vote for Marcus Johnson!
 
 ![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
 
