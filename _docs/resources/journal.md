@@ -4,6 +4,37 @@ category: Resources
 order: 1
 ---
 
+# February 3, 2025
+
+### 1. Journal Prompt
+
+On January 29, a tragic mid-air collision occurred over Washington, D.C., claiming the lives of 67 people, including military personnel and young athletes returning from a competition. While we mourn this loss, tragedies like this also push us to examine what went wrong and how we can prevent similar events in the future. In aviation, technology plays a crucial role in ensuring safety—yet when systems fail, the consequences can be devastating.
+
+Technology is a key part of modern aviation, from air traffic control systems to automated flight assistance. However, even the most advanced systems can fail. Based on the recent mid-air collision over Washington, D.C., discuss how Computer Science contributes to aviation safety. Consider software development, automation, cybersecurity, or human-computer interaction. What improvements could be made to prevent accidents like this in the future?
+
+**Possible Connections to Computer Science**
+
+1.  **Air Traffic Control Systems** – How do computer algorithms manage airspace and prevent collisions?
+2. **Automation & AI in Aviation** – The role of autopilot systems, real-time alerts, and AI-driven decision-making.
+3. **Software Errors & Bugs** – How can coding flaws or miscommunication between different software systems contribute to accidents?
+4. **Human-Computer Interaction (HCI)** – Did poor interface design or unclear alerts play a role in the crash?
+5. **Cybersecurity in Aviation** – Could hacking, jamming, or cyber vulnerabilities pose risks in air traffic management?
+6. **Big Data & Predictive Analytics** – How could machine learning be used to predict and prevent accidents?
+
+Write two (2) paragraphs exploring how technology can integration can provided for increased aviation safety. You can use one or more of the six areas listed above, or you can choose another relevant topic of your interest. 
+
+### 2. Vote for Marcus Johnson!
+
+Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
+
+[Vote Here!](https://woobox.com/hzdfnk)
+
+
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+
+----
+
+
 # January 27, 2025
 
 ## Apprentice Mechanic Mishaps Logic Puzzle
