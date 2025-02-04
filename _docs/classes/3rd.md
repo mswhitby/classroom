@@ -58,14 +58,14 @@ Technology is a key part of modern aviation, from air traffic control systems to
 
 Write two (2) paragraphs exploring how technology can integration can provided for increased aviation safety. You can use one or more of the six areas listed above, or you can choose another relevant topic of your interest. 
 
-### 2. Vote for Marcus Johnson!
+<!-- ### 2. Vote for Marcus Johnson!
 
 Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
 
 [Vote Here!](https://woobox.com/hzdfnk)
 
 
-![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png) -->
 
 ----
 
