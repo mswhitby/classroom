@@ -5,6 +5,41 @@ category: Classes
 order: 4
 ---
 
+# February 5, 2025
+
+## Agenda
+
+### All Students
+
+#### 1. Late Work Policy
+
+- Complete the **Late Work Policy** assignment on Canvas, acknowledging that you understand this policy will be enforced, effective today.
+
+#### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Monday, February 3, 2025.
+
+### Game Program & Design 
+
+#### 1. [Unity Junior Programmer: Create with Code 1](https://learn.unity.com/mission/programming-basics?pathwayId=5f7e17e1edbc2a5ec21a20af)
+
+- [Tutorial Unit 1 - Introduction](https://learn.unity.com/tutorial/unit-1-introduction?uv=2022.3&pathwayId=5f7e17e1edbc2a5ec21a20af&missionId=5f71fe63edbc2a00200e9de0&projectId=5caccdfbedbc2a3cef0efe63#)
+- [Lesson 1.1 - Start your 3D Engines](https://learn.unity.com/tutorial/set-up-your-first-project-in-unity?uv=2022.3&pathwayId=5f7e17e1edbc2a5ec21a20af&missionId=5f71fe63edbc2a00200e9de0&projectId=5caccdfbedbc2a3cef0efe63#)
+
+<!-- ### Mobile App Development -->
+
+### Vote for Marcus Johnson!
+
+Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
+
+[Vote Here!](https://woobox.com/hzdfnk)
+
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+
+
+----
+
 # February 4, 2025
 
 ## Assignments
@@ -22,14 +57,14 @@ order: 4
 - At least 20 people spelled "February" incorrectly (I'm not sure who; I just know how many people). If you did not receive credit for your journal, please check your heading.
 - You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
 
-### 3. Vote for Marcus Johnson!
+<!-- ### 3. Vote for Marcus Johnson!
 
 Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
 
 [Vote Here!](https://woobox.com/hzdfnk)
 
 
-![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png) -->
 
 
 ----

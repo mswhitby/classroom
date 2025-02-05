@@ -5,6 +5,46 @@ category: Classes
 order: 5
 ---
 
+# February 5, 2025
+
+## Agenda
+
+### 1. Late Work Policy
+
+- Complete the **Late Work Policy** assignment on Canvas, acknowledging that you understand this policy will be enforced, effective today.
+
+### 2. Hello World: Emoji
+
+- To access the assignment, **you must log into Code.org using your Clever account**. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Hello World: Emoji**.
+
+- **If you're already logged in** and cannot find the assignment, you can use this [link](https://studio.code.org/s/hello-world-emoji-2021).
+ 
+### 3. Code with Anna and Elsa
+
+- Complete [Code with Anna and Elsa](https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#1-code-with-anna-and-elsa) if you did not finish yesterday.
+
+### 4. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Monday, February 3, 2025.
+- At least 20 people spelled "February" incorrectly (I'm not sure who; I just know how many people). If you did not receive credit for your journal, please check your heading.
+- You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
+
+### 5. Vote for Marcus Johnson!
+
+Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
+
+[Vote Here!](https://woobox.com/hzdfnk)
+
+
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+
+----
+
 # February 4, 2025
 
 ## Agenda
@@ -26,14 +66,14 @@ order: 5
 - At least 20 people spelled "February" incorrectly (I'm not sure who; I just know how many people). If you did not receive credit for your journal, please check your heading.
 - You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
 
-### 3. Vote for Marcus Johnson!
+<!-- ### 3. Vote for Marcus Johnson!
 
 Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
 
 [Vote Here!](https://woobox.com/hzdfnk)
 
 
-![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png) -->
 
 ----
 
