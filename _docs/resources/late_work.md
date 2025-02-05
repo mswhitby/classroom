@@ -1,7 +1,7 @@
 # Late Work Policy
 _Effective February 5, 2025_
 
-In accordance with the [JISD Student Handbook](https://www.judsonisd.org/departments/pupil-services/student-handbook-and-student-code-of-conduct) and the [JISD Secondary Grading Handbook](https://www.judsonisd.org/departments/curriculum-instruction/curriculum-instruction), Ms. Whitby will begin enforcing the district’s late-work policy in all of her classes. 
+In accordance with the [JISD Student Handbook](https://www.judsonisd.org/departments/pupil-services/student-handbook-and-student-code-of-conduct) and the [JISD Secondary Grading Handbook](https://www.judsonisd.org/departments/curriculum-instruction/curriculum-instruction), Ms. Whitby will begin enforcing the district’s late work policy in all of her classes. 
 
 ## Late Work Definition
 Late work is defined as **any assignment that is not submitted on its due date**, except for:
