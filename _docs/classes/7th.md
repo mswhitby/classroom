@@ -5,6 +5,28 @@ category: Classes
 order: 6
 ---
 
+# February 5, 2025
+
+## Agenda
+
+### 1. Late Work Policy
+
+- Complete the **Late Work Policy** assignment on Canvas, acknowledging that you understand this [policy](https://github.com/mswhitby/classroom/blob/main/_docs/resources/late_work.md) will be enforced, effective today.
+
+### 2. Intro Assignment
+- Join our GitHub classroom here: [GitHub Classroom](https://classroom.github.com/a/aUSVkiAp)
+- Complete **intro-assignment**
+
+### 3. Vote for Marcus Johnson!
+
+Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
+
+[Vote Here!](https://woobox.com/hzdfnk)
+
+
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+
+
 # February 3, 2025
 
 ## Agenda
@@ -26,14 +48,14 @@ Technology is a key part of modern aviation, from air traffic control systems to
 
 Write two (2) paragraphs exploring how technology can integration can provided for increased aviation safety. You can use one or more of the six areas listed above, or you can choose another relevant topic of your interest. 
 
-### 2. Vote for Marcus Johnson!
+<!-- ### 2. Vote for Marcus Johnson!
 
 Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
 
 [Vote Here!](https://woobox.com/hzdfnk)
 
 
-![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png) -->
 
 # January 27, 2025
 
