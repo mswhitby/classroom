@@ -5,6 +5,38 @@ category: Classes
 order: 4
 ---
 
+# February 6, 2025
+
+## Agenda
+
+### All Students
+
+#### 1. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Monday, February 3, 2025.
+
+### Game Program & Design 
+
+#### 1. [Unity Junior Programmer: Create with Code 1](https://learn.unity.com/mission/programming-basics?pathwayId=5f7e17e1edbc2a5ec21a20af)
+
+- [Tutorial Unit 1 - Introduction](https://learn.unity.com/tutorial/unit-1-introduction?uv=2022.3&pathwayId=5f7e17e1edbc2a5ec21a20af&missionId=5f71fe63edbc2a00200e9de0&projectId=5caccdfbedbc2a3cef0efe63#)
+- [Lesson 1.1 - Start your 3D Engines](https://learn.unity.com/tutorial/set-up-your-first-project-in-unity?uv=2022.3&pathwayId=5f7e17e1edbc2a5ec21a20af&missionId=5f71fe63edbc2a00200e9de0&projectId=5caccdfbedbc2a3cef0efe63#)
+- [Lesson 1.2 - Pedal to the Metal](https://learn.unity.com/tutorial/1-2-move-the-vehicle-with-your-first-line-of-c?uv=2022.3&pathwayId=5f7e17e1edbc2a5ec21a20af&missionId=5f71fe63edbc2a00200e9de0&projectId=5caccdfbedbc2a3cef0efe63)
+
+<!-- ### Mobile App Development -->
+
+### Vote for Marcus Johnson!
+
+Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
+
+[Vote Here!](https://woobox.com/hzdfnk)
+
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+
+
+----
+
 # February 5, 2025
 
 ## Agenda
@@ -29,13 +61,13 @@ order: 4
 
 <!-- ### Mobile App Development -->
 
-### Vote for Marcus Johnson!
+<!-- ### Vote for Marcus Johnson!
 
 Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
 
 [Vote Here!](https://woobox.com/hzdfnk)
 
-![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png) -->
 
 
 ----
