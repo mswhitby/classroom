@@ -26,7 +26,7 @@ order: 1
 - At least 20 people spelled "February" incorrectly (I'm not sure who; I just know how many people). If you did not receive credit for your journal, please check your heading.
 - You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
 
-### 3. Vote for Marcus Johnson!
+### 3. Vote for Marcus Johnson! Yes, Again!
 
 Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
 
