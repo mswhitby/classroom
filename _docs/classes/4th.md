@@ -5,6 +5,31 @@ category: Classes
 order: 3
 ---
 
+# February 7, 2025
+
+## Agenda
+
+### 1. Keep On Dancing
+
+- To access the assignment, **you must log into Code.org using your Clever account**. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Keep On Dancing**.
+
+- **If you're already logged in** and cannot find the assignment, you can use this [link](https://studio.code.org/s/dance-extras-2019).
+
+### 2. Vote for Marcus Johnson! Yes, Again!
+
+Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
+
+[Vote Here!](https://woobox.com/hzdfnk)
+
+
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+
+----
+
 # February 6, 2025
 
 ## Agenda
@@ -26,14 +51,14 @@ order: 3
 - At least 20 people spelled "February" incorrectly (I'm not sure who; I just know how many people). If you did not receive credit for your journal, please check your heading.
 - You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
 
-### 3. Vote for Marcus Johnson!
+<!-- ### 3. Vote for Marcus Johnson!
 
 Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
 
 [Vote Here!](https://woobox.com/hzdfnk)
 
 
-![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png) -->
 
 ----
 
