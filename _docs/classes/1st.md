@@ -9,7 +9,18 @@ order: 1
 
 ## Agenda
 
-### 1. Journal
+### 1. Journal - Student's Choice
+
+For this week's journal you may choose either the logic puzzle or the writing prompt. You **do not** have to do both!
+
+- If you choose the logic puzzle, submit the solution to the puzzle as a [Markdown Table](https://www.markdownguide.org/extended-syntax/#tables).
+- If you choose the writing prompt, you response needs to be at least **TWO** paragraphs.
+
+
+<details>
+<summary>Writing Prompt</summary>
+
+#### Prompt
 
 The Super Bowl generates massive amounts of data, from player stats to real-time analytics used for coaching decisions. Many teams use **machine learning and AI** to analyze past performances and predict the best plays.
 
@@ -24,6 +35,20 @@ The Super Bowl generates massive amounts of data, from player stats to real-time
 4. If you were to visualize the data, what kind of **graphs or dashboards** would you create?
 
 Be sure to explain your choices and how they would help a team gain a competitive advantage. You can also explore the NFL's [Next Gen Stats](https://nextgenstats.nfl.com/) page to see examples how the league uses data.
+
+</details>
+
+
+<details>
+<summary>Logic Puzzle</summary>
+
+#### Puzzle
+
+- You can find the puzzle here: [Colors And Shapes Logic Puzzle](https://daydreampuzzles.com/logic-puzzles/colors-and-shapes/)
+- Once you solve the puzzle, submit the solution in your journal as a [Markdown Table](https://www.markdownguide.org/extended-syntax/#tables).
+
+</details>
+
 
 ### 2. Vote for Marcus Johnson! Yes, Again!
 
