@@ -5,6 +5,70 @@ category: Classes
 order: 2
 ---
 
+# February 11, 2025
+
+## Agenda
+
+### 1. Journal - Student's Choice
+
+For this week's journal you may choose either the logic puzzle or the writing prompt. You **do not** have to do both!
+
+- If you choose the logic puzzle, submit the solution to the puzzle as a [Markdown Table](https://www.markdownguide.org/extended-syntax/#tables).
+- If you choose the writing prompt, you response needs to be at least **TWO** paragraphs.
+
+
+<details>
+<summary>Writing Prompt</summary>
+
+#### Prompt
+
+The Super Bowl generates massive amounts of data, from player stats to real-time analytics used for coaching decisions. Many teams use **machine learning and AI** to analyze past performances and predict the best plays.
+
+**Imagine you are a software developer working for an NFL team.** Your task is to design an application that helps coaches make better in-game decisions using real-time data. Write **TWO** paragraphs explaining your idea. If you're not sure where to start, consider the following:
+
+1. What **features** would your application include?
+
+2. What type of **data structures** (e.g., lists, dictionaries, databases) would you use to store player performance statistics?
+
+3. How could **algorithms** (such as sorting, searching, or machine learning models) help analyze the data to improve decision-making?
+
+4. If you were to visualize the data, what kind of **graphs or dashboards** would you create?
+
+Be sure to explain your choices and how they would help a team gain a competitive advantage. You can also explore the NFL's [Next Gen Stats](https://nextgenstats.nfl.com/) page to see examples how the league uses data.
+
+</details>
+
+
+<details>
+<summary>Logic Puzzle</summary>
+
+#### Puzzle
+
+- You can find the puzzle here: [Colors And Shapes Logic Puzzle](https://daydreampuzzles.com/logic-puzzles/colors-and-shapes/)
+- Once you solve the puzzle, submit the solution in your journal as a [Markdown Table](https://www.markdownguide.org/extended-syntax/#tables).
+
+| Shape    | Color | Count |
+| -------- | ----- | ----- |
+| Circle   |       |       |
+| Square   |       |       |
+| Hexagon  |       |       |
+| Triangle |       |       |
+| Octagon  |       |       |
+
+</details>
+
+
+### 2. Vote for Marcus Johnson! Yes, Again!
+
+Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
+
+[Vote Here!](https://woobox.com/hzdfnk)
+
+
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+
+----
+
 # February 7, 2025
 
 ## Agenda
@@ -26,14 +90,14 @@ order: 2
 - At least 20 people spelled "February" incorrectly (I'm not sure who; I just know how many people). If you did not receive credit for your journal, please check your heading.
 - You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
 
-### 3. Vote for Marcus Johnson! Yes, Again!
+<!-- ### 3. Vote for Marcus Johnson! Yes, Again!
 
 Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
 
 [Vote Here!](https://woobox.com/hzdfnk)
 
 
-![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png) -->
 
 ----
 

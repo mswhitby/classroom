@@ -47,6 +47,14 @@ Be sure to explain your choices and how they would help a team gain a competitiv
 - You can find the puzzle here: [Colors And Shapes Logic Puzzle](https://daydreampuzzles.com/logic-puzzles/colors-and-shapes/)
 - Once you solve the puzzle, submit the solution in your journal as a [Markdown Table](https://www.markdownguide.org/extended-syntax/#tables).
 
+| Shape    | Color | Count |
+| -------- | ----- | ----- |
+| Circle   |       |       |
+| Square   |       |       |
+| Hexagon  |       |       |
+| Triangle |       |       |
+| Octagon  |       |       |
+
 </details>
 
 
