@@ -5,6 +5,38 @@ category: Classes
 order: 4
 ---
 
+# February 12, 2025
+
+## Agenda
+
+### All Students
+
+#### 1. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Monday, February 3, 2025.
+
+### Game Program & Design 
+
+#### 1. [Unity Junior Programmer: Create with Code 1](https://learn.unity.com/mission/programming-basics?pathwayId=5f7e17e1edbc2a5ec21a20af)
+
+- [Tutorial Unit 1 - Introduction](https://learn.unity.com/tutorial/unit-1-introduction?uv=2022.3&pathwayId=5f7e17e1edbc2a5ec21a20af&missionId=5f71fe63edbc2a00200e9de0&projectId=5caccdfbedbc2a3cef0efe63#)
+    - [Lesson 1.4 - Step into the Driver's Seat](https://learn.unity.com/tutorial/lesson-1-4-use-user-input-to-control-the-vehicle?uv=2022.3&pathwayId=5f7e17e1edbc2a5ec21a20af&missionId=5f71fe63edbc2a00200e9de0&projectId=5caccdfbedbc2a3cef0efe63)
+    - [Challenge 1 - Plane Programming](https://learn.unity.com/tutorial/challenge-1-steer-a-plane-through-obstacles-in-the-sky?uv=2022.3&pathwayId=5f7e17e1edbc2a5ec21a20af&missionId=5f71fe63edbc2a00200e9de0&projectId=5caccdfbedbc2a3cef0efe63)
+
+<!-- ### Mobile App Development -->
+
+### Vote for Marcus Johnson!
+
+Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
+
+[Vote Here!](https://woobox.com/hzdfnk)
+
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+
+
+----
+
 # February 11, 2025
 
 ## Agenda
@@ -58,14 +90,14 @@ Be sure to explain your choices and how they would help a team gain a competitiv
 </details>
 
 
-### 2. Vote for Marcus Johnson! Yes, Again!
+<!-- ### 2. Vote for Marcus Johnson! Yes, Again!
 
 Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
 
 [Vote Here!](https://woobox.com/hzdfnk)
 
 
-![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png) -->
 
 ----
 
