@@ -25,6 +25,12 @@ order: 1
 - The journal entry was February 11, 2025.
 - You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
 
+
+### 3. Python Students Only
+
+- CLick the following link to join [GitHub Classroom](https://classroom.github.com/a/DiLXv4Tp)
+- Complete the "Hello World" assignment
+
 ### 3. Vote for Marcus Johnson! Yes, Again!
 
 Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
@@ -33,6 +39,8 @@ Please click on the link or scan the QR code below to vote for Wagner's very own
 
 
 ![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+
+<!-- [](https://classroom.github.com/classrooms/110627036-mswhitby-python-alt) -->
 
 ----
 
