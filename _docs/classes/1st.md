@@ -28,7 +28,7 @@ order: 1
 
 ### 3. Python Students Only
 
-- CLick the following link to join [GitHub Classroom](https://classroom.github.com/a/DiLXv4Tp)
+- Click the following link to join [GitHub Classroom](https://classroom.github.com/a/DiLXv4Tp)
 - Complete the "Hello World" assignment
 <!-- [](https://classroom.github.com/classrooms/110627036-mswhitby-python-alt) -->
 
