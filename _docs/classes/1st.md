@@ -22,7 +22,7 @@ order: 1
 ### 2. Journal
 
 - Complete your journal entry for this week if you have not completed it yet.
-- The journal entry was February 11, 2025.
+- The journal entry was [February 11, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#february-11-2025).
 - You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
 
 
@@ -30,6 +30,7 @@ order: 1
 
 - CLick the following link to join [GitHub Classroom](https://classroom.github.com/a/DiLXv4Tp)
 - Complete the "Hello World" assignment
+<!-- [](https://classroom.github.com/classrooms/110627036-mswhitby-python-alt) -->
 
 ### 3. Vote for Marcus Johnson! Yes, Again!
 
@@ -39,8 +40,6 @@ Please click on the link or scan the QR code below to vote for Wagner's very own
 
 
 ![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
-
-<!-- [](https://classroom.github.com/classrooms/110627036-mswhitby-python-alt) -->
 
 ----
 
