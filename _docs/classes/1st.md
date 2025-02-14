@@ -34,6 +34,7 @@ Please click on the link or scan the QR code below to vote for Wagner's very own
 
 ![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
 
+----
 
 # February 13, 2025
 
