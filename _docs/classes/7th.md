@@ -5,6 +5,25 @@ category: Classes
 order: 6
 ---
 
+# February 18, 2025
+
+## Agenda
+
+### 1. Journal Prompt
+
+What's the most interesting thing you learned last week? It could be from this class, another subject, a conversation, a YouTube video, or even something you discovered on your own. Explain what it was, how you learned it, and why you found it interesting.
+
+### 2. Vote for Marcus Johnson! Only 2 Days Left!
+
+Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
+
+[Vote Here!](https://woobox.com/hzdfnk)
+
+
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+
+----
+
 # February 11, 2025
 
 ## Agenda
@@ -58,14 +77,14 @@ Be sure to explain your choices and how they would help a team gain a competitiv
 </details>
 
 
-### 2. Vote for Marcus Johnson! Yes, Again!
+<!-- ### 2. Vote for Marcus Johnson! Yes, Again!
 
 Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
 
 [Vote Here!](https://woobox.com/hzdfnk)
 
 
-![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png) -->
 
 ----
 
