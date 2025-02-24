@@ -5,6 +5,26 @@ category: Classes
 order: 4
 ---
 
+# February 24, 2025
+
+## Agenda
+
+### 1. Journal Prompt
+
+Language evolves rapidly, and slang plays a major role in how young people communicate. For teachers, counselors, social workers, and other professionals who work with youth, understanding slang can help build connections and improve communication. Consider the following:
+
+- How can technology be used to help educators and service providers stay updated on evolving youth language?
+
+- What are some potential benefits and challenges of integrating slang translation tools into educational apps, AI chatbots, or online resources?
+
+- Should schools or youth organizations formally track and teach appropriate slang to improve communication, or is it best left informal?
+
+- How might misunderstandings of slang impact interactions between adults and youth in schools, counseling, or mentoring programs?
+
+Write two paragraphs exploring how technology could bridge generational language gaps while maintaining professionalism and cultural awareness.
+
+----
+
 # February 18, 2025
 
 ## Agenda
@@ -13,14 +33,14 @@ order: 4
 
 What's the most interesting thing you learned last week? It could be from this class, another subject, a conversation, a YouTube video, or even something you discovered on your own. Explain what it was, how you learned it, and why you found it interesting.
 
-### 2. Vote for Marcus Johnson! Only 2 Days Left!
+<!-- ### 2. Vote for Marcus Johnson! Only 2 Days Left!
 
 Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
 
 [Vote Here!](https://woobox.com/hzdfnk)
 
 
-![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png) -->
 
 ----
 
