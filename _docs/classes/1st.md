@@ -25,6 +25,18 @@ order: 1
 - The journal entry was [February 24, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#february-11-2025).
 - You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
 
+## Objectives
+
+- Identify places to go to continue learning computer science and coding
+- Make connections between computer science concepts and the real world
+
+
+## TEKS
+
+- 126.3(b)(1) - The student demonstrates an understanding of the foundational concepts of computer science.
+- 126.3(b)(2) - The student uses problem-solving skills and computational thinking to solve problems.
+- 126.3(b)(3) - The student understands the impact of computer science on society and the economy.
+
 ----
 
 # February 24, 2025
