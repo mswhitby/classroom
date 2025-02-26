@@ -5,6 +5,41 @@ category: Classes
 order: 5
 ---
 
+# February 26, 2025
+
+## Agenda
+
+### 1. Simple Encryption
+
+- To access the assignment, **you must log into Code.org using your Clever account**. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Simple Encryption**.
+
+- **If you're already logged in** and cannot find the assignment, you can use this [link](https://studio.code.org/s/hoc-encryption).
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was [February 24, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#february-11-2025).
+- You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
+
+## Objectives
+
+Students will be able to:
+- Crack a message encrypted with a Caesar cipher using a Caesar Cipher Widget
+- Crack a message encrypted with random substitution using Frequency Analysis
+- Explain the weaknesses and security flaws of substitution ciphers
+- Explain why encryption is an important need for everyday life on the Internet.
+
+## TEKS
+
+- 127.788(d)(2) - create algorithms for the solution of various problems
+- 127.788(d)(4)(L)- test program solutions by investigating intended outcomes.
+
+----
+
 # February 24, 2025
 
 ## Agenda
