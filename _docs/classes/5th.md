@@ -25,12 +25,11 @@ order: 4
     - [Challenge 1 - Plane Programming](https://learn.unity.com/tutorial/challenge-1-steer-a-plane-through-obstacles-in-the-sky?uv=2022.3&pathwayId=5f7e17e1edbc2a5ec21a20af&missionId=5f71fe63edbc2a00200e9de0&projectId=5caccdfbedbc2a3cef0efe63)
 
 
-### Objective
+<!-- ### Objective
 
 The student will usee the skills you learned in the driving simulation to fly a plane around obstacles in the sky.
 
-### TEKS
-
+### TEKS -->
 
 ----
 

@@ -22,10 +22,10 @@ order: 5
 ### 2. Journal
 
 - Complete your journal entry for this week if you have not completed it yet.
-- The journal entry was [February 24, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#february-11-2025).
+- The journal entry was [February 24, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#february-24-2025).
 - You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
 
-## Objectives
+<!-- ## Objectives
 
 Students will be able to:
 - Crack a message encrypted with a Caesar cipher using a Caesar Cipher Widget
@@ -36,7 +36,7 @@ Students will be able to:
 ## TEKS
 
 - 127.788(d)(2) - create algorithms for the solution of various problems
-- 127.788(d)(4)(L)- test program solutions by investigating intended outcomes.
+- 127.788(d)(4)(L)- test program solutions by investigating intended outcomes. -->
 
 ----
 
