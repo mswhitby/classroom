@@ -24,6 +24,7 @@ Ms. Whitby will be doing some last-minute test prep with students today and tomo
 You can also find more test prep on our Google Site, [here](https://sites.google.com/judsonisd.org/whscollegecareer/home/test-prep).
 
 ![alt text](../../media/2025_last_minute_SAT_prep.png)
+
 ---
 
 # February 28, 2025

@@ -23,6 +23,18 @@ order: 3
 | Silver  |       |           |
 | Tangier |       |           |
 
+### 2. SAT Prep
+
+Hello Juniors!
+
+As you know, you will be taking the SAT on Wednesday. You don't need to do anything but show up on Wednesday and look for your testing room (rosters will be posted around campus on the morning of).
+
+Ms. Whitby will be doing some last-minute test prep with students today and tomorrow after school from 4:40 - 5:40 PM. Her classroom is located in D132.
+
+You can also find more test prep on our Google Site, [here](https://sites.google.com/judsonisd.org/whscollegecareer/home/test-prep).
+
+![alt text](../../media/2025_last_minute_SAT_prep.png)
+
 ----
 
 # February 26, 2025
