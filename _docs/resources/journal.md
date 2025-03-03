@@ -4,6 +4,24 @@ category: Resources
 order: 1
 ---
 
+# March 3, 2025
+
+## 1. Journal: Heroes Underground Logic Puzzle
+
+- [Heroes Underground Logic Puzzle](https://daydreampuzzles.com/logic-puzzles/heroes-underground/)
+- Complete the puzzle, and submit the answer as a [Markdown Table](https://www.markdownguide.org/extended-syntax/#tables) in your journal
+- Example:
+
+| Name    | Power | Challenge |
+| :------ | :---- | :-------- |
+| Zara    |       |           |
+| Aether  |       |           |
+| Thorne  |       |           |
+| Silver  |       |           |
+| Tangier |       |           |
+
+----
+
 # February 24, 2025
 
 ## 1. Journal Prompt
