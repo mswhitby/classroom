@@ -5,6 +5,26 @@ category: Classes
 order: 3
 ---
 
+# March 3, 2025
+
+## Agenda
+
+### 1. Journal: Heroes Underground Logic Puzzle
+
+- [Heroes Underground Logic Puzzle](https://daydreampuzzles.com/logic-puzzles/heroes-underground/)
+- Complete the puzzle, and submit the answer as a [Markdown Table](https://www.markdownguide.org/extended-syntax/#tables) in your journal
+- Example:
+
+| Name    | Power | Challenge |
+| :------ | :---- | :-------- |
+| Zara    |       |           |
+| Aether  |       |           |
+| Thorne  |       |           |
+| Silver  |       |           |
+| Tangier |       |           |
+
+----
+
 # February 26, 2025
 
 ## Agenda
@@ -24,6 +44,7 @@ order: 3
 - Complete your journal entry for this week if you have not completed it yet.
 - The journal entry was [February 24, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#february-11-2025).
 - You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
+
 <!-- 
 ## Objectives
 

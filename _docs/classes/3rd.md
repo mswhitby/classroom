@@ -275,14 +275,14 @@ Be sure to explain your choices and how they would help a team gain a competitiv
 </details>
 
 
-### 2. Vote for Marcus Johnson! Yes, Again!
+<!-- ### 2. Vote for Marcus Johnson! Yes, Again!
 
 Please click on the link or scan the QR code below to vote for Wagner's very own **Marcus Johnson** as the Army National Guard People's Choice Player for the Valero All Star basketball game!
 
 [Vote Here!](https://woobox.com/hzdfnk)
 
 
-![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png)
+![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png) -->
 
 ----
 
