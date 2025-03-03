@@ -5,6 +5,16 @@ category: Classes
 order: 2
 ---
 
+# March 3, 2025
+
+## Agenda
+
+### 1. Journal Prompt
+
+Last Friday, we had a substitute teacher, and the way our class behaved made a big impact on their experience. Reflect on how the class treated the substitute—were we respectful and cooperative, or did we make their job more difficult? How do you think the substitute felt by the end of the day? If you could go back and change anything about how we acted, what would it be? Moving forward, what can you personally do to ensure that any substitute who comes into our classroom feels respected and supported? Write two paragraphs reflecting on our behavior as a class last Friday. 
+
+---
+
 # February 28, 2025
 
 ## Agenda
