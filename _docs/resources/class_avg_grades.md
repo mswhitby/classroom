@@ -43,6 +43,22 @@ Weekly updates will be posted, so keep grinding, stay sharp, and let’s see who
 </details> -->
 
 <details>
+<summary>Week 8</summary>
+
+|   period   | count |  mean  | trend  | std dev |  min   |   25%  |   50%  |   75%  |  max   | % A's |
+| :--------: | ----: | -----: | -----: | ------: | -----: | -----: | -----: | -----: | -----: | :---: |
+| 1          |  19   |   |   |    |   |    |   |   | 100.00 |  |
+| 3          |  26   |   |   |    |   |    |   |   | 100.00 |  |
+| 4          |  22   |   |   |    |   |    |   |   | 100.00 |  |
+| 5          |  28   |   |   |    |   |    |   |   | 100.00 |  |
+| 6          |  28   |   |   |    |   |    |   |   | 100.00 |  |
+| 7          |  23   |   |   |    |   |    |   |   | 100.00 |  |
+| Practicum  |   5   | 100.00 | ----  |  0.00   | 100.00 | 100.00 | 100.00 | 100.00 | 100.00 | 100.00 |
+| Aggregate  | 151   |   |   |    |   |   |   |   | 100.00 |  |
+
+</details>
+
+<details>
 <summary>Week 7</summary>
 
 |   period   | count |  mean  | trend  | std dev |  min   |   25%  |   50%  |   75%  |  max   | % A's |

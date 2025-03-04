@@ -25,6 +25,18 @@ order: 3
 - The journal entry was [March 3, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-3-2025).
 - You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
 
+### 3. SAT Prep
+
+Hello Juniors!
+
+As you know, you will be taking the SAT on Wednesday. You don't need to do anything but show up on Wednesday and look for your testing room (rosters will be posted around campus on the morning of).
+
+Ms. Whitby will be doing some last-minute test prep with students today and tomorrow after school from 4:40 - 5:40 PM. Her classroom is located in D132.
+
+You can also find more test prep on our Google Site, [here](https://sites.google.com/judsonisd.org/whscollegecareer/home/test-prep).
+
+![alt text](../../media/2025_last_minute_SAT_prep.png)
+
 ----
 
 # March 3, 2025
@@ -45,7 +57,7 @@ order: 3
 | Silver  |       |           |
 | Tangier |       |           |
 
-### 2. SAT Prep
+<!-- ### 2. SAT Prep
 
 Hello Juniors!
 
@@ -55,7 +67,7 @@ Ms. Whitby will be doing some last-minute test prep with students today and tomo
 
 You can also find more test prep on our Google Site, [here](https://sites.google.com/judsonisd.org/whscollegecareer/home/test-prep).
 
-![alt text](../../media/2025_last_minute_SAT_prep.png)
+![alt text](../../media/2025_last_minute_SAT_prep.png) -->
 
 ----
 
