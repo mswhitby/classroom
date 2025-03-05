@@ -25,7 +25,7 @@ order: 1
 - The journal entry was [March 4, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-3-2025).
 - You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
 
-### 2. MARCH 5TH SAT FLOATING SCHEDULE
+### 3. March 5th Floating Schedule
 
 ![alt text](../../media/MARCH_5TH_SAT_FLOATING_SCHEDULE.png)
 
