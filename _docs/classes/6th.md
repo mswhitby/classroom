@@ -29,6 +29,10 @@ order: 5
 
 ![alt text](../../media/floating_schedule_march_6.PNG)
 
+### 4. Early Release Schedule for Tomorrow
+
+![alt text](../../media/early_release.PNG)
+
 ----
 
 # March 5, 2025
@@ -51,9 +55,9 @@ order: 5
 - The journal entry was [March 3, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-3-2025).
 - You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
 
-### 3. March 5th Floating Schedule
+<!-- ### 3. March 5th Floating Schedule
 
-![alt text](../../media/MARCH_5TH_SAT_FLOATING_SCHEDULE.png)
+![alt text](../../media/MARCH_5TH_SAT_FLOATING_SCHEDULE.png) -->
 
 ----
 
