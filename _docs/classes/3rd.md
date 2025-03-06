@@ -29,6 +29,10 @@ order: 2
 
 ![alt text](../../media/floating_schedule_march_6.PNG)
 
+### 4. Early Release Schedule for Tomorrow
+
+![alt text](../../media/early_release.PNG)
+
 ----
 
 # March 5, 2025
