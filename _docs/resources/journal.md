@@ -4,6 +4,20 @@ category: Resources
 order: 1
 ---
 
+# March 17, 2025
+
+## 1. Journal Prompt: Technology Over Spring Break
+
+Over spring break, you likely used technology in different ways—whether for entertainment, communication, creativity, or learning. Reflect on how you interacted with technology during your time off.
+
+ - What types of technology did you use most often? (Examples: apps, games, programming tools, robotics, social media, etc.)
+ - How did this technology help you, entertain you, or challenge you in some way?
+ - Can you connect any of your technology use to what we learn in this class? Think about problem-solving, coding, game development, app functionality, or other related skills.
+
+Write **at least two full paragraphs** responding to these questions. Be specific in your examples and connections.
+
+----
+
 # March 3, 2025
 
 ## 1. Journal: Heroes Underground Logic Puzzle
@@ -20,7 +34,7 @@ order: 1
 | Silver  |       |           |
 | Tangier |       |           |
 
-### 2. SAT Prep
+<!-- ### 2. SAT Prep
 
 Hello Juniors!
 
@@ -30,7 +44,8 @@ Ms. Whitby will be doing some last-minute test prep with students today and tomo
 
 You can also find more test prep on our Google Site, [here](https://sites.google.com/judsonisd.org/whscollegecareer/home/test-prep).
 
-![alt text](../../media/2025_last_minute_SAT_prep.png)
+![alt text](../../media/2025_last_minute_SAT_prep.png) -->
+
 ----
 
 # February 24, 2025
