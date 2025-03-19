@@ -71,13 +71,13 @@ Write **at least two full paragraphs** responding to these questions. Be specifi
 - The journal entry was [March 3, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-3-2025).
 - You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
 
-### 3. March 6th Floating Schedule
+<!-- ### 3. March 6th Floating Schedule
 
 ![alt text](../../media/floating_schedule_march_6.PNG)
 
 ### 4. Early Release Schedule for Tomorrow
 
-![alt text](../../media/early_release.PNG)
+![alt text](../../media/early_release.PNG) -->
 
 ----
 
@@ -127,7 +127,7 @@ Write **at least two full paragraphs** responding to these questions. Be specifi
 - The journal entry was [March 3, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-3-2025).
 - You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
 
-### 3. SAT Prep
+<!-- ### 3. SAT Prep
 
 Hello Juniors!
 
@@ -137,7 +137,7 @@ Ms. Whitby will be doing some last-minute test prep with students today and tomo
 
 You can also find more test prep on our Google Site, [here](https://sites.google.com/judsonisd.org/whscollegecareer/home/test-prep).
 
-![alt text](../../media/2025_last_minute_SAT_prep.png)
+![alt text](../../media/2025_last_minute_SAT_prep.png) -->
 
 ----
 

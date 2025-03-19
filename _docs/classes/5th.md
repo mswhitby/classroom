@@ -45,7 +45,7 @@ Write **at least two full paragraphs** responding to these questions. Be specifi
 | Silver  |       |           |
 | Tangier |       |           |
 
-### 2. SAT Prep
+<!-- ### 2. SAT Prep
 
 Hello Juniors!
 
@@ -55,7 +55,7 @@ Ms. Whitby will be doing some last-minute test prep with students today and tomo
 
 You can also find more test prep on our Google Site, [here](https://sites.google.com/judsonisd.org/whscollegecareer/home/test-prep).
 
-![alt text](../../media/2025_last_minute_SAT_prep.png)
+![alt text](../../media/2025_last_minute_SAT_prep.png) -->
 
 ----
 
