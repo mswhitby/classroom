@@ -13,7 +13,6 @@ order: 3
 
 - Complete the Block Coding test.
 
-
 ### 2. Journal
 
 - Complete your journal entry for this week if you have not completed it yet.
