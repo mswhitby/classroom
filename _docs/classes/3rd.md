@@ -30,7 +30,7 @@ order: 2
     - TEKS §126.37(c)(2)(E) - Debug and test code using multiple strategies.
 
 ### 2. Make-Up Test
-- If you were not here on March 19, 2025, please come speak to me about completing your make-up test. All tests must be completed before this Friday.
+- If you were not here on March 19, 2025, please come speak to me about completing your make-up test. **All tests must be completed before this Friday**.
 
 ### 3. Journal
 
@@ -38,11 +38,11 @@ order: 2
 - The journal entry was [March 17, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-17-2025).
 - You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
 
-### 4. Grades
+### 4. Grades & Missing Work
 
 - **Friday, March 21st** is the end of the grading period—which means all missing assignments must be submitted by this date in order for you to receive credit.
-- There are over 30 journal entries that I cannot grade because the headings are not properly formatted. Check Skyward to make sure you have a grade for all journals you've completed. Also, check your journal to make sure you've written your dates correctly.
-- You must email me if you complete any missing work. I will not know you've turned in late work if you do not send me an email informing me.
+- **There are over 30 journal submissions that I cannot access or grade because the headings are not properly formatted.** Check Skyward to make sure that you have a grade for all journals that you've completed. Also, check your journal to make sure you've written your dates correctly.
+- You must email me if you complete any missing work or correct any journal headings. I will not know you've turned in missing work if you do not send me an email informing me.
 
 ----
 
