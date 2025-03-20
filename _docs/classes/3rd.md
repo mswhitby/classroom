@@ -19,25 +19,30 @@ order: 2
 
 - **If you're already logged in** and cannot find the assignment, you can use this [link](https://studio.code.org/s/csc-timecapsule-2023).
 
-### 2. Journal
+#### Objective:
+Students will be able to **animate** an existing time capsule poem using blocks that set background, text effects, sounds, sprite and events.
+
+#### TEKS:
+
+- TEKS §126.37(c)(2)(A) - Use program design problem-solving strategies to create program solutions.
+- TEKS §126.37(c)(2)(D) - Develop algorithms to implement code that uses selection, iteration, and function calls
+- TEKS §126.37(c)(3)(B) - Use modular functions to create structured programs that are easy to modify and maintain.
+- TEKS §126.37(c)(2)(E) - Debug and test code using multiple strategies.
+
+### 2. Make-Up Test
+- If you were not here on March 19, 2025, please come speak to me about completing your make-up test. All tests must be completed before this Friday.
+
+### 3. Journal
 
 - Complete your journal entry for this week if you have not completed it yet.
 - The journal entry was [March 17, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-17-2025).
 - You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
 
-### 3. Grades
+### 4. Grades
 
 - **Friday, March 21st** is the end of the grading period—which means all missing assignments must be submitted by this date in order for you to receive credit.
 - There are over 30 journal entries that I cannot grade because the headings are not properly formatted. Check Skyward to make sure you have a grade for all journals you've completed. Also, check your journal to make sure you've written your dates correctly.
 - You must email me if you complete any missing work. I will not know you've turned in late work if you do not send me an email informing me.
-
-## Objective
-
-Students will be able to: Animate an existing time capsule poem using blocks that set background, text effects, sounds, sprite and events.
-
-## TEKS
-
-
 
 ----
 
