@@ -5,6 +5,28 @@ category: Classes
 order: 4
 ---
 
+# March 20, 2025
+
+## Agenda
+
+### 1. Unity Test: Unit 1 - Player Control
+
+- Your test is on Canvas. 
+- You're only allowed 1 attempt. I suggest you first complete the Unity Module before attempting the test on Canvas. 
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was [March 17, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-17-2025).
+- You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
+
+### 3. Grades
+
+- **Friday, March 21st** is the end of the grading period—which means all missing assignments must be submitted by this date in order for you to receive credit.
+- There are over 30 journal entries that I cannot grade because the headings are not properly formatted. Check Skyward to make sure you have a grade for all journals you've completed. Also, check your journal to make sure you've written your dates correctly.
+- You must email me if you complete any missing work. I will not know you've turned in late work if you do not send me an email informing me.
+
+----
 
 # March 19, 2025
 
