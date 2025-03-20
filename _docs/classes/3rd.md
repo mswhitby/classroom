@@ -10,24 +10,24 @@ order: 2
 ## Agenda
 
 ### 1. Coding a Time Capsule - Lesson 1: Time Capsule Introduction
+ - #### Directions:
+    - To access the assignment, **you must log into Code.org using your Clever account**. Please do the following:
+        - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+        - Search for **Karen Wagner**.
+        - Log in with Google using your school email address.
+        - Complete **Lesson 1: Time Capsule Introduction**.
 
-- To access the assignment, **you must log into Code.org using your Clever account**. Please do the following:
-    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
-    - Search for **Karen Wagner**.
-    - Log in with Google using your school email address.
-    - Complete **Lesson 1: Time Capsule Introduction**.
+    - **If you're already logged in** and cannot find the assignment, you can use this [link](https://studio.code.org/s/csc-timecapsule-2023).
 
-- **If you're already logged in** and cannot find the assignment, you can use this [link](https://studio.code.org/s/csc-timecapsule-2023).
+- #### Objective:
+    Students will be able to **animate** an existing time capsule poem using blocks that set background, text effects, sounds, sprite and events.
 
-#### Objective:
-Students will be able to **animate** an existing time capsule poem using blocks that set background, text effects, sounds, sprite and events.
+- #### TEKS:
 
-#### TEKS:
-
-- TEKS §126.37(c)(2)(A) - Use program design problem-solving strategies to create program solutions.
-- TEKS §126.37(c)(2)(D) - Develop algorithms to implement code that uses selection, iteration, and function calls
-- TEKS §126.37(c)(3)(B) - Use modular functions to create structured programs that are easy to modify and maintain.
-- TEKS §126.37(c)(2)(E) - Debug and test code using multiple strategies.
+    - TEKS §126.37(c)(2)(A) - Use program design problem-solving strategies to create program solutions.
+    - TEKS §126.37(c)(2)(D) - Develop algorithms to implement code that uses selection, iteration, and function calls
+    - TEKS §126.37(c)(3)(B) - Use modular functions to create structured programs that are easy to modify and maintain.
+    - TEKS §126.37(c)(2)(E) - Debug and test code using multiple strategies.
 
 ### 2. Make-Up Test
 - If you were not here on March 19, 2025, please come speak to me about completing your make-up test. All tests must be completed before this Friday.
