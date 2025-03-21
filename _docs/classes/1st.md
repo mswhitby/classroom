@@ -5,7 +5,7 @@ category: Classes
 order: 1
 ---
 
-# March 20, 2025
+# March 21, 2025
 
 ## Objective:
 Students will be able to **animate** an existing time capsule poem using blocks that set background, text effects, sounds, sprite and events.
