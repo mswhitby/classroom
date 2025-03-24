@@ -5,6 +5,27 @@ category: Classes
 order: 2
 ---
 
+# March 24, 2025
+
+## Objective
+
+Students will reflect on the role of technology in modern sports by responding to a journal prompt about March Madness innovations using evidence and reasoning.
+
+## TEKS:
+
+- §126.47(c)(4): The student uses critical thinking, problem solving, and decision-making to make informed decisions.
+- §126.47(c)(6): The student demonstrates knowledge and appropriate use of technology systems, concepts, and operations.
+
+## Agenda
+
+### 1. Journal Prompt: Technology and March Madness
+
+Write two paragraphs considering the following: 
+
+“March Madness, the annual NCAA basketball tournament, has increasingly integrated advanced technologies to enhance both gameplay and the fan experience. From the use of artificial intelligence (AI) in predicting game outcomes to the implementation of augmented reality (AR) in broadcasting, technology is reshaping how we engage with sports. Reflect on how these technological advancements have influenced your perception of the tournament. Do you believe AI-driven predictions, such as those attempting to create perfect brackets, add excitement or detract from the unpredictability that makes March Madness thrilling? Additionally, consider the role of social media platforms and streaming services in transforming fan engagement during the tournament. How do these changes impact the traditional viewing experience and your connection to the games?” 
+
+----
+
 # March 21, 2025
 
 ## Objective
