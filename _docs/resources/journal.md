@@ -6,6 +6,16 @@ order: 1
 
 # March 17, 2025
 
+## 1. Journal Prompt: Technology and March Madness
+
+Write two paragraphs considering the following: 
+
+“March Madness, the annual NCAA basketball tournament, has increasingly integrated advanced technologies to enhance both gameplay and the fan experience. From the use of artificial intelligence (AI) in predicting game outcomes to the implementation of augmented reality (AR) in broadcasting, technology is reshaping how we engage with sports. Reflect on how these technological advancements have influenced your perception of the tournament. Do you believe AI-driven predictions, such as those attempting to create perfect brackets, add excitement or detract from the unpredictability that makes March Madness thrilling? Additionally, consider the role of social media platforms and streaming services in transforming fan engagement during the tournament. How do these changes impact the traditional viewing experience and your connection to the games?” 
+
+----
+
+# March 17, 2025
+
 ## 1. Journal Prompt: Technology Over Spring Break
 
 Over spring break, you likely used technology in different ways—whether for entertainment, communication, creativity, or learning. Reflect on how you interacted with technology during your time off.
