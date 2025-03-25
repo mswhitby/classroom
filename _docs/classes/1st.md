@@ -15,10 +15,13 @@ Students will be able to:
 
 ## TEKS:
 
-- §126.32(c)(4)(A): use program design problem-solving strategies to create program solutions;
-- §126.32(c)(4)(C): develop algorithms to implement code that uses sequence, selection, and iteration;
-- §126.32(c)(4)(B): create and reuse modules in program design;
-- §126.32(c)(4)(D): debug and test code using multiple strategies;
+§126.52(c):
+- 4A – Evaluate the ethical and legal implications of computing systems in society.
+- 4C – Evaluate bias and accessibility issues in computing, including implications for underrepresented populations.
+- 4D – Describe the risks and possible consequences of unethical or illegal use of computing resources.
+- 5A – Discuss how computing affects communication, interaction, and cognition.
+- 5B – Explain how computing has impacted fields such as business, medicine, engineering, and entertainment.
+- 5C – Evaluate the impact of computing on society, including the social, economic, and cultural implications.
 
 ## Agenda
 

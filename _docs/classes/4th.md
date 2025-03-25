@@ -5,6 +5,44 @@ category: Classes
 order: 3
 ---
 
+# March 25, 2025
+
+## Objective
+
+Students will be able to:
+- Animate their time capsule poem using blocks that set background, text effects, sprites, sounds, and events.
+- Choose an appropriate image, sound, or effect to enhance the word choice in their poems.
+
+## TEKS:
+
+§126.52(c):
+- 4A – Evaluate the ethical and legal implications of computing systems in society.
+- 4C – Evaluate bias and accessibility issues in computing, including implications for underrepresented populations.
+- 4D – Describe the risks and possible consequences of unethical or illegal use of computing resources.
+- 5A – Discuss how computing affects communication, interaction, and cognition.
+- 5B – Explain how computing has impacted fields such as business, medicine, engineering, and entertainment.
+- 5C – Evaluate the impact of computing on society, including the social, economic, and cultural implications.
+
+## Agenda
+
+### 1. Generative AI for Humanities - Lesson 1 & 2
+
+- To access the assignment, **you must log into Code.org using your Clever account**. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Generative AI for Humanities - Lesson 1 & 2**.
+
+- **If you're already logged in** and cannot find the assignment, you can use this [link](https://studio.code.org/s/gen-ai-humanities).
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was [March 24, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-24-2025).
+- You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
+
+----
+
 # March 24, 2025
 
 ## Objective
