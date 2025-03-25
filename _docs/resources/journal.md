@@ -4,7 +4,7 @@ category: Resources
 order: 1
 ---
 
-# March 17, 2025
+# March 24, 2025
 
 ## 1. Journal Prompt: Technology and March Madness
 
