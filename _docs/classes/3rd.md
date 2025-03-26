@@ -5,6 +5,42 @@ category: Classes
 order: 2
 ---
 
+# March 26, 2025
+
+## Objective
+
+Students will be able to:
+- Develop a simulation of the effects of overfishing on an aquatic ecosystem
+- Use conditional statements to show a cause and effect scenario in nature.
+
+## TEKS:
+
+- §126.52(c)(3)(A) – Create and use software that includes sequences, conditionals, loops, variables, and events.
+- §126.52(c)(3)(B) – Modify or remix existing programs to enhance functionality or customize them.
+- §126.52(c)(3)(C) – Identify and correct errors in algorithms and programs.
+
+## Agenda
+
+### 1. Simulating a Marine Ecosystem - Lesson 1: Overfishing Simulation
+
+- To access the assignment, **you must log into Code.org using your Clever account**. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Simulating a Marine Ecosystem - Lesson 1: Overfishing Simulation**.
+
+- **If you're already logged in** and cannot find the assignment, you can use this [link](https://studio.code.org/s/csc-ecosystems-2023).
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was [March 24, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-24-2025).
+- You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
+
+<!-- ### 3. Missing Work -->
+
+----
+
 # March 25, 2025
 
 ## Objective
