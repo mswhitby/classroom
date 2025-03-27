@@ -46,7 +46,7 @@ Students will be able to:
 
 ### Agenda
 
-#### 1. CodeHS -  Texas Web Design Unit 5 - Web Development
+#### 1. CodeHS - Texas Web Design Unit 5 - Web Development
 - 5.3.1 Formatting Text
 - 5.3.2 Formatting Text Quiz
 - 5.3.3 Dictionary
