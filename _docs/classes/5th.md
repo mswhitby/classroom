@@ -5,6 +5,57 @@ category: Classes
 order: 4
 ---
 
+# March 25, 2025
+
+## Game Program & Design 
+
+### Objective
+
+Students will be able to:
+- Interpret basic code in a Unity code base
+- Improve simple code using the features of an IDE
+- Control the execution of code with common logic structures
+
+### TEKS:
+
+- §126.57(c)(4)(A) – Use an IDE to write and debug programs.
+- §126.57(c)(4)(B) – Use proper syntax and language structure in developing code.
+- §126.57(c)(4)(C) – Implement conditional statements and logic structures.
+- §126.57(c)(5)(C) – Develop game solutions using structured programming techniques.
+
+### Agenda
+
+#### 1. [Unity Junior Programmer: Basic Gameplay](https://learn.unity.com/pathway/junior-programmer/unit/basic-gameplay)
+
+- [Tutorial Unit 2 - Introduction](https://learn.unity.com/pathway/junior-programmer/unit/basic-gameplay/tutorial/6759d4deedbc2a19d88974c3?version=6)
+    - [Lesson 2.1 - Player Positioning](https://learn.unity.com/pathway/junior-programmer/unit/basic-gameplay/tutorial/lesson-2-1-player-positioning?version=6)
+    - [Lesson 2.2 - Food Flight](https://learn.unity.com/pathway/junior-programmer/unit/basic-gameplay/tutorial/lesson-2-2-food-flight?version=6)
+
+## Mobile App Development
+
+### Objective
+
+Students will be able to:
+- Apply formatting tags in order to modify the appearance of text and make web pages look clear and aesthetically pleasing
+
+### TEKS:
+
+- §126.61(c)(5)(A) – Identify and use appropriate tags to create web pages.
+- §126.61(c)(5)(B) – Format text and layout using HTML and CSS to enhance appearance and usability.
+- §126.61(c)(5)(C) – Apply web design principles to enhance user experience and aesthetics.
+
+### Agenda
+
+#### 1. CodeHS -  Texas Web Design Unit 5 - Web Development
+- 5.3.1 Formatting Text
+- 5.3.2 Formatting Text Quiz
+- 5.3.3 Dictionary
+- 5.3.4 That's Bold
+- 5.3.5 Artificial Intelligence
+- 5.3.6 State Capitals
+
+----
+
 # March 24, 2025
 
 ## Objective
@@ -223,7 +274,6 @@ Please click on the link or scan the QR code below to vote for Wagner's very own
 [Vote Here!](https://woobox.com/hzdfnk)
 
 ![Vote for Marcus Johnson](../../media/2025_vote_marcus_johnson_2.png) -->
-
 
 ----
 
