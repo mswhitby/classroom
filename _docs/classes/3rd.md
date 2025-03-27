@@ -4,6 +4,11 @@ subtitle: Fundamentals of Computer Science
 category: Classes
 order: 2
 ---
+<!-- 
+Students will be able to:
+Create and use a variable to keep track of a changing value in a program.
+Explain how computer science simulations can be beneficial to scientists.
+Reference the included scientific article to guide their solutions to the overfishing simulation. -->
 
 # March 26, 2025
 
