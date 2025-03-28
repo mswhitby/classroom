@@ -5,6 +5,52 @@ category: Classes
 order: 3
 ---
 
+# March 28, 2025
+
+## Objective
+Students will be able to:
+- Modify code in a simulation to restore balance to an ecosystem that is facing a challenge, such as a decrease in a certain species or an overgrowth of another species.
+
+## TEKS:
+
+<!-- - §126.52(c)(3)(A) – Create and use software that includes sequences, conditionals, loops, variables, and events.
+- §126.52(c)(3)(B) – Modify or remix existing programs to enhance functionality or customize them.
+- §126.52(c)(3)(C) – Identify and correct errors in algorithms and programs. -->
+
+<!-- - §126.52(c)(4)(A) – Create and use appropriate data types (e.g., integer, float, Boolean, string) in developing programs.
+- §126.52(c)(4)(B) – Use sequence, selection, iteration, and conditionals in program development.
+- §126.52(c)(4)(D) – Use procedures (functions/methods) to organize code and promote reusability.
+- §126.52(c)(4)(E) – Identify and debug errors in program code (syntax, logic, and runtime errors).
+- §126.52(c)(4)(F) – Modify or adapt existing code to add functionality or correct errors. -->
+
+- §126.52(c)(4)(A) – Create and use appropriate data types and variables.
+- §126.52(c)(4)(C) – Use decision and repetition structures in program development.
+- §126.52(c)(4)(D) – Use procedures and code libraries for structured programming.
+- §126.52(c)(4)(E) – Debug and test code to ensure accuracy and function.
+- §126.52(c)(6)(A) – Communicate and document the design and development process using comments, presentations, and demonstrations.
+
+## Agenda
+
+### 1. Simulating a Marine Ecosystem - Lesson 3: Coding My Ecosystem
+
+- To access the assignment, **you must log into Code.org using your Clever account**. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Simulating a Marine Ecosystem - Lesson 3: Coding My Ecosystem**.
+
+- **If you're already logged in** and cannot find the assignment, you can use this [link](https://studio.code.org/s/csc-ecosystems-2023).
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was [March 24, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-24-2025).
+- You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
+
+<!-- ### 3. Missing Work -->
+
+----
+
 # March 27, 2025
 
 ## Objective
