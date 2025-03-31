@@ -5,6 +5,44 @@ category: Classes
 order: 2
 ---
 
+# March 31, 2025
+
+## Objective
+
+Students will be able to:
+- reflect on their current emotional and mental state and identify stressors and self-care strategies using a structured journal entry prompt.
+
+## TEKS:
+
+- §126.42(c)(3)(A) – Demonstrate personal responsibility for lifelong learning, including self-assessment and goal setting.
+
+
+## Agenda
+
+### 1. Weekly Journal Prompt: Wellness & Mindset Check
+
+> [!IMPORTANT]
+> 
+> Your journal is public on GitHub. If you want to share something personal or private, please email me or talk to me in person instead of posting it in your journal. I’m here for you and want to support you in any way I can.
+
+As we enter the final stretch of the school year and prepare for STAAR testing, it’s normal to feel a mix of emotions—stress, excitement, pressure, even exhaustion. This week’s journal is all about checking in with you.
+
+Write about the following:
+
+1. How are you feeling right now—mentally, emotionally, and physically?
+
+2. What’s been the most stressful part of school lately?
+
+3. What are some things you do (or could do) to take care of yourself during stressful times?
+
+4. What’s one goal you have for the rest of the school year? How will you stay motivated to reach it?
+
+5. Who is someone you can talk to when you’re feeling overwhelmed? Why do you trust them?
+
+You don’t have to have all the answers—just be honest. This is your space.
+
+----
+
 # March 28, 2025
 
 ## Objective

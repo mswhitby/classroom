@@ -5,6 +5,47 @@ category: Classes
 order: 4
 ---
 
+# March 31, 2025
+
+## Objective
+
+Students will be able to:
+
+- assess their mental wellness and develop personal strategies for academic and emotional resilience using a journal prompt shared through GitHub.
+- reflect on their well-being and establish a realistic goal for the last 9 weeks through a wellness check-in journal entry.
+
+## TEKS:
+
+- §126.50(c)(2)(F) – Demonstrate personal responsibility, integrity, and ethical behavior
+- §126.50(c)(4)(C) – Reflect on personal learning and set goals for improvement.
+- §126.52(c)(3)(D) – Demonstrate self-monitoring and goal setting as a lifelong learning skill.
+
+## Agenda
+
+### 1. Weekly Journal Prompt: Wellness & Mindset Check
+
+> [!IMPORTANT]
+> 
+> Your journal is public on GitHub. If you want to share something personal or private, please email me or talk to me in person instead of posting it in your journal. I’m here for you and want to support you in any way I can.
+
+As we enter the final stretch of the school year and prepare for STAAR testing, it’s normal to feel a mix of emotions—stress, excitement, pressure, even exhaustion. This week’s journal is all about checking in with you.
+
+Write about the following:
+
+1. How are you feeling right now—mentally, emotionally, and physically?
+
+2. What’s been the most stressful part of school lately?
+
+3. What are some things you do (or could do) to take care of yourself during stressful times?
+
+4. What’s one goal you have for the rest of the school year? How will you stay motivated to reach it?
+
+5. Who is someone you can talk to when you’re feeling overwhelmed? Why do you trust them?
+
+You don’t have to have all the answers—just be honest. This is your space.
+
+----
+
 # March 25, 2025
 
 ## Game Program & Design 
