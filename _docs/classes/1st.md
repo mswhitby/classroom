@@ -7,6 +7,16 @@ order: 1
 
 # March 31, 2025
 
+## Objective
+
+Students will be able to:
+- reflect on their current emotional and mental state and identify stressors and self-care strategies using a structured journal entry prompt.
+
+## TEKS:
+
+- §126.42(c)(3)(A) – Demonstrate personal responsibility for lifelong learning, including self-assessment and goal setting.
+
+
 ## Agenda
 
 ### 1. Weekly Journal Prompt: Wellness & Mindset Check
