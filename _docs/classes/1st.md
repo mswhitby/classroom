@@ -21,7 +21,9 @@ Students will be able to:
 
 ### 1. Weekly Journal Prompt: Wellness & Mindset Check
 
-Reminder: Your journal is public on GitHub. If you want to share something personal or private, please email me or talk to me in person instead of posting it in your journal. I’m here for you and want to support you in any way I can.
+> [!IMPORTANT]
+> 
+> Your journal is public on GitHub. If you want to share something personal or private, please email me or talk to me in person instead of posting it in your journal. I’m here for you and want to support you in any way I can.
 
 As we enter the final stretch of the school year and prepare for STAAR testing, it’s normal to feel a mix of emotions—stress, excitement, pressure, even exhaustion. This week’s journal is all about checking in with you.
 
