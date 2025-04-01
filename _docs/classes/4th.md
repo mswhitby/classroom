@@ -5,6 +5,41 @@ category: Classes
 order: 3
 ---
 
+# April 1, 2025
+
+## Objective
+Students will be able to:
+- create a simulation that models the spread of a virus using code
+- reflect on how data and events affect outcomes
+
+## TEKS:
+
+- §126.52(C) - Use data to analyze, identify trends, make predictions, and propose solutions.
+- §126.52(G) - Identify and explain the impact of computer science on the economy, society, and culture.
+- §126.52(H) - The difference between simulations and real-world processes and identify the advantages and limitations of simulations.
+
+## Agenda
+
+### 1. Outbreak Simulator
+
+- To access the assignment, **you must log into Code.org using your Clever account**. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Outbreak Simulator**.
+
+- **If you're already logged in** and cannot find the assignment, you can use this [link](https://studio.code.org/s/outbreak).
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was [March 31, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#1-journal-prompt-wellness--mindset-check).
+- You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
+
+<!-- ### 3. Missing Work -->
+
+----
+
 
 # March 31, 2025
 
