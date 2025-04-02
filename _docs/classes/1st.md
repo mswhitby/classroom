@@ -58,12 +58,11 @@ Students will be able to:
 
 - Complete your journal entry for this week if you have not completed it yet.
 - The journal entry was [March 31, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#1-journal-prompt-wellness--mindset-check).
-- You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
+- You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded. -->
 
 <!-- ### 3. Missing Work -->
 
----- -->
-
+<!-- ---- -->
 
 # April 1, 2025
 
