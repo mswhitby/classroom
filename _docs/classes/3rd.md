@@ -5,7 +5,6 @@ category: Classes
 order: 2
 ---
 
-
 # April 3, 2025
 
 ## Objective
