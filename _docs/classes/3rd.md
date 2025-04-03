@@ -10,11 +10,16 @@ order: 2
 
 ## Objective
 Students will be able to:
-
+- Arrange movement commands in a sequence to spell words on a grid.
+- Recognize upper-case letters of the alphabet using code.
+- Recognize written words are represented by specific sequences of letters using code.
 
 ## TEKS:
 
-
+- §126.52(c)(4)(A) — use program design problem-solving strategies to create program solutions;
+- §126.52(c)(4)(B) — design and implement algorithms to solve problems;
+- §126.52(c)(4)(C) — develop sequential algorithms to solve real-world problems;
+- §126.52(c)(4)(D) — demonstrate proficiency in debugging and testing programs.
 
 ## Agenda
 
@@ -27,6 +32,12 @@ Students will be able to:
     - Complete **Spelling With Bee**.
 
 - **If you're already logged in** and cannot find the assignment, you can use this [link](https://studio.code.org/s/spelling-bee-2021).
+
+
+### 2. Cardboard Kids
+
+- If you're working on a Cardboard Kid and did not finish yesterday, you may continue working on your Cardbord Kid
+
 
 ### 3. Journal
 
