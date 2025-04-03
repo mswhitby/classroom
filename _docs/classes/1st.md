@@ -5,31 +5,8 @@ category: Classes
 order: 1
 ---
 
-# April 2, 2025
 
-## Agenda
-
-### 1. Hour of Code
-
-- Open [hourofcode.com](https://hourofcode.com/us) in a new tab.
-- Choose any activity that interest you.
-- In your GitHub journal, let we know which activity you completed. (Use today’s date as the heading).
-
-### 2. Cardboard Kids
-
-- If you're working on a Cardboard Kid and did not finish yesterday, you may continue working on your Cardbord Kid
-- **Do NOT put your Cardboard Kid in the hallway**
-- Return your Cardboard Kid to your sub at the end of class.
-
-### 3. Journal
-
-- Complete your journal entry for this week if you have not completed it yet.
-- The journal entry was [March 31, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#1-journal-prompt-wellness--mindset-check).
-- You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
-
-----
-
-<!-- # April 2, 2025
+# April 3, 2025
 
 ## Objective
 Students will be able to:
@@ -62,7 +39,31 @@ Students will be able to:
 
 <!-- ### 3. Missing Work -->
 
-<!-- ---- -->
+----
+
+# April 2, 2025
+
+## Agenda
+
+### 1. Hour of Code
+
+- Open [hourofcode.com](https://hourofcode.com/us) in a new tab.
+- Choose any activity that interest you.
+- In your GitHub journal, let we know which activity you completed. (Use today’s date as the heading).
+
+### 2. Cardboard Kids
+
+- If you're working on a Cardboard Kid and did not finish yesterday, you may continue working on your Cardbord Kid
+- **Do NOT put your Cardboard Kid in the hallway**
+- Return your Cardboard Kid to your sub at the end of class.
+
+### 3. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was [March 31, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#1-journal-prompt-wellness--mindset-check).
+- You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
+
+----
 
 # April 1, 2025
 
