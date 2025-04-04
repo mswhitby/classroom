@@ -5,6 +5,47 @@ category: Classes
 order: 5
 ---
 
+# April 4, 2025
+
+## Objective
+Students will be able to:
+- Arrange movement commands in a sequence to spell words on a grid.
+- Recognize upper-case letters of the alphabet using code.
+- Recognize written words are represented by specific sequences of letters using code.
+
+## TEKS:
+
+- §126.52(c)(4)(A) — use program design problem-solving strategies to create program solutions;
+- §126.52(c)(4)(B) — design and implement algorithms to solve problems;
+- §126.52(c)(4)(C) — develop sequential algorithms to solve real-world problems;
+- §126.52(c)(4)(D) — demonstrate proficiency in debugging and testing programs.
+
+## Agenda
+
+### 1. Spelling With Bee
+
+- To access the assignment, **you must log into Code.org using your Clever account**. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Spelling With Bee**.
+
+- **If you're already logged in** and cannot find the assignment, you can use this [link](https://studio.code.org/s/spelling-bee-2021).
+
+
+### 2. Cardboard Kids
+
+- If you're working on a Cardboard Kid and did not finish yesterday, you may continue working on your Cardbord Kid
+
+
+### 3. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was [March 31, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#1-journal-prompt-wellness--mindset-check).
+- You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
+
+----
+
 # April 3, 2025
 
 ## Objective
