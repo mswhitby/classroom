@@ -5,6 +5,29 @@ category: Classes
 order: 2
 ---
 
+# April 7, 2025
+
+## Objective
+
+Students will be able to explain how artificial intelligence can support their learning by analyzing a real-world example of AI improving test scores in a Texas school.
+
+## TEKS
+
+- §126.32(c)(1)(B) - extend the learning environment beyond the school walls with digital products created to increase teaching and learning in the other subject areas
+- §126.32(c)(1)(E) - create web pages using a mark-up language
+
+## Agenda
+
+### 1. Journal Prompt: AI & Test Prep
+
+Write two paragraphs considering the following:
+
+Recently, a [school in Austin, Texas used AI tutors to help students prepare for tests](https://www.fox7austin.com/news/alpha-school-two-hour-learning-ai-tutor-austin-texas)—and it worked. Their scores improved so much that they ranked in the top 2% nationally. With STAAR testing happening this week, think about how AI tools (like ChatGPT, Khanmigo, or other learning apps) could help you perform better.
+
+How do you think AI can help you study, prepare, or stay organized for tests like the STAAR? What would be the most useful feature of an AI tutor for you personally? Be honest—do you think you’d use it? Why or why not?
+
+----
+
 # April 4, 2025
 
 ## Objective
