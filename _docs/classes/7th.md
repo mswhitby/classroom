@@ -10,7 +10,7 @@ order: 6
 
 # Testing Room Assignments
 
-Scan for testing room assignments:
+Visit [jisd.link/whs-testing](http://jisd.link/whs-testing) or scan for testing room assignments:
 
 ![Scan for testing room assignments](../../media/whs-testing-qr-code-download.png)
 
