@@ -5,6 +5,17 @@ category: Classes
 order: 6
 ---
 
+
+# April 11, 2025
+
+# Testing Room Assignments
+
+Scan for testing room assignments:
+
+![Scan for testing room assignments](../../media/whs-testing-qr-code-download.png)
+
+----
+
 # April 7, 2025
 
 ## Objective
