@@ -5,6 +5,24 @@ category: Classes
 order: 4
 ---
 
+# April 14, 2025
+
+### 1. Journal Prompt: High School Cell Phone & Social Media Bans
+
+Florida has enacted laws banning student cell phone use throughout the school day and restricting access to social media on school networks. Supporters argue these measures reduce distractions and cyberbullying, while opponents raise concerns about emergency communication and student autonomy. Read about Florida’s new legislation banning student cell phone use during the entire school day and restricting access to social media on school Wi-Fi:
+
+- [What you need to know about Florida's classroom cellphone bans and a new social media law](https://www.wusf.org/politics-issues/2025-01-13/what-to-know-florida-classroom-cellphone-bans-new-social-media-law)
+
+- [Judge weighs whether to block Florida’s social media ban for minors](https://apnews.com/article/florida-social-media-ban-minors-lawsuit-92ddc72484a5164e8fdb98062e1be543)
+
+Write **TWO** paragraphs considering the following:
+
+- Do you believe such bans are beneficial or detrimental to students?
+- How might these policies influence student behavior, safety, and learning?
+- If implemented in your school, how would you respond to such restrictions? 
+
+----
+
 # April 7, 2025
 
 ## Objective
