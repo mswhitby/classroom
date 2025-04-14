@@ -5,6 +5,42 @@ category: Classes
 order: 5
 ---
 
+# April 14, 2025
+
+## Objective:
+
+Students will be able to analyze the implications of statewide technology policies after examining Florida’s recent cell phone and social media bans in schools.
+
+<!-- ## TEKS: -->
+<!-- Fundamentals (126.32 c.4A): Identify and discuss how technology has changed society.
+CS I (126.33 c.4A): Discuss legal and ethical responsibilities of computer science.
+Game Programming (126.38 c.4B): Evaluate digital products for accessibility.
+App Development (126.39 c.4A): Evaluate the impact of technology on society. -->
+
+## Agenda
+
+### 1. Weekly Journal Prompt
+
+Florida has enacted laws banning student cell phone use throughout the school day and restricting access to social media on school networks. Supporters argue these measures reduce distractions and cyberbullying, while opponents raise concerns about emergency communication and student autonomy. Read about Florida’s new legislation banning student cell phone use during the entire school day and restricting access to social media on school Wi-Fi:
+
+- [What you need to know about Florida's classroom cellphone bans and a new social media law](https://www.wusf.org/politics-issues/2025-01-13/what-to-know-florida-classroom-cellphone-bans-new-social-media-law)
+
+- [Judge weighs whether to block Florida’s social media ban for minors](https://apnews.com/article/florida-social-media-ban-minors-lawsuit-92ddc72484a5164e8fdb98062e1be543)
+
+Write **TWO** paragraphs considering the following:
+
+- Do you believe such bans are beneficial or detrimental to students?
+- How might these policies influence student behavior, safety, and learning?
+- If implemented in your school, how would you respond to such restrictions? 
+
+### 2. Testing Room Assignments
+
+Visit [jisd.link/whs-testing](http://jisd.link/whs-testing) or scan for testing room assignments:
+
+![Scan for testing room assignments](../../media/whs-testing-qr-code-download.png)
+
+----
+
 # April 11, 2025
 
 <!-- ## Objective
