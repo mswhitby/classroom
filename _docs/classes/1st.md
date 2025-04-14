@@ -5,6 +5,14 @@ category: Classes
 order: 1
 ---
 
+# April 14, 2025
+
+## Weekly Journal Prompt
+
+- Write the following as your journal entry: This is a free week.
+
+----
+
 # April 11, 2025
 
 <!-- ## Objective
