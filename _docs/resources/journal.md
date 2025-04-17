@@ -17,24 +17,26 @@ Write a professional appreciation email to any staff member on campus who has ma
 4. A positive, professional tone  
 5. A proper closing  
 
+### Peer Review:
+Before sending your email, ask a classmate to read it and give you feedback. A second pair of eyes can help you catch spelling, grammar, or tone issues you might miss. Be sure to return the favor and review a peer’s email, too! I have a checklist for you to use for peer review.
+
 ### How to Submit:
 - Send your email to the staff member from your school account.
 - **BCC** me at dwhitby@judsonisd.org so I know you completed the assignment.
 
 ## Model Email Example
 
-**Subject:** Thank You for Your Support and Accountability
+> **Subject:** Thank You for Your Support and Accountability
 
-Dear Coach Starin,
-
-I wanted to take a moment to thank you for everything you do to help students stay focused on work ethic, respect, and responsibility. Your expectations are clear and consistent, and even when we don’t always get it right, you still push us to do better. I’ve noticed that students in your presence tend to carry themselves with more maturity, and that’s a reflection of your leadership.
-
-Thank you for being a positive influence on our campus and for holding us to a high standard. It really does make a difference.
-
-
-Best regards,
-
-Ms. Whitby
+> Dear Coach Starin,
+> 
+> I wanted to take a moment to thank you for everything you do to help students stay focused on work ethic, respect, and responsibility. Your expectations are clear and consistent, and even when we don’t always get it right, you still push us to do better. I’ve noticed that students in your presence tend to carry themselves with more maturity, and that’s a reflection of your leadership.
+>
+> Thank you for being a positive influence on our campus and for holding us to a high standard. It really does make a difference.
+> <br/>
+> <br/>
+> Best regards, <br/>
+> Ms. Whitby
 
 ----
 
