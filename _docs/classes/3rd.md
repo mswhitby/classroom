@@ -26,9 +26,17 @@ Assign to sections
 
 ### 2. Journal
 
+#### This Week's Journal
+
 - Complete your journal entry for this week if you have not completed it yet.
 - The journal entry was [April 14, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#april-14-2025).
 - You must email me to let me know you've submitted your journal late. If you do not email me, your journal entry may not be graded.
+
+#### Next Week's Journal
+
+- Next week's journal requies you to write an appreciation email to someone on staff here at Wagner.
+- You can find the prompt for next week here: [April 22, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#april-22-2025).
+- I recommend taking some time over your 4-day weekend to think about who you'd like to email and to draft a considerate message. 
 
 ----
 

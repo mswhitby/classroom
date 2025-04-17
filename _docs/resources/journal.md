@@ -4,6 +4,40 @@ category: Resources
 order: 1
 ---
 
+# April 22, 2025
+
+## Journal Prompt: Write a Professional Appreciation Email
+
+Write a professional appreciation email to any staff member on campus who has made a positive impact on you. This can be a teacher, counselor, coach, custodian, cafeteria worker, or anyone else you want to thank. The email must follow formal email conventions.
+
+### Your email must include:
+1. A respectful greeting  
+2. A clear reason why you’re writing (to show appreciation)  
+3. Specific examples of what the staff member has done  
+4. A positive, professional tone  
+5. A proper closing  
+
+### How to Submit:
+- Send your email to the staff member from your school account.
+- **BCC** me at dwhitby@judsonisd.org so I know you completed the assignment.
+
+## Model Email Example
+
+**Subject:** Thank You for Your Support and Accountability
+
+Dear Coach Starin,
+
+I wanted to take a moment to thank you for everything you do to help students stay focused on work ethic, respect, and responsibility. Your expectations are clear and consistent, and even when we don’t always get it right, you still push us to do better. I’ve noticed that students in your presence tend to carry themselves with more maturity, and that’s a reflection of your leadership.
+
+Thank you for being a positive influence on our campus and for holding us to a high standard. It really does make a difference.
+
+
+Best regards,
+
+Ms. Whitby
+
+----
+
 # April 14, 2025
 
 ### 1. Journal Prompt: High School Cell Phone & Social Media Bans
