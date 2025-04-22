@@ -6,6 +6,7 @@ order: 1
 
 # April 22, 2025
 
+
 ## Journal Prompt: Write a Professional Appreciation Email
 
 Write a professional appreciation email to any staff member on campus who has made a positive impact on you. This can be a teacher, counselor, coach, custodian, cafeteria worker, or anyone else you want to thank. The email must follow formal email conventions.
