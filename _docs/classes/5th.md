@@ -5,6 +5,81 @@ category: Classes
 order: 4
 ---
 
+# April 22, 2025
+
+## Objective
+
+Student will be able to: 
+- write a professional appreciation email given guidelines and a model example, and submit by BCC'ing the teacher
+- demonstrate professional written communication by composing and sending an appreciation email to a campus staff member, following formal email conventions.
+
+## TEKS 
+
+
+<!-- ### Fundamentals of Computer Science – TEKS 126.32: -->
+
+<!-- - **126.32(4)(D)** Demonstrate proficiency in personal digital communication.  
+
+- **126.32(4)(E)** Demonstrate ethical use of digital communication and media. -->
+
+
+
+<!-- ### Computer Science I – TEKS 126.33: -->
+<!-- 
+- **(3)(A)** Demonstrate professional and responsible use of communication tools.  
+
+- **(3)(C)** Use email and other digital tools appropriately in a professional setting. -->
+
+
+
+<!-- ### Game Programming & App Dev – TEKS 126.38 / 126.39: -->
+
+- **126.38(3)(C)** Demonstrate appropriate use of communication tools.  
+
+- **126.39(3)(E)** Apply effective communication skills using technical writing and documentation.
+
+## Agenda 
+
+### 1. Journal Prompt: Write a Professional Appreciation Email
+
+Write a professional appreciation email to any staff member on campus who has made a positive impact on you. This can be a teacher, counselor, coach, custodian, cafeteria worker, or anyone else you want to thank (anyone other than your Computer Science teacher). The email must follow formal email conventions.
+
+#### Your email must include:
+1. A respectful greeting  
+2. A clear reason why you’re writing (to show appreciation)  
+3. Specific examples of what the staff member has done  
+4. A positive, professional tone  
+5. A proper closing  
+
+#### Peer Review:
+Before sending your email, ask a classmate to read it and give you feedback. A second pair of eyes can help you catch spelling, grammar, or tone issues you might miss. Be sure to return the favor and review a peer’s email, too! I have a checklist for you to use for peer review.
+
+#### How to Submit:
+- Send your email to the staff member from your school account.
+- **BCC** me at dwhitby@judsonisd.org so I know you completed the assignment.
+
+#### Model Email Example
+
+> **Subject:** Thank You for Your Support and Accountability
+
+> Dear Coach Starin,
+> 
+> I wanted to take a moment to thank you for everything you do to help students stay focused on work ethic, respect, and responsibility. Your expectations are clear and consistent, and even when we don’t always get it right, you still push us to do better. I’ve noticed that students in your presence tend to carry themselves with more maturity, and that’s a reflection of your leadership.
+>
+> Thank you for being a positive influence on our campus and for holding us to a high standard. It really does make a difference.
+> <br/>
+> <br/>
+> Best regards, <br/>
+> Ms. Whitby
+
+### 2. Testing Room Assignments
+
+Visit [jisd.link/whs-testing](http://jisd.link/whs-testing) or scan for testing room assignments:
+
+![Scan for testing room assignments](../../media/whs-testing-qr-code-download.png)
+
+----
+
 # April 14, 2025
 
 ### 1. Journal Prompt: High School Cell Phone & Social Media Bans
