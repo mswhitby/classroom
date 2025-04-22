@@ -42,7 +42,7 @@ Student will be able to:
 
 ### 1. Journal Prompt: Write a Professional Appreciation Email
 
-Write a professional appreciation email to any staff member on campus who has made a positive impact on you. This can be a teacher, counselor, coach, custodian, cafeteria worker, or anyone else you want to thank. The email must follow formal email conventions.
+Write a professional appreciation email to any staff member on campus who has made a positive impact on you. This can be a teacher, counselor, coach, custodian, cafeteria worker, or anyone else you want to thank (anyone other than your Computer Science teacher). The email must follow formal email conventions.
 
 #### Your email must include:
 1. A respectful greeting  
