@@ -11,7 +11,7 @@ order: 1
 
 ### 1. Journal: Apprentice Mechanic Mishaps Logic Puzzle
 
-- Complete (Cake Maker Logic Puzzle)[https://daydreampuzzles.com/logic-puzzles/cake-maker/], and submit the answer as a [Markdown Table](https://www.markdownguide.org/extended-syntax/#tables) in your journal.
+- [Complete Cake Maker Logic Puzzle](https://daydreampuzzles.com/logic-puzzles/cake-maker/), and submit the answer as a [Markdown Table](https://www.markdownguide.org/extended-syntax/#tables) in your journal.
 
 **Example:**
 
