@@ -8,9 +8,9 @@ order: 1
 
 # May 5, 2025
 
-<!-- Objective (ABCD Format):
+## Objective:
 
-Students will analyze viral media trends and construct a C.E.R. argument evaluating the “100 Men vs Gorilla” challenge, considering logical reasoning and ethical implications. -->
+Students will analyze viral media trends and construct a C.E.R. argument evaluating the “100 Men vs Gorilla” challenge, considering logical reasoning and ethical implications.
 
 
 ## TEXS
@@ -50,6 +50,14 @@ A challenge called “100 Men vs 1 Gorilla” went viral after a famous YouTuber
 2. Do you think it’s responsible to make this kind of challenge go viral? What might people learn from it—or misunderstand?
 
 3. What does this say about how trends spread online? Is there a connection between entertainment and education?
+
+Use the C.E.R. structure:
+
+- Claim – What do you believe?
+- Evidence – What facts or logic back you up?
+- Reasoning – Why does this matter?
+
+
 
 ----
 
