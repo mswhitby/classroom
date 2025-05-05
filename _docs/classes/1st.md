@@ -5,6 +5,54 @@ category: Classes
 order: 1
 ---
 
+
+# May 5, 2025
+
+<!-- Objective (ABCD Format):
+
+Students will analyze viral media trends and construct a C.E.R. argument evaluating the “100 Men vs Gorilla” challenge, considering logical reasoning and ethical implications. -->
+
+
+## TEXS
+
+<!-- Fundamentals of CS –  -->
+
+§126.726(c)(4)(B): “Identify, describe, and apply principles of algorithmic thinking.” Students can reason through sequences of actions the 100 people could take, testing logic against real-world constraints.
+
+<!-- Computer Science I – TEKS §126.747(c)(3)(B): “Discuss the social and ethical implications of computing.”
+→ This prompt encourages exploration of digital trends, ethics, and human behavior.
+Practicum – TEKS §130.280(c)(5)(C): “Apply ethical decision making and understand implications of emerging trends in technology.”
+→ Students can reflect on whether content like this is responsible or educational.
+Any Course – Writing Across Content (Lead4ward): Use of C.E.R. (Claim, Evidence, Reasoning)
+→ Ask students to structure their journal with a clear claim, supporting evidence, and logical reasoning. -->
+
+
+<!-- TEKS:
+
+• Fundamentals: §126.726(c)(4)(B) – Algorithmic thinking
+
+• CS I: §126.747(c)(3)(B) – Social and ethical implications
+
+• Practicum: §130.280(c)(5)(C) – Emerging trends and ethics
+
+• Writing Across Content: C.E.R. argumentation -->
+
+
+## Agenda
+
+### 1. Journal: Gorilla vs 100 Men
+
+
+A challenge called “100 Men vs 1 Gorilla” went viral after a famous YouTuber suggested testing it. The idea: could 100 unarmed people defeat a silverback gorilla? Some people say yes with strategy; others say it’s impossible. Write two paragraphs considering the following:
+
+1. Do you think the 100 people could win? Why or why not? Use logic, facts, and your own reasoning.
+
+2. Do you think it’s responsible to make this kind of challenge go viral? What might people learn from it—or misunderstand?
+
+3. What does this say about how trends spread online? Is there a connection between entertainment and education?
+
+----
+
 # April 30, 2025
 
 ## Agenda
