@@ -4,6 +4,26 @@ category: Resources
 order: 1
 ---
 
+# May 5, 2025
+
+## Journal: Gorilla vs 100 Men
+
+A challenge called “100 Men vs 1 Gorilla” went viral after a famous YouTuber suggested testing it. The idea: could 100 unarmed people defeat a silverback gorilla? Some people say yes with strategy; others say it’s impossible. Write two paragraphs considering the following:
+
+1. Do you think the 100 people could win? Why or why not? Use logic, facts, and your own reasoning.
+
+2. Do you think it’s responsible to make this kind of challenge go viral? What might people learn from it—or misunderstand?
+
+3. What does this say about how trends spread online? Is there a connection between entertainment and education?
+
+Use the C.E.R. structure:
+
+- Claim – What do you believe?
+- Evidence – What facts or logic back you up?
+- Reasoning – Why does this matter?
+
+----
+
 # April 28, 2025
 
 ## Journal: Cake Maker Logic Puzzle
