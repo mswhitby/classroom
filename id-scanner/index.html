@@ -49,7 +49,7 @@
 
       function sendToGoogleSheet(studentId) {
         if (!studentId) return alert("No ID provided");
-        fetch("https://jisd.link/id-scanner", {
+        fetch("https://script.google.com/macros/s/AKfycbyMadUZzot1GbA4QnNjtGEimECIBsCzyDk0npausQqHR_axzkmWDQN0WM54n31WWry3/exec", {
           method: "POST",
           body: JSON.stringify({ id: studentId }),
           headers: {
