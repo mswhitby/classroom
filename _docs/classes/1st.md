@@ -5,6 +5,20 @@ category: Classes
 order: 1
 ---
 
+# May 12, 2025
+
+## Agenda
+
+### Journal: "The Chromebook Challenge" - Why Safety and Ethics Matter
+
+Recently, a dangerous trend called the “Chromebook Challenge” has been circulating online. This involves inserting objects like pencils into USB ports, which can cause fires or destroy the device. As a digital citizen and future tech professional, how should we respond to trends that put people and property at risk? What responsibilities do we have when using school technology? How would you explain the real-world consequences of this behavior to someone who thinks it’s “just a joke”?
+
+Write two paragraphs exploring this topic, and be sure to include:
+- A clear claim about whether this trend is ethical or not.
+- Evidence or examples (from the letter, your experiences, or what you’ve learned in class).
+- Reasoning about why safety and responsible tech use matter.
+
+----
 
 # May 5, 2025
 
@@ -56,8 +70,6 @@ Use the C.E.R. structure:
 - Claim – What do you believe?
 - Evidence – What facts or logic back you up?
 - Reasoning – Why does this matter?
-
-
 
 ----
 
