@@ -5,6 +5,23 @@ category: Classes
 order: 1
 ---
 
+# May 13, 2025
+
+## Agenda
+
+### 1. Daycare Drop Offs Logic Puzzle
+
+- Complete [Daycare Drop Offs Logic Puzzle](https://daydreampuzzles.com/logic-puzzles/daycare-drop-offs/), and submit the answer as a [Markdown Table](https://www.markdownguide.org/extended-syntax/#tables) in your journal.
+
+**Example:**
+
+| Name   | Age | Toy |
+| :----- | :-- | :-- |
+| Max    |     |     | 
+| Kylie  |     |     |
+| Emma   |     |     |
+
+
 # May 12, 2025
 
 ## Agenda
