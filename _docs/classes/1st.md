@@ -13,7 +13,7 @@ order: 1
 
 Are you ready for summer? Write your response in your journal.
 
-____
+----
 
 
 # May 13, 2025
