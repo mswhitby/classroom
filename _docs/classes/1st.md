@@ -5,6 +5,17 @@ category: Classes
 order: 1
 ---
 
+# May 19, 2025
+
+## Agenda
+
+### Journal: We've Almost Made It!
+
+Are you ready for summer? Write your response in your journal.
+
+____
+
+
 # May 13, 2025
 
 ## Agenda
