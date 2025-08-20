@@ -1,7 +1,7 @@
 ---
 title: Practicum
 subtitle: Practicum in Information Technology
-category: Classes
+category: Classes-2024
 order: 7
 ---
 
