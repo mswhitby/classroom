@@ -9,7 +9,11 @@ order: 1
 
 ## Agenda
 
-### Choose your own assignment
+### 1. Computer Science Usernames Form
+
+- Complete the form at [jisd.link/usernames](https://jisd.link/usernames)
+
+### 2. Choose your own assignment
 
  1. **Hour of Code**: Choose any activity from hourofcode.com
  2. **Sphero**: Complete Blocks 6 - Class code: 6GQ2LY
