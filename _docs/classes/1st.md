@@ -13,10 +13,14 @@ order: 1
 
 - Complete the form at [jisd.link/usernames](https://jisd.link/usernames)
 
-### 2. Choose your own assignment
+### 2. Github Journal Setup
+
+- Setup your class journal following the instructions [here](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal_creation.md).
+
+<!-- ### 3. Choose your own assignment
 
  1. **Hour of Code**: Choose any activity from hourofcode.com
  2. **Sphero**: Complete Blocks 6 - Class code: 6GQ2LY
- 3. **Code Combat (Python)**: Class code: BreadDishHome
+ 3. **Code Combat (Python)**: Class code: BreadDishHome -->
  
 ----

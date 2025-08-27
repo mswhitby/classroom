@@ -59,11 +59,11 @@ order: 2
 
 3. **Write Your First Journal Entry:**
 
-- **Use the Correct Date Format:** Each journal entry must start with a heading (`#`) that is the date in the following format `August 09, 2024`.
+- **Use the Correct Date Format:** Each journal entry must start with a heading (`#`) that is the date in the following format `August 27, 2025`.
 - **Example Entry:**
 
 ```markdown
-# August 09, 2024
+# August 27, 2025
 
 Today, I created my first GitHub account and repository. I'm excited to start using GitHub for my projects!
 ```
