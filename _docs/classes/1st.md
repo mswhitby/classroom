@@ -15,7 +15,7 @@ order: 1
 
 ### 2. Github Journal Setup
 
-- Setup your class journal following the instructions [here](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal_creation.md).
+- Setup your class journal following the instructions  at [jisd.link/journal](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal_creation.md).
 
 <!-- ### 3. Choose your own assignment
 
