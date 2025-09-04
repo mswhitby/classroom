@@ -28,7 +28,7 @@ order: 1
 ### 3. Journal
 
 - Complete your journal entry for this week if you have not completed it yet.
-- The journal entry was [September 3, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#september-2-2025).
+- The journal prompt was assigned [September 3, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#september-2-2025).
 
 ----
 
