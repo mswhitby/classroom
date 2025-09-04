@@ -5,6 +5,33 @@ category: Classes
 order: 1
 ---
 
+# September 4, 2025
+
+## Agenda
+
+### 1. Code Combat
+
+- You're allowed to use the computers today.
+- Go to [codecombat.com](https://codecombat.com)
+- Select "student"
+- Class Code: BreadDishHome
+- Create an account if you do not already have one
+- Continue with your missions
+
+### 2. A Visual Introduction to Python
+
+- English: [A Visual Introduction to Python](https://hourofpython.trinket.io/a-visual-introduction-to-python#/welcome/an-hour-of-code)
+
+- Spanish: [Una introducción visual a Python](https://hourofpython.com/una-introduccion-visual-a-python/index.html)
+
+
+### 3. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was [September 3, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#september-2-2025).
+
+----
+
 # September 3, 2025
 
 Complete the following assignment in your GitHub Journal. First, please check the screen to find your name and make sure that all columns are marked "TRUE." If any column reads "FALSE," I will not be able to see your journal, and you will not receive credit for this assignment. The instructions for setting up your journal can be found at [jisd.link/journal](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal_creation.md). Please let me know if you need any assistance.
