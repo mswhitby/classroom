@@ -5,6 +5,41 @@ category: Classes
 order: 6
 ---
 
+# September 5, 2025
+
+## Agenda
+
+### Option 1: Sphero Bolt
+
+#### 1. Blocks 6
+
+- Continue with Sphero Blocks 1 thru 6
+- Class Code: H3D8VF
+
+### Option 2: Python
+
+#### 1. Code Combat
+
+- Go to [codecombat.com](https://codecombat.com)
+- Select "student"
+- Class Code: BreadDishHome
+- Create an account if you do not already have one
+- Continue with your missions
+
+#### 2. A Visual Introduction to Python
+
+- English: [A Visual Introduction to Python](https://hourofpython.trinket.io/a-visual-introduction-to-python#/welcome/an-hour-of-code)
+
+- Spanish: [Una introducción visual a Python](https://hourofpython.com/una-introduccion-visual-a-python/index.html)
+
+
+### Weekly Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal prompt was assigned [September 2, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#september-2-2025).
+
+----
+
 # September 4, 2025
 
 ## Agenda
