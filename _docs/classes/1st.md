@@ -5,13 +5,13 @@ category: Classes
 order: 1
 ---
 
-# September 4, 2025
+# September 5, 2025
 
 ## Agenda
 
 ### Option 1: Sphero Bolt
 
-#### 1: Blocks 6
+#### 1. Blocks 6
 
 - Continue with Sphero Blocks 1 thru 6
 - Class Code: 6GQ2LY
