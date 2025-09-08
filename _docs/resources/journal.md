@@ -4,6 +4,31 @@ category: Resources
 order: 1
 ---
 
+# September 8, 2025
+
+## Journal Entry
+
+- Watch this video titled [“Computer Science is Changing Everything”](https://www.youtube-nocookie.com/embed/QvyTEx1wyOY?playlist=QvyTEx1wyOY&autoplay=1&iv_load_policy=3&loop=1&start=).
+- In your GitHub journal, respond to the prompt below.
+- Write at least 5 complete sentences.
+- Use the C.E.R. format (Claim, Evidence, Reasoning).
+
+> [!IMPORTANT]  
+> **Heading Reminder**  
+> At the very top of your entry, include the date as a first-level heading in this exact format:
+>
+> ```markdown
+> # September 2, 2025
+>
+> Write your entry here...
+> ```
+
+### Prompt
+
+Think of a career you’re interested in (e.g., nursing, filmmaking, fashion design, engineering, sports). Describe how computer science could be valuable in that profession. Use an example from the video or one from your own life to support your claim.
+
+----
+
 # September 2, 2025
 
 Complete the following assignment in your GitHub Journal. First, please check the screen to find your name and make sure that all columns are marked "TRUE." If any column reads "FALSE," I will not be able to see your journal, and you will not receive credit for this assignment. The instructions for setting up your journal can be found at [jisd.link/journal](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal_creation.md). Please let me know if you need any assistance.
