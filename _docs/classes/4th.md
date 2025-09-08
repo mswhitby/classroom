@@ -18,7 +18,7 @@ order: 3
 > At the very top of your entry, include the date as a first-level heading in this exact format:
 >
 > ```markdown
-> # September 2, 2025
+> # September 8, 2025
 >
 > Write your entry here...
 > ```
