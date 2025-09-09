@@ -4,6 +4,22 @@ subtitle: Game Program & Design
 category: Classes
 order: 5
 ---
+
+# September 9, 2025
+
+## Assignments
+
+### Unity Essentials
+
+- [Mission 2 - 3D Essentials](https://learn.unity.com/mission/mission-2-3d-essentials?pathwayId=664b6225edbc2a01973f4f19)
+
+### Weekly Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal prompt was assigned [September 8, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-8-2025).
+
+----
+
 # September 8, 2025
 
 ## Journal Entry
