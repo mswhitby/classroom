@@ -20,5 +20,5 @@ order: 8
 # September 15, 2025
 
 - [Overview of UIL Computer Science Competitions](https://github.com/mswhitby/classroom/blob/main/_docs/uil_files/uil_prep.md)
-- [2024-2025 HS VCM #5 - THE RQ MEET - COMPUTER SCIENCE]()
+- [2024-2025 HS VCM #5 - THE RQ MEET - COMPUTER SCIENCE](https://github.com/mswhitby/classroom/blob/main/_docs/uil_files/a46a070a-7414-42d4-b1a8-649757f9f2ef.pdf)
 - [2024-2025 HS VCM #5 - THE RQ MEET - COMPUTER SCIENCE - Key](https://github.com/mswhitby/classroom/blob/main/_docs/uil_files/2024-2025%20HS%20VCM%20%235%20-%20THE%20RQ%20MEET%20-%20COMPUTER%20SCIENCE%20-%20KEY%20(2).pdf)
