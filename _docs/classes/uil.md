@@ -19,4 +19,5 @@ order: 8
 
 # September 15, 2025
 
+- [Overview of UIL Computer Science Competitions](_docs/uil_files/uil_prep.md)
 - [2024-2025 HS VCM #5 - THE RQ MEET - COMPUTER SCIENCE]()
