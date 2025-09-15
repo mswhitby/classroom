@@ -5,6 +5,30 @@ category: Classes
 order: 7
 ---
 
+# September 16, 2025
+
+## Agenda
+
+### Journal Entry
+
+This year, the White House launched the Presidential AI Challenge. The goal is to find creative ways for students, teachers, and communities to use Artificial Intelligence (AI) to solve real-world problems. The prize for winning teams is $10,000 per team member. You can learn more about the challenge here: [Presidential AI Challenge](https://www.ai.gov/initiatives/presidential-challenge).
+
+Projects should:
+- Use AI responsibly and ethically.
+- Help people in education, health, safety, or the community.
+- Be creative and realistic enough to try out.
+
+#### Prompt
+
+For today’s journal, write 5–7 complete sentences using the C.E.R. format:
+- Claim: State your idea for an AI project.
+- Evidence: Explain how your idea meets the challenge requirements.
+- Reasoning: Show why your idea would be useful and how it would help people.
+
+If you’re interested in actually submitting an idea for the challenge, you can fill out this form: [Presidential AI Challenge - Participation](https://docs.google.com/forms/d/e/1FAIpQLSdvV8FUN04EWx1Bzgj5cn3DWv-7IVqJvd6caPytAGFTNLrkew/viewform?usp=header).
+
+----
+
 # September 8, 2025
 
 ## Journal Entry
