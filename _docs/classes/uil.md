@@ -15,3 +15,8 @@ order: 8
 - [Two's Complement](https://github.com/mswhitby/classroom/blob/main/_docs/uil_files/Two's%20complement.week%202%20or%203%20.pdf)
 - [2024-2025 HS VCM #6 - THE SQ MEET - COMPUTER SCIENCE](https://github.com/mswhitby/classroom/blob/main/_docs/uil_files/2024-2025%20HS%20VCM%20%236%20-%20THE%20SQ%20MEET%20-%20COMPUTER%20SCIENCE%20-%20ALL.pdf)
 - [UIL COMPUTER SCIENCE WRITTEN TEST - 2025 REGION](https://github.com/mswhitby/classroom/blob/main/_docs/uil_files/CompSciWritten_StudyPacket_R_25.pdf)
+
+
+# September 15, 2025
+
+- [2024-2025 HS VCM #5 - THE RQ MEET - COMPUTER SCIENCE]()
