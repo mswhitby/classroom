@@ -5,6 +5,25 @@ category: Classes
 order: 2
 ---
 
+# September 22, 2025
+
+## Agenda
+
+IKEA is experimenting with a virtual store inside Roblox, where people can actually earn $16.10 per hour to do jobs like restocking shelves, serving food, and helping customers—just like in a real store. You can read more here: [IKEA is opening a new store on Roblox… and you could be paid to work there!
+](https://www.ikea.com/gb/en/newsroom/corporate-news/ikea-is-opening-a-new-store-on-roblox-pub8a9272d0/).
+
+Write a journal entry (5–7 sentences) using Claim, Evidence, and Reasoning (C.E.R.) to respond to this question:
+
+Do you think working in a virtual store for real money is a good idea or a bad idea for the future of jobs? Why?
+
+- Claim: State your opinion clearly.
+- Evidence: Use the IKEA example or your own ideas about gaming, work, or technology.
+- Reasoning: Explain why your evidence supports your claim.
+
+<!-- You may choose to complete the Beat the AI Challenge. For this option, you can use AI tools to help write your response. To receive credit, you must clearly mark at the bottom of your journal: “This response used AI.” Your challenge is to edit and improve the AI’s draft so it sounds more like you and less like a machine. -->
+
+----
+
 # September 18, 2025
 
 ## Agenda

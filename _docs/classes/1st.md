@@ -5,7 +5,6 @@ category: Classes
 order: 1
 ---
 
-
 # September 22, 2025
 
 ## Agenda
@@ -21,7 +20,7 @@ Do you think working in a virtual store for real money is a good idea or a bad i
 - Evidence: Use the IKEA example or your own ideas about gaming, work, or technology.
 - Reasoning: Explain why your evidence supports your claim.
 
-You may choose to complete the Beat the AI Challenge. For this option, you can use AI tools to help write your response. To receive credit, you must clearly mark at the bottom of your journal: “This response used AI.” Your challenge is to edit and improve the AI’s draft so it sounds more like you and less like a machine.
+<!-- You may choose to complete the Beat the AI Challenge. For this option, you can use AI tools to help write your response. To receive credit, you must clearly mark at the bottom of your journal: “This response used AI.” Your challenge is to edit and improve the AI’s draft so it sounds more like you and less like a machine. -->
 
 ----
 
