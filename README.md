@@ -3,17 +3,17 @@
 ## Classes
 - [1st Period - Computer Science Fundamentals](https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md)
 - [3rd Period - Computer Science Fundamentals](https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md)
-- [3rd Period - Practicum in Information Technology](https://github.com/mswhitby/classroom/blob/main/_docs/classes/practicum.md)
-- [4th Period - Computer Science Fundamentals](https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md)
+- [4th Period - Mobile App Development](https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md)
+- [4th Period - Information Technology Capstone](https://github.com/mswhitby/classroom/blob/main/_docs/classes/capstone.md)
 - [5th Period - Game Program & Design](https://github.com/mswhitby/classroom/blob/main/_docs/classes/5th.md)
-- [5th Period - Mobile App Development](https://github.com/mswhitby/classroom/blob/main/_docs/classes/5th.md)
-- [6th Period - Computer Science Fundamentals](https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md)
-- [7th Period - Computer Science I](https://github.com/mswhitby/classroom/blob/main/_docs/classes/7th.md)
+- [6th Period - Game Program & Design](https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md)
+- [7th Period - Computer Science Fundamentals](https://github.com/mswhitby/classroom/blob/main/_docs/classes/7th.md)
+- [UIL](https://github.com/mswhitby/classroom/blob/main/_docs/classes/uil.md)
 
 ## Journal
 - [Journal Prompts](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md)
 - [Create Your Journal](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal_creation.md)
-- [GitHub User Name Form](https://forms.gle/PmXU1Prh6c1Tb47H8)
+- [GitHub Usernames Form](https://docs.google.com/forms/d/e/1FAIpQLSd6lCoQcdXk9aBNPUv6bAQuOkrEl7mkVz8NIwBM-Wp0QN3y1A/viewform?usp=sharing&ouid=103757915886071781007)
 - [Markdown Examples for Journal](https://github.com/mswhitby/classroom/blob/main/_docs/resources/markdown_examples.md)
 
 ## Tutoring

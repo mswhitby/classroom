@@ -9,6 +9,7 @@ order: 8
 
 - [Order of Operations Review - Week 1](https://github.com/mswhitby/classroom/blob/main/_docs/uil_files/Order%20of%20Operations%2026%20August.pdf)
 
+
 # September 2, 2025
 
 - [Order of Operations Review - Week 2](https://github.com/mswhitby/classroom/blob/main/_docs/uil_files/Order%20of%20Operations%20Review%20Week%202.2025.pdf)
@@ -22,3 +23,9 @@ order: 8
 - [Overview of UIL Computer Science Competitions](https://github.com/mswhitby/classroom/blob/main/_docs/uil_files/uil_prep.md)
 - [2024-2025 HS VCM #5 - THE RQ MEET - COMPUTER SCIENCE](https://github.com/mswhitby/classroom/blob/main/_docs/uil_files/a46a070a-7414-42d4-b1a8-649757f9f2ef.pdf)
 - [2024-2025 HS VCM #5 - THE RQ MEET - COMPUTER SCIENCE - Key](https://github.com/mswhitby/classroom/blob/main/_docs/uil_files/2024-2025%20HS%20VCM%20%235%20-%20THE%20RQ%20MEET%20-%20COMPUTER%20SCIENCE%20-%20KEY%20(2).pdf)
+
+
+# September 23, 2025
+
+- [Class on Comparator 2025 State](https://github.com/mswhitby/classroom/blob/main/_docs/uil_files/Class%20on%20Comparator%202025%20State%20Amelia.pdf)
+
