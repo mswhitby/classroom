@@ -22,7 +22,7 @@ order: 1
 ### 2. Journal
 
 - Complete your journal entry for this week if you have not completed it yet.
-- The journal entry was assigned Monday, September 15, 2025.
+- The journal entry was assigned [Monday, September 22, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-22-2025).
 
 ----
 
