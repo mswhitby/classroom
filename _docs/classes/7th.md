@@ -36,7 +36,7 @@ Do you think working in a virtual store for real money is a good idea or a bad i
     - Log in with Google using your school email address.
     - Complete **Minecraft Adventurer**.
 
-- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/s/mc).
+- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/mc/units/1/lessons/1/levels/1).
 
 ### 2. Journal
 
