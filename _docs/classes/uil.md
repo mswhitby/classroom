@@ -37,4 +37,4 @@ order: 8
 
 # October 1, 2025
 
--[3_Strings](https://github.com/mswhitby/classroom/tree/main/_docs/uil_files/3_Strings)
+- [3_Strings](https://github.com/mswhitby/classroom/tree/main/_docs/uil_files/3_Strings)
