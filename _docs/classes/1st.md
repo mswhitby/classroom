@@ -11,7 +11,9 @@ order: 1
 
 ### 1. Journal Entry
 
-Students often say the phrase “6, 7” during the day. In **6 to 7 sentences** using **exactly 67 words**, explain what you think this phrase means. Write about how students use it, what the mood or tone is when they say it, and why it might catch on as part of school culture. Be creative, but also give your best explanation of why people repeat it so much.
+Students often say the phrase "6, 7" during the day, but its meaning is unclear. Your challenge is to explain this phrase in your own words. **Write exactly 67 words, spread across six or seven sentences.** Consider how students use it in class or in the halls. Think about the mood or tone when it's spoken. Be creative, but also give your best explanation of why people keep repeating it.
+
+<!-- Students often say the phrase “6, 7” during the day. In **6 to 7 sentences** using **exactly 67 words**, explain what you think this phrase means. Write about how students use it, what the mood or tone is when they say it, and why it might catch on as part of school culture. Be creative, but also give your best explanation of why people repeat it so much. -->
 
 ### 2. Missing Work
 
