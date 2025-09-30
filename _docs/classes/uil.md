@@ -29,3 +29,12 @@ order: 8
 
 - [Class on Comparator 2025 State](https://github.com/mswhitby/classroom/blob/main/_docs/uil_files/Class%20on%20Comparator%202025%20State%20Amelia.pdf)
 
+
+# September 30, 2025
+
+- [Big O Notation](https://github.com/mswhitby/classroom/blob/main/_docs/uil_files/Big%20O%20class%20%20https.pdf)
+- [Data and Out for Amelia](https://github.com/mswhitby/classroom/tree/main/_docs/uil_files/Data%20and%20Out%20for%20Amelia)
+
+# October 1, 2025
+
+-[3_Strings](https://github.com/mswhitby/classroom/tree/main/_docs/uil_files/3_Strings)
