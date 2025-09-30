@@ -5,6 +5,16 @@ category: Classes
 order: 5
 ---
 
+# September 30, 2025
+
+## Agenda
+
+### 1. Journal Entry
+
+Students often say the phrase "6, 7" during the day, but its meaning is unclear. Your challenge is to explain this phrase in your own words. **Write exactly 67 words, spread across six or seven sentences.** Consider how students use it in class or in the halls. Think about the mood or tone when it's spoken. Be creative, but also give your best explanation of why people keep repeating it.
+
+----
+
 # September 22, 2025
 
 ## Agenda

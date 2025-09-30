@@ -5,6 +5,43 @@ category: Classes
 order: 2
 ---
 
+# September 30, 2025
+
+## Agenda
+
+### 1. Journal Entry
+
+Students often say the phrase "6, 7" during the day, but its meaning is unclear. Your challenge is to explain this phrase in your own words. **Write exactly 67 words, spread across six or seven sentences.** Consider how students use it in class or in the halls. Think about the mood or tone when it's spoken. Be creative, but also give your best explanation of why people keep repeating it.
+
+### 2. Missing Work
+
+I will be out next week, so the last day to submit missing work will be **Friday, October 3, 2025**. If you complete any missing work, you must email me at <dwhitby@judsonisd.org> to let me know. If you do not email me, I will not know you've made up work and your make-up work will not be graded. Below is a list of assignments that should be completed:
+
+#### Journals
+
+- [September 2, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-2-2025)
+- [September 8, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-8-2025)
+- [September 16, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-16-2025)
+- [September 22, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-22-2025)
+- [September 30, 2025]()
+
+#### Code.org
+
+To access Code.org assignments, you must log-in using your Clever account. Please do the following:
+
+- Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+- Search for **Karen Wagner**.
+- Log in with Google using your school email address.
+
+Once you're logged-in, you can click the direct link to your missing assignment:
+
+- [Minecraft Adventurer](https://studio.code.org/courses/mc/units/1/lessons/1/levels/1)
+- [Minecraft Designer](https://studio.code.org/courses/minecraft/units/1/lessons/1/levels/1)
+- [Minecraft: Hero's Journey](https://studio.code.org/courses/hero/units/1)
+- [Minecraft: Voyage Aquatic](https://studio.code.org/courses/aquatic)
+
+----
+
 # September 25, 2025
 
 ## Agenda
