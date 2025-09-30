@@ -5,6 +5,28 @@ category: Classes
 order: 3
 ---
 
+# September 30, 2025
+
+## Agenda
+
+### 1. Journal Entry
+
+Students often say the phrase "6, 7" during the day, but its meaning is unclear. Your challenge is to explain this phrase in your own words. **Write exactly 67 words, spread across six or seven sentences.** Consider how students use it in class or in the halls. Think about the mood or tone when it's spoken. Be creative, but also give your best explanation of why people keep repeating it.
+
+### 2. Missing Work
+
+I will be out next week, so the last day to submit missing work will be **Friday, October 3, 2025**. If you complete any missing work, you must email me at <dwhitby@judsonisd.org> to let me know. If you do not email me, I will not know you've made up work and your make-up work will not be graded. Below is a list of assignments that should be completed:
+
+#### Journals
+
+- [September 2, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-2-2025)
+- [September 8, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-8-2025)
+- [September 16, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-16-2025)
+- [September 22, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-22-2025)
+- [September 30, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-30-2025)
+
+----
+
 # September 22, 2025
 
 ## Agenda

@@ -25,7 +25,7 @@ I will be out next week, so the last day to submit missing work will be **Friday
 - [September 8, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-8-2025)
 - [September 16, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-16-2025)
 - [September 22, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-22-2025)
-- [September 30, 2025]()
+- [September 30, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-30-2025)
 
 #### Code.org
 
