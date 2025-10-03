@@ -5,6 +5,50 @@ category: Classes
 order: 1
 ---
 
+# October 3, 2025
+
+## Agenda
+
+### 1. Robot Islands
+- Visit [Robot Islands](https://www.abcya.com/games/robot_islands)
+- Complete levels 11 through 20
+- If you lost your progress from yesterday, work with a partner or use the smart screen up front so you do not have to start over.
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned [September 30, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-30-2025).
+
+### 3. Missing Work
+
+I will be out next week, so the last day to submit missing work will be **Friday, October 3, 2025**. If you complete any missing work, you must email me at <dwhitby@judsonisd.org> to let me know. If you do not email me, I will not know you've made up work and your make-up work will not be graded. Below is a list of assignments that should be completed:
+
+#### Journals
+
+- [September 2, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-2-2025)
+- [September 8, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-8-2025)
+- [September 16, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-16-2025)
+- [September 22, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-22-2025)
+- [September 30, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#september-30-2025)
+
+#### Code.org
+
+To access Code.org assignments, you must log-in using your Clever account. Please do the following:
+
+- Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+- Search for **Karen Wagner**.
+- Log in with Google using your school email address.
+
+Once you're logged-in, you can click the direct link to your missing assignment:
+
+- [Minecraft Adventurer](https://studio.code.org/courses/mc/units/1/lessons/1/levels/1)
+- [Minecraft Designer](https://studio.code.org/courses/minecraft/units/1/lessons/1/levels/1)
+- [Minecraft: Hero's Journey](https://studio.code.org/courses/hero/units/1)
+- [Minecraft: Voyage Aquatic](https://studio.code.org/courses/aquatic)
+- [Code your own sports game](https://studio.code.org/courses/sports/units/1)
+
+----
+
 # October 2, 2025
 
 ## Agenda
