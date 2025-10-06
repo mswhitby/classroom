@@ -5,6 +5,16 @@ category: Classes
 order: 1
 ---
 
+# October 6, 2025
+
+## Agenda
+
+### Journal Entry
+
+If you were in charge of your school, what would your technology and AI policy be? Think about things like cell phones, Chromebooks, AI tools (like ChatGPT), and online games. Should games be blocked, or should certain ones (like math or learning games) be allowed? In 5–7 sentences, explain your rules and why you think they would make school better.
+
+----
+
 # October 3, 2025
 
 ## Agenda
