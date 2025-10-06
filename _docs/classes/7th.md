@@ -15,6 +15,18 @@ If you were in charge of your school, what would your technology and AI policy b
 
 ----
 
+# October 7, 2025 - October 9, 2025
+
+## Agenda
+
+### 1. Hour of Code
+
+- Open [hourofcode.com](https://hourofcode.com/us) in a new tab.
+- Choose any activity that interest you.
+- In your GitHub journal, let we know which activity you completed. (Use today’s date as the heading).
+
+----
+
 
 # October 3, 2025
 
