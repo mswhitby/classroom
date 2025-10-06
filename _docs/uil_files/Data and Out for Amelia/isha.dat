@@ -1,0 +1,31 @@
+Test Input File:
+14
+Houston 6:00 A.M. Orlando
+Orlando 1:25 P.M. Charlotte
+Charlotte 7:30 A.M. San Diego
+San Diego 12:00 A.M. Denver
+Denver 12:00 P.M. San Diego
+San Diego 6:35 A.M. Houston
+Houston 11:59 P.M. San Diego
+San Diego 3:45 P.M. Charlotte
+Denver 5:00 A.M. Houston
+Houston 5:00 A.M. Denver
+Houston 7:45 P.M. Charlotte
+Charlotte 11:18 A.M. Houston
+Charlotte 10:10 P.M. Orlando
+Orlando 12:01 P.M. Houston
+Test Output To Screen:
+Houston 6:00 A.M. Orlando 9:01 A.M.
+Orlando 1:25 P.M. Charlotte 2:54 P.M.
+Charlotte 7:30 A.M. San Diego 8:53 A.M.
+San Diego 12:00 A.M. Denver 2:59 A.M.
+Denver 12:00 P.M. San Diego 12:59 P.M.
+San Diego 6:35 A.M. Houston 11:29 A.M.
+Houston 11:59 P.M. San Diego 12:53 P.M.
+San Diego 3:45 P.M. Charlotte 11:08 P.M.
+Denver 5:00 A.M. Houston 8:05 A.M.
+Houston 5:00 A.M. Denver 6:05 A.M.
+Houston 7:45 P.M. Charlotte 10:55 P.M.
+Charlotte 11:18 A.M. Houston 12:28 P.M.
+Charlotte 10:10 P.M. Orlando 11:39 P.M.
+Orlando 12:01 P.M. Houston 1:02 P.M.
