@@ -1,16 +1,30 @@
+# Isha.java
+
+## Brief Explanation
+
+This Java program reads flight itinerary data from a file named `isha.dat`, calculates arrival times by adding flight durations and adjusting for time zone differences between five U.S. cities (Orlando, Charlotte, Houston, Denver, San Diego), and outputs the formatted departure and arrival times for each trip.
+
+## Key Features
+- **Input Handling**: Reads the number of trips followed by trip descriptions from `isha.dat` using `Scanner`.
+- **City Management**: Uses `HashMap`s to map city names to indices and time zone offsets (relative to Orlando as 0).
+- **Flight Durations**: Stores symmetric flight times in a 5x5 adjacency matrix (in minutes; 0 indicates no direct flight).
+- **Time Calculations**: Leverages `java.time.LocalTime` and `DateTimeFormatter` to parse departure times, add flight minutes, and adjust for time zones.
+- **String Processing**: Cleans input by replacing "Diego" and colons, then reconstructs output with proper formatting (e.g., "P.M." instead of "PM").
+- **Error Handling**: Throws `IOException` for file operations.
+
+## File Contents
+
+```java
 import java.io.*;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 public class Isha {
-
     public static void main(String[] args) throws IOException {
         Scanner scan = new Scanner(new File("isha.dat"));
         int n = scan.nextInt();
         scan.nextLine();
-
-        // 1. City Index Mapping
         Map<String, Integer> indexes = new HashMap<>();// this stores an index for each of the cities
         indexes.put("Orlando", 0);
         indexes.put("Charlotte", 1);
@@ -18,33 +32,30 @@ public class Isha {
         indexes.put("Denver", 3);
         indexes.put("San", 4);
 
-        // 2. Time Zone Change Mapping (Relative to Orlando = 0)
-        Map<Integer, Integer> timeChange = new HashMap<>();// this stores the time zone change, Orlando is 0, San Diego is -3
-        timeChange.put(0, 0);   // Orlando (EST)
-        timeChange.put(1, 0);   // Charlotte (EST)
-        timeChange.put(2, -1);  // Houston (CST, -1 hr)
-        timeChange.put(3, -2);  // Denver (MST, -2 hrs)
-        timeChange.put(4, -3);  // San Diego (PST, -3 hrs)
+        Map<Integer,Integer> timeChange = new HashMap<>();// this stores the time zone change, Orlando is 0, San Diego is -3
+        timeChange.put(0,0);
+        timeChange.put(1,0);
+        timeChange.put(2,-1);
+        timeChange.put(3,-2);
+        timeChange.put(4,-3);
+        int[][] minutes = new int[5][5];// adjacency matrix, stores minutes between cities.  0 if no flight--not used
+        minutes[0][1]= 60+29;
+        minutes[0][2]= 120+1;
+        minutes[1][2]= 120+10;
+        minutes[1][4]= 240+23;
+        minutes[2][3]= 125;
+        minutes[2][4]= 120+54;
+        minutes[3][4]= 60+59;
+        minutes[1][0]= 60+29;
+        minutes[2][0]= 120+1;
+        minutes[2][1]= 120+10;
+        minutes[4][1]= 240+23;
+        minutes[3][2]= 125;
+        minutes[4][2]= 120+54;
+        minutes[4][3]= 60+59;
 
-        // 3. Adjacency Matrix for Flight Duration (in minutes)
-        int[][] minutes = new int[5][5];// adjacency matrix, stores minutes between cities. 0 if no flight--not used
-        minutes[0][1] = 60 + 29;
-        minutes[0][2] = 120 + 1;
-        minutes[1][2] = 120 + 10;
-        minutes[1][4] = 240 + 23;
-        minutes[2][3] = 125;
-        minutes[2][4] = 120 + 54;
-        minutes[3][4] = 60 + 59;
-        minutes[1][0] = 60 + 29;
-        minutes[2][0] = 120 + 1;
-        minutes[2][1] = 120 + 10;
-        minutes[4][1] = 240 + 23;
-        minutes[3][2] = 125;
-        minutes[4][2] = 120 + 54;
-        minutes[4][3] = 60 + 59;
 
-        // 4. Process Flight Trips
-        while (n-- > 0) {
+        while(n-->0){
             String trip = scan.nextLine();
             trip = trip.replaceAll("Diego", "");
             trip = trip.replaceAll(":", " ");
@@ -54,29 +65,21 @@ public class Isha {
             //System.out.println(Arrays.toString(flight));
             int orgin = indexes.get(flight[0]);
             int goal = indexes.get(flight[4]);
-            
-            // Time calculation using java.time
+            // Now we use date time formatter and LocalDate to do the time arithmetic for us
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("h:mm a"); // I had to look this up
-            LocalTime startTime = LocalTime.parse(flight[1] + ":" + flight[2] + " " + flight[3].replaceAll("\\.", ""), formatter);  //replace all due to we need PM not P.M.
-            
-            // Calculate arrival time by adding flight duration
+            LocalTime startTime = LocalTime.parse(flight[1]+":"+flight[2]+" "+flight[3].replaceAll("\\.",""),formatter);  //replace all due to we need PM not P.M.
             LocalTime dest = startTime.plusMinutes(minutes[orgin][goal]);
-            
-            // Adjust for time zone difference: destZone - originZone
-            dest = dest.plusHours(-timeChange.get(orgin) + timeChange.get(goal));
-            
-            // Revert "San" back to "San Diego" for output
+            dest = dest.plusHours(-timeChange.get(orgin)+timeChange.get(goal));
+            // now to make San  into San Diego again, not sure why I took this route?
             String start = flight[0];
-            if (start.equals("San"))
+            if(start.equals("San"))
                 start = start + " Diego";
             String end = flight[4];
-            if (end.equals("San"))
+            if(end.equals("San"))
                 end = end + " Diego";
-                
-            System.out.print(start + " " + flight[1] + ":" + flight[2] + " " + flight[3] + " " + end + " ");
-            
+            System.out.print(start +" " +flight[1]+":"+flight[2]+" "+flight[3]+ " "+end+" ");
             String ans = dest.format(formatter);
-            ans = ans.replaceAll("AM", "A.M.");// get the periods back
+            ans = ans.replaceAll("AM","A.M.");// get the periods back
             ans = ans.replaceAll("PM", "P.M.");
             System.out.println(ans);
 
@@ -84,3 +87,4 @@ public class Isha {
 
     }
 }
+```
