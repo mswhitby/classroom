@@ -1,0 +1,86 @@
+import java.io.*;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
+
+public class Isha {
+
+    public static void main(String[] args) throws IOException {
+        Scanner scan = new Scanner(new File("isha.dat"));
+        int n = scan.nextInt();
+        scan.nextLine();
+
+        // 1. City Index Mapping
+        Map<String, Integer> indexes = new HashMap<>();// this stores an index for each of the cities
+        indexes.put("Orlando", 0);
+        indexes.put("Charlotte", 1);
+        indexes.put("Houston", 2);
+        indexes.put("Denver", 3);
+        indexes.put("San", 4);
+
+        // 2. Time Zone Change Mapping (Relative to Orlando = 0)
+        Map<Integer, Integer> timeChange = new HashMap<>();// this stores the time zone change, Orlando is 0, San Diego is -3
+        timeChange.put(0, 0);   // Orlando (EST)
+        timeChange.put(1, 0);   // Charlotte (EST)
+        timeChange.put(2, -1);  // Houston (CST, -1 hr)
+        timeChange.put(3, -2);  // Denver (MST, -2 hrs)
+        timeChange.put(4, -3);  // San Diego (PST, -3 hrs)
+
+        // 3. Adjacency Matrix for Flight Duration (in minutes)
+        int[][] minutes = new int[5][5];// adjacency matrix, stores minutes between cities. 0 if no flight--not used
+        minutes[0][1] = 60 + 29;
+        minutes[0][2] = 120 + 1;
+        minutes[1][2] = 120 + 10;
+        minutes[1][4] = 240 + 23;
+        minutes[2][3] = 125;
+        minutes[2][4] = 120 + 54;
+        minutes[3][4] = 60 + 59;
+        minutes[1][0] = 60 + 29;
+        minutes[2][0] = 120 + 1;
+        minutes[2][1] = 120 + 10;
+        minutes[4][1] = 240 + 23;
+        minutes[3][2] = 125;
+        minutes[4][2] = 120 + 54;
+        minutes[4][3] = 60 + 59;
+
+        // 4. Process Flight Trips
+        while (n-- > 0) {
+            String trip = scan.nextLine();
+            trip = trip.replaceAll("Diego", "");
+            trip = trip.replaceAll(":", " ");
+            //System.out.println(trip);
+
+            String[] flight = trip.split("\\s+");
+            //System.out.println(Arrays.toString(flight));
+            int orgin = indexes.get(flight[0]);
+            int goal = indexes.get(flight[4]);
+            
+            // Time calculation using java.time
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("h:mm a"); // I had to look this up
+            LocalTime startTime = LocalTime.parse(flight[1] + ":" + flight[2] + " " + flight[3].replaceAll("\\.", ""), formatter);  //replace all due to we need PM not P.M.
+            
+            // Calculate arrival time by adding flight duration
+            LocalTime dest = startTime.plusMinutes(minutes[orgin][goal]);
+            
+            // Adjust for time zone difference: destZone - originZone
+            dest = dest.plusHours(-timeChange.get(orgin) + timeChange.get(goal));
+            
+            // Revert "San" back to "San Diego" for output
+            String start = flight[0];
+            if (start.equals("San"))
+                start = start + " Diego";
+            String end = flight[4];
+            if (end.equals("San"))
+                end = end + " Diego";
+                
+            System.out.print(start + " " + flight[1] + ":" + flight[2] + " " + flight[3] + " " + end + " ");
+            
+            String ans = dest.format(formatter);
+            ans = ans.replaceAll("AM", "A.M.");// get the periods back
+            ans = ans.replaceAll("PM", "P.M.");
+            System.out.println(ans);
+
+        }
+
+    }
+}
