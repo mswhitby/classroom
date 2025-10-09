@@ -1,0 +1,41 @@
+import java.util.*;
+import java.io.*;
+
+public class Melissa {
+
+    public static void main(String[] args) throws IOException {
+        Scanner scan = new Scanner(new File("melissa.dat"));
+        int n = scan.nextInt();
+        
+        while (n-- > 0) {
+            int check = scan.nextInt();
+            System.out.println(check + " -> " + solve(check));
+        }
+    }
+
+    /**
+     * Recursively computes the single-digit product of non-zero digits.
+     * @param n The integer to process.
+     * @return The final single-digit product.
+     */
+    static int solve(int n) {
+        // Base Case: If the number is a single digit, return it.
+        if (n < 10)
+            return n;
+            
+        int product = 1;
+        int tempN = n;
+        
+        // Calculate the product of non-zero digits
+        while (tempN > 0) {
+            int digit = tempN % 10;
+            if (digit > 0) {
+                product *= digit;
+            }
+            tempN /= 10;
+        }
+        
+        // Recursive Step
+        return solve(product);
+    }
+}
