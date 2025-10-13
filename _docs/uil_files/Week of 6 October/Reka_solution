@@ -14,45 +14,55 @@ public class Reka {
     }
 
     private static String solve(Scanner scan) {
-        long L = scan.nextLong();
-        int c = scan.nextInt();
+        long L = scan.nextLong(); // Length of the palindrome
+        int c = scan.nextInt();  // Number of fixed characters
 
         assert 1 <= L && L <= 1e18;
         assert 0 <= c && c <= 200;
         assert c <= L;
 
+        // 1. Initial count of unconstrained "pairs" (including the middle element if L is odd)
         long pairs = (L + 1) / 2;
 
         Map<Long, Character> map = new HashMap<>();
         for (int i = 0; i < c; i++) {
-            long idx = scan.nextLong();
+            long idx = scan.nextLong(); // 1-based index
             String s = scan.next();
             assert Pattern.matches("^[a-z]$", s);
 
             map.put(idx, s.charAt(0));
+            // A fixed position is one less unconstrained pair/element
             pairs--;
         }
 
+        // 2. Check for contradictions and correct "pairs" count for completed pairs
         for (Map.Entry<Long, Character> entry : map.entrySet()) {
-            long other = L + 1 - entry.getKey();
+            long other = L + 1 - entry.getKey(); // The mirrored index for a palindrome
+            
             if (other == entry.getKey()) {
-                // In the middle, nothing to do
+                // This is the middle element of an odd-length palindrome. 
+                // It was correctly handled in the initial `pairs--` loop.
             } else if (entry.getKey() < other && map.containsKey(other)) {
-                // We have a matching pair of indices. Ensure the characters are equal. If not, no solution.
+                // We have a fully specified, matching pair of indices (idx and L+1-idx).
+                
+                // Contradiction Check: If the required characters are different, no palindrome is possible.
                 if (entry.getValue() != map.get(other)) {
                     return "0";
                 }
 
-                // We overcounted the number of pairs
+                // If the pair matches, we overcounted the reduction in step 1: 
+                // both `idx` and `other` caused a `pairs--`. We only need to reduce by 1 for the pair.
+                // Since the key is the smaller index, we restore the count.
                 pairs++;
             }
         }
 
+        // 3. Calculate 26^pairs (where 'pairs' is now the number of free positions/pairs)
         long exp = pairs;
 
-        final long MOD = 1_000_000_000;
+        final long MOD = 1_000_000_000; // 10^9
 
-        // answer is 26^pairs
+        // Modular Exponentiation (Exponentiation by Squaring)
         long ans = 1;
         long base = 26L;
         while (exp > 0) {
@@ -64,11 +74,13 @@ public class Reka {
             exp /= 2;
         }
 
-        if (pairs >= 7) {
-            // This is the tricky part of this problem: need leading
-            // 0s, but only if the answer is >= 10^9
+        // 4. Output Formatting (with leading zeros for the modulus)
+        if (pairs >= 7) { 
+            // If pairs >= 7, the result (26^pairs) is guaranteed to be >= 10^9, 
+            // so we need to ensure the full 9 digits of the MOD result are printed.
             return String.format("%09d", ans);
         } else {
+            // Otherwise, print the number directly.
             return Long.toString(ans);
         }
     }
