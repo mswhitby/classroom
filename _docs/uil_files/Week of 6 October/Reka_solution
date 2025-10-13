@@ -1,3 +1,4 @@
+```java
 import java.io.*;
 import java.util.*;
 import java.util.regex.*;
@@ -22,6 +23,7 @@ public class Reka {
         assert c <= L;
 
         // 1. Initial count of unconstrained "pairs" (including the middle element if L is odd)
+        // A palindrome is determined by its first ceil(L/2) positions.
         long pairs = (L + 1) / 2;
 
         Map<Long, Character> map = new HashMap<>();
@@ -85,3 +87,4 @@ public class Reka {
         }
     }
 }
+```
