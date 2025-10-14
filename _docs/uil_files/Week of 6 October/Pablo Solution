@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+public class Pablo {
+    public static void main(String[] args) throws IOException{
+         Scanner scan = new Scanner(new File("pablo.dat"));
+        int n = scan.nextInt();
+        while(n-->0) {
+            double lat1 = scan.nextDouble();
+            double long1 = scan.nextDouble();
+            double lat2 = scan.nextDouble();
+            double long2 = scan.nextDouble();
+            double latDiffRads = Math.toRadians(lat1)- Math.toRadians(lat2);
+            double longDiffRads = Math.toRadians(long1)- Math.toRadians(long2);
+            double alpha = Math.sin(latDiffRads/2)*Math.sin(latDiffRads/2)+Math.cos(Math.toRadians(lat1))*Math.cos(Math.toRadians(lat2))*Math.sin(longDiffRads/2)*Math.sin(longDiffRads/2);
+            double  c = 2*Math.atan2(Math.sqrt(alpha), Math.sqrt(1-(alpha)));
+            double dist = 6371*c*1000;
+            System.out.printf("The distance between (%f, %f) and (%f, %f) is %.0f meters.\n",lat1, long1, lat2, long2, dist);
+
+
+        }
+    }
+}
