@@ -1,0 +1,113 @@
+# Problem Analysis and Solution
+
+## Problem Description
+
+Arti needs to compute the square roots of a list of positive integers provided in an input file. The program must read the input, calculate the square root for each number, and output each original number followed by its square root, rounded to three decimal places. This automates the process to avoid manual calculation.
+
+Key constraints:
+- Up to 50 numbers.
+- Each number \( X \) satisfies \( 0 < X < 5000 \), so all are positive integers between 1 and 4999.
+
+The problem focuses on basic input/output handling, mathematical computation (square root), and precise formatting.
+
+## Input Specification
+
+- **Line 1**: A single integer \( N \) (number of integers, \( 1 \leq N \leq 50 \)).
+- **Lines 2 to \( N+1 \)**: \( N \) positive integers \( X \) (each on its own line).
+
+## Output Specification
+
+- Exactly \( N \) lines.
+- Each line: The original integer \( X \), followed by a single space, then the square root of \( X \) rounded to exactly three decimal places.
+- No additional spaces, newlines, or text.
+
+## Sample Input and Output
+
+### Sample Input
+```
+5
+7
+8
+9
+51
+17
+```
+
+### Sample Output
+```
+7 2.646
+8 2.828
+9 3.000
+51 7.141
+17 4.123
+```
+
+**Verification Notes**:
+- \(\sqrt{7} \approx 2.64575\) → rounded to 2.646
+- \(\sqrt{8} \approx 2.82843\) → rounded to 2.828
+- \(\sqrt{9} = 3.00000\) → 3.000
+- \(\sqrt{51} \approx 7.14143\) → 7.141
+- \(\sqrt{17} \approx 4.12311\) → 4.123
+
+## Analysis
+
+### Approach
+1. **Read Input**: Use standard input (stdin) to read \( N \), then read \( N \) integers.
+2. **Compute Square Roots**: For each \( X \), calculate \(\sqrt{X}\) using a math library.
+3. **Formatting**: Output \( X \) as integer, space, then \(\sqrt{X}\) as float with exactly 3 decimal places (use rounding rules, e.g., banker's rounding if needed, but standard float formatting suffices).
+4. **Edge Cases**:
+   - \( N = 1 \): Single number.
+   - \( N = 50 \): Maximum size.
+   - \( X = 1 \): \(\sqrt{1} = 1.000\)
+   - \( X = 4999 \): \(\sqrt{4999} \approx 70.704\)
+   - Perfect squares (e.g., 9 → 3.000).
+   - No zeros or negatives per constraints.
+
+### Potential Challenges
+- Precise rounding: Ensure exactly 3 decimals, even for whole numbers (e.g., 3.000).
+- Input validation: Not required, as inputs are guaranteed valid.
+- Efficiency: Trivial (\( O(N) \) with \( N \leq 50 \)), no performance issues.
+
+### Language Choice
+Python is ideal due to simple stdin handling, built-in `math.sqrt`, and easy string formatting for decimals.
+
+## Solution Code
+
+```python
+import sys
+import math
+
+# Read from stdin
+input_data = sys.stdin.read().strip().splitlines()
+
+# First line: N
+N = int(input_data[0])
+
+# Next N lines: the numbers
+numbers = [int(input_data[i]) for i in range(1, N + 1)]
+
+# Output each number and its sqrt, rounded to 3 decimals
+for x in numbers:
+    sqrt_x = math.sqrt(x)
+    print(f"{x} {sqrt_x:.3f}")
+```
+
+### Explanation
+- `sys.stdin.read().strip().splitlines()`: Reads all input at once, efficient for small \( N \).
+- `math.sqrt(x)`: Computes the square root.
+- `f"{sqrt_x:.3f}"`: Formats the float to 3 decimal places with rounding.
+- Loop outputs exactly as specified.
+
+## Testing with Sample Input
+
+To verify, the code was executed with the sample input. The output matches the sample exactly:
+
+```
+7 2.646
+8 2.828
+9 3.000
+51 7.141
+17 4.123
+```
+
+This confirms correctness for the provided case. The solution is robust for all constrained inputs.
