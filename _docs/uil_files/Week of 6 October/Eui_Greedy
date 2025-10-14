@@ -1,0 +1,180 @@
+### Overview
+This Java program reads input from a file named `"eui.dat"` and processes multiple test cases involving ranges of days associated with different months. It appears to be solving a scheduling or coverage problem for each month separately, computing two values per month: a "minimum" value (via `solveMin`) and a "maximum" value (via `solveMax`). These values are summed across all months for each test case, and the results are printed in a formatted output.
+
+The program assumes the input file contains integer days between 1 and 28 (likely modeling a short month like February) and uses assertions for validation (which would fail in production if conditions aren't met). The `Range` class represents an interval [start, end], and ranges are grouped and processed by month.
+
+### Input Format Assumptions (Based on Code Parsing)
+- First line: Integer `T` (1 ≤ T ≤ 50), number of test cases.
+- For each test case:
+  - Integer `n`, number of ranges.
+  - Then `n` lines, each: `<month_name> <start> - <end>` (e.g., "January 5 - 10").
+- Months are strings (case-sensitive), and ranges are valid (1 ≤ start ≤ end ≤ 28).
+
+### Code Structure Breakdown
+
+#### Imports and Class Declaration
+```java
+import java.io.*;
+import java.util.*;
+
+public class Eui {
+    // ...
+}
+```
+- `java.io.*`: For file input (`IOException` handling).
+- `java.util.*`: For `Scanner`, `HashMap`, `ArrayList`, `Collections`, `List`.
+- The class `Eui` contains the `main` method and helper methods.
+
+#### Main Method
+```java
+public static void main(String[] args) throws IOException {
+    Scanner scan = new Scanner(new File("eui.dat"));
+    int T = scan.nextInt();
+    assert 1 <= T && T <= 50;
+
+    for (int caseNum = 1; caseNum <= T; caseNum++) {
+        int n = scan.nextInt();
+
+        Map<String, List<Range>> months = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            String month = scan.next();
+            int start = scan.nextInt();
+            scan.next(); // read -
+            int end = scan.nextInt();
+
+            assert 1 <= start && start <= end;
+            assert start <= end && end <= 28;
+
+            if (!months.containsKey(month)) {
+                months.put(month, new ArrayList<>());
+            }
+
+            months.get(month).add(new Range(start, end));
+        }
+
+        int minAns = 0;
+        int maxAns = 0;
+
+        for (List<Range> ranges : months.values()) {
+            Collections.sort(ranges);
+            minAns += solveMin(ranges);
+            maxAns += solveMax(ranges);
+        }
+
+        System.out.printf("Case #%d: %d %d\n", caseNum, minAns, maxAns);
+    }
+}
+```
+- Creates a `Scanner` to read from `"eui.dat"`.
+- Reads `T` and validates it.
+- For each test case (`caseNum` from 1 to `T`):
+  - Reads `n`.
+  - Initializes a `HashMap` where keys are month names (strings) and values are lists of `Range` objects.
+  - Loops `n` times:
+    - Reads the month name, start day, skips the literal "-", reads end day.
+    - Validates the range.
+    - Adds the `Range` to the list for that month (creates the list if new).
+  - Initializes `minAns` and `maxAns` to 0.
+  - For each month's list of ranges:
+    - Sorts the list using the `Comparable` implementation in `Range` (primarily by `start` ascending, secondarily by `end` ascending).
+    - Adds the result of `solveMin(ranges)` to `minAns`.
+    - Adds the result of `solveMax(ranges)` to `maxAns`.
+  - Prints the output in the format `"Case #<caseNum>: <minAns> <maxAns>"`.
+
+This structure processes months independently, summing their contributions to the totals.
+
+#### Range Class
+```java
+public static class Range implements Comparable<Range> {
+    int start;
+    int end;
+
+    public Range(int start, int end) {
+        this.start = start;
+        this.end = end;
+    }
+
+    public boolean contains(int x) {
+        return start <= x && x <= end;
+    }
+
+    public int compareTo(Range other) {
+        if (start == other.start) {
+            return Integer.compare(end, other.end);
+        } else {
+            return Integer.compare(start, other.start);
+        }
+    }
+}
+```
+- A simple inner class for a half-open? No, closed interval [start, end].
+- Constructor initializes `start` and `end`.
+- `contains(int x)`: Checks if day `x` falls within the range (inclusive).
+- `compareTo(Range other)`: Sorts primarily by `start` (ascending), and if starts are equal, by `end` (ascending). This enables `Collections.sort()`.
+
+#### solveMin Method
+```java
+public static int solveMin(List<Range> ranges) {
+    int ans = 0;
+    int last = -1;
+    for (Range range : ranges) {
+        if (!range.contains(last)) {
+            last = range.end;
+            ++ans;
+        }
+    }
+
+    return ans;
+}
+```
+- Computes an integer value for a sorted list of ranges.
+- Initializes `ans = 0` (count) and `last = -1` (a "representative" day from the previous group).
+- Iterates through each range in sorted order:
+  - If the current range does **not** contain the current `last` day, it starts a new "group": increments `ans` and updates `last` to the current range's `end`.
+  - Otherwise, skips (the range is "covered" by the existing `last`).
+- Returns `ans`.
+- **Intended Purpose**: This appears to approximate the **minimum number of points (days) needed to intersect ("hit") all ranges** in the list—i.e., select the fewest days such that every range contains at least one selected day. It greedily places a point at the end of a range only when necessary. However, because ranges are sorted by start (not end), this may overestimate the minimum in some cases (e.g., for ranges [1,4] and [2,3], it returns 2 instead of the optimal 1 by picking day 2 or 3).
+
+#### solveMax Method
+```java
+public static int solveMax(List<Range> ranges) {
+    int ans = 0;
+    int last = -1;
+    for (Range range : ranges) {
+        int next = Math.max(range.start, last + 1);
+        if (next <= range.end) {
+            ++ans;
+            last = next;
+        }
+    }
+
+    return ans;
+}
+```
+- Computes an integer value for a sorted list of ranges.
+- Initializes `ans = 0` and `last = -1` (last assigned day).
+- Iterates through each range in sorted order:
+  - Computes `next` as the earliest possible day for this range after the previous assignment: `max(range.start, last + 1)`.
+  - If `next` is within the range (`next <= range.end`), "assigns" it: increments `ans` and updates `last = next`.
+  - Otherwise, skips this range.
+- Returns `ans`.
+- **Intended Purpose**: This computes the **maximum number of ranges that can be assigned distinct days** within their respective ranges (one range per day, no two on the same day). It uses a greedy approach: processes ranges in order of increasing start, assigning the earliest feasible day after the prior assignment. This simulates packing assignments as left-shifted as possible on the timeline. It works correctly in many cases (e.g., multiple ranges ending early force skips), but sorting by start (instead of end) may not always yield the absolute maximum, though it often does for interval assignment problems.
+
+### Overall Behavior and Potential Issues
+- **Per Test Case**: Groups ranges by month, processes each independently, and sums the `solveMin` and `solveMax` results across months.
+- **Output Example** (hypothetical):
+  ```
+  Case #1: 3 5
+  Case #2: 1 2
+  ```
+  Here, for Case 1, the total minimum hitting points across months is 3, and the total maximum assignable ranges is 5.
+- **Assumptions/Edge Cases**:
+  - Empty month: `solveMin`/`solveMax` return 0 (empty list).
+  - Single range: Both return 1.
+  - Overlapping ranges: `solveMin` may group them if the greedy placement covers them; `solveMax` tries to assign distinct days if possible.
+  - Assertions: For debugging; in a real contest, these might be removed.
+- **Potential Bugs/Optimality**: 
+  - `solveMin` is not always optimal (wrong sort order for classic greedy hitting set).
+  - `solveMax` is a reasonable approximation but uses non-standard sorting; for guaranteed optimality, sort by `end` and track available days explicitly.
+- **Efficiency**: O(T * n log n) worst-case (sorting per month), fine for small n/T (e.g., n ≤ 100 implied by constraints).
+
