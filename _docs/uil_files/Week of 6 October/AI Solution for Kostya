@@ -1,0 +1,154 @@
+# Problem Analysis and Commentary: UIL District 2021 - Kostya
+
+## Problem Overview
+
+This problem simulates Kostya folding laundry with N pairs of socks (2N individual socks total), where socks from the same pair are indistinguishable but pairs are distinct. Kostya draws socks randomly one at a time. The first sock from a pair goes on the bed (increasing the "open" count by 1). The second sock from that pair is folded with the first and removed from the bed (decreasing the open count by 1). The bed holds at most K open socks. Frustration occurs if Kostya draws the first sock of a new pair when the bed already has K open socks (attempting to reach K+1 opens).
+
+The task is to compute the probability of frustration occurring at any point during the process for multiple test cases. This is a probabilistic combinatorics problem involving random permutations of a multiset (two socks per pair).
+
+**Key Constraints**:
+- 1 ≤ T ≤ 50 (test cases)
+- 1 ≤ K ≤ N ≤ 100 (ensures small state space for computation)
+
+The total number of possible drawing sequences is \(\frac{(2N)!}{2^N}\) (multiset permutations), but direct enumeration is infeasible for N=100 due to factorial growth.
+
+## Input Specification
+
+- **Line 1**: Integer T (number of test cases).
+- **Next T lines**: Two integers N and K per line.
+
+Input is read from standard input (file `kostya.dat` in contest context).
+
+## Output Specification
+
+- For each test case t (1-based):
+  - Line: `Case #t: ` followed by the frustration probability, rounded to exactly 4 decimal places (use standard rounding).
+- No extra spaces or lines.
+
+## Sample Input and Output
+
+### Sample Input
+```
+2
+2 1
+4 4
+```
+
+### Sample Output
+```
+Case #1: 0.6667
+Case #2: 0.0000
+```
+
+### Sample Explanation
+
+- **Case 1 (N=2, K=1)**: 4 socks (pairs A,A,B,B). Total sequences: \(\frac{4!}{2^2} = 6\).
+  - Frustration if the first two socks are from different pairs (e.g., A then B: bed has 2 opens >1).
+  - Probability: 2/3 (sequences like ABxx, BAxx lead to frustration; AAxx, BBxx, etc., do not).
+  - Matches output: 0.6667.
+
+- **Case 2 (N=4, K=4)**: Bed holds up to 4 opens. Maximum possible opens is 4 (all first socks before any seconds), so frustration impossible: probability 0.0000.
+
+## Detailed Analysis
+
+### Modeling the Process
+- Treat pairs as distinct types (1 to N), with two identical socks each.
+- Drawing is uniform over remaining socks, equivalent to a random multiset permutation.
+- Track "open pairs" (o): types with exactly one sock drawn.
+- Frustration: o reaches K+1 at any step.
+- Goal: Probability that max o > K during the 2N draws (or 1 - probability that o ≤ K throughout).
+
+This resembles a random walk on pair states:
+- "Open new" (+1 to o): Draw from an untouched pair (probability proportional to 2 × untouched pairs).
+- "Close existing" (-1 to o): Draw the match for an open pair (probability proportional to current o).
+
+### Challenges
+- **Combinatorial Explosion**: Direct counting of valid sequences impossible for N=100.
+- **State Dependencies**: Need to track progress without exceeding K, while handling probabilities accurately.
+- **Precision**: Output to 4 decimals; floating-point errors must be minimal (double suffices).
+- **Edge Cases**:
+  - N=1, K=1: Always succeeds (prob 0.0000).
+  - K=N: Never frustrates (max o = N, prob 0.0000).
+  - K=1, small N: High frustration if mismatches early.
+  - End state: Must reach o=0 after 2N draws.
+
+### Approach: Dynamic Programming with Probabilities
+Use DP to compute the probability of reaching the end (all pairs closed, o=0) without ever exceeding K opens. This avoids counting huge integers by working directly with probabilities.
+
+- **State**: `dp[p][o]` = probability of having touched p pairs with o opens *after exactly 2p - o socks drawn*, without exceeding K earlier.
+  - p: Pairs started (0 to N).
+  - o: Current opens (0 to K).
+  - Unique s = 2p - o per state, enabling sequential processing.
+
+- **Transitions** (from state after s socks, remaining r = 2N - s socks):
+  - **Close** (if o > 0): Probability o / r → (p, o-1).
+  - **Open new** (if p < N): Probability 2(N - p) / r → (p+1, o+1), *only if o+1 ≤ K* (else, probability "lost" to frustration).
+
+- **Initialization**: `dp[0][0] = 1.0`.
+- **Processing**: Iterate over s = 0 to 2N-1. For each s, enumerate valid (p, o = 2p - s) with dp[p][o] > 0, apply transitions to s+1 states.
+- **Result**: Frustration probability = 1 - `dp[N][0]`.
+
+- **Complexity**: O(2N × N × K) = O(200 × 100 × 100) ≈ 2×10^6 operations per test case (negligible).
+- **Precision Note**: Double (64-bit float) handles ~200 multiplications with <10^{-10} relative error, ample for 4-decimal rounding.
+
+This DP captures all paths staying ≤ K, leveraging the Markov property and increasing sock count.
+
+## Solution Code (Kostya.java)
+
+```java
+import java.util.Scanner;
+
+public class Kostya {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        for (int t = 1; t <= T; t++) {
+            int N = sc.nextInt();
+            int K = sc.nextInt();
+            double[][] dp = new double[N + 1][K + 1];
+            dp[0][0] = 1.0;
+            int totalSocks = 2 * N;
+            for (int s = 0; s < totalSocks; s++) {
+                for (int p = 0; p <= N; p++) {
+                    int o = 2 * p - s;
+                    if (o < 0 || o > K || o > p) continue;
+                    double pr = dp[p][o];
+                    if (pr == 0.0) continue;
+                    int r = totalSocks - s;
+                    // Close
+                    if (o > 0) {
+                        double pclose = (double) o / r;
+                        int np = p;
+                        int no = o - 1;
+                        dp[np][no] += pr * pclose;
+                    }
+                    // Open new
+                    int untouched = N - p;
+                    if (untouched > 0) {
+                        double pnew = 2.0 * untouched / r;
+                        int np = p + 1;
+                        int no = o + 1;
+                        if (no <= K) {
+                            dp[np][no] += pr * pnew;
+                        }
+                    }
+                }
+            }
+            double neverFrustrated = dp[N][0];
+            double frustrated = 1.0 - neverFrustrated;
+            System.out.printf("Case #%d: %.4f%n", t, frustrated);
+        }
+        sc.close();
+    }
+}
+```
+
+### Code Explanation
+- **DP Array**: `dp[p][o]` accumulates probabilities for valid paths.
+- **Loop Structure**: Outer loop over sock count s ensures transitions target future states only.
+- **Enumeration**: For each s, compute o from p and skip invalid states.
+- **Transitions**: Direct probability updates; "lost" probability implicitly contributes to frustration.
+- **Output**: Use `printf` for exact 4-decimal formatting.
+- **Verification**: Matches samples; handles edges (e.g., K=N yields 1.0000 for neverFrustrated).
+
+This solution is efficient, correct, and contest-ready. For higher precision if needed, BigDecimal could replace double, but it's unnecessary here.
