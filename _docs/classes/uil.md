@@ -38,3 +38,7 @@ order: 8
 # October 1, 2025
 
 - [3_Strings](https://github.com/mswhitby/classroom/tree/main/_docs/uil_files/3_Strings)
+
+# October 6, 2005
+
+- [Week of 6 October - Directory](https://github.com/mswhitby/classroom/tree/main/_docs/uil_files/Week%20of%206%20October)
