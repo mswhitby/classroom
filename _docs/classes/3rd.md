@@ -5,13 +5,41 @@ category: Classes
 order: 2
 ---
 
-# October 6, 2025
+# October 14, 2025
 
 ## Agenda
 
-### Journal Entry
+### Journal Prompt: Prompt Engineering with Canva AI
 
-If you were in charge of your school, what would your technology and AI policy be? Think about things like cell phones, Chromebooks, AI tools (like ChatGPT), and online games. Should games be blocked, or should certain ones (like math or learning games) be allowed? In 5–7 sentences, explain your rules and why you think they would make school better.
+Tools like Canva AI can generate interactive lessons, presentations, and designs when given clear, detailed instructions — called prompts. Your challenge today is to act as a teacher, trainer, or professional using AI to teach or demonstrate something academic.
+
+Use Canva AI to create an interactive project that teaches a topic or concept. Your project could be:
+- An interactive slide deck or mini-lesson (e.g., explaining variables in Python or the water cycle)
+- A clickable quiz or review activity
+- A choose-your-own-path story related to a subject
+- A digital poster or infographic with clickable or animated elements
+- A short educational game or simulation
+
+#### Part 1: Your Prompt
+
+Write a detailed prompt for Canva AI that tells it exactly what to make. Include:
+
+- The topic or subject
+- The goal (what learners should understand or do)
+- The tone and audience (who it’s for)
+- The interactive elements (clicks, animations, paths, or quizzes)
+
+Then, generate your Canva design and share the link in your journal entry.
+
+
+#### Part 2: Your Reflection
+
+In 5–7 sentences, explain:
+
+- What your prompt was designed to do
+- How Canva interpreted it
+- Which interactive parts worked best
+- How you could improve your prompt or design next time
 
 ----
 
@@ -24,6 +52,16 @@ If you were in charge of your school, what would your technology and AI policy b
 - Open [hourofcode.com](https://hourofcode.com/us) in a new tab.
 - Choose any activity that interest you.
 - In your GitHub journal, let we know which activity you completed. (Use today’s date as the heading).
+
+----
+
+# October 6, 2025
+
+## Agenda
+
+### Journal Entry
+
+If you were in charge of your school, what would your technology and AI policy be? Think about things like cell phones, Chromebooks, AI tools (like ChatGPT), and online games. Should games be blocked, or should certain ones (like math or learning games) be allowed? In 5–7 sentences, explain your rules and why you think they would make school better.
 
 ----
 
