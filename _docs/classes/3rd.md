@@ -47,7 +47,7 @@ Include:
 
 Generate your design in Canva AI, publish your site, and share the link in your journal.
 
-####S Part 2: Your Reflection
+#### Part 2: Your Reflection
 
 In 5–7 sentences, explain:
 - What your prompt was designed to do
