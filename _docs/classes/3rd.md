@@ -5,14 +5,14 @@ category: Classes
 order: 2
 ---
 
-# October 14, 2025
+# October 15, 2025
 
 ## Agenda
 
 ### Journal Entry - Prompt Engineering with Canva AI 
 
 - Complete your journal entry for this week if you have not completed it yet.
-- The journal entry was assigned Monday, October 14, 2025.
+- The journal entry was assigned [Monday, October 14, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#october-14-2025).
 
 ----
 
@@ -28,7 +28,7 @@ According to [CompTIA’s 2025 Workforce and Learning Trends report](https://www
 
 Today, you’ll act like a teacher or professional and create a Canva AI prompt that teaches something academic and includes interactive elements. You can check out my example [here](https://final-projectangel.my.canva.site/prompts).
 
-## Part 1: Your Prompt
+#### Part 1: Your Prompt
 
 Choose a topic from any subject (science, math, history, English, or computer science).
 
@@ -47,7 +47,7 @@ Include:
 
 Generate your design in Canva AI, publish your site, and share the link in your journal.
 
-## Part 2: Your Reflection
+####S Part 2: Your Reflection
 
 In 5–7 sentences, explain:
 - What your prompt was designed to do
