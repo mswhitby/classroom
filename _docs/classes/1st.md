@@ -5,44 +5,6 @@ category: Classes
 order: 1
 ---
 
-<!-- # October 14, 2025
-
-## Agenda
-
-### Journal Prompt: Prompt Engineering with Canva AI
-
-Tools like Canva AI can generate interactive lessons, presentations, and designs when given clear, detailed instructions — called prompts. Your challenge today is to act as a teacher, trainer, or professional using AI to teach or demonstrate something academic.
-
-Use Canva AI to create an interactive project that teaches a topic or concept. Your project could be:
-- An interactive slide deck or mini-lesson (e.g., explaining variables in Python or the water cycle)
-- A clickable quiz or review activity
-- A choose-your-own-path story related to a subject
-- A digital poster or infographic with clickable or animated elements
-- A short educational game or simulation
-
-#### Part 1: Your Prompt
-
-Write a detailed prompt for Canva AI that tells it exactly what to make. Include:
-
-- The topic or subject
-- The goal (what learners should understand or do)
-- The tone and audience (who it’s for)
-- The interactive elements (clicks, animations, paths, or quizzes)
-
-Then, generate your Canva design and share the link in your journal entry.
-
-
-#### Part 2: Your Reflection
-
-In 5–7 sentences, explain:
-
-- What your prompt was designed to do
-- How Canva interpreted it
-- Which interactive parts worked best
-- How you could improve your prompt or design next time
-
----- -->
-
 # October 14, 2025
 
 ## Agenda
@@ -55,7 +17,7 @@ According to [CompTIA’s 2025 Workforce and Learning Trends report](https://www
 
 Today, you’ll act like a teacher or professional and create a Canva AI prompt that teaches something academic and includes interactive elements. You can check out my example [here](https://final-projectangel.my.canva.site/prompts).
 
-## Part 1: Your Prompt
+#### Part 1: Your Prompt
 
 Choose a topic from any subject (science, math, history, English, or computer science).
 
@@ -74,7 +36,7 @@ Include:
 
 Generate your design in Canva AI, publish your site, and share the link in your journal.
 
-## Part 2: Your Reflection
+#### Part 2: Your Reflection
 
 In 5–7 sentences, explain:
 - What your prompt was designed to do

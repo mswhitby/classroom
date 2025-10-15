@@ -9,6 +9,60 @@ order: 2
 
 ## Agenda
 
+### Journal Entry - Prompt Engineering with Canva AI 
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned Monday, October 14, 2025.
+
+----
+
+# October 14, 2025
+
+## Agenda
+
+### Journal Entry - Prompt Engineering with Canva AI
+
+AI tools like Canva AI can help people design lessons, games, and creative projects — but only if they are given clear and detailed instructions. This skill is called prompt engineering.
+
+According to [CompTIA’s 2025 Workforce and Learning Trends report](https://www.comptia.org/en-us/resources/research/workforce-and-learning-trends-2025), AI skills are now a top workforce priority. And recent [industry research](https://www.yochana.com/2025-prompt-engineering-salary-landscape/) shows that prompt engineers today can earn between $63,000 and over $270,000 annually, depending on experience and role.  That means being good at writing prompts isn’t just creative — it can be financially worthwhile and useful in many tech-related jobs.
+
+Today, you’ll act like a teacher or professional and create a Canva AI prompt that teaches something academic and includes interactive elements. You can check out my example [here](https://final-projectangel.my.canva.site/prompts).
+
+## Part 1: Your Prompt
+
+Choose a topic from any subject (science, math, history, English, or computer science).
+
+Examples:
+- “Create an interactive slide deck that explains the water cycle to 5th graders.”
+- “Make a quiz that helps students practice variables in Python.”
+- “Design a choose-your-own-path story about the Civil Rights Movement.”
+
+Write a detailed Canva AI prompt that tells it exactly what to make. 
+
+Include:
+- What the topic is
+- Who it’s for (younger students, classmates, etc.)
+- What you want it to build (slide deck, quiz, story, poster, or game)
+- How it should look or sound (fun, professional, colorful, etc.)
+
+Generate your design in Canva AI, publish your site, and share the link in your journal.
+
+## Part 2: Your Reflection
+
+In 5–7 sentences, explain:
+- What your prompt was designed to do
+- How Canva AI understood or built your idea
+- What parts worked well
+- What parts didn’t come out as expected
+- How you could improve your prompt to get a better design next time
+- Why being good at prompt engineering could be valuable in future careers
+
+----
+
+<!-- # October 14, 2025
+
+## Agenda
+
 ### Journal Prompt: Prompt Engineering with Canva AI
 
 Tools like Canva AI can generate interactive lessons, presentations, and designs when given clear, detailed instructions — called prompts. Your challenge today is to act as a teacher, trainer, or professional using AI to teach or demonstrate something academic.
@@ -41,7 +95,7 @@ In 5–7 sentences, explain:
 - Which interactive parts worked best
 - How you could improve your prompt or design next time
 
-----
+---- -->
 
 # October 7, 2025 - October 9, 2025
 
