@@ -5,6 +5,24 @@ category: Classes
 order: 1
 ---
 
+# October 20, 2025
+
+## Agenda
+
+### 1. Journal: Bungle On Board Logic Puzzle
+
+- [Bungle On Board Logic Puzzle](https://daydreampuzzles.com/logic-puzzles/bungle-on-board/)
+- Complete the puzzle, and submit the answer as a [Markdown Table](https://www.markdownguide.org/extended-syntax/#tables) in your journal
+- Example:
+
+| Name     | Class | Seat |
+| :------- | :---- | :--- |
+| Franklin |       |      |
+| Hardeep  |       |      |
+| Marla    |       |      |
+
+----
+
 # October 17, 2025
 
 ## Agenda
