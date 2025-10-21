@@ -1,0 +1,39 @@
+Java's `Arrays.sort()` method employs different sorting algorithms depending on the type of array being sorted. This distinction ensures optimal performance and stability where appropriate.
+
+### For Primitive Type Arrays (e.g., `int[]`, `double[]`, `float[]`, etc.)
+- **Algorithm**: Dual-pivot Quicksort (introduced in Java 7).
+- **Key Characteristics**:
+  - Average and worst-case time complexity: O(n log n).
+  - It's an optimized variant of the traditional Quicksort, using two pivots to partition the array, which typically makes it faster than single-pivot Quicksort.
+  - Not stable (equal elements may be reordered).
+- **Special Notes**: For `float[]` and `double[]`, it respects IEEE 754 ordering, treating `-0.0` as less than `+0.0` and placing all `NaN` values at the end.
+
+### For Object Type Arrays (e.g., `Integer[]`, `String[]`, or any `T[]` with `Comparable` elements)
+- **Algorithm**: TimSort (a stable, adaptive hybrid of mergesort and insertion sort, adapted from Python's TimSort).
+- **Key Characteristics**:
+  - Average time complexity: O(n log n); best case O(n) for nearly sorted data.
+  - Stable (preserves the relative order of equal elements).
+  - Highly efficient for real-world data with existing order (e.g., partially sorted arrays), using far fewer comparisons than a plain mergesort.
+  - Requires elements to be mutually comparable (via `Comparable` interface or a provided `Comparator`); otherwise, it throws `ClassCastException`.
+- **Special Notes**: The parallel variant (`Arrays.parallelSort()`) uses a parallel mergesort, but the standard `sort()` sticks to this adaptive mergesort.
+
+This behavior has remained consistent since Java 7/8 and applies to both full-array sorts (e.g., `Arrays.sort(arr)`) and range sorts (e.g., `Arrays.sort(arr, from, to)`). For the most up-to-date details, refer to the [official Java documentation](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Arrays.html).
+
+Java's `Collections.sort()` method is used to sort `List` instances containing objects (not primitives). It employs **TimSort**, a stable, adaptive hybrid sorting algorithm derived from mergesort and insertion sort. This has been the case since Java 7.
+
+### Key Characteristics
+- **Algorithm**: TimSort.
+  - Combines the stability and O(n log n) worst-case performance of mergesort with the efficiency of insertion sort for small or nearly sorted subarrays.
+  - Detects and exploits existing order in the data (e.g., runs of sorted elements) for optimal performance, achieving O(n) in the best case for already sorted lists.
+- **Time Complexity**: O(n log n) average and worst case; O(n) best case.
+- **Space Complexity**: O(n) due to temporary arrays used in merging.
+- **Stability**: Yes—preserves the relative order of equal elements.
+- **Requirements**: Elements must implement `Comparable` (for the no-argument overload) or a `Comparator` must be provided (for the two-argument overload). Otherwise, a `ClassCastException` is thrown.
+
+### Implementation Notes
+- `Collections.sort(list)` sorts in natural order (via `Comparable.compareTo()`).
+- `Collections.sort(list, comparator)` allows custom ordering.
+- Internally, it converts the list to an array, sorts the array using `Arrays.sort()` (which also uses TimSort for objects), and copies the results back to the list. This ensures compatibility across list implementations (e.g., `ArrayList`, `LinkedList`).
+- The sort is not parallelized by default; for that, use `Collections.parallelSort()`.
+
+This behavior is consistent across Java 8+ versions. For the most up-to-date details, refer to the [official Java documentation](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collections.html#sort(java.util.List)).
