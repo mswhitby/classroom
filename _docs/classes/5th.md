@@ -5,6 +5,39 @@ category: Classes
 order: 4
 ---
 
+# October 27, 2025
+
+## Agenda
+
+### 1. Journal: Choose One of The Following
+
+#### Option 1: Technology & Natural Disasters
+
+Hurricane Melissa is approaching Jamaica right now, and people are using technology to stay safe and informed. Think about how technology helps us prepare for natural disasters like hurricanes, floods, or wildfires.
+
+In your journal, answer the following:
+
+- What are some examples of technology that help people before, during, or after a natural disaster?
+- How do those tools make a difference in saving lives or keeping people informed?
+- If you could invent a new piece of technology to help in the future, what would it do and why?
+
+Write at least one full paragraph (5–7 sentences) explaining your ideas. Be sure to give real examples and describe how your invention could work.
+
+#### Option 2: Cooking Class Logic Puzzle
+
+- [Cooking Class Logic Puzzle](https://daydreampuzzles.com/logic-puzzles/cooking-class/)
+- Complete the puzzle, and submit the answer as a [Markdown Table](https://www.markdownguide.org/extended-syntax/#tables) in your journal
+
+Example:
+
+| Name     | Main Dish | Dessert |
+| :------- | :-------- | :------ |
+| Fiona    |           |         |
+| Tobias   |           |         |
+| Leanne   |           |         |
+
+----
+
 # October 20, 2025
 
 ## Agenda
