@@ -35,10 +35,24 @@ order: 8
 - [Big O Notation](https://github.com/mswhitby/classroom/blob/main/_docs/uil_files/Big%20O%20class%20%20https.pdf)
 - [Data and Out for Amelia](https://github.com/mswhitby/classroom/tree/main/_docs/uil_files/Data%20and%20Out%20for%20Amelia)
 
+
 # October 1, 2025
 
 - [3_Strings](https://github.com/mswhitby/classroom/tree/main/_docs/uil_files/3_Strings)
 
+
 # October 6, 2005
 
 - [Week of 6 October - Directory](https://github.com/mswhitby/classroom/tree/main/_docs/uil_files/Week%20of%206%20October)
+
+
+# October 6, 2005
+
+- [Week of 21 October - Directory](https://github.com/mswhitby/classroom/tree/main/_docs/uil_files/Week_of_21%20Oct)
+
+
+# October 28, 2005
+
+- [Big O class](https://github.com/mswhitby/classroom/blob/main/_docs/uil_files/Big%20O%20class%20%20https.docx)
+- [Data and Out for Amelia](https://github.com/mswhitby/classroom/tree/main/_docs/uil_files/Data%20and%20Out%20for%20Amelia)
+- [3_Strings](https://github.com/mswhitby/classroom/tree/main/_docs/uil_files/3_Strings)
