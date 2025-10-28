@@ -46,7 +46,7 @@ order: 8
 - [Week of 6 October - Directory](https://github.com/mswhitby/classroom/tree/main/_docs/uil_files/Week%20of%206%20October)
 
 
-# October 6, 2005
+# October 21, 2005
 
 - [Week of 21 October - Directory](https://github.com/mswhitby/classroom/tree/main/_docs/uil_files/Week_of_21%20Oct)
 
