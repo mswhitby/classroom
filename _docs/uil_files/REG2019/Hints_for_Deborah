@@ -1,0 +1,28 @@
+### Deborah's Hint
+
+#### Data Structures
+- `Map<String, List<String>> tree = new HashMap<>();`  
+  *This stores children of a folder.*
+- `List<String> favorites = new ArrayList<>();`
+- `Set<String> inFolder = new HashSet<>();`
+- `Map<String, Integer> depths = new HashMap<>();`  
+  *Contains the depths for each favorite file or folder.*
+
+#### Depth-First Search (DFS) Implementation
+This DFS updates depths recursively, traversing the tree structure.
+
+```java
+public static void dfs(
+    Map<String, List<String>> tree,
+    Map<String, Integer> depths, 
+    String folder,
+    int depth
+) {
+    depths.put(folder, depth);
+    for (String child : tree.get(folder)) {
+        dfs(tree, depths, child, depth + 1);
+    }
+}
+```
+
+**Note:** DFS is easier to write than BFS here due to the natural use of recursion for tree traversal. If you need a BFS version (e.g., using a queue), let me know for an implementation!
