@@ -1,0 +1,47 @@
+'''
+import java.io.*;
+import java.util.*;
+
+
+public class Jordan {
+    public static void main(String[] args)throws IOException {
+        Scanner scan = new Scanner(new File("jordan.dat"));
+        int n = scan.nextInt();
+        while(n-->0){
+            System.out.println();
+
+            long begin = Long.parseLong(scan.next(),17);
+            long end = Long.parseLong(scan.next(),17);
+            long goal = Long.parseLong(scan.next(),17);
+            int index = 2;
+            long val = end+begin;
+            while(2*goal>=val){
+                if(goal==val) {
+                    System.out.println(Long.toString(index+1));
+                    break;
+                }
+                else if (goal<val){
+                    System.out.println(Long.toString(end,17).toUpperCase()+" "+Long.toString(val,17).toUpperCase());
+                    break;
+
+                    }
+
+                long temp = val;
+                val =val+end;
+                end = temp;
+                index++;
+
+
+
+            }
+
+            }
+
+
+
+        }
+
+
+}
+
+'''
