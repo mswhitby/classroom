@@ -5,6 +5,62 @@ category: Classes
 order: 2
 ---
 
+# November 3, 2025
+
+## Agenda
+
+### 1. Journal: Technology and Food Access
+
+Over the weekend, the SNAP program (Supplemental Nutrition Assistance Program) ran out of funding. SNAP helps millions of families buy groceries each month, so when funding runs out, many people struggle to afford healthy food.
+
+Technology has already made a big difference in other areas—like online shopping, delivery apps, and community alerts. Could it also help people find or access food when programs like SNAP are disrupted?
+
+For your journal entry, write 5-7 sentences answering these questions:
+
+- **1. What’s the problem?**
+
+    Why is it a big deal if SNAP runs out of funding? Who might be most affected?
+
+- **2. How could technology help?**
+
+    Think about how apps, websites, or other tech tools could connect people to local food banks, free meal programs, or grocery stores.
+
+- **3. What challenges might exist?**
+
+    What makes it hard for everyone to use tech-based solutions? (For example: no internet, no smartphone, privacy concerns.)
+
+- **4. If you were the designer…**
+
+    Imagine you were creating a tool to help solve food insecurity. What would your idea be called, and what would it do?
+
+### 2. Missing Work
+
+If you complete any missing work, you must email me at <dwhitby@judsonisd.org> to let me know. If you do not email me, I will not know you've made up work and your make-up work will not be graded. Below is a list of assignments that should be completed:
+
+#### Journals
+
+- [October 14, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#october-14-2025)
+- [October 20, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#october-20-2025)
+- [October 27, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#october-27-2025)
+
+#### Code.org
+
+To access Code.org assignments, you must log-in using your Clever account. Please do the following:
+
+- Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+- Search for **Karen Wagner**.
+- Log in with Google using your school email address.
+
+Once you're logged-in, you can click the direct link to your missing assignment:
+
+- [AI for Oceans](https://studio.code.org/courses/oceans/units/1)
+- [Coding with AI - Lessons 1-2](https://studio.code.org/courses/coding-with-ai)
+- [Coding with AI - Lessons 3-5](https://studio.code.org/courses/coding-with-ai)
+- [Classic Maze](https://studio.code.org/hoc/1)
+- [Code with Anna and Elsa](https://studio.code.org/courses/frozen/units/1/lessons/1/levels/1)
+
+----
+
 # October 30, 2025
 
 ## Agenda
