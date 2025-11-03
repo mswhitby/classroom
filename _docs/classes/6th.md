@@ -5,6 +5,37 @@ category: Classes
 order: 5
 ---
 
+# November 3, 2025
+
+## Agenda
+
+### 1. Journal: Technology and Food Access
+
+Over the weekend, the SNAP program (Supplemental Nutrition Assistance Program) ran out of funding. SNAP helps millions of families buy groceries each month, so when funding runs out, many people struggle to afford healthy food.
+
+Technology has already made a big difference in other areas—like online shopping, delivery apps, and community alerts. Could it also help people find or access food when programs like SNAP are disrupted?
+
+For your journal entry, write 5-7 sentences answering these questions:
+
+- **1. What’s the problem?**
+
+    Why is it a big deal if SNAP runs out of funding? Who might be most affected?
+
+- **2. How could technology help?**
+
+    Think about how apps, websites, or other tech tools could connect people to local food banks, free meal programs, or grocery stores.
+
+- **3. What challenges might exist?**
+
+    What makes it hard for everyone to use tech-based solutions? (For example: no internet, no smartphone, privacy concerns.)
+
+- **4. If you were the designer…**
+
+    Imagine you were creating a tool to help solve food insecurity. What would your idea be called, and what would it do?
+
+----
+
+
 # October 27, 2025
 
 ## Agenda
