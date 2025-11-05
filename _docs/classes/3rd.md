@@ -5,6 +5,27 @@ category: Classes
 order: 2
 ---
 
+# November 5, 2025
+
+## Agenda
+
+### 1. Code with Anna and Elsa
+
+- To access the assignment, you must log into Code.org using your Clever account. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Code with Anna and Elsa**.
+
+- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/frozen/units/1/lessons/1/levels/1).
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned [Monday, November 3, 2025](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#november-3-2025).
+
+----
+
 # November 3, 2025
 
 ## Agenda
