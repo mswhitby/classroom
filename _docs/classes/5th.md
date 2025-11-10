@@ -5,6 +5,16 @@ category: Classes
 order: 4
 ---
 
+# November 10, 2025
+
+## Agenda
+
+### 1. Journal
+
+Are you looking forward to Thanksgiving break?
+
+----
+
 # November 3, 2025
 
 ## Agenda
