@@ -5,13 +5,34 @@ category: Classes
 order: 2
 ---
 
-# November 10, 2025
+<!-- # November 17, 2025
 
 ## Agenda
 
 ### 1. Journal
 
 Are you looking forward to Thanksgiving break?
+
+---- -->
+
+# November 10, 2025
+
+## Agenda
+
+### 1. Journal
+
+#### Option 1: Technology & the Holidays
+
+The holidays often bring new gadgets, apps, and games. Write a journal entry (5–7 sentences) using Claim, Evidence, and Reasoning (C.E.R.) considering the following:
+
+- How has technology changed the way people celebrate or connect during the holidays? D
+- Do you think these changes make the holidays better or worse?
+- Should developers be responsible for making sure holiday tech (like toys or assistants) respects privacy and family time? Why or why not?
+
+
+#### Option 2: Gratitude & Growth
+
+The end of the year is a time to reflect on what you’ve learned. What skills, habits, or moments from this semester that you’re most proud of, and how will you use it to grow next year? Write 5-7 sentences explaining your answer.
 
 ### 2. Missing Work
 
