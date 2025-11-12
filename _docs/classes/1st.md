@@ -55,8 +55,8 @@ If you complete any missing work, you must email me at <dwhitby@judsonisd.org> t
 - [October 20, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#october-20-2025)
 - [October 27, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#october-27-2025)
 - [November 3, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#november-3-2025)
-- [November 3, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#november-10-2025)
-<!-- - [November 10, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#november-3-2025) -->
+- [November 10, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#november-10-2025)
+<!-- - [November 14, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#november-3-2025) -->
 
 #### Code.org
 
@@ -74,8 +74,6 @@ Once you're logged-in, you can click the direct link to your missing assignment:
 - [Classic Maze](https://studio.code.org/hoc/1)
 - [Code with Anna and Elsa](https://studio.code.org/courses/frozen/units/1/lessons/1/levels/1)
 - [Flappy Code](https://studio.code.org/flappy/1)
-
-----
 
 ----
 
