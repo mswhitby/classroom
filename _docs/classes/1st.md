@@ -28,6 +28,10 @@ The end of the year is a time to reflect on what you’ve learned. What skills, 
 
 # November 13, 2025
 
+<!-- ![alt text](../../media/2025_nighthawk_winterfest.png) -->
+
+<img src="../../media/2025_nighthawk_winterfest.png" alt="drawing" width="400"/>
+
 ## Agenda
 
 ### 1. Coding with Music
