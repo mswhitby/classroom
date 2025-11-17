@@ -5,7 +5,9 @@ category: Classes
 order: 2
 ---
 
-<!-- # November 17, 2025
+# November 17, 2025
+
+<img src="../../media/2025_nighthawk_winterfest.png" alt="drawing" width="400"/>
 
 ## Agenda
 
@@ -13,13 +15,44 @@ order: 2
 
 Are you looking forward to Thanksgiving break?
 
----- -->
+### 2. Missing Work
+
+If you complete any missing work, you must email me at <dwhitby@judsonisd.org> to let me know. If you do not email me, I will not know you've made up work and your make-up work will not be graded. Below is a list of assignments that should be completed:
+
+#### Journals
+
+- [October 14, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#october-14-2025)
+- [October 20, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#october-20-2025)
+- [October 27, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#october-27-2025)
+- [November 3, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#november-3-2025)
+- [November 10, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#november-10-2025)
+
+#### Code.org
+
+To access Code.org assignments, you must log-in using your Clever account. Please do the following:
+
+- Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+- Search for **Karen Wagner**.
+- Log in with Google using your school email address.
+
+Once you're logged-in, you can click the direct link to your missing assignment:
+
+- [AI for Oceans](https://studio.code.org/courses/oceans/units/1)
+- [Coding with AI - Lessons 1-2](https://studio.code.org/courses/coding-with-ai)
+- [Coding with AI - Lessons 3-5](https://studio.code.org/courses/coding-with-ai)
+- [Classic Maze](https://studio.code.org/hoc/1)
+- [Code with Anna and Elsa](https://studio.code.org/courses/frozen/units/1/lessons/1/levels/1)
+- [Flappy Code](https://studio.code.org/flappy/1)
+- [Coding Interactive Maps](https://studio.code.org/courses/csc-mappinglandmarks-2023/units/1/lessons/1/levels/1)
+- [Coding with Music](https://studio.code.org/courses/coding-with-music-2025/units/1/lessons/1/levels/1)
+
+----
 
 # November 13, 2025
 
 <!-- ![alt text](../../media/2025_nighthawk_winterfest.png) -->
 
-<img src="../../media/2025_nighthawk_winterfest.png" alt="drawing" width="400"/>
+<!-- <img src="../../media/2025_nighthawk_winterfest.png" alt="drawing" width="400"/> -->
 
 ## Agenda
 
