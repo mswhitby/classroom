@@ -5,7 +5,7 @@ category: Classes
 order: 5
 ---
 
-<!-- # November 17, 2025
+# November 17, 2025
 
 ## Agenda
 
@@ -13,7 +13,7 @@ order: 5
 
 Are you looking forward to Thanksgiving break?
 
----- -->
+----
 
 # November 13, 2025
 
