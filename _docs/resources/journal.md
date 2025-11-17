@@ -4,13 +4,13 @@ category: Resources
 order: 1
 ---
 
-<!-- # November 17, 2025
+# November 17, 2025
 
 ## Journal
 
 Are you looking forward to Thanksgiving break?
 
----- -->
+----
 
 # November 10, 2025
 
@@ -20,7 +20,7 @@ Are you looking forward to Thanksgiving break?
 
 The holidays often bring new gadgets, apps, and games. Write a journal entry (5–7 sentences) using Claim, Evidence, and Reasoning (C.E.R.) considering the following:
 
-- How has technology changed the way people celebrate or connect during the holidays? D
+- How has technology changed the way people celebrate or connect during the holidays?
 - Do you think these changes make the holidays better or worse?
 - Should developers be responsible for making sure holiday tech (like toys or assistants) respects privacy and family time? Why or why not?
 
