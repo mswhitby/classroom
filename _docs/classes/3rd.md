@@ -13,7 +13,7 @@ order: 2
     - Search for **Karen Wagner**.
     - Log in with Google using your school email address.
     - Complete **Hello World Transformers One**.
-+
+
 - If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/hello-world-transformers-one-2024/units/1/lessons/1/levels/1).
 
 ----
