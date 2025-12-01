@@ -5,6 +5,33 @@ category: Classes
 order: 3
 ---
 
+# December 1, 2025
+
+**Welcome Back! Hope you enjoyed your break!**
+
+## Agenda
+
+### 1. Journal: Drones & Tech Careers
+
+#### Instructions:
+
+- Keep your writing clear (5–7 sentences).
+- Use one real fact (salary, requirement, or example) from your search and include where you found it.
+
+#### Prompt: 
+
+Drones are becoming a major part of everyday life — from Amazon’s new drone deliveries in San Antonio to drone light shows at theme parks like Fiesta Texas. Companies use drones for photography, inspections, emergency response, mapping, and even agriculture.
+
+Write a short response considering the following:
+- One real job that uses drones (examples: delivery drone operator, drone programmer, drone show technician, drone mapper, agricultural drone pilot).
+- What programmers do in that job — how does coding or software help drones fly, navigate, or do their tasks?
+- What the pay looks like for that job in Texas or the U.S. (you can search “salary for ___ job Texas”).
+- What education or certifications are normally required (ex: Part 107 license, computer science experience, programming, engineering, etc.).
+- Would YOU want to do this job in the future? Why or why not?
+
+----
+
+
 # November 17, 2025
 
 ## Agenda
