@@ -5,6 +5,24 @@ category: Classes
 order: 7
 ---
 
+# December 8, 2025
+
+## Agenda
+
+### 1. Weekly Journal Prompt: Waymo Cars & School Bus Safety
+
+In Austin, self-driving Waymo cars have been caught on video illegally driving past stopped school buses—even when the red lights were flashing and the stop arm was out. The Austin school district reported at least 19–20 violations, and the federal government (NHTSA) has opened an investigation. Waymo says a software issue contributed to the problem, but the incidents continued even after software updates.
+
+**Write 5 to 7 sentences responding to the following:**
+
+Why do you think a self-driving car might fail to recognize or correctly respond to a stopped school bus with its stop sign extended? What challenges might the car’s cameras, sensors, or AI face in this situation? If you were a programmer on the Waymo team, what safety improvements would you add to make sure autonomous vehicles always stop for school buses? Describe at least one fix involving sensors, software rules, or emergency-stop logic.
+
+### 2. Missing Work
+
+If you complete any missing work, you must email me at <dwhitby@judsonisd.org> to let me know. If you do not email me, I will not know you've made up work and your make-up work will not be graded.
+
+----
+
 # December 1, 2025
 
 **Welcome Back! Hope you enjoyed your break!**
