@@ -48,6 +48,8 @@
 
 - [Learn Python The Right Way](https://learnpythontherightway.com/#read)
 
+- [Unity Resources](https://github.com/mswhitby/classroom/blob/main/_docs/resources/unity.md)
+
 ### Programming Tools
 
 - [Python Code Compiler](https://www.onlinegdb.com/)
