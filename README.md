@@ -44,6 +44,8 @@
 
 ### Guides
 
+- [Developer Roadmaps](https://roadmap.sh/)
+
 - [Markdown Guide](https://www.markdownguide.org/)
 
 - [Learn Python The Right Way](https://learnpythontherightway.com/#read)
@@ -69,3 +71,5 @@
 - [Python Cheat Sheet - 2 Pager](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-english.pdf)
 
 - [Hoja Resumen de Python - Español](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-espanol.pdf)
+
+- [Unity Cheat Sheet](https://zerotomastery.io/cheatsheets/unity-cheat-sheet/)
