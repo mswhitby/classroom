@@ -30,6 +30,8 @@
 
 - [Mathematics for Game Developers - Advanced](http://www.r-5.org/files/books/computers/algo-list/game-development/Christopher_Tremblay-Mathematics_for_Game_Developers-EN.pdf)
 
+- [Creator Kit: Beginner Code](https://learn.unity.com/course/creator-kit-beginner-code?version=2022.3)
+
 
 ## 3. Computing
 
