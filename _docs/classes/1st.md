@@ -9,7 +9,7 @@ order: 1
 
 ## Agenda
 
-### 1. Journal Prompt: Waymo Cars & School Bus Safety
+### 1. Journal Prompt
 
 What are your plans for the Winter Break?
 
