@@ -5,6 +5,20 @@ category: Classes
 order: 6
 ---
 
+# December 15, 2025
+
+## Agenda
+
+### 1. Journal Prompt
+
+What are your plans for the Winter Break?
+
+### 2. Missing Work
+
+If you complete any missing work, you must email me at <dwhitby@judsonisd.org> to let me know. If you do not email me, I will not know you've made up work and your make-up work will not be graded.
+
+----
+
 # December 12, 2025
 
 ## Agenda
