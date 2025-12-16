@@ -5,11 +5,14 @@ category: Classes
 order: 1
 ---
 
-# December 16, 2025
+# December 12, 2025
 
 ## Agenda
 
-### Winter Pixel Puzzles
+### 1. Winter Pixel Puzzles
+
+Complete the Pixel Puzzle handout.
+
 
 ### 2. Missing Work
 

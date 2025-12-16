@@ -9,7 +9,9 @@ order: 2
 
 ## Agenda
 
-### Winter Pixel Puzzles
+### 1. Winter Pixel Puzzles
+
+Complete the Pixel Puzzle handout.
 
 ### 2. Missing Work
 
