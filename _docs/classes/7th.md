@@ -5,6 +5,42 @@ category: Classes
 order: 6
 ---
 
+# December 16, 2025
+
+## Agenda
+
+### Winter Pixel Puzzles
+
+### 2. Missing Work
+
+If you complete any missing work, you must email me at <dwhitby@judsonisd.org> to let me know. If you do not email me, I will not know you've made up work and your make-up work will not be graded. Below is a list of assignments that should be completed:
+
+#### Journals
+
+- [December 1, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#december-1-2025)
+- [December 8, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#december-8-2025)
+- [December 15, 2025](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#december-15-2025)
+
+#### Code.org
+
+To access Code.org assignments, you must log-in using your Clever account. Please do the following:
+
+- Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+- Search for **Karen Wagner**.
+- Log in with Google using your school email address.
+
+Once you're logged-in, you can click the direct link to your missing assignment:
+
+- [Lesson 1: Programming with Angry Birds](https://studio.code.org/courses/express-2025/units/1/lessons/1/levels/1)
+- [Lesson 2: Debugging in Maze & Lesson 3: Sequencing in Music Lab](https://studio.code.org/courses/express-2025/units/1/lessons/2/levels/1)
+- [Lesson 3: Sequencing in Music Lab](https://studio.code.org/courses/express-2025/units/1/lessons/3/levels/1)
+- [Lesson 4: Creating Art with Code](https://studio.code.org/courses/express-2025/units/1/lessons/4/levels/1)
+- [Lesson 5: Swimming Fish with Sprite Lab](https://studio.code.org/courses/express-2025/units/1/lessons/5/levels/1)
+- [Lesson 6: Making Sprites](https://studio.code.org/courses/express-2025/units/1/lessons/6/levels/1)
+- [Lesson 7: Mini-Project: Career Journeys](https://studio.code.org/courses/express-2025/units/1/lessons/7/levels/1)
+
+----
+
 # December 15, 2025
 
 ## Agenda
