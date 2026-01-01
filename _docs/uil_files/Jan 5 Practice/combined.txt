@@ -1,0 +1,189 @@
+
+THE BIG DAY
+
+250
+130
+201
+202
+49643
+18648469
+18485958
+17145718
+17165798
+212
+10
+13
+17
+16
+4
+6
+7
+16
+10
+10
+204
+192
+177
+200
+430
+
+PLAYLIST
+
+I, J, DNA, Everlong, TNT, Dedicate, Numb, A, B, C, D, E, F, G, H
+Motiv8, I, J, DNA, TNT, Dedicate, A, B, C, D, E, F, G, H
+Motiv8, J, DNA, TNT, Dedicate, A, C, D, F, G, H
+N, M, L, K, Motiv8, J, DNA, TNT, Dedicate, A, C, D, F, G, H
+Motiv8, DNA, TNT, Dedicate, A, C, D, G, H, N, M, L
+Motiv8, DNA, TNT, Dedicate, A, C, D, G, H, N, L
+R, P, Motiv8, DNA, TNT, Dedicate, A, C, D, G, H, N, L
+L, R, P, Motiv8, DNA, TNT, Dedicate, A, C, D, G, H, N
+L, R, P, Motiv8, DNA, TNT, Dedicate, A, C, D, G, H, N
+L, P, Motiv8, DNA, TNT, Dedicate, A, C, G, H
+AB, Dedicate, A, G, H, W, L, P, Motiv8, DNA, TNT
+MNBVCC, QYEUW, PSPS, MDMD, LKJ, QWERTYU, XS, ZX, DM, FL, QP, FG, PO, IO, WE, QI
+
+
+MAKING THE ROUNDS
+
+18.25
+12.08
+9.50
+18.33
+2.83
+13.00
+20.17
+18.17
+56.25
+
+RSVPs
+
+284 141 66.82%
+
+SEATING CHART
+2 2
+4 2
+8 6
+10 2
+8 10
+0 2
+6 24
+3 8
+9 88
+20 2
+
+
+SERVERS
+7
+12
+159
+115
+138
+142
+1
+5622
+5475
+5403
+
+STRAWS
+1
+5
+6
+10
+11
+15
+16
+20
+21
+25
+26
+30
+31
+35
+36
+40
+41
+45
+46
+50
+51
+55
+56
+60
+61
+65
+66
+70
+71
+105
+212
+2000
+2000000
+20000000
+
+
+VENDORS
+
+Catering:
+1: Olive_Garden 4800.00 4.3
+2: Neighborhood_Restaurant 4200.00 4.2
+DJ:
+1: Eds_DJ_Service 3200.00 4.9
+2: Valley_Forge_DJ 3500.00 4.8
+AA:
+1: B 100.00 4.9
+2: E 200.00 4.9
+3: A 100.00 4.8
+4: C 100.00 4.8
+5: D 200.00 4.8
+DD:
+1: G 200.00 5.0
+2: F 300.00 5.0
+3: B 100.00 4.9
+4: E 200.00 4.9
+5: A 100.00 4.8
+BB:
+1: G 200.00 5.0
+2: E 200.00 4.9
+3: A 100.00 4.8
+4: C 100.00 4.8
+CC:
+1: G 200.00 5.0
+2: B 100.00 4.9
+3: D 200.00 4.8
+EE:
+1: G 200.00 5.0
+FF:
+No Viable Options.
+AppleBees:
+1: F 100.00 5.0
+2: G 100.00 5.0
+3: A 100.00 4.9
+4: B 100.00 4.9
+5: C 100.00 4.9
+
+ABCDE:
+1: ABCD 100.00 4.2
+
+VENUE
+
+RDR 0.003906
+Cadillac_Ranch 0.002431
+Party_City 0.000222
+A 1.250006
+B 0.019290
+C 0.010988
+D 0.572346
+E 0.000641
+F 0.000125
+G 0.000000
+
+
+VOWS
+I, APLUSCOMPSCI, take you, APLUSCOMPSCI, for my
+lawful APLUSCOMPSCI, to have and to hold
+from this day forward, for better,
+for worse, for richer, for poorer, in
+sickness and in health, until death
+do us part. I will love and honor
+you all the days of my life
+APLUSCOMPSCI APLUSCOMPSCI APLUSCOMPSCI
