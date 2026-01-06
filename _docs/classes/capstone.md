@@ -5,6 +5,18 @@ category: Classes
 order: 7
 ---
 
+# January 6, 2026
+
+## Agenda
+
+### 1. Journal Prompt
+
+Welcome back! I hope you enjoyed your winter break! 
+
+Write a paragraph describing how you used technology over the break. 
+
+----
+
 # December 15, 2025
 
 ## Agenda
