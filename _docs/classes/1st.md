@@ -23,10 +23,6 @@ order: 1
 - Complete your journal entry for this week if you have not completed it yet.
 - The journal entry was assigned [Monday, January 6, 2026](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#january-6-2025).
 
-### 3. Missing Work
-
-If you complete any missing work, you must email me at <dwhitby@judsonisd.org> to let me know. If you do not email me, I will not know you've made up work and your make-up work will not be graded.
-
 ----
 
 # January 6, 2026
