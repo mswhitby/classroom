@@ -5,6 +5,90 @@ category: Classes
 order: 6
 ---
 
+# January 9, 2026
+
+## Agenda
+
+### 1. Classroom Responsibility Essay
+
+> [!IMPORTANT]
+> **This is a <ins>TEST</ins> grade**
+
+#### Directions:
+
+You will write a **handwritten essay** on paper using the **C.E.R. (Claim, Evidence, Reasoning**) format. This assignment must be **turned in on paper**. Write your **full name and class period** on your completed paper.
+
+#### Essay Prompt:
+
+In our classroom, students are expected to **not eat or drink at the computers** and to **pick up their trash and clean up after themselves**. 
+
+**Write an essay explaining why these expectations exist and why they matter.** Your essay should explain how these rules protect our learning environment, our technology, and the people who use the room. In your response, think about:
+
+- How food and drinks can affect computers and technology
+- How trash and messes affect the classroom environment
+- How our choices impact other students and the teacher
+- What kind of classroom we want to learn in
+
+#### Required Structure (C.E.R.)
+
+**Claim**
+
+- Clearly state your position on **why we don’t eat or drink at computers and why we clean up after ourselves**.
+- Your claim should be 1–2 sentences and directly answer the prompt.
+
+**Example starter (do NOT copy)**:
+ > “The rules about not eating at computers and cleaning up after ourselves are important because…”
+
+**Evidence**
+- Provide **specific examples** that support your claim.
+- Evidence may include:
+    - What can happen to computers when food or drinks are nearby
+    - How trash affects the classroom, pests, or cleanliness
+    - Real situations you’ve seen or could realistically happen in school
+- Include at least **2 pieces of evidence**.
+
+**Reasoning**
+
+- Explain **how and why** your evidence supports your claim.
+- Connect your examples to:
+    - Responsibility
+    - Respect for shared spaces
+    - Preparation for real-world environments (college, jobs, workplaces)
+
+#### Essay Requirements
+
+- **Minimum**: 3 paragraphs (Claim, Evidence, Reasoning)
+- **Length**: At least 1 page
+- **Format**: Handwritten, complete sentences
+- **Tone**: School-appropriate and thoughtful
+- **Submission**: Paper only. Write yore name and class period.
+
+#### Closing Reminder to Students:
+
+This isn’t about punishment. It’s about understanding respect, responsibility, and shared space—skills you’ll need in school, work, and life. These classroom rules reflect how people are expected to treat shared spaces and expensive equipment in the real world.
+
+----
+
+# January 8, 2026
+
+## Agenda
+
+### 1. Lesson 9: Mini-Project: Virtual Pet
+- To access the assignment, you must log into Code.org using your Clever account. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Lesson 9: Mini-Project: Virtual Pet**.
+
+- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/express-2025/units/1/lessons/9/levels/1).
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned [Monday, January 6, 2026](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#january-6-2025).
+
+----
+
 # January 8, 2026
 
 ## Agenda
