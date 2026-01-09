@@ -5,6 +5,67 @@ category: Classes
 order: 1
 ---
 
+# January 9, 2026
+
+## Agenda
+
+### 1. Classroom Responsibility Essay
+
+#### Directions:
+
+You will write a **handwritten essay** on paper using the **C.E.R. (Claim, Evidence, Reasoning**) format. This assignment must be **turned in on paper**.
+
+#### Essay Prompt:
+
+In our classroom, students are expected to **not eat or drink at the computers** and to **pick up their trash and clean up after themselves**. 
+
+**Write an essay explaining why these expectations exist and why they matter.** Your essay should explain how these rules protect our learning environment, our technology, and the people who use the room. In your response, think about:
+
+- How food and drinks can affect computers and technology
+- How trash and messes affect the classroom environment
+- How our choices impact other students and the teacher
+- What kind of classroom we want to learn in
+
+#### Required Structure (C.E.R.)
+
+**Claim**
+
+- Clearly state your position on **why we don’t eat or drink at computers and why we clean up after ourselves**.
+- Your claim should be 1–2 sentences and directly answer the prompt.
+
+**Example starter (do NOT copy)**:
+ > “The rules about not eating at computers and cleaning up after ourselves are important because…”
+
+**Evidence**
+- Provide **specific examples** that support your claim.
+- Evidence may include:
+    - What can happen to computers when food or drinks are nearby
+    - How trash affects the classroom, pests, or cleanliness
+    - Real situations you’ve seen or could realistically happen in school
+- Include at least **2 pieces of evidence**.
+
+**Reasoning**
+
+- Explain **how and why** your evidence supports your claim.
+- Connect your examples to:
+    - Responsibility
+    - Respect for shared spaces
+    - Preparation for real-world environments (college, jobs, workplaces)
+
+#### Essay Requirements
+
+- **Minimum**: 3 paragraphs (Claim, Evidence, Reasoning)
+- **Length**: At least 1 page
+- **Format**: Handwritten, complete sentences
+- **Tone**: School-appropriate and thoughtful
+- **Submission**: Paper only
+
+#### Closing Reminder to Students:
+
+This isn’t about punishment. It’s about understanding respect, responsibility, and shared space—skills you’ll need in school, work, and life. These classroom rules reflect how people are expected to treat shared spaces and expensive equipment in the real world.
+
+----
+
 # January 8, 2026
 
 ## Agenda
