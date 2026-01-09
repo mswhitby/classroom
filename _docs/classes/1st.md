@@ -11,6 +11,9 @@ order: 1
 
 ### 1. Classroom Responsibility Essay
 
+> [!IMPORTANT]
+> **This is a TEST grade**
+
 #### Directions:
 
 You will write a **handwritten essay** on paper using the **C.E.R. (Claim, Evidence, Reasoning**) format. This assignment must be **turned in on paper**. Write your **full name and class period** on your completed paper.
@@ -58,7 +61,7 @@ In our classroom, students are expected to **not eat or drink at the computers**
 - **Length**: At least 1 page
 - **Format**: Handwritten, complete sentences
 - **Tone**: School-appropriate and thoughtful
-- **Submission**: Paper only. Write your name and class period
+- **Submission**: Paper only. Write yore name and class period.
 
 #### Closing Reminder to Students:
 
