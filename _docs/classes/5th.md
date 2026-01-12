@@ -11,7 +11,9 @@ order: 4
 
 ### 1. Unity Essentials Project Rubric
 
-I've uploaded the rubric for your 3-week project: [Unity Essentials Project Rubric](https://github.com/mswhitby/classroom/blob/main/_docs/resources/unity1_rubric.md). If you follow the [Unity Essentials](https://learn.unity.com/pathway/unity-essentials) tutorials, you will cover all catagories of the rubric. If you choose an independent project, please reference this rubric to make sure your game covers all of the expected skills.
+I've uploaded the rubric for your 3-week project: [Unity Essentials Project Rubric](https://github.com/mswhitby/classroom/blob/main/_docs/resources/unity1_rubric.md). If you follow the [Unity Essentials](https://learn.unity.com/pathway/unity-essentials) tutorials, you will cover all categories of the rubric. If you choose an independent project, please reference this rubric to make sure your game covers all of the expected skills.
+
+**Your project is due January 23, 2026.**
 
 ### 2. Journal Entry: Developing Safe Spaces Online
 
