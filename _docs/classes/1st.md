@@ -9,7 +9,7 @@ order: 1
 
 ## Agenda
 
-### 1. Journal: Developing Safe Spaces Online
+### 1. Journal Entry: Developing Safe Spaces Online
 
 In the early days of online gaming, many spaces were not designed to support everyone equally. Some players—especially neurodivergent players—experienced bullying, harassment, or exclusion simply for being different.
 

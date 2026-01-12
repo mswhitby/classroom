@@ -5,6 +5,34 @@ category: Classes
 order: 2
 ---
 
+# January 12, 2026
+
+## Agenda
+
+### 1. Journal Entry: Developing Safe Spaces Online
+
+In the early days of online gaming, many spaces were not designed to support everyone equally. Some players—especially neurodivergent players—experienced bullying, harassment, or exclusion simply for being different.
+
+One example is [Autcraft](https://www.autcraft.com/). Autcraft was created as a private Minecraft server specifically designed to be a **safe, moderated, and welcoming online space** for autistic children and their families. It uses clear rules, active moderation, and a strong community culture to protect players and help them feel comfortable being themselves online.
+
+#### Prompt
+
+**Why was Autcraft created, and what problem was it solving?**
+
+Explain **why safe spaces are needed on the internet**, especially in online games and social platforms. Then explain **why developers have a responsibility to design and protect these spaces**, instead of leaving safety up to users alone.
+
+In your response, consider:
+
+- What kinds of harm can happen in unmoderated online spaces?
+- How Autcraft’s design choices help protect its community
+- How developers’ choices (rules, moderation tools, reporting systems) affect user experience
+- What could happen if developers ignore safety and inclusion
+- Do you know of any other examples of safe, inclusive online spaces?
+
+Write 5–7 complete sentences.
+
+----
+
 # January 9, 2026
 
 ## Agenda
