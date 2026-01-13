@@ -62,13 +62,6 @@ order: 1
 
 ****
 
-<!-- 
-| Due   | Assignment            | Category |
-| :---- | :-------------------- | :------- |
-| Jan 6 | [Journal - Welcome Back](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#january-6-2026)
-
-**** -->
-
 # January 13, 2026
 
 ## Agenda
