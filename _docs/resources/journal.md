@@ -4,39 +4,15 @@ category: Resources
 order: 1
 ---
 
-# January 6, 2026
-
-## Agenda
-
-### 1. Journal Prompt
-
-Welcome back! I hope you enjoyed your winter break! 
-
-Write a paragraph describing how you used technology over the break. 
-
-----
-
-# December 15, 2025
-
-## Agenda
-
-### 1. Journal Prompt
-
-What are your plans for the Winter Break?
-
-----
-
 # January 12, 2026
 
-## Agenda
-
-### 1. Journal Entry: Developing Safe Spaces Online
+## 1. Journal Entry: Developing Safe Spaces Online
 
 In the early days of online gaming, many spaces were not designed to support everyone equally. Some players—especially neurodivergent players—experienced bullying, harassment, or exclusion simply for being different.
 
 One example is [Autcraft](https://www.autcraft.com/). Autcraft was created as a private Minecraft server specifically designed to be a **safe, moderated, and welcoming online space** for autistic children and their families. It uses clear rules, active moderation, and a strong community culture to protect players and help them feel comfortable being themselves online.
 
-#### Prompt
+### Prompt
 
 **Why was Autcraft created, and what problem was it solving?**
 
@@ -54,6 +30,23 @@ Write 5–7 complete sentences.
 
 ----
 
+# January 6, 2026
+
+## 1. Journal Prompt
+
+Welcome back! I hope you enjoyed your winter break! 
+
+Write a paragraph describing how you used technology over the break. 
+
+----
+
+# December 15, 2025
+
+## 1. Journal Prompt
+
+What are your plans for the Winter Break?
+
+----
 # December 8, 2025
 
 ## Weekly Journal Prompt: Waymo Cars & School Bus Safety

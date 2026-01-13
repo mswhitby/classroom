@@ -103,26 +103,6 @@ This isn’t about punishment. It’s about understanding respect, responsibilit
 
 ----
 
-# January 8, 2026
-
-## Agenda
-
-### 1. Lesson 9: Mini-Project: Virtual Pet
-- To access the assignment, you must log into Code.org using your Clever account. Please do the following:
-    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
-    - Search for **Karen Wagner**.
-    - Log in with Google using your school email address.
-    - Complete **Lesson 9: Mini-Project: Virtual Pet**.
-
-- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/express-2025/units/1/lessons/9/levels/1).
-
-### 2. Journal
-
-- Complete your journal entry for this week if you have not completed it yet.
-- The journal entry was assigned [Monday, January 6, 2026](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#january-6-2025).
-
-----
-
 # January 6, 2026
 
 ## Agenda
