@@ -1,6 +1,6 @@
 # Unity Essentials Project Rubric
 
-This rubric applies to both students who choose to create **their own Unity project** and those who follow the Unity Essentials tutorial.
+This rubric applies to both students who choose to create **their own Unity project** and those who follow the [Unity Essentials](https://learn.unity.com/pathway/unity-essentials) tutorial.
 
 Your grade is based on **demonstrated Unity skills**, not on game genre, art quality, or project size.
 

@@ -24,7 +24,7 @@ order: 1
 
   <tr>
     <td align="left">January 6, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#january-6-2026">Journal - Welcome Back</a></td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-6-2026">Journal - Welcome Back</a></td>
     <td align="left">Daily</td>
   </tr>
 
@@ -48,7 +48,7 @@ order: 1
 
   <tr>
     <td align="left">January 12, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#january-12-2026"> Journal - Developing Safe Spaces Online</a></td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-12-2026">Journal - Developing Safe Spaces Online</a></td>
     <td align="left">Daily</td>
   </tr>
 
