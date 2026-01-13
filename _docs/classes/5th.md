@@ -5,6 +5,33 @@ category: Classes
 order: 4
 ---
 
+# January 13, 2026
+
+## Agenda
+
+### 1. Unity Essentials Project Rubric
+
+I've uploaded the rubric for your 3-week project: [Unity Essentials Project Rubric](https://github.com/mswhitby/classroom/blob/main/_docs/resources/unity1_rubric.md). If you follow the [Unity Essentials](https://learn.unity.com/pathway/unity-essentials) tutorials, you will cover all categories of the rubric. If you choose an independent project, please reference this rubric to make sure your game covers all of the expected skills.
+
+**Your project is due January 23, 2026.**
+
+----
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned [Monday, January 12, 2026](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#january-12-2026).
+
+----
+
+### 3. Essay - Exam Grade
+
+- Complete the [Classroom Responsibility Essay](https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-9-2026) assigned on **January 9, 2026** if you have not yet done so.
+- This assignment is a test grade.
+- I will not accept any late essays after **Friday, January 16, 2026**.
+
+----
+
 # January 12, 2026
 
 ## Agenda
@@ -14,6 +41,8 @@ order: 4
 I've uploaded the rubric for your 3-week project: [Unity Essentials Project Rubric](https://github.com/mswhitby/classroom/blob/main/_docs/resources/unity1_rubric.md). If you follow the [Unity Essentials](https://learn.unity.com/pathway/unity-essentials) tutorials, you will cover all categories of the rubric. If you choose an independent project, please reference this rubric to make sure your game covers all of the expected skills.
 
 **Your project is due January 23, 2026.**
+
+----
 
 ### 2. Journal Entry: Developing Safe Spaces Online
 
@@ -100,26 +129,6 @@ In our classroom, students are expected to **not eat or drink at the computers**
 #### Closing Reminder to Students:
 
 This isn’t about punishment. It’s about understanding respect, responsibility, and shared space—skills you’ll need in school, work, and life. These classroom rules reflect how people are expected to treat shared spaces and expensive equipment in the real world.
-
-----
-
-# January 8, 2026
-
-## Agenda
-
-### 1. Lesson 9: Mini-Project: Virtual Pet
-- To access the assignment, you must log into Code.org using your Clever account. Please do the following:
-    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
-    - Search for **Karen Wagner**.
-    - Log in with Google using your school email address.
-    - Complete **Lesson 9: Mini-Project: Virtual Pet**.
-
-- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/express-2025/units/1/lessons/9/levels/1).
-
-### 2. Journal
-
-- Complete your journal entry for this week if you have not completed it yet.
-- The journal entry was assigned [Monday, January 6, 2026](https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#january-6-2025).
 
 ----
 

@@ -5,6 +5,33 @@ category: Classes
 order: 5
 ---
 
+# January 13, 2026
+
+## Agenda
+
+### 1. Unity Essentials Project Rubric
+
+I've uploaded the rubric for your 3-week project: [Unity Essentials Project Rubric](https://github.com/mswhitby/classroom/blob/main/_docs/resources/unity1_rubric.md). If you follow the [Unity Essentials](https://learn.unity.com/pathway/unity-essentials) tutorials, you will cover all categories of the rubric. If you choose an independent project, please reference this rubric to make sure your game covers all of the expected skills.
+
+**Your project is due January 23, 2026.**
+
+----
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned [Monday, January 12, 2026](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#january-12-2026).
+
+----
+
+### 3. Essay - Exam Grade
+
+- Complete the [Classroom Responsibility Essay](https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-9-2026) assigned on **January 9, 2026** if you have not yet done so.
+- This assignment is a test grade.
+- I will not accept any late essays after **Friday, January 16, 2026**.
+
+----
+
 # January 12, 2026
 
 ## Agenda
@@ -14,6 +41,8 @@ order: 5
 I've uploaded the rubric for your 3-week project: [Unity Essentials Project Rubric](https://github.com/mswhitby/classroom/blob/main/_docs/resources/unity1_rubric.md). If you follow the [Unity Essentials](https://learn.unity.com/pathway/unity-essentials) tutorials, you will cover all categories of the rubric. If you choose an independent project, please reference this rubric to make sure your game covers all of the expected skills.
 
 **Your project is due January 23, 2026.**
+
+----
 
 ### 2. Journal Entry: Developing Safe Spaces Online
 
