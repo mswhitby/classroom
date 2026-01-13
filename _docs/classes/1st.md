@@ -39,9 +39,7 @@ order: 1
 
 If you complete any missing work, you must email me at <dwhitby@judsonisd.org> to let me know. If you do not email me, I will not know you've made up work and your make-up work will not be graded. Below is a list of assignments that should be completed:
 
-<!-- - [Lesson 8: Sprites in Action](https://studio.code.org/courses/express-2025/units/1/lessons/8/levels/1) -->
-
-- [Lesson 8: Sprites in Action](#1.-Lesson-8:-Sprites-in-Action)
+- [Lesson 8: Sprites in Action](https://studio.code.org/courses/express-2025/units/1/lessons/8/levels/1)
 - [Lesson 9: Mini-Project: Virtual Pet](https://studio.code.org/courses/express-2025/units/1/lessons/9/levels/1)
 
 ----
