@@ -1,5 +1,5 @@
 # Late Work Policy
-_Effective February 5, 2025_
+_Effective January 14, 2026_
 
 In accordance with the [JISD Student Handbook](https://www.judsonisd.org/departments/pupil-services/student-handbook-and-student-code-of-conduct) and the [JISD Secondary Grading Handbook](https://www.judsonisd.org/departments/curriculum-instruction/curriculum-instruction), Ms. Whitby will begin enforcing the district’s late work policy in all of her classes. 
 
@@ -23,8 +23,8 @@ Late work is defined as **any assignment that is not submitted on its due date**
 - If I find late work that was submitted **without prior notification**, the **deduction will be calculated based on the day I observe the submission**, which may result in a higher penalty.
 
 ## Implementation Details
-- **Grace Period:** Assignments submitted on **February 5, 2025**, will be **accepted without penalty**.
-- **Penalty Commencement:** Point deductions for late submissions will **begin on February 6, 2025**.
-- **Final Acceptance Date:** The **last day to submit any currently outstanding late work** is **February 12, 2025**.
+- **Grace Period:** Assignments submitted by **January 16, 2026**, will be **accepted without penalty**.
+- **Penalty Commencement:** Point deductions for late submissions will **begin on January 17, 2026**.
+- **Final Acceptance Date:** The **last day to submit any currently outstanding late work** is **January 16, 2026**.
 
 This policy is designed to encourage responsibility and to ensure that all students are treated equitably. If you have any questions or concerns regarding this policy, please feel free to reach out to me

@@ -10,6 +10,7 @@ order: 2
 <table>
   <tr>
     <th align="center">Assigned</th>
+    <th align="center">Cutoff</th>
     <th align="center">Description</th>
     <th align="center">Category</th>
   </tr>
@@ -24,36 +25,42 @@ order: 2
 
   <tr>
     <td align="left">January 6, 2026</td>
+    <td align="left">January 16, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#january-6-2026">Journal - Welcome Back</a></td>
     <td align="left">Daily</td>
   </tr>
 
   <tr>
     <td align="left">January 7, 2026</td>
+    <td align="left">January 16, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#january-7-2026">Lesson 8: Sprites in Action</a></td>
     <td align="left">Daily</td>
   </tr>
 
   <tr>
     <td align="left">January 8, 2026</td>
+    <td align="left">January 16, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#1-lesson-9-mini-project-virtual-pet">Lesson 9: Mini-Project: Virtual Pet</a></td>
     <td align="left">Daily</td>
   </tr>
 
   <tr>
     <td align="left">January 9, 2026</td>
+    <td align="left">January 16, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#1-classroom-responsibility-essay">Classroom Responsibility Essay</a></td>
     <td align="left">Test</td>
   </tr>
 
   <tr>
     <td align="left">January 12, 2026</td>
+    <td align="left">January 16, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#january-12-2026">Journal - Developing Safe Spaces Online</a></td>
     <td align="left">Daily</td>
   </tr>
 
   <tr>
     <td align="left">January 13, 2026</td>
+    <td align="left">January 16, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#1-lesson-10-dance-party">Lesson 10: Dance Party</a></td>
     <td align="left">Daily</td>
   </tr>

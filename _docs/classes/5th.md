@@ -10,6 +10,7 @@ order: 4
 <table>
   <tr>
     <th align="center">Assigned</th>
+    <th align="center">Cutoff</th>
     <th align="center">Description</th>
     <th align="center">Category</th>
   </tr>
@@ -24,24 +25,28 @@ order: 4
 
   <tr>
     <td align="left">January 6, 2026</td>
+    <td align="left">January 16, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#january-6-2026">Journal - Welcome Back</a></td>
     <td align="left">Daily</td>
   </tr>
 
   <tr>
     <td align="left">January 7, 2026</td>
+    <td align="left">January 24, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/unity1_rubric.md">Unity Essentials Project</a></td>
     <td align="left">Test</td>
   </tr>
 
   <tr>
     <td align="left">January 9, 2026</td>
+    <td align="left">January 16, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#1-classroom-responsibility-essay">Classroom Responsibility Essay</a></td>
     <td align="left">Test</td>
   </tr>
 
   <tr>
     <td align="left">January 12, 2026</td>
+    <td align="left">January 16, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#january-12-2026">Journal - Developing Safe Spaces Online</a></td>
     <td align="left">Daily</td>
   </tr>

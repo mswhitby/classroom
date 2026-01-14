@@ -10,6 +10,7 @@ order: 1
 <table>
   <tr>
     <th align="center">Assigned</th>
+    <th align="center">Cutoff</th>
     <th align="center">Description</th>
     <th align="center">Category</th>
   </tr>
@@ -24,43 +25,87 @@ order: 1
 
   <tr>
     <td align="left">January 6, 2026</td>
+    <td align="left">January 16, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-6-2026">Journal - Welcome Back</a></td>
     <td align="left">Daily</td>
   </tr>
 
   <tr>
     <td align="left">January 7, 2026</td>
+    <td align="left">January 16, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-7-2026">Lesson 8: Sprites in Action</a></td>
     <td align="left">Daily</td>
   </tr>
 
   <tr>
     <td align="left">January 8, 2026</td>
+    <td align="left">January 16, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#1-lesson-9-mini-project-virtual-pet">Lesson 9: Mini-Project: Virtual Pet</a></td>
     <td align="left">Daily</td>
   </tr>
 
   <tr>
     <td align="left">January 9, 2026</td>
+    <td align="left">January 16, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#1-classroom-responsibility-essay">Classroom Responsibility Essay</a></td>
     <td align="left">Test</td>
   </tr>
 
   <tr>
     <td align="left">January 12, 2026</td>
+    <td align="left">January 16, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-12-2026">Journal - Developing Safe Spaces Online</a></td>
     <td align="left">Daily</td>
   </tr>
 
   <tr>
     <td align="left">January 13, 2026</td>
+    <td align="left">January 16, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#1-lesson-10-dance-party">Lesson 10: Dance Party</a></td>
     <td align="left">Daily</td>
   </tr>
 
 </table>
 
+Please reference the [Late Work Policy](https://github.com/mswhitby/classroom/blob/main/_docs/resources/late_work.md) for more information on cutoff dates. Assignments will not be accepted after the cutoff date. 
+
 ****
+
+# January 14, 2026
+
+## Agenda
+
+### 1. Lesson 11: Events in Music Lab
+- To access the assignment, you must log into Code.org using your Clever account. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Lesson 11: Events in Music Lab**.
+
+- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/express-2025/units/1/lessons/9/levels/1).
+
+----
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned [Monday, January 12, 2026](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#january-12-2026).
+
+----
+
+### 3. Essay - Exam Grade
+
+- Complete the [Classroom Responsibility Essay](https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-9-2026) assigned on **January 9, 2026** if you have not yet done so.
+- This assignment is a test grade.
+- I will not accept any late essays after **Friday, January 16, 2026**.
+
+----
+
+### 4. Missing Work
+
+If you complete any missing work, you must email me at <dwhitby@judsonisd.org> to let me know. If you do not email me, I will not know you've made up work and your make-up work will not be graded. Below is a list of assignments that should be completed:
+
+----
 
 # January 13, 2026
 
