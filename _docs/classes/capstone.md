@@ -44,12 +44,47 @@ order: 7
     <td align="left">Daily</td>
   </tr>
 
+  <tr>
+    <td align="left">January 14, 2026</td>
+    <td align="left">January 23, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/app1_rubric.md">Vibe Coding Project: Build a Helpful App</a></td>
+    <td align="left">Test</td>
+  </tr>
+
 </table>
 
 > [!IMPORTANT]
 > Please reference the [Late Work Policy](https://github.com/mswhitby/classroom/blob/main/_docs/resources/late_work.md) for more information on cutoff dates. Assignments will not be accepted after the cutoff date. 
 
 ****
+
+# January 14, 2026
+
+## Agenda
+
+### 1. Vibe Coding Project: Build a Helpful App
+
+I've uploaded the rubric for your class project: [Vibe Coding Project: Build a Helpful App](https://github.com/mswhitby/classroom/blob/main/_docs/resources/app1_rubric.md). You will be expected to use AI to develop a viable and useful app in a short timeframe. The purpose of this project is progress not perfection. You may work independently or with a group. This project is an **test grade**.
+
+**Your project is due January 23, 2026.**
+
+----
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned [Monday, January 12, 2026](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#january-12-2026).
+
+----
+
+### 3. Essay - Exam Grade
+
+- Complete the [Classroom Responsibility Essay](https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-9-2026) assigned on **January 9, 2026** if you have not yet done so.
+- This assignment is a test grade.
+- I will not accept any late essays after **Friday, January 16, 2026**.
+
+----
+
 # January 12, 2026
 
 ## Agenda

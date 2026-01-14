@@ -44,6 +44,13 @@ order: 3
     <td align="left">Daily</td>
   </tr>
 
+  <tr>
+    <td align="left">January 14, 2026</td>
+    <td align="left">January 23, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/app1_rubric.md">Vibe Coding Project: Build a Helpful App</a></td>
+    <td align="left">Test</td>
+  </tr>
+
 </table>
 
 > [!IMPORTANT]
@@ -57,7 +64,7 @@ order: 3
 
 ### 1. Vibe Coding Project: Build a Helpful App
 
-I've uploaded the rubric for your class project: [Vibe Coding Project: Build a Helpful App](https://github.com/mswhitby/classroom/blob/main/_docs/resources/app1_rubric.md). You will be expected to use AI to develop a viable and useful app in a short timeframe. The purpose of this project is progress not perfection. You may work independently or with a group. This project is an **exam grade**.
+I've uploaded the rubric for your class project: [Vibe Coding Project: Build a Helpful App](https://github.com/mswhitby/classroom/blob/main/_docs/resources/app1_rubric.md). You will be expected to use AI to develop a viable and useful app in a short timeframe. The purpose of this project is progress not perfection. You may work independently or with a group. This project is an **test grade**.
 
 **Your project is due January 23, 2026.**
 
