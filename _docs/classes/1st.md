@@ -60,14 +60,25 @@ order: 1
 
   <tr>
     <td align="left">January 13, 2026</td>
-    <td align="left">January 16, 2026</td>
+    <td align="left">January 21, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#1-lesson-10-dance-party">Lesson 10: Dance Party</a></td>
     <td align="left">Daily</td>
   </tr>
 
+  <tr>
+    <td align="left">January 14, 2026</td>
+    <td align="left">January 22, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-14-2026">Lesson 11: Events in Music Lab</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
+
 </table>
 
-Please reference the [Late Work Policy](https://github.com/mswhitby/classroom/blob/main/_docs/resources/late_work.md) for more information on cutoff dates. Assignments will not be accepted after the cutoff date. 
+<!-- Please reference the [Late Work Policy](https://github.com/mswhitby/classroom/blob/main/_docs/resources/late_work.md) for more information on cutoff dates. Assignments will not be accepted after the cutoff date.  -->
+
+> [!IMPORTANT]
+> Please reference the [Late Work Policy](https://github.com/mswhitby/classroom/blob/main/_docs/resources/late_work.md) for more information on cutoff dates. Assignments will not be accepted after the cutoff date. 
 
 ****
 
@@ -82,7 +93,7 @@ Please reference the [Late Work Policy](https://github.com/mswhitby/classroom/bl
     - Log in with Google using your school email address.
     - Complete **Lesson 11: Events in Music Lab**.
 
-- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/express-2025/units/1/lessons/9/levels/1).
+- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/express-2025/units/1/lessons/11/levels/1).
 
 ----
 
@@ -118,7 +129,7 @@ If you complete any missing work, you must email me at <dwhitby@judsonisd.org> t
     - Log in with Google using your school email address.
     - Complete **Lesson 10: Dance Party**.
 
-- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/express-2025/units/1/lessons/9/levels/1).
+- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/express-2025/units/1/lessons/10/levels/1).
 
 ----
 
