@@ -5,9 +5,18 @@
 **Due:** Thursday, January 23
 
 ---
-
+## Table of Contents
 1. [What This Project Is About](#What-This-Project-Is-About)
-1. [Your Task](#Your-Task)
+2. [Your Task](#Your-Task)
+2. [What Counts as a “Problem”?](#What-Counts-as-a-“Problem”)
+2. [hWhat Your App Must Do](#What-Your-App-Must-Do)
+3. [Using AI or "Vibe Coding"](#Using-AI-or-"Vibe-Coding")
+3. [What You Turn In"](#What-You-Turn-In")
+3. [Using AI or "Vibe Coding"](#Using-AI-or-"Vibe-Coding")
+3. [Suggested Timeline](#Suggested-Timeline")
+3. [Grading Rubric](#Grading-Rubric")
+3. [Final Reminder](#Final-Reminder")
+
 
 ---
 
@@ -31,7 +40,7 @@ You can work:
 
 ---
 
-## What Counts as a “Problem”?
+## What Counts as a “Problem”
 A problem could be anything that:
 - wastes time
 - causes confusion
@@ -48,7 +57,7 @@ A problem could be anything that:
 
 ---
 
-## What Your App Must Do (Minimum)
+## What Your App Must Do
 
 ### 1. A Simple Screen Layout
 - At least **3 sections on one page**  
@@ -111,21 +120,21 @@ For any AI code used:
 
 ## What You Turn In
 
-### 1) Your App
+### 1. Your App
 - Web app link  
   **OR**  
 - Video demo if it’s mobile
 
 ---
 
-### 2) GitHub Repository
+### 2. GitHub Repository
 Must include:
 - your code
 - a short README explaining what the app does
 
 ---
 
-### 3) 1-Page Explanation
+### 3. 1-Page Explanation
 Answer these questions:
 - What problem did you solve?
 - Who is this app for?
@@ -135,24 +144,24 @@ Answer these questions:
 
 ---
 
-### 4) Short Demo Video (2–4 minutes)
+<!-- ### 4. Short Demo Video (2–4 minutes)
 Show:
 - the problem
 - your app working
 - how it helps users
 
----
+--- -->
 
-### 5) Reflection (Short)
+<!-- ### 5. Reflection (Short)
 Answer:
 - What was the hardest part?
 - What are you proud of?
 - Did you use AI? If yes, how did it help?  
   If no, how could AI help in the future?
 
----
+--- -->
 
-## Timeline (Step-by-Step)
+## Suggested Timeline
 
 ### Jan 14–15
 - choose a problem
@@ -181,23 +190,14 @@ Answer:
 
 ---
 
-## How This Will Be Graded (Simplified)
+## Grading Rubric
+
+This project is graded on **functionality, understanding, and effort** — not on being advanced. The following will be considered:
+
 - Does the app **work**?
 - Does it **solve a real problem**?
 - Can you **explain what you built**?
 - Did you **try and make progress**?
-
----
-
-## Final Reminder
-> This is not about being perfect or advanced.  
-> This is about building something real, learning how apps work, and showing effort.
-
----
-
-## Grading Rubric (100 Points Total)
-
-This project is graded on **functionality, understanding, and effort** — not on being advanced.
 
 ---
 
@@ -267,6 +267,9 @@ This project is graded on **functionality, understanding, and effort** — not o
 - Using AI is allowed, but you must understand what your code does.
 - Trying, testing, and improving your app earns credit.
 
+## Final Reminder
+> This is not about being perfect or advanced.  
+> This is about building something real, learning how apps work, and showing effort.   
 > **Progress > Perfection**
 
 
