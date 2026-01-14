@@ -7,7 +7,7 @@
 ---
 
 1. [What This Project Is About](#What-This-Project-Is-About)
-2. (#Your-Task)
+2. [#Your-Task]
 
 ---
 
@@ -268,4 +268,5 @@ This project is graded on **functionality, understanding, and effort** — not o
 - Trying, testing, and improving your app earns credit.
 
 > **Progress > Perfection**
+
 
