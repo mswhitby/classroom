@@ -8,15 +8,14 @@
 ## Table of Contents
 1. [What This Project Is About](#What-This-Project-Is-About)
 2. [Your Task](#Your-Task)
-2. [What Counts as a “Problem”?](#What-Counts-as-a-“Problem”)
+2. [What Counts as a “Problem”?](#What-Counts-as-a-Problem)
 2. [hWhat Your App Must Do](#What-Your-App-Must-Do)
-3. [Using AI or "Vibe Coding"](#Using-AI-or-"Vibe-Coding")
-3. [What You Turn In"](#What-You-Turn-In")
-3. [Using AI or "Vibe Coding"](#Using-AI-or-"Vibe-Coding")
-3. [Suggested Timeline](#Suggested-Timeline")
-3. [Grading Rubric](#Grading-Rubric")
-3. [Final Reminder](#Final-Reminder")
-
+3. [Using AI or "Vibe Coding"](#Using-AI-or-Vibe-Coding)
+3. [What You Turn In"](#What-You-Turn-In)
+3. [Using AI or "Vibe Coding"](#Using-AI-or-"Vibe-Coding)
+3. [Suggested Timeline](#Suggested-Timeline)
+3. [Grading Rubric](#Grading-Rubric)
+3. [Final Reminder](#Final-Reminder)
 
 ---
 
