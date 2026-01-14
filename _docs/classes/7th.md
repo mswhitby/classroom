@@ -60,7 +60,7 @@ order: 6
 
   <tr>
     <td align="left">January 13, 2026</td>
-    <td align="left">January 16, 2026</td>
+    <td align="left">January 21, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/7th.md#1-lesson-10-dance-party">Lesson 10: Dance Party</a></td>
     <td align="left">Daily</td>
   </tr>
@@ -73,6 +73,10 @@ order: 6
   </tr>
 
 </table>
+
+> [!IMPORTANT]
+> Please reference the [Late Work Policy](https://github.com/mswhitby/classroom/blob/main/_docs/resources/late_work.md) for more information on cutoff dates. Assignments will not be accepted after the cutoff date. 
+
 
 ****
 
