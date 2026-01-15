@@ -72,6 +72,13 @@ order: 6
     <td align="left">Daily</td>
   </tr>
 
+  <tr>
+    <td align="left">January 15, 2026</td>
+    <td align="left">January 23, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/7th.md#january-15-2026">Lesson 12: Loops with Rey and BB-8</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
 </table>
 
 > [!IMPORTANT]
@@ -79,6 +86,36 @@ order: 6
 
 
 ****
+
+# January 15, 2026
+
+## Agenda
+
+### 1. Lesson 12: Loops with Rey and BB-8
+- To access the assignment, you must log into Code.org using your Clever account. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Lesson 12: Loops with Rey and BB-8**.
+
+- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/express-2025/units/1/lessons/12/levels/1).
+
+----
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned [Monday, January 12, 2026](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#january-12-2026).
+
+----
+
+### 3. Essay - Exam Grade
+
+- Complete the [Classroom Responsibility Essay](https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-9-2026) assigned on **January 9, 2026** if you have not yet done so.
+- This assignment is a test grade.
+- I will not accept any late essays after **Friday, January 16, 2026**.
+
+----
 
 
 # January 14, 2026
