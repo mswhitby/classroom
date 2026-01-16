@@ -31,6 +31,8 @@ order: 1
 
 </table>
 
+****
+
 # January 12, 2026
 
 ## 1. Journal Entry: Developing Safe Spaces Online
