@@ -4,6 +4,33 @@ category: Resources
 order: 1
 ---
 
+# Current Journal Assignments
+
+<table>
+  <tr>
+    <th align="center">Assigned</th>
+    <th align="center">Cutoff</th>
+    <th align="center">Description</th>
+    <th align="center">Category</th>
+  </tr>
+
+  <tr>
+    <td align="left">January 6, 2026</td>
+    <td align="left">January 16, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#january-6-2026">Journal - Welcome Back</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
+  <tr>
+    <td align="left">January 12, 2026</td>
+    <td align="left">January 16, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#january-12-2026">Journal - Developing Safe Spaces Online</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
+
+</table>
+
 # January 12, 2026
 
 ## 1. Journal Entry: Developing Safe Spaces Online
