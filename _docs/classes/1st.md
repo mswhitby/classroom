@@ -87,6 +87,33 @@ order: 1
 
 ****
 
+# January 16, 2026
+
+## Agenda
+
+You do not have a new assignment today. **Today is the last day to turn in any outstanding work that was assigned on or before January 12, 2026**. Please reference the table above for late work cutoff dates.
+
+### 1. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned [Monday, January 12, 2026](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#january-12-2026).
+
+----
+
+### 2. Essay - Exam Grade
+
+- Complete the [Classroom Responsibility Essay](https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-9-2026) assigned on **January 9, 2026** if you have not yet done so.
+- This assignment is a test grade.
+- I will not accept any late essays after **Friday, January 16, 2026**.
+
+----
+
+### 3. Missing Work
+
+If you complete any missing work, you must email me at <dwhitby@judsonisd.org> to let me know. If you do not email me, I will not know you've made up work and your make-up work will not be graded. Below is a list of assignments that should be completed:
+
+----
+
 # January 15, 2026
 
 ## Agenda
