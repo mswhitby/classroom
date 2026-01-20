@@ -31,7 +31,7 @@ order: 1
   <tr>
     <td align="left">January 20, 2026</td>
     <td align="left">January 26, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#january-20-2026">Journal - Developing Safe Spaces Online</a></td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#january-20-2026">Journal: Technology & Justice</a></td>
     <td align="left">Daily</td>
   </tr>
 
