@@ -79,6 +79,13 @@ order: 2
     <td align="left">Daily</td>
   </tr>
 
+  <tr>
+    <td align="left">January 20, 2026</td>
+    <td align="left">January 26, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#january-20-2026">Journal: Technology & Justice</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
 
 </table>
 
@@ -87,6 +94,33 @@ order: 2
 
 
 ****
+
+
+# January 20, 2026
+
+## Agenda
+
+### 1. Journal: Technology & Justice
+
+Dr. Martin Luther King Jr. believed that fairness and justice require people to take action—not just talk. Today, technology plays a major role in how people learn, communicate, and speak up.
+
+In your journal, use C.E.R. to:
+- Describe **at least one way technology can help create a more fair and just society**
+- Explain **why that use of technology matters**
+
+Write 5-7 complete sentences.
+
+**C.E.R**
+- Claim: One way technology can promote fairness or justice
+- Evidence: A real or realistic example (school, community, online, or global)
+- Reasoning: How this use of technology helps people be treated more fairly
+
+**Sentence Starters**
+- One way technology can help create fairness is…
+- This matters because…
+- An example of this could be…
+
+----
 
 # January 16, 2026
 

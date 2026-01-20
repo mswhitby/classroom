@@ -81,7 +81,7 @@ order: 1
 
   <tr>
     <td align="left">January 20, 2026</td>
-    <td align="left">January 25, 2026</td>
+    <td align="left">January 26, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-20-2026">Journal: Technology & Justice</a></td>
     <td align="left">Daily</td>
   </tr>
@@ -119,7 +119,6 @@ Write 5-7 complete sentences.
 - An example of this could be…
 
 ----
-
 
 # January 16, 2026
 
