@@ -90,7 +90,7 @@ order: 6
     <td align="left">January 21, 2026</td>
     <td align="left">January 27, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/7th.md#january-21-2026">Lesson 13: Mini-Project: Sticker Art</a></td>
-    <td align="left">Daily</td>
+    <td align="left">Test</td>
   </tr>
 
 
