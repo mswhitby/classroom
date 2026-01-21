@@ -106,6 +106,10 @@ order: 1
 ## Agenda
 
 ### 1. Lesson 13: Mini-Project: Sticker Art
+
+> [!IMPORTANT]
+> **Lesson 13 is a <ins>TEST</ins> grade**
+
 - To access the assignment, you must log into Code.org using your Clever account. Please do the following:
     - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
     - Search for **Karen Wagner**.

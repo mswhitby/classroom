@@ -104,6 +104,9 @@ order: 2
 
 # January 21, 2026
 
+> [!IMPORTANT]
+> **Lesson 13 is a <ins>TEST</ins> grade**
+
 ## Agenda
 
 ### 1. Lesson 13: Mini-Project: Sticker Art
