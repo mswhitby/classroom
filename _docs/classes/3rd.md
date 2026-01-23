@@ -100,6 +100,15 @@ order: 2
     <td align="left">Daily</td>
   </tr>
 
+  <tr>
+    <td align="left">January 23, 2026</td>
+    <td align="left">January 29, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#january-21-2026">Lesson 15: Snowflakes with Anna and Elsa</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
+  
+
 
 </table>
 
@@ -108,6 +117,34 @@ order: 2
 
 
 ****
+
+# January 23, 2026
+
+## Agenda
+
+### 1. Lesson 15: Snowflakes with Anna and Elsa
+- To access the assignment, you must log into Code.org using your Clever account. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Lesson 15: Snowflakes with Anna and Elsa**.
+
+- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/express-2025/units/1/lessons/15/levels/1).
+
+----
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned [Monday, January 20, 2026](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#january-20-2026).
+
+----
+
+### 3. Missing Work
+
+If you complete any missing work, you must email me at <dwhitby@judsonisd.org> to let me know. If you do not email me, I will not know you've made up work and your make-up work will not be graded.
+
+----
 
 # January 22, 2026
 
