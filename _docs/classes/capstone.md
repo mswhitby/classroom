@@ -78,7 +78,7 @@ The event will be Tuesday, January 27, 2026, at 6pm. We'll meet here in my room.
 
 ### 1. Vibe Coding Project Submission
 
-Please use this [link]() to submit your [Vibe Coding Project: Build a Helpful App](https://github.com/mswhitby/classroom/blob/main/_docs/classes/capstone.md#1-vibe-coding-project-build-a-helpful-app).
+Please use this [link](https://forms.gle/nuUyfzQqrtmTzKwg7) to submit your [Vibe Coding Project: Build a Helpful App](https://github.com/mswhitby/classroom/blob/main/_docs/classes/capstone.md#1-vibe-coding-project-build-a-helpful-app).
 
 ### 2. Journal
 

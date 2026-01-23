@@ -76,9 +76,9 @@ The event will be Tuesday, January 27, 2026, at 6pm. We'll meet here in my room.
 
 ## Agenda 
 
-### 1. Vibe Coding Project Submission
+### 1. Unity Essentials Project Submission
 
-Please use this [link]() to submit your [Vibe Coding Project: Build a Helpful App](https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#1-vibe-coding-project-build-a-helpful-app).
+Please use this [link](https://forms.gle/nuUyfzQqrtmTzKwg7) to submit your [Unity Essentials Project](https://github.com/mswhitby/classroom/blob/main/_docs/resources/unity1_rubric.md).
 
 ### 2. Journal
 
