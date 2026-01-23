@@ -66,6 +66,16 @@ order: 7
 
 ****
 
+# January 23, 2026
+
+## Announcement
+
+Are you interested in volunteering to speak with 8th graders about our Computer Science Program here at Wagner!? Sign up to join us for our CTE Showcase using this [link](https://forms.gle/PkYRqfHGyXQgpb576).
+
+The event will be Tuesday, January 27, 2026, at 6pm. We'll meet here in my room. You can also earn volunteer hours. 
+
+----
+
 # January 20, 2026
 
 ## Agenda
