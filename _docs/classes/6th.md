@@ -74,7 +74,23 @@ Are you interested in volunteering to speak with 8th graders about our Computer 
 
 The event will be Tuesday, January 27, 2026, at 6pm. We'll meet here in my room. You can also earn volunteer hours. 
 
+## Agenda 
+
+### 1. Vibe Coding Project Submission
+
+Please use this [link]() to submit your [Vibe Coding Project: Build a Helpful App](https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#1-vibe-coding-project-build-a-helpful-app).
+
+### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned [Monday, January 20, 2026](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#january-20-2026).
+
+### 3. Missing Work
+
+If you complete any missing work, you must email me at <dwhitby@judsonisd.org> to let me know. If you do not email me, I will not know you've made up work and your make-up work will not be graded.
+
 ----
+
 
 # January 20, 2026
 
