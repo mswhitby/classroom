@@ -14,6 +14,24 @@ order: 6
     <th align="center">Description</th>
     <th align="center">Category</th>
   </tr>
+  <tr>
+    <td align="left">January 29, 2026</td>
+    <td align="left">February 5, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/7th.md#january-29-2026">Journal: Testing Reflection</a></td>
+    <td align="left">Daily</td>
+    </tr>
+</table>
+
+<details>
+<summary>P3A Assignments</summary>
+
+<table>
+  <tr>
+    <th align="center">Assigned</th>
+    <th align="center">Cutoff</th>
+    <th align="center">Description</th>
+    <th align="center">Category</th>
+  </tr>
 
   <!-- 
   <tr>
@@ -107,8 +125,9 @@ order: 6
     <td align="left">Daily</td>
   </tr>
 
-
 </table>
+</details>
+
 
 > [!IMPORTANT]
 > Please reference the [Late Work Policy](https://github.com/mswhitby/classroom/blob/main/_docs/resources/late_work.md) for more information on cutoff dates. Assignments will not be accepted after the cutoff date. 

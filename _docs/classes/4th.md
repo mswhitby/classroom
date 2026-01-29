@@ -14,6 +14,25 @@ order: 3
     <th align="center">Description</th>
     <th align="center">Category</th>
   </tr>
+  <tr>
+    <td align="left">January 29, 2026</td>
+    <td align="left">February 5, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#january-29-2026">Journal: Testing Reflection</a></td>
+    <td align="left">Daily</td>
+    </tr>
+</table>
+
+<details>
+<summary>P3A Assignments</summary>
+
+
+<table>
+  <tr>
+    <th align="center">Assigned</th>
+    <th align="center">Cutoff</th>
+    <th align="center">Description</th>
+    <th align="center">Category</th>
+  </tr>
 
   <!-- 
   <tr>
@@ -57,14 +76,54 @@ order: 3
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#january-20-2026">Journal: Technology & Justice</a></td>
     <td align="left">Daily</td>
   </tr>
-
-
 </table>
+</details>
+
 
 > [!IMPORTANT]
 > Please reference the [Late Work Policy](https://github.com/mswhitby/classroom/blob/main/_docs/resources/late_work.md) for more information on cutoff dates. Assignments will not be accepted after the cutoff date. 
 
 ****
+
+# January 29, 2026
+
+## Agenda
+
+### 1. Journal: Testing Reflection
+
+Write a short paragraph answering the questions that apply to you. Be honest and thoughtful. This is just a reflection.
+
+**For Students Who Tested (MAP or TSI):**
+
+1. Which test did you take this week (MAP or TSI)?
+
+2.  How do you feel about your performance?
+    - What went well?
+    - What felt challenging?
+
+3. Do you think test prep (practice, review, or strategies) would help you do better next time?
+Why or why not?
+
+
+**For Seniors:**
+
+1. Have you already taken the ACT or SAT?
+
+2. Did you achieve the score you were aiming for?
+    - Yes: What helped you be successful?
+    - No: What do you think you could do to improve your score?
+
+3. Would test prep, practice, or support be helpful for you? Explain.
+
+**Sample Sentence Starters:**
+
+- “The test I took was ___, and I feel ___ about my performance because…”
+- “One thing I did well was…, but I struggled with…”
+- “I think test prep would / would not help me because…”
+- “I have / have not reached my goal score, and my next step is…”
+
+----
+
 
 # January 23, 2026
 
