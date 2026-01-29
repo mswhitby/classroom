@@ -116,6 +116,45 @@ order: 6
 
 ****
 
+# January 29, 2026
+
+## Agenda
+
+### 1. Journal: Testing Reflection
+
+Write a short paragraph answering the questions that apply to you. Be honest and thoughtful. This is just a reflection.
+
+**For Students Who Tested (MAP or TSI):**
+
+1. Which test did you take this week (MAP or TSI)?
+
+2.  How do you feel about your performance?
+    - What went well?
+    - What felt challenging?
+
+3. Do you think test prep (practice, review, or strategies) would help you do better next time?
+Why or why not?
+
+
+**For Seniors:**
+
+1. Have you already taken the ACT or SAT?
+
+2. Did you achieve the score you were aiming for?
+    - Yes: What helped you be successful?
+    - No: What do you think you could do to improve your score?
+
+3. Would test prep, practice, or support be helpful for you? Explain.
+
+**Sample Sentence Starters:**
+
+- “The test I took was ___, and I feel ___ about my performance because…”
+- “One thing I did well was…, but I struggled with…”
+- “I think test prep would / would not help me because…”
+- “I have / have not reached my goal score, and my next step is…”
+
+----
+
 # January 23, 2026
 
 ## Announcement
