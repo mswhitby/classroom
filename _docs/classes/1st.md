@@ -24,8 +24,6 @@ order: 1
 <details>
 <summary>P3A Assignments</summary>
 
-# Current Assignments
-
 <table>
   <tr>
     <th align="center">Assigned</th>
