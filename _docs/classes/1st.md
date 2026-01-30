@@ -24,7 +24,7 @@ order: 1
   <tr>
     <td align="left">January 30, 2026</td>
     <td align="left">February 6, 2026</td>
-    <td align="left"><a href="https://studio.code.org/courses/express-2025/units/1/lessons/16/levels/1">Lesson 16: Looking Ahead with Minecraft</a></td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-30-2026">Lesson 16: Looking Ahead with Minecraft</a></td>
     <td align="left">Daily</td>
   </tr>
 
