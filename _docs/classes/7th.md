@@ -135,6 +135,48 @@ order: 6
 
 ****
 
+# February 2, 2026
+
+## Agenda
+
+### Journal Entry: Professional Behavior in Shared Spaces
+
+Schools and workplaces are shared environments. This means our personal habits, behaviors, and choices can affect the comfort, focus, and well-being of others.
+
+In today’s journal, reflect on what it means to behave professionally in shared spaces such as classrooms, offices, or work sites.
+
+Respond in **complete sentences** and address the questions below.
+
+---
+
+#### Questions
+
+1. Why is personal hygiene and self-care important in shared environments?
+2. How can things like **loud conversations, strong smells, or distracting behavior** affect others’ ability to focus or feel comfortable?
+3. What are some reasonable expectations for **professional behavior** in shared spaces?  
+   *Examples: hygiene, respectful language, appropriate volume, personal space, emotional self-control, awareness of surroundings.*
+4. Why is **self-regulation** (controlling your voice, reactions, and behavior) an important skill for school and future workplaces?
+5. What is one habit—related to hygiene, communication, or behavior—you can improve to be more respectful of shared spaces?
+
+---
+
+#### Expectations
+
+- Write in complete sentences.
+- Be thoughtful and honest.
+- Keep responses respectful and appropriate.
+
+---
+
+#### Optional Sentence Starters
+
+- “In a shared space, people should be mindful of…”
+- “Professional behavior matters because…”
+- “Self-regulation is important because…”
+- “One habit I can work on is…”
+
+----
+
 # January 30, 2026
 
 ## Agenda
