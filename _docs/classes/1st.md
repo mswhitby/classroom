@@ -28,6 +28,27 @@ order: 1
     <td align="left">Daily</td>
   </tr>
 
+  <tr>
+    <td align="left">February 2, 2026</td>
+    <td align="left">February 10, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#february-2-2026">Journal: Professional Behavior in Shared Spaces</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
+  <tr>
+    <td align="left">February 3, 2026</td>
+    <td align="left">February 11, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#february-3-2026">Information Technology Survey</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
+  <tr>
+    <td align="left">February 3, 2026</td>
+    <td align="left">February 11, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#february-3-2026">Lesson 17: If/Else with Bee</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
 </table>
 
 <details>
@@ -120,8 +141,8 @@ order: 1
   </tr>
 
   <tr>
-    <td align="left">January 22, 2026</td>
-    <td align="left">January 28, 2026</td>
+    <td align="left">February 2, 2026</td>
+    <td align="left">February 2, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-21-2026">Lesson 14: Nested Loops in Maze</a></td>
     <td align="left">Daily</td>
   </tr>
@@ -142,6 +163,27 @@ order: 1
 > Please reference the [Late Work Policy](https://github.com/mswhitby/classroom/blob/main/_docs/resources/late_work.md) for more information on cutoff dates. Assignments will not be accepted after the cutoff date. 
 
 ****
+
+# February 3, 2026
+
+## Agenda
+
+### 1. Information Technology Survey
+
+Please fill out this form: [Information Technology Survey](https://forms.office.com/Pages/ResponsePage.aspx?id=L8RkFxV1qEmnEnqRUF6kpQS1CTHAESNOsyklvYFmpDpUMzQ2N0s3WThHTktYWUw1UjhNRzJLTkFEWS4u)
+
+### 2. Lesson 17: If/Else with Bee
+- To access the assignment, you must log into Code.org using your Clever account. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Lesson 17: If/Else with Bee**.
+
+- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/express-2025/units/1/lessons/17/levels/1).
+
+
+
+----
 
 # February 2, 2026
 
