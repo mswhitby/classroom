@@ -135,6 +135,40 @@ order: 6
 
 ****
 
+# February 3, 2026
+
+## Agenda
+
+### 1. Information Technology Survey
+
+Please fill out this form: [Information Technology Survey](https://forms.office.com/Pages/ResponsePage.aspx?id=L8RkFxV1qEmnEnqRUF6kpQS1CTHAESNOsyklvYFmpDpUMzQ2N0s3WThHTktYWUw1UjhNRzJLTkFEWS4u)
+
+### 2. Lesson 17: If/Else with Bee
+- To access the assignment, you must log into Code.org using your Clever account. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Lesson 17: If/Else with Bee**.
+
+- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/express-2025/units/1/lessons/17/levels/1).
+
+----
+
+<!-- ### 2. Journal
+
+- Complete your journal entry for this week if you have not completed it yet.
+- The journal entry was assigned [Monday, January 20, 2026](https://github.com/mswhitby/WHSTechNotes/blob/main/journal.md#january-20-2026).
+
+----
+
+### 3. Missing Work
+
+If you complete any missing work, you must email me at <dwhitby@judsonisd.org> to let me know. If you do not email me, I will not know you've made up work and your make-up work will not be graded. -->
+
+
+
+----
+
 # February 2, 2026
 
 ## Agenda
