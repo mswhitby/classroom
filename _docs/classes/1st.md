@@ -164,6 +164,27 @@ order: 1
 
 ****
 
+# February 4, 2026
+
+## Agenda
+
+### 1. Information Technology Survey
+
+Please fill out this form: [Information Technology Survey](https://forms.office.com/Pages/ResponsePage.aspx?id=L8RkFxV1qEmnEnqRUF6kpQS1CTHAESNOsyklvYFmpDpUMzQ2N0s3WThHTktYWUw1UjhNRzJLTkFEWS4u)
+
+### 2. Lesson 18: While Loops in Farmer
+- To access the assignment, you must log into Code.org using your Clever account. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Lesson 18: While Loops in Farmer**.
+
+- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/express-2025/units/1/lessons/18/levels/1).
+
+
+
+----
+
 # February 3, 2026
 
 ## Agenda
