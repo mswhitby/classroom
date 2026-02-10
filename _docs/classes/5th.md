@@ -86,6 +86,20 @@ order: 4
 
 ****
 
+# February 10, 2026
+
+## Agenda
+
+### Student Created Journal Entry: Let's Talk Football!
+
+Three questions we should ask everyone to answer 
+
+1. Do you enjoy football? Why or why not?
+2. Did you watch Super Bowl LX?
+3. If you watched, what was your opinion?
+
+----
+
 # February 2, 2026
 
 ## Agenda
