@@ -49,6 +49,41 @@ order: 1
     <td align="left">Daily</td>
   </tr>
 
+  <tr>
+    <td align="left">February 4, 2026</td>
+    <td align="left">February 12, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#february-4-2026">Lesson 18: While Loops in Farmer</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
+  <tr>
+    <td align="left">February 5, 2026</td>
+    <td align="left">February 13, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#february-5-2026">Lesson 19: Conditionals in Minecraft: Voyage Aquatic</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
+  <tr>
+    <td align="left">February 10, 2026</td>
+    <td align="left">February 17, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#february-10-2026">Journal: Let's Talk Football!</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
+  <tr>
+    <td align="left">February 11, 2026</td>
+    <td align="left">February 18, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#february-11-2026">Lesson 20: Until Loops in Maze</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
+  <tr>
+    <td align="left">February 12, 2026</td>
+    <td align="left">February 19, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#february-12-2026">Lesson 21: Harvesting with Conditionals</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
 </table>
 
 <details>
@@ -164,7 +199,7 @@ order: 1
 
 ****
 
-# February 11, 2026
+# February 12, 2026
 
 ## Agenda
 
