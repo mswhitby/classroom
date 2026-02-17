@@ -1,0 +1,8 @@
+5 2
+123 616 1005 616 true true false
+9999 5150 781 781 false false true
+212 616 7 616 true false true
+39 9 8 -1 true true false
+19999 781 34 34 true true true
+SELECT where MAPMAKERS=true
+COUNT where WINNER=616, SUPERHEROES=true
