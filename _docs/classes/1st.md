@@ -199,6 +199,38 @@ order: 1
 
 ****
 
+# February 23, 2026
+
+## Agenda
+
+### Journal: Technology at the 2026 Winter Olympics
+
+The 2026 Winter Olympics, held in Italy from **February 6–22, 2026**, used advanced technology to improve **fairness, safety, and athletic performance**. Examples include high-speed timing systems, motion tracking, instant replay, wearable sensors, and data-driven equipment design.
+
+#### Prompt (C.E.R. Required)
+Choose **one technology** that was used during the **2026 Winter Olympics**.
+
+Respond using **C.E.R. (Claim, Evidence, Reasoning):**
+
+- **Claim:**  
+  Which technology had the *biggest impact* on the Olympics (fairness, safety, or performance)?
+
+- **Evidence:**  
+  Describe how this technology was used in a specific winter sport (skiing, snowboarding, skating, hockey, etc.).
+
+- **Reasoning:**  
+  Explain **why** this technology improved the sport **or** describe a concern it may have created.
+
+## Sentence Starters (Optional)
+- I believe the most important technology used in the 2026 Winter Olympics was...
+- This technology was used when athletes...
+- This affected the competition because...
+
+## Extension (Optional)
+Should there be limits on how much technology athletes are allowed to use in Olympic competition? Why or why not?
+
+----
+
 # February 12, 2026
 
 ## Agenda
