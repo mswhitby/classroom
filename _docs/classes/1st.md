@@ -221,12 +221,12 @@ Respond using **C.E.R. (Claim, Evidence, Reasoning):**
 - **Reasoning:**  
   Explain **why** this technology improved the sport **or** describe a concern it may have created.
 
-## Sentence Starters (Optional)
+#### Sentence Starters (Optional)
 - I believe the most important technology used in the 2026 Winter Olympics was...
 - This technology was used when athletes...
 - This affected the competition because...
 
-## Extension (Optional)
+#### Extension (Optional)
 Should there be limits on how much technology athletes are allowed to use in Olympic competition? Why or why not?
 
 ----
