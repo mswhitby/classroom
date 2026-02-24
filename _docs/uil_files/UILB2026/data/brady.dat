@@ -1,0 +1,102 @@
+20
+3 3
+the cat sat on the cat sat down
+the cat
+cat sat
+sat down
+2 2
+to be or not to be
+to
+not
+2 1
+a a a a a
+a
+2 1
+the dog the cat the bird
+the
+2 3
+hello world hello world
+foo
+world hello
+hello
+4 3
+a b c d a b c e a b c d
+a b c
+b c d
+b c e
+5 3
+one two three four five one two three four six
+one two three four
+two three four five
+three four five one
+2 5
+i think therefore i am i think therefore i exist i think therefore i wonder
+i think
+think therefore
+therefore i
+i am
+i exist
+2 1
+a b a b a b a c a c
+a
+3 2
+only three words
+only three
+three words
+2 1
+test apple test application test app test apply
+test
+2 1
+supercalifragilistic expialidocious something supercalifragilistic expialidocious else
+supercalifragilistic
+3 3
+a b c a b d a b c a b c
+a b
+b c
+b d
+3 4
+the quick brown fox jumps over the lazy dog
+quick brown
+brown fox
+the lazy
+lazy dog
+3 12
+being a should would will have been from be through of is a be did will at a as does from to will in through should the had of can should has did can been be ought been need need could is for from being ought be as may dare into does are is will may be will been ought should for dare had dare need did should are had from would had for ought should as will must was will is must used should are did into must did with used for has could have would as from could through of through used dare will have at with be was being has had of are ought ought for by could as the being from should can being may of had for the could at do at been might at does has dare had from by the must with a being dare might would was would into be be with are from have have on as had could by of did from does might used dare in by in being would will are can a through as will through will the are was will are is can are at would should with did from have into into on would on to does been been of need of to for was been was used can been would does does from in have of do should for would are in as been was from the be would had to with on did used was had ought the ought could for may of as with has does may did was through from was must was was through on at by had was at be do are are would used being into would through is be to through into by must could did must would could used have might for must are the for into been are from did at could have need are would dare may had in from might by the as might been have could being been as has should may did can did could at with could was be of should is the can have could had in as of as the being are has from is dare through as has of have is might dare is need did would been need as to has would had do to a do can to would should had been ought is on will does for need might will will a does used can should are should need at used from can a being could do through could is been of need must of at being ought into does could is of the by from does dare of are can must being might at might to must used may as have does to ought do into might used as the might may did of through must for in in did at on had be may at can be would might will does has a is would on are for to into does ought
+being a
+a should
+should would
+would will
+will have
+have been
+been from
+from be
+be through
+through of
+xyz abc
+nonexistent context
+2 7
+red blue green red blue yellow red green blue red blue green
+red
+blue
+green
+red blue
+blue green
+yellow red
+nonexistent
+2 3
+hello world foo bar
+abc
+xyz
+test
+3 2
+start middle end final
+middle end
+end final
+3 3
+x y z x y z x y z x y z x y z
+x y
+y z
+z x
+2 1
+a dog a cat a ant a dog a cat
+a
