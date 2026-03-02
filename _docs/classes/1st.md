@@ -199,6 +199,62 @@ order: 1
 
 ****
 
+# February 25, 2026
+
+## Agenda
+
+### Journal Entry - San Antonio Tech Jobs 
+
+**Objective:** Research **real tech jobs in San Antonio** and identify the **education, skills, and experience** needed for those careers.
+
+---
+
+#### Part A — Pick 2 Jobs
+Choose **two different tech jobs** from **two different companies** located in **San Antonio**.
+
+You may use these examples or find your own:
+- Software Engineer (USAA)
+- Cybersecurity Analyst / Cyber Business Analyst (Booz Allen Hamilton)
+- Cloud / Site Reliability Engineer (Rackspace)
+- Data or Digital Analyst (H-E-B Digital)
+
+---
+
+#### Part B — Job Requirements (Bulleted Lists)
+For **EACH job**, find a job posting and list the following:
+
+##### Job #1
+- **Company:**
+- **Job Title:**
+- **Education Required:**  
+- **Experience Required:**  
+- **Skills / Tools / Languages:**  
+- **Certifications (if any):**  
+- **What the job does (1–2 sentences):**
+
+---
+
+##### Job #2
+- **Company:**
+- **Job Title:**
+- **Education Required:**  
+- **Experience Required:**  
+- **Skills / Tools / Languages:**  
+- **Certifications (if any):**  
+- **What the job does (1–2 sentences):**
+
+---
+
+#### Part C — C.E.R. Paragraph (5–8 sentences)
+
+Write **one paragraph** using **C.E.R.**
+
+- **Claim:** Which job would you prefer and why?
+- **Evidence:** Use **at least two facts** from the job requirements (education, skills, certifications, or experience).
+- **Reasoning:** Explain how those requirements connect to *you* (your interests, classes, or future goals).
+
+---
+
 # February 26, 2026
 
 ## Agenda
