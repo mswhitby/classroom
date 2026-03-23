@@ -215,7 +215,7 @@ Respond to the following:
 - How could a computer program use this type of data to make better predictions than a person guessing?
 - What types of programming or technology jobs might involve working with sports data like this?
 
-****
+----
 
 # March 4, 2026
 

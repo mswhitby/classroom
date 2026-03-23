@@ -207,6 +207,24 @@ order: 2
 
 ****
 
+# March 23, 2026
+
+## Agenda
+
+### Journal Entry - Bracket Challenge
+
+
+The odds of picking a perfect March Madness bracket are extremely low, yet many people still try to predict game outcomes. Think about your own bracket and the results from the first weekend of the tournament.
+
+Respond to the following:
+- How did you choose your bracket (data, opinions, guessing, etc.), and how is it performing so far
+- What results from the first weekend surprised you, and why?
+- How might using data (such as team stats, rankings, or net ratings) improve predictions?
+- How could a computer program use this type of data to make better predictions than a person guessing?
+- What types of programming or technology jobs might involve working with sports data like this?
+
+----
+
 # March 4, 2026
 
 ## Agenda
