@@ -198,6 +198,34 @@ order: 6
 
 ****
 
+# March 30, 2026
+
+## Agenda
+
+### Journal Entry - Sports Data Models & Calculating Unknowns
+
+March Madness is known for unexpected upsets—when a lower-seeded team beats a higher-seeded team.
+
+- Think about one upset from this year’s tournament (or one that surprised you).
+- Why do you think that upset happened?
+
+Now think deeper:
+- What factors do you think are hard for computers to predict? (Examples: pressure, injuries, momentum, team chemistry)
+- Even with data like rankings and stats, why can predictions still be wrong?
+
+Finally, connect to computer science:
+- If you were building a program to predict games, what would it struggle to account for?
+- How could you improve your program to handle uncertainty?
+
+**Response Requirements (C.E.R.)**
+- Claim – Why do upsets happen?
+- Evidence – Use a real game or example
+- Reasoning – Explain the limits of data and prediction
+
+👉 5–7 sentences minimum
+
+----
+
 # March 26, 2026
 
 ## Agenda

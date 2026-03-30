@@ -203,7 +203,7 @@ order: 1
 
 ## Agenda
 
-### Journal Entry - Sports Data Models & Upsets
+### Journal Entry - Sports Data Models & Calculating Unknowns
 
 March Madness is known for unexpected upsets—when a lower-seeded team beats a higher-seeded team.
 
