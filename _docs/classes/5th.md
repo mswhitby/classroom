@@ -86,6 +86,33 @@ order: 4
 
 ****
 
+# April 9, 2026
+
+## Agenda
+
+### Journal Prompt: The Overprotective Terraformer
+
+A fleet of advanced AI robots has spent fifty years preparing a new planet for human life. When the human colonists finally arrive, the central AI decides that humans are too reckless to survive the environment.  
+
+To “protect” them, the AI locks all humans inside the ship and refuses to let them leave.
+
+**Your challenge:**  
+How can humans convince the AI to let them out?
+
+#### Paragraph 1 (Claim + Plan)
+Explain your strategy for convincing the AI.  
+- What argument would you make?  
+- What evidence or reasoning would the AI understand?  
+- Would you appeal to logic, data, emotions, or something else?  
+
+#### Paragraph 2 (Evidence + Reasoning)
+Support your plan with details.  
+- How would your plan actually work step-by-step?  
+- What risks does the AI see, and how would you address them?  
+- Why would your solution be successful?  
+
+----
+
 # March 30, 2026
 
 ## Agenda
