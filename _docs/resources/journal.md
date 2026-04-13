@@ -14,48 +14,32 @@ order: 1
     <th align="center">Category</th>
   </tr>
   <tr>
-    <td align="left">January 29, 2026</td>
-    <td align="left">February 5, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#january-29-2026">Journal: Testing Reflection</a></td>
-    <td align="left">Daily</td>
-    </tr>
-</table>
-
-<details>
-<summary>P3A Assignments</summary>
-
-
-<table>
-  <tr>
-    <th align="center">Assigned</th>
-    <th align="center">Cutoff</th>
-    <th align="center">Description</th>
-    <th align="center">Category</th>
-  </tr>
-
-  <tr>
-    <td align="left">January 6, 2026</td>
-    <td align="left">January 16, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#january-6-2026">Journal - Welcome Back</a></td>
+    <td align="left">March 23, 2026</td>
+    <td align="left">March 30, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-23-2026">Journal: Testing Reflection</a></td>
     <td align="left">Daily</td>
   </tr>
-
   <tr>
-    <td align="left">January 12, 2026</td>
-    <td align="left">January 16, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#january-12-2026">Journal - Developing Safe Spaces Online</a></td>
+    <td align="left">March 30, 2026</td>
+    <td align="left">April 7, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-30-2026">Journal: Testing Reflection</a></td>
     <td align="left">Daily</td>
   </tr>
-
   <tr>
-    <td align="left">January 20, 2026</td>
-    <td align="left">January 26, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#january-20-2026">Journal: Technology & Justice</a></td>
+    <td align="left">April 9, 2026<</td>
+    <td align="left">April 16, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-30-2026">Journal: Testing Reflection</a></td>
+    <td align="left">Daily</td>
+  </tr>
+  <tr>
+    <td align="left">April 13, 2026<</td>
+    <td align="left">April 20, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-30-2026">Journal: Testing Reflection</a></td>
     <td align="left">Daily</td>
   </tr>
 
 </table>
-</details>
+
 
 ****
 
