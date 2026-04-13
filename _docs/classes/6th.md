@@ -15,15 +15,16 @@ order: 5
     <th align="center">Category</th>
   </tr>
   <tr>
-    <td align="left">January 29, 2026</td>
-    <td align="left">February 5, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#january-29-2026">Journal: Testing Reflection</a></td>
+    <td align="left">April 13, 2026</td>
+    <td align="left">April 20, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#april-13-2026">Journal: Technology and the Artemis II Moon Mission</a></td>
     <td align="left">Daily</td>
-    </tr>
+  </tr>
 </table>
 
 <details>
-<summary>P3A Assignments</summary>
+<summary>P4A Assignments</summary>
+
 
 <table>
   <tr>
@@ -36,49 +37,32 @@ order: 5
   <!-- 
   <tr>
     <td align="left">January 1, 2026</td>
+    <td align="left">January 1, 2026</td>
     <td align="left"><a href="url">Description</a></td>
     <td align="left">Daily</td>
   </tr>
    -->
-
   <tr>
-    <td align="left">January 6, 2026</td>
-    <td align="left">January 16, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#january-6-2026">Journal - Welcome Back</a></td>
+    <td align="left">March 23, 2026</td>
+    <td align="left">March 30, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#march-23-2026">Journal: Bracket Challenge</a></td>
     <td align="left">Daily</td>
   </tr>
-
   <tr>
-    <td align="left">January 7, 2026</td>
-    <td align="left">January 24, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/unity1_rubric.md">Unity Essentials Project</a></td>
-    <td align="left">Test</td>
-  </tr>
-
-  <tr>
-    <td align="left">January 9, 2026</td>
-    <td align="left">January 16, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#1-classroom-responsibility-essay">Classroom Responsibility Essay</a></td>
-    <td align="left">Test</td>
-  </tr>
-
-  <tr>
-    <td align="left">January 12, 2026</td>
-    <td align="left">January 16, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#january-12-2026">Journal - Developing Safe Spaces Online</a></td>
+    <td align="left">March 30, 2026</td>
+    <td align="left">April 8, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#march-30-2026">Journal: Sports Data Models & Calculating Unknowns</a></td>
     <td align="left">Daily</td>
   </tr>
-
   <tr>
-    <td align="left">January 20, 2026</td>
-    <td align="left">January 26, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#january-20-2026">Journal: Technology & Justice</a></td>
+    <td align="left">April 9, 2026</td>
+    <td align="left">April 16, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#april-9-2026">Journal: The Overprotective Terraformer</a></td>
     <td align="left">Daily</td>
   </tr>
 
 </table>
 </details>
-
 
 > [!IMPORTANT]
 > Please reference the [Late Work Policy](https://github.com/mswhitby/classroom/blob/main/_docs/resources/late_work.md) for more information on cutoff dates. Assignments will not be accepted after the cutoff date. 
