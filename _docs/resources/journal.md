@@ -16,25 +16,25 @@ order: 1
   <tr>
     <td align="left">March 23, 2026</td>
     <td align="left">March 30, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-23-2026">Journal: Testing Reflection</a></td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-23-2026">Journal: Bracket Challenge</a></td>
     <td align="left">Daily</td>
   </tr>
   <tr>
     <td align="left">March 30, 2026</td>
     <td align="left">April 7, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-30-2026">Journal: Testing Reflection</a></td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-30-2026">Journal: Sports Data Models & Calculating Unknowns</a></td>
     <td align="left">Daily</td>
   </tr>
   <tr>
-    <td align="left">April 9, 2026<</td>
+    <td align="left">April 9, 2026</td>
     <td align="left">April 16, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-30-2026">Journal: Testing Reflection</a></td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-30-2026">Journal: The Overprotective Terraformer</a></td>
     <td align="left">Daily</td>
   </tr>
   <tr>
-    <td align="left">April 13, 2026<</td>
+    <td align="left">April 13, 2026</td>
     <td align="left">April 20, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-30-2026">Journal: Testing Reflection</a></td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#march-30-2026">Journal: Technology and the Artemis II Moon Mission</a></td>
     <td align="left">Daily</td>
   </tr>
 
