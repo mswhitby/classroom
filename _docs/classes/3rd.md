@@ -72,7 +72,7 @@ order: 2
   <tr>
     <td align="left">March 30, 2026</td>
     <td align="left">April 8, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#march-30-2026">Journal - Sports Data Models & Calculating Unknowns</a></td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#march-30-2026">Journal: Sports Data Models & Calculating Unknowns</a></td>
     <td align="left">Daily</td>
   </tr>
   <tr>

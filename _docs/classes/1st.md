@@ -6,6 +6,7 @@ order: 1
 ---
 
 # Current Assignments
+
 <table>
   <tr>
     <th align="center">Assigned</th>
@@ -15,79 +16,18 @@ order: 1
   </tr>
 
   <tr>
-    <td align="left">January 29, 2026</td>
-    <td align="left">February 5, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-29-2026">Journal: Testing Reflection</a></td>
+    <td align="left">April 13, 2026</td>
+    <td align="left">April 20, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#april-13-2026">Journal: Technology and the Artemis II Moon Mission</a></td>
     <td align="left">Daily</td>
   </tr>
 
-  <tr>
-    <td align="left">January 30, 2026</td>
-    <td align="left">February 6, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-30-2026">Lesson 16: Looking Ahead with Minecraft</a></td>
-    <td align="left">Daily</td>
-  </tr>
-
-  <tr>
-    <td align="left">February 2, 2026</td>
-    <td align="left">February 10, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#february-2-2026">Journal: Professional Behavior in Shared Spaces</a></td>
-    <td align="left">Daily</td>
-  </tr>
-
-  <tr>
-    <td align="left">February 3, 2026</td>
-    <td align="left">February 11, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#february-3-2026">Information Technology Survey</a></td>
-    <td align="left">Daily</td>
-  </tr>
-
-  <tr>
-    <td align="left">February 3, 2026</td>
-    <td align="left">February 11, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#february-3-2026">Lesson 17: If/Else with Bee</a></td>
-    <td align="left">Daily</td>
-  </tr>
-
-  <tr>
-    <td align="left">February 4, 2026</td>
-    <td align="left">February 12, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#february-4-2026">Lesson 18: While Loops in Farmer</a></td>
-    <td align="left">Daily</td>
-  </tr>
-
-  <tr>
-    <td align="left">February 5, 2026</td>
-    <td align="left">February 13, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#february-5-2026">Lesson 19: Conditionals in Minecraft: Voyage Aquatic</a></td>
-    <td align="left">Daily</td>
-  </tr>
-
-  <tr>
-    <td align="left">February 10, 2026</td>
-    <td align="left">February 17, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#february-10-2026">Journal: Let's Talk Football!</a></td>
-    <td align="left">Daily</td>
-  </tr>
-
-  <tr>
-    <td align="left">February 11, 2026</td>
-    <td align="left">February 18, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#february-11-2026">Lesson 20: Until Loops in Maze</a></td>
-    <td align="left">Daily</td>
-  </tr>
-
-  <tr>
-    <td align="left">February 12, 2026</td>
-    <td align="left">February 19, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#february-12-2026">Lesson 21: Harvesting with Conditionals</a></td>
-    <td align="left">Daily</td>
-  </tr>
+ 
 
 </table>
 
 <details>
-<summary>P3A Assignments</summary>
+<summary>P4A Assignments</summary>
 
 <table>
   <tr>
@@ -100,97 +40,62 @@ order: 1
   <!-- 
   <tr>
     <td align="left">January 1, 2026</td>
+    <td align="left">January 1, 2026</td>
     <td align="left"><a href="url">Description</a></td>
     <td align="left">Daily</td>
   </tr>
    -->
 
   <tr>
-    <td align="left">January 6, 2026</td>
-    <td align="left">January 16, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-6-2026">Journal - Welcome Back</a></td>
+    <td align="left">March 23, 2026</td>
+    <td align="left">March 30, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#march-23-2026">Journal - Bracket Challenge</a></td>
     <td align="left">Daily</td>
   </tr>
-
   <tr>
-    <td align="left">January 7, 2026</td>
-    <td align="left">January 16, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-7-2026">Lesson 8: Sprites in Action</a></td>
+    <td align="left">March 24, 2026</td>
+    <td align="left">March 31, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#march-24-2026">Lesson 27: Using Variables with the Artist</a></td>
     <td align="left">Daily</td>
   </tr>
-
   <tr>
-    <td align="left">January 8, 2026</td>
-    <td align="left">January 16, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#1-lesson-9-mini-project-virtual-pet">Lesson 9: Mini-Project: Virtual Pet</a></td>
+    <td align="left">March 25, 2026</td>
+    <td align="left">April 1, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#march-25-2026">Lesson 28: Variables with the Bee</a></td>
     <td align="left">Daily</td>
   </tr>
-
   <tr>
-    <td align="left">January 9, 2026</td>
-    <td align="left">January 16, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#1-classroom-responsibility-essay">Classroom Responsibility Essay</a></td>
+    <td align="left">March 26, 2026</td>
+    <td align="left">April 2, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#march-26-2026">Lesson 29: For Loops with Bee</a></td>
+    <td align="left">Daily</td>
+  </tr>
+  <tr>
+    <td align="left">March 30, 2026</td>
+    <td align="left">April 8, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#march-30-2026">Journal: Sports Data Models & Calculating Unknowns</a></td>
+    <td align="left">Daily</td>
+  </tr>
+  <tr>
+    <td align="left">March 31, 2026</td>
+    <td align="left">April 9, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#march-31-2026">Lesson 30: For Loops with Artist</a></td>
+    <td align="left">Daily</td>
+  </tr>
+  <tr>
+    <td align="left">April 1, 2026</td>
+    <td align="left">April 17, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#april-1-2026">Lesson 31: End of Course Project</a></td>
     <td align="left">Test</td>
   </tr>
-
   <tr>
-    <td align="left">January 12, 2026</td>
-    <td align="left">January 16, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-12-2026">Journal - Developing Safe Spaces Online</a></td>
+    <td align="left">April 9, 2026</td>
+    <td align="left">April 16, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#april-9-2026">Journal: The Overprotective Terraformer</a></td>
     <td align="left">Daily</td>
   </tr>
-
-  <tr>
-    <td align="left">January 13, 2026</td>
-    <td align="left">January 21, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#1-lesson-10-dance-party">Lesson 10: Dance Party</a></td>
-    <td align="left">Daily</td>
-  </tr>
-
-  <tr>
-    <td align="left">January 14, 2026</td>
-    <td align="left">January 22, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-14-2026">Lesson 11: Events in Music Lab</a></td>
-    <td align="left">Daily</td>
-  </tr>
-
-  <tr>
-    <td align="left">January 15, 2026</td>
-    <td align="left">January 23, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-15-2026">Lesson 12: Loops with Rey and BB-8</a></td>
-    <td align="left">Daily</td>
-  </tr>
-
-  <tr>
-    <td align="left">January 20, 2026</td>
-    <td align="left">January 26, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-20-2026">Journal: Technology & Justice</a></td>
-    <td align="left">Daily</td>
-  </tr>
-
-   <tr>
-    <td align="left">January 21, 2026</td>
-    <td align="left">January 27, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-21-2026">Lesson 13: Mini-Project: Sticker Art</a></td>
-    <td align="left">Test</td>
-  </tr>
-
-  <tr>
-    <td align="left">February 2, 2026</td>
-    <td align="left">February 2, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-21-2026">Lesson 14: Nested Loops in Maze</a></td>
-    <td align="left">Daily</td>
-  </tr>
-
-  <tr>
-    <td align="left">January 23, 2026</td>
-    <td align="left">January 29, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#january-21-2026">Lesson 15: Snowflakes with Anna and Elsa</a></td>
-    <td align="left">Daily</td>
-  </tr>
-
+  
 </table>
-
 </details>
 
 
