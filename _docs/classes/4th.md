@@ -15,11 +15,11 @@ order: 3
     <th align="center">Category</th>
   </tr>
   <tr>
-    <td align="left">January 29, 2026</td>
-    <td align="left">February 5, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#january-29-2026">Journal: Testing Reflection</a></td>
+    <td align="left">April 13, 2026</td>
+    <td align="left">April 20, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#april-13-2026">Journal: Technology and the Artemis II Moon Mission</a></td>
     <td align="left">Daily</td>
-    </tr>
+  </tr>
 </table>
 
 <details>
@@ -58,12 +58,6 @@ order: 3
     <td align="left">April 9, 2026</td>
     <td align="left">April 16, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#april-9-2026">Journal: The Overprotective Terraformer</a></td>
-    <td align="left">Daily</td>
-  </tr>
-  <tr>
-    <td align="left">April 13, 2026</td>
-    <td align="left">April 20, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#april-13-2026">Journal: Technology and the Artemis II Moon Mission</a></td>
     <td align="left">Daily</td>
   </tr>
 
