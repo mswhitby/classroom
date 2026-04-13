@@ -200,6 +200,9 @@ order: 1
 ****
 
 <!-- Programming with Music Lab - Lesson 1: Introduction to Music Lab & Lesson 2: Sequencing - Explore -->
+
+----
+
 # April 13, 2026
 
 ## Agenda
@@ -221,7 +224,6 @@ Do you think modern space technology is reliable enough for long missions like e
 - Why the challenges that occurred are important for improving future missions  
 
 > Your response must be **5–7 complete sentences** and include **Claim, Evidence, and Reasoning (C.E.R.)**.
-
 
 ----
 

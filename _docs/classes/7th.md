@@ -198,6 +198,30 @@ order: 6
 
 ****
 
+# April 13, 2026
+
+## Agenda
+
+### Journal Entry: Technology and the Artemis II Moon Mission
+
+"NASA's Artemis II mission successfully concluded in April 2026, marking the first crewed lunar flyby in over 50 years. The 10-day mission saw four astronauts (Reid Wiseman, Victor Glover, Christina Koch, and Jeremy Hansen) fly around the Moon and return safely to Earth, setting a new record for human spaceflight distance." - PBS
+
+While the mission was successful, it also revealed real challenges engineers still face in space travel. During the mission:
+- Astronauts experienced **issues with onboard systems**, including parts of the toilet (waste management system).
+- There was a **planned communication blackout** when the spacecraft passed behind the Moon, where signals could not reach Earth.
+
+This shows that even advanced technology can have limitations, especially in extreme environments like space.
+
+#### Prompt:
+
+Do you think modern space technology is reliable enough for long missions like extended stays on the Moon or traveling to Mars? Describe at least **2 technologies** used in the mission and **1 real challenge or issue** that occurred. Explain:
+- How the technology helped the mission succeed  
+- Why the challenges that occurred are important for improving future missions  
+
+> Your response must be **5–7 complete sentences** and include **Claim, Evidence, and Reasoning (C.E.R.)**.
+
+----
+
 # April 10, 2026
 
 ## Agenda
