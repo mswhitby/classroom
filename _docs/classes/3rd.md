@@ -94,18 +94,14 @@ order: 2
     <td align="left">Daily</td>
   </tr>
 
-
-
-
-
-
-
 </table>
 </details>
 
 
 > [!IMPORTANT]
 > Please reference the [Late Work Policy](https://github.com/mswhitby/classroom/blob/main/_docs/resources/late_work.md) for more information on cutoff dates. Assignments will not be accepted after the cutoff date. 
+>
+> If you complete any missing work, you must email me at <dwhitby@judsonisd.org> to let me know. If you do not email me, I will not know you've made up work and your make-up work will not be graded.
 
 
 ****
