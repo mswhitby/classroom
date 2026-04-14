@@ -26,8 +26,7 @@ order: 1
 
 </table>
 
-<details>
-<summary>P4A Assignments</summary>
+## P4A Assignments
 
 <table>
   <tr>
@@ -96,7 +95,6 @@ order: 1
   </tr>
   
 </table>
-</details>
 
 
 > [!IMPORTANT]
