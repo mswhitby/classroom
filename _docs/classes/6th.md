@@ -42,19 +42,19 @@ order: 5
    -->
   <tr>
     <td align="left">March 23, 2026</td>
-    <td align="left">March 30, 2026</td>
+    <td align="left">April 23, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#march-23-2026">Journal: Bracket Challenge</a></td>
     <td align="left">Daily</td>
   </tr>
   <tr>
     <td align="left">March 30, 2026</td>
-    <td align="left">April 8, 2026</td>
+    <td align="left">April 23, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#march-30-2026">Journal: Sports Data Models & Calculating Unknowns</a></td>
     <td align="left">Daily</td>
   </tr>
   <tr>
     <td align="left">April 9, 2026</td>
-    <td align="left">April 16, 2026</td>
+    <td align="left">April 23, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#april-9-2026">Journal: The Overprotective Terraformer</a></td>
     <td align="left">Daily</td>
   </tr>

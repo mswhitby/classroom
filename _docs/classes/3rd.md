@@ -46,49 +46,49 @@ order: 2
 
   <tr>
     <td align="left">March 23, 2026</td>
-    <td align="left">March 30, 2026</td>
+    <td align="left">April 23, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#march-23-2026">Journal - Bracket Challenge</a></td>
     <td align="left">Daily</td>
   </tr>
   <tr>
     <td align="left">March 24, 2026</td>
-    <td align="left">March 31, 2026</td>
+    <td align="left">April 23, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#march-24-2026">Lesson 27: Using Variables with the Artist</a></td>
     <td align="left">Daily</td>
   </tr>
   <tr>
     <td align="left">March 25, 2026</td>
-    <td align="left">April 1, 2026</td>
+    <td align="left">April 23, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#march-25-2026">Lesson 28: Variables with the Bee</a></td>
     <td align="left">Daily</td>
   </tr>
   <tr>
     <td align="left">March 26, 2026</td>
-    <td align="left">April 2, 2026</td>
+    <td align="left">April 23, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#march-26-2026">Lesson 29: For Loops with Bee</a></td>
     <td align="left">Daily</td>
   </tr>
   <tr>
     <td align="left">March 30, 2026</td>
-    <td align="left">April 8, 2026</td>
+    <td align="left">April 23, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#march-30-2026">Journal: Sports Data Models & Calculating Unknowns</a></td>
     <td align="left">Daily</td>
   </tr>
   <tr>
     <td align="left">March 31, 2026</td>
-    <td align="left">April 9, 2026</td>
+    <td align="left">April 23, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#march-31-2026">Lesson 30: For Loops with Artist</a></td>
     <td align="left">Daily</td>
   </tr>
   <tr>
     <td align="left">April 1, 2026</td>
-    <td align="left">April 17, 2026</td>
+    <td align="left">April 23, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#april-1-2026">Lesson 31: End of Course Project</a></td>
     <td align="left">Test</td>
   </tr>
   <tr>
     <td align="left">April 9, 2026</td>
-    <td align="left">April 16, 2026</td>
+    <td align="left">April 23, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#april-9-2026">Journal: The Overprotective Terraformer</a></td>
     <td align="left">Daily</td>
   </tr>
