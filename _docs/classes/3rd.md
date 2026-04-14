@@ -26,8 +26,7 @@ order: 2
 
 </table>
 
-<details>
-<summary>P4A Assignments</summary>
+## P4A Assignments
 
 <table>
   <tr>
@@ -95,9 +94,8 @@ order: 2
   </tr>
 
 </table>
-</details>
 
-
+****
 > [!IMPORTANT]
 > Please reference the [Late Work Policy](https://github.com/mswhitby/classroom/blob/main/_docs/resources/late_work.md) for more information on cutoff dates. Assignments will not be accepted after the cutoff date. 
 >
