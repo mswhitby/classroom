@@ -14,10 +14,18 @@ order: 5
     <th align="center">Description</th>
     <th align="center">Category</th>
   </tr>
+
   <tr>
     <td align="left">April 13, 2026</td>
     <td align="left">April 20, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#april-13-2026">Journal: Technology and the Artemis II Moon Mission</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
+  <tr>
+    <td align="left">April 20, 2026</td>
+    <td align="left">April 28, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#april-20-2026">Journal: AI, Music, and Influence</a></td>
     <td align="left">Daily</td>
   </tr>
 </table>
@@ -58,6 +66,8 @@ order: 5
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#april-9-2026">Journal: The Overprotective Terraformer</a></td>
     <td align="left">Daily</td>
   </tr>
+ 
+
 
 </table>
 

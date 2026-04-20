@@ -40,7 +40,7 @@ order: 1
   <tr>
     <td align="left">April 20, 2026</td>
     <td align="left">April 28, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#april-20-2026">Journal: Technology and the Artemis II Moon Mission</a></td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#april-20-2026">Journal: AI, Music, and Influence</a></td>
     <td align="left">Daily</td>
   </tr>
   
