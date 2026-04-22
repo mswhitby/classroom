@@ -43,6 +43,14 @@ order: 1
     <td align="left">Daily</td>
   </tr>
 
+  <tr>
+    <td align="left">April 22, 2026</td>
+    <td align="left">April 30, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#april-22-2026">Lesson 3: Sequencing - Practice</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
+
  
 
 </table>
