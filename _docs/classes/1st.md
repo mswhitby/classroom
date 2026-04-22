@@ -129,6 +129,22 @@ order: 1
 
 
 
+# April 16, 2026
+
+## Agenda
+
+### 1. Lesson 3: Sequencing - Practice
+
+- To access the assignment, you must log into Code.org using your Clever account. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Lesson 3: Sequencing - Practice**.
+
+- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/programming-with-music-lab-2025/units/1/lessons/3/levels/1).
+
+----
+
 # April 20, 2026
 
 ## Journal: AI, Music, and Influence
@@ -157,7 +173,7 @@ Write your response using C.E.R. (Claim, Evidence, Reasoning):
     - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
     - Search for **Karen Wagner**.
     - Log in with Google using your school email address.
-    - Complete **esson 1: Introduction to Music Lab & Lesson 2: Sequencing - Explore**.
+    - Complete **Lesson 1: Introduction to Music Lab & Lesson 2: Sequencing - Explore**.
 
 - If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/programming-with-music-lab-2025/units/1/lessons/1/levels/1).
 
