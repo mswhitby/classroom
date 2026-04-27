@@ -24,7 +24,14 @@ order: 3
   <tr>
     <td align="left">April 20, 2026</td>
     <td align="left">April 28, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/4t.md#april-20-2026">Journal: AI, Music, and Influence</a></td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#april-20-2026">Journal: AI, Music, and Influence</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
+  <tr>
+    <td align="left">April 27, 2026</td>
+    <td align="left">May 4, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/4th.md#april-27-2026">Journal: Technology & Society</a></td>
     <td align="left">Daily</td>
   </tr>
 </table>

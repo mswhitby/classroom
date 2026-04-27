@@ -53,7 +53,7 @@ order: 6
   <tr>
     <td align="left">April 23, 2026</td>
     <td align="left">May 1, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/7th.md#april-22-2026">Lesson 4: Sequencing - Synthesize</a></td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/7th.md#april-23-2026">Lesson 4: Sequencing - Synthesize</a></td>
     <td align="left">Daily</td>
   </tr>
 
@@ -158,7 +158,7 @@ This week, technology played a role in almost everything—from sports (like the
 
 ---
 
-# April 22, 2026
+# April 23, 2026
 
 ## Agenda
 
