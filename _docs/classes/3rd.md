@@ -50,14 +50,19 @@ order: 2
     <td align="left">Daily</td>
   </tr>
 
-<tr>
+  <tr>
     <td align="left">April 23, 2026</td>
     <td align="left">May 1, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#april-22-2026">Lesson 4: Sequencing - Synthesize</a></td>
     <td align="left">Daily</td>
   </tr>
 
-
+  <tr>
+    <td align="left">April 27, 2026</td>
+    <td align="left">May 4, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#april-27-2026">Journal: Technology & Society</a></td>
+    <td align="left">Daily</td>
+  </tr>
  
 
 </table>
@@ -139,6 +144,19 @@ order: 2
 
 
 ****
+
+# April 27, 2026
+
+## Journal: Technology & Society
+
+This week, technology played a role in almost everything—from sports (like the NBA Playoffs and NFL Draft) to music, social media, and everyday life. Think about something YOU paid attention to this week. How did technology influence it?
+
+### Requirements:
+- Write **5–7 sentences**
+- Use **C.E.R. (Claim, Evidence, Reasoning)**
+- You may choose **any topic** (sports, music, gaming, school, social media, etc.)
+
+---
 
 # April 22, 2026
 

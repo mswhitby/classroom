@@ -77,6 +77,34 @@ order: 3
 
 ****
 
+# April 27, 2026
+
+## Journal: Technology & Society
+
+This week, technology played a role in almost everything—from sports (like the NBA Playoffs and NFL Draft) to music, social media, and everyday life. Think about something YOU paid attention to this week. How did technology influence it?
+
+### Requirements:
+- Write **5–7 sentences**
+- Use **C.E.R. (Claim, Evidence, Reasoning)**
+- You may choose **any topic** (sports, music, gaming, school, social media, etc.)
+
+---
+
+### Response Structure:
+
+**Claim:**  
+What role did technology play in something you saw or experienced this week?
+
+**Evidence:**  
+Describe what happened and how technology was involved  
+(Examples: highlights, streaming, social media posts, apps, AI, communication, etc.)
+
+**Reasoning:**  
+Why does this matter?  
+How does technology change the way people experience or respond to this topic?
+
+----
+
 # April 20, 2026
 
 ## Journal: AI, Music, and Influence
