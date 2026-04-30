@@ -71,6 +71,13 @@ order: 1
     <td align="left">Test</td>
   </tr>
 
+  <tr>
+    <td align="left">April 30, 2026</td>
+    <td align="left">May 6, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#april-27-2026">Lesson 6: Loops - Explore</a></td>
+    <td align="left">Test</td>
+  </tr>
+
 
 
  
@@ -156,6 +163,22 @@ order: 1
 ****
 
 #
+
+# April 30, 2026
+
+## Agenda
+
+### 1. Lesson 6: Loops - Explore
+
+- To access the assignment, you must log into Code.org using your Clever account. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Lesson 6: Loops - Explore**.
+
+- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/programming-with-music-lab-2025/units/1/lessons/6/levels/1).
+
+----
 
 # April 29, 2026
 
