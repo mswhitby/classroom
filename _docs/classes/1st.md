@@ -16,6 +16,24 @@ order: 1
   </tr>
 
   <tr>
+    <td align="left">May 6, 2026</td>
+    <td align="left">May 13, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#may-6-2026">Journal: Are You Training AI Without Knowing It?</a></td>
+    <td align="left">Daily</td>
+  </tr>
+</table>
+
+## P4B Assignments
+
+<table>
+  <tr>
+    <th align="center">Assigned</th>
+    <th align="center">Cutoff</th>
+    <th align="center">Description</th>
+    <th align="center">Category</th>
+  </tr>
+
+  <tr>
     <td align="left">April 13, 2026</td>
     <td align="left">April 23, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#april-13-2026">Journal: Technology and the Artemis II Moon Mission</a></td>
@@ -162,7 +180,35 @@ order: 1
 
 ****
 
-#
+# May 6, 2026
+
+## Agenda
+
+## 2. Journal: Are You Training AI Without Knowing It?
+
+When you click images like “Select all the traffic lights” or check “I am not a robot,” you might think you’re just proving you’re human. But systems like reCAPTCHA have also been used to help train artificial intelligence by collecting human responses and behavior. That means everyday users—without realizing it—can contribute to how AI systems learn.
+
+### Prompt (5–7 sentences, use C.E.R.):
+
+**Claim:**  
+Are you personally helping train AI systems through the apps and tools you use?
+
+**Evidence:**  
+Give examples from your own life (ChatGPT, TikTok, Instagram, Google searches, reCAPTCHA, etc.). What actions might be feeding data into AI systems?
+
+**Reasoning:**  
+Explain how your actions could be used to improve AI.  
+- What data are you giving?  
+- How might companies use it?  
+- Does this change how you think about using these platforms?
+
+
+### Think About:
+- When you like, scroll, search, or click—what is being learned?
+- Are you just a user, or also part of the training process?
+- Would you use these platforms differently if you fully understood this?
+
+---
 
 # April 30, 2026
 
