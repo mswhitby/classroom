@@ -172,6 +172,8 @@ order: 1
   
 </table>
 
+##
+
 ****
 > [!IMPORTANT]
 > Please reference the [Late Work Policy](https://github.com/mswhitby/classroom/blob/main/_docs/resources/late_work.md) for more information on cutoff dates. Assignments will not be accepted after the cutoff date.
@@ -185,6 +187,9 @@ order: 1
 ## Agenda
 
 ## 2. Journal: Are You Training AI Without Knowing It?
+
+> [!IMPORTANT]
+> If you use AI to complete this journal, you will receive a zero, and you will not be allowed to resubmit.  
 
 When you click images like “Select all the traffic lights” or check “I am not a robot,” you might think you’re just proving you’re human. But systems like reCAPTCHA have also been used to help train artificial intelligence by collecting human responses and behavior. That means everyday users—without realizing it—can contribute to how AI systems learn.
 
