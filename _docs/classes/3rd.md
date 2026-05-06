@@ -196,6 +196,17 @@ Read the [AI Usage Policy](https://github.com/mswhitby/classroom/blob/main/_docs
 
 When you click images like “Select all the traffic lights” or check “I am not a robot,” you might think you’re just proving you’re human. But systems like reCAPTCHA have also been used to help train artificial intelligence by collecting human responses and behavior. That means everyday users—without realizing it—can contribute to how AI systems learn.
 
+### Prompt
+
+Are you personally helping train AI systems through the apps and tools you use? Give examples from your own life (ChatGPT, TikTok, Instagram, Google searches, reCAPTCHA, etc.). What actions might be feeding data into AI systems? 
+
+Write a journal entry (5–7 sentences) using Claim, Evidence, and Reasoning (C.E.R.) that explains how your actions could be used to improve AI. Consider the following:  
+- When you like, scroll, search, or click—what data are you giving?
+- Are you just a user, or also part of the training process, and how might companies use it?  
+- Does this change how you think about using these platforms?
+
+---
+
 ### Prompt (5–7 sentences, use C.E.R.):
 
 **Claim:**  
