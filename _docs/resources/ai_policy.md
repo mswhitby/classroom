@@ -6,6 +6,7 @@ Some of you have used AI to generate journal entries this year without labeling 
 - Go back through your past journal entries.
 - If you used AI (ChatGPT, Gemini, Grammarly AI, etc.), you must clearly label it:
   - Add: **“I used AI to assist with this entry.”**
+- You must add a label to each journal that you used AI for assistance. 
 
 ## What will happen if you don’t:
 - Any entry identified as AI-generated that is **not labeled** will be changed to a **0 in the gradebook**.
