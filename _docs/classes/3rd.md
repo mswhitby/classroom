@@ -21,6 +21,28 @@ order: 2
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#may-6-2026">Journal: Are You Training AI Without Knowing It?</a></td>
     <td align="left">Daily</td>
   </tr>
+
+  <tr>
+    <td align="left">May 7, 2026</td>
+    <td align="left">May 14, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#may-7-2026">Lesson 7: Loops - Practice</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
+   <tr>
+    <td align="left">May 11, 2026</td>
+    <td align="left">May 15, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#may-11-2026">Journal: A Year of Growth </a></td>
+    <td align="left">Daily</td>
+  </tr>
+
+  <tr>
+    <td align="left">May 13, 2026</td>
+    <td align="left">May 19, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#may-13-2026">Lesson 8: Loops - Synthesize</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
 </table>
 
 ## P4B Assignments
@@ -94,21 +116,6 @@ order: 2
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#april-27-2026">Lesson 6: Loops - Explore</a></td>
     <td align="left">Test</td>
   </tr>
-
-  <tr>
-    <td align="left">May 11, 2026</td>
-    <td align="left">May 15, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#may-11-2026">Journal: A Year of Growth </a></td>
-    <td align="left">Daily</td>
-  </tr>
-
-  <tr>
-    <td align="left">May 13, 2026</td>
-    <td align="left">May 19, 2026</td>
-    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#may-13-2026">Lesson 8: Loops - Synthesize</a></td>
-    <td align="left">Daily</td>
-  </tr>
-
  
 
 </table>
