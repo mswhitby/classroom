@@ -55,12 +55,44 @@ order: 1
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#may-6-2026">Journal: Are You Training AI Without Knowing It?</a></td>
     <td align="left">Daily</td>
   </tr>
+  <tr>
+    <td align="left">May 11, 2026</td>
+    <td align="left">May 15, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/resources/journal.md#may-11-2026">Journal: A Year of Growth</a></td>
+    <td align="left">Daily</td>
+  </tr>
   
 
 </table>
 
 
 ****
+
+# May 11, 2026
+
+## Journal: A Year of Growth 
+
+As we’re reaching the last few weeks of the 2025-2026 school year, let’s take a moment to reflect. Everyone changes and grows over time. Think about this school year and identify one area where you believe you developed, improved, or matured as a person.
+This could relate to, such as:
+- Responsibility
+- Communication
+- Confidence
+- Friendships
+- Time management
+- Leadership
+- Handling stress
+- School/work habits
+- Emotional maturity
+- Decision making
+- Independence
+
+Write 5-7 sentences explaining:
+- What area you grew in
+- What caused or helped that growth
+- An example that shows the change
+- How you are different now compared to the beginning of the year
+
+----
 
 # May 6, 2026
 

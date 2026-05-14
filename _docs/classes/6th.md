@@ -22,6 +22,15 @@ order: 5
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#may-6-2026">Journal: Are You Training AI Without Knowing It?</a></td>
     <td align="left">Daily</td>
   </tr>
+
+  
+   <tr>
+    <td align="left">May 11, 2026</td>
+    <td align="left">May 15, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#may-11-2026">Journal: A Year of Growth</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
 </table>
 
 ## P4B Assignments
