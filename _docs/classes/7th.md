@@ -47,7 +47,7 @@ order: 6
     <td align="left">May 14, 2026</td>
     <td align="left">May 20, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/7th.md#may-14-2026">Lesson 9: Mini Project: Cat GIF Loops</a></td>
-    <td align="left">Daily</td>
+    <td align="left">Test</td>
   </tr>
 </table>
 
