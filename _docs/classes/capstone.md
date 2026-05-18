@@ -21,6 +21,21 @@ order: 7
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/capstone.md#may-6-2026">Journal: Are You Training AI Without Knowing It?</a></td>
     <td align="left">Daily</td>
   </tr>
+
+  <tr>
+    <td align="left">May 11, 2026</td>
+    <td align="left">May 15, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/capstone.md#may-11-2026">Journal: A Year of Growth</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
+  
+  <tr>
+    <td align="left">May 18, 2026</td>
+    <td align="left">May 20, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/capstone.md#may-18-2026">Last Journal of the Year: Missing Person Description</a></td>
+    <td align="left">Daily</td>
+  </tr>
 </table>
 
 ## P4B Assignments
@@ -98,6 +113,83 @@ order: 7
 > If you complete any missing work, you must email me at <dwhitby@judsonisd.org> to let me know. If you do not email me, I will not know you've made up work and your make-up work will not be graded.
 
 ****
+
+# May 18, 2026
+
+## Agenda
+
+### 1. Last Journal of the Year: Missing Person Description
+
+There is a social media trend where people jokingly ask:
+
+> “How would you describe me to the cops if I went missing?”
+
+For your final journal entry, choose **one person** from school:
+
+- A teacher or staff member  
+**OR**
+- A classmate or peer
+
+Then write how you would describe that person to the police if they went missing.
+
+Your description should be detailed enough that someone could recognize the person, but it must stay respectful and school appropriate.
+
+#### Requirements
+
+Include:
+
+- What they look like or how they usually dress
+- Their personality or usual behavior
+- Something they often say, do, or are known for
+- Where they would probably be found
+- One funny or memorable detail that makes them recognizable
+
+#### Important Rules
+
+- Do **not** include private personal information.
+- Do **not** be mean, insulting, or inappropriate.
+- Do **not** make fun of someone’s body, disability, race, culture, gender, or personal life.
+- Keep it funny, accurate, and respectful.
+- If you cannot write about someone respectfully, choose someone else.
+
+#### Sentence Starter
+
+If I had to describe **__________** to the cops, I would say they are the kind of person who...
+
+#### Minimum Length
+
+Write **one paragraph** with **5–7 complete sentences**.
+
+----
+
+# May 11, 2026
+
+## Journal: A Year of Growth 
+
+As we’re reaching the last few weeks of the 2025-2026 school year, let’s take a moment to reflect. Everyone changes and grows over time. Think about this school year and identify one area where you believe you developed, improved, or matured as a person.
+This could relate to, such as:
+- Responsibility
+- Communication
+- Confidence
+- Friendships
+- Time management
+- Leadership
+- Handling stress
+- School/work habits
+- Emotional maturity
+- Decision making
+- Independence
+
+Write 5-7 sentences explaining:
+- What area you grew in
+- What caused or helped that growth
+- An example that shows the change
+- How you are different now compared to the beginning of the year
+
+
+
+
+----
 
 # May 6, 2026
 
