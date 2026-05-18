@@ -31,6 +31,14 @@ order: 5
     <td align="left">Daily</td>
   </tr>
 
+  
+  <tr>
+    <td align="left">May 18, 2026</td>
+    <td align="left">May 20, 2026</td>
+    <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/6th.md#may-18-2026">Last Journal of the Year: Missing Person Description</a></td>
+    <td align="left">Daily</td>
+  </tr>
+
 </table>
 
 ## P4B Assignments
