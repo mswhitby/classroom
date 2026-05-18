@@ -143,7 +143,7 @@ order: 1
     <td align="left">April 30, 2026</td>
     <td align="left">May 6, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#april-27-2026">Lesson 6: Loops - Explore</a></td>
-    <td align="left">Test</td>
+    <td align="left">Daily</td>
   </tr>
 
 
