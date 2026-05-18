@@ -116,6 +116,54 @@ order: 5
 
 ****
 
+# May 18, 2026
+
+## Agenda
+
+### 1. Last Journal of the Year: Missing Person Description
+
+There is a social media trend where people jokingly ask:
+
+> “How would you describe me to the cops if I went missing?”
+
+For your final journal entry, choose **one person** from school:
+
+- A teacher or staff member  
+**OR**
+- A classmate or peer
+
+Then write how you would describe that person to the police if they went missing.
+
+Your description should be detailed enough that someone could recognize the person, but it must stay respectful and school appropriate.
+
+#### Requirements
+
+Include:
+
+- What they look like or how they usually dress
+- Their personality or usual behavior
+- Something they often say, do, or are known for
+- Where they would probably be found
+- One funny or memorable detail that makes them recognizable
+
+#### Important Rules
+
+- Do **not** include private personal information.
+- Do **not** be mean, insulting, or inappropriate.
+- Do **not** make fun of someone’s body, disability, race, culture, gender, or personal life.
+- Keep it funny, accurate, and respectful.
+- If you cannot write about someone respectfully, choose someone else.
+
+#### Sentence Starter
+
+If I had to describe **__________** to the cops, I would say they are the kind of person who...
+
+#### Minimum Length
+
+Write **one paragraph** with **5–7 complete sentences**.
+
+----
+
 # May 11, 2026
 
 ## Journal: A Year of Growth 
