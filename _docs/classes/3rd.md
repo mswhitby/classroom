@@ -82,7 +82,7 @@ order: 2
     <td align="left">May 20, 2026</td>
     <td align="left">May 21, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/3rd.md#may-20-2026">Lesson 13: Project: Genre Mash-Up</a></td>
-    <td align="left">Test</td>
+    <td align="left">Semester Exam</td>
   </tr>
 
 </table>
