@@ -246,7 +246,7 @@ order: 1
 
 ****
 
-<!-- # May 20, 2026
+# May 20, 2026
 
 ## Agenda
 
@@ -260,7 +260,7 @@ order: 1
 
 - If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/programming-with-music-lab-2025/units/1/lessons/13/levels/1).
 
----- -->
+----
 
 # May 19, 2026
 
