@@ -79,7 +79,7 @@ order: 1
   </tr>
 
   <tr>
-    <td align="left">May 19, 2026</td>
+    <td align="left">May 20, 2026</td>
     <td align="left">May 21, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#may-20-2026">Lesson 13: Project: Genre Mash-Up</a></td>
     <td align="left">Test</td>
@@ -245,6 +245,22 @@ order: 1
 > If you complete any missing work, you must email me at <dwhitby@judsonisd.org> to let me know. If you do not email me, I will not know you've made up work and your make-up work will not be graded.
 
 ****
+
+<!-- # May 20, 2026
+
+## Agenda
+
+### 2. Lesson 13: Project: Genre Mash-Up
+
+- To access the assignment, you must log into Code.org using your Clever account. Please do the following:
+    - Visit this [link](https://clever.com/oauth/district-picker?client_id=2f27405716644a951b23&redirect_uri=https%3A%2F%2Fstudio.code.org%2Fusers%2Fauth%2Fclever%2Fcallback&response_type=code&state=ede33ff61289cf32708a0f54079cdd23e31d0b0a02b0e0e8).
+    - Search for **Karen Wagner**.
+    - Log in with Google using your school email address.
+    - Complete **Lesson 13: Project: Genre Mash-Up**.
+
+- If you're already logged in and cannot find the assignment, you can use this [link](https://studio.code.org/courses/programming-with-music-lab-2025/units/1/lessons/13/levels/1).
+
+---- -->
 
 # May 19, 2026
 
