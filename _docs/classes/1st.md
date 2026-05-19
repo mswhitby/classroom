@@ -66,7 +66,7 @@ order: 1
 
   <tr>
     <td align="left">May 18, 2026</td>
-    <td align="left">May 20, 2026</td>
+    <td align="left">May 21, 2026</td>
     <td align="left"><a href="https://github.com/mswhitby/classroom/blob/main/_docs/classes/1st.md#may-18-2026">Last Journal of the Year: Missing Person Description</a></td>
     <td align="left">Daily</td>
   </tr>
