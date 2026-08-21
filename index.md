@@ -2,11 +2,11 @@
 title: Welcome
 ---
 
-This is the online  companion for [Ms. Whitby’s](https://www.judsonisd.org/Domain/6785) course's at Wagner High School. Ms. Whitby teaches Fundamentals of Computer Science, Computer Science I, Game Program and Design, and Mobile Application Development Parents and students can reference this site for assignment details, project ideas, and reference materials.
+This is the online  companion for [Ms. Whitby’s](https://wagner.judsonisd.org/staff?search=deandra+whitby) course's at Wagner High School. Ms. Whitby teaches Fundamentals of Computer Science, Computer Science I, Game Program and Design, and Mobile Application Development. Parents and students can reference this site for assignment details, project ideas, and reference materials.
 
 ### Contact
 
-**Webpage:** [Wagner High School](https://judsonisd.org/domain/6785)<br>
+**Webpage:** [Wagner High School](https://wagner.judsonisd.org/)<br>
 **GitHub:** <https://github.com/mswhitby><br>
 **Email:** <dwhitby@judsonisd.org><br>
 **Phone:** 210.662.5000 ext. 17620<br>
