@@ -1,6 +1,21 @@
 # Unity Resources
 
-## 1. Documentation
+## 1. Official Unity Pathway Tutorials
+
+- [Unity Essentials](https://learn.unity.com/pathway/unity-essentials?version=2022.3)
+
+- [Junior Programmer](https://learn.unity.com/pathway/junior-programmer?version=2022.3)
+
+- [Game Development](https://learn.unity.com/pathway/game-development/unit/get-started-in-unity?version=6.3)
+
+- [Mobile AR Development](https://learn.unity.com/pathway/mobile-ar-development)
+
+- [VR Development](https://learn.unity.com/pathway/vr-development?version=2022.3)
+
+- [Creative Core](https://learn.unity.com/pathway/creative-core?version=2022.3)
+
+
+## 2. Documentation
 
 - [Unity User Manual](https://docs.unity3d.com/2022.3/Documentation/Manual/index.html)
 
@@ -10,7 +25,8 @@
 
 - [C# Language Reference](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/)
 
-## 2. Math
+
+## 3. Math
 
 ### Calculators
 
@@ -22,7 +38,8 @@
 
 - [Vector Maths](https://learn.unity.com/tutorial/vector-maths)
 
-### 2. Books
+
+## 4. Books
 
 - [Mathematics for Game Developers](../unity_files/Mathematics_for_Game_Developers_Student_Edition.pdf)
 
@@ -33,11 +50,12 @@
 - [Creator Kit: Beginner Code](https://learn.unity.com/course/creator-kit-beginner-code?version=2022.3)
 
 
-## 3. Computing
+## 5. Computing
 
 - [Pixar in a Box - Khan Academy](https://www.khanacademy.org/computing/pixar)
 
-## 4. Guided Projects
+
+## 6. Guided Projects
 
 - [3D Beginner Game: Roll-a-Ball](https://learn.unity.com/course/roll-a-ball/tutorial/setting-up-the-game?version=2022.3)
 
@@ -48,13 +66,14 @@
 - [Attributes](https://learn.unity.com/tutorial/attributes#635615c4edbc2a0cf1782725)
 
 
-## 5. Scripts
+## 7. Scripts
 
 - [Open-Source Projects](https://www.libhunt.com/topic/unity-asset)
 
 - [Unity Script Collection](https://github.com/michidk/Unity-Script-Collection)
 
-## 6. Articles
+
+## 8. Articles
 
 - [The Role of Mathematics in Gaming](https://www.mathnasium.com/math-centers/hydepark/news/role-mathematics-gaming-hp)
 
