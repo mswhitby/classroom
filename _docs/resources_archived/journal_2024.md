@@ -1,6 +1,6 @@
 ---
 title: Journal Prompts
-category: Resources
+category: Resources Archived
 order: 1
 ---
 
