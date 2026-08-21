@@ -1,7 +1,7 @@
 ---
 title: 6th Period
 subtitle: Game Program & Design 
-category: Classes
+category: Classes-2025
 order: 5
 ---
 

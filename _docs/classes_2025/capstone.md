@@ -1,7 +1,7 @@
 ---
 title: Capstone
 subtitle: Information Technology Capstone
-category: Classes
+category: Classes-2025
 order: 7
 ---
 

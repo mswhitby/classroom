@@ -1,7 +1,7 @@
 ---
 title: TSI
 subtitle: TSI
-category: Classes
+category: Classes-2025
 order: 9
 ---
 

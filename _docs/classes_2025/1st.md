@@ -1,7 +1,7 @@
 ---
 title: 1st Period
 subtitle: Fundamentals of Computer Science
-category: Classes
+category: Classes-2025
 order: 1
 ---
 
