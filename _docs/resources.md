@@ -21,6 +21,8 @@ permalink: /resources
 
 - [Learn Python The Right Way](https://learnpythontherightway.com/#read)
 
+- [Unity Resources](https://github.com/mswhitby/classroom/blob/main/_docs/resources/unity.md)
+
 ## Programming Tools
 
 - [Python Code Compiler](https://www.onlinegdb.com/)
@@ -29,9 +31,7 @@ permalink: /resources
 
 - [Python Visualizer](https://pythontutor.com/visualize.html#mode=edit)
 
-
-
-- [Canva](https://www.canva.com/brand/join?token=iPrenhf0dFJZAWE5VFeLBg&brandingVariant=edu&referrer=team-invite)
+- [Canva](https://www.canva.com/)
 
 ## Cheat Sheets
 
