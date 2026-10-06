@@ -5,4 +5,10 @@ category: Classes
 order: 7
 ---
 
-https://www.hackerrank.com/computer-science-1-1790890420
+# Week of Oct. 5
+
+## Problems
+[HackerRank - Week of Oct. 5](https://www.hackerrank.com/computer-science-1-1790890420)
+
+## Resourses
+[W3 Schools](https://www.w3schools.com/python)
