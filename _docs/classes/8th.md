@@ -12,3 +12,4 @@ order: 7
 
 ## Resourses
 [W3 Schools](https://www.w3schools.com/python)
+[The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
