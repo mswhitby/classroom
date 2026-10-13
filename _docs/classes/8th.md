@@ -8,9 +8,9 @@ order: 7
 # Week of Oct. 13
 
 ## Usernames Form
-[Usernames Form](https://docs.google.com/forms/d/e/1FAIpQLScAVokUd7f1JLEXYjjRJyqP0OOizoZaGA04fvv-cdqtGM8E8g/viewform?usp=publish-editor)
+1. [Usernames Form](https://docs.google.com/forms/d/e/1FAIpQLScAVokUd7f1JLEXYjjRJyqP0OOizoZaGA04fvv-cdqtGM8E8g/viewform?usp=publish-editor)
 
-[Code Combat](https://codecombat.com/students?_cc=LastTopRain) - Sign in with Clever
+2. [Code Combat](https://codecombat.com/students?_cc=LastTopRain) - Sign in with Clever
 
 ## Resources
 [W3 Schools](https://www.w3schools.com/python)

@@ -5,13 +5,11 @@ category: Classes
 order: 2
 ---
 
+# Week of Oct. 13
 
-<div 
-    data-snack-id="@mswhitby/5a477b" 
-    data-snack-platform="web" 
-    data-snack-preview="true" 
-    data-snack-theme="light"
-    style="overflow:hidden;background:#fbfcfd;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%">
-</div>
+## Usernames Form
+1. [Usernames Form](https://docs.google.com/forms/d/e/1FAIpQLScAVokUd7f1JLEXYjjRJyqP0OOizoZaGA04fvv-cdqtGM8E8g/viewform?usp=publish-editor)
 
-<script async src="https://snack.expo.dev/embed.js"></script>
+2. [HackerRank - Week of Oct. 13](https://www.hackerrank.com/whitbywebdev-20261013)
+
+    - Sign up HackerRank using your GitHub account.
