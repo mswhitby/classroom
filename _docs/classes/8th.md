@@ -13,6 +13,7 @@ order: 7
 2. [Code Combat](https://codecombat.com/students?_cc=LastTopRain) - Sign in with Clever
 
 3. [Jet's Pizza](https://github.com/mswhitby/jets_pizza)
+    - [Virtual Desktop](https://prod.liveshare.vsengsaas.visualstudio.com/join?CCF95A335B198CB135B9B0A64F8003F43BB6)
 
 
 ## Resources
