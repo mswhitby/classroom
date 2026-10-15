@@ -12,6 +12,9 @@ order: 7
 
 2. [Code Combat](https://codecombat.com/students?_cc=LastTopRain) - Sign in with Clever
 
+3. [Jet's Pizza](https://github.com/mswhitby/jets_pizza)
+
+
 ## Resources
 [W3 Schools](https://www.w3schools.com/python)
 
