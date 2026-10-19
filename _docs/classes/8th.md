@@ -5,6 +5,19 @@ category: Classes
 order: 7
 ---
 
+# Week of Oct. 19
+
+(https://github.com/mswhitby/python_problems_20261019/tree/main)
+
+## Resources
+[Online Python Compiler and Debugger](https://www.onlinegdb.com/online_python_interpreter)
+
+[W3 Schools](https://www.w3schools.com/python)
+
+[The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
+
+----
+
 # Week of Oct. 13
 
 ## Usernames Form
@@ -15,18 +28,10 @@ order: 7
 3. [Jet's Pizza](https://github.com/mswhitby/jets_pizza)
     - [Virtual Desktop](https://prod.liveshare.vsengsaas.visualstudio.com/join?A232EE69534E70EDFB1FEB21ECFAEC12C8D2)
 
-
-## Resources
-[W3 Schools](https://www.w3schools.com/python)
-
-[The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
+----
 
 # Week of Oct. 5
 
 ## Problems
 [HackerRank - Week of Oct. 5](https://www.hackerrank.com/computer-science-1-1790890420)
 
-## Resources
-[W3 Schools](https://www.w3schools.com/python)
-
-[The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
