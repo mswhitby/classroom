@@ -7,7 +7,7 @@ order: 7
 
 # Week of Oct. 19
 
-(https://github.com/mswhitby/python_problems_20261019/tree/main)
+[Python Problems](https://github.com/mswhitby/python_problems_20261019/tree/main)
 
 ## Resources
 [Online Python Compiler and Debugger](https://www.onlinegdb.com/online_python_interpreter)
