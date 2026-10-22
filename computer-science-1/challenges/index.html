@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#15273c">
+<title>Python Challenges | Computer Science I</title>
+<link rel="stylesheet" href="challenges.css">
+<script defer src="data-1.js"></script><script defer src="data-2.js"></script>
+<script defer src="data-3.js"></script><script defer src="data-4.js"></script>
+<script defer src="challenges.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to challenge</a>
+<header class="top">
+ <a class="logo" href="../"><span class="logo-icon">{ }</span> COMPUTER SCIENCE <b>I</b></a>
+ <div class="top-right"><span class="term">WEEK OF OCT 26, 2026</span><a href="../">Course units</a><a href="https://www.mswhitby.com/">Classroom home</a></div>
+</header>
+<div class="layout">
+ <aside class="sidebar">
+  <div class="side-intro"><span class="eyebrow">PRACTICE LAB</span><h1>Python Challenges</h1><p>Pick a problem, test your thinking, and build your skills.</p></div>
+  <div class="stats"><span id="total-count">24 challenges</span><span id="points-count">255 available points</span></div>
+  <label for="search" class="small">FIND A CHALLENGE</label><input id="search" type="search" placeholder="Search questions..." autocomplete="off">
+  <div class="filters"><label for="difficulty" class="small">DIFFICULTY</label><select id="difficulty"><option value="">All difficulty levels</option><option>Very Easy</option><option>Easy</option><option>Hard</option></select>
+  <label for="topic" class="small">TOPIC</label><select id="topic"><option value="">All topics</option></select></div>
+  <div class="list-head"><span>CHALLENGE BANK</span><span id="visible-count"></span></div>
+  <nav id="challenge-list" class="challenge-list" aria-label="Choose a Python challenge"></nav>
+  <div class="bottom-note"><strong>Not starting over!</strong><p>This week's problems are separate from the foundation units. <a href="../">Visit Unit 01</a> whenever you need the curriculum.</p></div>
+ </aside>
+ <main id="main">
+  <div class="hero"><div class="eyebrow">OCTOBER 26 • CODING PRACTICE</div><div class="heading-line"><h2 id="challenge-title">Choose a challenge</h2><span class="points" id="challenge-points">—</span></div>
+  <div class="tags" id="tags"></div><p id="description" class="subtitle"></p></div>
+  <div class="grid">
+   <article class="panel instructions">
+    <div class="panel-heading"><h3>Challenge instructions</h3><span>READ FIRST</span></div>
+    <div class="panel-content">
+     <h4>Scenario</h4><div id="scenario" class="instructions-text"></div>
+     <h4>Parameters</h4><div id="parameters" class="instructions-text"></div>
+     <h4>Expected behavior</h4><div id="behavior" class="instructions-text"></div>
+     <section id="examples" class="examples"></section>
+     <div class="help-actions"><button id="skills-button" class="secondary" type="button" hidden>📖 Review skills & hints</button><a id="github-question" target="_blank" rel="noopener">View challenge on GitHub ↗</a></div>
+     <div id="skills-section" class="skills" hidden><div class="skills-heading"><h4>Skills refresher</h4><button id="close-skills" class="secondary" type="button">Close</button></div><div id="skills-content" class="skills-content"></div></div>
+    </div>
+   </article>
+   <section class="panel workspace">
+    <div class="panel-heading"><h3>Python workspace</h3><span>RUN IN YOUR BROWSER</span></div>
+    <div class="editor-header"><span><span class="dot"></span> solution.py</span><span>Python 3</span></div>
+    <label class="sr-only" for="code">Python solution code</label>
+    <textarea id="code" spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" aria-label="Python solution editor"></textarea>
+    <div class="toolbar"><button id="run" class="primary" type="button">▶ Run example</button><button id="check" class="success" type="button">✓ Check examples</button><button id="save" type="button">Save draft</button><button id="copy" type="button">Copy code</button><button id="reset" type="button">Reset</button></div>
+    <div class="console-heading"><strong>OUTPUT & TEST FEEDBACK</strong><span id="runtime" role="status">Python not loaded</span></div>
+    <pre id="output" aria-live="polite">Choose a challenge and select Run example.</pre>
+    <div id="feedback" class="feedback" role="status" aria-live="polite">These are public practice examples. Your official score comes from your GitHub pull request.</div>
+    <div class="submission"><strong>Ready to submit?</strong><p>Copy your solution into the matching <code>solution.py</code> in your fork of the October 26 challenge repository. Commit and open (or update) your pull request.</p>
+     <a class="submit-link" href="https://github.com/mswhitby/python_problems_20261026#submission-instructions" target="_blank" rel="noopener">GitHub submission instructions ↗</a></div>
+    <p class="privacy">Drafts and practice checks stay in this browser; they do not automatically reach GitHub. Use Copy code before switching devices or clearing browser data.</p>
+   </section>
+  </div>
+ </main>
+</div>
+</body>
+</html>
