@@ -1,5 +1,5 @@
-/* Explicit curriculum coverage audit: only verified-ready problems are recommended.
- * Last reviewed 2026-10-22. Review after adding or editing lessons and challenges. */
+/* Explicit prerequisite audit: recommend a challenge only after every concept it requires has been taught.
+ * Review again whenever lesson material changes. A challenge can always be browsed independently. */
 window.CS1_LEARNING_MAP={
   requirements:{
   "ticket-queue-counter": {
@@ -29,18 +29,13 @@ window.CS1_LEARNING_MAP={
     "ready": true
   },
   "triangle-frame-check": {
-    "readyAfter": "03-functions-and-parameters/02-parameters",
-    "lessons": [
-      "02-values-and-variables/02-numbers-and-operations",
-      "03-functions-and-parameters/02-parameters"
-    ],
+    "ready": false,
     "skills": [
-      "addition and subtraction",
-      "two parameters",
-      "return values",
-      "triangle rule provided in problem"
+      "formal triangle inequality rule",
+      "integer boundary reasoning"
     ],
-    "ready": true
+    "lessons": [],
+    "reason": "A dedicated explanation of the triangle side rule is still needed."
   },
   "co-op-lobby-notification": {
     "readyAfter": "03-functions-and-parameters/03-strings-from-functions",
@@ -285,5 +280,5 @@ window.CS1_LEARNING_MAP={
   "robot-maze-navigator": "Robot Maze Navigator",
   "screen-reader-announcement": "Screen Reader Announcement Composer"
 },
-  notice:"Challenge recommendations require every prerequisite to have appeared by the current lesson. The full challenge bank is always accessible for optional advanced practice."
+  notice:"All required skills must have been taught before an exercise is recommended as independent practice."
 };
