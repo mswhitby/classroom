@@ -5,21 +5,21 @@ category: Classes
 order: 1
 ---
 
-# Week of Oct. 26 — Python Foundations
+# Week of Oct. 26 — Python Coding Challenges
 
-**[Open the Computer Science I interactive Python lessons](https://www.mswhitby.com/computer-science-1/)**
+**[OPEN MONDAY'S PYTHON CHALLENGE LAB](https://www.mswhitby.com/computer-science-1/challenges/)**
 
-This week's focus: **Unit 01 — How Programs Work**. Start with *Instructions & Output*, then continue through the lessons in order.
+Choose from 24 problems worth up to **255 points**. You can filter by topic or difficulty, read each question, consult the optional skills guide where available, and write Python in the website editor.
 
-1. Read the **Learn** panel and try the examples.
-2. Write or fix the code in the **Practice** editor.
-3. Select **Run code** to view the result and any Python errors.
-4. Select **Check** to compare your work with the exercise requirements.
-5. Select **Save draft** to keep your work on this browser, or **Copy** to make your own backup.
+1. Choose a challenge.
+2. Read the scenario, parameters and expected behavior.
+3. Edit `solution.py` and use **Run example** or **Check examples** to practice.
+4. Use **Save draft** or **Copy code** so you don't lose your work.
+5. **Submit through GitHub:** paste the completed code into the same challenge's `solution.py` in your fork of [the October 26 challenge repository](https://github.com/mswhitby/python_problems_20261026), commit, and open a pull request. Keep your PR open for corrections.
 
-**Important:** Drafts are saved in the current browser, not your GitHub account. Do not clear site data or switch devices without copying your code. **Check** is practice feedback, not an official submission. GitHub submission is still manual: [instructions](https://github.com/mswhitby/computer-science-1/blob/main/SUBMITTING.md).
+**Important:** The website's Check button runs public practice examples only. Your GitHub pull request triggers the official autograder and leaderboard. Drafts are stored only on the same device/browser.
 
-**Additional weekly challenge practice:** [October 26 Python problems](https://github.com/mswhitby/python_problems_20261026).
+**Optional reference:** [Computer Science I foundational units](https://www.mswhitby.com/computer-science-1/). We are **not restarting Unit 01** this week.
 
 ----
 

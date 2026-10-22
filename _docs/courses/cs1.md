@@ -4,11 +4,11 @@ category: Courses
 order: 2
 ---
 
-## Interactive Python Foundations
+## Python challenge lab
 
-**[Open the Computer Science I learning lab](https://www.mswhitby.com/computer-science-1/)** — step-by-step lessons, a Python code editor, Run, Check, and browser-saved practice.
+**[Open weekly Python coding challenges](https://www.mswhitby.com/computer-science-1/challenges/)** — browse problems by topic and difficulty, run and check your Python code, and review skills guides where available. This week's assigned challenges are in the [October 26 GitHub repository](https://github.com/mswhitby/python_problems_20261026); pull requests are the official submission method.
 
-The first unit covers output, instruction order, comments, debugging, and a robotics-themed mini-project. Source code and lesson files are in [the Computer Science I repository](https://github.com/mswhitby/computer-science-1). Browser practice checks do not submit or grade work in GitHub.
+**[Explore the separate Python Foundations units](https://www.mswhitby.com/computer-science-1/)** — a progressive curriculum being developed for future use.
 
 # Course Description
 
