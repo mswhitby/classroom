@@ -4,6 +4,8 @@ const list=Array.isArray(window.CS1_UNITS)?window.CS1_UNITS:[];
 const $=id=>document.getElementById(id);
 const store="cs1:guided:v1:";
 const all=new Map(list.map(x=>[x.id,x]));
+const ordered=[...list].sort((a,b)=>a.unit-b.unit||a.lesson-b.lesson);
+const mapping=(window.CS1_LEARNING_MAP||{}).challengeToLessons||{};
 let active=null,worker=null,ready=null,onReady=null,onFailure=null,pending=null,seq=0,busy=false;
 function read(k){try{return localStorage.getItem(store+k)}catch{return null}}
 function write(k,v){try{localStorage.setItem(store+k,v);return true}catch{return false}}
@@ -26,7 +28,10 @@ function navigation(){
 }
 function select(id){
  if(busy){feedback("Finish the current run before changing lessons.");return;}
- const l=all.get(id);if(!l)return;active=l;$("unit").value=String(l.unit);
+ const l=all.get(id);if(!l)return;active=l;
+ if(l.existingDraftKey&&read("draft:"+id)===null){try{const prior=localStorage.getItem(l.existingDraftKey);if(prior!==null)write("draft:"+id,prior)}catch{}}
+ if(l.existingPassKey&&read("pass:"+id)===null){try{if(localStorage.getItem(l.existingPassKey)==="true")write("pass:"+id,"true")}catch{}}
+ $("unit").value=String(l.unit);
  $("unit-label").textContent="UNIT "+String(l.unit).padStart(2,"0")+" · LESSON "+l.lesson+" OF 4";
  $("title").textContent=l.title;$("points").textContent=l.points+" pts";
  $("summary").textContent=l.summary;$("lead").innerHTML=prose(l.summary);
@@ -47,6 +52,17 @@ function select(id){
  const hints=$("lesson-hints");hints.replaceChildren();
  l.hints.forEach((hint,i)=>{const d=document.createElement("details"),s=document.createElement("summary"),p=document.createElement("p");s.textContent="Hint "+(i+1);p.textContent=hint;d.append(s,p);hints.append(d)});
  $("output").textContent="Run an example to see what your code produces.";
+ const at=ordered.findIndex(x=>x.id===l.id);
+ $("previous-lesson").disabled=at===0;
+ $("next-lesson").disabled=at===ordered.length-1;
+ $("next-lesson").textContent=at===ordered.length-1?"All lessons complete":ordered[at+1].unit===l.unit?"Next lesson →":"Next unit →";
+ const targets=$("related-challenges");targets.replaceChildren();
+ const related=Object.entries(mapping).filter(([id,lessonIds])=>lessonIds.includes(l.id)).map(([id])=>id).slice(0,4);
+ const intro=document.createElement("p");
+ intro.textContent=related.length?"Related practice questions. Some also introduce skills not yet taught in these units.":"This foundational skill supports later challenges. Most questions also require functions, introduced in Unit 03.";
+ targets.append(intro);
+ for(const key of related){const a=document.createElement("a");a.href="../challenges/#"+encodeURIComponent(key);a.textContent=key.split("-").map(s=>s.slice(0,1).toUpperCase()+s.slice(1)).join(" ")+" →";targets.append(a);}
+ 
  feedback(read("pass:"+id)==="true"?"You passed the public examples on this device.":"Use Run and Check to practice. Official submission happens on GitHub.",read("pass:"+id)==="true"?"good":"");
  navigation();try{history.replaceState(null,"","#"+encodeURIComponent(id))}catch{}
 }
@@ -142,7 +158,12 @@ function begin(){
  for(let n=1;n<=6;n++){
   const l=list.find(x=>x.unit===n),opt=document.createElement("option");opt.value=String(n);opt.textContent="Unit "+n+" — "+l.unitName;$("unit").append(opt);
  }
- $("unit").onchange=()=>{const l=list.find(x=>String(x.unit)===$("unit").value);if(l)select(l.id)};
+ $("unit").onchange=()=>{
+  if(!$("unit").value){navigation();return;}
+  const l=ordered.find(x=>String(x.unit)===$("unit").value);if(l)select(l.id);
+ };
+ $("previous-lesson").onclick=()=>{const i=ordered.findIndex(x=>x.id===active?.id);if(i>0)select(ordered[i-1].id)};
+ $("next-lesson").onclick=()=>{const i=ordered.findIndex(x=>x.id===active?.id);if(i>=0&&i<ordered.length-1)select(ordered[i+1].id)};
  $("run").onclick=()=>test(false);$("check").onclick=()=>test(true);
  $("save").onclick=()=>feedback(write("draft:"+active.id,$("code").value)?"Draft saved on this device.":"Can't save here. Use Copy code.");
  $("copy").onclick=async()=>{try{await navigator.clipboard.writeText($("code").value);feedback("Copied code. Paste it into main.py in your GitHub fork.","good")}catch{feedback("Clipboard unavailable. Select and copy manually.")}};
