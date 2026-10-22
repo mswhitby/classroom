@@ -3,8 +3,9 @@
 const items = Array.isArray(window.CS1_CHALLENGES) ? window.CS1_CHALLENGES : [];
 const $ = id => document.getElementById(id);
 const rank = {"Very Easy":0,"Easy":1,"Hard":2};
-const ordered = [...items].sort((a,b)=>(rank[a.difficulty]-rank[b.difficulty])||a.title.localeCompare(b.title,"en",{numeric:true}));
+const ordered = [...items].sort((a,b)=>a.title.localeCompare(b.title,"en",{numeric:true}));
 const byId = new Map(ordered.map(x=>[x.id,x]));
+const learningMap=window.CS1_LEARNING_MAP||{challengeToLessons:{},advancedNotYetTaught:[]};
 const prefix = "cs1:challenges:2026-10-26:";
 const marker = "CS1_PUBLIC_CASES=";
 let current=null, busy=false, worker=null, readyPromise=null, bootResolve=null, bootReject=null, pending=null, seq=0;
@@ -120,9 +121,22 @@ function select(id){
  $("code").value=get("draft:"+id)??current.starter;
  $("output").textContent="Run an example to see the function's return value.";
  $("github-question").href="https://github.com/mswhitby/python_problems_20261026/tree/main/problems/"+encodeURIComponent(id);
+ const area=$("related-lessons");area.replaceChildren();
+ const ids=learningMap.challengeToLessons?.[id]||[];
+ const info=document.createElement("p");
+ info.textContent=(learningMap.advancedNotYetTaught||[]).includes(id)
+ ? "These lessons explain useful foundations. More advanced strings, lists, dictionaries, or algorithms may be needed."
+ : "Study these lessons if you need a refresher before coding.";
+ area.append(info);
+ for(const lessonId of ids){
+  const link=document.createElement("a");link.href="../units/#"+encodeURIComponent(lessonId);
+  const label=lessonId.split("/")[1].replace(/^\d+-/,"").replace(/-/g," ");
+  link.textContent="Unit "+Number(lessonId.slice(0,2))+" · "+label.replace(/\b\w/g,c=>c.toUpperCase())+" →";
+  area.append(link);
+ }
  $("skills-button").hidden=!current.skills;
  $("skills-section").hidden=true;
- $("skills-button").textContent="📖 Review skills & hints";
+ $("skills-button").textContent="Additional skills walkthrough";
  $("skills-content").innerHTML="";
  displayExamples();tags();showList();
  const checked=get("pass:"+id)==="true";
@@ -253,10 +267,10 @@ function start(){
  $("skills-button").addEventListener("click",()=>{
   const open=$("skills-section").hidden;
   $("skills-section").hidden=!open;
-  $("skills-button").textContent=open?"Hide skills & hints":"📖 Review skills & hints";
+  $("skills-button").textContent=open?"Hide walkthrough":"Additional skills walkthrough";
   if(open)$("skills-content").innerHTML=renderSkills(current.skills||"");
  });
- $("close-skills").addEventListener("click",()=>{$("skills-section").hidden=true;$("skills-button").textContent="📖 Review skills & hints";});
+ $("close-skills").addEventListener("click",()=>{$("skills-section").hidden=true;$("skills-button").textContent="Additional skills walkthrough";});
  $("run").addEventListener("click",()=>execute(false));
  $("check").addEventListener("click",()=>execute(true));
  $("save").addEventListener("click",()=>inform(set("draft:"+current.id,$("code").value)?"Draft saved on this browser.":"Browser storage unavailable. Use Copy code for a backup."));
