@@ -14,6 +14,7 @@ function inline(s){
  return escapeHTML(s)
  .replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>")
  .replace(new RegExp("\\x60([^\\x60]+)\\x60","g"),"<code>$1</code>")
+ .replace(/\[([^\]]+)\]\(README\.md\)/g,'<a href="#'+encodeURIComponent(current?.id||"") + '">$1</a>')
  .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g,'<a target="_blank" rel="noopener" href="$2">$1</a>');
 }
 function simpleText(s){
@@ -277,7 +278,7 @@ function start(){
   if((event.ctrlKey||event.metaKey)&&event.key==="Enter"){event.preventDefault();execute(false);}
  });
  const hash=decodeURIComponent(location.hash.slice(1));
- select(byId.has(hash)?hash:"app-event-type-tally");
+ select(byId.has(hash)?hash:"mood-music-label");
 }
 start();
 })();
