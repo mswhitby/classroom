@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#15273c"><title>Python Lessons | Computer Science I</title>
-<link rel="stylesheet" href="../challenges/challenges.css">
+<link rel="stylesheet" href="../challenges/challenges.css"><link rel="stylesheet" href="../theme.css">
 <style>
 .lesson-note{border-left:3px solid #6aa9d6;background:#f1f6fc;padding:10px 13px;margin:12px 0;font-size:13px}
 #lesson-example{background:#192635;color:#eef4fc;padding:14px;border-radius:8px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.55}
@@ -16,19 +16,20 @@
 #mode-note{font-size:12px;color:#587187}
 @media(max-width:1100px){.grid{grid-template-columns:1fr}}
 </style>
-<script defer src="data-02.js"></script><script defer src="data-03.js"></script>
+<script defer src="../theme.js"></script><script defer src="../learning-map.js"></script>
+<script defer src="data-01.js"></script><script defer src="data-02.js"></script><script defer src="data-03.js"></script>
 <script defer src="data-04.js"></script><script defer src="data-05.js"></script><script defer src="data-06.js"></script>
 <script defer src="lessons-app.js"></script></head>
 <body><a class="skip" href="#main">Skip to lesson</a>
 <header class="top"><a class="logo" href="../"><span class="logo-icon">{ }</span> COMPUTER SCIENCE <b>I</b></a>
-<div class="top-right"><span class="term">GUIDED PYTHON PATH</span><a href="../challenges/">Challenges</a><a href="https://www.mswhitby.com/">Classroom home</a></div></header>
+<div class="top-right"><a href="../">Course home</a><a href="./" aria-current="page">Lessons</a><a href="../challenges/">Challenges</a><span class="theme-picker"><label for="theme">Theme</label><select id="theme" data-theme-select><option value="light">Light</option><option value="purple">Purple 💜</option><option value="dark">Dark</option><option value="dark-purple">Dark Purple</option></select></span></div></header>
 <div class="layout"><aside class="sidebar"><div class="side-intro"><div class="eyebrow">LEARNING PATH</div><h1>Python Lessons</h1>
 <p>Learn one skill, experiment, and build on what you already know.</p></div>
-<div class="stats"><span>Units 02–06</span><span id="progress">0/20 practiced</span></div>
+<div class="stats"><span>Units 01–06</span><span id="progress">0/24 practiced</span></div>
 <label for="unit" class="small">SELECT UNIT</label><select id="unit"><option value="">All available units</option></select>
 <div class="list-head"><span>LESSONS</span><span id="visible"></span></div>
 <nav class="challenge-list" id="lesson-list" aria-label="Choose lesson"></nav>
-<div class="bottom-note"><strong>More than one way to learn</strong><p>Prefer independent problems? <a href="../challenges/">Open the challenge bank</a>. Need the very beginning? <a href="../">Open Unit 01</a>.</p></div>
+<div class="bottom-note"><strong>One learning path, six units</strong><p>All 24 lessons are here, including Unit 01. Prefer independent practice? <a href="../challenges/">Browse the Challenge Bank</a>.</p></div>
 </aside>
 <main id="main">
 <div class="hero"><div class="eyebrow" id="unit-label">UNIT 02 · FOUNDATIONS</div>
@@ -45,6 +46,8 @@
 <h4>Your practice task</h4><div id="mission" class="instructions-text"></div>
 <div id="case-list"></div>
 <h4>Progressive hints</h4><div id="lesson-hints"></div>
+<div class="next-row"><button id="previous-lesson" type="button" class="secondary">← Previous lesson</button><button id="next-lesson" type="button" class="next-lesson">Next lesson →</button></div>
+<h4>Practice these skills</h4><div id="related-challenges" class="related-links" aria-label="Related coding challenges"></div>
 <a id="full-lesson" target="_blank" rel="noopener">Read the complete lesson and reflection ↗</a>
 </div></article>
 <section class="panel workspace"><div class="panel-heading"><h3>Try it yourself</h3><span id="mode-label">PYTHON WORKSPACE</span></div>
@@ -55,7 +58,7 @@
 <pre id="output" aria-live="polite">Choose a lesson and select Run example.</pre>
 <div id="feedback" class="feedback" role="status" aria-live="polite">Practice checks run here. Your official grade requires GitHub submission.</div>
 <div class="submission"><strong>Keep your work</strong>
-<p>Drafts on this page are saved in the current browser. Use Copy code to back them up. To submit, place the code into the matching Unit 02–06 <code>main.py</code> in your GitHub fork and open or update a pull request.</p>
+<p>Drafts on this page are saved in the current browser. Use Copy code to back them up. To submit, place the code into the matching Unit 01–06 <code>main.py</code> in your GitHub fork and open or update a pull request.</p>
 <a href="https://github.com/mswhitby/computer-science-1/blob/main/SUBMITTING.md" target="_blank" rel="noopener">Manual GitHub submission instructions ↗</a></div>
 <p class="privacy">Browser checks use published examples and are not your official grade. GitHub login and cross-device saving are planned, but not yet connected.</p>
 </section></div>
