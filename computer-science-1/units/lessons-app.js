@@ -5,13 +5,18 @@ const $=id=>document.getElementById(id);
 const store="cs1:guided:v1:";
 const all=new Map(list.map(x=>[x.id,x]));
 const ordered=[...list].sort((a,b)=>a.unit-b.unit||a.lesson-b.lesson);
-const mapping=(window.CS1_LEARNING_MAP||{}).challengeToLessons||{};
+const requirements=(window.CS1_LEARNING_MAP||{}).requirements||{};
 let active=null,worker=null,ready=null,onReady=null,onFailure=null,pending=null,seq=0,busy=false;
 function read(k){try{return localStorage.getItem(store+k)}catch{return null}}
 function write(k,v){try{localStorage.setItem(store+k,v);return true}catch{return false}}
 function erase(k){try{localStorage.removeItem(store+k)}catch{}}
-function clean(s){return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
-function prose(s){return clean(s).replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>").replace(/\n\n/g,"</p><p>").replace(/^/,"<p>").concat("</p>")}
+function clean(s){return String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;")}
+function inline(s){
+ return clean(s).replace(/`([^`]+)`/g,"<code>$1</code>").replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>");
+}
+function prose(s){
+ return String(s??"").split(/\n\s*\n/).filter(x=>x.trim()).map(p=>"<p>"+p.trim().split("\n").map(inline).join("<br>")+"</p>").join("");
+}
 function feedback(s,mode=""){$("feedback").textContent=s;$("feedback").className="feedback"+(mode?" "+mode:"")}
 function status(s){$("runtime").textContent=s}
 function navigation(){
@@ -34,10 +39,10 @@ function select(id){
  $("unit").value=String(l.unit);
  $("unit-label").textContent="UNIT "+String(l.unit).padStart(2,"0")+" · LESSON "+l.lesson+" OF 4";
  $("title").textContent=l.title;$("points").textContent=l.points+" pts";
- $("summary").textContent=l.summary;$("lead").innerHTML=prose(l.summary);
+ $("summary").innerHTML=inline(l.summary);$("lead").innerHTML=prose(l.summary);
  $("lesson-example").textContent=l.exampleCode;
- $("walkthrough").textContent=l.explanation;$("reflection").textContent=l.reflection;
- $("pitfall").textContent=l.pitfall;$("mission").innerHTML=prose(l.mission);
+ $("walkthrough").innerHTML=inline(l.explanation);$("reflection").innerHTML=inline(l.reflection);
+ $("pitfall").innerHTML=inline(l.pitfall);$("mission").innerHTML=prose(l.mission);
  $("mode-label").textContent=l.mode==="script"?"CHECK CONSOLE OUTPUT":"CHECK RETURN VALUES";
  $("code").value=read("draft:"+id)??l.starter;
  $("full-lesson").href="https://github.com/mswhitby/computer-science-1/blob/main/units/"+l.markdown;
@@ -50,19 +55,31 @@ function select(id){
   const p=document.createElement("pre");p.textContent=c.expected;box.append(output,p);examples.append(box);
  });
  const hints=$("lesson-hints");hints.replaceChildren();
- l.hints.forEach((hint,i)=>{const d=document.createElement("details"),s=document.createElement("summary"),p=document.createElement("p");s.textContent="Hint "+(i+1);p.textContent=hint;d.append(s,p);hints.append(d)});
+ l.hints.forEach((hint,i)=>{const d=document.createElement("details"),s=document.createElement("summary"),p=document.createElement("p");s.textContent="Hint "+(i+1);p.innerHTML=inline(hint);d.append(s,p);hints.append(d)});
  $("output").textContent="Run an example to see what your code produces.";
  const at=ordered.findIndex(x=>x.id===l.id);
  $("previous-lesson").disabled=at===0;
  $("next-lesson").disabled=at===ordered.length-1;
  $("next-lesson").textContent=at===ordered.length-1?"All lessons complete":ordered[at+1].unit===l.unit?"Next lesson →":"Next unit →";
  const targets=$("related-challenges");targets.replaceChildren();
- const related=Object.entries(mapping).filter(([id,lessonIds])=>lessonIds.includes(l.id)).map(([id])=>id).slice(0,4);
+ const eligible=Object.entries(requirements).filter(([key,rule])=>{
+  if(!rule.ready||!Array.isArray(rule.lessons)||!rule.lessons.includes(l.id))return false;
+  const unlocked=ordered.findIndex(x=>x.id===rule.readyAfter);
+  return unlocked>=0&&unlocked<=at;
+ }).map(([key])=>key).slice(0,4);
  const intro=document.createElement("p");
- intro.textContent=related.length?"Related practice questions. Some also introduce skills not yet taught in these units.":"This foundational skill supports later challenges. Most questions also require functions, introduced in Unit 03.";
+ if(!eligible.length){
+  intro.textContent="No challenge is fully supported by the lessons completed at this point. Keep learning—or browse the full bank for optional advanced exploration.";
+ }else{
+  intro.textContent="Ready for independent practice: these challenges use skills taught through this lesson.";
+ }
  targets.append(intro);
- for(const key of related){const a=document.createElement("a");a.href="../challenges/#"+encodeURIComponent(key);a.textContent=(window.CS1_LEARNING_MAP?.challengeNames?.[key]||key.split("-").map(s=>s.slice(0,1).toUpperCase()+s.slice(1)).join(" "))+" →";targets.append(a);}
- 
+ for(const key of eligible){
+  const a=document.createElement("a");a.href="../challenges/#"+encodeURIComponent(key);
+  a.textContent=(window.CS1_LEARNING_MAP?.challengeNames?.[key]||key)+" →";
+  targets.append(a);
+ }
+
  feedback(read("pass:"+id)==="true"?"You passed the public examples on this device.":"Use Run and Check to practice. Official submission happens on GitHub.",read("pass:"+id)==="true"?"good":"");
  navigation();try{history.replaceState(null,"","#"+encodeURIComponent(id))}catch{}
 }
