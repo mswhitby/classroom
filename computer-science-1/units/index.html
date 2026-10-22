@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#15273c"><title>Python Lessons | Computer Science I</title>
+<link rel="stylesheet" href="../challenges/challenges.css">
+<style>
+.lesson-note{border-left:3px solid #6aa9d6;background:#f1f6fc;padding:10px 13px;margin:12px 0;font-size:13px}
+#lesson-example{background:#192635;color:#eef4fc;padding:14px;border-radius:8px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.55}
+#unit-list{display:flex;flex-direction:column;gap:9px}
+.unit-label{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:11px;color:#43627f}
+.lesson-badge{display:inline-block;color:#116643;background:#e8f5ed;border-radius:999px;padding:1px 7px;font-size:11px;font-weight:bold}
+#unit-selection{font-weight:700;font-size:12px}
+.summary-text{color:#526981;font-size:13px}
+#case-list .example{margin:8px 0}
+#lesson-hints details{padding:10px 12px;border:1px solid #dde6f0;margin:7px 0;border-radius:8px;font-size:12px}
+#lesson-hints summary{font-weight:700;cursor:pointer}
+#mode-note{font-size:12px;color:#587187}
+@media(max-width:1100px){.grid{grid-template-columns:1fr}}
+</style>
+<script defer src="data-02.js"></script><script defer src="data-03.js"></script>
+<script defer src="data-04.js"></script><script defer src="data-05.js"></script><script defer src="data-06.js"></script>
+<script defer src="lessons-app.js"></script></head>
+<body><a class="skip" href="#main">Skip to lesson</a>
+<header class="top"><a class="logo" href="../"><span class="logo-icon">{ }</span> COMPUTER SCIENCE <b>I</b></a>
+<div class="top-right"><span class="term">GUIDED PYTHON PATH</span><a href="../challenges/">Challenges</a><a href="https://www.mswhitby.com/">Classroom home</a></div></header>
+<div class="layout"><aside class="sidebar"><div class="side-intro"><div class="eyebrow">LEARNING PATH</div><h1>Python Lessons</h1>
+<p>Learn one skill, experiment, and build on what you already know.</p></div>
+<div class="stats"><span>Units 02–06</span><span id="progress">0/20 practiced</span></div>
+<label for="unit" class="small">SELECT UNIT</label><select id="unit"><option value="">All available units</option></select>
+<div class="list-head"><span>LESSONS</span><span id="visible"></span></div>
+<nav class="challenge-list" id="lesson-list" aria-label="Choose lesson"></nav>
+<div class="bottom-note"><strong>More than one way to learn</strong><p>Prefer independent problems? <a href="../challenges/">Open the challenge bank</a>. Need the very beginning? <a href="../">Open Unit 01</a>.</p></div>
+</aside>
+<main id="main">
+<div class="hero"><div class="eyebrow" id="unit-label">UNIT 02 · FOUNDATIONS</div>
+<div class="heading-line"><h2 id="title">Select a lesson</h2><span class="points" id="points">—</span></div>
+<div class="tags" id="concept-tag"></div><p class="subtitle" id="summary"></p></div>
+<div class="grid"><article class="panel instructions">
+<div class="panel-heading"><h3>Learn the concept</h3><span>STUDY & APPLY</span></div>
+<div class="panel-content">
+<h4>Why it matters</h4><div id="lead" class="instructions-text"></div>
+<h4>Example code</h4><pre id="lesson-example"></pre>
+<h4>Walkthrough</h4><p id="walkthrough" class="instructions-text"></p>
+<h4>Predict before running</h4><p id="reflection" class="instructions-text"></p>
+<div class="lesson-note"><strong>Common mistake</strong><p id="pitfall"></p></div>
+<h4>Your practice task</h4><div id="mission" class="instructions-text"></div>
+<div id="case-list"></div>
+<h4>Progressive hints</h4><div id="lesson-hints"></div>
+<a id="full-lesson" target="_blank" rel="noopener">Read the complete lesson and reflection ↗</a>
+</div></article>
+<section class="panel workspace"><div class="panel-heading"><h3>Try it yourself</h3><span id="mode-label">PYTHON WORKSPACE</span></div>
+<div class="editor-header"><span><span class="dot"></span> main.py</span><span>Python 3 in browser</span></div>
+<label class="sr-only" for="code">Python editor</label><textarea id="code" spellcheck="false" autocorrect="off" autocomplete="off" autocapitalize="off"></textarea>
+<div class="toolbar"><button id="run" class="primary" type="button">▶ Run example</button><button id="check" class="success" type="button">✓ Check examples</button><button id="save">Save draft</button><button id="copy">Copy code</button><button id="reset">Reset</button></div>
+<div class="console-heading"><strong>OUTPUT & FEEDBACK</strong><span id="runtime" role="status">Python not loaded</span></div>
+<pre id="output" aria-live="polite">Choose a lesson and select Run example.</pre>
+<div id="feedback" class="feedback" role="status" aria-live="polite">Practice checks run here. Your official grade requires GitHub submission.</div>
+<div class="submission"><strong>Keep your work</strong>
+<p>Drafts on this page are saved in the current browser. Use Copy code to back them up. To submit, place the code into the matching Unit 02–06 <code>main.py</code> in your GitHub fork and open or update a pull request.</p>
+<a href="https://github.com/mswhitby/computer-science-1/blob/main/SUBMITTING.md" target="_blank" rel="noopener">Manual GitHub submission instructions ↗</a></div>
+<p class="privacy">Browser checks use published examples and are not your official grade. GitHub login and cross-device saving are planned, but not yet connected.</p>
+</section></div>
+</main></div></body></html>
