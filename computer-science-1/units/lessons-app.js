@@ -61,7 +61,7 @@ function select(id){
  const intro=document.createElement("p");
  intro.textContent=related.length?"Related practice questions. Some also introduce skills not yet taught in these units.":"This foundational skill supports later challenges. Most questions also require functions, introduced in Unit 03.";
  targets.append(intro);
- for(const key of related){const a=document.createElement("a");a.href="../challenges/#"+encodeURIComponent(key);a.textContent=key.split("-").map(s=>s.slice(0,1).toUpperCase()+s.slice(1)).join(" ")+" →";targets.append(a);}
+ for(const key of related){const a=document.createElement("a");a.href="../challenges/#"+encodeURIComponent(key);a.textContent=(window.CS1_LEARNING_MAP?.challengeNames?.[key]||key.split("-").map(s=>s.slice(0,1).toUpperCase()+s.slice(1)).join(" "))+" →";targets.append(a);}
  
  feedback(read("pass:"+id)==="true"?"You passed the public examples on this device.":"Use Run and Check to practice. Official submission happens on GitHub.",read("pass:"+id)==="true"?"good":"");
  navigation();try{history.replaceState(null,"","#"+encodeURIComponent(id))}catch{}
@@ -162,8 +162,8 @@ function begin(){
   if(!$("unit").value){navigation();return;}
   const l=ordered.find(x=>String(x.unit)===$("unit").value);if(l)select(l.id);
  };
- $("previous-lesson").onclick=()=>{const i=ordered.findIndex(x=>x.id===active?.id);if(i>0)select(ordered[i-1].id)};
- $("next-lesson").onclick=()=>{const i=ordered.findIndex(x=>x.id===active?.id);if(i>=0&&i<ordered.length-1)select(ordered[i+1].id)};
+ $("previous-lesson").onclick=()=>{const i=ordered.findIndex(x=>x.id===active?.id);if(i>0){select(ordered[i-1].id);$("title").scrollIntoView?.({block:"start",behavior:"smooth"})}};
+ $("next-lesson").onclick=()=>{const i=ordered.findIndex(x=>x.id===active?.id);if(i>=0&&i<ordered.length-1){select(ordered[i+1].id);$("title").scrollIntoView?.({block:"start",behavior:"smooth"})}};
  $("run").onclick=()=>test(false);$("check").onclick=()=>test(true);
  $("save").onclick=()=>feedback(write("draft:"+active.id,$("code").value)?"Draft saved on this device.":"Can't save here. Use Copy code.");
  $("copy").onclick=async()=>{try{await navigator.clipboard.writeText($("code").value);feedback("Copied code. Paste it into main.py in your GitHub fork.","good")}catch{feedback("Clipboard unavailable. Select and copy manually.")}};

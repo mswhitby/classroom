@@ -101,3 +101,30 @@ window.CS1_LEARNING_MAP={
  advancedNotYetTaught:["app-event-type-tally","assignment-deadline-queue","classroom-charging-queue","classroom-topic-tag","command-palette-matcher","high-score-streak","lab-procedure-formatter","login-session-audit","missing-library-badge","mood-music-label","robot-maze-navigator","screen-reader-announcement"],
  guidance:"Some challenges combine topics (especially strings, lists and dictionaries) that will be covered more fully in future units. Related links are helpful prerequisites, not a claim that the lesson teaches every required skill."
 };
+
+window.CS1_LEARNING_MAP.challengeNames={
+  "cube-volume-debugger": "3D Object Volume Bug",
+  "bot-spammer": "Bot Spammer",
+  "co-op-lobby-notification": "Co-op Lobby Notification",
+  "fence-material-estimator": "Fence Material Estimator",
+  "mood-music-label": "Mood-to-Music Label",
+  "thermostat-sensor-debugger": "Thermostat Sensor Debugger",
+  "ticket-queue-counter": "Ticket Queue Counter",
+  "triangle-frame-check": "Triangle Frame Safety Check",
+  "upload-space-check": "Upload Space Gatekeeper",
+  "app-event-type-tally": "App Event Type Tally",
+  "assignment-deadline-queue": "Assignment Deadline Queue",
+  "classroom-charging-queue": "Classroom Charging Queue",
+  "classroom-topic-tag": "Classroom Topic Tag",
+  "command-palette-matcher": "Command Palette Matcher",
+  "feature-switch-inverter": "Feature Switch Inverter",
+  "focus-timer-debugger": "Focus Timer Debugger",
+  "high-score-streak": "High Score Streak",
+  "installer-download-meter": "Installer Download Meter",
+  "lab-procedure-formatter": "Lab Procedure Formatter",
+  "missing-library-badge": "Missing Library Badge",
+  "beacon-checkpoint-scanner": "Beacon Checkpoint Scanner",
+  "login-session-audit": "Login Session Audit",
+  "robot-maze-navigator": "Robot Maze Navigator",
+  "screen-reader-announcement": "Screen Reader Announcement Composer"
+};
