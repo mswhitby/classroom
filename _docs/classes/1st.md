@@ -19,7 +19,7 @@ Choose from 24 problems worth up to **255 points**. You can filter by topic or d
 
 **Important:** The website's Check button runs public practice examples only. Your GitHub pull request triggers the official autograder and leaderboard. Drafts are stored only on the same device/browser.
 
-**Optional reference:** [Computer Science I foundational units](https://www.mswhitby.com/computer-science-1/). We are **not restarting Unit 01** this week.
+**Alternative guided practice:** [Interactive lessons for Units 02–06](https://www.mswhitby.com/computer-science-1/units/), with explanations, runnable Python exercises, and their own GitHub submission checks. This is a separate way to practice and demonstrate skills. [Unit 01](https://www.mswhitby.com/computer-science-1/) is a refresher; we are **not restarting Unit 01** this week.
 
 ----
 

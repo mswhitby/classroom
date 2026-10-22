@@ -8,7 +8,7 @@ order: 2
 
 **[Open weekly Python coding challenges](https://www.mswhitby.com/computer-science-1/challenges/)** — browse problems by topic and difficulty, run and check your Python code, and review skills guides where available. This week's assigned challenges are in the [October 26 GitHub repository](https://github.com/mswhitby/python_problems_20261026); pull requests are the official submission method.
 
-**[Explore the separate Python Foundations units](https://www.mswhitby.com/computer-science-1/)** — a progressive curriculum being developed for future use.
+**[Open interactive guided Units 02–06](https://www.mswhitby.com/computer-science-1/units/)** — learn topics progressively with explanations, examples, hints and automated practice checks. [Introductory Unit 01](https://www.mswhitby.com/computer-science-1/) is also available.
 
 # Course Description
 

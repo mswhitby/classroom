@@ -8,7 +8,7 @@ This is the online  companion for [Ms. Whitby’s](https://wagner.judsonisd.org/
 
 [**Open the October 26 Python Challenge Lab**](https://www.mswhitby.com/computer-science-1/challenges/) to browse problems, write and run Python, check public examples, and review skills.
 
-The [Python Foundations lessons](https://www.mswhitby.com/computer-science-1/) are also available as a separate learning track.
+Prefer a guided sequence? [**Open Units 02–06 in the interactive Python lessons**](https://www.mswhitby.com/computer-science-1/units/). The [introductory Unit 01](https://www.mswhitby.com/computer-science-1/) remains available as a refresher.
 
 
 ### Contact
