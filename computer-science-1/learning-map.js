@@ -1,108 +1,265 @@
-/* Curated learning links. Not an official difficulty or prerequisite rubric. */
+/* Explicit curriculum coverage audit: only verified-ready problems are recommended.
+ * Last reviewed 2026-10-22. Review after adding or editing lessons and challenges. */
 window.CS1_LEARNING_MAP={
- challengeToLessons:{
-  "app-event-type-tally": [
-    "06-iteration/03-count-matches",
-    "03-functions-and-parameters/02-parameters"
-  ],
-  "assignment-deadline-queue": [
-    "05-conditional-execution/03-elif-bands",
-    "04-comparisons-and-boolean-logic/03-and-or-not"
-  ],
-  "beacon-checkpoint-scanner": [
-    "06-iteration/03-count-matches",
-    "06-iteration/02-running-total"
-  ],
-  "bot-spammer": [
-    "04-comparisons-and-boolean-logic/03-and-or-not",
-    "05-conditional-execution/02-if-else"
-  ],
-  "classroom-charging-queue": [
-    "05-conditional-execution/01-first-if",
-    "04-comparisons-and-boolean-logic/01-comparisons"
-  ],
-  "classroom-topic-tag": [
-    "03-functions-and-parameters/03-strings-from-functions",
-    "02-values-and-variables/01-meet-variables"
-  ],
-  "co-op-lobby-notification": [
-    "03-functions-and-parameters/03-strings-from-functions",
-    "03-functions-and-parameters/01-functions-return"
-  ],
-  "command-palette-matcher": [
-    "03-functions-and-parameters/03-strings-from-functions",
-    "06-iteration/01-for-ranges"
-  ],
-  "cube-volume-debugger": [
-    "02-values-and-variables/02-numbers-and-operations",
-    "03-functions-and-parameters/04-build-area-tool"
-  ],
-  "feature-switch-inverter": [
-    "04-comparisons-and-boolean-logic/03-and-or-not",
-    "04-comparisons-and-boolean-logic/01-comparisons"
-  ],
-  "fence-material-estimator": [
-    "02-values-and-variables/02-numbers-and-operations",
-    "03-functions-and-parameters/02-parameters"
-  ],
-  "focus-timer-debugger": [
-    "01-how-programs-work/03-fix-the-messages",
-    "02-values-and-variables/02-numbers-and-operations"
-  ],
-  "high-score-streak": [
-    "06-iteration/03-count-matches",
-    "05-conditional-execution/03-elif-bands"
-  ],
-  "installer-download-meter": [
-    "02-values-and-variables/02-numbers-and-operations",
-    "03-functions-and-parameters/03-strings-from-functions"
-  ],
-  "lab-procedure-formatter": [
-    "06-iteration/01-for-ranges",
-    "03-functions-and-parameters/03-strings-from-functions"
-  ],
-  "login-session-audit": [
-    "05-conditional-execution/03-elif-bands",
-    "06-iteration/03-count-matches"
-  ],
-  "missing-library-badge": [
-    "02-values-and-variables/02-numbers-and-operations",
-    "06-iteration/02-running-total"
-  ],
-  "mood-music-label": [
-    "03-functions-and-parameters/03-strings-from-functions",
-    "03-functions-and-parameters/01-functions-return"
-  ],
-  "robot-maze-navigator": [
-    "06-iteration/01-for-ranges",
-    "05-conditional-execution/03-elif-bands"
-  ],
-  "screen-reader-announcement": [
-    "03-functions-and-parameters/03-strings-from-functions",
-    "05-conditional-execution/03-elif-bands"
-  ],
-  "thermostat-sensor-debugger": [
-    "01-how-programs-work/03-fix-the-messages",
-    "06-iteration/03-count-matches"
-  ],
-  "ticket-queue-counter": [
-    "02-values-and-variables/02-numbers-and-operations",
-    "03-functions-and-parameters/02-parameters"
-  ],
-  "triangle-frame-check": [
-    "02-values-and-variables/02-numbers-and-operations",
-    "04-comparisons-and-boolean-logic/01-comparisons"
-  ],
-  "upload-space-check": [
-    "04-comparisons-and-boolean-logic/01-comparisons",
-    "02-values-and-variables/02-numbers-and-operations"
-  ]
+  requirements:{
+  "ticket-queue-counter": {
+    "readyAfter": "03-functions-and-parameters/01-functions-return",
+    "lessons": [
+      "02-values-and-variables/02-numbers-and-operations",
+      "03-functions-and-parameters/01-functions-return"
+    ],
+    "skills": [
+      "integer addition",
+      "functions",
+      "return values"
+    ],
+    "ready": true
+  },
+  "fence-material-estimator": {
+    "readyAfter": "03-functions-and-parameters/02-parameters",
+    "lessons": [
+      "02-values-and-variables/02-numbers-and-operations",
+      "03-functions-and-parameters/02-parameters"
+    ],
+    "skills": [
+      "arithmetic",
+      "two parameters",
+      "return values"
+    ],
+    "ready": true
+  },
+  "triangle-frame-check": {
+    "readyAfter": "03-functions-and-parameters/02-parameters",
+    "lessons": [
+      "02-values-and-variables/02-numbers-and-operations",
+      "03-functions-and-parameters/02-parameters"
+    ],
+    "skills": [
+      "addition and subtraction",
+      "two parameters",
+      "return values",
+      "triangle rule provided in problem"
+    ],
+    "ready": true
+  },
+  "co-op-lobby-notification": {
+    "readyAfter": "03-functions-and-parameters/03-strings-from-functions",
+    "lessons": [
+      "03-functions-and-parameters/03-strings-from-functions"
+    ],
+    "skills": [
+      "string concatenation",
+      "functions",
+      "return values"
+    ],
+    "ready": true
+  },
+  "upload-space-check": {
+    "readyAfter": "04-comparisons-and-boolean-logic/01-comparisons",
+    "lessons": [
+      "02-values-and-variables/02-numbers-and-operations",
+      "04-comparisons-and-boolean-logic/01-comparisons"
+    ],
+    "skills": [
+      "arithmetic",
+      "comparison operators",
+      "Boolean return"
+    ],
+    "ready": true
+  },
+  "feature-switch-inverter": {
+    "readyAfter": "04-comparisons-and-boolean-logic/03-and-or-not",
+    "lessons": [
+      "04-comparisons-and-boolean-logic/03-and-or-not"
+    ],
+    "skills": [
+      "Boolean values",
+      "not operator",
+      "return values"
+    ],
+    "ready": true
+  },
+  "bot-spammer": {
+    "readyAfter": "04-comparisons-and-boolean-logic/03-and-or-not",
+    "lessons": [
+      "04-comparisons-and-boolean-logic/01-comparisons",
+      "04-comparisons-and-boolean-logic/03-and-or-not"
+    ],
+    "skills": [
+      "comparisons",
+      "and / not",
+      "Boolean returns"
+    ],
+    "ready": true
+  },
+  "app-event-type-tally": {
+    "ready": false,
+    "skills": [
+      "lists",
+      "dictionaries",
+      "string case normalization"
+    ],
+    "lessons": [],
+    "reason": "Not all required topics are taught in Units 01–06 yet."
+  },
+  "assignment-deadline-queue": {
+    "ready": false,
+    "skills": [
+      "list traversal",
+      "dictionary access",
+      "building result lists"
+    ],
+    "lessons": [],
+    "reason": "Not all required topics are taught in Units 01–06 yet."
+  },
+  "beacon-checkpoint-scanner": {
+    "ready": false,
+    "skills": [
+      "lists",
+      "list append",
+      "number patterns"
+    ],
+    "lessons": [],
+    "reason": "Not all required topics are taught in Units 01–06 yet."
+  },
+  "classroom-charging-queue": {
+    "ready": false,
+    "skills": [
+      "list of dictionaries",
+      "filtering",
+      "building lists"
+    ],
+    "lessons": [],
+    "reason": "Not all required topics are taught in Units 01–06 yet."
+  },
+  "classroom-topic-tag": {
+    "ready": false,
+    "skills": [
+      "whitespace normalization",
+      "splitting words",
+      "PascalCase formatting"
+    ],
+    "lessons": [],
+    "reason": "Not all required topics are taught in Units 01–06 yet."
+  },
+  "command-palette-matcher": {
+    "ready": false,
+    "skills": [
+      "lists",
+      "string prefix matching",
+      "case-insensitive sorting"
+    ],
+    "lessons": [],
+    "reason": "Not all required topics are taught in Units 01–06 yet."
+  },
+  "cube-volume-debugger": {
+    "ready": false,
+    "skills": [
+      "exponentiation",
+      "function debugging"
+    ],
+    "lessons": [],
+    "reason": "Not all required topics are taught in Units 01–06 yet."
+  },
+  "focus-timer-debugger": {
+    "ready": false,
+    "skills": [
+      "lists of dictionaries",
+      "optional parameters",
+      "selective accumulation"
+    ],
+    "lessons": [],
+    "reason": "Not all required topics are taught in Units 01–06 yet."
+  },
+  "high-score-streak": {
+    "ready": false,
+    "skills": [
+      "list iteration",
+      "streak tracking"
+    ],
+    "lessons": [],
+    "reason": "Not all required topics are taught in Units 01–06 yet."
+  },
+  "installer-download-meter": {
+    "ready": false,
+    "skills": [
+      "string repetition",
+      "number-to-string formatting"
+    ],
+    "lessons": [],
+    "reason": "Not all required topics are taught in Units 01–06 yet."
+  },
+  "lab-procedure-formatter": {
+    "ready": false,
+    "skills": [
+      "list construction",
+      "indexing or enumeration",
+      "string formatting"
+    ],
+    "lessons": [],
+    "reason": "Not all required topics are taught in Units 01–06 yet."
+  },
+  "login-session-audit": {
+    "ready": false,
+    "skills": [
+      "dictionaries",
+      "state tracking across events",
+      "lists"
+    ],
+    "lessons": [],
+    "reason": "Not all required topics are taught in Units 01–06 yet."
+  },
+  "missing-library-badge": {
+    "ready": false,
+    "skills": [
+      "lists",
+      "sum or list iteration"
+    ],
+    "lessons": [],
+    "reason": "Not all required topics are taught in Units 01–06 yet."
+  },
+  "mood-music-label": {
+    "ready": false,
+    "skills": [
+      "strip()",
+      "title()",
+      "string formatting"
+    ],
+    "lessons": [],
+    "reason": "Not all required topics are taught in Units 01–06 yet."
+  },
+  "robot-maze-navigator": {
+    "ready": false,
+    "skills": [
+      "2D lists",
+      "graph traversal",
+      "breadth-first search"
+    ],
+    "lessons": [],
+    "reason": "Not all required topics are taught in Units 01–06 yet."
+  },
+  "screen-reader-announcement": {
+    "ready": false,
+    "skills": [
+      "lists",
+      "string methods",
+      "deduplication",
+      "joining strings"
+    ],
+    "lessons": [],
+    "reason": "Not all required topics are taught in Units 01–06 yet."
+  },
+  "thermostat-sensor-debugger": {
+    "ready": false,
+    "skills": [
+      "list traversal",
+      "initializing min correctly"
+    ],
+    "lessons": [],
+    "reason": "Not all required topics are taught in Units 01–06 yet."
+  }
 },
- advancedNotYetTaught:["app-event-type-tally","assignment-deadline-queue","classroom-charging-queue","classroom-topic-tag","command-palette-matcher","high-score-streak","lab-procedure-formatter","login-session-audit","missing-library-badge","mood-music-label","robot-maze-navigator","screen-reader-announcement"],
- guidance:"Some challenges combine topics (especially strings, lists and dictionaries) that will be covered more fully in future units. Related links are helpful prerequisites, not a claim that the lesson teaches every required skill."
-};
-
-window.CS1_LEARNING_MAP.challengeNames={
+  challengeNames:{
   "cube-volume-debugger": "3D Object Volume Bug",
   "bot-spammer": "Bot Spammer",
   "co-op-lobby-notification": "Co-op Lobby Notification",
@@ -127,4 +284,6 @@ window.CS1_LEARNING_MAP.challengeNames={
   "login-session-audit": "Login Session Audit",
   "robot-maze-navigator": "Robot Maze Navigator",
   "screen-reader-announcement": "Screen Reader Announcement Composer"
+},
+  notice:"Challenge recommendations require every prerequisite to have appeared by the current lesson. The full challenge bank is always accessible for optional advanced practice."
 };
