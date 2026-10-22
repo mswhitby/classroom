@@ -13,13 +13,13 @@ function prose(s){return clean(s).replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong
 function feedback(s,mode=""){$("feedback").textContent=s;$("feedback").className="feedback"+(mode?" "+mode:"")}
 function status(s){$("runtime").textContent=s}
 function navigation(){
- const shown=list.filter(l=>String(l.unit)===$("unit").value).sort((a,b)=>a.lesson-b.lesson);
+ const shown=list.filter(l=>!$("unit").value||String(l.unit)===$("unit").value).sort((a,b)=>a.unit-b.unit||a.lesson-b.lesson);
  $("visible").textContent=shown.length+" lessons";
  const nav=$("lesson-list");nav.replaceChildren();
  for(const l of shown){
   const btn=document.createElement("button");btn.type="button";btn.className="challenge-option"+(active?.id===l.id?" selected":"");
   const title=document.createElement("strong");title.textContent=l.title;
-  const sub=document.createElement("small");sub.textContent="Lesson "+l.lesson+" · "+l.points+" points"+(read("pass:"+l.id)==="true"?" · ✓ checked":"");
+  const sub=document.createElement("small");sub.textContent="Unit "+l.unit+" · Lesson "+l.lesson+" · "+l.points+" points"+(read("pass:"+l.id)==="true"?" · ✓ checked":"");
   btn.append(title,sub);btn.onclick=()=>select(l.id);nav.append(btn);
  }
  $("progress").textContent=list.filter(l=>read("pass:"+l.id)==="true").length+"/"+list.length+" checked";
@@ -39,7 +39,7 @@ function select(id){
  const tags=$("concept-tag");tags.replaceChildren();const t=document.createElement("span");t.className="tag difficulty";t.textContent=l.concept;tags.append(t);
  const examples=$("case-list");examples.replaceChildren();const h=document.createElement("h4");h.textContent="Published examples";examples.append(h);
  l.cases.forEach((c,i)=>{
-  const box=document.createElement("div");box.className="example",strong=document.createElement("strong");strong.textContent="Example "+(i+1);box.append(strong);
+  const box=document.createElement("div"),strong=document.createElement("strong");box.className="example";strong.textContent="Example "+(i+1);box.append(strong);
   if(c.call){const lbl=document.createElement("div");lbl.textContent="INPUT";const p=document.createElement("pre");p.textContent=c.call;box.append(lbl,p);}
   const output=document.createElement("div");output.textContent=l.mode==="script"?"EXPECTED OUTPUT":"EXPECTED RETURN";
   const p=document.createElement("pre");p.textContent=c.expected;box.append(output,p);examples.append(box);
@@ -138,8 +138,8 @@ async function test(allCases){
  finally{blocking(false)}
 }
 function begin(){
- if(list.length!==20||all.size!==20){$("output").textContent="Incomplete lesson data. Refresh or tell your teacher.";return;}
- for(let n=2;n<=6;n++){
+ if(list.length!==24||all.size!==24){$("output").textContent="Incomplete lesson data. Refresh or tell your teacher.";return;}
+ for(let n=1;n<=6;n++){
   const l=list.find(x=>x.unit===n),opt=document.createElement("option");opt.value=String(n);opt.textContent="Unit "+n+" — "+l.unitName;$("unit").append(opt);
  }
  $("unit").onchange=()=>{const l=list.find(x=>String(x.unit)===$("unit").value);if(l)select(l.id)};
