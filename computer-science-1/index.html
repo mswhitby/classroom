@@ -2,42 +2,77 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#15273c">
-<title>Computer Science I | Python Foundations</title>
-<link rel="stylesheet" href="styles.css">
-<script defer src="lessons.js"></script><script defer src="app.js"></script>
+<meta name="theme-color" content="#45206b">
+<title>Computer Science I | Learn or Challenge Yourself</title>
+<link rel="stylesheet" href="challenges/challenges.css">
+<link rel="stylesheet" href="theme.css">
+<style>
+.home-main{max-width:1130px;margin:0 auto;padding:50px 25px 65px}
+.home-lead{margin-bottom:28px}
+.home-lead h1{font-size:clamp(31px,5vw,49px);line-height:1.15;max-width:800px;margin:9px 0 16px;letter-spacing:-1.3px}
+.home-lead p{max-width:780px;color:var(--muted);font-size:17px;margin:0}
+.track-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.track{display:flex;flex-direction:column;gap:13px;padding:25px;border-radius:15px;border:1px solid var(--line);background:var(--panel,#fff);box-shadow:var(--shadow)}
+.track h2{font-size:24px;margin:0}
+.track p{margin:0;color:var(--muted)}
+.track ul{padding-left:18px;margin:0 0 5px;flex:1}
+.track a.action{display:inline-flex;align-items:center;justify-content:center;padding:12px 17px;border-radius:9px;color:#fff;background:#7540ba;font-weight:700;text-decoration:none}
+.track:nth-child(2) a.action{background:#21669c}
+.home-section{margin:36px 0}
+.home-section h2{margin-bottom:9px}
+.home-section p{color:var(--muted)}
+.notice{border:1px solid var(--line);background:var(--panel,#fff);border-radius:12px;padding:16px 19px;margin-top:28px}
+.notice p{margin:0;color:var(--muted)}
+.themes-grid{grid-template-columns:repeat(4,minmax(0,1fr));max-width:800px}
+@media(max-width:680px){.track-grid{grid-template-columns:1fr}.themes-grid{grid-template-columns:repeat(2,1fr)}.home-main{padding:24px 17px}}
+</style>
+<script defer src="theme.js"></script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to lesson</a>
-<header class="bar"><a class="brand" href="index.html"><span class="mark">{ }</span>COMPUTER SCIENCE <b>I</b></a><span class="bar-note">PYTHON FOUNDATIONS · PROTOTYPE</span><a class="bar-link" href="https://github.com/mswhitby/computer-science-1" target="_blank" rel="noopener">VIEW REPOSITORY ↗</a></header>
-<div role="navigation" aria-label="Current assignment" style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;justify-content:center;padding:13px 20px;background:#e8f3fe;color:#16385c;border-bottom:1px solid #c4dcef"><strong>Computer Science I · Choose your learning path</strong><a style="background:#235e9d;padding:8px 14px;border-radius:8px;color:white;font-weight:750" href="challenges/">Practice 24 challenges →</a><a style="background:#11754c;padding:8px 14px;border-radius:8px;color:white;font-weight:750" href="units/">Learn with guided Units 02–06 →</a><span style="font-size:12px">Unit 01 is below for beginners.</span></div>
-<div class="layout">
-<aside class="sidebar" aria-label="Lesson navigation">
- <div class="eyebrow">COURSE MAP</div><h2>Start here.</h2><p>Build one skill at a time. Practice what you learn.</p>
- <div class="unit"><span class="unit-number">01</span><span><strong>How Programs Work</strong><small>4 beginner lessons</small></span></div>
- <div class="progress-info"><span>Unit progress</span><strong id="progress-count">0 of 4</strong></div><div class="progress-track"><div id="progress-fill"></div></div>
- <nav class="lesson-nav" id="lesson-nav" aria-label="Exercises"></nav>
- <div class="sidebar-note"><strong>Need a refresher?</strong><p>You can revisit lessons and retry an exercise whenever you need to.</p><a href="https://github.com/mswhitby/computer-science-1/tree/main/units/01-how-programs-work" target="_blank" rel="noopener">Full unit materials ↗</a></div>
-</aside>
-<main id="main" class="main">
- <div class="hero"><div class="kicker"><span>UNIT 01</span><small id="position">LESSON 1 OF 4</small></div><h1 id="title">Instructions and output</h1><p id="subtitle"></p></div>
- <div class="columns">
-  <article class="panel lesson"><div class="panel-header"><h2>Learn</h2><span>CONCEPTS FIRST</span></div><div class="lesson-content" id="lesson-content"></div>
-   <details class="hints"><summary>Need a hint? <span>Optional guidance</span></summary><div id="hint-list"></div></details>
-   <p class="lesson-link">Want a longer explanation? <a id="lesson-link" target="_blank" rel="noopener" href="#">Read the full lesson ↗</a></p>
+<a class="skip" href="#main">Skip to learning paths</a>
+<header class="top">
+ <a class="logo" href="https://www.mswhitby.com/"><span class="logo-icon">{ }</span> COMPUTER SCIENCE <b>I</b></a>
+ <div class="top-right">
+  <a href="units/">Lessons</a><a href="challenges/">Challenges</a>
+  <span class="theme-picker"><label for="theme">Theme</label><select id="theme" data-theme-select><option value="light">Light</option><option value="purple">Purple 💜</option><option value="dark">Dark</option><option value="dark-purple">Dark Purple</option></select></span>
+ </div>
+</header>
+<main class="home-main" id="main">
+ <div class="home-lead">
+  <span class="eyebrow">MS. WHITBY'S CLASSROOM • PYTHON</span>
+  <h1>One classroom. Two ways to build your skills.</h1>
+  <p>Follow a concept-by-concept learning path, or choose a challenge and apply what you know. Switch between them any time.</p>
+ </div>
+ <div class="track-grid">
+  <article class="track">
+   <span class="eyebrow">LEARN IN ORDER</span>
+   <h2>Python Lessons</h2>
+   <p>Six units. Twenty-four lessons. Learn, predict, run, debug, and practice each skill before moving on.</p>
+   <ul><li>Unit 01: How Programs Work</li><li>Unit 02: Values & Variables</li><li>Unit 03: Functions</li><li>Unit 04: Boolean Logic</li><li>Unit 05: Conditionals</li><li>Unit 06: Iteration</li></ul>
+   <a class="action" href="units/">Browse all lessons →</a>
   </article>
-  <section class="panel practice" aria-label="Code practice">
-   <div class="panel-header"><h2>Practice</h2><span id="exercise-count">EXERCISE 01</span></div>
-   <div class="task"><h3 id="exercise-title"></h3><p id="prompt"></p><div class="target"><div class="micro-label">EXPECTED OUTPUT</div><pre id="expected"></pre></div></div>
-   <div class="editor-label"><span><span class="dot"></span> main.py</span><span>Python 3 · Browser runtime</span></div>
-   <label class="sr-only" for="code">Python code</label><textarea id="code" aria-label="Python code editor" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off"></textarea>
-   <div class="actions"><button id="run" class="primary" type="button">▶ Run code</button><button id="check" class="positive" type="button">✓ Check</button><button id="save" type="button">Save draft</button><button id="copy" type="button">Copy</button><button id="reset" type="button" class="reset">Reset</button></div>
-   <div class="output-wrap"><div class="output-top"><strong>CONSOLE</strong><span id="runtime" role="status">Not loaded</span></div><pre id="output" role="log" aria-live="polite">Select Run code to see what Python produces.</pre></div>
-   <div id="feedback" class="feedback" role="status" aria-live="polite">Checking code here is for practice. It does not submit your work.</div>
-   <div class="submission"><div><strong>Ready to submit?</strong><p>This preview uses manual GitHub submission. Secure one-click submission is a future step.</p></div><a href="https://github.com/mswhitby/computer-science-1/blob/main/SUBMITTING.md" target="_blank" rel="noopener">Submission instructions ↗</a></div>
-  </section>
- </div><footer>Computer Science I · Interactive curriculum prototype <span>Drafts and progress remain in this browser.</span></footer>
+  <article class="track">
+   <span class="eyebrow">CHOOSE YOUR NEXT TASK</span>
+   <h2>Python Challenge Bank</h2>
+   <p>Twenty-four reusable questions, sorted alphabetically with topic and difficulty filters.</p>
+   <ul><li>Read full problem requirements</li><li>Run solutions against public examples</li><li>See related lessons for review</li><li>Keep drafts on the current device</li></ul>
+   <a class="action" href="challenges/">Browse all challenges →</a>
+  </article>
+ </div>
+ <section class="home-section theme-catalog" aria-label="Choose a page theme">
+  <h2>Choose your look 💜</h2>
+  <p>Switch themes whenever you like. Your choice is saved in this browser and applies to Lessons and Challenges too.</p>
+  <div class="theme-gallery themes-grid">
+   <button type="button" class="theme-swatch" data-choice="light" aria-pressed="false"><span></span><strong>Light</strong></button>
+   <button type="button" class="theme-swatch" data-choice="purple" aria-pressed="false"><span></span><strong>Purple</strong></button>
+   <button type="button" class="theme-swatch" data-choice="dark" aria-pressed="false"><span></span><strong>Dark</strong></button>
+   <button type="button" class="theme-swatch" data-choice="dark-purple" aria-pressed="false"><span></span><strong>Dark Purple</strong></button>
+  </div>
+  <p>For additional visual inspiration, browse <a href="https://bootswatch.com/" target="_blank" rel="noopener">Bootswatch's free themes</a> (including Pulse and Quartz) or <a href="https://colorhunt.co/" target="_blank" rel="noopener">Color Hunt palettes</a>. These are references, not plug-and-play options for this custom website.</p>
+ </section>
+ <div class="notice"><strong>About saving and grading</strong>
+  <p>Run and Check provide practice feedback, not an official score. Drafts remain in this browser. For official credit, use the GitHub submission instructions provided with your lessons or challenges. Secure GitHub login, cloud grading, and the teacher dashboard are planned—not connected yet.</p>
+ </div>
 </main>
-</div>
 </body>
 </html>
