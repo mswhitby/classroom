@@ -219,11 +219,20 @@
  background:linear-gradient(90deg,#332d3b 50%,#5b4c62 50%)
 }
 
-/* Shared collapsible navigation for lessons and the challenge bank. */
-.menu-brand{display:flex;align-items:center;gap:14px;min-width:0}
-:root[data-theme] .top .menu-toggle{background:rgba(255,255,255,.1);color:#f6f0fa;border:1px solid rgba(255,255,255,.3);padding:7px 10px;font-size:12px;white-space:nowrap}
-:root[data-theme] .top .menu-toggle:hover{background:rgba(255,255,255,.19)}
-.layout.menu-collapsed{grid-template-columns:minmax(0,1fr)}
+/* Compact sidebar caret, shared by lessons and challenges. */
+.layout{position:relative}
+:root[data-theme] .layout>.menu-toggle{
+ position:absolute;top:10px;left:249px;z-index:3;
+ display:grid;place-items:center;width:30px;height:30px;
+ padding:0;border:0;border-radius:5px;
+ background:transparent;color:var(--muted);
+ font:24px/1 system-ui,sans-serif
+}
+:root[data-theme] .layout>.menu-toggle:hover{background:var(--soft);color:var(--ink)}
+.layout.menu-collapsed{display:grid;grid-template-columns:36px minmax(0,1fr)}
 .layout.menu-collapsed>.sidebar{display:none}
-.top{flex-wrap:wrap}
-@media(max-width:700px){.menu-brand{gap:10px}.menu-brand .logo{font-size:10px;letter-spacing:1px}.menu-toggle{font-size:11px}}
+.layout.menu-collapsed>main{grid-column:2}
+:root[data-theme] .layout.menu-collapsed>.menu-toggle{left:3px}
+@media(max-width:700px){
+ :root[data-theme] .layout:not(.menu-collapsed)>.menu-toggle{left:auto;right:10px}
+}
