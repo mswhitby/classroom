@@ -17,3 +17,67 @@ main{padding:28px 28px 56px;max-width:1700px}h1,.lesson-heading h1{font-size:2re
 @media(max-width:750px){main{padding:20px 16px 40px}.course-layout,.mobile-layout{grid-template-columns:1fr}.site-header,.top{padding:12px 16px!important}.course-layout.collapsed{grid-template-columns:1fr}.course-card{min-height:210px}.brand{font-size:16px}.brand strong{font-size:16px}.top-right{flex-wrap:wrap}.sidebar{padding:16px!important}.markdown-body h1{font-size:1.5rem}}
 /* Reading and code share the space; the console keeps its own contrast. */
 .markdown-body{max-width:80ch}#lesson-markdown>h1:first-child,#game-markdown>h1:first-child{display:none}#lesson-markdown h2{font-size:1.35rem}#lesson-markdown h3{font-size:1.15rem}.menu-caret{position:absolute!important;right:4px!important;top:4px!important}.menu-toggle{background:transparent!important;color:var(--bs-primary-emphasis)!important;border:0!important;padding:0!important}.terminal-pane .editor-header,.terminal-pane .editor-header strong,.terminal-pane .editor-header span{background:#343a40!important;color:#f8f9fa!important}.terminal-pane #output{background:#212529!important;color:#f8f9fa!important}
+[data-bs-theme=dark] .cm-s-default .cm-builtin,[data-bs-theme=dark] .cm-s-default .cm-atom,[data-bs-theme=dark] .cm-s-default .cm-attribute,[data-bs-theme=dark] .cm-s-default .cm-link{color:#79c0ff}[data-bs-theme=dark] .cm-s-default .cm-type,[data-bs-theme=dark] .cm-s-default .cm-variable-3{color:#7ee787}[data-bs-theme=dark] .cm-s-default .cm-string-2{color:#ffa657}[data-bs-theme=dark] .cm-s-default .cm-meta,[data-bs-theme=dark] .cm-s-default .cm-qualifier,[data-bs-theme=dark] .cm-s-default .cm-bracket{color:#c9d1d9}
+.feedback,.submission{background:var(--bs-tertiary-bg)!important;color:var(--bs-body-color)!important}.feedback.good{background:var(--bs-success-subtle)!important;color:var(--bs-success-emphasis)!important}.feedback.bad{background:var(--bs-danger-subtle)!important;color:var(--bs-danger-emphasis)!important}.stats{background:var(--bs-body-bg)!important;color:var(--bs-body-color)!important}.console-heading strong,.small,.list-head{color:var(--bs-secondary-color)!important}
+
+/* Upstream GitHub Dark syntax colors, scoped to the selected appearance. */
+[data-bs-theme=dark] pre code.hljs{
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}[data-bs-theme=dark] code.hljs{
+  padding: 3px 5px
+}[data-bs-theme=dark] .hljs{
+  color: #c9d1d9;
+  background: #0d1117
+}[data-bs-theme=dark] .hljs-doctag, [data-bs-theme=dark] .hljs-keyword, [data-bs-theme=dark] .hljs-meta .hljs-keyword, [data-bs-theme=dark] .hljs-template-tag, [data-bs-theme=dark] .hljs-template-variable, [data-bs-theme=dark] .hljs-type, [data-bs-theme=dark] .hljs-variable.language_{
+  
+  color: #ff7b72
+}[data-bs-theme=dark] .hljs-title, [data-bs-theme=dark] .hljs-title.class_, [data-bs-theme=dark] .hljs-title.class_.inherited__, [data-bs-theme=dark] .hljs-title.function_{
+  
+  color: #d2a8ff
+}[data-bs-theme=dark] .hljs-attr, [data-bs-theme=dark] .hljs-attribute, [data-bs-theme=dark] .hljs-literal, [data-bs-theme=dark] .hljs-meta, [data-bs-theme=dark] .hljs-number, [data-bs-theme=dark] .hljs-operator, [data-bs-theme=dark] .hljs-variable, [data-bs-theme=dark] .hljs-selector-attr, [data-bs-theme=dark] .hljs-selector-class, [data-bs-theme=dark] .hljs-selector-id{
+  
+  color: #79c0ff
+}[data-bs-theme=dark] .hljs-regexp, [data-bs-theme=dark] .hljs-string, [data-bs-theme=dark] .hljs-meta .hljs-string{
+  
+  color: #a5d6ff
+}[data-bs-theme=dark] .hljs-built_in, [data-bs-theme=dark] .hljs-symbol{
+  
+  color: #ffa657
+}[data-bs-theme=dark] .hljs-comment, [data-bs-theme=dark] .hljs-code, [data-bs-theme=dark] .hljs-formula{
+  
+  color: #8b949e
+}[data-bs-theme=dark] .hljs-name, [data-bs-theme=dark] .hljs-quote, [data-bs-theme=dark] .hljs-selector-tag, [data-bs-theme=dark] .hljs-selector-pseudo{
+  
+  color: #7ee787
+}[data-bs-theme=dark] .hljs-subst{
+  
+  color: #c9d1d9
+}[data-bs-theme=dark] .hljs-section{
+  
+  color: #1f6feb;
+  font-weight: bold
+}[data-bs-theme=dark] .hljs-bullet{
+  
+  color: #f2cc60
+}[data-bs-theme=dark] .hljs-emphasis{
+  
+  color: #c9d1d9;
+  font-style: italic
+}[data-bs-theme=dark] .hljs-strong{
+  
+  color: #c9d1d9;
+  font-weight: bold
+}[data-bs-theme=dark] .hljs-addition{
+  
+  color: #aff5b4;
+  background-color: #033a16
+}[data-bs-theme=dark] .hljs-deletion{
+  
+  color: #ffdcd7;
+  background-color: #67060c
+}[data-bs-theme=dark] .hljs-char.escape_, [data-bs-theme=dark] .hljs-link, [data-bs-theme=dark] .hljs-params, [data-bs-theme=dark] .hljs-property, [data-bs-theme=dark] .hljs-punctuation, [data-bs-theme=dark] .hljs-tag{
+  
+  
+}
