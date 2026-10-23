@@ -56,7 +56,8 @@ function select(id){
  });
  const hints=$("lesson-hints");hints.replaceChildren();
  l.hints.forEach((hint,i)=>{const d=document.createElement("details"),s=document.createElement("summary"),p=document.createElement("p");s.textContent="Hint "+(i+1);p.innerHTML=inline(hint);d.append(s,p);hints.append(d)});
- $("output").textContent="Run an example to see what your code produces.";
+ $("output").textContent="Run code to see printed output or Python errors here.";
+ $("check-results").textContent="";$("check-results").hidden=true;$("run-status").textContent="Ready to run";
  const at=ordered.findIndex(x=>x.id===l.id);
  $("previous-lesson").disabled=at===0;
  $("next-lesson").disabled=at===ordered.length-1;
@@ -91,7 +92,7 @@ function init(){
  if(ready)return ready;status("Loading Python...");
  ready=new Promise((resolve,reject)=>{onReady=resolve;onFailure=reject});
  try{
-  worker=new Worker("../python-worker.js");
+  worker=new Worker("../python-worker.js?v=20261023-terminal");
   worker.onmessage=e=>{
    const v=e.data||{};
    if(v.type==="ready"){status("Python ready");onReady?.();onReady=null;onFailure=null;return}
@@ -138,27 +139,31 @@ async function runStudentCode(){
  if(!active||busy)return;
  const source=$("code").value;
  write("draft:"+active.id,source);
- blocking(true);$("output").textContent="";feedback("Running your code...");
+ blocking(true);$("output").textContent="";$("run-status").textContent="Running...";
  try{
   await init();status("Running...");
   const result=await runCode(source);
   $("output").textContent=result.output||(result.success?"(No output. Use print() to display a value.)":"Python stopped without output.");
-  feedback(result.success?"Run complete. Use Check answer when you are ready to test the lesson requirements.":"Python reported an error. Review the output and try again.",result.success?"":"bad");
+  $("run-status").textContent=result.success?"Run complete":"Python error";
   status("Python ready");
  }catch(err){
   $("output").textContent=String(err?.message||err);
-  feedback("The run could not finish. Your draft is saved locally.","bad");
+  $("run-status").textContent="Run could not finish";
  }finally{blocking(false)}
 }
-async function test(allCases){
- if(!active||busy)return;const l=active,source=$("code").value;write("draft:"+l.id,source);
- blocking(true);feedback(allCases?"Checking all published examples...":"Running the first example...");
+async function checkAnswer(){
+ if(!active||busy)return;
+ const l=active,source=$("code").value;write("draft:"+l.id,source);
+ blocking(true);$("check-results").hidden=false;$("check-results").textContent="Checking...";
+ feedback("Checking all published examples...");
  try{
-  await init();status("Running...");
-  const cases=allCases?l.cases:[l.cases[0]],results=[];
+  await init();status("Checking...");
+  const cases=l.cases,results=[];
   if(l.mode==="script"){
    const r=await runCode(source),out=normalize(r.output);
-   results.push({ok:r.success&&out===normalize(cases[0].expected),received:out,error:r.success?"":"Python error"});
+   $("output").textContent=r.output||(r.success?"(No output. Use print() to display a value.)":"Python stopped without output.");
+   $("run-status").textContent=r.success?"Run complete":"Python error";
+   results.push({ok:r.success&&out===normalize(cases[0].expected),received:out,error:r.success?"":"Python error — see the terminal"});
   }else{
    const r=await runCode(harness(source,cases));
    if(!r.success)throw new Error(r.output);
@@ -176,15 +181,15 @@ async function test(allCases){
    lines.push(r.error?"Error: "+r.error:"Received: "+r.received);
    lines.push("");
   });
-  $("output").textContent=lines.join("\n").trim();
+  $("check-results").textContent=lines.join("\n").trim();
   const passed=passes===cases.length;
-  if(allCases){
-   if(passed)write("pass:"+l.id,"true");else erase("pass:"+l.id);
-   feedback(passes+"/"+cases.length+" public examples passed. "+(passed?"Good work! ":"Revise and try again. ")+"GitHub submission remains separate.",passed?"good":"bad");
-  }else feedback(passed?"First example passed. Use Check examples for all cases.":"Compare the expected and received output.",passed?"good":"bad");
+  if(passed)write("pass:"+l.id,"true");else erase("pass:"+l.id);
+  feedback(passes+"/"+cases.length+" public examples passed. "+(passed?"Good work! ":"Revise and try again. ")+"GitHub submission remains separate.",passed?"good":"bad");
   status("Python ready");navigation();
- }catch(err){$("output").textContent=String(err?.message||err);feedback("The check could not finish. Your draft is saved locally.","bad")}
- finally{blocking(false)}
+ }catch(err){
+  $("check-results").textContent=String(err?.message||err);
+  feedback("The check could not finish. Your draft is saved locally.","bad");
+ }finally{blocking(false)}
 }
 function begin(){
  if(list.length!==24||all.size!==24){$("output").textContent="Incomplete lesson data. Refresh or tell your teacher.";return;}
@@ -197,11 +202,11 @@ function begin(){
  };
  $("previous-lesson").onclick=()=>{const i=ordered.findIndex(x=>x.id===active?.id);if(i>0){select(ordered[i-1].id);$("title").scrollIntoView?.({block:"start",behavior:"smooth"})}};
  $("next-lesson").onclick=()=>{const i=ordered.findIndex(x=>x.id===active?.id);if(i>=0&&i<ordered.length-1){select(ordered[i+1].id);$("title").scrollIntoView?.({block:"start",behavior:"smooth"})}};
- $("run").onclick=runStudentCode;$("check").onclick=()=>test(true);
+ $("run").onclick=runStudentCode;$("check").onclick=checkAnswer;
  $("save").onclick=()=>feedback(write("draft:"+active.id,$("code").value)?"Draft saved on this device.":"Can't save here. Use Copy code.");
  $("copy").onclick=async()=>{try{await navigator.clipboard.writeText($("code").value);feedback("Copied code. Paste it into main.py in your GitHub fork.","good")}catch{feedback("Clipboard unavailable. Select and copy manually.")}};
- $("reset").onclick=()=>{if(!confirm("Restore starter code and replace this draft?"))return;$("code").value=active.starter;write("draft:"+active.id,active.starter);erase("pass:"+active.id);navigation();feedback("Starter restored.")};
- $("code").addEventListener("input",()=>{write("draft:"+active.id,$("code").value);erase("pass:"+active.id);navigation()});
+ $("reset").onclick=()=>{if(!confirm("Restore starter code and replace this draft?"))return;$("code").value=active.starter;write("draft:"+active.id,active.starter);erase("pass:"+active.id);$("check-results").textContent="";$("check-results").hidden=true;$("output").textContent="Run code to see printed output or Python errors here.";$("run-status").textContent="Ready to run";navigation();feedback("Starter restored.")};
+ $("code").addEventListener("input",()=>{write("draft:"+active.id,$("code").value);erase("pass:"+active.id);$("check-results").hidden=true;$("check-results").textContent="";feedback("Code changed. Run to experiment, or Check answer to test the requirements.");navigation()});
  $("code").addEventListener("keydown",e=>{
   if(e.key==="Tab"){e.preventDefault();const a=e.target;a.setRangeText("    ",a.selectionStart,a.selectionEnd,"end");a.dispatchEvent(new Event("input"))}
   if((e.ctrlKey||e.metaKey)&&e.key==="Enter"){e.preventDefault();runStudentCode()}
