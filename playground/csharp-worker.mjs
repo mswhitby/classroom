@@ -1,10 +1,16 @@
 import {RUNTIME_URL,buildDriver,parseResult} from './csharp-protocol.mjs?v=csharp-3';
 let compiler=null,compilation=null;
+// Forward worker startup diagnostics so failures are visible in browser developer tools.
+for(const level of ['debug','info','log','warn','error']) {
+ const original=console[level].bind(console);
+ console[level]=(...args)=>{original(...args);postMessage({type:'trace',message:args.filter(x=>typeof x==='string').join(' ').slice(0,1500)})};
+}
+
 async function init(){
  postMessage({type:'stage',message:'Loading the C# runtime…'});
  const {WasmSharpWorker}=await import(RUNTIME_URL);
  postMessage({type:'stage',message:'Starting .NET and downloading compiler files…'});
- compiler=await WasmSharpWorker.initializeAsync({enableDiagnosticTracing:false},{onDownloadResourceProgress(loaded,total){postMessage({type:'progress',loaded,total})},onMetadataLoad(){postMessage({type:'stage',message:'Preparing C# compiler…'})}});
+ compiler=await WasmSharpWorker.initializeAsync({enableDiagnosticTracing:true},{onDownloadResourceProgress(loaded,total){postMessage({type:'progress',loaded,total})},onMetadataLoad(){postMessage({type:'stage',message:'Preparing C# compiler…'})}});
  postMessage({type:'ready'});
 }
 const ready=init().catch(error=>postMessage({type:'load-error',message:String(error?.message||error)}));

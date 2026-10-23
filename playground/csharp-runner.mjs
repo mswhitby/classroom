@@ -9,6 +9,7 @@ export class CSharpRunner {
   this.loadTimer=setTimeout(()=>this.stop('The C# compiler could not finish loading. Try again or check your network.'),this.loadTimeout);
   worker.onmessage=({data:r})=>{
    if(worker!==this.worker)return;
+   if(r.type==='trace'){console.info('[C# worker] '+r.message);return}
    if(r.type==='stage'){this.onStatus(r.message);return}
    if(r.type==='progress'){this.onStatus('Loading C# compiler… '+r.loaded+'/'+r.total+' files');return}
    if(r.type==='ready'){clearTimeout(this.loadTimer);this.resolveReady?.();this.resolveReady=this.rejectReady=null;this.onStatus('C# ready');return}
