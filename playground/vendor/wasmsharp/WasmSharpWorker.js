@@ -1,4 +1,4 @@
-import { initializeWasmSharpModule } from "./initializeWasmSharpModule.js";
+import { initializeWasmSharpModule } from "./initializeWasmSharpModule.js?v=3";
 import { Compilation } from "./Compilation.js";
 export class WasmSharpWorker {
     interop;

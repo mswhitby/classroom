@@ -1,8 +1,10 @@
-import {RUNTIME_URL,buildDriver,parseResult} from './csharp-protocol.mjs?v=csharp-2';
+import {RUNTIME_URL,buildDriver,parseResult} from './csharp-protocol.mjs?v=csharp-3';
 let compiler=null,compilation=null;
 async function init(){
+ postMessage({type:'stage',message:'Loading the C# runtime…'});
  const {WasmSharpWorker}=await import(RUNTIME_URL);
- compiler=await WasmSharpWorker.initializeAsync({enableDiagnosticTracing:false},{onDownloadResourceProgress(loaded,total){postMessage({type:'progress',loaded,total})}});
+ postMessage({type:'stage',message:'Starting .NET and downloading compiler files…'});
+ compiler=await WasmSharpWorker.initializeAsync({enableDiagnosticTracing:false},{onDownloadResourceProgress(loaded,total){postMessage({type:'progress',loaded,total})},onMetadataLoad(){postMessage({type:'stage',message:'Preparing C# compiler…'})}});
  postMessage({type:'ready'});
 }
 const ready=init().catch(error=>postMessage({type:'load-error',message:String(error?.message||error)}));

@@ -57,7 +57,7 @@ export async function initializeWasmSharpModule(options, callbacks) {
     const satelliteAssemblies = Object.values(resources.satelliteResources).flatMap((assets) => assets);
     const assemblies = assembliesAssets
         .map((x) => x)
-        .concat(satelliteAssemblies)
+        
         .filter((x) => {
         if (!x.resolvedUrl) {
             console.debug("WasmSharp: resolved URL is empty, skipping assembly", x.virtualPath);
@@ -65,6 +65,7 @@ export async function initializeWasmSharpModule(options, callbacks) {
         return !!x.resolvedUrl;
     })
         .map((x) => new URL(x.resolvedUrl, resolvedAssembliesUrl).href);
+    callbacks?.onMetadataLoad?.();
     await compilationInterop.InitAsync(assemblies);
     const diff2 = performance.now() - time;
     console.log(`Finished loading assemblies in ${diff2}ms`);
