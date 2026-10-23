@@ -1,4 +1,4 @@
-import {RUNTIME_URL,buildDriver,parseResult} from './csharp-protocol.mjs?v=csharp-3';
+import {RUNTIME_URL,buildDriver,parseResult} from './csharp-protocol.mjs?v=csharp-4';
 let compiler=null,compilation=null;
 // Forward worker startup diagnostics so failures are visible in browser developer tools.
 for(const level of ['debug','info','log','warn','error']) {

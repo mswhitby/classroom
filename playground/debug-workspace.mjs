@@ -1,0 +1,22 @@
+import {CSharpRunner} from './csharp-runner.mjs?v=csharp-4';
+import {debugHints} from './debug-hints.mjs';
+export function debugWorkspace(main) {
+ document.title='Debugging workspace | Ms. Whitby’s Playground';
+ main.innerHTML=`<div class="eyebrow">Try · Observe · Explain</div><h1>Debugging workspace.</h1><p class="intro">Paste your own C# code, describe what you expected, and investigate one problem at a time.</p><section class="panel workspace"><div class="workspace-body"><label for="debug-mode">Where does this code run?</label><select id="debug-mode"><option value="console">C# console program</option><option value="unity">Unity C# script</option></select><p id="debug-scope">Console programs run here. Unity scripts run in the Unity Editor; paste its Console errors for guided help.</p><label for="debug-expected">What did you expect? Include a small example.</label><textarea id="debug-expected" rows="3"></textarea><label for="debug-source">Your code</label></div><textarea id="debug-source" spellcheck="false" autocapitalize="off" autocorrect="off" aria-describedby="debug-scope" style="min-height:22rem;resize:vertical"></textarea><div class="toolbar"><button id="debug-run">▶ Run code</button><button id="debug-stop" class="secondary" disabled>■ Stop</button><button id="debug-help" class="secondary">Get debugging hints</button></div><section class="csharp-terminal" aria-label="Debugging terminal"><div class="terminal-heading"><strong>Terminal / Output</strong><span id="debug-status" role="status">C# loads on first run</span></div><pre id="debug-output" tabindex="0" aria-live="polite">Run your console program to see output and errors.</pre></section><div class="workspace-body"><label for="debug-errors">Compiler or Unity Console error (optional)</label><textarea id="debug-errors" rows="4" spellcheck="false"></textarea><h2>Work through the problem</h2><p>These guided prompts explain common errors. They are rule-based hints, not an AI conversation or a correctness check.</p><ol id="debug-hints" aria-live="polite"></ol><p id="debug-save" role="status">Drafts stay in this browser. Code is executed locally and is not sent to a debugging service.</p></div></section>`;
+ const $=id=>document.getElementById(id),fields=['debug-source','debug-expected','debug-errors','debug-mode'];
+ let saved={};try{saved=JSON.parse(localStorage.getItem('playground:debug:v1')||'{}')}catch{}
+ for(const id of fields){if(typeof saved[id]==='string')$(id).value=saved[id];$(id).addEventListener('input',()=>{try{localStorage.setItem('playground:debug:v1',JSON.stringify(Object.fromEntries(fields.map(k=>[k,$(k).value]))))}catch{$('debug-save').textContent='Draft could not be saved. Copy your work before leaving.'}})}
+ if(!saved['debug-source'])$('debug-source').value='using System;\n\npublic class Program\n{\n    public static void Main()\n    {\n        Console.WriteLine("Hello, Playground!");\n    }\n}';
+ const help=()=>{const list=$('debug-hints');list.replaceChildren();for(const hint of debugHints({source:$('debug-source').value,expected:$('debug-expected').value,errors:$('debug-errors').value,unity:$('debug-mode').value==='unity'})){const li=document.createElement('li');li.textContent=hint;list.append(li)}};
+ $('debug-help').onclick=help;
+ const runner=new CSharpRunner({onStatus:text=>{if($('debug-status'))$('debug-status').textContent=text}});
+ $('debug-stop').onclick=()=>runner.stop();
+ $('debug-run').onclick=async()=>{
+  if($('debug-mode').value==='unity'||/\bUnityEngine\b|\bMonoBehaviour\b/.test($('debug-source').value)){$('debug-output').textContent='This code depends on Unity. Run it in the Unity Editor, then paste its first Console error below.';help();return}
+  const output=$('debug-output');$('debug-run').disabled=true;$('debug-stop').disabled=false;$('debug-source').readOnly=true;output.textContent='';
+  try{const result=await runner.run($('debug-source').value);output.textContent=[result.stdout,result.stderr,result.diagnostics].filter(Boolean).join('\n')||'(No output. Use Console.WriteLine to display a value.)';if(!result.compiled||!result.success){$('debug-errors').value=[result.stderr,result.diagnostics].filter(Boolean).join('\n');$('debug-errors').dispatchEvent(new Event('input'));help()}}
+  catch(error){output.textContent=error.message}
+  finally{if($('debug-run')){$('debug-run').disabled=false;$('debug-stop').disabled=true;$('debug-source').readOnly=false}}
+ };
+ return runner;
+}

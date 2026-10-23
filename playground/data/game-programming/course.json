@@ -5,7 +5,7 @@
   "language": "C#",
   "description": "Build in Unity. Understand the logic. Test your ideas.",
   "sourceRepository": "mswhitby/game-programming",
-  "alignmentNote": "Original classroom companion material. These two units introduce selected Unity Essentials and Junior Programmer skills; they do not replace or claim completion of either entire pathway. Follow your teacher\u2019s assigned Unity version and project.",
+  "alignmentNote": "The six Essentials units follow Unity’s educator outline in mission order. Each is a classroom companion with original notes, a small C# exercise, Unity activities, and a checkpoint—not a replacement for every Unity Learn tutorial. Junior Programmer follows Essentials. Console exercises run separately from Unity scene scripts.",
   "sources": [
     {
       "title": "Unity Essentials",
@@ -26,12 +26,12 @@
   ],
   "units": [
     {
-      "id": "unity-essentials",
+      "id": "editor-essentials",
       "number": 1,
-      "title": "Unity Essentials: build a playable space",
-      "summary": "Navigate the Editor, work with components and prefabs, and explain simple C# rules.",
+      "title": "Editor Essentials",
+      "summary": "Unity Essentials mission 1: navigate the Editor and compose a mural.",
       "pathway": "Unity Essentials",
-      "pathwayUrl": "https://learn.unity.com/pathway/unity-essentials",
+      "pathwayUrl": "https://learn.unity.com/pathway/unity-essentials?version=6",
       "lessons": [
         {
           "id": "essentials-01",
@@ -45,8 +45,12 @@
           "prerequisites": [],
           "sections": [
             {
+              "heading": "Open the Essentials project",
+              "text": "Follow Unity Learn’s installation and project-opening tutorials before the Editor activities. Open the supplied Essentials project in the supported Editor version. In the Scene view, practice selecting, orbiting, panning, and zooming before arranging the mural. Save your work outside Play mode."
+            },
+            {
               "heading": "Scene, Game, Hierarchy, Inspector",
-              "text": "The Scene view is your workspace for arranging a world. The Game view shows the view rendered by the game cameras. The Hierarchy lists GameObjects in the open scene; the Inspector shows the selected object\u2019s components and settings. The Project window contains assets saved in the project."
+              "text": "The Scene view is your workspace for arranging a world. The Game view shows the view rendered by the game cameras. The Hierarchy lists GameObjects in the open scene; the Inspector shows the selected object’s components and settings. The Project window contains assets saved in the project."
             },
             {
               "heading": "Play mode is an experiment",
@@ -77,196 +81,16 @@
             "file": "exercises/essentials-01/Program.cs"
           },
           "unityTask": [
-            "Create a scene named PracticeArena and save it.",
-            "Add and rename a Cube. Find it in the Hierarchy and locate its Transform in the Inspector.",
-            "Record one change you made during Play mode and what happened when you stopped."
-          ]
-        },
-        {
-          "id": "essentials-02",
-          "title": "GameObjects, components, and changing values",
-          "skills": [
-            "gameobjects",
-            "components",
-            "transform",
-            "csharp-types"
+            "Complete the installation and project-opening steps in the Unity Learn companion.",
+            "Complete the Scene-view navigation and flying-test activities.",
+            "Design the mural in the supplied scene. Save, enter Play mode, then stop and describe which edits persisted."
           ],
-          "prerequisites": [
-            "essentials-01"
-          ],
-          "sections": [
-            {
-              "heading": "Objects are built from components",
-              "text": "A GameObject is a container. Its components provide behavior: Transform stores position, rotation, and scale; a Renderer displays geometry; a Collider defines a collision shape; a Rigidbody participates in physics simulation. A Collider alone does not make an object fall under gravity. A script can also be a component."
-            },
-            {
-              "heading": "Choose a type for the job",
-              "text": "Use int for whole-number counts, float for decimal game quantities, bool for true or false, and string for text. Write a float literal with f, such as 2.5f. Assignment uses = and updates a variable. A method\u2019s declared return type must match the value returned."
-            },
-            {
-              "heading": "Move a coordinate in code",
-              "text": "Addition can update a coordinate: float nextX = x + distance;. x and distance are parameters supplied when the method is called. Their values can change for each call; use the parameters instead of hard-coding an example answer. In Unity the Transform has three axes; this exercise isolates one axis as a number."
-            }
-          ],
-          "example": "float x = 2f;\nx = x + 1.5f;\nConsole.WriteLine(x); // 3.5",
-          "exercise": {
-            "id": "essentials-02-practice",
-            "title": "Move a practice marker",
-            "prompt": "Return x + distance as a float. Negative distances move in the opposite direction. Do not use UnityEngine in this console exercise.",
-            "starter": "using System;\n\npublic class Program\n{\n    public static float Solution(float x, float distance)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(2f, 1.5f));\n    }\n}\n",
-            "signature": "float Solution(float x, float distance)",
-            "examples": [
-              {
-                "call": "Solution(2f, 1.5f)",
-                "expected": "3.5f"
-              },
-              {
-                "call": "Solution(4f, -2f)",
-                "expected": "2f"
-              },
-              {
-                "call": "Solution(-1f, 0f)",
-                "expected": "-1f"
-              }
-            ],
-            "hints": [
-              "Both inputs already have the right numeric type.",
-              "Return an expression using both parameters."
-            ],
-            "file": "exercises/essentials-02/Program.cs"
-          },
-          "unityTask": [
-            "Change a Cube\u2019s position, rotation, and scale outside Play mode.",
-            "Add a floor with a Collider and a ball with a Collider plus Rigidbody. Observe gravity in Play mode.",
-            "Explain which component provides shape and which participates in physics."
-          ]
-        },
-        {
-          "id": "essentials-03",
-          "title": "Reusable objects and scoring rules",
-          "skills": [
-            "prefabs",
-            "audio",
-            "arithmetic",
-            "parameters"
-          ],
-          "prerequisites": [
-            "essentials-02"
-          ],
-          "sections": [
-            {
-              "heading": "Asset versus instance",
-              "text": "A prefab asset is a reusable template in the Project window. Dragging it into a scene creates an instance in the Hierarchy. An instance can have overrides; editing one instance does not automatically change every other copy. Apply overrides deliberately when you intend to update the asset."
-            },
-            {
-              "heading": "Sound has a source and a listener",
-              "text": "An AudioSource emits audio; an AudioListener receives it, commonly on the camera. A source\u2019s spatial blend determines whether sound behaves as 2D or 3D audio. For a UI click use 2D audio; for a sound in the world, consider 3D audio. Keep one active listener for this introductory scene."
-            },
-            {
-              "heading": "Explain the scoring formula",
-              "text": "Multiplication happens before addition in score + coins * pointsPerCoin. The three int parameters let the same method score many situations. The method returns the new total; returning a value is different from displaying it. Main prints the returned value for testing."
-            }
-          ],
-          "example": "int score = 10;\nint earned = 3 * 5;\nConsole.WriteLine(score + earned); // 25",
-          "exercise": {
-            "id": "essentials-03-practice",
-            "title": "Score a pickup batch",
-            "prompt": "Return the existing score plus coins multiplied by pointsPerCoin. Inputs are nonnegative whole numbers. A batch of zero coins leaves the score unchanged.",
-            "starter": "using System;\n\npublic class Program\n{\n    public static int Solution(int score, int coins, int pointsPerCoin)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(10, 3, 5));\n    }\n}\n",
-            "signature": "int Solution(int score, int coins, int pointsPerCoin)",
-            "examples": [
-              {
-                "call": "Solution(10, 3, 5)",
-                "expected": "25"
-              },
-              {
-                "call": "Solution(20, 0, 4)",
-                "expected": "20"
-              },
-              {
-                "call": "Solution(0, 5, 2)",
-                "expected": "10"
-              }
-            ],
-            "hints": [
-              "Calculate earned points from coins and pointsPerCoin.",
-              "Add earned points to the existing score."
-            ],
-            "file": "exercises/essentials-03/Program.cs"
-          },
-          "unityTask": [
-            "Create a collectible prefab and place three instances.",
-            "Change one instance\u2019s scale and identify the override.",
-            "Add an AudioSource, choose 2D or 3D sound, and explain your choice."
-          ]
-        },
-        {
-          "id": "essentials-04",
-          "title": "Scripts, methods, and a tiny game loop",
-          "skills": [
-            "methods",
-            "console",
-            "debugging",
-            "delta-time"
-          ],
-          "prerequisites": [
-            "essentials-03"
-          ],
-          "sections": [
-            {
-              "heading": "Read the method contract",
-              "text": "public static int Solution(int score, int bonus) names a method, its inputs, and its returned type. The body between braces holds statements. A call such as Solution(10, 5) supplies arguments. A return sends the result back; Console.WriteLine prints it. This console wrapper does not inherit MonoBehaviour."
-            },
-            {
-              "heading": "Understand Unity execution",
-              "text": "A Unity behavior typically inherits MonoBehaviour and is attached to a GameObject. Start runs once before that script\u2019s first Update when it becomes enabled; Update runs each rendered frame while the behavior is active. Debug.Log writes to Unity\u2019s Console. Console.WriteLine is for these standalone exercises. Do not paste the whole console Program into a Unity component."
-            },
-            {
-              "heading": "Find the first useful error",
-              "text": "Read the first compiler error and its line number. A missing semicolon, wrong capitalization, or mismatched return type prevents compilation. A program can also compile but return the wrong value; try another input and explain the calculation. Fix one issue at a time."
-            },
-            {
-              "heading": "Connect time to distance",
-              "text": "A speed of 6 units per second covers 3 units during 0.5 seconds. Multiplying speed by elapsed seconds makes the intended distance depend on elapsed time rather than on a count of frames. In a Unity Update method, Time.deltaTime supplies the elapsed seconds for the frame."
-            }
-          ],
-          "example": "float speed = 6f;\nfloat elapsedSeconds = 0.5f;\nConsole.WriteLine(speed * elapsedSeconds); // 3",
-          "exercise": {
-            "id": "essentials-04-practice",
-            "title": "Calculate a frame\u2019s travel distance",
-            "prompt": "Return speed * elapsedSeconds. speed is units per second and elapsedSeconds is seconds. Both inputs are nonnegative. A paused interval of zero seconds produces zero distance.",
-            "starter": "using System;\n\npublic class Program\n{\n    public static float Solution(float speed, float elapsedSeconds)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(6f, 0.5f));\n    }\n}\n",
-            "signature": "float Solution(float speed, float elapsedSeconds)",
-            "examples": [
-              {
-                "call": "Solution(6f, 0.5f)",
-                "expected": "3f"
-              },
-              {
-                "call": "Solution(4f, 0f)",
-                "expected": "0f"
-              },
-              {
-                "call": "Solution(2.5f, 2f)",
-                "expected": "5f"
-              }
-            ],
-            "hints": [
-              "Keep both quantities in the same unit system.",
-              "Multiply; do not add speed and time."
-            ],
-            "file": "exercises/essentials-04/Program.cs"
-          },
-          "unityTask": [
-            "Follow Programming Essentials in Unity Learn and attach a simple behavior.",
-            "Use Debug.Log to observe Start and Update, then remove noisy per-frame logs.",
-            "Capture a screenshot of your scene and describe how one component changes its behavior."
-          ]
+          "alignment": "Editor Essentials"
         }
       ],
       "quiz": {
         "id": "essentials-checkpoint",
-        "title": "Essentials checkpoint",
+        "title": "Editor Essentials checkpoint",
         "passPercent": 75,
         "questions": [
           {
@@ -306,6 +130,149 @@
             "explanation": "Make lasting ordinary scene edits outside Play mode and save the scene."
           },
           {
+            "id": "return",
+            "prompt": "What does return do in the practice method?",
+            "choices": [
+              "Prints automatically",
+              "Sends a value back to its caller",
+              "Moves the camera",
+              "Starts Play mode"
+            ],
+            "answer": 1,
+            "explanation": "Returning a value and printing it are separate operations."
+          }
+        ]
+      }
+    },
+    {
+      "id": "3d-essentials",
+      "number": 2,
+      "title": "3D Essentials",
+      "summary": "Unity Essentials mission 2: furnish a room, test physics, and use prefab blocks.",
+      "pathway": "Unity Essentials",
+      "pathwayUrl": "https://learn.unity.com/pathway/unity-essentials?version=6",
+      "lessons": [
+        {
+          "id": "essentials-02",
+          "title": "GameObjects, components, and changing values",
+          "skills": [
+            "gameobjects",
+            "components",
+            "transform",
+            "csharp-types"
+          ],
+          "prerequisites": [
+            "essentials-01"
+          ],
+          "sections": [
+            {
+              "heading": "Objects are built from components",
+              "text": "A GameObject is a container. Its components provide behavior: Transform stores position, rotation, and scale; a Renderer displays geometry; a Collider defines a collision shape; a Rigidbody participates in physics simulation. A Collider alone does not make an object fall under gravity. A script can also be a component."
+            },
+            {
+              "heading": "Choose a type for the job",
+              "text": "Use int for whole-number counts, float for decimal game quantities, bool for true or false, and string for text. Write a float literal with f, such as 2.5f. Assignment uses = and updates a variable. A method’s declared return type must match the value returned."
+            },
+            {
+              "heading": "Move a coordinate in code",
+              "text": "Addition can update a coordinate: float nextX = x + distance;. x and distance are parameters supplied when the method is called. Their values can change for each call; use the parameters instead of hard-coding an example answer. In Unity the Transform has three axes; this exercise isolates one axis as a number."
+            }
+          ],
+          "example": "float x = 2f;\nx = x + 1.5f;\nConsole.WriteLine(x); // 3.5",
+          "exercise": {
+            "id": "essentials-02-practice",
+            "title": "Move a practice marker",
+            "prompt": "Return x + distance as a float. Negative distances move in the opposite direction. Do not use UnityEngine in this console exercise.",
+            "starter": "using System;\n\npublic class Program\n{\n    public static float Solution(float x, float distance)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(2f, 1.5f));\n    }\n}\n",
+            "signature": "float Solution(float x, float distance)",
+            "examples": [
+              {
+                "call": "Solution(2f, 1.5f)",
+                "expected": "3.5f"
+              },
+              {
+                "call": "Solution(4f, -2f)",
+                "expected": "2f"
+              },
+              {
+                "call": "Solution(-1f, 0f)",
+                "expected": "-1f"
+              }
+            ],
+            "hints": [
+              "Both inputs already have the right numeric type.",
+              "Return an expression using both parameters."
+            ],
+            "file": "exercises/essentials-02/Program.cs"
+          },
+          "unityTask": [
+            "Arrange furniture in the supplied kid’s bedroom. Adjust Transform values outside Play mode.",
+            "Create a ball with a Collider and Rigidbody; test its bounce with a physics material.",
+            "Create a prefab block and build a tower from instances. Adjust the room’s lighting, background, and camera, then save and test."
+          ]
+        },
+        {
+          "id": "essentials-03",
+          "title": "Prefab instances and scoring arithmetic",
+          "skills": [
+            "prefabs",
+            "audio",
+            "arithmetic",
+            "parameters"
+          ],
+          "prerequisites": [
+            "essentials-02"
+          ],
+          "sections": [
+            {
+              "heading": "Asset versus instance",
+              "text": "A prefab asset is a reusable template in the Project window. Dragging it into a scene creates an instance in the Hierarchy. An instance can have overrides; editing one instance does not automatically change every other copy. Apply overrides deliberately when you intend to update the asset."
+            },
+            {
+              "heading": "Explain the scoring formula",
+              "text": "Multiplication happens before addition in score + coins * pointsPerCoin. The three int parameters let the same method score many situations. The method returns the new total; returning a value is different from displaying it. Main prints the returned value for testing."
+            }
+          ],
+          "example": "int score = 10;\nint earned = 3 * 5;\nConsole.WriteLine(score + earned); // 25",
+          "exercise": {
+            "id": "essentials-03-practice",
+            "title": "Score a pickup batch",
+            "prompt": "Return the existing score plus coins multiplied by pointsPerCoin. Inputs are nonnegative whole numbers. A batch of zero coins leaves the score unchanged.",
+            "starter": "using System;\n\npublic class Program\n{\n    public static int Solution(int score, int coins, int pointsPerCoin)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(10, 3, 5));\n    }\n}\n",
+            "signature": "int Solution(int score, int coins, int pointsPerCoin)",
+            "examples": [
+              {
+                "call": "Solution(10, 3, 5)",
+                "expected": "25"
+              },
+              {
+                "call": "Solution(20, 0, 4)",
+                "expected": "20"
+              },
+              {
+                "call": "Solution(0, 5, 2)",
+                "expected": "10"
+              }
+            ],
+            "hints": [
+              "Calculate earned points from coins and pointsPerCoin.",
+              "Add earned points to the existing score."
+            ],
+            "file": "exercises/essentials-03/Program.cs"
+          },
+          "unityTask": [
+            "Compare a prefab asset with two instances in the scene.",
+            "Change an instance, then explain what changes when you edit the prefab asset instead.",
+            "Run the score rule for two different block counts and record the returned values."
+          ]
+        }
+      ],
+      "quiz": {
+        "id": "3d-essentials-checkpoint",
+        "title": "3D Essentials checkpoint",
+        "passPercent": 75,
+        "questions": [
+          {
             "id": "physics",
             "prompt": "Which component makes a 3D object participate in physics simulation?",
             "choices": [
@@ -328,7 +295,83 @@
             ],
             "answer": 0,
             "explanation": "A prefab is a reusable template from which you can create instances."
+          }
+        ]
+      }
+    },
+    {
+      "id": "audio-essentials",
+      "number": 3,
+      "title": "Audio Essentials",
+      "summary": "Unity Essentials mission 3: create and test an immersive soundscape.",
+      "pathway": "Unity Essentials",
+      "pathwayUrl": "https://learn.unity.com/pathway/unity-essentials?version=6",
+      "lessons": [
+        {
+          "id": "audio-01",
+          "title": "Build a soundscape and adjust volume",
+          "skills": [
+            "audio-source",
+            "audio-listener",
+            "spatial-audio",
+            "float-multiplication"
+          ],
+          "prerequisites": [
+            "essentials-03"
+          ],
+          "sections": [
+            {
+              "heading": "Source and listener",
+              "text": "An AudioSource emits a clip; an AudioListener receives sound, commonly on the main camera. Import a clip, assign it to a source, and test Play On Awake and Loop deliberately. Avoid multiple active listeners."
+            },
+            {
+              "heading": "2D and 3D sound",
+              "text": "Spatial Blend controls whether sound behaves as 2D audio or depends on position in 3D. With 3D sound, test distance and volume while moving the listener. Use layered sounds in the kitchen scene, and keep levels comfortable."
+            },
+            {
+              "heading": "Scale a numeric value",
+              "text": "Volume is a value from 0 to 1. For this console exercise, inputs already lie in that range. Multiplying volume by a gain from 0 to 1 makes it quieter. A float literal uses an f suffix, such as 0.5f. This arithmetic exercise returns a number; it does not play sound."
+            }
+          ],
+          "example": "float quieter = 0.8f * 0.5f;\nreturn quieter;",
+          "exercise": {
+            "id": "audio-01-practice",
+            "title": "Build a soundscape and adjust volume",
+            "prompt": "Return volume multiplied by gain. Inputs are between 0 and 1; no clamping is needed.",
+            "starter": "using System;\n\npublic class Program\n{\n    public static float Solution(float volume, float gain)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(0.8f, 0.5f));\n    }\n}\n",
+            "signature": "float Solution(float volume, float gain)",
+            "examples": [
+              {
+                "call": "Solution(0.8f, 0.5f)",
+                "expected": "0.4f"
+              },
+              {
+                "call": "Solution(1f, 0f)",
+                "expected": "0f"
+              },
+              {
+                "call": "Solution(0.6f, 1f)",
+                "expected": "0.6f"
+              }
+            ],
+            "hints": [
+              "Use the multiplication operator, *.",
+              "Return a numeric value rather than writing sound-playing code."
+            ],
+            "file": "exercises/audio-01/Program.cs"
           },
+          "unityTask": [
+            "Complete Create an immersive soundscape in the Unity Learn kitchen scene.",
+            "Use at least one looping sound and compare 2D with 3D spatial behavior.",
+            "Move the listener and explain how distance changes the sound."
+          ]
+        }
+      ],
+      "quiz": {
+        "id": "audio-essentials-checkpoint",
+        "title": "Audio Essentials checkpoint",
+        "passPercent": 75,
+        "questions": [
           {
             "id": "audio",
             "prompt": "Which component emits audio?",
@@ -342,17 +385,96 @@
             "explanation": "AudioSource emits sound; AudioListener receives it."
           },
           {
-            "id": "return",
-            "prompt": "What does return do in the practice method?",
+            "id": "spatial",
+            "prompt": "What should you test for a 3D AudioSource?",
             "choices": [
-              "Prints automatically",
-              "Sends a value back to its caller",
-              "Moves the camera",
-              "Starts Play mode"
+              "How listener distance affects it",
+              "Only the file name",
+              "Whether it draws a sprite"
             ],
-            "answer": 1,
-            "explanation": "Returning a value and printing it are separate operations."
+            "answer": 0,
+            "explanation": "Spatial sound depends on the position of the source and listener."
+          }
+        ]
+      }
+    },
+    {
+      "id": "programming-essentials",
+      "number": 4,
+      "title": "Programming Essentials",
+      "summary": "Unity Essentials mission 4: move a character, rotate an object, and collect it.",
+      "pathway": "Unity Essentials",
+      "pathwayUrl": "https://learn.unity.com/pathway/unity-essentials?version=6",
+      "lessons": [
+        {
+          "id": "essentials-04",
+          "title": "Scripts, methods, and a tiny game loop",
+          "skills": [
+            "methods",
+            "console",
+            "debugging",
+            "delta-time"
+          ],
+          "prerequisites": [
+            "audio-01"
+          ],
+          "sections": [
+            {
+              "heading": "Read the method contract",
+              "text": "public static int Solution(int score, int bonus) names a method, its inputs, and its returned type. The body between braces holds statements. A call such as Solution(10, 5) supplies arguments. A return sends the result back; Console.WriteLine prints it. This console wrapper does not inherit MonoBehaviour."
+            },
+            {
+              "heading": "Understand Unity execution",
+              "text": "A Unity behavior typically inherits MonoBehaviour and is attached to a GameObject. Start runs once before that script’s first Update when it becomes enabled; Update runs each rendered frame while the behavior is active. Debug.Log writes to Unity’s Console. Console.WriteLine is for these standalone exercises. Do not paste the whole console Program into a Unity component."
+            },
+            {
+              "heading": "Find the first useful error",
+              "text": "Read the first compiler error and its line number. A missing semicolon, wrong capitalization, or mismatched return type prevents compilation. A program can also compile but return the wrong value; try another input and explain the calculation. Fix one issue at a time."
+            },
+            {
+              "heading": "Connect time to distance",
+              "text": "A speed of 6 units per second covers 3 units during 0.5 seconds. Multiplying speed by elapsed seconds makes the intended distance depend on elapsed time rather than on a count of frames. In a Unity Update method, Time.deltaTime supplies the elapsed seconds for the frame."
+            }
+          ],
+          "example": "float speed = 6f;\nfloat elapsedSeconds = 0.5f;\nConsole.WriteLine(speed * elapsedSeconds); // 3",
+          "exercise": {
+            "id": "essentials-04-practice",
+            "title": "Calculate a frame’s travel distance",
+            "prompt": "Return speed * elapsedSeconds. speed is units per second and elapsedSeconds is seconds. Both inputs are nonnegative. A paused interval of zero seconds produces zero distance.",
+            "starter": "using System;\n\npublic class Program\n{\n    public static float Solution(float speed, float elapsedSeconds)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(6f, 0.5f));\n    }\n}\n",
+            "signature": "float Solution(float speed, float elapsedSeconds)",
+            "examples": [
+              {
+                "call": "Solution(6f, 0.5f)",
+                "expected": "3f"
+              },
+              {
+                "call": "Solution(4f, 0f)",
+                "expected": "0f"
+              },
+              {
+                "call": "Solution(2.5f, 2f)",
+                "expected": "5f"
+              }
+            ],
+            "hints": [
+              "Keep both quantities in the same unit system.",
+              "Multiply; do not add speed and time."
+            ],
+            "file": "exercises/essentials-04/Program.cs"
           },
+          "unityTask": [
+            "Complete Add a movement script in the supplied living room. Identify Start and Update.",
+            "Create a rotating collectible and test its motion.",
+            "Complete Collect the collectible. Add a Console message to confirm collection, then explain what the message tells you."
+          ]
+        }
+      ],
+      "quiz": {
+        "id": "programming-essentials-checkpoint",
+        "title": "Programming Essentials checkpoint",
+        "passPercent": 75,
+        "questions": [
           {
             "id": "frame",
             "prompt": "Why multiply a speed by elapsed seconds?",
@@ -364,16 +486,228 @@
             ],
             "answer": 0,
             "explanation": "Speed times elapsed time gives distance; it does not force a specific frame rate."
+          },
+          {
+            "id": "update",
+            "prompt": "Which description best fits Update in an active enabled MonoBehaviour?",
+            "choices": [
+              "Once when the project is saved",
+              "Each rendered frame",
+              "Only on a collision",
+              "Only when the script compiles"
+            ],
+            "answer": 1,
+            "explanation": "Update is a per-frame callback. Start is used for initial setup."
+          }
+        ]
+      }
+    },
+    {
+      "id": "2d-essentials",
+      "number": 5,
+      "title": "2D Essentials",
+      "summary": "Unity Essentials mission 5: build a 2D puzzle scene and animate a pet.",
+      "pathway": "Unity Essentials",
+      "pathwayUrl": "https://learn.unity.com/pathway/unity-essentials?version=6",
+      "lessons": [
+        {
+          "id": "2d-01",
+          "title": "Work in a 2D scene",
+          "skills": [
+            "sprites",
+            "2d-physics",
+            "sprite-sheets",
+            "animation"
+          ],
+          "prerequisites": [
+            "essentials-04"
+          ],
+          "sections": [
+            {
+              "heading": "Sprites and the camera",
+              "text": "A SpriteRenderer displays a sprite. In a 2D scene, arrange objects in the XY plane and use an orthographic camera for a flat view. Sorting layers and order control which sprites appear in front; moving farther right changes x, not the sorting layer."
+            },
+            {
+              "heading": "Use the 2D physics family",
+              "text": "Use Rigidbody2D and Collider2D components for 2D physics. They do not interact with the 3D Rigidbody and Collider family. Set up the puzzle room using the companion’s assets and instructions, then test its collisions."
+            },
+            {
+              "heading": "Slice and animate",
+              "text": "The Sprite Editor can divide a sprite sheet into individual sprites. A sequence of frames forms an animation clip; an Animator plays clips according to its controller. Follow the animated-pet activity and inspect the clip frames."
+            },
+            {
+              "heading": "Separate the movement rule",
+              "text": "The console practice uses arithmetic you have already learned. A horizontal offset adds to x; the unchanged y coordinate would still be handled separately in Unity. The console has no SpriteRenderer or Unity scene."
+            }
+          ],
+          "example": "float newX = 3f + 2f;\nreturn newX;",
+          "exercise": {
+            "id": "2d-01-practice",
+            "title": "Work in a 2D scene",
+            "prompt": "Return the new x coordinate after adding offset to x.",
+            "starter": "using System;\n\npublic class Program\n{\n    public static float Solution(float x, float offset)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(3f, 2f));\n    }\n}\n",
+            "signature": "float Solution(float x, float offset)",
+            "examples": [
+              {
+                "call": "Solution(3f, 2f)",
+                "expected": "5f"
+              },
+              {
+                "call": "Solution(-2f, 1f)",
+                "expected": "-1f"
+              },
+              {
+                "call": "Solution(4f, 0f)",
+                "expected": "4f"
+              }
+            ],
+            "hints": [
+              "Use addition.",
+              "Return x + offset."
+            ],
+            "file": "exercises/2d-01/Program.cs"
+          },
+          "unityTask": [
+            "Complete Set up a 2D room and Complete your 2D Puzzle Game in the Unity companion.",
+            "Identify a SpriteRenderer, the camera, and a 2D physics component in your scene.",
+            "Complete Add an animated pet. Explain how frames, the animation clip, and Animator relate."
+          ]
+        }
+      ],
+      "quiz": {
+        "id": "2d-essentials-checkpoint",
+        "title": "2D Essentials checkpoint",
+        "passPercent": 75,
+        "questions": [
+          {
+            "id": "physics2d",
+            "prompt": "Which pair belongs to the 2D physics system?",
+            "choices": [
+              "Rigidbody and BoxCollider",
+              "Rigidbody2D and BoxCollider2D",
+              "AudioSource and AudioListener"
+            ],
+            "answer": 1,
+            "explanation": "Use the 2D component family together for 2D physics."
+          },
+          {
+            "id": "frames",
+            "prompt": "What does a sprite animation clip contain?",
+            "choices": [
+              "A sequence of visual frames",
+              "Only a web address",
+              "Only scene lighting"
+            ],
+            "answer": 0,
+            "explanation": "A sequence of sprite frames changes the displayed image over time."
+          }
+        ]
+      }
+    },
+    {
+      "id": "publishing-essentials",
+      "number": 6,
+      "title": "Publishing Essentials",
+      "summary": "Unity Essentials mission 6: build, test, document, and share your portfolio project.",
+      "pathway": "Unity Essentials",
+      "pathwayUrl": "https://learn.unity.com/pathway/unity-essentials?version=6",
+      "lessons": [
+        {
+          "id": "publishing-01",
+          "title": "Build, test, and share a project",
+          "skills": [
+            "build-scenes",
+            "web-build",
+            "portfolio",
+            "string-concatenation"
+          ],
+          "prerequisites": [
+            "2d-01"
+          ],
+          "sections": [
+            {
+              "heading": "A build is a separate test",
+              "text": "Saving a scene does not publish a game. A build packages the scenes and assets for a target platform. Include the intended scenes in the build list and test the starting scene. Follow the Unity companion for the build UI in your Editor version."
+            },
+            {
+              "heading": "Test the web build",
+              "text": "Use the Web platform target (called WebGL in older versions). Test the built game through a web server or supported hosting service rather than opening its HTML as a local file. Check loading, controls, audio, and scene transitions. Editor success alone is not a build test."
+            },
+            {
+              "heading": "Prepare portfolio evidence",
+              "text": "Complete the bonus scene, capture a short video, and share the project following classroom directions. Include controls, a description of what you made, and asset credits. Test the shared link on another device."
+            },
+            {
+              "heading": "Create a short label",
+              "text": "In C#, + joins two strings. For example, \"Game: \" + title produces a label. This console exercise practices a readable project label; it does not build or upload a Unity project."
+            }
+          ],
+          "example": "string label = \"Project: \" + \"Mural\";\nreturn label;",
+          "exercise": {
+            "id": "publishing-01-practice",
+            "title": "Build, test, and share a project",
+            "prompt": "Return the text \"Project: \" followed by title. Include the space after the colon.",
+            "starter": "using System;\n\npublic class Program\n{\n    public static string Solution(string title)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(\"Room Explorer\"));\n    }\n}\n",
+            "signature": "string Solution(string title)",
+            "examples": [
+              {
+                "call": "Solution(\"Room Explorer\")",
+                "expected": "\"Project: Room Explorer\""
+              },
+              {
+                "call": "Solution(\"Puzzle\")",
+                "expected": "\"Project: Puzzle\""
+              }
+            ],
+            "hints": [
+              "Use + to join the prefix and title.",
+              "Return \"Project: \" + title."
+            ],
+            "file": "exercises/publishing-01/Program.cs"
+          },
+          "unityTask": [
+            "Complete Build your portfolio project and Publish to WebGL using the companion instructions for your Editor.",
+            "Complete the bonus-scene challenge and capture a video showing your game.",
+            "Share through the approved classroom destination. Verify the link, controls, and credits on another device."
+          ]
+        }
+      ],
+      "quiz": {
+        "id": "publishing-essentials-checkpoint",
+        "title": "Publishing Essentials checkpoint",
+        "passPercent": 75,
+        "questions": [
+          {
+            "id": "buildtest",
+            "prompt": "What is a necessary test before sharing a web build?",
+            "choices": [
+              "Only save the scene",
+              "Run the built version through supported hosting",
+              "Rename every script"
+            ],
+            "answer": 1,
+            "explanation": "The packaged game must be tested separately from Editor Play mode."
+          },
+          {
+            "id": "scenes",
+            "prompt": "What should you check if your build opens the wrong scene?",
+            "choices": [
+              "The included scenes and starting scene",
+              "The keyboard brand",
+              "Only the project folder name"
+            ],
+            "answer": 0,
+            "explanation": "The build must include the intended scenes and start with the correct one."
           }
         ]
       }
     },
     {
       "id": "player-control",
-      "number": 2,
+      "number": 7,
       "title": "Junior Programmer: player control & game rules",
       "summary": "Translate movement, boundaries, spawning permission, and life changes into testable C#.",
-      "pathway": "Junior Programmer \u00b7 Player Control / Basic Gameplay",
+      "pathway": "Junior Programmer · Player Control / Basic Gameplay",
       "pathwayUrl": "https://learn.unity.com/pathway/junior-programmer/unit/player-control?version=6.3",
       "lessons": [
         {
@@ -384,7 +718,7 @@
             "frame-movement"
           ],
           "prerequisites": [
-            "essentials-04"
+            "publishing-01"
           ],
           "sections": [
             {
@@ -735,5 +1069,137 @@
         ]
       }
     }
-  ]
+  ],
+  "essentialsOutline": {
+    "sourceUrl": "https://learn.unity.com/pathway/unity-essentials?version=6",
+    "sourceDescription": "Unity Essentials 6 educator Common Cartridge (2025-10-23), retrieved 2026-10-23",
+    "missions": [
+      {
+        "title": "Unity Essentials – Mission 1: Editor Essentials",
+        "tutorials": [
+          {
+            "title": "Unity Essentials: Install Unity"
+          },
+          {
+            "title": "Open the Unity Essentials project"
+          },
+          {
+            "title": "Explore the Editor Interface"
+          },
+          {
+            "title": "Master 3D scene navigation"
+          },
+          {
+            "title": "Pass the Scene view flying test"
+          },
+          {
+            "title": "Design a mural in the Scene view"
+          },
+          {
+            "title": "Editor Essentials: More things to try"
+          },
+          {
+            "title": "Unity Essentials: Editor Essentials Quiz"
+          }
+        ]
+      },
+      {
+        "title": "Unity Essentials – Mission 2: 3D Essentials",
+        "tutorials": [
+          {
+            "title": "Add furniture to the kid’s room"
+          },
+          {
+            "title": "Make a bouncy ball"
+          },
+          {
+            "title": "Make a tower of prefab blocks"
+          },
+          {
+            "title": "Adjust the lights, background, and camera angle"
+          },
+          {
+            "title": "3D Essentials: More things to try"
+          },
+          {
+            "title": "Unity Essentials: 3D Essentials Quiz"
+          }
+        ]
+      },
+      {
+        "title": "Unity Essentials – Mission 3: Audio Essentials",
+        "tutorials": [
+          {
+            "title": "Create an immersive soundscape"
+          },
+          {
+            "title": "Audio Essentials: More things to try"
+          },
+          {
+            "title": "Unity Essentials: Audio Essentials Quiz"
+          }
+        ]
+      },
+      {
+        "title": "Unity Essentials – Mission 4: Programming Essentials",
+        "tutorials": [
+          {
+            "title": "Add a movement script"
+          },
+          {
+            "title": "Create a rotating collectible"
+          },
+          {
+            "title": "Collect the collectible"
+          },
+          {
+            "title": "Programming Essentials: More things to try"
+          },
+          {
+            "title": "Unity Essentials: Programming Essentials Quiz"
+          }
+        ]
+      },
+      {
+        "title": "Unity Essentials – Mission 5: 2D Essentials",
+        "tutorials": [
+          {
+            "title": "Set up a 2D room"
+          },
+          {
+            "title": "Complete your 2D Puzzle Game"
+          },
+          {
+            "title": "Add an animated pet"
+          },
+          {
+            "title": "2D Essentials: More things to try"
+          },
+          {
+            "title": "Unity Essentials: 2D Essentials Quiz"
+          }
+        ]
+      },
+      {
+        "title": "Unity Essentials – Mission 6: Publishing Essentials",
+        "tutorials": [
+          {
+            "title": "Build your portfolio project"
+          },
+          {
+            "title": "Publish to WebGL"
+          },
+          {
+            "title": "Challenge: Add a bonus scene"
+          },
+          {
+            "title": "Capture a video of your project"
+          },
+          {
+            "title": "Share your project"
+          }
+        ]
+      }
+    ]
+  }
 }
