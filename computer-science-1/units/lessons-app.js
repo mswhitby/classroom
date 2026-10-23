@@ -81,7 +81,7 @@ function select(id){
   targets.append(a);
  }
 
- feedback(read("pass:"+id)==="true"?"You passed the public examples on this device.":"Use Run and Check to practice. Official submission happens on GitHub.",read("pass:"+id)==="true"?"good":"");
+ feedback(read("pass:"+id)==="true"?"You passed the public examples on this device.":"Use Run to experiment and Check answer to test the published examples.",read("pass:"+id)==="true"?"good":"");
  navigation();try{history.replaceState(null,"","#"+encodeURIComponent(id))}catch{}
 }
 function stop(){
@@ -186,7 +186,7 @@ async function checkAnswer(){
   $("check-results").textContent=lines.join("\n").trim();
   const passed=passes===cases.length;
   if(passed)write("pass:"+l.id,"true");else erase("pass:"+l.id);
-  feedback(passes+"/"+cases.length+" public examples passed. "+(passed?"Good work! ":"Revise and try again. ")+"GitHub submission remains separate.",passed?"good":"bad");
+  feedback(passes+"/"+cases.length+" public examples passed. "+(passed?"Good work! ":"Revise and try again. ")+"Try additional inputs to explore boundary cases.",passed?"good":"bad");
   status("Python ready");navigation();
  }catch(err){
   $("check-results").textContent=String(err?.message||err);

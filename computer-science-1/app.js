@@ -133,7 +133,7 @@ async function execute(check){
          inform("The output matches! Add your own short comment explaining this program, then check again.","bad");
        }else{
          write("pass:"+lesson.id,"true");
-         inform("✓ Correct output and a comment are present. Great work! Save or copy your code for GitHub submission.","good");
+         inform("✓ Correct output and a comment are present. Great work! Save or copy your code to keep a backup.","good");
        }
      }else{
        write("pass:"+lesson.id,"true");

@@ -63,3 +63,11 @@
 :root[data-theme] .sr-only{color:inherit}
 @media(prefers-reduced-motion:reduce){:root[data-theme] *{transition:none!important;scroll-behavior:auto!important}}
 @media(max-width:750px){:root[data-theme] .site-header nav{gap:3px}:root[data-theme] .site-header nav>a{padding:8px 12px}:root[data-theme] .top-right{flex-wrap:wrap}}
+/* Context-specific type scale and surface hierarchy for the Python workbench. */
+:root[data-theme="dark"]{--panel:var(--md-sys-color-surface-container-low);--terminal:var(--md-sys-color-surface-container-high)}
+:root[data-theme] .sidebar h1{font-size:24px;line-height:1.25}
+:root[data-theme] .editor-header,:root[data-theme] .terminal-head,:root[data-theme] .panel-heading{background:var(--md-sys-color-surface-container);color:var(--ink);border-color:var(--line)}
+:root[data-theme] .editor-header span,:root[data-theme] .terminal-head strong,:root[data-theme] .terminal-head span,:root[data-theme] .panel-heading h3{color:var(--ink)}
+:root[data-theme] #lesson-example{background:var(--terminal);color:var(--terminal-ink);border-color:var(--line)}
+:root[data-theme] .logo-icon,:root[data-theme] .points{background:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container)}
+:root[data-theme] .small,:root[data-theme] .list-head,:root[data-theme] .panel-heading span,:root[data-theme] .privacy,:root[data-theme] .subtitle{color:var(--muted)}
