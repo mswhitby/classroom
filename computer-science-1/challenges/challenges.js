@@ -122,17 +122,27 @@ function select(id){
  $("output").textContent="Run an example to see the function's return value.";
  $("github-question").href="https://github.com/mswhitby/python_problems_20261026/tree/main/problems/"+encodeURIComponent(id);
  const area=$("related-lessons");area.replaceChildren();
- const ids=learningMap.challengeToLessons?.[id]||[];
+ const rule=learningMap.requirements?.[id];
  const info=document.createElement("p");
- info.textContent=(learningMap.advancedNotYetTaught||[]).includes(id)
- ? "These lessons explain useful foundations. More advanced strings, lists, dictionaries, or algorithms may be needed."
- : "Study these lessons if you need a refresher before coding.";
+ if(!rule){
+  info.textContent="Curriculum prerequisites have not been reviewed for this challenge yet.";
+ }else if(!rule.ready){
+  info.textContent="Advanced challenge: not all required topics are taught in Units 01–06. Browse freely, but this question is not recommended as independent practice yet.";
+ }else{
+  info.textContent="These lessons provide the full foundational skills needed for this challenge:";
+ }
  area.append(info);
- for(const lessonId of ids){
-  const link=document.createElement("a");link.href="../units/#"+encodeURIComponent(lessonId);
-  const label=lessonId.split("/")[1].replace(/^\d+-/,"").replace(/-/g," ");
-  link.textContent="Unit "+Number(lessonId.slice(0,2))+" · "+label.replace(/\b\w/g,c=>c.toUpperCase())+" →";
-  area.append(link);
+ if(rule?.ready){
+  for(const lessonId of rule.lessons){
+   const link=document.createElement("a");link.href="../units/#"+encodeURIComponent(lessonId);
+   const label=lessonId.split("/")[1].replace(/^\d+-/,"").replace(/-/g," ");
+   link.textContent="Unit "+Number(lessonId.slice(0,2))+" · "+label.replace(/\b\w/g,c=>c.toUpperCase())+" →";
+   area.append(link);
+  }
+ }else if(rule?.skills?.length){
+  const missing=document.createElement("p");
+  missing.textContent="Still to learn: "+rule.skills.join(", ")+".";
+  area.append(missing);
  }
  $("skills-button").hidden=!current.skills;
  $("skills-section").hidden=true;
