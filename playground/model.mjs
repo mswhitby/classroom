@@ -4,7 +4,7 @@ export function validateCourse(course){
  for(const unit of course.units){
   if(!unit.id||!Array.isArray(unit.lessons)||!unit.lessons.length)throw Error('A unit has no lessons.');
   for(const lesson of unit.lessons){
-   if(seen.has(lesson.id)||!lesson.id||!lesson.title||!Array.isArray(lesson.sections)||!Array.isArray(lesson.unityTask))throw Error('Invalid lesson.');
+   if(seen.has(lesson.id)||!lesson.id||!lesson.title||!lesson.markdown?.endsWith('.md')||!Array.isArray(lesson.unityTask))throw Error('Invalid lesson.');
    if(!Array.isArray(lesson.prerequisites)||lesson.prerequisites.some(id=>!seen.has(id)))throw Error('A lesson requires an untaught prerequisite.');
    seen.add(lesson.id);
    const e=lesson.exercise;if(!e?.id||activities.has(e.id)||!e.starter||!Array.isArray(e.examples)||!e.examples.length)throw Error('Invalid C# exercise.');if(!/^[A-Z][A-Za-z0-9]*$/.test(e.functionName||'')||!e.signature.includes(e.functionName+'(')||e.examples.some(c=>!c.call.startsWith(e.functionName+'(')))throw Error('Exercise function names disagree.');activities.add(e.id);

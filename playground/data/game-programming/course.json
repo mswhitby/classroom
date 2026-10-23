@@ -5,7 +5,7 @@
   "language": "C#",
   "description": "Build in Unity. Understand the logic. Test your ideas.",
   "sourceRepository": "mswhitby/game-programming",
-  "alignmentNote": "The six Essentials units follow Unity’s educator outline in mission order. Each is a classroom companion with original notes, a small C# exercise, Unity activities, and a checkpoint—not a replacement for every Unity Learn tutorial. Junior Programmer follows Essentials. Console exercises run separately from Unity scene scripts.",
+  "alignmentNote": "The six Essentials units follow Unity\u2019s educator outline in mission order. Each is a classroom companion with original notes, a small C# exercise, Unity activities, and a checkpoint\u2014not a replacement for every Unity Learn tutorial. Junior Programmer follows Essentials. Console exercises run separately from Unity scene scripts.",
   "sources": [
     {
       "title": "Unity Essentials",
@@ -43,25 +43,6 @@
             "return"
           ],
           "prerequisites": [],
-          "sections": [
-            {
-              "heading": "Open the Essentials project",
-              "text": "Follow Unity Learn’s installation and project-opening tutorials before the Editor activities. Open the supplied Essentials project in the supported Editor version. In the Scene view, practice selecting, orbiting, panning, and zooming before arranging the mural. Save your work outside Play mode."
-            },
-            {
-              "heading": "Scene, Game, Hierarchy, Inspector",
-              "text": "The Scene view is your workspace for arranging a world. The Game view shows the view rendered by the game cameras. The Hierarchy lists GameObjects in the open scene; the Inspector shows the selected object’s components and settings. The Project window contains assets saved in the project."
-            },
-            {
-              "heading": "Play mode is an experiment",
-              "text": "Save your scene, enter Play mode, change a value, then stop. Ordinary scene changes made during Play mode are not kept when you exit it. Make lasting edits outside Play mode. The Console shows messages, warnings, and errors; fix compilation errors before testing behavior."
-            },
-            {
-              "heading": "Your first C# value",
-              "text": "A string is text inside double quotation marks. A declaration such as string label = \"Arena\"; stores a value in a named variable. C# statements usually end with a semicolon. In the provided GetArenaName method, return hands one value back to the caller. Main is the console entry point; Console.WriteLine displays the returned value. Keep the provided class and method wrappers for now."
-            }
-          ],
-          "example": "string label = \"Practice room\";\nreturn label;",
           "exercise": {
             "id": "essentials-01-practice",
             "title": "Name the practice arena",
@@ -86,7 +67,8 @@
             "Complete the Scene-view navigation and flying-test activities.",
             "Design the mural in the supplied scene. Save, enter Play mode, then stop and describe which edits persisted."
           ],
-          "alignment": "Editor Essentials"
+          "alignment": "Editor Essentials",
+          "markdown": "lessons/essentials-01.md"
         }
       ],
       "quiz": {
@@ -165,21 +147,6 @@
           "prerequisites": [
             "essentials-01"
           ],
-          "sections": [
-            {
-              "heading": "Objects are built from components",
-              "text": "A GameObject is a container. Its components provide behavior: Transform stores position, rotation, and scale; a Renderer displays geometry; a Collider defines a collision shape; a Rigidbody participates in physics simulation. A Collider alone does not make an object fall under gravity. A script can also be a component."
-            },
-            {
-              "heading": "Choose a type for the job",
-              "text": "Use int for whole-number counts, float for decimal game quantities, bool for true or false, and string for text. Write a float literal with f, such as 2.5f. Assignment uses = and updates a variable. A method’s declared return type must match the value returned."
-            },
-            {
-              "heading": "Move a coordinate in code",
-              "text": "Addition can update a coordinate: float nextX = x + distance;. x and distance are parameters supplied when the method is called. Their values can change for each call; use the parameters instead of hard-coding an example answer. In Unity the Transform has three axes; this exercise isolates one axis as a number."
-            }
-          ],
-          "example": "float x = 2f;\nx = x + 1.5f;\nConsole.WriteLine(x); // 3.5",
           "exercise": {
             "id": "essentials-02-practice",
             "title": "Move a practice marker",
@@ -208,10 +175,11 @@
             "functionName": "MoveAlongXAxis"
           },
           "unityTask": [
-            "Arrange furniture in the supplied kid’s bedroom. Adjust Transform values outside Play mode.",
+            "Arrange furniture in the supplied kid\u2019s bedroom. Adjust Transform values outside Play mode.",
             "Create a ball with a Collider and Rigidbody; test its bounce with a physics material.",
-            "Create a prefab block and build a tower from instances. Adjust the room’s lighting, background, and camera, then save and test."
-          ]
+            "Create a prefab block and build a tower from instances. Adjust the room\u2019s lighting, background, and camera, then save and test."
+          ],
+          "markdown": "lessons/essentials-02.md"
         },
         {
           "id": "essentials-03",
@@ -225,17 +193,6 @@
           "prerequisites": [
             "essentials-02"
           ],
-          "sections": [
-            {
-              "heading": "Asset versus instance",
-              "text": "A prefab asset is a reusable template in the Project window. Dragging it into a scene creates an instance in the Hierarchy. An instance can have overrides; editing one instance does not automatically change every other copy. Apply overrides deliberately when you intend to update the asset."
-            },
-            {
-              "heading": "Explain the scoring formula",
-              "text": "Multiplication happens before addition in score + coins * pointsPerCoin. The three int parameters let the same method score many situations. The method returns the new total; returning a value is different from displaying it. Main prints the returned value for testing."
-            }
-          ],
-          "example": "int score = 10;\nint earned = 3 * 5;\nConsole.WriteLine(score + earned); // 25",
           "exercise": {
             "id": "essentials-03-practice",
             "title": "Score a pickup batch",
@@ -267,7 +224,8 @@
             "Compare a prefab asset with two instances in the scene.",
             "Change an instance, then explain what changes when you edit the prefab asset instead.",
             "Run the score rule for two different block counts and record the returned values."
-          ]
+          ],
+          "markdown": "lessons/essentials-03.md"
         }
       ],
       "quiz": {
@@ -322,21 +280,6 @@
           "prerequisites": [
             "essentials-03"
           ],
-          "sections": [
-            {
-              "heading": "Source and listener",
-              "text": "An AudioSource emits a clip; an AudioListener receives sound, commonly on the main camera. Import a clip, assign it to a source, and test Play On Awake and Loop deliberately. Avoid multiple active listeners."
-            },
-            {
-              "heading": "2D and 3D sound",
-              "text": "Spatial Blend controls whether sound behaves as 2D audio or depends on position in 3D. With 3D sound, test distance and volume while moving the listener. Use layered sounds in the kitchen scene, and keep levels comfortable."
-            },
-            {
-              "heading": "Scale a numeric value",
-              "text": "Volume is a value from 0 to 1. For this console exercise, inputs already lie in that range. Multiplying volume by a gain from 0 to 1 makes it quieter. A float literal uses an f suffix, such as 0.5f. This arithmetic exercise returns a number; it does not play sound."
-            }
-          ],
-          "example": "float quieter = 0.8f * 0.5f;\nreturn quieter;",
           "exercise": {
             "id": "audio-01-practice",
             "title": "Build a soundscape and adjust volume",
@@ -368,7 +311,8 @@
             "Complete Create an immersive soundscape in the Unity Learn kitchen scene.",
             "Use at least one looping sound and compare 2D with 3D spatial behavior.",
             "Move the listener and explain how distance changes the sound."
-          ]
+          ],
+          "markdown": "lessons/audio-01.md"
         }
       ],
       "quiz": {
@@ -422,28 +366,9 @@
           "prerequisites": [
             "audio-01"
           ],
-          "sections": [
-            {
-              "heading": "Read the method contract",
-              "text": "public static int CalculateTravelDistance(int score, int bonus) names a method, its inputs, and its returned type. The body between braces holds statements. A call such as CalculateTravelDistance(10, 5) supplies arguments. A return sends the result back; Console.WriteLine prints it. This console wrapper does not inherit MonoBehaviour."
-            },
-            {
-              "heading": "Understand Unity execution",
-              "text": "A Unity behavior typically inherits MonoBehaviour and is attached to a GameObject. Start runs once before that script’s first Update when it becomes enabled; Update runs each rendered frame while the behavior is active. Debug.Log writes to Unity’s Console. Console.WriteLine is for these standalone exercises. Do not paste the whole console Program into a Unity component."
-            },
-            {
-              "heading": "Find the first useful error",
-              "text": "Read the first compiler error and its line number. A missing semicolon, wrong capitalization, or mismatched return type prevents compilation. A program can also compile but return the wrong value; try another input and explain the calculation. Fix one issue at a time."
-            },
-            {
-              "heading": "Connect time to distance",
-              "text": "A speed of 6 units per second covers 3 units during 0.5 seconds. Multiplying speed by elapsed seconds makes the intended distance depend on elapsed time rather than on a count of frames. In a Unity Update method, Time.deltaTime supplies the elapsed seconds for the frame."
-            }
-          ],
-          "example": "float speed = 6f;\nfloat elapsedSeconds = 0.5f;\nConsole.WriteLine(speed * elapsedSeconds); // 3",
           "exercise": {
             "id": "essentials-04-practice",
-            "title": "Calculate a frame’s travel distance",
+            "title": "Calculate a frame\u2019s travel distance",
             "prompt": "Return speed * elapsedSeconds. speed is units per second and elapsedSeconds is seconds. Both inputs are nonnegative. A paused interval of zero seconds produces zero distance.",
             "starter": "using System;\n\npublic class Program\n{\n    public static float CalculateTravelDistance(float speed, float elapsedSeconds)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CalculateTravelDistance(6f, 0.5f));\n    }\n}\n",
             "signature": "float CalculateTravelDistance(float speed, float elapsedSeconds)",
@@ -472,7 +397,8 @@
             "Complete Add a movement script in the supplied living room. Identify Start and Update.",
             "Create a rotating collectible and test its motion.",
             "Complete Collect the collectible. Add a Console message to confirm collection, then explain what the message tells you."
-          ]
+          ],
+          "markdown": "lessons/essentials-04.md"
         }
       ],
       "quiz": {
@@ -527,25 +453,6 @@
           "prerequisites": [
             "essentials-04"
           ],
-          "sections": [
-            {
-              "heading": "Sprites and the camera",
-              "text": "A SpriteRenderer displays a sprite. In a 2D scene, arrange objects in the XY plane and use an orthographic camera for a flat view. Sorting layers and order control which sprites appear in front; moving farther right changes x, not the sorting layer."
-            },
-            {
-              "heading": "Use the 2D physics family",
-              "text": "Use Rigidbody2D and Collider2D components for 2D physics. They do not interact with the 3D Rigidbody and Collider family. Set up the puzzle room using the companion’s assets and instructions, then test its collisions."
-            },
-            {
-              "heading": "Slice and animate",
-              "text": "The Sprite Editor can divide a sprite sheet into individual sprites. A sequence of frames forms an animation clip; an Animator plays clips according to its controller. Follow the animated-pet activity and inspect the clip frames."
-            },
-            {
-              "heading": "Separate the movement rule",
-              "text": "The console practice uses arithmetic you have already learned. A horizontal offset adds to x; the unchanged y coordinate would still be handled separately in Unity. The console has no SpriteRenderer or Unity scene."
-            }
-          ],
-          "example": "float newX = 3f + 2f;\nreturn newX;",
           "exercise": {
             "id": "2d-01-practice",
             "title": "Work in a 2D scene",
@@ -577,7 +484,8 @@
             "Complete Set up a 2D room and Complete your 2D Puzzle Game in the Unity companion.",
             "Identify a SpriteRenderer, the camera, and a 2D physics component in your scene.",
             "Complete Add an animated pet. Explain how frames, the animation clip, and Animator relate."
-          ]
+          ],
+          "markdown": "lessons/2d-01.md"
         }
       ],
       "quiz": {
@@ -630,25 +538,6 @@
           "prerequisites": [
             "2d-01"
           ],
-          "sections": [
-            {
-              "heading": "A build is a separate test",
-              "text": "Saving a scene does not publish a game. A build packages the scenes and assets for a target platform. Include the intended scenes in the build list and test the starting scene. Follow the Unity companion for the build UI in your Editor version."
-            },
-            {
-              "heading": "Test the web build",
-              "text": "Use the Web platform target (called WebGL in older versions). Test the built game through a web server or supported hosting service rather than opening its HTML as a local file. Check loading, controls, audio, and scene transitions. Editor success alone is not a build test."
-            },
-            {
-              "heading": "Prepare portfolio evidence",
-              "text": "Complete the bonus scene, capture a short video, and share the project following classroom directions. Include controls, a description of what you made, and asset credits. Test the shared link on another device."
-            },
-            {
-              "heading": "Create a short label",
-              "text": "In C#, + joins two strings. For example, \"Game: \" + title produces a label. This console exercise practices a readable project label; it does not build or upload a Unity project."
-            }
-          ],
-          "example": "string label = \"Project: \" + \"Mural\";\nreturn label;",
           "exercise": {
             "id": "publishing-01-practice",
             "title": "Build, test, and share a project",
@@ -676,7 +565,8 @@
             "Complete Build your portfolio project and Publish to WebGL using the companion instructions for your Editor.",
             "Complete the bonus-scene challenge and capture a video showing your game.",
             "Share through the approved classroom destination. Verify the link, controls, and credits on another device."
-          ]
+          ],
+          "markdown": "lessons/publishing-01.md"
         }
       ],
       "quiz": {
@@ -714,7 +604,7 @@
       "number": 7,
       "title": "Junior Programmer: player control & game rules",
       "summary": "Translate movement, boundaries, spawning permission, and life changes into testable C#.",
-      "pathway": "Junior Programmer · Player Control / Basic Gameplay",
+      "pathway": "Junior Programmer \u00b7 Player Control / Basic Gameplay",
       "pathwayUrl": "https://learn.unity.com/pathway/junior-programmer/unit/player-control?version=6.3",
       "lessons": [
         {
@@ -727,21 +617,6 @@
           "prerequisites": [
             "publishing-01"
           ],
-          "sections": [
-            {
-              "heading": "Connect to Player Control",
-              "text": "Follow the Player Control mission in Unity Learn. Keep using the input approach shown by your assigned project: input APIs differ between project versions and input-system settings. The logic here accepts an already-read input value so the calculation remains the same."
-            },
-            {
-              "heading": "Use a signed input",
-              "text": "An input of -1 means full movement in one direction, 0 means no movement, and 1 means full movement in the other. A value such as 0.5 represents partial input. Compute input * speed * elapsedSeconds, then add that displacement to the current position. Use float values and keep the f suffix on literal arguments."
-            },
-            {
-              "heading": "Predict before you test",
-              "text": "If x is 5, input is -1, speed is 4, and time is 0.5, displacement is -2 and the next position is 3. This method models horizontal movement only. It does not set a Transform or apply a Rigidbody force."
-            }
-          ],
-          "example": "float x = 5f;\nfloat displacement = -1f * 4f * 0.5f;\nConsole.WriteLine(x + displacement); // 3",
           "exercise": {
             "id": "player-01-practice",
             "title": "Calculate the next player position",
@@ -773,7 +648,8 @@
             "Follow Player Control and identify the variable controlling speed.",
             "Predict the effect of doubling speed, test it, and restore the original value.",
             "Explain why a camera needs a suitable position and viewing direction to show the player."
-          ]
+          ],
+          "markdown": "lessons/player-01.md"
         },
         {
           "id": "player-02",
@@ -786,21 +662,6 @@
           "prerequisites": [
             "player-01"
           ],
-          "sections": [
-            {
-              "heading": "A condition is a question",
-              "text": "The expressions x < min and x > max produce bool values. Use an if statement followed by a condition in parentheses and a body in braces. Return immediately when a condition identifies the required answer. == compares equality; = assigns a value."
-            },
-            {
-              "heading": "Clamp means stop at the edge",
-              "text": "Clamping a position returns min when x is below min, max when x is above max, and x otherwise. At exactly min or max the value is already valid. Assume min <= max. This differs from wrapping to the other side or freezing before movement is calculated."
-            },
-            {
-              "heading": "Test the boundaries",
-              "text": "Try below, inside, above, and exactly on an edge. Passing a normal input is not enough to show that boundary logic is correct. This lesson adds if statements to the numeric work already taught; no arrays or loops are required."
-            }
-          ],
-          "example": "if (temperature < 0f)\n{\n    return 0f;\n}\nreturn temperature;",
           "exercise": {
             "id": "player-02-practice",
             "title": "Clamp a player position",
@@ -836,7 +697,8 @@
             "Add or locate the boundary checks in your Player Control project.",
             "Test both edges and describe whether the project clamps, freezes, or removes an object.",
             "Record a bug, the input that reveals it, and the change that fixes it."
-          ]
+          ],
+          "markdown": "lessons/player-02.md"
         },
         {
           "id": "gameplay-01",
@@ -851,21 +713,6 @@
           "prerequisites": [
             "player-02"
           ],
-          "sections": [
-            {
-              "heading": "Connect to Basic Gameplay",
-              "text": "Follow the Basic Gameplay mission after Player Control. It introduces projectiles, prefab spawning, and collision decisions. A prefab is a template; Instantiate creates an instance at runtime. The C# exercise isolates the decision about whether spawning is allowed."
-            },
-            {
-              "heading": "Combine conditions",
-              "text": "Use && when both conditions must be true, || when either is enough, and ! to reverse a bool. remaining <= 0f includes exactly zero. A rule can be written as a bool expression and returned directly. Parentheses make the intended grouping clear."
-            },
-            {
-              "heading": "Keep one rule in one method",
-              "text": "A shot is allowed only when the fire button is pressed, the game is not over, and remaining cooldown is zero or below. The method returns permission; it does not spawn a projectile or reset the timer. Keeping the decision separate makes it easier to test."
-            }
-          ],
-          "example": "bool canMove = hasControl && !isPaused;\nreturn canMove;",
           "exercise": {
             "id": "gameplay-01-practice",
             "title": "Decide whether a player can fire",
@@ -905,7 +752,8 @@
             "In Basic Gameplay, identify the prefab and the code that creates an instance.",
             "Explain why spawning every Update without a gate would create many projectiles.",
             "Describe how you would prevent shooting after game over."
-          ]
+          ],
+          "markdown": "lessons/gameplay-01.md"
         },
         {
           "id": "gameplay-02",
@@ -919,25 +767,6 @@
           "prerequisites": [
             "gameplay-01"
           ],
-          "sections": [
-            {
-              "heading": "Know which event you are expecting",
-              "text": "A Collider defines a shape. For typical 3D trigger events, colliders are involved, one is set as a trigger, and at least one object has an appropriate Rigidbody; layer settings and object state also affect whether events occur. A trigger detects overlap without physically blocking the other object. 2D physics uses its own components and callbacks."
-            },
-            {
-              "heading": "Update lives once for one event",
-              "text": "Our exercise receives hit as an already-detected event. Start with nonnegative lives. If hit is true and lives > 0, return lives - 1; otherwise return lives unchanged. Combine conditions with &&. This is a pure rule: it does not configure physics or detect a collision."
-            },
-            {
-              "heading": "Separate a rule from its side effects",
-              "text": "After receiving the new life count, Unity code could update UI and end the game when the count is zero. Keep these actions separate from the calculation. When a life disappears twice, inspect how many times the event handler ran before changing the subtraction."
-            },
-            {
-              "heading": "Complete the small prototype",
-              "text": "Finish the Basic Gameplay practice assigned by your teacher. Demonstrate a moving player, a spawned prefab, an event that updates state, and a meaningful boundary. Explain a bug you found and how your test reveals that it is fixed."
-            }
-          ],
-          "example": "if (hit && lives > 0)\n{\n    return lives - 1;\n}\nreturn lives;",
           "exercise": {
             "id": "gameplay-02-practice",
             "title": "Update remaining lives",
@@ -973,7 +802,8 @@
             "Demonstrate one collision or trigger interaction in your prototype.",
             "Explain whether that interaction should physically block the other object.",
             "Test zero lives and explain how gameplay stops or changes state."
-          ]
+          ],
+          "markdown": "lessons/gameplay-02.md"
         }
       ],
       "quiz": {
@@ -1086,7 +916,7 @@
     "sourceDescription": "Unity Essentials 6 educator Common Cartridge (2025-10-23), retrieved 2026-10-23",
     "missions": [
       {
-        "title": "Unity Essentials – Mission 1: Editor Essentials",
+        "title": "Unity Essentials \u2013 Mission 1: Editor Essentials",
         "tutorials": [
           {
             "title": "Unity Essentials: Install Unity"
@@ -1115,10 +945,10 @@
         ]
       },
       {
-        "title": "Unity Essentials – Mission 2: 3D Essentials",
+        "title": "Unity Essentials \u2013 Mission 2: 3D Essentials",
         "tutorials": [
           {
-            "title": "Add furniture to the kid’s room"
+            "title": "Add furniture to the kid\u2019s room"
           },
           {
             "title": "Make a bouncy ball"
@@ -1138,7 +968,7 @@
         ]
       },
       {
-        "title": "Unity Essentials – Mission 3: Audio Essentials",
+        "title": "Unity Essentials \u2013 Mission 3: Audio Essentials",
         "tutorials": [
           {
             "title": "Create an immersive soundscape"
@@ -1152,7 +982,7 @@
         ]
       },
       {
-        "title": "Unity Essentials – Mission 4: Programming Essentials",
+        "title": "Unity Essentials \u2013 Mission 4: Programming Essentials",
         "tutorials": [
           {
             "title": "Add a movement script"
@@ -1172,7 +1002,7 @@
         ]
       },
       {
-        "title": "Unity Essentials – Mission 5: 2D Essentials",
+        "title": "Unity Essentials \u2013 Mission 5: 2D Essentials",
         "tutorials": [
           {
             "title": "Set up a 2D room"
@@ -1192,7 +1022,7 @@
         ]
       },
       {
-        "title": "Unity Essentials – Mission 6: Publishing Essentials",
+        "title": "Unity Essentials \u2013 Mission 6: Publishing Essentials",
         "tutorials": [
           {
             "title": "Build your portfolio project"

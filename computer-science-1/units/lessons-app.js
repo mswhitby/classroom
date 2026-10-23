@@ -39,10 +39,16 @@ function select(id){
  $("unit").value=String(l.unit);
  $("unit-label").textContent="UNIT "+String(l.unit).padStart(2,"0")+" · LESSON "+l.lesson+" OF 4";
  $("title").textContent=l.title;$("points").textContent=l.points+" pts";
- $("summary").innerHTML=inline(l.summary);$("lead").innerHTML=prose(l.summary);
- $("lesson-example").textContent=l.exampleCode;
- $("walkthrough").innerHTML=inline(l.explanation);$("reflection").innerHTML=inline(l.reflection);
- $("pitfall").innerHTML=inline(l.pitfall);$("mission").innerHTML=prose(l.mission);
+ $("summary").innerHTML=inline(l.summary);
+ const body=$("lesson-markdown");body.textContent="Opening lesson…";
+ const renderLesson=async()=>{try{
+  const path="content/"+l.markdown;
+  let r;try{r=await fetch("https://raw.githubusercontent.com/mswhitby/computer-science-1/main/units/"+l.markdown,{cache:"no-cache",signal:AbortSignal.timeout(4000)});if(!r.ok)throw Error()}catch{r=await fetch(path)}if(!r.ok)throw Error("Lesson unavailable");
+  const text=await r.text();if(active?.id!==id)return;
+  if(!window.PlaygroundUI){await new Promise(resolve=>document.addEventListener('playground-ui-ready',resolve,{once:true}));if(active?.id!==id)return}
+  window.PlaygroundUI.markdown(body,text,"https://github.com/mswhitby/computer-science-1/blob/main/units/"+l.markdown);
+ }catch{if(active?.id===id)body.innerHTML='<p>The lesson could not open. Refresh to try again, or use the complete lesson link below.</p>'}};
+ renderLesson();
  $("mode-label").textContent=l.mode==="script"?"CHECK CONSOLE OUTPUT":"CHECK RETURN VALUES";
  $("code").value=read("draft:"+id)??l.starter;
  $("full-lesson").href="https://github.com/mswhitby/computer-science-1/blob/main/units/"+l.markdown;

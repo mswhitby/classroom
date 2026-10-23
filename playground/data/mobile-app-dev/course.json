@@ -1,0 +1,38 @@
+{
+  "id": "mobile-app-dev",
+  "title": "Mobile App Development",
+  "lessons": [
+    {
+      "id": "html",
+      "competency": "HTML",
+      "title": "Give a team page its structure",
+      "markdown": "lessons/html/lesson.md",
+      "starterFile": "lessons/html/starter.html",
+      "language": "html"
+    },
+    {
+      "id": "css",
+      "competency": "CSS",
+      "title": "Make a readable event card",
+      "markdown": "lessons/css/lesson.md",
+      "starterFile": "lessons/css/starter.css",
+      "language": "css"
+    },
+    {
+      "id": "javascript",
+      "competency": "JavaScript",
+      "title": "Count the people joining in",
+      "markdown": "lessons/javascript/lesson.md",
+      "starterFile": "lessons/javascript/starter.js",
+      "language": "javascript"
+    },
+    {
+      "id": "react",
+      "competency": "React",
+      "title": "Build a reusable RSVP card",
+      "markdown": "lessons/react/lesson.md",
+      "starterFile": "lessons/react/starter.jsx",
+      "language": "react"
+    }
+  ]
+}
