@@ -218,3 +218,12 @@
 :root[data-theme] .theme-swatch[data-choice="dark-purple"] span{
  background:linear-gradient(90deg,#332d3b 50%,#5b4c62 50%)
 }
+
+/* Shared collapsible navigation for lessons and the challenge bank. */
+.menu-brand{display:flex;align-items:center;gap:14px;min-width:0}
+:root[data-theme] .top .menu-toggle{background:rgba(255,255,255,.1);color:#f6f0fa;border:1px solid rgba(255,255,255,.3);padding:7px 10px;font-size:12px;white-space:nowrap}
+:root[data-theme] .top .menu-toggle:hover{background:rgba(255,255,255,.19)}
+.layout.menu-collapsed{grid-template-columns:minmax(0,1fr)}
+.layout.menu-collapsed>.sidebar{display:none}
+.top{flex-wrap:wrap}
+@media(max-width:700px){.menu-brand{gap:10px}.menu-brand .logo{font-size:10px;letter-spacing:1px}.menu-toggle{font-size:11px}}
