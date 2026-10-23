@@ -5,7 +5,7 @@ category: Classes
 order: 1
 ---
 
-# Week of Oct. 26 — Python Coding Challenges
+<!-- # Week of Oct. 26 — Python Coding Challenges
 
 **[OPEN MONDAY'S PYTHON CHALLENGE LAB](https://www.mswhitby.com/computer-science-1/challenges/)**
 
@@ -21,7 +21,7 @@ Choose from 24 problems worth up to **255 points**. You can filter by topic or d
 
 **Alternative guided practice:** [Interactive lessons for Units 02–06](https://www.mswhitby.com/computer-science-1/units/), with explanations, runnable Python exercises, and their own GitHub submission checks. This is a separate way to practice and demonstrate skills. [Unit 01](https://www.mswhitby.com/computer-science-1/) is a refresher; we are **not restarting Unit 01** this week.
 
-----
+---- -->
 
 # Week of Oct. 19
 
