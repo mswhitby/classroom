@@ -12,3 +12,9 @@
 .workspace-body .check-feedback{background:transparent;color:var(--ink);padding:0;white-space:pre-wrap;font:12px/1.7 ui-monospace,SFMono-Regular,Consolas,monospace}
 .workspace-body h3{font-size:13px}
 .workspace[aria-busy=true] #stop-code{opacity:1}
+
+.debug-workspace .workspace-body label{display:block;font-weight:650;margin:16px 0 7px}
+.debug-workspace .workspace-body textarea{min-height:88px;height:auto;max-height:250px;resize:vertical;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit;padding:12px}
+.debug-workspace select{max-width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+.debug-workspace #debug-output{min-height:140px;height:170px;max-height:500px;resize:vertical;overflow:auto;margin:0;padding:16px;border-radius:0;font-size:13px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}
+.debug-workspace #debug-hints li{padding:5px 0}

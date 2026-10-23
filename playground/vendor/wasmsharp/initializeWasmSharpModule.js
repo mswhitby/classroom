@@ -1,4 +1,4 @@
-import { dotnet as dotnetHostBuilder, } from "./dotnet.js";
+import { dotnet as dotnetHostBuilder, } from "./dotnet.js?v=7";
 function getDirectory(path) {
     var index = path.lastIndexOf("/");
     if (index !== -1) {
@@ -42,7 +42,7 @@ export async function initializeWasmSharpModule(options, callbacks) {
     const assemblyExports = await getAssemblyExports(config.mainAssemblyName);
     const compilationInterop = assemblyExports.WasmSharp.Core.CompilationInterop;
     //TODO: Rewrite this to use new URL()
-    const resolvedAssembliesUrl = new URL(options?.assembliesUrl ?? 'https://cdn.jsdelivr.net/npm/@wasmsharp/core@0.10.2/');
+    const resolvedAssembliesUrl = new URL(options?.assembliesUrl ?? 'https://unpkg.com/@wasmsharp/core@0.10.2/');
     const diff1 = performance.now() - time;
     console.log(`Finished initialising runtime in ${diff1}ms`);
     console.log(`Using following location for assemblies: ${resolvedAssembliesUrl}`);

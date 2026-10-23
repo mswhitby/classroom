@@ -1,7 +1,7 @@
 // .NET distinguishes a standalone worker from its own pthread workers with this flag.
 // Set it before importing the loader: our message handler already exists by import time.
 globalThis.dotnetSidecar=true;
-import {RUNTIME_URL,buildDriver,parseResult} from './csharp-protocol.mjs?v=csharp-5';
+import {RUNTIME_URL,buildDriver,parseResult} from './csharp-protocol.mjs?v=csharp-7';
 let compiler=null,compilation=null,executing=false;
 let runtimeErrors=[];
 // Forward worker startup diagnostics so failures are visible in browser developer tools.
