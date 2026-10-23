@@ -6,7 +6,7 @@ This is the online  companion for [Ms. Whitby’s](https://wagner.judsonisd.org/
 
 ### Class Portal
 
-[Classroom Exercises](https://www.mswhitby.com/computer-science-1/)
+[Ms. Whitby's Playground](https://www.mswhitby.com/computer-science-1/)
 
 ### Contact
 
