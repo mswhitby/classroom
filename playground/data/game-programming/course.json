@@ -58,19 +58,19 @@
             },
             {
               "heading": "Your first C# value",
-              "text": "A string is text inside double quotation marks. A declaration such as string label = \"Arena\"; stores a value in a named variable. C# statements usually end with a semicolon. In the provided Solution method, return hands one value back to the caller. Main is the console entry point; Console.WriteLine displays the returned value. Keep the provided class and method wrappers for now."
+              "text": "A string is text inside double quotation marks. A declaration such as string label = \"Arena\"; stores a value in a named variable. C# statements usually end with a semicolon. In the provided GetArenaName method, return hands one value back to the caller. Main is the console entry point; Console.WriteLine displays the returned value. Keep the provided class and method wrappers for now."
             }
           ],
           "example": "string label = \"Practice room\";\nreturn label;",
           "exercise": {
             "id": "essentials-01-practice",
             "title": "Name the practice arena",
-            "prompt": "Inside Solution(), create a string variable named arenaName containing \"Practice Arena\". Return arenaName. Keep Main so you can see the result in a C# compiler.",
-            "starter": "using System;\n\npublic class Program\n{\n    public static string Solution()\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution());\n    }\n}\n",
-            "signature": "string Solution()",
+            "prompt": "Inside GetArenaName(), create a string variable named arenaName containing \"Practice Arena\". Return arenaName. Keep Main so you can see the result in a C# compiler.",
+            "starter": "using System;\n\npublic class Program\n{\n    public static string GetArenaName()\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(GetArenaName());\n    }\n}\n",
+            "signature": "string GetArenaName()",
             "examples": [
               {
-                "call": "Solution()",
+                "call": "GetArenaName()",
                 "expected": "\"Practice Arena\""
               }
             ],
@@ -78,7 +78,8 @@
               "Use double quotes for the text.",
               "Declare the string, then return the variable."
             ],
-            "file": "exercises/essentials-01/Program.cs"
+            "file": "exercises/essentials-01/Program.cs",
+            "functionName": "GetArenaName"
           },
           "unityTask": [
             "Complete the installation and project-opening steps in the Unity Learn companion.",
@@ -183,19 +184,19 @@
             "id": "essentials-02-practice",
             "title": "Move a practice marker",
             "prompt": "Return x + distance as a float. Negative distances move in the opposite direction. Do not use UnityEngine in this console exercise.",
-            "starter": "using System;\n\npublic class Program\n{\n    public static float Solution(float x, float distance)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(2f, 1.5f));\n    }\n}\n",
-            "signature": "float Solution(float x, float distance)",
+            "starter": "using System;\n\npublic class Program\n{\n    public static float MoveAlongXAxis(float x, float distance)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(MoveAlongXAxis(2f, 1.5f));\n    }\n}\n",
+            "signature": "float MoveAlongXAxis(float x, float distance)",
             "examples": [
               {
-                "call": "Solution(2f, 1.5f)",
+                "call": "MoveAlongXAxis(2f, 1.5f)",
                 "expected": "3.5f"
               },
               {
-                "call": "Solution(4f, -2f)",
+                "call": "MoveAlongXAxis(4f, -2f)",
                 "expected": "2f"
               },
               {
-                "call": "Solution(-1f, 0f)",
+                "call": "MoveAlongXAxis(-1f, 0f)",
                 "expected": "-1f"
               }
             ],
@@ -203,7 +204,8 @@
               "Both inputs already have the right numeric type.",
               "Return an expression using both parameters."
             ],
-            "file": "exercises/essentials-02/Program.cs"
+            "file": "exercises/essentials-02/Program.cs",
+            "functionName": "MoveAlongXAxis"
           },
           "unityTask": [
             "Arrange furniture in the supplied kid’s bedroom. Adjust Transform values outside Play mode.",
@@ -238,19 +240,19 @@
             "id": "essentials-03-practice",
             "title": "Score a pickup batch",
             "prompt": "Return the existing score plus coins multiplied by pointsPerCoin. Inputs are nonnegative whole numbers. A batch of zero coins leaves the score unchanged.",
-            "starter": "using System;\n\npublic class Program\n{\n    public static int Solution(int score, int coins, int pointsPerCoin)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(10, 3, 5));\n    }\n}\n",
-            "signature": "int Solution(int score, int coins, int pointsPerCoin)",
+            "starter": "using System;\n\npublic class Program\n{\n    public static int CalculateScore(int score, int coins, int pointsPerCoin)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CalculateScore(10, 3, 5));\n    }\n}\n",
+            "signature": "int CalculateScore(int score, int coins, int pointsPerCoin)",
             "examples": [
               {
-                "call": "Solution(10, 3, 5)",
+                "call": "CalculateScore(10, 3, 5)",
                 "expected": "25"
               },
               {
-                "call": "Solution(20, 0, 4)",
+                "call": "CalculateScore(20, 0, 4)",
                 "expected": "20"
               },
               {
-                "call": "Solution(0, 5, 2)",
+                "call": "CalculateScore(0, 5, 2)",
                 "expected": "10"
               }
             ],
@@ -258,7 +260,8 @@
               "Calculate earned points from coins and pointsPerCoin.",
               "Add earned points to the existing score."
             ],
-            "file": "exercises/essentials-03/Program.cs"
+            "file": "exercises/essentials-03/Program.cs",
+            "functionName": "CalculateScore"
           },
           "unityTask": [
             "Compare a prefab asset with two instances in the scene.",
@@ -338,19 +341,19 @@
             "id": "audio-01-practice",
             "title": "Build a soundscape and adjust volume",
             "prompt": "Return volume multiplied by gain. Inputs are between 0 and 1; no clamping is needed.",
-            "starter": "using System;\n\npublic class Program\n{\n    public static float Solution(float volume, float gain)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(0.8f, 0.5f));\n    }\n}\n",
-            "signature": "float Solution(float volume, float gain)",
+            "starter": "using System;\n\npublic class Program\n{\n    public static float ScaleVolume(float volume, float gain)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(ScaleVolume(0.8f, 0.5f));\n    }\n}\n",
+            "signature": "float ScaleVolume(float volume, float gain)",
             "examples": [
               {
-                "call": "Solution(0.8f, 0.5f)",
+                "call": "ScaleVolume(0.8f, 0.5f)",
                 "expected": "0.4f"
               },
               {
-                "call": "Solution(1f, 0f)",
+                "call": "ScaleVolume(1f, 0f)",
                 "expected": "0f"
               },
               {
-                "call": "Solution(0.6f, 1f)",
+                "call": "ScaleVolume(0.6f, 1f)",
                 "expected": "0.6f"
               }
             ],
@@ -358,7 +361,8 @@
               "Use the multiplication operator, *.",
               "Return a numeric value rather than writing sound-playing code."
             ],
-            "file": "exercises/audio-01/Program.cs"
+            "file": "exercises/audio-01/Program.cs",
+            "functionName": "ScaleVolume"
           },
           "unityTask": [
             "Complete Create an immersive soundscape in the Unity Learn kitchen scene.",
@@ -421,7 +425,7 @@
           "sections": [
             {
               "heading": "Read the method contract",
-              "text": "public static int Solution(int score, int bonus) names a method, its inputs, and its returned type. The body between braces holds statements. A call such as Solution(10, 5) supplies arguments. A return sends the result back; Console.WriteLine prints it. This console wrapper does not inherit MonoBehaviour."
+              "text": "public static int CalculateTravelDistance(int score, int bonus) names a method, its inputs, and its returned type. The body between braces holds statements. A call such as CalculateTravelDistance(10, 5) supplies arguments. A return sends the result back; Console.WriteLine prints it. This console wrapper does not inherit MonoBehaviour."
             },
             {
               "heading": "Understand Unity execution",
@@ -441,19 +445,19 @@
             "id": "essentials-04-practice",
             "title": "Calculate a frame’s travel distance",
             "prompt": "Return speed * elapsedSeconds. speed is units per second and elapsedSeconds is seconds. Both inputs are nonnegative. A paused interval of zero seconds produces zero distance.",
-            "starter": "using System;\n\npublic class Program\n{\n    public static float Solution(float speed, float elapsedSeconds)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(6f, 0.5f));\n    }\n}\n",
-            "signature": "float Solution(float speed, float elapsedSeconds)",
+            "starter": "using System;\n\npublic class Program\n{\n    public static float CalculateTravelDistance(float speed, float elapsedSeconds)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CalculateTravelDistance(6f, 0.5f));\n    }\n}\n",
+            "signature": "float CalculateTravelDistance(float speed, float elapsedSeconds)",
             "examples": [
               {
-                "call": "Solution(6f, 0.5f)",
+                "call": "CalculateTravelDistance(6f, 0.5f)",
                 "expected": "3f"
               },
               {
-                "call": "Solution(4f, 0f)",
+                "call": "CalculateTravelDistance(4f, 0f)",
                 "expected": "0f"
               },
               {
-                "call": "Solution(2.5f, 2f)",
+                "call": "CalculateTravelDistance(2.5f, 2f)",
                 "expected": "5f"
               }
             ],
@@ -461,7 +465,8 @@
               "Keep both quantities in the same unit system.",
               "Multiply; do not add speed and time."
             ],
-            "file": "exercises/essentials-04/Program.cs"
+            "file": "exercises/essentials-04/Program.cs",
+            "functionName": "CalculateTravelDistance"
           },
           "unityTask": [
             "Complete Add a movement script in the supplied living room. Identify Start and Update.",
@@ -545,19 +550,19 @@
             "id": "2d-01-practice",
             "title": "Work in a 2D scene",
             "prompt": "Return the new x coordinate after adding offset to x.",
-            "starter": "using System;\n\npublic class Program\n{\n    public static float Solution(float x, float offset)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(3f, 2f));\n    }\n}\n",
-            "signature": "float Solution(float x, float offset)",
+            "starter": "using System;\n\npublic class Program\n{\n    public static float OffsetSpriteX(float x, float offset)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(OffsetSpriteX(3f, 2f));\n    }\n}\n",
+            "signature": "float OffsetSpriteX(float x, float offset)",
             "examples": [
               {
-                "call": "Solution(3f, 2f)",
+                "call": "OffsetSpriteX(3f, 2f)",
                 "expected": "5f"
               },
               {
-                "call": "Solution(-2f, 1f)",
+                "call": "OffsetSpriteX(-2f, 1f)",
                 "expected": "-1f"
               },
               {
-                "call": "Solution(4f, 0f)",
+                "call": "OffsetSpriteX(4f, 0f)",
                 "expected": "4f"
               }
             ],
@@ -565,7 +570,8 @@
               "Use addition.",
               "Return x + offset."
             ],
-            "file": "exercises/2d-01/Program.cs"
+            "file": "exercises/2d-01/Program.cs",
+            "functionName": "OffsetSpriteX"
           },
           "unityTask": [
             "Complete Set up a 2D room and Complete your 2D Puzzle Game in the Unity companion.",
@@ -647,15 +653,15 @@
             "id": "publishing-01-practice",
             "title": "Build, test, and share a project",
             "prompt": "Return the text \"Project: \" followed by title. Include the space after the colon.",
-            "starter": "using System;\n\npublic class Program\n{\n    public static string Solution(string title)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(\"Room Explorer\"));\n    }\n}\n",
-            "signature": "string Solution(string title)",
+            "starter": "using System;\n\npublic class Program\n{\n    public static string CreateProjectLabel(string title)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CreateProjectLabel(\"Room Explorer\"));\n    }\n}\n",
+            "signature": "string CreateProjectLabel(string title)",
             "examples": [
               {
-                "call": "Solution(\"Room Explorer\")",
+                "call": "CreateProjectLabel(\"Room Explorer\")",
                 "expected": "\"Project: Room Explorer\""
               },
               {
-                "call": "Solution(\"Puzzle\")",
+                "call": "CreateProjectLabel(\"Puzzle\")",
                 "expected": "\"Project: Puzzle\""
               }
             ],
@@ -663,7 +669,8 @@
               "Use + to join the prefix and title.",
               "Return \"Project: \" + title."
             ],
-            "file": "exercises/publishing-01/Program.cs"
+            "file": "exercises/publishing-01/Program.cs",
+            "functionName": "CreateProjectLabel"
           },
           "unityTask": [
             "Complete Build your portfolio project and Publish to WebGL using the companion instructions for your Editor.",
@@ -739,19 +746,19 @@
             "id": "player-01-practice",
             "title": "Calculate the next player position",
             "prompt": "Return x + input * speed * elapsedSeconds. Input is between -1 and 1; speed and elapsedSeconds are nonnegative. Do not clamp the result in this lesson.",
-            "starter": "using System;\n\npublic class Program\n{\n    public static float Solution(float x, float input, float speed, float elapsedSeconds)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(5f, -1f, 4f, 0.5f));\n    }\n}\n",
-            "signature": "float Solution(float x, float input, float speed, float elapsedSeconds)",
+            "starter": "using System;\n\npublic class Program\n{\n    public static float CalculateHorizontalPosition(float x, float input, float speed, float elapsedSeconds)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CalculateHorizontalPosition(5f, -1f, 4f, 0.5f));\n    }\n}\n",
+            "signature": "float CalculateHorizontalPosition(float x, float input, float speed, float elapsedSeconds)",
             "examples": [
               {
-                "call": "Solution(5f, -1f, 4f, 0.5f)",
+                "call": "CalculateHorizontalPosition(5f, -1f, 4f, 0.5f)",
                 "expected": "3f"
               },
               {
-                "call": "Solution(2f, 0f, 10f, 1f)",
+                "call": "CalculateHorizontalPosition(2f, 0f, 10f, 1f)",
                 "expected": "2f"
               },
               {
-                "call": "Solution(0f, 0.5f, 8f, 0.25f)",
+                "call": "CalculateHorizontalPosition(0f, 0.5f, 8f, 0.25f)",
                 "expected": "1f"
               }
             ],
@@ -759,7 +766,8 @@
               "Compute displacement before adding the original position.",
               "Preserve the sign of input."
             ],
-            "file": "exercises/player-01/Program.cs"
+            "file": "exercises/player-01/Program.cs",
+            "functionName": "CalculateHorizontalPosition"
           },
           "unityTask": [
             "Follow Player Control and identify the variable controlling speed.",
@@ -797,23 +805,23 @@
             "id": "player-02-practice",
             "title": "Clamp a player position",
             "prompt": "Return x clamped to the inclusive interval [min, max]. The bounds are valid and may be negative. Use comparisons and if statements; no Unity APIs are needed.",
-            "starter": "using System;\n\npublic class Program\n{\n    public static float Solution(float x, float min, float max)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(12f, -5f, 5f));\n    }\n}\n",
-            "signature": "float Solution(float x, float min, float max)",
+            "starter": "using System;\n\npublic class Program\n{\n    public static float ClampPlayerPosition(float x, float min, float max)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(ClampPlayerPosition(12f, -5f, 5f));\n    }\n}\n",
+            "signature": "float ClampPlayerPosition(float x, float min, float max)",
             "examples": [
               {
-                "call": "Solution(12f, -5f, 5f)",
+                "call": "ClampPlayerPosition(12f, -5f, 5f)",
                 "expected": "5f"
               },
               {
-                "call": "Solution(-8f, -5f, 5f)",
+                "call": "ClampPlayerPosition(-8f, -5f, 5f)",
                 "expected": "-5f"
               },
               {
-                "call": "Solution(2f, -5f, 5f)",
+                "call": "ClampPlayerPosition(2f, -5f, 5f)",
                 "expected": "2f"
               },
               {
-                "call": "Solution(5f, -5f, 5f)",
+                "call": "ClampPlayerPosition(5f, -5f, 5f)",
                 "expected": "5f"
               }
             ],
@@ -821,7 +829,8 @@
               "Check the lower edge and upper edge separately.",
               "If neither condition applies, return the original position."
             ],
-            "file": "exercises/player-02/Program.cs"
+            "file": "exercises/player-02/Program.cs",
+            "functionName": "ClampPlayerPosition"
           },
           "unityTask": [
             "Add or locate the boundary checks in your Player Control project.",
@@ -861,27 +870,27 @@
             "id": "gameplay-01-practice",
             "title": "Decide whether a player can fire",
             "prompt": "Return true only when pressed is true, gameOver is false, and remaining <= 0f. A negative remaining value is ready. Return a bool, not the text \"true\".",
-            "starter": "using System;\n\npublic class Program\n{\n    public static bool Solution(bool pressed, bool gameOver, float remaining)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(true, false, 0f));\n    }\n}\n",
-            "signature": "bool Solution(bool pressed, bool gameOver, float remaining)",
+            "starter": "using System;\n\npublic class Program\n{\n    public static bool CanFireProjectile(bool pressed, bool gameOver, float remaining)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CanFireProjectile(true, false, 0f));\n    }\n}\n",
+            "signature": "bool CanFireProjectile(bool pressed, bool gameOver, float remaining)",
             "examples": [
               {
-                "call": "Solution(true, false, 0f)",
+                "call": "CanFireProjectile(true, false, 0f)",
                 "expected": "true"
               },
               {
-                "call": "Solution(true, false, -1f)",
+                "call": "CanFireProjectile(true, false, -1f)",
                 "expected": "true"
               },
               {
-                "call": "Solution(false, false, 0f)",
+                "call": "CanFireProjectile(false, false, 0f)",
                 "expected": "false"
               },
               {
-                "call": "Solution(true, true, 0f)",
+                "call": "CanFireProjectile(true, true, 0f)",
                 "expected": "false"
               },
               {
-                "call": "Solution(true, false, 0.1f)",
+                "call": "CanFireProjectile(true, false, 0.1f)",
                 "expected": "false"
               }
             ],
@@ -889,7 +898,8 @@
               "All three conditions must be satisfied.",
               "Use !gameOver to require the game to still be active."
             ],
-            "file": "exercises/gameplay-01/Program.cs"
+            "file": "exercises/gameplay-01/Program.cs",
+            "functionName": "CanFireProjectile"
           },
           "unityTask": [
             "In Basic Gameplay, identify the prefab and the code that creates an instance.",
@@ -932,23 +942,23 @@
             "id": "gameplay-02-practice",
             "title": "Update remaining lives",
             "prompt": "Given nonnegative lives, subtract one only when hit is true and at least one life remains. Never return a negative value. If there is no hit, keep the value unchanged.",
-            "starter": "using System;\n\npublic class Program\n{\n    public static int Solution(int lives, bool hit)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(3, true));\n    }\n}\n",
-            "signature": "int Solution(int lives, bool hit)",
+            "starter": "using System;\n\npublic class Program\n{\n    public static int CalculateRemainingLives(int lives, bool hit)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CalculateRemainingLives(3, true));\n    }\n}\n",
+            "signature": "int CalculateRemainingLives(int lives, bool hit)",
             "examples": [
               {
-                "call": "Solution(3, true)",
+                "call": "CalculateRemainingLives(3, true)",
                 "expected": "2"
               },
               {
-                "call": "Solution(3, false)",
+                "call": "CalculateRemainingLives(3, false)",
                 "expected": "3"
               },
               {
-                "call": "Solution(0, true)",
+                "call": "CalculateRemainingLives(0, true)",
                 "expected": "0"
               },
               {
-                "call": "Solution(1, true)",
+                "call": "CalculateRemainingLives(1, true)",
                 "expected": "0"
               }
             ],
@@ -956,7 +966,8 @@
               "Use && to combine a hit with having lives left.",
               "Keep the existing lives in every other situation."
             ],
-            "file": "exercises/gameplay-02/Program.cs"
+            "file": "exercises/gameplay-02/Program.cs",
+            "functionName": "CalculateRemainingLives"
           },
           "unityTask": [
             "Demonstrate one collision or trigger interaction in your prototype.",

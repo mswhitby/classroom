@@ -1,8 +1,8 @@
 {
   "game-programming": {
     "repository": "mswhitby/game-programming",
-    "commit": "0d6c6ab29a48e963b87ed2e7769f0a0c591f0624",
+    "commit": null,
     "file": "course.json",
-    "sha256": "10c143463e6572320ffceb795aecd1768902445b42781c478e5aaa539406d5c9"
+    "sha256": "25bd9f71d76c13d509ee4faebb1c89699787860d74cb0cde6fe681ece9cdee59"
   }
 }

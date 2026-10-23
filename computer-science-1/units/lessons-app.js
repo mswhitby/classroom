@@ -123,7 +123,9 @@ function harness(source,cases){
  "        __env={'__name__':'student'}",
  "        with __ctx.redirect_stdout(__io.StringIO()):",
  "            exec(compile(__student,'main.py','exec'),__env)",
- "            if not callable(__env.get('solution')): raise NameError('Define solution')",
+ "            __name=__case['call'].split('(',1)[0].strip()",
+ "            if __name not in __env and callable(__env.get('solution')): __env[__name]=__env['solution']",
+ "            if not callable(__env.get(__name)): raise NameError('Define '+__name)",
  "            __actual=eval(compile(__ast.parse(__case['call'],mode='eval'),'case','eval'),__env)",
  "        __expected=__ast.literal_eval(__case['expected'])",
  "        __ok=type(__actual) is type(__expected) and __actual==__expected",
@@ -262,7 +264,7 @@ function begin(){
  $("next-lesson").onclick=()=>{const i=ordered.findIndex(x=>x.id===active?.id);if(i>=0&&i<ordered.length-1){select(ordered[i+1].id);$("title").scrollIntoView?.({block:"start",behavior:"smooth"})}};
  $("run").onclick=runStudentCode;$("check").onclick=checkAnswer;
  $("save").onclick=()=>feedback(write("draft:"+active.id,$("code").value)?"Draft saved on this device.":"Can't save here. Use Copy code.");
- $("copy").onclick=async()=>{try{await navigator.clipboard.writeText($("code").value);feedback("Copied code. Paste it into main.py in your GitHub fork.","good")}catch{feedback("Clipboard unavailable. Select and copy manually.")}};
+ $("copy").onclick=async()=>{try{await navigator.clipboard.writeText($("code").value);feedback("Copied. Keep a backup or paste it into your own project.","good")}catch{feedback("Clipboard unavailable. Select and copy manually.")}};
  $("reset").onclick=()=>{if(!confirm("Restore starter code and replace this draft?"))return;$("code").value=active.starter;write("draft:"+active.id,active.starter);erase("pass:"+active.id);$("check-results").textContent="";$("check-results").hidden=true;$("output").textContent="Run code to see printed output or Python errors here.";$("run-status").textContent="Ready to run";navigation();feedback("Starter restored.")};
  $("code").addEventListener("input",()=>{write("draft:"+active.id,$("code").value);erase("pass:"+active.id);$("check-results").hidden=true;$("check-results").textContent="";feedback("Code changed. Run to experiment, or Check answer to test the requirements.");navigation()});
  $("code").addEventListener("keydown",e=>{

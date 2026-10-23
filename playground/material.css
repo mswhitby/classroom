@@ -1,0 +1,65 @@
+@import url('./material-tokens.css?v=material-1');
+/* Shared Material 3 components and semantic roles for every Playground. */
+:root[data-theme],:root{
+ --bg:var(--md-sys-color-surface);--panel:var(--md-sys-color-surface-container-lowest);--ink:var(--md-sys-color-on-surface);--muted:var(--md-sys-color-on-surface-variant);--line:var(--md-sys-color-outline-variant);--accent:var(--md-sys-color-primary);--blue:var(--md-sys-color-primary);--navy:var(--md-sys-color-surface-container);--soft:var(--md-sys-color-surface-container);--field:var(--md-sys-color-surface-container-high);--hover:var(--md-sys-color-secondary-container);--green:var(--md-sys-color-tertiary);--good:var(--md-sys-color-tertiary);--bad:var(--md-sys-color-error);--shadow:0 1px 3px #0000001a,0 1px 2px #0000000f;
+ --terminal:var(--md-sys-color-inverse-surface);--terminal-ink:var(--md-sys-color-inverse-on-surface);
+ font-family:Roboto,Arial,system-ui,sans-serif;
+}
+:root[data-theme="dark"]{--terminal:var(--md-sys-color-surface-container-lowest);--terminal-ink:var(--md-sys-color-on-surface)}
+:root[data-theme] body{background:var(--bg);color:var(--ink);font-family:Roboto,Arial,system-ui,sans-serif;line-height:1.6}
+:root[data-theme] h1,:root[data-theme] h2,:root[data-theme] h3{font-weight:500;letter-spacing:0;line-height:1.25;color:var(--ink)}
+:root[data-theme] h1{font-size:clamp(32px,4vw,52px)}
+:root[data-theme] a{color:var(--accent)}
+:root[data-theme] .site-header,:root[data-theme] .top{background:var(--md-sys-color-surface-container);color:var(--ink);border-bottom:0;box-shadow:none}
+:root[data-theme] .site-header a,:root[data-theme] .top a{color:var(--ink)}
+:root[data-theme] .site-header nav>a,:root[data-theme] .top-right>a{padding:10px 16px;border-radius:999px;min-height:44px;display:inline-flex;align-items:center}
+:root[data-theme] .site-header nav>a:hover,:root[data-theme] .top-right>a:hover{background:color-mix(in srgb,var(--ink) 8%,transparent)}
+:root[data-theme] .site-header nav>a[aria-current=page],:root[data-theme] .top-right>a[aria-current=page]{background:var(--md-sys-color-secondary-container);color:var(--md-sys-color-on-secondary-container)}
+:root[data-theme] .brand-mark,:root[data-theme] .logo-mark{background:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container);border-radius:16px}
+:root[data-theme] .panel,:root[data-theme] .course-card,:root[data-theme] .unit-card,:root[data-theme] .track,:root[data-theme] .stat,:root[data-theme] .notice{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:24px;box-shadow:none}
+:root[data-theme] .course-card{background:var(--md-sys-color-surface-container-low);border:0;padding:28px}
+:root[data-theme] .course-card:hover{background:var(--md-sys-color-surface-container);box-shadow:var(--shadow)}
+:root[data-theme] .unit-card{border:0;background:var(--md-sys-color-surface-container-low)}
+:root[data-theme] button,:root[data-theme] a.action,:root[data-theme] .next-lesson{border:0;border-radius:999px;min-height:44px;padding:10px 22px;background:var(--accent);color:var(--md-sys-color-on-primary);font-size:14px;font-weight:500;letter-spacing:.1px;box-shadow:none;transition:background .15s,box-shadow .15s}
+:root[data-theme] button:hover:not(:disabled),:root[data-theme] a.action:hover{box-shadow:inset 0 0 0 100px #ffffff14,0 1px 3px #00000024}
+:root[data-theme] button:disabled{opacity:.55;cursor:default;box-shadow:none}
+:root[data-theme] button.secondary,:root[data-theme] button.success,:root[data-theme] .toolbar .success,:root[data-theme] .compact-button{background:var(--md-sys-color-secondary-container);color:var(--md-sys-color-on-secondary-container);border:0}
+:root[data-theme] .toolbar .primary,:root[data-theme] .track a.action{background:var(--accent);color:var(--md-sys-color-on-primary);border:0}
+:root[data-theme] .icon-button,:root[data-theme] .menu-caret,:root[data-theme] .menu-toggle{display:inline-grid;place-items:center;background:transparent;color:var(--ink);min-width:40px;min-height:40px;padding:6px;border-radius:50%;border:0}
+:root[data-theme] .menu-caret{min-width:30px;min-height:30px;padding:0;font-size:24px}
+:root[data-theme] .menu-toggle{min-width:30px;min-height:30px}
+:root[data-theme] .sidebar,:root[data-theme] .course-nav{background:var(--bg);color:var(--ink);border-color:var(--line)}
+:root[data-theme] .course-nav a,:root[data-theme] .challenge-option{border-radius:999px;background:transparent;color:var(--muted);border:0;padding:12px 16px;min-height:44px}
+:root[data-theme] .course-nav a[aria-current=page],:root[data-theme] .challenge-option.selected{background:var(--md-sys-color-secondary-container);color:var(--md-sys-color-on-secondary-container);font-weight:600}
+:root[data-theme] .course-nav a:hover,:root[data-theme] .challenge-option:hover{background:var(--md-sys-color-surface-container-high)}
+:root[data-theme] .badge,:root[data-theme] .tag{border-radius:8px;border:0;background:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container);padding:5px 10px;font-weight:500}
+:root[data-theme] .badge.neutral,:root[data-theme] .tag.difficulty{background:var(--md-sys-color-secondary-container);color:var(--md-sys-color-on-secondary-container)}
+:root[data-theme] .note,:root[data-theme] .lesson-note,:root[data-theme] .stats,:root[data-theme] .example,:root[data-theme] .submission,:root[data-theme] .related-links{background:var(--soft);color:var(--ink);border-color:var(--line);border-radius:16px}
+:root[data-theme] select,:root[data-theme] input:not([type=checkbox]):not([type=radio]){background:var(--field);color:var(--ink);border:1px solid var(--md-sys-color-outline);border-radius:12px;min-height:48px;padding:10px 14px;font:inherit}
+:root[data-theme] input[type=checkbox],:root[data-theme] input[type=radio]{accent-color:var(--accent);width:18px;height:18px}
+:root[data-theme] :is(button,a,input,textarea,select,summary):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+:root[data-theme] .choice{border-radius:16px;border-color:var(--line);padding:14px 16px;min-height:48px}
+:root[data-theme] .choice:has(input:checked){background:var(--md-sys-color-secondary-container);color:var(--md-sys-color-on-secondary-container)}
+:root[data-theme] .quiz-feedback.incorrect,:root[data-theme] .feedback.bad{background:var(--md-sys-color-error-container);color:var(--md-sys-color-on-error-container);border-color:var(--md-sys-color-error)}
+:root[data-theme] .quiz-feedback.correct,:root[data-theme] .feedback.good{background:var(--md-sys-color-tertiary-container);color:var(--md-sys-color-on-tertiary-container);border-color:var(--md-sys-color-tertiary)}
+:root[data-theme] .workspace-head,:root[data-theme] .console-heading,:root[data-theme] .editor-filebar{background:var(--md-sys-color-surface-container);color:var(--ink);border-color:var(--line)}
+:root[data-theme] pre,:root[data-theme] #code,:root[data-theme] #output,:root[data-theme] .workspace>textarea,:root[data-theme] .terminal-pane #output,:root[data-theme] .skills-content pre{background:var(--terminal);color:var(--terminal-ink);border-color:var(--line)}
+:root[data-theme] .terminal-heading,:root[data-theme] .terminal-heading strong,:root[data-theme] .terminal-status{background:var(--md-sys-color-surface-container-high);color:var(--ink)}
+:root[data-theme] .csharp-terminal,:root[data-theme] .terminal-pane{background:var(--terminal);color:var(--terminal-ink);border-color:var(--line)}
+:root[data-theme] .check-feedback,:root[data-theme] #check-results{background:transparent;color:var(--ink)}
+:root[data-theme] code:not(pre code){background:var(--md-sys-color-surface-container-high);color:var(--ink);border-radius:4px}
+:root[data-theme] .account-menu,:root[data-theme] .material-preferences>div{background:var(--md-sys-color-surface-container-high);color:var(--ink);border:0;border-radius:20px;box-shadow:0 4px 16px #00000026;padding:22px}
+.material-preferences{position:relative;margin:0;font-size:14px}
+.material-preferences>summary{list-style:none;cursor:pointer;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;color:var(--ink)}
+.material-preferences>summary::-webkit-details-marker{display:none}
+.material-preferences>summary:hover{background:var(--soft)}
+.material-preferences>div{position:absolute;right:0;top:50px;width:270px;max-width:85vw;z-index:40}
+.material-preferences label{display:block;margin:14px 0 6px}
+.material-preferences select{width:100%}
+.material-preferences p{font-size:12px;color:var(--muted)}
+:root[data-theme] .theme-picker{color:var(--ink)}
+:root[data-theme] .course-nav h3{color:var(--muted);text-transform:none;font-size:13px;font-weight:600;letter-spacing:0}
+:root[data-theme] .eyebrow{color:var(--accent);letter-spacing:.8px}
+:root[data-theme] .sr-only{color:inherit}
+@media(prefers-reduced-motion:reduce){:root[data-theme] *{transition:none!important;scroll-behavior:auto!important}}
+@media(max-width:750px){:root[data-theme] .site-header nav{gap:3px}:root[data-theme] .site-header nav>a{padding:8px 12px}:root[data-theme] .top-right{flex-wrap:wrap}}

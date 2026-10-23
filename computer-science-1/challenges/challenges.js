@@ -150,7 +150,7 @@ function select(id){
  $("skills-content").innerHTML="";
  displayExamples();tags();showList();
  const checked=get("pass:"+id)==="true";
- inform(checked?"Your published examples passed on this device. You can continue improving your code.":"These are public practice examples. Your official grade comes from GitHub.",checked?"good":"");
+ inform(checked?"Your published examples passed on this device. You can continue improving your code.":"Run code to experiment; Check answer tests the published examples.",checked?"good":"");
  try{history.replaceState(null,"","#"+id);}catch{}
 }
 function shutdown(){
@@ -212,8 +212,10 @@ function probe(source,cases){
  "        __capture = __io.StringIO()",
  "        with __ctx.redirect_stdout(__capture):",
  "            exec(compile(__source, 'solution.py', 'exec'), __globals)",
- "            if not callable(__globals.get('solution')):",
- "                raise NameError('Expected a function called solution')",
+ "            __name=__entry['call'].split('(',1)[0].strip()",
+ "            if __name not in __globals and callable(__globals.get('solution')): __globals[__name]=__globals['solution']",
+ "            if not callable(__globals.get(__name)):",
+ "                raise NameError('Define '+__name)",
  "            __actual = eval(compile(__ast.parse(__entry['call'], mode='eval'), 'example', 'eval'), __globals)",
  "        __expected = __ast.literal_eval(__entry['expected'])",
  "        __passed = type(__actual) is type(__expected) and __actual == __expected",
@@ -253,7 +255,7 @@ async function execute(all){
   $("output").textContent=lines.join("\n").trim();
   const success=passed===cases.length;
   if(all){
-   if(success){set("pass:"+c.id,"true");inform("✓ "+passed+"/"+cases.length+" published examples passed. Remember: the official grader also uses additional cases.","good");}
+   if(success){set("pass:"+c.id,"true");inform("✓ "+passed+"/"+cases.length+" published examples passed. Try additional inputs to explore boundary cases.","good");}
    else{unset("pass:"+c.id);inform(passed+"/"+cases.length+" public examples passed. Review the reported differences, revise, and try again.","bad");}
   }else{
    inform(success?"✓ First example passed. Choose Check examples to test the others.":"The first example needs revision. Use the output and the skills refresher if available.",success?"good":"bad");
@@ -285,7 +287,7 @@ function start(){
  $("check").addEventListener("click",()=>execute(true));
  $("save").addEventListener("click",()=>inform(set("draft:"+current.id,$("code").value)?"Draft saved on this browser.":"Browser storage unavailable. Use Copy code for a backup."));
  $("copy").addEventListener("click",async()=>{
-  try{await navigator.clipboard.writeText($("code").value);inform("Copied! Paste into the matching solution.py in your GitHub fork.","good");}
+  try{await navigator.clipboard.writeText($("code").value);inform("Copied. Your code is ready to paste into your own project.","good");}
   catch{inform("Clipboard access is unavailable. Select the editor text and copy it manually.");}
  });
  $("reset").addEventListener("click",()=>{

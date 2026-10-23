@@ -23,8 +23,8 @@ public static void Main(string[] args){${calls}}
 }
 export function buildDriver(source,{nonce,checks=null}={}){
  if(!nonce||!/^[a-z0-9-]+$/i.test(nonce))throw Error('Invalid execution ID.');
- // Source and checker are independent syntax trees. MainTypeName selects the checker
- // without changing the student's Main, class names, or any C# language semantics.
+ // Source and checker are independent syntax trees. For checks, compile a library
+ // and invoke the checker explicitly without changing the student's Main or class names.
  return `using System;
 using System.IO;
 using System.Linq;
