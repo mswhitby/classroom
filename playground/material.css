@@ -80,4 +80,4 @@ main{padding:28px 28px 56px;max-width:1700px}h1,.lesson-heading h1{font-size:2re
 }[data-bs-theme=dark] .hljs-char.escape_, [data-bs-theme=dark] .hljs-link, [data-bs-theme=dark] .hljs-params, [data-bs-theme=dark] .hljs-property, [data-bs-theme=dark] .hljs-punctuation, [data-bs-theme=dark] .hljs-tag{
   
   
-}
+}:root[data-theme] .tag,:root[data-theme] .points{background:var(--bs-primary-subtle)!important;color:var(--bs-primary-emphasis)!important}
