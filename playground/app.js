@@ -1,6 +1,6 @@
 import {validateCourse,scoreQuiz,progressKey} from './model.mjs';
-import {CSharpRunner} from './csharp-runner.mjs';
-import {buildChecks,parseChecks} from './csharp-protocol.mjs';
+import {CSharpRunner} from './csharp-runner.mjs?v=csharp-2';
+import {buildChecks,parseChecks} from './csharp-protocol.mjs?v=csharp-2';
 const $=id=>document.getElementById(id),main=$('main');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const inline=s=>esc(s).replace(/`([^`]+)`/g,'<code>$1</code>');

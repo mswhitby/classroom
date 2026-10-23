@@ -1,4 +1,4 @@
-import {RUNTIME_URL,buildDriver,parseResult} from './csharp-protocol.mjs';
+import {RUNTIME_URL,buildDriver,parseResult} from './csharp-protocol.mjs?v=csharp-2';
 let compiler=null,compilation=null;
 async function init(){
  const {WasmSharpWorker}=await import(RUNTIME_URL);
