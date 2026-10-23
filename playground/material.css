@@ -71,3 +71,4 @@
 :root[data-theme] #lesson-example{background:var(--terminal);color:var(--terminal-ink);border-color:var(--line)}
 :root[data-theme] .logo-icon,:root[data-theme] .points{background:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container)}
 :root[data-theme] .small,:root[data-theme] .list-head,:root[data-theme] .panel-heading span,:root[data-theme] .privacy,:root[data-theme] .subtitle{color:var(--muted)}
+:root[data-theme] .console-heading strong{color:var(--ink)}
