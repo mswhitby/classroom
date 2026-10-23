@@ -1,4 +1,4 @@
-import {mobilePage} from './mobile.mjs?v=readable-1';
+import {mobilePage} from './mobile.mjs?v=readable-2';
 import {debugWorkspace} from './debug-workspace.mjs?v=7';
 import {validateCourse,scoreQuiz,progressKey} from './model.mjs?v=readable-1';
 import {CSharpRunner} from './csharp-runner.mjs?v=csharp-7';
@@ -100,5 +100,5 @@ async function loadGame(){
  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),4000);
  try{const r=await fetch('https://raw.githubusercontent.com/mswhitby/game-programming/main/course.json',{signal:controller.signal,cache:'no-cache'});if(!r.ok)throw Error('Remote course unavailable');return validateCourse(await r.json())}catch{const r=await fetch('data/game-programming/course.json');if(!r.ok)throw Error('Course snapshot unavailable');return validateCourse(await r.json())}finally{clearTimeout(timer)}
 }
-async function start(){try{const [c,g]=await Promise.all([fetch('catalog.json'),loadGame()]);if(!c.ok)throw Error('Course files could not load');catalog=await c.json();game=g;window.addEventListener('hashchange',()=>{route();main.focus({preventScroll:true})});route()}catch{main.innerHTML='<h1>The playground could not load.</h1><p>Refresh to try again. Your saved work has not been changed.</p>'}}
+async function start(){try{const [c,g]=await Promise.all([fetch('catalog.json?v=readable-2',{cache:'no-cache'}),loadGame()]);if(!c.ok)throw Error('Course files could not load');catalog=await c.json();game=g;window.addEventListener('hashchange',()=>{route();main.focus({preventScroll:true})});route()}catch{main.innerHTML='<h1>The playground could not load.</h1><p>Refresh to try again. Your saved work has not been changed.</p>'}}
 start();

@@ -6,7 +6,7 @@ Follow Unity Learn’s installation and project-opening tutorials before the Edi
 
 ## Scene, Game, Hierarchy, Inspector
 
-The Scene view is your workspace for arranging a world. The Game view shows the view rendered by the game cameras. The Hierarchy lists GameObjects in the open scene; the Inspector shows the selected object’s components and settings. The Project window contains assets saved in the project.
+Think of a scene as a stage: you arrange the objects, then test what the player will see. The **Scene view** is your workspace for arranging a world. The **Game view** shows the view rendered by the game cameras. The **Hierarchy** lists **GameObjects** in the open scene; the **Inspector** shows the selected object’s components and settings. The **Project window** contains assets saved in the project.
 
 ## Play mode is an experiment
 
@@ -14,7 +14,7 @@ Save your scene, enter Play mode, change a value, then stop. Ordinary scene chan
 
 ## Your first C# value
 
-A string is text inside double quotation marks. A declaration such as string label = "Arena"; stores a value in a named **variable**. C# statements usually end with a semicolon. In the provided GetArenaName method, return hands one value back to the caller. Main is the console entry point; `Console.WriteLine` displays the returned value. Keep the provided class and method wrappers for now.
+A **string** is text inside double quotation marks. A declaration such as `string label = "Arena";` stores a value in a named **variable**. C# statements usually end with a semicolon. In the provided `GetArenaName()` method, `return` hands one value back to the caller. `Main()` is where this console program starts; `Console.WriteLine` displays the returned value. Keep the provided class and method wrappers for now.
 
 ## Try tracing this example
 

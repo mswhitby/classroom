@@ -240,7 +240,7 @@ function setupWorkspaceSizing(){
    else if(e.key==="End"){e.preventDefault();set(max)}
   });
  }
- bindHandle(widthHandle,{initial:36,min:25,max:65,axis:"width",key:"lesson-width",
+ bindHandle(widthHandle,{initial:48,min:25,max:65,axis:"width",key:"lesson-width",
   measure:()=>Math.max(1,grid.getBoundingClientRect().width),
   apply:n=>grid.style.setProperty("--lesson-width",n+"%")});
  bindHandle($("editor-height-divider"),{initial:360,min:180,max:1400,axis:"height",key:"editor-height",
