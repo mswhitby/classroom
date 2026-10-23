@@ -1,0 +1,739 @@
+{
+  "schemaVersion": 1,
+  "id": "game-programming",
+  "title": "Game Programming & Design",
+  "language": "C#",
+  "description": "Build in Unity. Understand the logic. Test your ideas.",
+  "sourceRepository": "mswhitby/game-programming",
+  "alignmentNote": "Original classroom companion material. These two units introduce selected Unity Essentials and Junior Programmer skills; they do not replace or claim completion of either entire pathway. Follow your teacher\u2019s assigned Unity version and project.",
+  "sources": [
+    {
+      "title": "Unity Essentials",
+      "url": "https://learn.unity.com/pathway/unity-essentials"
+    },
+    {
+      "title": "Junior Programmer",
+      "url": "https://learn.unity.com/pathway/junior-programmer"
+    },
+    {
+      "title": "Player Control",
+      "url": "https://learn.unity.com/pathway/junior-programmer/unit/player-control?version=6.3"
+    },
+    {
+      "title": "Basic Gameplay",
+      "url": "https://learn.unity.com/pathway/junior-programmer/unit/basic-gameplay?version=6.3"
+    }
+  ],
+  "units": [
+    {
+      "id": "unity-essentials",
+      "number": 1,
+      "title": "Unity Essentials: build a playable space",
+      "summary": "Navigate the Editor, work with components and prefabs, and explain simple C# rules.",
+      "pathway": "Unity Essentials",
+      "pathwayUrl": "https://learn.unity.com/pathway/unity-essentials",
+      "lessons": [
+        {
+          "id": "essentials-01",
+          "title": "Find your way around a scene",
+          "skills": [
+            "editor-panels",
+            "scene-game",
+            "csharp-values",
+            "return"
+          ],
+          "prerequisites": [],
+          "sections": [
+            {
+              "heading": "Scene, Game, Hierarchy, Inspector",
+              "text": "The Scene view is your workspace for arranging a world. The Game view shows the view rendered by the game cameras. The Hierarchy lists GameObjects in the open scene; the Inspector shows the selected object\u2019s components and settings. The Project window contains assets saved in the project."
+            },
+            {
+              "heading": "Play mode is an experiment",
+              "text": "Save your scene, enter Play mode, change a value, then stop. Ordinary scene changes made during Play mode are not kept when you exit it. Make lasting edits outside Play mode. The Console shows messages, warnings, and errors; fix compilation errors before testing behavior."
+            },
+            {
+              "heading": "Your first C# value",
+              "text": "A string is text inside double quotation marks. A declaration such as string label = \"Arena\"; stores a value in a named variable. C# statements usually end with a semicolon. In the provided Solution method, return hands one value back to the caller. Main is the console entry point; Console.WriteLine displays the returned value. Keep the provided class and method wrappers for now."
+            }
+          ],
+          "example": "string label = \"Practice room\";\nreturn label;",
+          "exercise": {
+            "id": "essentials-01-practice",
+            "title": "Name the practice arena",
+            "prompt": "Inside Solution(), create a string variable named arenaName containing \"Practice Arena\". Return arenaName. Keep Main so you can see the result in a C# compiler.",
+            "starter": "using System;\n\npublic class Program\n{\n    public static string Solution()\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution());\n    }\n}\n",
+            "signature": "string Solution()",
+            "examples": [
+              {
+                "call": "Solution()",
+                "expected": "\"Practice Arena\""
+              }
+            ],
+            "hints": [
+              "Use double quotes for the text.",
+              "Declare the string, then return the variable."
+            ],
+            "file": "exercises/essentials-01/Program.cs"
+          },
+          "unityTask": [
+            "Create a scene named PracticeArena and save it.",
+            "Add and rename a Cube. Find it in the Hierarchy and locate its Transform in the Inspector.",
+            "Record one change you made during Play mode and what happened when you stopped."
+          ]
+        },
+        {
+          "id": "essentials-02",
+          "title": "GameObjects, components, and changing values",
+          "skills": [
+            "gameobjects",
+            "components",
+            "transform",
+            "csharp-types"
+          ],
+          "prerequisites": [
+            "essentials-01"
+          ],
+          "sections": [
+            {
+              "heading": "Objects are built from components",
+              "text": "A GameObject is a container. Its components provide behavior: Transform stores position, rotation, and scale; a Renderer displays geometry; a Collider defines a collision shape; a Rigidbody participates in physics simulation. A Collider alone does not make an object fall under gravity. A script can also be a component."
+            },
+            {
+              "heading": "Choose a type for the job",
+              "text": "Use int for whole-number counts, float for decimal game quantities, bool for true or false, and string for text. Write a float literal with f, such as 2.5f. Assignment uses = and updates a variable. A method\u2019s declared return type must match the value returned."
+            },
+            {
+              "heading": "Move a coordinate in code",
+              "text": "Addition can update a coordinate: float nextX = x + distance;. x and distance are parameters supplied when the method is called. Their values can change for each call; use the parameters instead of hard-coding an example answer. In Unity the Transform has three axes; this exercise isolates one axis as a number."
+            }
+          ],
+          "example": "float x = 2f;\nx = x + 1.5f;\nConsole.WriteLine(x); // 3.5",
+          "exercise": {
+            "id": "essentials-02-practice",
+            "title": "Move a practice marker",
+            "prompt": "Return x + distance as a float. Negative distances move in the opposite direction. Do not use UnityEngine in this console exercise.",
+            "starter": "using System;\n\npublic class Program\n{\n    public static float Solution(float x, float distance)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(2f, 1.5f));\n    }\n}\n",
+            "signature": "float Solution(float x, float distance)",
+            "examples": [
+              {
+                "call": "Solution(2f, 1.5f)",
+                "expected": "3.5f"
+              },
+              {
+                "call": "Solution(4f, -2f)",
+                "expected": "2f"
+              },
+              {
+                "call": "Solution(-1f, 0f)",
+                "expected": "-1f"
+              }
+            ],
+            "hints": [
+              "Both inputs already have the right numeric type.",
+              "Return an expression using both parameters."
+            ],
+            "file": "exercises/essentials-02/Program.cs"
+          },
+          "unityTask": [
+            "Change a Cube\u2019s position, rotation, and scale outside Play mode.",
+            "Add a floor with a Collider and a ball with a Collider plus Rigidbody. Observe gravity in Play mode.",
+            "Explain which component provides shape and which participates in physics."
+          ]
+        },
+        {
+          "id": "essentials-03",
+          "title": "Reusable objects and scoring rules",
+          "skills": [
+            "prefabs",
+            "audio",
+            "arithmetic",
+            "parameters"
+          ],
+          "prerequisites": [
+            "essentials-02"
+          ],
+          "sections": [
+            {
+              "heading": "Asset versus instance",
+              "text": "A prefab asset is a reusable template in the Project window. Dragging it into a scene creates an instance in the Hierarchy. An instance can have overrides; editing one instance does not automatically change every other copy. Apply overrides deliberately when you intend to update the asset."
+            },
+            {
+              "heading": "Sound has a source and a listener",
+              "text": "An AudioSource emits audio; an AudioListener receives it, commonly on the camera. A source\u2019s spatial blend determines whether sound behaves as 2D or 3D audio. For a UI click use 2D audio; for a sound in the world, consider 3D audio. Keep one active listener for this introductory scene."
+            },
+            {
+              "heading": "Explain the scoring formula",
+              "text": "Multiplication happens before addition in score + coins * pointsPerCoin. The three int parameters let the same method score many situations. The method returns the new total; returning a value is different from displaying it. Main prints the returned value for testing."
+            }
+          ],
+          "example": "int score = 10;\nint earned = 3 * 5;\nConsole.WriteLine(score + earned); // 25",
+          "exercise": {
+            "id": "essentials-03-practice",
+            "title": "Score a pickup batch",
+            "prompt": "Return the existing score plus coins multiplied by pointsPerCoin. Inputs are nonnegative whole numbers. A batch of zero coins leaves the score unchanged.",
+            "starter": "using System;\n\npublic class Program\n{\n    public static int Solution(int score, int coins, int pointsPerCoin)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(10, 3, 5));\n    }\n}\n",
+            "signature": "int Solution(int score, int coins, int pointsPerCoin)",
+            "examples": [
+              {
+                "call": "Solution(10, 3, 5)",
+                "expected": "25"
+              },
+              {
+                "call": "Solution(20, 0, 4)",
+                "expected": "20"
+              },
+              {
+                "call": "Solution(0, 5, 2)",
+                "expected": "10"
+              }
+            ],
+            "hints": [
+              "Calculate earned points from coins and pointsPerCoin.",
+              "Add earned points to the existing score."
+            ],
+            "file": "exercises/essentials-03/Program.cs"
+          },
+          "unityTask": [
+            "Create a collectible prefab and place three instances.",
+            "Change one instance\u2019s scale and identify the override.",
+            "Add an AudioSource, choose 2D or 3D sound, and explain your choice."
+          ]
+        },
+        {
+          "id": "essentials-04",
+          "title": "Scripts, methods, and a tiny game loop",
+          "skills": [
+            "methods",
+            "console",
+            "debugging",
+            "delta-time"
+          ],
+          "prerequisites": [
+            "essentials-03"
+          ],
+          "sections": [
+            {
+              "heading": "Read the method contract",
+              "text": "public static int Solution(int score, int bonus) names a method, its inputs, and its returned type. The body between braces holds statements. A call such as Solution(10, 5) supplies arguments. A return sends the result back; Console.WriteLine prints it. This console wrapper does not inherit MonoBehaviour."
+            },
+            {
+              "heading": "Understand Unity execution",
+              "text": "A Unity behavior typically inherits MonoBehaviour and is attached to a GameObject. Start runs once before that script\u2019s first Update when it becomes enabled; Update runs each rendered frame while the behavior is active. Debug.Log writes to Unity\u2019s Console. Console.WriteLine is for these standalone exercises. Do not paste the whole console Program into a Unity component."
+            },
+            {
+              "heading": "Find the first useful error",
+              "text": "Read the first compiler error and its line number. A missing semicolon, wrong capitalization, or mismatched return type prevents compilation. A program can also compile but return the wrong value; try another input and explain the calculation. Fix one issue at a time."
+            },
+            {
+              "heading": "Connect time to distance",
+              "text": "A speed of 6 units per second covers 3 units during 0.5 seconds. Multiplying speed by elapsed seconds makes the intended distance depend on elapsed time rather than on a count of frames. In a Unity Update method, Time.deltaTime supplies the elapsed seconds for the frame."
+            }
+          ],
+          "example": "float speed = 6f;\nfloat elapsedSeconds = 0.5f;\nConsole.WriteLine(speed * elapsedSeconds); // 3",
+          "exercise": {
+            "id": "essentials-04-practice",
+            "title": "Calculate a frame\u2019s travel distance",
+            "prompt": "Return speed * elapsedSeconds. speed is units per second and elapsedSeconds is seconds. Both inputs are nonnegative. A paused interval of zero seconds produces zero distance.",
+            "starter": "using System;\n\npublic class Program\n{\n    public static float Solution(float speed, float elapsedSeconds)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(6f, 0.5f));\n    }\n}\n",
+            "signature": "float Solution(float speed, float elapsedSeconds)",
+            "examples": [
+              {
+                "call": "Solution(6f, 0.5f)",
+                "expected": "3f"
+              },
+              {
+                "call": "Solution(4f, 0f)",
+                "expected": "0f"
+              },
+              {
+                "call": "Solution(2.5f, 2f)",
+                "expected": "5f"
+              }
+            ],
+            "hints": [
+              "Keep both quantities in the same unit system.",
+              "Multiply; do not add speed and time."
+            ],
+            "file": "exercises/essentials-04/Program.cs"
+          },
+          "unityTask": [
+            "Follow Programming Essentials in Unity Learn and attach a simple behavior.",
+            "Use Debug.Log to observe Start and Update, then remove noisy per-frame logs.",
+            "Capture a screenshot of your scene and describe how one component changes its behavior."
+          ]
+        }
+      ],
+      "quiz": {
+        "id": "essentials-checkpoint",
+        "title": "Essentials checkpoint",
+        "passPercent": 75,
+        "questions": [
+          {
+            "id": "panels",
+            "prompt": "Where do you inspect components on a selected GameObject?",
+            "choices": [
+              "Project window",
+              "Inspector",
+              "Game view",
+              "Console"
+            ],
+            "answer": 1,
+            "explanation": "The Inspector displays components and their editable settings for the selection."
+          },
+          {
+            "id": "view",
+            "prompt": "Which view is used to arrange the world rather than see the camera output?",
+            "choices": [
+              "Scene view",
+              "Game view",
+              "Console",
+              "Profiler"
+            ],
+            "answer": 0,
+            "explanation": "Scene view is the editing workspace. Game view displays what the game cameras render."
+          },
+          {
+            "id": "play",
+            "prompt": "You move an ordinary scene object during Play mode, then stop. What should you normally expect?",
+            "choices": [
+              "The change is saved to every scene",
+              "The prefab asset is deleted",
+              "The edit is not retained after Play mode",
+              "The editor cannot exit Play mode"
+            ],
+            "answer": 2,
+            "explanation": "Make lasting ordinary scene edits outside Play mode and save the scene."
+          },
+          {
+            "id": "physics",
+            "prompt": "Which component makes a 3D object participate in physics simulation?",
+            "choices": [
+              "AudioSource",
+              "Renderer",
+              "Rigidbody",
+              "Transform only"
+            ],
+            "answer": 2,
+            "explanation": "A Rigidbody adds physics simulation; a Collider supplies a collision shape."
+          },
+          {
+            "id": "prefab",
+            "prompt": "What is a prefab asset?",
+            "choices": [
+              "A reusable GameObject template",
+              "A screenshot of a scene",
+              "A compiled C# error",
+              "Only an audio file"
+            ],
+            "answer": 0,
+            "explanation": "A prefab is a reusable template from which you can create instances."
+          },
+          {
+            "id": "audio",
+            "prompt": "Which component emits audio?",
+            "choices": [
+              "AudioListener",
+              "AudioSource",
+              "Collider",
+              "MeshFilter"
+            ],
+            "answer": 1,
+            "explanation": "AudioSource emits sound; AudioListener receives it."
+          },
+          {
+            "id": "return",
+            "prompt": "What does return do in the practice method?",
+            "choices": [
+              "Prints automatically",
+              "Sends a value back to its caller",
+              "Moves the camera",
+              "Starts Play mode"
+            ],
+            "answer": 1,
+            "explanation": "Returning a value and printing it are separate operations."
+          },
+          {
+            "id": "frame",
+            "prompt": "Why multiply a speed by elapsed seconds?",
+            "choices": [
+              "To calculate a distance for that interval",
+              "To rename a prefab",
+              "To convert a bool to text",
+              "To make every computer have the same frame rate"
+            ],
+            "answer": 0,
+            "explanation": "Speed times elapsed time gives distance; it does not force a specific frame rate."
+          }
+        ]
+      }
+    },
+    {
+      "id": "player-control",
+      "number": 2,
+      "title": "Junior Programmer: player control & game rules",
+      "summary": "Translate movement, boundaries, spawning permission, and life changes into testable C#.",
+      "pathway": "Junior Programmer \u00b7 Player Control / Basic Gameplay",
+      "pathwayUrl": "https://learn.unity.com/pathway/junior-programmer/unit/player-control?version=6.3",
+      "lessons": [
+        {
+          "id": "player-01",
+          "title": "Steer with inputs and frame time",
+          "skills": [
+            "signed-input",
+            "frame-movement"
+          ],
+          "prerequisites": [
+            "essentials-04"
+          ],
+          "sections": [
+            {
+              "heading": "Connect to Player Control",
+              "text": "Follow the Player Control mission in Unity Learn. Keep using the input approach shown by your assigned project: input APIs differ between project versions and input-system settings. The logic here accepts an already-read input value so the calculation remains the same."
+            },
+            {
+              "heading": "Use a signed input",
+              "text": "An input of -1 means full movement in one direction, 0 means no movement, and 1 means full movement in the other. A value such as 0.5 represents partial input. Compute input * speed * elapsedSeconds, then add that displacement to the current position. Use float values and keep the f suffix on literal arguments."
+            },
+            {
+              "heading": "Predict before you test",
+              "text": "If x is 5, input is -1, speed is 4, and time is 0.5, displacement is -2 and the next position is 3. This method models horizontal movement only. It does not set a Transform or apply a Rigidbody force."
+            }
+          ],
+          "example": "float x = 5f;\nfloat displacement = -1f * 4f * 0.5f;\nConsole.WriteLine(x + displacement); // 3",
+          "exercise": {
+            "id": "player-01-practice",
+            "title": "Calculate the next player position",
+            "prompt": "Return x + input * speed * elapsedSeconds. Input is between -1 and 1; speed and elapsedSeconds are nonnegative. Do not clamp the result in this lesson.",
+            "starter": "using System;\n\npublic class Program\n{\n    public static float Solution(float x, float input, float speed, float elapsedSeconds)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(5f, -1f, 4f, 0.5f));\n    }\n}\n",
+            "signature": "float Solution(float x, float input, float speed, float elapsedSeconds)",
+            "examples": [
+              {
+                "call": "Solution(5f, -1f, 4f, 0.5f)",
+                "expected": "3f"
+              },
+              {
+                "call": "Solution(2f, 0f, 10f, 1f)",
+                "expected": "2f"
+              },
+              {
+                "call": "Solution(0f, 0.5f, 8f, 0.25f)",
+                "expected": "1f"
+              }
+            ],
+            "hints": [
+              "Compute displacement before adding the original position.",
+              "Preserve the sign of input."
+            ],
+            "file": "exercises/player-01/Program.cs"
+          },
+          "unityTask": [
+            "Follow Player Control and identify the variable controlling speed.",
+            "Predict the effect of doubling speed, test it, and restore the original value.",
+            "Explain why a camera needs a suitable position and viewing direction to show the player."
+          ]
+        },
+        {
+          "id": "player-02",
+          "title": "Keep a player inside the arena",
+          "skills": [
+            "comparisons",
+            "if",
+            "boundaries"
+          ],
+          "prerequisites": [
+            "player-01"
+          ],
+          "sections": [
+            {
+              "heading": "A condition is a question",
+              "text": "The expressions x < min and x > max produce bool values. Use an if statement followed by a condition in parentheses and a body in braces. Return immediately when a condition identifies the required answer. == compares equality; = assigns a value."
+            },
+            {
+              "heading": "Clamp means stop at the edge",
+              "text": "Clamping a position returns min when x is below min, max when x is above max, and x otherwise. At exactly min or max the value is already valid. Assume min <= max. This differs from wrapping to the other side or freezing before movement is calculated."
+            },
+            {
+              "heading": "Test the boundaries",
+              "text": "Try below, inside, above, and exactly on an edge. Passing a normal input is not enough to show that boundary logic is correct. This lesson adds if statements to the numeric work already taught; no arrays or loops are required."
+            }
+          ],
+          "example": "if (temperature < 0f)\n{\n    return 0f;\n}\nreturn temperature;",
+          "exercise": {
+            "id": "player-02-practice",
+            "title": "Clamp a player position",
+            "prompt": "Return x clamped to the inclusive interval [min, max]. The bounds are valid and may be negative. Use comparisons and if statements; no Unity APIs are needed.",
+            "starter": "using System;\n\npublic class Program\n{\n    public static float Solution(float x, float min, float max)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(12f, -5f, 5f));\n    }\n}\n",
+            "signature": "float Solution(float x, float min, float max)",
+            "examples": [
+              {
+                "call": "Solution(12f, -5f, 5f)",
+                "expected": "5f"
+              },
+              {
+                "call": "Solution(-8f, -5f, 5f)",
+                "expected": "-5f"
+              },
+              {
+                "call": "Solution(2f, -5f, 5f)",
+                "expected": "2f"
+              },
+              {
+                "call": "Solution(5f, -5f, 5f)",
+                "expected": "5f"
+              }
+            ],
+            "hints": [
+              "Check the lower edge and upper edge separately.",
+              "If neither condition applies, return the original position."
+            ],
+            "file": "exercises/player-02/Program.cs"
+          },
+          "unityTask": [
+            "Add or locate the boundary checks in your Player Control project.",
+            "Test both edges and describe whether the project clamps, freezes, or removes an object.",
+            "Record a bug, the input that reveals it, and the change that fixes it."
+          ]
+        },
+        {
+          "id": "gameplay-01",
+          "title": "Gate an action with game state",
+          "skills": [
+            "booleans",
+            "and",
+            "not",
+            "cooldown",
+            "prefab-spawning"
+          ],
+          "prerequisites": [
+            "player-02"
+          ],
+          "sections": [
+            {
+              "heading": "Connect to Basic Gameplay",
+              "text": "Follow the Basic Gameplay mission after Player Control. It introduces projectiles, prefab spawning, and collision decisions. A prefab is a template; Instantiate creates an instance at runtime. The C# exercise isolates the decision about whether spawning is allowed."
+            },
+            {
+              "heading": "Combine conditions",
+              "text": "Use && when both conditions must be true, || when either is enough, and ! to reverse a bool. remaining <= 0f includes exactly zero. A rule can be written as a bool expression and returned directly. Parentheses make the intended grouping clear."
+            },
+            {
+              "heading": "Keep one rule in one method",
+              "text": "A shot is allowed only when the fire button is pressed, the game is not over, and remaining cooldown is zero or below. The method returns permission; it does not spawn a projectile or reset the timer. Keeping the decision separate makes it easier to test."
+            }
+          ],
+          "example": "bool canMove = hasControl && !isPaused;\nreturn canMove;",
+          "exercise": {
+            "id": "gameplay-01-practice",
+            "title": "Decide whether a player can fire",
+            "prompt": "Return true only when pressed is true, gameOver is false, and remaining <= 0f. A negative remaining value is ready. Return a bool, not the text \"true\".",
+            "starter": "using System;\n\npublic class Program\n{\n    public static bool Solution(bool pressed, bool gameOver, float remaining)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(true, false, 0f));\n    }\n}\n",
+            "signature": "bool Solution(bool pressed, bool gameOver, float remaining)",
+            "examples": [
+              {
+                "call": "Solution(true, false, 0f)",
+                "expected": "true"
+              },
+              {
+                "call": "Solution(true, false, -1f)",
+                "expected": "true"
+              },
+              {
+                "call": "Solution(false, false, 0f)",
+                "expected": "false"
+              },
+              {
+                "call": "Solution(true, true, 0f)",
+                "expected": "false"
+              },
+              {
+                "call": "Solution(true, false, 0.1f)",
+                "expected": "false"
+              }
+            ],
+            "hints": [
+              "All three conditions must be satisfied.",
+              "Use !gameOver to require the game to still be active."
+            ],
+            "file": "exercises/gameplay-01/Program.cs"
+          },
+          "unityTask": [
+            "In Basic Gameplay, identify the prefab and the code that creates an instance.",
+            "Explain why spawning every Update without a gate would create many projectiles.",
+            "Describe how you would prevent shooting after game over."
+          ]
+        },
+        {
+          "id": "gameplay-02",
+          "title": "Collisions, lives, and debugging a rule",
+          "skills": [
+            "collision-events",
+            "lives",
+            "game-over",
+            "state-transitions"
+          ],
+          "prerequisites": [
+            "gameplay-01"
+          ],
+          "sections": [
+            {
+              "heading": "Know which event you are expecting",
+              "text": "A Collider defines a shape. For typical 3D trigger events, colliders are involved, one is set as a trigger, and at least one object has an appropriate Rigidbody; layer settings and object state also affect whether events occur. A trigger detects overlap without physically blocking the other object. 2D physics uses its own components and callbacks."
+            },
+            {
+              "heading": "Update lives once for one event",
+              "text": "Our exercise receives hit as an already-detected event. Start with nonnegative lives. If hit is true and lives > 0, return lives - 1; otherwise return lives unchanged. Combine conditions with &&. This is a pure rule: it does not configure physics or detect a collision."
+            },
+            {
+              "heading": "Separate a rule from its side effects",
+              "text": "After receiving the new life count, Unity code could update UI and end the game when the count is zero. Keep these actions separate from the calculation. When a life disappears twice, inspect how many times the event handler ran before changing the subtraction."
+            },
+            {
+              "heading": "Complete the small prototype",
+              "text": "Finish the Basic Gameplay practice assigned by your teacher. Demonstrate a moving player, a spawned prefab, an event that updates state, and a meaningful boundary. Explain a bug you found and how your test reveals that it is fixed."
+            }
+          ],
+          "example": "if (hit && lives > 0)\n{\n    return lives - 1;\n}\nreturn lives;",
+          "exercise": {
+            "id": "gameplay-02-practice",
+            "title": "Update remaining lives",
+            "prompt": "Given nonnegative lives, subtract one only when hit is true and at least one life remains. Never return a negative value. If there is no hit, keep the value unchanged.",
+            "starter": "using System;\n\npublic class Program\n{\n    public static int Solution(int lives, bool hit)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(Solution(3, true));\n    }\n}\n",
+            "signature": "int Solution(int lives, bool hit)",
+            "examples": [
+              {
+                "call": "Solution(3, true)",
+                "expected": "2"
+              },
+              {
+                "call": "Solution(3, false)",
+                "expected": "3"
+              },
+              {
+                "call": "Solution(0, true)",
+                "expected": "0"
+              },
+              {
+                "call": "Solution(1, true)",
+                "expected": "0"
+              }
+            ],
+            "hints": [
+              "Use && to combine a hit with having lives left.",
+              "Keep the existing lives in every other situation."
+            ],
+            "file": "exercises/gameplay-02/Program.cs"
+          },
+          "unityTask": [
+            "Demonstrate one collision or trigger interaction in your prototype.",
+            "Explain whether that interaction should physically block the other object.",
+            "Test zero lives and explain how gameplay stops or changes state."
+          ]
+        }
+      ],
+      "quiz": {
+        "id": "gameplay-checkpoint",
+        "title": "Player control & gameplay checkpoint",
+        "passPercent": 75,
+        "questions": [
+          {
+            "id": "update",
+            "prompt": "Which description best fits Update in an active enabled MonoBehaviour?",
+            "choices": [
+              "Once when the project is saved",
+              "Each rendered frame",
+              "Only on a collision",
+              "Only when the script compiles"
+            ],
+            "answer": 1,
+            "explanation": "Update is a per-frame callback. Start is used for initial setup."
+          },
+          {
+            "id": "input",
+            "prompt": "A signed input of -1 usually represents what in our horizontal rule?",
+            "choices": [
+              "No movement",
+              "Movement in the opposite direction from +1",
+              "An invalid float",
+              "Double speed"
+            ],
+            "answer": 1,
+            "explanation": "The negative sign reverses the displacement direction."
+          },
+          {
+            "id": "boundary",
+            "prompt": "A clamped player is exactly at the maximum boundary. What happens to that coordinate?",
+            "choices": [
+              "It stays at the maximum",
+              "It wraps to the minimum",
+              "It always becomes zero",
+              "It becomes a string"
+            ],
+            "answer": 0,
+            "explanation": "Inclusive boundaries allow values exactly on either edge."
+          },
+          {
+            "id": "comparison",
+            "prompt": "Which operator compares two values for equality?",
+            "choices": [
+              "=",
+              "==",
+              "++",
+              ";"
+            ],
+            "answer": 1,
+            "explanation": "== asks whether values are equal. = performs assignment."
+          },
+          {
+            "id": "gate",
+            "prompt": "pressed is true, gameOver is false, and remaining is 0.2. Can our player fire?",
+            "choices": [
+              "Yes, because the button is pressed",
+              "No, because cooldown time remains",
+              "Yes, because gameOver is false",
+              "Only if lives is even"
+            ],
+            "answer": 1,
+            "explanation": "All three requirements must be satisfied; remaining must be zero or below."
+          },
+          {
+            "id": "instantiate",
+            "prompt": "What does instantiation do in the spawning workflow?",
+            "choices": [
+              "Creates an instance from a template",
+              "Deletes all prefab assets",
+              "Saves every Play-mode edit",
+              "Checks a quiz answer"
+            ],
+            "answer": 0,
+            "explanation": "Instantiation creates an object instance at runtime."
+          },
+          {
+            "id": "trigger",
+            "prompt": "Why choose a trigger for a collectible?",
+            "choices": [
+              "To detect overlap without physically blocking the player",
+              "To render the UI",
+              "To replace all Rigidbody settings",
+              "To compile a method"
+            ],
+            "answer": 0,
+            "explanation": "A trigger reports overlap instead of acting as an ordinary blocking collision surface."
+          },
+          {
+            "id": "debug",
+            "prompt": "Lives decrease twice on one pickup. What is a useful first investigation?",
+            "choices": [
+              "Delete the entire scene",
+              "Count how often the event handler runs",
+              "Change every int to string",
+              "Remove all tests"
+            ],
+            "answer": 1,
+            "explanation": "Repeated events can cause repeated state updates. Observe the calls before changing the rule."
+          }
+        ]
+      }
+    }
+  ]
+}
