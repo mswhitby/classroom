@@ -1,6 +1,6 @@
 // Compile the original student source with Roslyn; no C#-to-JavaScript rewriting.
 export const RUNTIME_VERSION='0.10.2';
-export const RUNTIME_URL=new URL("./vendor/wasmsharp/WasmSharpWorker.js",import.meta.url).href;
+export const RUNTIME_URL=new URL("./vendor/wasmsharp/WasmSharpWorker.js?v=3",import.meta.url).href;
 export function buildChecks(cases){
  if(!Array.isArray(cases)||!cases.length)throw Error('No published test cases.');
  const calls=cases.map((c,i)=>`Check(${i}, () => global::Program.${c.call}, ${c.expected});`).join('\n');
@@ -88,3 +88,4 @@ export function parseChecks(stdout,count){
  if(rows.length!==count||new Set(rows.map(r=>r.index)).size!==count||rows.some(r=>!Number.isInteger(r.index)||r.index<0||r.index>=count))throw Error('The checker did not finish every published test.');
  return rows.sort((a,b)=>a.index-b.index);
 }
+
