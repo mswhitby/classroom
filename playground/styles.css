@@ -5,3 +5,10 @@
 @media(max-width:1150px){.lesson-grid{grid-template-columns:1fr}.course-layout{gap:22px;grid-template-columns:210px minmax(0,1fr)}}@media(max-width:750px){main{padding:30px 5vw 50px}.site-header{padding:16px 5vw;flex-wrap:wrap}.site-header nav{gap:20px}.course-grid{grid-template-columns:1fr}.course-layout{grid-template-columns:1fr}.course-nav{border-right:0;border-bottom:1px solid var(--line);padding-bottom:18px}.course-layout.collapsed{grid-template-columns:1fr}.course-layout.collapsed .course-nav{min-height:28px}.course-layout.collapsed .menu-caret{left:0;right:auto}.course-nav a{padding:6px 10px}.progress-grid{grid-template-columns:1fr}.lesson-grid{grid-template-columns:1fr}.course-card{min-height:230px}.hero-meta{flex-wrap:wrap}.brand strong{font-size:20px}footer{flex-direction:column}}
 
 :root[data-theme=dark] button.secondary,:root[data-theme=dark] .compact-button,:root[data-theme=dark] .icon-button,:root[data-theme=dark] .menu-caret{color:var(--accent)}
+
+.csharp-terminal{background:var(--terminal);color:var(--terminal-ink);border-top:1px solid #54495e}
+.terminal-heading{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:10px 16px;background:#35303b;font-size:11px;color:#eee6f3}
+.csharp-terminal #csharp-output{min-height:140px;max-height:500px;height:170px;resize:vertical;overflow:auto;margin:0;border-radius:0;padding:16px;font-size:13px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}
+.workspace-body .check-feedback{background:transparent;color:var(--ink);padding:0;white-space:pre-wrap;font:12px/1.7 ui-monospace,SFMono-Regular,Consolas,monospace}
+.workspace-body h3{font-size:13px}
+.workspace[aria-busy=true] #stop-code{opacity:1}
