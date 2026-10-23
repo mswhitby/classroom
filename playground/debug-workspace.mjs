@@ -1,4 +1,4 @@
-import {CSharpRunner} from './csharp-runner.mjs?v=csharp-4';
+import {CSharpRunner} from './csharp-runner.mjs?v=csharp-5';
 import {debugHints} from './debug-hints.mjs';
 export function debugWorkspace(main) {
  document.title='Debugging workspace | Ms. Whitby’s Playground';

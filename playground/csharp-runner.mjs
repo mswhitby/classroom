@@ -3,7 +3,7 @@ export class CSharpRunner {
  constructor({onStatus=()=>{},loadTimeout=180000,executionTimeout=30000,workerFactory=url=>new Worker(url,{type:'module'})}={}){Object.assign(this,{onStatus,loadTimeout,executionTimeout,workerFactory});this.worker=null;this.pending=null;this.ready=null;this.sequence=0;}
  initialize(){
   if(this.ready)return this.ready;
-  const worker=this.worker=this.workerFactory(new URL('./csharp-worker.mjs?v=csharp-4',import.meta.url));
+  const worker=this.worker=this.workerFactory(new URL('./csharp-worker.mjs?v=csharp-5',import.meta.url));
   this.onStatus('Loading C# compiler…');
   this.ready=new Promise((resolve,reject)=>{this.resolveReady=resolve;this.rejectReady=reject});
   this.loadTimer=setTimeout(()=>this.stop('The C# compiler could not finish loading. Try again or check your network.'),this.loadTimeout);

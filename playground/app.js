@@ -1,7 +1,7 @@
-import {debugWorkspace} from './debug-workspace.mjs';
+import {debugWorkspace} from './debug-workspace.mjs?v=5';
 import {validateCourse,scoreQuiz,progressKey} from './model.mjs';
-import {CSharpRunner} from './csharp-runner.mjs?v=csharp-4';
-import {buildChecks,parseChecks} from './csharp-protocol.mjs?v=csharp-4';
+import {CSharpRunner} from './csharp-runner.mjs?v=csharp-5';
+import {buildChecks,parseChecks} from './csharp-protocol.mjs?v=csharp-5';
 const $=id=>document.getElementById(id),main=$('main');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const inline=s=>esc(s).replace(/`([^`]+)`/g,'<code>$1</code>');

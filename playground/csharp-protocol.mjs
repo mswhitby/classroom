@@ -32,6 +32,7 @@ using System.Reflection;
 using System.Text;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
+using Microsoft.CodeAnalysis.Text;
 using WasmSharp.Core.Services;
 public static class __PlaygroundHost {
 class LimitedWriter : TextWriter {
@@ -45,9 +46,8 @@ static string B64(string value)=>Convert.ToBase64String(Encoding.UTF8.GetBytes(v
 public static void Main(string[] args){
  string source=${JSON.stringify(source)};
  string checker=${JSON.stringify(checks||'')};
- var options=new CSharpCompilationOptions(OutputKind.ConsoleApplication).WithConcurrentBuild(false);
- if(checker.Length>0)options=options.WithMainTypeName("__PlaygroundChecks");
- var trees=checker.Length>0?new[]{CSharpSyntaxTree.ParseText(source,path:"Program.cs"),CSharpSyntaxTree.ParseText(checker,path:"Checks.cs")}:new[]{CSharpSyntaxTree.ParseText(source,path:"Program.cs")};
+ var options=new CSharpCompilationOptions(checker.Length>0?OutputKind.DynamicallyLinkedLibrary:OutputKind.ConsoleApplication).WithConcurrentBuild(false);
+ var trees=checker.Length>0?new[]{CSharpSyntaxTree.ParseText(SourceText.From(source),null,"Program.cs"),CSharpSyntaxTree.ParseText(SourceText.From(checker),null,"Checks.cs")}:new[]{CSharpSyntaxTree.ParseText(SourceText.From(source),null,"Program.cs")};
  var compilation=CSharpCompilation.Create("Student_${nonce.replaceAll('-','_')}",trees,MetadataReferenceCache.MetadataReferences,options);
  using var stream=new MemoryStream();
  var emitted=compilation.Emit(stream);
@@ -57,8 +57,8 @@ public static void Main(string[] args){
  if(compiled){
   var oldOut=Console.Out;var oldError=Console.Error;
   try {
-   Console.SetOut(output);Console.SetError(errors);
-   var assembly=Assembly.Load(stream.ToArray());var entry=assembly.EntryPoint;
+   Console.SetOut(output);
+   var assembly=Assembly.Load(stream.ToArray());var entry=checker.Length>0?assembly.GetType("__PlaygroundChecks").GetMethod("Main"):assembly.EntryPoint;
    if(entry==null)throw new InvalidOperationException("Define a static Main method or use top-level statements.");
    var result=entry.Invoke(null,entry.GetParameters().Length==0?null:new object[]{Array.Empty<string>()});
    if(result is System.Threading.Tasks.Task task){
@@ -69,7 +69,7 @@ public static void Main(string[] args){
   }catch(Exception e){
    while(e is TargetInvocationException && e.InnerException!=null)e=e.InnerException;
    try{errors.Write(e.GetType().Name+": "+e.Message);}catch{}
-  }finally{Console.SetOut(oldOut);Console.SetError(oldError);}
+  }finally{Console.SetOut(oldOut);}
  }
  Console.WriteLine("PLAYGROUND_RESULT:${nonce}:"+(compiled?"1":"0")+":"+(success?"1":"0")+":"+B64(output.ToString())+":"+B64(errors.ToString())+":"+B64(diagnostics));
 }
