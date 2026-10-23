@@ -4,12 +4,9 @@ title: Welcome
 
 This is the online  companion for [Ms. Whitby’s](https://wagner.judsonisd.org/staff?search=deandra+whitby) course's at Wagner High School. Ms. Whitby teaches Fundamentals of Computer Science, Computer Science I, Game Program and Design, and Mobile Application Development. Parents and students can reference this site for assignment details, project ideas, and reference materials.
 
-### Computer Science I — Python Challenges
+### Class Portal
 
-[**Open the October 26 Python Challenge Lab**](https://www.mswhitby.com/computer-science-1/challenges/) to browse problems, write and run Python, check public examples, and review skills.
-
-Prefer a guided sequence? [**Open Units 02–06 in the interactive Python lessons**](https://www.mswhitby.com/computer-science-1/units/). The [introductory Unit 01](https://www.mswhitby.com/computer-science-1/) remains available as a refresher.
-
+[Classroom Exercises](https://www.mswhitby.com/computer-science-1/)
 
 ### Contact
 
