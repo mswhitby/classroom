@@ -191,6 +191,64 @@ async function checkAnswer(){
   feedback("The check could not finish. Your draft is saved locally.","bad");
  }finally{blocking(false)}
 }
+
+function setupWorkspaceSizing(){
+ const panel=$("coding-workspace");
+ if(!panel||!$("workspace-divider")||!$("expand-workspace"))return;
+ const grid=panel.parentElement;
+ const widthHandle=$("workspace-divider"),expand=$("expand-workspace");
+ const clamp=(n,min,max)=>Math.max(min,Math.min(max,n));
+ function bindHandle(handle,{initial,min,max,axis,apply,measure,key}){
+  let value=initial,drag=null;
+  function set(n){
+   value=clamp(n,min,max);apply(value);
+   handle.setAttribute("aria-valuenow",String(Math.round(value)));
+   handle.setAttribute("aria-valuetext",Math.round(value)+(axis==="width"?" percent lesson width":" pixels"));
+   write("layout:"+key,String(value));
+  }
+  const saved=read("layout:"+key);
+  set(saved!==null&&Number.isFinite(Number(saved))?Number(saved):initial);
+  handle.addEventListener("pointerdown",e=>{
+   if(e.button!==0)return;
+   e.preventDefault();handle.focus();
+   drag={start:axis==="width"?e.clientX:e.clientY,value,extent:measure()};
+   handle.setPointerCapture(e.pointerId);
+   document.body.classList.add("workspace-resizing");
+  });
+  handle.addEventListener("pointermove",e=>{
+   if(!drag)return;
+   const delta=(axis==="width"?e.clientX:e.clientY)-drag.start;
+   set(drag.value+(axis==="width"?delta/drag.extent*100:delta));
+  });
+  function finish(){drag=null;document.body.classList.remove("workspace-resizing")}
+  handle.addEventListener("pointerup",finish);
+  handle.addEventListener("pointercancel",finish);
+  handle.addEventListener("lostpointercapture",finish);
+  handle.addEventListener("dblclick",()=>set(initial));
+  handle.addEventListener("keydown",e=>{
+   const minus=axis==="width"?"ArrowLeft":"ArrowUp",plus=axis==="width"?"ArrowRight":"ArrowDown";
+   if(e.key===minus||e.key===plus){e.preventDefault();set(value+(e.key===plus?1:-1)*(axis==="width"?2:20)*(e.shiftKey?5:1))}
+   else if(e.key==="Home"){e.preventDefault();set(min)}
+   else if(e.key==="End"){e.preventDefault();set(max)}
+  });
+ }
+ bindHandle(widthHandle,{initial:36,min:25,max:65,axis:"width",key:"lesson-width",
+  measure:()=>Math.max(1,grid.getBoundingClientRect().width),
+  apply:n=>grid.style.setProperty("--lesson-width",n+"%")});
+ bindHandle($("editor-height-divider"),{initial:360,min:180,max:1400,axis:"height",key:"editor-height",
+  measure:()=>1,apply:n=>panel.style.setProperty("--editor-height",n+"px")});
+ bindHandle($("terminal-height-divider"),{initial:170,min:100,max:1000,axis:"height",key:"terminal-height",
+  measure:()=>1,apply:n=>panel.style.setProperty("--terminal-height",n+"px")});
+ function setExpanded(on){
+  panel.classList.toggle("is-expanded",on);document.body.classList.toggle("workspace-expanded",on);
+  expand.setAttribute("aria-pressed",String(on));expand.textContent=on?"↙ Restore workspace":"⛶ Expand workspace";
+  if(on)panel.scrollTop=0;
+  else expand.focus();
+ }
+ expand.addEventListener("click",()=>setExpanded(!panel.classList.contains("is-expanded")));
+ document.addEventListener("keydown",e=>{if(e.key==="Escape"&&panel.classList.contains("is-expanded")){e.preventDefault();setExpanded(false)}});
+}
+
 function begin(){
  if(list.length!==24||all.size!==24){$("output").textContent="Incomplete lesson data. Refresh or tell your teacher.";return;}
  for(let n=1;n<=6;n++){
@@ -213,5 +271,6 @@ function begin(){
  });
  const requested=decodeURIComponent(location.hash.slice(1));select(all.has(requested)?requested:list[0].id);
 }
+setupWorkspaceSizing();
 begin();
 })();
