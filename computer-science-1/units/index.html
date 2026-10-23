@@ -29,11 +29,32 @@
 @media(max-width:1100px){.grid{grid-template-columns:1fr}}
 @media(max-width:760px){.coding-workbench{grid-template-columns:1fr}.terminal-pane{border-left:0;border-top:1px solid #59505f}:root[data-theme] .coding-workbench #code{min-height:260px;height:300px}:root[data-theme] .terminal-pane #output{min-height:140px;max-height:320px}}
 
+
+/* Adjustable workspace: width between lesson and code; independent editor/output heights. */
+.grid{grid-template-columns:minmax(250px,var(--lesson-width,36%)) 12px minmax(0,1fr);gap:12px}
+.workspace-actions{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-wrap:wrap}
+#expand-workspace{font-size:12px;white-space:nowrap}
+.resize-width,.resize-height{touch-action:none;user-select:none;position:relative;background:var(--soft);border-radius:5px}
+.resize-width{cursor:col-resize;min-height:80px;align-self:stretch}
+.resize-width::after{content:"";position:absolute;width:3px;height:44px;left:50%;top:45%;transform:translateX(-50%);border-radius:3px;background:var(--muted)}
+.resize-height{height:14px;cursor:row-resize;flex:none;border-radius:0;background:#3b3543}
+.resize-height::after{content:"";position:absolute;width:44px;height:3px;top:50%;left:50%;transform:translate(-50%,-50%);border-radius:3px;background:#b6a7c4}
+.resize-width:hover,.resize-width:focus-visible{background:var(--hover);outline:2px solid var(--blue);outline-offset:1px}
+.resize-height:hover,.resize-height:focus-visible{background:#51435e;outline:2px solid var(--blue);outline-offset:-2px}
+body.workspace-resizing{user-select:none}
+:root[data-theme] .coding-workbench #code{height:var(--editor-height,360px);min-height:180px;resize:none}
+:root[data-theme] .terminal-pane #output{height:var(--terminal-height,170px);min-height:100px;max-height:none;flex:none}
+body.workspace-expanded{overflow:hidden}
+.workspace.is-expanded{position:fixed;inset:12px;z-index:2000;overflow:auto;max-width:none;margin:0;box-shadow:0 0 0 100vmax rgba(20,16,26,.65)}
+.workspace.is-expanded>.panel-heading{position:sticky;top:0;z-index:2;background:var(--panel)}
+@media(max-width:1100px){.grid{grid-template-columns:1fr}.resize-width{display:none}}
+@media(max-width:600px){.workspace-actions #mode-label{display:none}.workspace.is-expanded{inset:4px}.panel-heading{flex-wrap:wrap}}
+
 </style>
 <script defer src="../theme.js"></script><script defer src="../learning-map.js"></script>
 <script defer src="data-01.js"></script><script defer src="data-02.js"></script><script defer src="data-03.js"></script>
 <script defer src="data-04.js"></script><script defer src="data-05.js"></script><script defer src="data-06.js"></script>
-<script defer src="lessons-app.js?v=20261023-terminal"></script></head>
+<script defer src="lessons-app.js?v=20261023-resize"></script></head>
 <body><a class="skip" href="#main">Skip to lesson</a>
 <header class="top"><a class="logo" href="../"><span class="logo-icon">{ }</span> COMPUTER SCIENCE <b>I</b></a>
 <div class="top-right"><a href="../">Course home</a><a href="./" aria-current="page">Lessons</a><a href="../challenges/">Challenges</a><span class="theme-picker"><label for="theme">Theme</label><select id="theme" data-theme-select><option value="light">Light</option><option value="purple">Purple 💜</option><option value="dark">Dark</option><option value="dark-purple">Dark Purple</option></select></span></div></header>
@@ -49,7 +70,7 @@
 <div class="hero"><div class="eyebrow" id="unit-label">UNIT 02 · FOUNDATIONS</div>
 <div class="heading-line"><h2 id="title">Select a lesson</h2><span class="points" id="points">—</span></div>
 <div class="tags" id="concept-tag"></div><p class="subtitle" id="summary"></p></div>
-<div class="grid"><article class="panel instructions">
+<div class="grid"><article id="lesson-instructions" class="panel instructions">
 <div class="panel-heading"><h3>Learn the concept</h3><span>STUDY & APPLY</span></div>
 <div class="panel-content">
 <h4>Why it matters</h4><div id="lead" class="instructions-text"></div>
@@ -64,16 +85,19 @@
 <h4>Practice these skills</h4><div id="related-challenges" class="related-links" aria-label="Related coding challenges"></div>
 <a id="full-lesson" target="_blank" rel="noopener">Read the complete lesson and reflection ↗</a>
 </div></article>
-<section class="panel workspace"><div class="panel-heading"><h3>Try it yourself</h3><span id="mode-label">PYTHON WORKSPACE</span></div>
+<div id="workspace-divider" class="resize-width" role="separator" tabindex="0" aria-label="Resize lesson and coding area widths" aria-orientation="vertical" aria-controls="lesson-instructions coding-workspace" aria-valuemin="25" aria-valuemax="65" aria-valuenow="36" title="Drag left or right to resize. Use arrow keys, or double-click to reset."></div>
+<section id="coding-workspace" class="panel workspace"><div class="panel-heading"><h3>Try it yourself</h3><div class="workspace-actions"><span id="mode-label">PYTHON WORKSPACE</span><button id="expand-workspace" type="button" aria-pressed="false" aria-controls="coding-workspace">⛶ Expand workspace</button></div></div>
 <div class="coding-workbench">
 <div class="code-pane">
 <div class="editor-header"><span><span class="dot"></span> main.py</span><span>Python 3 in browser</span></div>
 <label class="sr-only" for="code">Python editor</label><textarea id="code" spellcheck="false" autocorrect="off" autocomplete="off" autocapitalize="off"></textarea>
+<div id="editor-height-divider" class="resize-height" role="separator" tabindex="0" aria-label="Resize code editor height" aria-orientation="horizontal" aria-controls="code" aria-valuemin="180" aria-valuemax="1400" aria-valuenow="360" title="Drag up or down to resize the editor. Arrow keys also work."></div>
 <div class="toolbar"><button id="run" class="primary" type="button">▶ Run code</button><button id="check" class="success" type="button">✓ Check answer</button><button id="save">Save draft</button><button id="copy">Copy code</button><button id="reset">Reset</button></div>
 </div>
 <section class="terminal-pane" aria-label="Python terminal">
 <div class="editor-header"><strong>Terminal / Output</strong><span id="runtime" role="status">Python not loaded</span></div>
 <pre id="output" tabindex="0" aria-label="Program output and Python errors" aria-live="polite">Run code to see printed output or Python errors here.</pre>
+<div id="terminal-height-divider" class="resize-height" role="separator" tabindex="0" aria-label="Resize terminal height" aria-orientation="horizontal" aria-controls="output" aria-valuemin="100" aria-valuemax="1000" aria-valuenow="170" title="Drag up or down to resize the terminal. Arrow keys also work."></div>
 <div id="run-status" role="status">Ready to run</div>
 </section>
 </div>
