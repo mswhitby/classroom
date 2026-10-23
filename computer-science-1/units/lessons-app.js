@@ -134,6 +134,22 @@ function harness(source,cases){
 }
 function normalize(s){return String(s||"").replace(/\r\n/g,"\n").replace(/\n$/,"")}
 function blocking(on){busy=on;for(const id of ["run","check","reset"])$(id).disabled=on}
+async function runStudentCode(){
+ if(!active||busy)return;
+ const source=$("code").value;
+ write("draft:"+active.id,source);
+ blocking(true);$("output").textContent="";feedback("Running your code...");
+ try{
+  await init();status("Running...");
+  const result=await runCode(source);
+  $("output").textContent=result.output||(result.success?"(No output. Use print() to display a value.)":"Python stopped without output.");
+  feedback(result.success?"Run complete. Use Check answer when you are ready to test the lesson requirements.":"Python reported an error. Review the output and try again.",result.success?"":"bad");
+  status("Python ready");
+ }catch(err){
+  $("output").textContent=String(err?.message||err);
+  feedback("The run could not finish. Your draft is saved locally.","bad");
+ }finally{blocking(false)}
+}
 async function test(allCases){
  if(!active||busy)return;const l=active,source=$("code").value;write("draft:"+l.id,source);
  blocking(true);feedback(allCases?"Checking all published examples...":"Running the first example...");
@@ -181,14 +197,14 @@ function begin(){
  };
  $("previous-lesson").onclick=()=>{const i=ordered.findIndex(x=>x.id===active?.id);if(i>0){select(ordered[i-1].id);$("title").scrollIntoView?.({block:"start",behavior:"smooth"})}};
  $("next-lesson").onclick=()=>{const i=ordered.findIndex(x=>x.id===active?.id);if(i>=0&&i<ordered.length-1){select(ordered[i+1].id);$("title").scrollIntoView?.({block:"start",behavior:"smooth"})}};
- $("run").onclick=()=>test(false);$("check").onclick=()=>test(true);
+ $("run").onclick=runStudentCode;$("check").onclick=()=>test(true);
  $("save").onclick=()=>feedback(write("draft:"+active.id,$("code").value)?"Draft saved on this device.":"Can't save here. Use Copy code.");
  $("copy").onclick=async()=>{try{await navigator.clipboard.writeText($("code").value);feedback("Copied code. Paste it into main.py in your GitHub fork.","good")}catch{feedback("Clipboard unavailable. Select and copy manually.")}};
  $("reset").onclick=()=>{if(!confirm("Restore starter code and replace this draft?"))return;$("code").value=active.starter;write("draft:"+active.id,active.starter);erase("pass:"+active.id);navigation();feedback("Starter restored.")};
  $("code").addEventListener("input",()=>{write("draft:"+active.id,$("code").value);erase("pass:"+active.id);navigation()});
  $("code").addEventListener("keydown",e=>{
   if(e.key==="Tab"){e.preventDefault();const a=e.target;a.setRangeText("    ",a.selectionStart,a.selectionEnd,"end");a.dispatchEvent(new Event("input"))}
-  if((e.ctrlKey||e.metaKey)&&e.key==="Enter"){e.preventDefault();test(false)}
+  if((e.ctrlKey||e.metaKey)&&e.key==="Enter"){e.preventDefault();runStudentCode()}
  });
  const requested=decodeURIComponent(location.hash.slice(1));select(all.has(requested)?requested:list[0].id);
 }
