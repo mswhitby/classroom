@@ -1,0 +1,71 @@
+name: Publish verified Playground and Python updates
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/publish-playground.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: publish-playground
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: site
+      - uses: actions/checkout@v4
+        with:
+          repository: mswhitby/playground
+          ref: 18ab03602966293d50dfe5d84832fc0830a790c4
+          path: playground
+      - uses: actions/checkout@v4
+        with:
+          repository: mswhitby/game-programming
+          ref: 0abc51ba19bb401515efed12dbeb2576f7fca094
+          path: game-programming
+      - uses: actions/checkout@v4
+        with:
+          repository: mswhitby/mobile-app-dev
+          path: mobile-app-dev
+      - uses: actions/checkout@v4
+        with:
+          repository: mswhitby/uil
+          ref: 2d2f022f2ce39b15c1f8f719e479deb967a5a17f
+          path: uil
+      - uses: actions/checkout@v4
+        with:
+          repository: mswhitby/computer-science-1
+          ref: 68b8234949922b6e98ccc3f68641da00d52c85cd
+          path: computer-science-1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify source and build editor assets
+        working-directory: playground
+        run: |
+          npm ci
+          npm test
+          npm run build:ui
+          python scripts/prepare-java-runtime.py
+          python scripts/build.py
+      - name: Update only the two course deployment folders
+        run: |
+          rsync -a playground/dist/ site/playground/
+          rsync -a computer-science-1/docs/ site/computer-science-1/
+      - name: Save built files and request the existing Pages build
+        working-directory: site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add playground computer-science-1
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish UIL practice and shared editor improvements'
+            git push origin HEAD:main
+          fi
+          gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
