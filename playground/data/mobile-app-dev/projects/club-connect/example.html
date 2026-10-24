@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Club Connect</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: system-ui, sans-serif; line-height: 1.6; color: #202b38; background: #f2f6fa; }
+        .page-shell { max-width: 960px; margin: 0 auto; padding: 24px; }
+        header { padding: 24px 0; }
+        header > p:first-child { color: #185a4b; font-weight: 700; }
+        h1 { max-width: 16ch; font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1.1; }
+        h2, h3 { line-height: 1.3; }
+        nav { display: flex; flex-wrap: wrap; gap: 16px; }
+        a { color: #185a4b; }
+        .club-grid { display: grid; gap: 24px; }
+        .announcement, #signup { padding: 20px; background: white; border: 1px solid #c7d5de; border-radius: 12px; }
+        .announcement + .announcement { margin-top: 16px; }
+        label { display: block; margin: 16px 0 4px; font-weight: 600; }
+        input, select, button { width: 100%; font: inherit; padding: 10px; border: 1px solid #728797; border-radius: 6px; }
+        input, select { color: #202b38; background: white; }
+        button { margin-top: 20px; background: #185a4b; color: white; cursor: pointer; }
+        :focus-visible { outline: 3px solid #b34d0a; outline-offset: 3px; }
+        #signup-message { font-weight: 600; }
+        footer { padding: 24px 0; }
+        @media (min-width: 760px) { .club-grid { grid-template-columns: 1fr 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="page-shell">
+        <header>
+            <p>Wagner Robotics Club</p>
+            <h1>Build something together.</h1>
+            <p>Find our next meetup and tell us what you would like to try.</p>
+            <nav aria-label="On this page">
+                <a href="#announcements">Announcements</a>
+                <a href="#signup">Join the club</a>
+            </nav>
+        </header>
+        <main class="club-grid">
+            <section id="announcements" aria-labelledby="news-heading">
+                <h2 id="news-heading">Club announcements</h2>
+                <article class="announcement">
+                    <h3>First build night</h3>
+                    <p>Thursday at 4 PM in Room 214. Bring an idea; we will bring the supplies.</p>
+                </article>
+                <article class="announcement">
+                    <h3>Design a club sticker</h3>
+                    <p>Bring a sketch to our next meetup. We will choose a design together.</p>
+                </article>
+            </section>
+            <section id="signup" aria-labelledby="signup-heading">
+                <h2 id="signup-heading">Find your first project</h2>
+                <p>Practice form: use made-up details. Nothing is sent or stored.</p>
+                <form id="club-signup">
+                    <label for="member-name">Your first name</label>
+                    <input id="member-name" name="name" type="text" required>
+                    <label for="member-email">Practice email</label>
+                    <input id="member-email" name="email" type="email" required>
+                    <label for="member-interest">What would you like to try?</label>
+                    <select id="member-interest" name="interest" required>
+                        <option value="">Choose an interest</option>
+                        <option value="building">Building a robot</option>
+                        <option value="coding">Coding a robot</option>
+                        <option value="design">Designing a team logo</option>
+                    </select>
+                    <button type="submit">Count me in</button>
+                </form>
+                <p id="signup-message" role="status" aria-live="polite"></p>
+            </section>
+        </main>
+        <footer><p>Everyone starts somewhere. Beginners are welcome.</p></footer>
+    </div>
+    <script>
+        const signupForm = document.querySelector('#club-signup');
+        const signupMessage = document.querySelector('#signup-message');
+        signupForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const firstName = document.querySelector('#member-name').value.trim();
+            const interest = document.querySelector('#member-interest');
+            const interestLabel = interest.options[interest.selectedIndex].text;
+            signupMessage.textContent = `Thanks, ${firstName}! We will help you get started with ${interestLabel.toLowerCase()}.`;
+        });
+    </script>
+</body>
+</html>

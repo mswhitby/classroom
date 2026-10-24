@@ -1,7 +1,7 @@
 let currentCleanup=()=>{};
 export function disposeStudyLayout(){currentCleanup();currentCleanup=()=>{};document.body.classList.remove('study-page','workspace-expanded','workspace-resizing');document.querySelector('main')?.classList.remove('study-main')}
 const separator=(label,orientation)=>{const e=document.createElement('div');e.className=orientation==='vertical'?'study-resize-width':'study-resize-height';e.tabIndex=0;e.setAttribute('role','separator');e.setAttribute('aria-label',label);e.setAttribute('aria-orientation',orientation);e.title=orientation==='vertical'?'Drag to change the lesson and coding widths. Arrow keys also work.':'Drag to change the height. Arrow keys also work.';return e};
-export function setupStudyLayout(main,{course,title,competency,lessonNumber,lessonCount}={}){
+export function setupStudyLayout(main,{course,title,competency,lessonNumber,lessonCount,headingLabel,instructionTitle}={}){
  disposeStudyLayout();const controller=new AbortController(),signal=controller.signal;
  currentCleanup=()=>{controller.abort();document.body.classList.remove('workspace-expanded','workspace-resizing')};
  const layout=main.querySelector('.course-layout,.mobile-layout'),article=layout?.querySelector(':scope > article'),workspace=article?.querySelector('.workspace');if(!layout||!article)return;
@@ -13,7 +13,7 @@ export function setupStudyLayout(main,{course,title,competency,lessonNumber,less
  if(isMobile){
   const prose=article.querySelector('#mobile-prose');prose.querySelector('h1')?.remove();
   const heading=document.createElement('header');heading.className='lesson-heading';
-  const eyebrow=document.createElement('div');eyebrow.className='eyebrow';eyebrow.textContent=`Competency ${lessonNumber} of ${lessonCount} · ${competency}`;
+  const eyebrow=document.createElement('div');eyebrow.className='eyebrow';eyebrow.textContent=headingLabel||`Competency ${lessonNumber} of ${lessonCount} · ${competency}`;
   const h1=document.createElement('h1');h1.textContent=title;heading.append(eyebrow,h1);article.insertBefore(heading,prose);
   grid=document.createElement('div');grid.className='lesson-grid';article.insertBefore(grid,prose);
   copy=document.createElement('section');copy.className='panel lesson-copy';grid.append(copy,workspace);copy.append(prose);
@@ -21,7 +21,7 @@ export function setupStudyLayout(main,{course,title,competency,lessonNumber,less
  grid.classList.add('study-grid');copy.classList.add('study-instructions');workspace.classList.add('study-workspace');
  const unity=article.querySelector('.unity-task');if(unity)copy.append(unity);
  const content=document.createElement('div');content.className='study-panel-content';content.append(...copy.childNodes);
- const copyHead=document.createElement('div');copyHead.className='study-panel-heading';copyHead.innerHTML='<h2>Learn the concept</h2><span>Study & apply</span>';copy.append(copyHead,content);
+ const copyHead=document.createElement('div');copyHead.className='study-panel-heading';copyHead.innerHTML='<h2></h2><span>Study & apply</span>';copyHead.querySelector('h2').textContent=instructionTitle||'Learn the concept';copy.append(copyHead,content);
  const width=separator('Resize lesson and coding area widths','vertical');grid.insertBefore(width,workspace);
  const oldHead=workspace.querySelector('.workspace-head'),expand=oldHead.querySelector('button');oldHead.className='editor-header';
  const head=document.createElement('div');head.className='study-panel-heading';head.innerHTML='<h2>Try it yourself</h2>';head.append(expand);workspace.prepend(head);

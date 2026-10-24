@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Club Connect</title>
+    <style>
+        /* Step 2: give the page and its cards a readable, responsive layout. */
+    </style>
+</head>
+<body>
+    <div class="page-shell">
+        <header>
+            <p>Wagner Robotics Club</p>
+            <h1>Build something together.</h1>
+            <p>Find our next meetup and tell us what you would like to try.</p>
+            <nav aria-label="On this page">
+                <a href="#announcements">Announcements</a>
+                <a href="#signup">Join the club</a>
+            </nav>
+        </header>
+        <main class="club-grid">
+            <section id="announcements" aria-labelledby="news-heading">
+                <h2 id="news-heading">Club announcements</h2>
+                <article class="announcement">
+                    <h3>First build night</h3>
+                    <p>Thursday at 4 PM in Room 214. Bring an idea; we will bring the supplies.</p>
+                </article>
+                <!-- Step 1: add another announcement with a useful title and details. -->
+            </section>
+            <section id="signup" aria-labelledby="signup-heading">
+                <h2 id="signup-heading">Find your first project</h2>
+                <p>Practice form: use made-up details. Nothing is sent or stored.</p>
+                <form id="club-signup">
+                    <label for="member-name">Your first name</label>
+                    <input id="member-name" name="name" type="text" required>
+                    <!-- Step 1: add a labeled email input and interest select. -->
+                    <button type="submit">Count me in</button>
+                </form>
+                <p id="signup-message" role="status" aria-live="polite"></p>
+            </section>
+        </main>
+        <footer><p>Everyone starts somewhere. Beginners are welcome.</p></footer>
+    </div>
+    <script>
+        // Step 3: listen for a form submission and show a personal confirmation.
+    </script>
+</body>
+</html>

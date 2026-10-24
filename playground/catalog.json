@@ -19,11 +19,11 @@
   },
   {
     "id": "mobile-app-dev",
-    "title": "Mobile App Development",
+    "title": "Mobile App & Web",
     "discipline": "Useful experiences",
     "description": "Turn an idea into an app with thoughtful interfaces, JavaScript, React, and real-world data.",
     "status": "active",
-    "label": "4 sample lessons",
+    "label": "4 lessons · 1 guided project",
     "sourceRepository": "mswhitby/mobile-app-dev"
   },
   {

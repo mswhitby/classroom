@@ -100,3 +100,9 @@ pre.terminal-error,#output.terminal-error,#csharp-output.terminal-error,.study-w
 .example pre{display:block;white-space:pre-wrap}
 
 .java-arguments{padding:12px 16px}.java-arguments label{display:block;font-size:12px}.java-arguments textarea{width:100%;min-height:70px;font:13px/1.5 monospace}.question input[type=text]{max-width:100%;padding:8px}.question .markdown-body pre{white-space:pre-wrap}
+
+/* Guided projects use the lesson workspace, with their own walkthrough navigation. */
+.project-step-nav{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--bs-border-color);padding-top:20px;margin-top:24px}
+#mini-projects{margin-top:48px}#project-example{margin-top:24px}#project-example pre{max-height:480px;overflow:auto}
+.study-workspace textarea#project-code{height:var(--editor-height,360px);min-height:180px;resize:none}
+#project-feedback li{margin:8px 0}

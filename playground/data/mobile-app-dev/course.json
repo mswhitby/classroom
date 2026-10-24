@@ -1,6 +1,6 @@
 {
   "id": "mobile-app-dev",
-  "title": "Mobile App Development",
+  "title": "Mobile App & Web",
   "lessons": [
     {
       "id": "html",
@@ -33,6 +33,46 @@
       "markdown": "lessons/react/lesson.md",
       "starterFile": "lessons/react/starter.jsx",
       "language": "react"
+    }
+  ],
+  "projects": [
+    {
+      "id": "club-connect",
+      "title": "Club Connect",
+      "summary": "Build a club announcement page and signup form with HTML, CSS, and JavaScript.",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "starterFile": "projects/club-connect/starter.html",
+      "exampleFile": "projects/club-connect/example.html",
+      "steps": [
+        {
+          "id": "structure",
+          "title": "Build the page",
+          "focus": "HTML",
+          "markdown": "projects/club-connect/01-structure.md"
+        },
+        {
+          "id": "style",
+          "title": "Style the page",
+          "focus": "CSS",
+          "markdown": "projects/club-connect/02-style.md"
+        },
+        {
+          "id": "interaction",
+          "title": "Make signup respond",
+          "focus": "JavaScript",
+          "markdown": "projects/club-connect/03-interaction.md"
+        },
+        {
+          "id": "test",
+          "title": "Test and personalize",
+          "focus": "Put it together",
+          "markdown": "projects/club-connect/04-test.md"
+        }
+      ]
     }
   ]
 }
