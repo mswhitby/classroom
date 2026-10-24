@@ -1,0 +1,552 @@
+{
+  "id": "written-01",
+  "title": "Written practice 1",
+  "questions": [
+    {
+      "id": "written-01",
+      "topic": "Number bases",
+      "prompt": "What is hexadecimal 2D in decimal?",
+      "choices": [
+        "35",
+        "45",
+        "47",
+        "52",
+        "61"
+      ],
+      "answer": 1,
+      "explanation": "2 × 16 + 13 = 45."
+    },
+    {
+      "id": "written-02",
+      "topic": "Literal arithmetic",
+      "prompt": "What is the value of 17 / 5 + 17 % 5 in Java?",
+      "choices": [
+        "3",
+        "3.4",
+        "5",
+        "5.4",
+        "6"
+      ],
+      "answer": 2,
+      "explanation": "Both operands are int: 17 / 5 is 3 and 17 % 5 is 2."
+    },
+    {
+      "id": "written-03",
+      "topic": "Formatted output",
+      "prompt": "What does this print?\n```java\nSystem.out.printf(\"%s:%03d\", \"A\", 7);\n```",
+      "choices": [
+        "A:7",
+        "A:007",
+        "A:070",
+        "A:  7",
+        "A:%03d"
+      ],
+      "answer": 1,
+      "explanation": "The %s formats A. The 03 flag pads the integer to width 3 with zeros; no newline is added."
+    },
+    {
+      "id": "written-04",
+      "topic": "Strings",
+      "prompt": "What is the value of \"PLAYGROUND\".substring(2, 6)?",
+      "choices": [
+        "AYGR",
+        "AYGRO",
+        "LAYG",
+        "YGRO",
+        "PLAY"
+      ],
+      "answer": 0,
+      "explanation": "substring includes index 2 and excludes index 6: A, Y, G, R."
+    },
+    {
+      "id": "written-05",
+      "topic": "Boolean logic",
+      "prompt": "What is the value of (true ^ true) || !false?",
+      "choices": [
+        "true",
+        "false",
+        "0",
+        "1",
+        "Compilation error"
+      ],
+      "answer": 0,
+      "explanation": "XOR is false when the operands agree; !false is true, so the OR is true."
+    },
+    {
+      "id": "written-06",
+      "topic": "Math methods",
+      "prompt": "What is the value of Math.max(-4, Math.abs(-9))?",
+      "choices": [
+        "-9",
+        "-4",
+        "4",
+        "9",
+        "13"
+      ],
+      "answer": 3,
+      "explanation": "Math.abs(-9) returns 9, and 9 is greater than -4."
+    },
+    {
+      "id": "written-07",
+      "topic": "Variable expressions",
+      "prompt": "What is printed?\n```java\nint n = 4;\nSystem.out.println(n++ + ++n);\n```",
+      "choices": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "answer": 2,
+      "explanation": "The left operand supplies 4, then n becomes 5. ++n makes it 6 before supplying 6. The sum is 10."
+    },
+    {
+      "id": "written-08",
+      "topic": "Conditionals",
+      "prompt": "What is printed?\n```java\nint x = 7;\nif (x < 5) System.out.print(\"A\");\nelse if (x < 10) System.out.print(\"B\");\nelse System.out.print(\"C\");\n```",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "AB",
+        "BC"
+      ],
+      "answer": 1,
+      "explanation": "The first condition is false; the second is true. Only B is printed."
+    },
+    {
+      "id": "written-09",
+      "topic": "Output loops",
+      "prompt": "What is printed?\n```java\nfor (int i = 1; i < 6; i += 2) System.out.print(i);\n```",
+      "choices": [
+        "12345",
+        "135",
+        "1357",
+        "246",
+        "15"
+      ],
+      "answer": 1,
+      "explanation": "i takes the values 1, 3, and 5 before becoming 7 and failing the condition."
+    },
+    {
+      "id": "written-10",
+      "topic": "Primitive arrays",
+      "prompt": "What is printed?\n```java\nint[] a = {8, 3, 6};\na[1] = a[0] - a[2];\nSystem.out.println(a[1]);\n```",
+      "choices": [
+        "2",
+        "3",
+        "5",
+        "6",
+        "8"
+      ],
+      "answer": 0,
+      "explanation": "The assignment stores 8 - 6, or 2, at index 1."
+    },
+    {
+      "id": "written-11",
+      "topic": "File input",
+      "prompt": "Which expression creates a Scanner that reads scores.dat? Assume java.io.File and java.util.Scanner are imported and exceptions are handled.",
+      "choices": [
+        "new Scanner(\"scores.dat\")",
+        "new Scanner(new File(\"scores.dat\"))",
+        "Scanner.read(\"scores.dat\")",
+        "new File(new Scanner(\"scores.dat\"))",
+        "new Scanner(System.out)"
+      ],
+      "answer": 1,
+      "explanation": "A File identifies the disk file. A Scanner constructed with a String reads the characters in that string."
+    },
+    {
+      "id": "written-12",
+      "topic": "Accumulation",
+      "prompt": "What is printed?\n```java\nint total = 0;\nfor (int k = 2; k <= 8; k += 2) total += k;\nSystem.out.println(total);\n```",
+      "choices": [
+        "12",
+        "18",
+        "20",
+        "24",
+        "30"
+      ],
+      "answer": 2,
+      "explanation": "The accumulator adds 2 + 4 + 6 + 8 = 20."
+    },
+    {
+      "id": "written-13",
+      "topic": "Operator precedence",
+      "prompt": "What is the value of 3 + 4 * 2 > 10 && 5 != 6?",
+      "choices": [
+        "true",
+        "false",
+        "11",
+        "1",
+        "Compilation error"
+      ],
+      "answer": 0,
+      "explanation": "Multiplication precedes addition: 11 > 10 is true. 5 != 6 is also true."
+    },
+    {
+      "id": "written-14",
+      "topic": "Integer representation",
+      "prompt": "What is printed?\n```java\nbyte b = 127;\nb++;\nSystem.out.println(b);\n```",
+      "choices": [
+        "128",
+        "127",
+        "-127",
+        "-128",
+        "Compilation error"
+      ],
+      "answer": 3,
+      "explanation": "The increment includes an implicit narrowing conversion. The signed 8-bit value wraps from 127 to -128."
+    },
+    {
+      "id": "written-15",
+      "topic": "ArrayList",
+      "prompt": "What is the list after this code?\n```java\nArrayList<Integer> a = new ArrayList<>();\na.add(4); a.add(9); a.add(2);\na.remove(1);\n```",
+      "choices": [
+        "[4, 9]",
+        "[9, 2]",
+        "[4, 2]",
+        "[4, 9, 2]",
+        "[]"
+      ],
+      "answer": 2,
+      "explanation": "remove(int) removes the element at index 1, which is 9."
+    },
+    {
+      "id": "written-16",
+      "topic": "Short-circuit evaluation",
+      "prompt": "What is printed?\n```java\nint n = 0;\nboolean ok = false && ++n > 0;\nSystem.out.println(n);\n```",
+      "choices": [
+        "0",
+        "1",
+        "-1",
+        "true",
+        "Compilation error"
+      ],
+      "answer": 0,
+      "explanation": "Because the left operand of && is false, the right operand is not evaluated."
+    },
+    {
+      "id": "written-17",
+      "topic": "Bitwise operations",
+      "prompt": "What is the decimal value of 10 ^ 6?",
+      "choices": [
+        "4",
+        "6",
+        "12",
+        "14",
+        "16"
+      ],
+      "answer": 2,
+      "explanation": "1010 XOR 0110 = 1100, or 12."
+    },
+    {
+      "id": "written-18",
+      "topic": "Method calls",
+      "prompt": "Which concept allows methods named area(int side) and area(int width, int height) in the same class?",
+      "choices": [
+        "Overriding",
+        "Overloading",
+        "Encapsulation",
+        "Recursion",
+        "Casting"
+      ],
+      "answer": 1,
+      "explanation": "Overloading uses the same method name with different parameter lists."
+    },
+    {
+      "id": "written-19",
+      "topic": "Polymorphism",
+      "prompt": "What is printed?\n```java\nclass Animal { String sound() { return \"A\"; } }\nclass Cat extends Animal { String sound() { return \"C\"; } }\nAnimal pet = new Cat();\nSystem.out.println(pet.sound());\n```",
+      "choices": [
+        "A",
+        "C",
+        "AC",
+        "null",
+        "Compilation error"
+      ],
+      "answer": 1,
+      "explanation": "Dynamic dispatch chooses the overridden instance method of the actual Cat object."
+    },
+    {
+      "id": "written-20",
+      "topic": "Reference comparison",
+      "prompt": "What is printed?\n```java\nString a = new String(\"hi\");\nString b = new String(\"hi\");\nSystem.out.println(a == b);\n```",
+      "choices": [
+        "true",
+        "false",
+        "hi",
+        "0",
+        "Compilation error"
+      ],
+      "answer": 1,
+      "explanation": "The new expressions create distinct objects. == compares references; equals compares String content."
+    },
+    {
+      "id": "written-21",
+      "topic": "Enums",
+      "prompt": "Given enum Level { LOW, MEDIUM, HIGH }, what does Level.HIGH.ordinal() return?",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "HIGH"
+      ],
+      "answer": 2,
+      "explanation": "Ordinals are zero-based, in declaration order. HIGH is the third constant."
+    },
+    {
+      "id": "written-22",
+      "topic": "Arrays of arrays",
+      "prompt": "What is a[1].length?\n```java\nint[][] a = {{1, 2}, {3, 4, 5}, {6}};\n```",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "6",
+        "Compilation error"
+      ],
+      "answer": 2,
+      "explanation": "Each row is a separate array. Row index 1 contains three elements."
+    },
+    {
+      "id": "written-23",
+      "topic": "Sets",
+      "prompt": "How many elements remain?\n```java\nSet<Integer> s = new HashSet<>();\ns.add(3); s.add(3); s.add(8);\n```",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "explanation": "A set keeps distinct values, so only 3 and 8 remain."
+    },
+    {
+      "id": "written-24",
+      "topic": "Maps",
+      "prompt": "What does m.get(\"a\") return?\n```java\nMap<String, Integer> m = new HashMap<>();\nm.put(\"a\", 2); m.put(\"a\", 7);\n```",
+      "choices": [
+        "2",
+        "7",
+        "9",
+        "null",
+        "Compilation error"
+      ],
+      "answer": 1,
+      "explanation": "Putting a value at an existing key replaces the previous value."
+    },
+    {
+      "id": "written-25",
+      "topic": "Priority queues",
+      "prompt": "What does q.poll() return?\n```java\nPriorityQueue<Integer> q = new PriorityQueue<>();\nq.add(9); q.add(2); q.add(5);\n```",
+      "choices": [
+        "9",
+        "5",
+        "2",
+        "3",
+        "null"
+      ],
+      "answer": 2,
+      "explanation": "With natural ordering, the head is the least element: 2. poll removes it."
+    },
+    {
+      "id": "written-26",
+      "topic": "Regular expressions",
+      "prompt": "What is the value of \"A7\".matches(\"[A-Z][0-9]\")?",
+      "choices": [
+        "true",
+        "false",
+        "A",
+        "7",
+        "Compilation error"
+      ],
+      "answer": 0,
+      "explanation": "The full two-character string matches one uppercase ASCII letter followed by one digit."
+    },
+    {
+      "id": "written-27",
+      "topic": "Sorting",
+      "prompt": "After Arrays.sort(a), what is a[2]?\n```java\nint[] a = {7, 1, 5, 3};\n```",
+      "choices": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "2"
+      ],
+      "answer": 2,
+      "explanation": "The sorted array is {1, 3, 5, 7}; index 2 holds 5."
+    },
+    {
+      "id": "written-28",
+      "topic": "Recursion",
+      "prompt": "What does countDown(3) return?\n```java\nstatic int countDown(int n) {\n    if (n == 0) return 0;\n    return n + countDown(n - 1);\n}\n```",
+      "choices": [
+        "0",
+        "3",
+        "5",
+        "6",
+        "9"
+      ],
+      "answer": 3,
+      "explanation": "The calls add 3 + 2 + 1 + 0 = 6."
+    },
+    {
+      "id": "written-29",
+      "topic": "Algorithm analysis",
+      "prompt": "For positive n, how many times does the inner statement execute?\n```java\nfor (int i = 0; i < n; i++)\n    for (int j = 0; j < 3; j++)\n        total++;\n```",
+      "choices": [
+        "n",
+        "3",
+        "n + 3",
+        "3n",
+        "n²"
+      ],
+      "answer": 3,
+      "explanation": "The outer loop repeats n times and each repetition performs 3 increments: 3n."
+    },
+    {
+      "id": "written-30",
+      "topic": "Binary search",
+      "prompt": "What condition is required for ordinary binary search on an array?",
+      "choices": [
+        "All values must be positive",
+        "The array must be sorted in the comparison order",
+        "All values must be distinct",
+        "Its length must be even",
+        "It must contain strings"
+      ],
+      "answer": 1,
+      "explanation": "Binary search eliminates a half using ordering. Duplicates and odd lengths are allowed."
+    },
+    {
+      "id": "written-31",
+      "topic": "Stacks",
+      "prompt": "Starting with an empty stack: push A, push B, pop, push C. What is at the top?",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "Empty",
+        "ABC"
+      ],
+      "answer": 2,
+      "explanation": "The pop removes B. Pushing C then puts C above A."
+    },
+    {
+      "id": "written-32",
+      "topic": "Graph traversal",
+      "prompt": "Which structure normally holds the frontier in breadth-first search?",
+      "choices": [
+        "Stack",
+        "Queue",
+        "Binary search tree",
+        "Sorted set only",
+        "Call stack only"
+      ],
+      "answer": 1,
+      "explanation": "A FIFO queue visits vertices layer by layer in an unweighted graph."
+    },
+    {
+      "id": "written-33",
+      "topic": "Greedy algorithms",
+      "prompt": "For maximum-count non-overlapping interval scheduling, which standard greedy choice is correct?",
+      "choices": [
+        "Earliest finishing available interval",
+        "Longest interval first",
+        "Latest starting interval first",
+        "Random interval first",
+        "Earliest starting interval always"
+      ],
+      "answer": 0,
+      "explanation": "Choose the next compatible interval with the earliest finishing time to preserve room for later intervals."
+    },
+    {
+      "id": "written-34",
+      "topic": "Boolean simplification",
+      "prompt": "Using + for OR and * for AND, simplify A + A*B.",
+      "choices": [
+        "A",
+        "B",
+        "A*B",
+        "A+B",
+        "0"
+      ],
+      "answer": 0,
+      "explanation": "Absorption: A OR (A AND B) equals A."
+    },
+    {
+      "id": "written-35",
+      "topic": "Postfix notation",
+      "prompt": "Which postfix expression represents (a + b) * c?",
+      "choices": [
+        "ab+c*",
+        "abc+*",
+        "+ab*c",
+        "ab*c+",
+        "a+bc*"
+      ],
+      "answer": 0,
+      "explanation": "Write the operands of the addition, then +, then c, then the final *."
+    },
+    {
+      "id": "written-36",
+      "topic": "Finite state machines",
+      "prompt": "A machine has states E and O, starts in E, and changes state for each 1 but stays put for each 0. Which strings finish in E?",
+      "choices": [
+        "Strings with an even number of 1s",
+        "Strings with an odd number of 1s",
+        "Strings ending in 0 only",
+        "Strings of even length only",
+        "Only the empty string"
+      ],
+      "answer": 0,
+      "explanation": "Every 1 toggles parity. An even number of toggles returns the machine to E."
+    },
+    {
+      "id": "written-37",
+      "topic": "Grammars",
+      "prompt": "For S → aS | b, which string is generated?",
+      "choices": [
+        "aba",
+        "aaab",
+        "baaa",
+        "abbb",
+        "Empty string"
+      ],
+      "answer": 1,
+      "explanation": "Apply aS three times, then replace S with b: aaab."
+    },
+    {
+      "id": "written-38",
+      "topic": "Concurrency",
+      "prompt": "Two threads execute count++ on a shared int without synchronization. Why can an increment be lost?",
+      "choices": [
+        "int is immutable",
+        "The read-modify-write steps can interleave",
+        "Threads must run sequentially",
+        "++ always subtracts one",
+        "Only one thread may read an int"
+      ],
+      "answer": 1,
+      "explanation": "Both threads can read the same old value and then store the same incremented value. The whole count++ operation is not atomic."
+    },
+    {
+      "id": "written-39",
+      "topic": "Two’s complement",
+      "prompt": "Give the decimal value of the signed 8-bit two’s complement pattern 11110110.",
+      "answer": "-10",
+      "explanation": "As unsigned, it is 246. Since the sign bit is set, subtract 256: -10."
+    },
+    {
+      "id": "written-40",
+      "topic": "Statement counts",
+      "prompt": "Give the exact number of times total++ executes.\n```java\nfor (int i = 1; i <= 4; i++)\n    for (int j = 0; j < i; j++)\n        total++;\n```",
+      "answer": "10",
+      "explanation": "The inner counts are 1, 2, 3, and 4. Their sum is 10."
+    }
+  ]
+}

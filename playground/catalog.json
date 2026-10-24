@@ -12,9 +12,9 @@
     "id": "game-programming",
     "title": "Game Programming & Design",
     "discipline": "Interactive worlds",
-    "description": "Make ideas playable. Follow Unity\u2019s learning pathways and strengthen the C# logic behind your games.",
+    "description": "Make ideas playable. Follow Unity’s learning pathways and strengthen the C# logic behind your games.",
     "status": "active",
-    "label": "7 units \u00b7 11 lessons",
+    "label": "7 units · 11 lessons",
     "sourceRepository": "mswhitby/game-programming"
   },
   {
@@ -34,5 +34,14 @@
     "status": "planned",
     "label": "Coming next",
     "preview": "This playground will support product planning, team checkpoints, prototypes, user feedback, and your final portfolio."
+  },
+  {
+    "id": "uil",
+    "title": "UIL Computer Science",
+    "discipline": "Think under pressure",
+    "description": "Prepare for the written and programming competitions. Trace Java, explain your reasoning, and solve original practice problems.",
+    "status": "active",
+    "label": "Written practice · Java drills",
+    "sourceRepository": "mswhitby/uil"
   }
 ]

@@ -102,9 +102,9 @@ function displayExamples(){
   const box=document.createElement("div");box.className="example";
   const title=document.createElement("strong");title.textContent="Example "+(i+1);
   const label1=document.createElement("div");label1.textContent="INPUT";
-  const code1=document.createElement("pre");code1.textContent=ex.call;
+  const code1=document.createElement("pre"),input=document.createElement("code");input.className="language-python";input.textContent=ex.call;code1.append(input);
   const label2=document.createElement("div");label2.textContent="EXPECTED OUTPUT";
-  const code2=document.createElement("pre");code2.textContent=ex.expected;
+  const code2=document.createElement("pre"),expected=document.createElement("code");expected.className="language-python";expected.textContent=ex.expected;code2.append(expected);
   box.append(title,label1,code1,label2,code2);area.append(box);
  });
 }
@@ -119,7 +119,7 @@ function select(id){
  $("parameters").innerHTML=simpleText(current.parameters);
  $("behavior").innerHTML=simpleText(current.behavior);
  $("code").value=get("draft:"+id)??current.starter;
- $("output").textContent="Run an example to see the function's return value.";
+ $("output").textContent="Run code to see printed output or Python errors.";$("output").classList.remove("terminal-error");$("check-results").hidden=true;
  $("github-question").href="https://github.com/mswhitby/python_problems_20261026/tree/main/problems/"+encodeURIComponent(id);
  const area=$("related-lessons");area.replaceChildren();
  const rule=learningMap.requirements?.[id];
@@ -228,43 +228,31 @@ function probe(source,cases){
 function setBusy(flag){busy=flag;for(const id of ["run","check","reset"])$(id).disabled=flag;}
 async function execute(all){
  if(busy||!current)return;
- const c=current,source=$("code").value;
- set("draft:"+c.id,source);setBusy(true);
- inform(all?"Checking all published examples...":"Running the first published example...");
+ const c=current,source=$("code").value;set("draft:"+c.id,source);setBusy(true);
+ const output=$("output"),checks=$("check-results");output.classList.remove("terminal-error");
+ if(all){checks.hidden=false;checks.textContent="Checking published examples..."}else output.textContent="";
  try{
-  await initPython();status("Running...");
-  const cases=all?c.examples:[c.examples[0]];
-  const response=await runPython(probe(source,cases));
+  await initPython();status(all?"Checking...":"Running...");
+  if(!all){
+   const response=await runPython(source);
+   output.textContent=response.output||(response.success?"(No output. Use print() to display a value.)":"Python stopped.");
+   output.classList.toggle("terminal-error",!response.success);
+   inform(response.success?"Run complete. Use Check answer to test the return values.":"Review the Python error in the terminal.",response.success?"":"bad");return;
+  }
+  const response=await runPython(probe(source,c.examples));
   if(!response.success)throw new Error(response.output||"Python could not complete this code.");
   const line=String(response.output||"").split("\n").find(x=>x.startsWith(marker));
-  if(!line)throw new Error("The practice checker didn't return a result.");
+  if(!line)throw new Error("The checker didn't return a result.");
   const results=JSON.parse(line.slice(marker.length));
-  if(results.length!==cases.length)throw new Error("Not all examples produced results.");
-  let passed=0;
-  const lines=[];
-  results.forEach((entry,i)=>{
-   const sample=cases[i];
-   const good=entry.passed===true;
-   if(good)passed++;
-   lines.push("Example "+(all?c.examples.indexOf(sample)+1:1)+": "+(good?"PASS":"NEEDS REVISION"));
-   lines.push("Input: "+sample.call);
-   lines.push("Expected: "+sample.expected);
-   lines.push(entry.message?"Error: "+entry.message:"Received: "+entry.received+" ("+entry.type+")");
-   lines.push("");
-  });
-  $("output").textContent=lines.join("\n").trim();
-  const success=passed===cases.length;
-  if(all){
-   if(success){set("pass:"+c.id,"true");inform("✓ "+passed+"/"+cases.length+" published examples passed. Try additional inputs to explore boundary cases.","good");}
-   else{unset("pass:"+c.id);inform(passed+"/"+cases.length+" public examples passed. Review the reported differences, revise, and try again.","bad");}
-  }else{
-   inform(success?"✓ First example passed. Choose Check examples to test the others.":"The first example needs revision. Use the output and the skills refresher if available.",success?"good":"bad");
-  }
-  status("Python ready");
- }catch(err){
-  $("output").textContent=String(err?.message||err);
-  inform("The check could not complete. Your draft is still stored in this browser.","bad");
- }finally{setBusy(false);}
+  if(results.length!==c.examples.length)throw new Error("Not all examples produced results.");
+  const passed=results.filter(x=>x.passed===true).length;
+  checks.textContent=results.map((r,i)=>"Example "+(i+1)+": "+(r.passed?"PASS":"NEEDS REVISION")+"\nInput: "+c.examples[i].call+"\nExpected: "+c.examples[i].expected+"\n"+(r.message?"Error: "+r.message:"Received: "+r.received)).join("\n\n");
+  const errors=results.filter(x=>x.message).map(x=>x.message);
+  if(errors.length){output.textContent=errors.join("\n");output.classList.add("terminal-error")}
+  if(passed===results.length)set("pass:"+c.id,"true");else unset("pass:"+c.id);
+  inform(passed+"/"+results.length+" published examples passed.",passed===results.length?"good":"bad");
+ }catch(err){output.textContent=String(err?.message||err);output.classList.add("terminal-error");if(all)checks.textContent="The check could not finish. Review the terminal.";inform("Your draft is saved. Revise and try again.","bad")}
+ finally{status("Python ready");setBusy(false)}
 }
 function start(){
  if(items.length!==24||new Set(items.map(x=>x.id)).size!==24){

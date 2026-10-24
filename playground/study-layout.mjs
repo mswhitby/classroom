@@ -28,6 +28,10 @@ export function setupStudyLayout(main,{course,title,competency,lessonNumber,less
  expand.textContent='⛶ Expand workspace';expand.classList.add('secondary');expand.onclick=null;expand.setAttribute('aria-pressed','false');
  const lang=document.createElement('span');lang.textContent=isMobile?competency:'C#';oldHead.append(lang);
  const editor=workspace.querySelector('.CodeMirror')||workspace.querySelector('textarea');const editorHeight=separator('Resize code editor height','horizontal');editor.after(editorHeight);
+ // Output belongs to the editor; opening it must grow the workspace.
+ const toolbar=workspace.querySelector('.toolbar'),consolePanel=workspace.querySelector('.mobile-console'),terminalPanel=workspace.querySelector('.csharp-terminal');
+ if(consolePanel)editorHeight.after(consolePanel);
+ if(toolbar&&(consolePanel||terminalPanel))(consolePanel||terminalPanel).after(toolbar);
  const terminal=workspace.querySelector('#csharp-output'),terminalHeight=separator('Resize terminal height','horizontal');terminal?.after(terminalHeight);
  const preview=workspace.querySelector('#mobile-preview');let previewHeight;if(preview){previewHeight=separator('Resize preview height','horizontal');(preview.closest('.mobile-results')||preview).after(previewHeight)}
  const storageKey='playground:layout:'+course+':';

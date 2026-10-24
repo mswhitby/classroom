@@ -147,15 +147,15 @@ async function runStudentCode(){
  if(!active||busy)return;
  const source=$("code").value;
  write("draft:"+active.id,source);
- blocking(true);$("output").textContent="";$("run-status").textContent="Running...";
+ blocking(true);$("output").classList.remove("terminal-error");$("output").textContent="";$("run-status").textContent="Running...";
  try{
   await init();status("Running...");
   const result=await runCode(source);
-  $("output").textContent=result.output||(result.success?"(No output. Use print() to display a value.)":"Python stopped without output.");
+  $("output").classList.toggle("terminal-error",!result.success);$("output").textContent=result.output||(result.success?"(No output. Use print() to display a value.)":"Python stopped without output.");
   $("run-status").textContent=result.success?"Run complete":"Python error";
   status("Python ready");
  }catch(err){
-  $("output").textContent=String(err?.message||err);
+  $("output").classList.add("terminal-error");$("output").textContent=String(err?.message||err);
   $("run-status").textContent="Run could not finish";
  }finally{blocking(false)}
 }
@@ -169,7 +169,7 @@ async function checkAnswer(){
   const cases=l.cases,results=[];
   if(l.mode==="script"){
    const r=await runCode(source),out=normalize(r.output);
-   $("output").textContent=r.output||(r.success?"(No output. Use print() to display a value.)":"Python stopped without output.");
+   $("output").classList.toggle("terminal-error",!r.success);$("output").textContent=r.output||(r.success?"(No output. Use print() to display a value.)":"Python stopped without output.");
    $("run-status").textContent=r.success?"Run complete":"Python error";
    results.push({ok:r.success&&out===normalize(cases[0].expected),received:out,error:r.success?"":"Python error — see the terminal"});
   }else{
@@ -189,6 +189,7 @@ async function checkAnswer(){
    lines.push(r.error?"Error: "+r.error:"Received: "+r.received);
    lines.push("");
   });
+  const errors=results.filter(r=>r.error).map(r=>r.error);if(errors.length){$("output").textContent=errors.join("\n");$("output").classList.add("terminal-error")}
   $("check-results").textContent=lines.join("\n").trim();
   const passed=passes===cases.length;
   if(passed)write("pass:"+l.id,"true");else erase("pass:"+l.id);

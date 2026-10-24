@@ -1,0 +1,176 @@
+{
+  "id": "uil",
+  "title": "UIL Computer Science",
+  "written": {
+    "markdown": "lessons/written-prep.md",
+    "practice": "practice/written-01.json"
+  },
+  "lessons": [
+    {
+      "id": "welcome-output",
+      "title": "Print the team banner",
+      "summary": "Match output exactly.",
+      "className": "TeamBanner",
+      "starterFile": "programming/TeamBanner.java",
+      "markdown": "lessons/welcome-output.md",
+      "cases": [
+        {
+          "args": [],
+          "expected": "WAGNER UIL\nThink. Trace. Test.\n"
+        }
+      ],
+      "runArgs": [],
+      "environment": "browser"
+    },
+    {
+      "id": "file-greetings",
+      "title": "Read names from a file",
+      "summary": "Practice the second packet problem in your Java 26 IDE.",
+      "className": "FileGreetings",
+      "starterFile": "programming/FileGreetings.java",
+      "markdown": "lessons/file-greetings.md",
+      "cases": [],
+      "runArgs": [],
+      "environment": "ide"
+    },
+    {
+      "id": "score-total",
+      "title": "Add the team scores",
+      "summary": "Parse integers and accumulate a total.",
+      "className": "ScoreTotal",
+      "starterFile": "programming/ScoreTotal.java",
+      "markdown": "lessons/score-total.md",
+      "cases": [
+        {
+          "args": [
+            "6",
+            "12",
+            "-2"
+          ],
+          "expected": "16\n"
+        },
+        {
+          "args": [],
+          "expected": "0\n"
+        },
+        {
+          "args": [
+            "0",
+            "-4",
+            "4"
+          ],
+          "expected": "0\n"
+        }
+      ],
+      "runArgs": [
+        "6",
+        "12",
+        "-2"
+      ],
+      "environment": "browser"
+    },
+    {
+      "id": "count-even",
+      "title": "Count even values",
+      "summary": "Combine a loop, a condition, and the remainder operator.",
+      "className": "EvenCounter",
+      "starterFile": "programming/EvenCounter.java",
+      "markdown": "lessons/count-even.md",
+      "cases": [
+        {
+          "args": [
+            "2",
+            "7",
+            "-4",
+            "0"
+          ],
+          "expected": "3\n"
+        },
+        {
+          "args": [
+            "1",
+            "3"
+          ],
+          "expected": "0\n"
+        },
+        {
+          "args": [],
+          "expected": "0\n"
+        }
+      ],
+      "runArgs": [
+        "2",
+        "7",
+        "-4",
+        "0"
+      ],
+      "environment": "browser"
+    },
+    {
+      "id": "reverse-word",
+      "title": "Reverse a word",
+      "summary": "Traverse a string from the last index to the first.",
+      "className": "WordReverser",
+      "starterFile": "programming/WordReverser.java",
+      "markdown": "lessons/reverse-word.md",
+      "cases": [
+        {
+          "args": [
+            "WAGNER"
+          ],
+          "expected": "RENGAW\n"
+        },
+        {
+          "args": [
+            "a"
+          ],
+          "expected": "a\n"
+        },
+        {
+          "args": [],
+          "expected": "\n"
+        }
+      ],
+      "runArgs": [
+        "WAGNER"
+      ],
+      "environment": "browser"
+    },
+    {
+      "id": "sort-scores",
+      "title": "Sort the scores",
+      "summary": "Practice an array and a sorting algorithm.",
+      "className": "ScoreSorter",
+      "starterFile": "programming/ScoreSorter.java",
+      "markdown": "lessons/sort-scores.md",
+      "cases": [
+        {
+          "args": [
+            "8",
+            "-2",
+            "8",
+            "3"
+          ],
+          "expected": "-2 3 8 8\n"
+        },
+        {
+          "args": [
+            "5"
+          ],
+          "expected": "5\n"
+        },
+        {
+          "args": [],
+          "expected": "\n"
+        }
+      ],
+      "runArgs": [
+        "8",
+        "-2",
+        "8",
+        "3"
+      ],
+      "environment": "browser"
+    }
+  ]
+}
