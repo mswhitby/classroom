@@ -20,12 +20,12 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: mswhitby/playground
-          ref: 18ab03602966293d50dfe5d84832fc0830a790c4
+          ref: 2083d787a8d01638b5c2b99b8f390588682db5c6
           path: playground
       - uses: actions/checkout@v4
         with:
           repository: mswhitby/game-programming
-          ref: 0abc51ba19bb401515efed12dbeb2576f7fca094
+          ref: fe35f56072ffe76d91920835fd34c65ec3e0ac9a
           path: game-programming
       - uses: actions/checkout@v4
         with:
