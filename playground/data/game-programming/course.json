@@ -47,7 +47,7 @@
             "id": "essentials-01-practice",
             "title": "Name the practice arena",
             "prompt": "Inside GetArenaName(), create a string variable named arenaName containing \"Practice Arena\". Return arenaName. Keep Main so you can see the result in a C# compiler.",
-            "starter": "using System;\n\npublic class Essentials01PracticePractice\n{\n    public static string GetArenaName()\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(GetArenaName());\n    }\n}\n",
+            "starter": "using System;\n\npublic class ArenaNaming\n{\n    public static string GetArenaName()\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(GetArenaName());\n    }\n}\n",
             "signature": "string GetArenaName()",
             "examples": [
               {
@@ -151,7 +151,7 @@
             "id": "essentials-02-practice",
             "title": "Move a practice marker",
             "prompt": "Return x + distance as a float. Negative distances move in the opposite direction. Do not use UnityEngine in this console exercise.",
-            "starter": "using System;\n\npublic class Essentials02PracticePractice\n{\n    public static float MoveAlongXAxis(float x, float distance)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(MoveAlongXAxis(2f, 1.5f));\n    }\n}\n",
+            "starter": "using System;\n\npublic class MarkerMovement\n{\n    public static float MoveAlongXAxis(float x, float distance)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(MoveAlongXAxis(2f, 1.5f));\n    }\n}\n",
             "signature": "float MoveAlongXAxis(float x, float distance)",
             "examples": [
               {
@@ -197,7 +197,7 @@
             "id": "essentials-03-practice",
             "title": "Score a pickup batch",
             "prompt": "Return the existing score plus coins multiplied by pointsPerCoin. Inputs are nonnegative whole numbers. A batch of zero coins leaves the score unchanged.",
-            "starter": "using System;\n\npublic class Essentials03PracticePractice\n{\n    public static int CalculateScore(int score, int coins, int pointsPerCoin)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CalculateScore(10, 3, 5));\n    }\n}\n",
+            "starter": "using System;\n\npublic class PickupScoring\n{\n    public static int CalculateScore(int score, int coins, int pointsPerCoin)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CalculateScore(10, 3, 5));\n    }\n}\n",
             "signature": "int CalculateScore(int score, int coins, int pointsPerCoin)",
             "examples": [
               {
@@ -284,7 +284,7 @@
             "id": "audio-01-practice",
             "title": "Build a soundscape and adjust volume",
             "prompt": "Return volume multiplied by gain. Inputs are between 0 and 1; no clamping is needed.",
-            "starter": "using System;\n\npublic class Audio01PracticePractice\n{\n    public static float ScaleVolume(float volume, float gain)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(ScaleVolume(0.8f, 0.5f));\n    }\n}\n",
+            "starter": "using System;\n\npublic class VolumeScaling\n{\n    public static float ScaleVolume(float volume, float gain)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(ScaleVolume(0.8f, 0.5f));\n    }\n}\n",
             "signature": "float ScaleVolume(float volume, float gain)",
             "examples": [
               {
@@ -370,7 +370,7 @@
             "id": "essentials-04-practice",
             "title": "Calculate a frame’s travel distance",
             "prompt": "Return speed * elapsedSeconds. speed is units per second and elapsedSeconds is seconds. Both inputs are nonnegative. A paused interval of zero seconds produces zero distance.",
-            "starter": "using System;\n\npublic class Essentials04PracticePractice\n{\n    public static float CalculateTravelDistance(float speed, float elapsedSeconds)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CalculateTravelDistance(6f, 0.5f));\n    }\n}\n",
+            "starter": "using System;\n\npublic class FrameTravel\n{\n    public static float CalculateTravelDistance(float speed, float elapsedSeconds)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CalculateTravelDistance(6f, 0.5f));\n    }\n}\n",
             "signature": "float CalculateTravelDistance(float speed, float elapsedSeconds)",
             "examples": [
               {
@@ -457,7 +457,7 @@
             "id": "2d-01-practice",
             "title": "Work in a 2D scene",
             "prompt": "Return the new x coordinate after adding offset to x.",
-            "starter": "using System;\n\npublic class 2D01PracticePractice\n{\n    public static float OffsetSpriteX(float x, float offset)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(OffsetSpriteX(3f, 2f));\n    }\n}\n",
+            "starter": "using System;\n\npublic class SpritePositioning\n{\n    public static float OffsetSpriteX(float x, float offset)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(OffsetSpriteX(3f, 2f));\n    }\n}\n",
             "signature": "float OffsetSpriteX(float x, float offset)",
             "examples": [
               {
@@ -542,7 +542,7 @@
             "id": "publishing-01-practice",
             "title": "Build, test, and share a project",
             "prompt": "Return the text \"Project: \" followed by title. Include the space after the colon.",
-            "starter": "using System;\n\npublic class Publishing01PracticePractice\n{\n    public static string CreateProjectLabel(string title)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CreateProjectLabel(\"Room Explorer\"));\n    }\n}\n",
+            "starter": "using System;\n\npublic class ProjectLabeling\n{\n    public static string CreateProjectLabel(string title)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CreateProjectLabel(\"Room Explorer\"));\n    }\n}\n",
             "signature": "string CreateProjectLabel(string title)",
             "examples": [
               {
@@ -621,7 +621,7 @@
             "id": "player-01-practice",
             "title": "Calculate the next player position",
             "prompt": "Return x + input * speed * elapsedSeconds. Input is between -1 and 1; speed and elapsedSeconds are nonnegative. Do not clamp the result in this lesson.",
-            "starter": "using System;\n\npublic class Player01PracticePractice\n{\n    public static float CalculateHorizontalPosition(float x, float input, float speed, float elapsedSeconds)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CalculateHorizontalPosition(5f, -1f, 4f, 0.5f));\n    }\n}\n",
+            "starter": "using System;\n\npublic class PlayerMovement\n{\n    public static float CalculateHorizontalPosition(float x, float input, float speed, float elapsedSeconds)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CalculateHorizontalPosition(5f, -1f, 4f, 0.5f));\n    }\n}\n",
             "signature": "float CalculateHorizontalPosition(float x, float input, float speed, float elapsedSeconds)",
             "examples": [
               {
@@ -666,7 +666,7 @@
             "id": "player-02-practice",
             "title": "Clamp a player position",
             "prompt": "Return x clamped to the inclusive interval [min, max]. The bounds are valid and may be negative. Use comparisons and if statements; no Unity APIs are needed.",
-            "starter": "using System;\n\npublic class Player02PracticePractice\n{\n    public static float ClampPlayerPosition(float x, float min, float max)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(ClampPlayerPosition(12f, -5f, 5f));\n    }\n}\n",
+            "starter": "using System;\n\npublic class PlayerBounds\n{\n    public static float ClampPlayerPosition(float x, float min, float max)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(ClampPlayerPosition(12f, -5f, 5f));\n    }\n}\n",
             "signature": "float ClampPlayerPosition(float x, float min, float max)",
             "examples": [
               {
@@ -717,7 +717,7 @@
             "id": "gameplay-01-practice",
             "title": "Decide whether a player can fire",
             "prompt": "Return true only when pressed is true, gameOver is false, and remaining <= 0f. A negative remaining value is ready. Return a bool, not the text \"true\".",
-            "starter": "using System;\n\npublic class Gameplay01PracticePractice\n{\n    public static bool CanFireProjectile(bool pressed, bool gameOver, float remaining)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CanFireProjectile(true, false, 0f));\n    }\n}\n",
+            "starter": "using System;\n\npublic class ProjectileRules\n{\n    public static bool CanFireProjectile(bool pressed, bool gameOver, float remaining)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CanFireProjectile(true, false, 0f));\n    }\n}\n",
             "signature": "bool CanFireProjectile(bool pressed, bool gameOver, float remaining)",
             "examples": [
               {
@@ -771,7 +771,7 @@
             "id": "gameplay-02-practice",
             "title": "Update remaining lives",
             "prompt": "Given nonnegative lives, subtract one only when hit is true and at least one life remains. Never return a negative value. If there is no hit, keep the value unchanged.",
-            "starter": "using System;\n\npublic class Gameplay02PracticePractice\n{\n    public static int CalculateRemainingLives(int lives, bool hit)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CalculateRemainingLives(3, true));\n    }\n}\n",
+            "starter": "using System;\n\npublic class PlayerLives\n{\n    public static int CalculateRemainingLives(int lives, bool hit)\n    {\n        // Replace this line with your game logic.\n        throw new NotImplementedException();\n    }\n\n    public static void Main()\n    {\n        Console.WriteLine(CalculateRemainingLives(3, true));\n    }\n}\n",
             "signature": "int CalculateRemainingLives(int lives, bool hit)",
             "examples": [
               {
