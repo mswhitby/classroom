@@ -48,7 +48,7 @@ export async function mobileProjectPage(main,id,stepId){
  }
  $('project-run').onclick=()=>run(false);$('project-check').onclick=()=>run(true);
  const example=$('project-example');
- if(example)example.addEventListener('toggle',async()=>{if(!example.open||example.dataset.loaded)return;try{const code=await get(project.exampleFile);if(disposed)return;const block=$('project-example-code');block.textContent=code;example.dataset.loaded='true'}catch{if(!disposed)$('project-example-code').textContent='The example could not load. Close this section and try again.'}});
+ if(example)example.addEventListener('toggle',async()=>{if(!example.open||example.dataset.loaded)return;try{const code=await get(project.exampleFile);if(disposed)return;const block=$('project-example-code');block.textContent=code;block.removeAttribute('data-highlighted');example.dataset.loaded='true'}catch{if(!disposed)$('project-example-code').textContent='The example could not load. Close this section and try again.'}});
  return {dispose(){disposed=true;clearTimeout(timer);window.removeEventListener('message',receive);drawer.dispose()}};
 }
 
