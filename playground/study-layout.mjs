@@ -28,8 +28,8 @@ export function setupStudyLayout(main,{course,title,competency,lessonNumber,less
  expand.textContent='⛶ Expand workspace';expand.classList.add('secondary');expand.onclick=null;expand.setAttribute('aria-pressed','false');
  const lang=document.createElement('span');lang.textContent=isMobile?competency:'C#';oldHead.append(lang);
  const editor=workspace.querySelector('.CodeMirror')||workspace.querySelector('textarea');const editorHeight=separator('Resize code editor height','horizontal');editor.after(editorHeight);
- const terminal=workspace.querySelector('#csharp-output,#mobile-output'),terminalHeight=separator('Resize terminal height','horizontal');terminal?.after(terminalHeight);
- const preview=workspace.querySelector('#mobile-preview');let previewHeight;if(preview){previewHeight=separator('Resize preview height','horizontal');preview.after(previewHeight)}
+ const terminal=workspace.querySelector('#csharp-output'),terminalHeight=separator('Resize terminal height','horizontal');terminal?.after(terminalHeight);
+ const preview=workspace.querySelector('#mobile-preview');let previewHeight;if(preview){previewHeight=separator('Resize preview height','horizontal');(preview.closest('.mobile-results')||preview).after(previewHeight)}
  const storageKey='playground:layout:'+course+':';
  const read=(key,fallback)=>{try{const value=localStorage.getItem(storageKey+key);return value===null?fallback:Number(value)}catch{return fallback}};
  const save=(key,value)=>{try{localStorage.setItem(storageKey+key,String(value))}catch{}};
