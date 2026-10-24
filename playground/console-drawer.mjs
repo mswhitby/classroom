@@ -19,7 +19,7 @@ export function createConsoleDrawer(root){
  grip.addEventListener('pointerdown',e=>{if(e.button!==0)return;e.preventDefault();grip.focus();drag={y:e.clientY,height};grip.setPointerCapture(e.pointerId);document.body.classList.add('workspace-resizing')},{signal});
  grip.addEventListener('pointermove',e=>{if(drag)resize(drag.height+drag.y-e.clientY)},{signal});
  const finish=()=>{drag=null;document.body.classList.remove('workspace-resizing')};for(const event of ['pointerup','pointercancel','lostpointercapture'])grip.addEventListener(event,finish,{signal});
- grip.addEventListener('keydown',e=>{if(e.key==='ArrowUp'||e.key==='ArrowDown'){e.preventDefault();resize(height+(e.key==='ArrowUp'?20:-20)*(e.shiftKey?5:1))}else if(e.key==='Home'){e.preventDefault();resize(0)}else if(e.key==='End'){e.preventDefault();resize(700)}else if(e.key==='Enter'||e.key===' '){e.preventDefault();resize(height?0:expandedHeight)}},{signal});
+ grip.addEventListener('keydown',e=>{if(e.key==='ArrowUp'||e.key==='ArrowDown'){e.preventDefault();resize(e.key==='ArrowUp'&&height===0?expandedHeight:height+(e.key==='ArrowUp'?20:-20)*(e.shiftKey?5:1))}else if(e.key==='Home'){e.preventDefault();resize(0)}else if(e.key==='End'){e.preventDefault();resize(700)}else if(e.key==='Enter'||e.key===' '){e.preventDefault();resize(height?0:expandedHeight)}},{signal});
  grip.addEventListener('dblclick',()=>resize(height?0:expandedHeight),{signal});resize(0);reset();
  return {clear:reset,append(text,level='log'){if(entries.length>=200)return;const kind=['warn','error','info','debug'].includes(level)?level:'log';entries.push({text:String(text).slice(0,10000),level:kind});render();if(kind==='error'&&height===0)resize(expandedHeight)},dispose(){controller.abort();finish()}};
 }

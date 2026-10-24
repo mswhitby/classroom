@@ -1,5 +1,5 @@
 import {setupStudyLayout,disposeStudyLayout} from './study-layout.mjs?v=console-1';
-import {mobilePage} from './mobile.mjs?v=console-1';
+import {mobilePage} from './mobile.mjs?v=console-2';
 import {debugWorkspace} from './debug-workspace.mjs?v=7';
 import {validateCourse,scoreQuiz,progressKey} from './model.mjs?v=readable-1';
 import {CSharpRunner} from './csharp-runner.mjs?v=csharp-7';

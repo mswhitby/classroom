@@ -1,4 +1,4 @@
-import {createConsoleDrawer,previewConsoleBridge} from './console-drawer.mjs?v=console-1';
+import {createConsoleDrawer,previewConsoleBridge} from './console-drawer.mjs?v=console-2';
 import {setupStudyLayout} from './study-layout.mjs?v=console-1';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let course;
