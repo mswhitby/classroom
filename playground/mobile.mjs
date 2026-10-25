@@ -1,5 +1,5 @@
 import {createConsoleDrawer,previewConsoleBridge} from './console-drawer.mjs?v=console-2';
-import {setupStudyLayout} from './study-layout.mjs?v=submissions-1';
+import {setupStudyLayout} from './study-layout.mjs?v=teacher-1';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let course;
 async function getCourse(){if(!course){const r=await fetch('data/mobile-app-dev/course.json');if(!r.ok)throw Error('Lessons unavailable');course=await r.json()}return course}

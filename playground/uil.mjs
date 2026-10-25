@@ -1,4 +1,4 @@
-import {setupStudyLayout} from './study-layout.mjs?v=submissions-1';
+import {setupStudyLayout} from './study-layout.mjs?v=teacher-1';
 import {JavaRunner} from './java-runner.mjs';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const base='#/course/uil',data='data/uil/';

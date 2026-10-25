@@ -1,6 +1,6 @@
 import {createConsoleDrawer} from './console-drawer.mjs?v=console-2';
-import {setupStudyLayout} from './study-layout.mjs?v=submissions-1';
-import {buildProjectPreview} from './project-preview.mjs?v=submissions-1';
+import {setupStudyLayout} from './study-layout.mjs?v=teacher-1';
+import {buildProjectPreview} from './project-preview.mjs?v=teacher-1';
 const base='#/course/mobile-app-dev',data='data/mobile-app-dev/';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const path=(id,step)=>`${base}/project/${encodeURIComponent(id)}/${encodeURIComponent(step)}`;

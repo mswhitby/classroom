@@ -39,5 +39,11 @@ export function mountSubmission({anchor,course_id,activity_id,activity_kind,getF
   catch(error){status.textContent=error.message||'Submission was not confirmed. Your draft is still saved.'}
   finally{busy=false;button.disabled=false}
  };
- box.append(note,button,status);parent.append(box);
+ box.append(note);
+ if(!signedIn()){
+  const alert=document.createElement('p');alert.className='sign-in-alert';alert.setAttribute('role','alert');alert.textContent='You must be signed in with GitHub to submit your work.';
+  const login=document.createElement('button');login.type='button';login.className='btn btn-outline-primary';login.textContent='Sign in with GitHub';login.onclick=signIn;
+  button.disabled=true;box.append(alert,login);
+ }
+ box.append(button,status);parent.append(box);
 }
