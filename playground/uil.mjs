@@ -1,9 +1,9 @@
-import {setupStudyLayout} from './study-layout.mjs?v=projects-1';
+import {setupStudyLayout} from './study-layout.mjs?v=accounts-1';
 import {JavaRunner} from './java-runner.mjs';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const base='#/course/uil',data='data/uil/';
-const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem('playground:uil:'+key))??fallback}catch{return fallback}};
-const save=(key,value)=>{try{localStorage.setItem('playground:uil:'+key,JSON.stringify(value));return true}catch{return false}};
+const read=(key,fallback)=>{try{return JSON.parse(window.PlaygroundAccount.storage.getItem('playground:uil:'+key))??fallback}catch{return fallback}};
+const save=(key,value)=>{try{window.PlaygroundAccount.storage.setItem('playground:uil:'+key,JSON.stringify(value));return true}catch{return false}};
 async function get(path){const r=await fetch(data+path);if(!r.ok)throw Error('UIL practice could not load. Refresh to try again.');return path.endsWith('.json')?r.json():r.text()}
 async function ui(){if(!window.PlaygroundUI)await new Promise(r=>document.addEventListener('playground-ui-ready',r,{once:true}));return window.PlaygroundUI}
 const lessonLink=l=>`${base}/lesson/${l.id}`;

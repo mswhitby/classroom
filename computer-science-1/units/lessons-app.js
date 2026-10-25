@@ -7,9 +7,9 @@ const all=new Map(list.map(x=>[x.id,x]));
 const ordered=[...list].sort((a,b)=>a.unit-b.unit||a.lesson-b.lesson);
 const requirements=(window.CS1_LEARNING_MAP||{}).requirements||{};
 let active=null,worker=null,ready=null,onReady=null,onFailure=null,pending=null,seq=0,busy=false;
-function read(k){try{return localStorage.getItem(store+k)}catch{return null}}
-function write(k,v){try{localStorage.setItem(store+k,v);return true}catch{return false}}
-function erase(k){try{localStorage.removeItem(store+k)}catch{}}
+function read(k){try{return window.PlaygroundAccount.storage.getItem(store+k)}catch{return null}}
+function write(k,v){try{window.PlaygroundAccount.storage.setItem(store+k,v);return true}catch{return false}}
+function erase(k){try{window.PlaygroundAccount.storage.removeItem(store+k)}catch{}}
 function clean(s){return String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;")}
 function inline(s){
  return clean(s).replace(/`([^`]+)`/g,"<code>$1</code>").replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>");
@@ -34,8 +34,8 @@ function navigation(){
 function select(id){
  if(busy){feedback("Finish the current run before changing lessons.");return;}
  const l=all.get(id);if(!l)return;active=l;
- if(l.existingDraftKey&&read("draft:"+id)===null){try{const prior=localStorage.getItem(l.existingDraftKey);if(prior!==null)write("draft:"+id,prior)}catch{}}
- if(l.existingPassKey&&read("pass:"+id)===null){try{if(localStorage.getItem(l.existingPassKey)==="true")write("pass:"+id,"true")}catch{}}
+ if(!window.PlaygroundAccount.signedIn&&l.existingDraftKey&&read("draft:"+id)===null){try{const prior=window.PlaygroundAccount.storage.getItem(l.existingDraftKey);if(prior!==null)write("draft:"+id,prior)}catch{}}
+ if(!window.PlaygroundAccount.signedIn&&l.existingPassKey&&read("pass:"+id)===null){try{if(window.PlaygroundAccount.storage.getItem(l.existingPassKey)==="true")write("pass:"+id,"true")}catch{}}
  $("unit").value=String(l.unit);
  $("unit-label").textContent="UNIT "+String(l.unit).padStart(2,"0")+" · LESSON "+l.lesson+" OF 4";
  $("title").textContent=l.title;$("points").textContent=l.points+" pts";
@@ -192,6 +192,7 @@ async function checkAnswer(){
   const errors=results.filter(r=>r.error).map(r=>r.error);if(errors.length){$("output").textContent=errors.join("\n");$("output").classList.add("terminal-error")}
   $("check-results").textContent=lines.join("\n").trim();
   const passed=passes===cases.length;
+  window.PlaygroundAccount.recordAttempt("computer-science-1","lesson:"+l.id,"lesson",{passed,passedCases:passes,totalCases:cases.length});
   if(passed)write("pass:"+l.id,"true");else erase("pass:"+l.id);
   feedback(passes+"/"+cases.length+" public examples passed. "+(passed?"Good work! ":"Revise and try again. ")+"Try additional inputs to explore boundary cases.",passed?"good":"bad");
   status("Python ready");navigation();

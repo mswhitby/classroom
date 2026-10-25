@@ -106,3 +106,5 @@ pre.terminal-error,#output.terminal-error,#csharp-output.terminal-error,.study-w
 #mini-projects{margin-top:48px}#project-example{margin-top:24px}#project-example pre{max-height:480px;overflow:auto}
 .study-workspace textarea#project-code{height:var(--editor-height,360px);min-height:180px;resize:none}
 #project-feedback li{margin:8px 0}
+
+.account-sync-panel{padding:12px 0;border-bottom:1px solid var(--bs-border-color);margin-bottom:12px}.account-sync-panel strong{display:block}.account-sync-panel p{font-size:12px;line-height:1.5;max-width:280px}.account-sync-panel button{display:block;width:100%;margin-top:8px;font-size:12px}.draft-conflict{padding:8px;border:1px solid var(--bs-warning);margin-top:12px}.account-menu{max-height:80vh;overflow:auto}.practice-records{margin-top:24px}

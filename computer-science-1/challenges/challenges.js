@@ -70,9 +70,9 @@ function renderSkills(source){
  if(inCode)html.push("<pre><code>"+escapeHTML(code.join("\n"))+"</code></pre>");
  return html.join("\n");
 }
-function get(k){try{return localStorage.getItem(prefix+k);}catch{return null;}}
-function set(k,v){try{localStorage.setItem(prefix+k,v);return true;}catch{return false;}}
-function unset(k){try{localStorage.removeItem(prefix+k);}catch{}}
+function get(k){try{return window.PlaygroundAccount.storage.getItem(prefix+k);}catch{return null;}}
+function set(k,v){try{window.PlaygroundAccount.storage.setItem(prefix+k,v);return true;}catch{return false;}}
+function unset(k){try{window.PlaygroundAccount.storage.removeItem(prefix+k);}catch{}}
 function inform(message,type=""){$("feedback").textContent=message;$("feedback").className="feedback"+(type?" "+type:"");}
 function status(message){$("runtime").textContent=message;}
 function tags(){
@@ -249,6 +249,7 @@ async function execute(all){
   checks.textContent=results.map((r,i)=>"Example "+(i+1)+": "+(r.passed?"PASS":"NEEDS REVISION")+"\nInput: "+c.examples[i].call+"\nExpected: "+c.examples[i].expected+"\n"+(r.message?"Error: "+r.message:"Received: "+r.received)).join("\n\n");
   const errors=results.filter(x=>x.message).map(x=>x.message);
   if(errors.length){output.textContent=errors.join("\n");output.classList.add("terminal-error")}
+  window.PlaygroundAccount.recordAttempt("computer-science-1","challenge:"+c.id,"challenge",{passed:passed===results.length,passedCases:passed,totalCases:results.length});
   if(passed===results.length)set("pass:"+c.id,"true");else unset("pass:"+c.id);
   inform(passed+"/"+results.length+" published examples passed.",passed===results.length?"good":"bad");
  }catch(err){output.textContent=String(err?.message||err);output.classList.add("terminal-error");if(all)checks.textContent="The check could not finish. Review the terminal.";inform("Your draft is saved. Revise and try again.","bad")}

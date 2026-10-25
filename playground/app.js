@@ -1,16 +1,18 @@
-import {mobileProjectPage,mobileProjectIndex} from './mobile-project.mjs?v=projects-1';
-import {uilPage} from './uil.mjs?v=projects-1';
-import {setupStudyLayout,disposeStudyLayout} from './study-layout.mjs?v=projects-1';
-import {mobilePage} from './mobile.mjs?v=projects-1';
+import {Account,ready as accountReady} from './account.js?v=accounts-1';
+import {mobileProjectPage,mobileProjectIndex} from './mobile-project.mjs?v=accounts-1';
+import {uilPage} from './uil.mjs?v=accounts-1';
+import {setupStudyLayout,disposeStudyLayout} from './study-layout.mjs?v=accounts-1';
+import {mobilePage} from './mobile.mjs?v=accounts-1';
 import {debugWorkspace} from './debug-workspace.mjs?v=7';
 import {validateCourse,scoreQuiz,progressKey} from './model.mjs?v=readable-1';
 import {CSharpRunner} from './csharp-runner.mjs?v=uil-1';
 import {buildChecks,parseChecks} from './csharp-protocol.mjs?v=uil-1';
+await accountReady;
 const $=id=>document.getElementById(id),main=$('main');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const inline=s=>esc(s).replace(/`([^`]+)`/g,'<code>$1</code>');
-function read(key,fallback){try{const data=localStorage.getItem(key);return data===null?fallback:JSON.parse(data)}catch{return fallback}}
-function save(key,value){try{localStorage.setItem(key,JSON.stringify(value));return true}catch{announce('Storage is unavailable. Download or copy your work before leaving.');return false}}
+function read(key,fallback){try{const data=window.PlaygroundAccount.storage.getItem(key);return data===null?fallback:JSON.parse(data)}catch{return fallback}}
+function save(key,value){try{window.PlaygroundAccount.storage.setItem(key,JSON.stringify(value));return true}catch{announce('Storage is unavailable. Download or copy your work before leaving.');return false}}
 function announce(s){$('announcement').textContent=s}
 let records=read('playground:progress:v1',{});if(!records||typeof records!=='object'||Array.isArray(records))records={};
 let catalog=[],game=null,activeRunner=null;
@@ -96,8 +98,11 @@ function quizPage(id){
  $('retry-quiz').onclick=()=>{answers={};save(answerKey,answers);quizPage(id);$('quiz-result').textContent='Answers cleared. Your saved best result is kept.'};
 }
 function progressPage(){
+ const accountRows=Account.summaries();
+ const cloud=Account.signedIn?`<section class="panel"><h2>My saved practice</h2><p>Browser practice checks and self-reported work. These are not verified grades.</p>${accountRows.length?accountRows.map(r=>`<div class="progress-row"><span>${esc(catalog.find(c=>c.id===r.course)?.title||r.course)} · ${esc(r.activity)}</span><span>${esc(r.status.replaceAll('_',' '))}</span></div>`).join(''):'<p>Check an activity to start your saved practice history.</p>'}</section>`:'';
+
  const quizRecords=Object.values(records).filter(r=>r?.kind==='quiz'),unityRecords=Object.values(records).filter(r=>r?.kind==='unity-practice'&&r.selfReported);
- main.innerHTML=`<div class="eyebrow">Across your playgrounds</div><h1>My practice.</h1><p class="intro">Your experiments and checkpoints, all in one place.</p><div class="progress-grid"><div class="stat"><strong>${unityRecords.length}</strong><span>Unity lessons self-reported complete</span></div><div class="stat"><strong>${quizRecords.filter(r=>r.bestPercent>=75).length}</strong><span>Checkpoints with a best score of 75%+</span></div><div class="stat"><strong>${quizRecords.reduce((s,r)=>s+(Number(r.attempts)||0),0)}</strong><span>Checkpoint attempts</span></div></div><section class="panel"><h2>Game Programming & Design</h2>${game.units.map(u=>{const r=records[key(u.quiz.id)];return `<div class="progress-row"><a href="${quizHref(u.quiz.id)}">${esc(u.quiz.title)}</a><span>${r?`Best ${Number(r.bestPercent)||0}% · latest ${Number(r.percent)||0}%`:'Not checked yet'}</span></div>`}).join('')}<p><a href="${courseHref('game-programming')}">Continue learning →</a></p></section>`;
+ main.innerHTML=`<div class="eyebrow">Across your playgrounds</div><h1>My practice.</h1><p class="intro">Your experiments and checkpoints, all in one place.</p>${cloud}<div class="progress-grid"><div class="stat"><strong>${unityRecords.length}</strong><span>Unity lessons self-reported complete</span></div><div class="stat"><strong>${quizRecords.filter(r=>r.bestPercent>=75).length}</strong><span>Checkpoints with a best score of 75%+</span></div><div class="stat"><strong>${quizRecords.reduce((s,r)=>s+(Number(r.attempts)||0),0)}</strong><span>Checkpoint attempts</span></div></div><section class="panel"><h2>Game Programming & Design</h2>${game.units.map(u=>{const r=records[key(u.quiz.id)];return `<div class="progress-row"><a href="${quizHref(u.quiz.id)}">${esc(u.quiz.title)}</a><span>${r?`Best ${Number(r.bestPercent)||0}% · latest ${Number(r.percent)||0}%`:'Not checked yet'}</span></div>`}).join('')}<p><a href="${courseHref('game-programming')}">Continue learning →</a></p></section>`;
 }
 function notFound(){main.innerHTML='<h1>That playground isn’t here yet.</h1><a href="#/">Return to the playgrounds →</a>'}
 let routeVersion=0;
