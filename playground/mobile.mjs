@@ -1,5 +1,5 @@
 import {createConsoleDrawer,previewConsoleBridge} from './console-drawer.mjs?v=console-2';
-import {setupStudyLayout} from './study-layout.mjs?v=accounts-1';
+import {setupStudyLayout} from './study-layout.mjs?v=submissions-1';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let course;
 async function getCourse(){if(!course){const r=await fetch('data/mobile-app-dev/course.json');if(!r.ok)throw Error('Lessons unavailable');course=await r.json()}return course}
@@ -15,6 +15,7 @@ export async function mobilePage(main,id){
  const $=id=>document.getElementById(id),key='playground:draft:mobile-app-dev:'+id;
  window.PlaygroundUI.markdown($('mobile-prose'),md);let value=starter;try{value=window.PlaygroundAccount.storage.getItem(key)??starter}catch{}$('mobile-code').value=value;
  window.PlaygroundUI.editor($('mobile-code'),l.language);$('mobile-code').oninput=()=>{try{window.PlaygroundAccount.storage.setItem(key,$('mobile-code').value)}catch{}};
+ window.PlaygroundAccount.mountSubmission({anchor:$('mobile-save'),course_id:'mobile-app-dev',activity_id:id,activity_kind:'lesson',getFiles:()=>({'main':$('mobile-code').value})});
  $('mobile-save').onclick=()=>{try{window.PlaygroundAccount.storage.setItem(key,$('mobile-code').value);$('mobile-feedback').textContent='Draft saved on this device.'}catch{$('mobile-feedback').textContent='Storage unavailable. Copy your code to keep it.'}};
  $('mobile-reset').onclick=()=>{if(confirm('Reset this code to the starter?')){$('mobile-code').value=starter;$('mobile-code').dispatchEvent(new Event('input'))}};
  $('mobile-caret').onclick=()=>{const hidden=$('mobile-links').hidden=!$('mobile-links').hidden;document.querySelector('.mobile-layout').style.gridTemplateColumns=hidden?'28px minmax(0,1fr)':'';$('mobile-caret').textContent=hidden?'›':'‹';$('mobile-caret').setAttribute('aria-expanded',String(!hidden));$('mobile-caret').setAttribute('aria-label',hidden?'Show course menu':'Hide course menu')};

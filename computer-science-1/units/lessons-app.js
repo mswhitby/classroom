@@ -34,6 +34,7 @@ function navigation(){
 function select(id){
  if(busy){feedback("Finish the current run before changing lessons.");return;}
  const l=all.get(id);if(!l)return;active=l;
+ window.PlaygroundAccount.mountSubmission({anchor:$("save"),course_id:"computer-science-1",activity_id:"lesson:"+id,activity_kind:"lesson",getFiles:()=>({"main.py":$("code").value})});
  if(!window.PlaygroundAccount.signedIn&&l.existingDraftKey&&read("draft:"+id)===null){try{const prior=window.PlaygroundAccount.storage.getItem(l.existingDraftKey);if(prior!==null)write("draft:"+id,prior)}catch{}}
  if(!window.PlaygroundAccount.signedIn&&l.existingPassKey&&read("pass:"+id)===null){try{if(window.PlaygroundAccount.storage.getItem(l.existingPassKey)==="true")write("pass:"+id,"true")}catch{}}
  $("unit").value=String(l.unit);

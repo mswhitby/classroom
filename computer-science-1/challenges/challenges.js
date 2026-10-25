@@ -112,6 +112,7 @@ function select(id){
  if(busy){inform("Finish the current run before choosing another challenge.");return;}
  const chosen=byId.get(id);if(!chosen)return;
  current=chosen;
+ window.PlaygroundAccount.mountSubmission({anchor:$("save"),course_id:"computer-science-1",activity_id:"challenge:"+id,activity_kind:"challenge",getFiles:()=>({"main.py":$("code").value})});
  $("challenge-title").textContent=current.title;
  $("challenge-points").textContent=current.points+" pts";
  $("description").textContent="Build a solution using your existing Python skills. Read the requirements before testing your function.";

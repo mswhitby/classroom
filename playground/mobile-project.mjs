@@ -1,6 +1,6 @@
 import {createConsoleDrawer} from './console-drawer.mjs?v=console-2';
-import {setupStudyLayout} from './study-layout.mjs?v=accounts-1';
-import {buildProjectPreview} from './project-preview.mjs?v=accounts-1';
+import {setupStudyLayout} from './study-layout.mjs?v=submissions-1';
+import {buildProjectPreview} from './project-preview.mjs?v=submissions-1';
 const base='#/course/mobile-app-dev',data='data/mobile-app-dev/';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const path=(id,step)=>`${base}/project/${encodeURIComponent(id)}/${encodeURIComponent(step)}`;
@@ -22,6 +22,7 @@ export async function mobileProjectPage(main,id,stepId){
  let disposed=false,token='',timer=null;
  const save=()=>{try{window.PlaygroundAccount.storage.setItem(key,$('project-code').value);return true}catch{return false}};
  $('project-code').oninput=()=>{const saved=save();$('project-save-status').textContent=saved?'Draft saved on this device.':'Storage unavailable. Download your page to keep it.';$('project-feedback').textContent='Code changed. Run or check again.'};
+ window.PlaygroundAccount.mountSubmission({anchor:$('project-save'),course_id:'mobile-app-dev',activity_id:'project:'+id,activity_kind:'project',getFiles:()=>({'index.html':$('project-code').value})});
  $('project-save').onclick=()=>{$('project-save-status').textContent=save()?'Draft saved on this device.':'Storage unavailable. Download your page to keep it.'};
  $('project-reset').onclick=()=>{if(confirm('Restore the project starter? This replaces your draft for all four steps.')){$('project-code').value=starter;$('project-code').dispatchEvent(new Event('input'));$('mobile-preview').srcdoc='';drawer.clear();$('project-feedback').textContent='Starter restored for all steps.'}};
  $('project-download').onclick=()=>{const url=URL.createObjectURL(new Blob([$('project-code').value],{type:'text/html'}));const a=document.createElement('a');a.href=url;a.download='index.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
