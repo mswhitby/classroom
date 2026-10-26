@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: mswhitby/playground
-          ref: d33d953267f44128ca13dac6befa4b257c96f4fd
+          ref: c5d2340461906120495f55f5853aaa0e1297adc1
           path: playground
       - uses: actions/checkout@v4
         with:
@@ -40,7 +40,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: mswhitby/computer-science-1
-          ref: 7ab75ae3c46705e4edcbe5d45f078bc8d1f64a22
+          ref: 648fd695b461aa7a3f7e37369f87bff5d7baee02
           path: computer-science-1
       - uses: actions/setup-node@v4
         with:
