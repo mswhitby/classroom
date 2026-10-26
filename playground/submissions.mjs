@@ -24,8 +24,8 @@ export function mountSubmission({anchor,course_id,activity_id,activity_kind,getF
  if(!anchor)return;
  const parent=anchor.parentElement;parent.querySelector('.submission-actions')?.remove();
  const box=document.createElement('div');box.className='submission-actions';
- const note=document.createElement('p');note.textContent='Drafts save automatically. Run and Check are practice only—you can check as often as you like. Submit work hands in a separate copy.';
- const button=document.createElement('button');button.type='button';button.textContent='Submit work';button.className='btn btn-primary';
+ const note=document.createElement('p');note.textContent='Drafts save automatically. Run tests your draft. Submit hands in a separate copy.';
+ const button=document.createElement('button');button.type='button';button.textContent='Submit';button.className='btn btn-primary';
  const status=document.createElement('p');status.setAttribute('role','status');
  let busy=false;
  button.onclick=async()=>{

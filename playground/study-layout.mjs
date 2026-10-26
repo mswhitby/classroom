@@ -1,7 +1,8 @@
+import {practiceTabs,workspaceTabs,taskSection} from './student-flow.mjs?v=student-1';
 let currentCleanup=()=>{};
 export function disposeStudyLayout(){currentCleanup();currentCleanup=()=>{};document.body.classList.remove('study-page','workspace-expanded','workspace-resizing');document.querySelector('main')?.classList.remove('study-main')}
 const separator=(label,orientation)=>{const e=document.createElement('div');e.className=orientation==='vertical'?'study-resize-width':'study-resize-height';e.tabIndex=0;e.setAttribute('role','separator');e.setAttribute('aria-label',label);e.setAttribute('aria-orientation',orientation);e.title=orientation==='vertical'?'Drag to change the lesson and coding widths. Arrow keys also work.':'Drag to change the height. Arrow keys also work.';return e};
-export function setupStudyLayout(main,{course,title,competency,lessonNumber,lessonCount,headingLabel,instructionTitle}={}){
+export function setupStudyLayout(main,{course,title,competency,lessonNumber,lessonCount,headingLabel,instructionTitle,taskObjective,taskInput,taskExpected}={}){
  disposeStudyLayout();const controller=new AbortController(),signal=controller.signal;
  currentCleanup=()=>{controller.abort();document.body.classList.remove('workspace-expanded','workspace-resizing')};
  const layout=main.querySelector('.course-layout,.mobile-layout'),article=layout?.querySelector(':scope > article'),workspace=article?.querySelector('.workspace');if(!layout||!article)return;
@@ -34,6 +35,7 @@ export function setupStudyLayout(main,{course,title,competency,lessonNumber,less
  if(toolbar&&(consolePanel||terminalPanel))(consolePanel||terminalPanel).after(toolbar);
  const terminal=workspace.querySelector('#csharp-output'),terminalHeight=separator('Resize terminal height','horizontal');terminal?.after(terminalHeight);
  const preview=workspace.querySelector('#mobile-preview');let previewHeight;if(preview){previewHeight=separator('Resize preview height','horizontal');(preview.closest('.mobile-results')||preview).after(previewHeight)}
+ queueMicrotask(()=>{if(!workspace.isConnected)return;const prose=copy.querySelector('#mobile-prose,#uil-prose');const task=course==='game-programming'?[...copy.querySelector('.study-panel-content').children].filter(n=>!['game-markdown'].includes(n.id)&&!n.classList.contains('unity-task')):taskSection(prose);practiceTabs(copy,{objective:taskObjective||(course==='game-programming'?'Complete the C# method described below.':course==='uil'?'Solve the Java programming task below.':'Build the page or interaction described below.'),input:taskInput||(course==='game-programming'?'Use the method calls in the published examples.':course==='uil'?'Use the arguments or data file specified in the task.':'Edit the starter code. The preview supplies the page and any interaction fixtures.'),expected:taskExpected||(course==='game-programming'?'Return the values shown in the examples. Printing is only required when the task asks for it.':course==='uil'?'Match the published output, including spelling and line breaks.':'Match the listed requirements, then try the page in Preview.'),practiceNodes:task});workspaceTabs(workspace)});
  const storageKey='playground:layout:'+course+':';
  const read=(key,fallback)=>{try{const value=localStorage.getItem(storageKey+key);return value===null?fallback:Number(value)}catch{return fallback}};
  const save=(key,value)=>{try{localStorage.setItem(storageKey+key,String(value))}catch{}};

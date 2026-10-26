@@ -48,6 +48,7 @@ function select(id){
   const text=await r.text();if(active?.id!==id)return;
   if(!window.PlaygroundUI){await new Promise(resolve=>document.addEventListener('playground-ui-ready',resolve,{once:true}));if(active?.id!==id)return}
   window.PlaygroundUI.markdown(body,text,"https://github.com/mswhitby/computer-science-1/blob/main/units/"+l.markdown);
+  document.getElementById('python-task-details')?.remove();const details=document.createElement('div');details.id='python-task-details';details.append(...window.StudentFlow.taskSection(body));document.getElementById('practice-input')?.after(details);
  }catch{if(active?.id===id)body.innerHTML='<p>The lesson could not open. Refresh to try again, or use the complete lesson link below.</p>'}};
  renderLesson();
  $("mode-label").textContent=l.mode==="script"?"CHECK CONSOLE OUTPUT":"CHECK RETURN VALUES";
@@ -88,7 +89,12 @@ function select(id){
   targets.append(a);
  }
 
- feedback(read("pass:"+id)==="true"?"You passed the public examples on this device.":"Use Run to experiment and Check answer to test the published examples.",read("pass:"+id)==="true"?"good":"");
+ feedback(read("pass:"+id)==="true"?"You passed the public examples on this device.":"Run executes your code and tests the published examples.",read("pass:"+id)==="true"?"good":"");
+ const copy=document.getElementById('lesson-instructions');
+ const summary=document.createElement('p');summary.id='practice-objective';summary.textContent=l.summary;
+ const input=document.createElement('p');input.id='practice-input';input.textContent=l.mode==='script'?'Input: no keyboard input. Write a program that prints the expected lines below.':'Input: the checker calls your function using the arguments below. Return the expected value; printing is optional.';
+ if(!copy.dataset.studentPractice)window.StudentFlow.practiceTabs(copy,{objective:'Complete main.py using the requirements and examples below.',practiceNodes:[summary,input,$('case-list')]});else{document.getElementById('practice-objective').textContent=l.summary;document.getElementById('practice-input').textContent=input.textContent}
+ window.StudentFlow.workspaceTabs(document.querySelector('.workspace'));
  navigation();try{history.replaceState(null,"","#"+encodeURIComponent(id))}catch{}
 }
 function stop(){
@@ -271,11 +277,11 @@ function begin(){
  };
  $("previous-lesson").onclick=()=>{const i=ordered.findIndex(x=>x.id===active?.id);if(i>0){select(ordered[i-1].id);$("title").scrollIntoView?.({block:"start",behavior:"smooth"})}};
  $("next-lesson").onclick=()=>{const i=ordered.findIndex(x=>x.id===active?.id);if(i>=0&&i<ordered.length-1){select(ordered[i+1].id);$("title").scrollIntoView?.({block:"start",behavior:"smooth"})}};
- $("run").onclick=runStudentCode;$("check").onclick=checkAnswer;
+ $("run").onclick=checkAnswer;$("check").onclick=checkAnswer;
  $("save").onclick=()=>feedback(write("draft:"+active.id,$("code").value)?"Draft saved on this device.":"Can't save here. Use Copy code.");
  $("copy").onclick=async()=>{try{await navigator.clipboard.writeText($("code").value);feedback("Copied. Keep a backup or paste it into your own project.","good")}catch{feedback("Clipboard unavailable. Select and copy manually.")}};
  $("reset").onclick=()=>{if(!confirm("Restore starter code and replace this draft?"))return;$("code").value=active.starter;write("draft:"+active.id,active.starter);erase("pass:"+active.id);$("check-results").textContent="";$("check-results").hidden=true;$("output").textContent="Run code to see printed output or Python errors here.";$("run-status").textContent="Ready to run";navigation();feedback("Starter restored.")};
- $("code").addEventListener("input",()=>{write("draft:"+active.id,$("code").value);erase("pass:"+active.id);$("check-results").hidden=true;$("check-results").textContent="";feedback("Code changed. Run to experiment, or Check answer to test the requirements.");navigation()});
+ $("code").addEventListener("input",()=>{write("draft:"+active.id,$("code").value);erase("pass:"+active.id);$("check-results").hidden=true;$("check-results").textContent="";feedback("Code changed. Run to test the requirements.");navigation()});
  $("code").addEventListener("keydown",e=>{
   if(e.key==="Tab"){e.preventDefault();const a=e.target;a.setRangeText("    ",a.selectionStart,a.selectionEnd,"end");a.dispatchEvent(new Event("input"))}
   if((e.ctrlKey||e.metaKey)&&e.key==="Enter"){e.preventDefault();runStudentCode()}

@@ -150,8 +150,12 @@ function select(id){
  $("skills-button").textContent="Additional skills walkthrough";
  $("skills-content").innerHTML="";
  displayExamples();tags();showList();
+ const copy=document.querySelector('.instructions');const nodes=[];
+ for(const id of ['behavior','parameters','examples','scenario']){const node=$(id);if(node.previousElementSibling?.tagName==='H4')nodes.push(node.previousElementSibling);nodes.push(node)}
+ window.StudentFlow.practiceTabs(copy,{objective:'Implement the function in the starter. Match the behavior and return values below.',input:'Use the function parameters shown below. The checker supplies these values; keyboard input is not required.',expected:'Return the requested value. A blank Console is normal for a function that returns a value.',practiceNodes:nodes});
+ window.StudentFlow.workspaceTabs(document.querySelector('.workspace'));
  const checked=get("pass:"+id)==="true";
- inform(checked?"Your published examples passed on this device. You can continue improving your code.":"Run code to experiment; Check answer tests the published examples.",checked?"good":"");
+ inform(checked?"Your published examples passed on this device. You can continue improving your code.":"Run tests the published examples; Submit hands in your code.",checked?"good":"");
  try{history.replaceState(null,"","#"+id);}catch{}
 }
 function shutdown(){
@@ -273,7 +277,7 @@ function start(){
   if(open)$("skills-content").innerHTML=renderSkills(current.skills||"");
  });
  $("close-skills").addEventListener("click",()=>{$("skills-section").hidden=true;$("skills-button").textContent="Additional skills walkthrough";});
- $("run").addEventListener("click",()=>execute(false));
+ $("run").addEventListener("click",()=>execute(true));
  $("check").addEventListener("click",()=>execute(true));
  $("save").addEventListener("click",()=>inform(set("draft:"+current.id,$("code").value)?"Draft saved on this browser.":"Browser storage unavailable. Use Copy code for a backup."));
  $("copy").addEventListener("click",async()=>{
@@ -291,7 +295,7 @@ function start(){
   if(event.key==="Tab"){
    event.preventDefault();const field=event.target;field.setRangeText("    ",field.selectionStart,field.selectionEnd,"end");field.dispatchEvent(new Event("input"));
   }
-  if((event.ctrlKey||event.metaKey)&&event.key==="Enter"){event.preventDefault();execute(false);}
+  if((event.ctrlKey||event.metaKey)&&event.key==="Enter"){event.preventDefault();execute(true);}
  });
  const hash=decodeURIComponent(location.hash.slice(1));
  select(byId.has(hash)?hash:"mood-music-label");

@@ -1,5 +1,5 @@
 import {createConsoleDrawer,previewConsoleBridge} from './console-drawer.mjs?v=console-2';
-import {setupStudyLayout} from './study-layout.mjs?v=teacher-1';
+import {setupStudyLayout} from './study-layout.mjs?v=student-1';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let course;
 async function getCourse(){if(!course){const r=await fetch('data/mobile-app-dev/course.json');if(!r.ok)throw Error('Lessons unavailable');course=await r.json()}return course}
@@ -49,7 +49,7 @@ export async function mobilePage(main,id){
   $('mobile-preview').srcdoc='<!doctype html><html><head><meta charset="utf-8"><style>body{font:16px/1.6 system-ui;padding:20px}button{padding:8px 16px}</style>'+start+runtime+'</head><body>'+body+end+'</body></html>';
   clearTimeout(timer);timer=setTimeout(()=>{const frame=$('mobile-preview');if(!frame)return;frame.srcdoc='<p>Your preview stopped. Check for an endless loop, then run again.</p>';consoleDrawer.append('Preview stopped after 6 seconds.','error')},6000);
  }
- $('mobile-run').onclick=()=>run(false);$('mobile-check').onclick=()=>run(true);
+ $('mobile-run').onclick=()=>run(true);$('mobile-check').onclick=()=>run(true);
  return {dispose(){clearTimeout(timer);window.removeEventListener('message',receive);consoleDrawer.dispose()}};
 }
 function loadScript(path){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=path;s.onload=resolve;s.onerror=()=>reject(Error('The preview tools could not load. Try again.'));document.head.append(s)})}

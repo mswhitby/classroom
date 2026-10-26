@@ -1,9 +1,9 @@
-import {classesPage,teacherPage} from './classroom-page.mjs?v=teacher-1';
-import {Account,ready as accountReady} from './account.js?v=teacher-1';
-import {mobileProjectPage,mobileProjectIndex} from './mobile-project.mjs?v=teacher-1';
-import {uilPage} from './uil.mjs?v=teacher-1';
-import {setupStudyLayout,disposeStudyLayout} from './study-layout.mjs?v=teacher-1';
-import {mobilePage} from './mobile.mjs?v=teacher-1';
+import {classesPage,teacherPage} from './classroom-page.mjs?v=student-1';
+import {Account,ready as accountReady} from './account.js?v=student-1';
+import {mobileProjectPage,mobileProjectIndex} from './mobile-project.mjs?v=student-1';
+import {uilPage} from './uil.mjs?v=student-1';
+import {setupStudyLayout,disposeStudyLayout} from './study-layout.mjs?v=student-1';
+import {mobilePage} from './mobile.mjs?v=student-1';
 import {debugWorkspace} from './debug-workspace.mjs?v=7';
 import {validateCourse,scoreQuiz,progressKey} from './model.mjs?v=readable-1';
 import {CSharpRunner} from './csharp-runner.mjs?v=uil-1';
@@ -32,7 +32,8 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('account-menu').
 $('export-progress').onclick=()=>download('playground-practice.json',JSON.stringify({schemaVersion:1,exportedAt:new Date().toISOString(),records},null,2),'application/json');
 function home(){
  document.title='Ms. Whitby’s Playground';
- main.innerHTML=`<section class="home-hero"><div class="eyebrow">Karen Wagner High School · Computer science & technology</div><h1>Curiosity belongs here.</h1><p class="intro">A place to experiment, solve problems, and make things that are yours. Choose your playground and get building.</p><div class="hero-meta"><span>Five playgrounds. One place to play.</span><span>Learn → Try → Explain → Build</span></div></section><div class="course-grid">${catalog.map((c,i)=>`<article class="course-card"><span class="number">0${i+1} / ${esc(c.discipline)}</span><span class="badge ${c.status==='planned'?'neutral':''}">${esc(c.label)}</span><h2>${esc(c.title)}</h2><p>${esc(c.description)}</p><a href="${courseHref(c.id)}">Enter playground <span aria-hidden="true">↗</span></a></article>`).join('')}</div>`;
+ main.innerHTML=`<section class="home-hero"><div class="eyebrow">Karen Wagner High School · Computer science & technology</div><h1>Curiosity belongs here.</h1><p class="intro">A place to experiment, solve problems, and make things that are yours. Choose your playground and get building.</p><div class="hero-meta"><span>Five playgrounds. One place to play.</span><span>Learn → Try → Explain → Build</span></div></section><section class="panel home-access"><p>Join your class to get started. Sign in with GitHub to submit work and track progress across computers.</p><a class="btn btn-primary" href="#/classes">Join a class</a><button id="home-login">Sign in with GitHub</button></section><div class="course-grid">${catalog.map((c,i)=>`<article class="course-card"><span class="number">0${i+1} / ${esc(c.discipline)}</span><span class="badge ${c.status==='planned'?'neutral':''}">${esc(c.label)}</span><h2>${esc(c.title)}</h2><p>${esc(c.description)}</p><a href="${courseHref(c.id)}">Enter playground <span aria-hidden="true">↗</span></a></article>`).join('')}</div>`;
+ const login=$('home-login');if(login){login.hidden=Account.signedIn;login.onclick=()=>Account.signIn()}
 }
 function coursePage(id){
  const c=catalog.find(x=>x.id===id);if(!c){notFound();return}document.title=c.title+' | Ms. Whitby’s Playground';
@@ -84,7 +85,7 @@ function lessonPage(id){
   }catch(error){if(activeRunner!==runner)return;const message=String(error?.message||error);if(check){feedback.hidden=false;feedback.textContent=message}else {output.classList.add('terminal-error');output.textContent=message}}
   finally{if(activeRunner===runner)setBusy(false)}
  }
- $('run-code').onclick=()=>execute(false);$('check-code').onclick=()=>execute(true);$('stop-code').onclick=()=>runner.stop();
+ $('run-code').onclick=()=>execute(true);$('check-code').onclick=()=>execute(true);$('stop-code').onclick=()=>runner.stop();
 
  $('expand-code').onclick=()=>{const w=document.querySelector('.workspace');const on=w.classList.toggle('is-expanded');$('expand-code').textContent=on?'Restore':'Expand';$('expand-code').setAttribute('aria-pressed',String(on))};
  const writePractice=()=>setRecord(id,{kind:'unity-practice',selfReported:$('practice-complete').checked,notes:$('reflection').value});$('reflection').oninput=writePractice;$('practice-complete').onchange=writePractice;
