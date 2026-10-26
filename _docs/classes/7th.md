@@ -5,6 +5,12 @@ category: Classes
 order: 6
 ---
 
+# Week of Oct. 26
+
+[Game Programming Playground](https://www.mswhitby.com/playground/#/course/game-programming)
+- Class Code: 0C61AAFB52  
+- Sign in with GitHub to submit work
+
 # Week of Oct. 13
 
 ## Usernames Form

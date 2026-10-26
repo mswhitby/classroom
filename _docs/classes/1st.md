@@ -23,6 +23,12 @@ Choose from 24 problems worth up to **255 points**. You can filter by topic or d
 
 ---- -->
 
+# Week of Oct. 26
+
+[Python Playground](https://www.mswhitby.com/computer-science-1/)
+- Class Code: E9D687D5EB 
+- Sign in with GitHub to submit work
+
 # Week of Oct. 19
 
 [Python Problems](https://github.com/mswhitby/python_problems_20261019/tree/main)
