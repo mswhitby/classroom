@@ -5,6 +5,12 @@ category: Classes
 order: 2
 ---
 
+# Week of Oct. 26
+
+[Mobile App Playground](https://www.mswhitby.com/playground/#/course/mobile-app-dev)
+- Class Code: 14A42C6F3B
+- Sign in with GitHub to submit work
+
 # Week of Oct. 13
 
 ## Usernames Form
