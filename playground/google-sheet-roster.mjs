@@ -3,6 +3,7 @@
 // No roster rows or Google tokens are stored or sent to Supabase.
 const SCOPE='https://www.googleapis.com/auth/spreadsheets.readonly';
 const CLIENT_KEY='playground:google-sheets-client-id';
+const SHEET_LINK_KEY='playground:teacher-google-sheet-url';
 
 export function parseSheetLink(text){
  let u;
@@ -79,19 +80,47 @@ function loadGoogleIdentity(){
 }
 function storageRead(){try{return localStorage.getItem(CLIENT_KEY)||''}catch{return ''}}
 function storageWrite(value){try{localStorage.setItem(CLIENT_KEY,value)}catch{}}
+// Only the URL (not roster rows or an OAuth token) survives refresh on this browser.
+export function readSavedSheetLink(storage){
+ try{const url=storage.getItem(SHEET_LINK_KEY)||'';if(url)parseSheetLink(url);return url}catch{return ''}
+}
+export function saveSheetLink(storage,url){
+ parseSheetLink(url);
+ storage.setItem(SHEET_LINK_KEY,url.trim());
+}
+export function clearSheetLink(storage){storage.removeItem(SHEET_LINK_KEY)}
+function saveLocalSheetLink(url){try{saveSheetLink(localStorage,url);return true}catch{return false}}
+function clearLocalSheetLink(){try{clearSheetLink(localStorage)}catch{}}
+function localSavedSheetLink(){try{return readSavedSheetLink(localStorage)}catch{return ''}}
 export function mountGoogleSheetRoster(container,{onRows=()=>{}}={}){
  let disposed=false,token=null;
  container.innerHTML='<h2>Match students from your Google Sheet</h2>'+
   '<p>Paste the private Google Sheet link here. Google may request read-only permission to your spreadsheets broadly; this dashboard reads only four columns of the particular Sheet link you paste (name, class period, and GitHub username). No student rows are uploaded to Supabase.</p>'+
   '<label for="sheet-url">Google Sheet link</label><input id="sheet-url" type="url" placeholder="https://docs.google.com/spreadsheets/d/..." autocomplete="off">'+
-  '<button id="sheet-connect" type="button">Connect Google & load sheet</button>'+
+  '<button id="sheet-connect" type="button">Connect Google & load sheet</button> <button id="sheet-forget" type="button" class="secondary" hidden>Forget saved link</button>'+
   '<p id="sheet-status" role="status"></p>'+
   '<details id="sheet-setup"><summary>One-time Google authorization setup</summary>'+
   '<p>A Google Cloud Web OAuth client is required for private spreadsheets. Enable the Google Sheets API, add <code>https://www.mswhitby.com</code> as an authorized JavaScript origin, and enter the public OAuth client ID below. This is not a secret. The sheet stays private.</p>'+
   '<label for="sheet-client-id">Google OAuth client ID</label><input id="sheet-client-id" type="text" autocomplete="off" placeholder="12345-abc.apps.googleusercontent.com">'+
   '<button id="sheet-save-client" class="secondary" type="button">Save browser configuration</button></details>';
  const $=id=>container.querySelector('#'+id),status=message=>{$('sheet-status').textContent=message};
+ const storedLink=localSavedSheetLink();
  $('sheet-client-id').value=storageRead();
+ $('sheet-url').value=storedLink;
+ $('sheet-forget').hidden=!storedLink;
+ if(storedLink){$('sheet-connect').textContent='Reconnect Google & load saved sheet';status('Sheet link restored from this browser. Reconnect Google to load the names and periods. No Google access token or student data was saved.')}
+ $('sheet-url').oninput=()=>{
+  const saved=localSavedSheetLink();
+  $('sheet-connect').textContent=$('sheet-url').value.trim()===saved&&saved?'Reconnect Google & load saved sheet':'Connect Google & load sheet';
+ };
+ $('sheet-forget').onclick=()=>{
+  clearLocalSheetLink();
+  $('sheet-url').value='';
+  $('sheet-forget').hidden=true;
+  $('sheet-connect').textContent='Connect Google & load sheet';
+  token=null;onRows([]);
+  status('Saved sheet link cleared from this browser. Google access permissions are managed in your Google account.');
+ };
  $('sheet-save-client').onclick=()=>{
   const clientId=$('sheet-client-id').value.trim();
   if(!clientIdValid(clientId)){status('Enter a valid Google Cloud Web OAuth client ID.');return}
@@ -101,6 +130,8 @@ export function mountGoogleSheetRoster(container,{onRows=()=>{}}={}){
  $('sheet-connect').onclick=()=>{
   const url=$('sheet-url').value.trim();
   try{parseSheetLink(url)}catch(e){status(e.message);return}
+  const saved=saveLocalSheetLink(url);
+  if(saved){$('sheet-forget').hidden=false;$('sheet-connect').textContent='Reconnect Google & load saved sheet'}
   const clientId=$('sheet-client-id').value.trim()||storageRead();
   if(!clientIdValid(clientId)){status('One-time setup required: expand Google authorization setup and enter your Web OAuth client ID.');$('sheet-setup').open=true;return}
   if(!globalThis.google?.accounts?.oauth2){status('Google sign-in is not ready. Check whether Google is blocked on this network.');return}
@@ -124,7 +155,8 @@ export function mountGoogleSheetRoster(container,{onRows=()=>{}}={}){
     },
     error_callback:()=>{if(!disposed){status('Google authorization popup was closed or blocked.');$('sheet-connect').disabled=false}}
    });
-   client.requestAccessToken({prompt:'consent'});
+   // A real click opens Google's authorization if the previous grant is expired.
+   client.requestAccessToken({prompt:''});
   }catch(e){status(e.message||'Could not launch Google authorization.');$('sheet-connect').disabled=false}
  };
  return {dispose(){disposed=true;token=null;onRows([])}};
