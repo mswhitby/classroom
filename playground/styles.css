@@ -18,3 +18,26 @@
 .debug-workspace select{max-width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
 .debug-workspace #debug-output{min-height:140px;height:170px;max-height:500px;resize:vertical;overflow:auto;margin:0;padding:16px;border-radius:0;font-size:13px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}
 .debug-workspace #debug-hints li{padding:5px 0}
+
+/* Teacher directory – registered users and their sections, not an imported roster. */
+.directory-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.directory-heading h2{margin:0}
+.directory-controls{display:flex;align-items:end;gap:14px;flex-wrap:wrap;margin:16px 0}
+.directory-controls label,.directory-bulk label,.directory-assign label,.directory-kind label{font-size:13px;display:grid;gap:5px;min-width:170px}
+.directory-controls input,.directory-controls select,.directory-bulk select,.directory-assign select,.directory-kind select{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);font:inherit}
+.directory-controls input{min-width:230px}
+.directory-bulk{display:flex;align-items:end;gap:12px;flex-wrap:wrap;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.directory-bulk label:first-child{display:flex;align-items:center;gap:8px}
+.directory-bulk label:first-child input{accent-color:var(--accent)}
+.directory-person{display:grid;grid-template-columns:minmax(130px,1.15fr) minmax(130px,.75fr) minmax(210px,1.5fr) minmax(190px,1fr);align-items:start;gap:15px;padding:16px 0;border-bottom:1px solid var(--line)}
+.directory-person-select{display:flex;align-items:center;gap:12px;cursor:pointer;overflow-wrap:anywhere}
+.directory-person-select input{accent-color:var(--accent)}
+.directory-person-id strong,.directory-person-id small{display:block}
+.directory-person-id small,.directory-section small,.directory-unassigned,.directory-label{font-size:12px;color:var(--muted)}
+.directory-section{display:flex;align-items:center;gap:8px;margin:7px 0;flex-wrap:wrap}
+.directory-section button,.directory-assign button{font-size:12px;padding:7px 10px}
+.directory-section span{flex:1;min-width:130px}
+.directory-assign{display:flex;align-items:end;flex-wrap:wrap;gap:8px}
+.directory-assign label{flex:1;min-width:140px}
+@media(max-width:950px){.directory-person{grid-template-columns:1fr 1fr}.directory-sections{grid-column:1/2}}
+@media(max-width:550px){.directory-person{grid-template-columns:1fr}.directory-sections{grid-column:auto}}
