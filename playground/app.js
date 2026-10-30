@@ -1,4 +1,4 @@
-import {classesPage,teacherPage} from './classroom-page.mjs?v=manual-roster-1';
+import {classesPage,teacherPage} from './classroom-page.mjs?v=registered-roster-2';
 import {Account,ready as accountReady} from './account.js?v=student-1';
 import {mobileProjectPage,mobileProjectIndex} from './mobile-project.mjs?v=student-1';
 import {uilPage} from './uil.mjs?v=student-1';
