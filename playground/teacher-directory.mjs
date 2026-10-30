@@ -1,5 +1,5 @@
 // Teacher-only account directory: all registered GitHub accounts, not a pasted roster.
-import {mountGoogleSheetRoster,normalizeGithub} from './google-sheet-roster.mjs?v=1';
+import {mountGoogleSheetRoster,normalizeGithub} from './google-sheet-roster.mjs?v=saved-link-1';
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const labelFor=course=>({'computer-science-1':'Computer Science I','game-programming':'Game Programming & Design','mobile-app-dev':'Mobile App & Web',uil:'UIL Computer Science',capstone:'Capstone'})[course]||course;
 
