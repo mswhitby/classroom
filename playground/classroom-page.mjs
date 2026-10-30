@@ -1,5 +1,5 @@
 import {COURSES,activityState} from './classroom-model.mjs?v=student-1';
-import {mountTeacherDirectory} from './teacher-directory.mjs?v=registered-roster-1';
+import {mountTeacherDirectory} from './teacher-directory.mjs?v=saved-link-1';
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const options=()=>Object.entries(COURSES).map(([id,name])=>`<option value="${id}">${esc(name)}</option>`).join('');
 const courseHref=id=>id==='computer-science-1'?'/computer-science-1/units/':'#/course/'+encodeURIComponent(id);
