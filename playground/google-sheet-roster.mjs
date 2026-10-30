@@ -82,7 +82,7 @@ function storageWrite(value){try{localStorage.setItem(CLIENT_KEY,value)}catch{}}
 export function mountGoogleSheetRoster(container,{onRows=()=>{}}={}){
  let disposed=false,token=null;
  container.innerHTML='<h2>Match students from your Google Sheet</h2>'+
-  '<p>Paste the private Google Sheet link here. Google will ask you to authorize read-only access in this browser. Only names, class periods and GitHub usernames are read, and none are uploaded to Supabase.</p>'+
+  '<p>Paste the private Google Sheet link here. Google may request read-only permission to your spreadsheets broadly; this dashboard reads only four columns of the particular Sheet link you paste (name, class period, and GitHub username). No student rows are uploaded to Supabase.</p>'+
   '<label for="sheet-url">Google Sheet link</label><input id="sheet-url" type="url" placeholder="https://docs.google.com/spreadsheets/d/..." autocomplete="off">'+
   '<button id="sheet-connect" type="button">Connect Google & load sheet</button>'+
   '<p id="sheet-status" role="status"></p>'+
