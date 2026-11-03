@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: mswhitby/playground
-          ref: c5d2340461906120495f55f5853aaa0e1297adc1
+          ref: 3722b2a8f7dc9219e66c284d46da859e08dddb8e
           path: playground
       - uses: actions/checkout@v4
         with:
@@ -40,7 +40,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: mswhitby/computer-science-1
-          ref: 648fd695b461aa7a3f7e37369f87bff5d7baee02
+          ref: 6bf5a15085339588e2e3bde57b8b95aec9e7d672
           path: computer-science-1
       - uses: actions/setup-node@v4
         with:
@@ -52,13 +52,15 @@ jobs:
           npm test
           npm run test:database
           npm run build:ui
-          python scripts/prepare-fonts.py
           python scripts/prepare-java-runtime.py
           python scripts/build.py
+          npx playwright install --with-deps chromium
+          npm run test:browser
+          python -c "from pathlib import Path; assert not [p for p in Path('dist').rglob('*') if p.suffix.lower() in {'.woff', '.woff2', '.ttf', '.otf'}], 'Font binaries must not be published'"
       - name: Update only the two course deployment folders
         run: |
-          rsync -a playground/dist/ site/playground/
-          rsync -a computer-science-1/docs/ site/computer-science-1/
+          rsync -a --delete playground/dist/ site/playground/
+          rsync -a --delete computer-science-1/docs/ site/computer-science-1/
       - name: Save built files and request the existing Pages build
         working-directory: site
         env:
@@ -68,7 +70,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add playground computer-science-1
           if ! git diff --cached --quiet; then
-            git commit -m 'Publish refreshed light and dark visual system'
+            git commit -m 'Publish shared Playground redesign and native Python routes'
             git push origin HEAD:main
           fi
           gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
