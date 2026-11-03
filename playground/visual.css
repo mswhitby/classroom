@@ -582,3 +582,7 @@ body.pg-app button.btn-primary{background:var(--surface)!important;border-color:
 .pg-app .teacher-tabs button { border:0;border-radius:0;border-bottom:2px solid transparent;background:transparent;padding:14px 18px }
 .pg-app .teacher-tabs button[aria-selected=true] { border-bottom-color:var(--accent);background:var(--surface-2) }
 .teacher-dashboard .panel h2 { margin:0 0 12px }
+/* Editor helpers also decorate new tab buttons; retain clear selection styling. */
+body.pg-app .ws-output > .student-tabs button.btn,body.pg-app .teacher-tabs button.btn { background:transparent!important;color:var(--muted)!important;border:0!important;border-bottom:2px solid transparent!important;border-radius:0;box-shadow:none }
+body.pg-app .ws-output > .student-tabs button.btn[aria-selected=true],body.pg-app .teacher-tabs button.btn[aria-selected=true] { color:var(--text)!important;border-bottom-color:var(--accent)!important }
+body.pg-app .teacher-tabs button.btn[aria-selected=true] { background:var(--surface-2)!important }
