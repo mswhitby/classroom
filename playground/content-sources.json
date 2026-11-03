@@ -12,5 +12,11 @@
     "snapshot": "Week 1 sample curriculum",
     "file": "content/week-01-student.json",
     "sha256": "5307df34a439d0dd3469fd2ad79975ffbd527fed9b4ae3a947042c2b1481ead5"
+  },
+  "computer-science-1": {
+    "repository": "mswhitby/computer-science-1",
+    "commit": "6bf5a15085339588e2e3bde57b8b95aec9e7d672",
+    "file": "data/computer-science-1/course.json",
+    "sha256": "ebc963f90a452ac2ecac3fb6cc1baf13a21172dd353879d79f7a3abc4efd6c61"
   }
 }

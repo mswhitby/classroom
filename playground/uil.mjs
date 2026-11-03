@@ -1,4 +1,4 @@
-import {setupStudyLayout} from './study-layout.mjs?v=student-1';
+import {setupStudyLayout} from './study-layout.mjs?v=redesign-2';
 import {JavaRunner} from './java-runner.mjs';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const base='#/course/uil',data='data/uil/';
@@ -40,7 +40,7 @@ export async function uilPage(main,section,id){
  $('uil-save').onclick=()=>{$('uil-feedback').textContent=save('draft:'+id,$('uil-code').value)?'Draft saved on this device.':'Storage unavailable. Download your program to keep it.'};
  $('uil-reset').onclick=()=>{if(confirm('Restore the starter code?')){$('uil-code').value=starter;$('uil-code').dispatchEvent(new Event('input'));$('csharp-output').classList.remove('terminal-error');$('csharp-output').textContent='Starter restored.'}};
  $('uil-download').onclick=()=>{const url=URL.createObjectURL(new Blob([$('uil-code').value],{type:'text/plain'}));const a=document.createElement('a');a.href=url;a.download=l.className+'.java';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
- setupStudyLayout(main,{course:'uil',taskObjective:l.summary,taskInput:l.environment==='ide'?'Read greetings.dat in your Java 26 IDE. The first line is a count; each following line is a name.':'Read the supplied main arguments. The examples below show the required values.',taskExpected:l.environment==='ide'?'Print one greeting per name, exactly as shown below. Submit your Java source after testing in your IDE.':'Print the expected output shown below.'});main.querySelector('.editor-header>span').textContent='Java';
+ setupStudyLayout(main,{course:'uil',taskObjective:l.summary,taskInput:l.environment==='ide'?'Read greetings.dat in your Java 26 IDE. The first line is a count; each following line is a name.':'Read the supplied main arguments. The examples below show the required values.',taskExpected:l.environment==='ide'?'Print one greeting per name, exactly as shown below. Submit your Java source after testing in your IDE.':'Print the expected output shown below.'});
  if(l.environment==='ide')return;
  const runner=new JavaRunner(text=>{if(main.isConnected&&location.hash===route)$('uil-status').textContent=text});let busy=false;
  const normalize=s=>String(s).replace(/\r\n/g,'\n');

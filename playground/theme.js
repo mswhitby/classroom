@@ -1,15 +1,17 @@
 /* One appearance preference across all four course areas and the Python pages. */
 (() => {
+ const shellSource=document.currentScript?.src;
  const key='playground:appearance:v1',media=matchMedia('(prefers-color-scheme: dark)');
  const normalize=v=>['dark','dark-purple'].includes(v)?'dark':['light','purple'].includes(v)?'light':'system';
- function load(){try{const value=localStorage.getItem(key);if(value)return normalize(value);let previous=localStorage.getItem('playground:theme');if(previous){try{previous=JSON.parse(previous)}catch{}return normalize(previous)}const old=localStorage.getItem('cs1:theme');return old?normalize(old):'system'}catch{return 'system'}}
+ function load(){try{const value=localStorage.getItem(key);if(value)return normalize(value);let previous=localStorage.getItem('playground:theme');if(previous){try{previous=JSON.parse(previous)}catch{}return normalize(previous)}const old=localStorage.getItem('cs1:theme');return old?normalize(old):'dark'}catch{return 'system'}}
  let preference=load();
- function apply(){const resolved=preference==='system'?(media.matches?'dark':'light'):preference;document.documentElement.dataset.theme=resolved;document.documentElement.dataset.bsTheme=resolved;document.documentElement.dataset.appearance=preference;document.querySelectorAll('[data-theme-select],#theme').forEach(s=>s.value=preference);const meta=document.querySelector('meta[name=theme-color]');if(meta)meta.content=resolved==='dark'?'#1c1b26':'#fffdfd'}
+ function apply(){const resolved=preference==='system'?(media.matches?'dark':'light'):preference;document.documentElement.dataset.theme=resolved;document.documentElement.dataset.bsTheme=resolved;document.documentElement.dataset.appearance=preference;document.querySelectorAll('[data-theme-select],#theme').forEach(s=>s.value=preference);const meta=document.querySelector('meta[name=theme-color]');if(meta)meta.content=resolved==='dark'?'#0f0f11':'#ffffff'}
  function set(value){preference=normalize(value);try{localStorage.setItem(key,preference)}catch{}apply()}
  window.PlaygroundTheme={get:()=>preference,set};apply();
  media.addEventListener('change',apply);addEventListener('storage',e=>{if(e.key===key){preference=load();apply()}});
  document.addEventListener('change',e=>{if(e.target.matches('[data-theme-select],#theme'))set(e.target.value)});
  document.addEventListener('DOMContentLoaded',()=>{
+  if(shellSource&&!location.pathname.endsWith('/auth-callback.html'))import(new URL('./redesign-shell.mjs?v=redesign-2',shellSource)).catch(()=>{});
   document.querySelectorAll('[data-theme-select]').forEach(select=>{
    select.innerHTML='<option value="system">Use device setting</option><option value="light">Light</option><option value="dark">Dark</option>';
    const picker=select.closest('.theme-picker');if(picker){

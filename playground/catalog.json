@@ -4,9 +4,9 @@
     "title": "Computer Science I",
     "discipline": "Foundations",
     "description": "Build your problem-solving toolkit with Python. Learn a concept, experiment with code, and take on a challenge.",
-    "status": "legacy",
-    "label": "Python lessons available",
-    "legacyUrl": "https://www.mswhitby.com/computer-science-1/"
+    "status": "active",
+    "label": "24 lessons · 24 challenges",
+    "sourceRepository": "mswhitby/computer-science-1"
   },
   {
     "id": "game-programming",
