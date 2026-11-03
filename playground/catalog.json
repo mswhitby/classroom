@@ -43,5 +43,14 @@
     "status": "active",
     "label": "Written practice · Java drills",
     "sourceRepository": "mswhitby/uil"
+  },
+  {
+    "id": "tsi-math",
+    "title": "TSI Math Advisory",
+    "discipline": "College readiness",
+    "description": "Build confidence with percents, equations, slope, and linear models in five 30-minute advisory sessions. Explore the open demo and facilitator guides.",
+    "status": "active",
+    "label": "Sample week · No login needed",
+    "sourceRepository": "mswhitby/TSI"
   }
 ]

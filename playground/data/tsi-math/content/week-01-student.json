@@ -1,0 +1,805 @@
+{
+  "schema_version": 1,
+  "course_id": "tsi-math",
+  "week_id": "tsi-w01",
+  "week_title": "Percents and linear relationships",
+  "scope": "Foundational quantitative reasoning and linear algebra; not a full TSIA2 simulation.",
+  "days": [
+    {
+      "day": 1,
+      "id": "tsi-w01-d01",
+      "slug": "day-01-percents",
+      "title": "Percents in everyday decisions",
+      "goal": "Find percent amounts, final prices, and percent change using the correct starting quantity.",
+      "success": [
+        "I can name the whole and express a percent as a decimal.",
+        "I can distinguish the change from the final amount.",
+        "I can use the original amount as the base for percent change."
+      ],
+      "mini_lesson": [
+        "Percent means per hundred: 18% = 18/100 = 0.18. For a percent of a quantity, multiply the whole by the decimal rate.",
+        "A discount subtracts from the original price. A tax adds to the price. A 20% discount leaves 80% of the original price.",
+        "Percent change = (amount of change ÷ original amount) × 100%. Identify whether it is an increase or a decrease. When money is requested, round only the final answer to cents."
+      ],
+      "examples": [
+        {
+          "prompt": "A $64 hoodie is discounted 25%. Find the savings and sale price.",
+          "steps": [
+            "Savings = 0.25 × 64 = $16.",
+            "Sale price = 64 − 16 = $48.",
+            "Check: paying 75% gives 0.75 × 64 = $48."
+          ]
+        },
+        {
+          "prompt": "A price rises from $60 to $69. What is the percent increase?",
+          "steps": [
+            "Change = 69 − 60 = $9.",
+            "Compare with the original: 9 ÷ 60 = 0.15.",
+            "The price increased 15%, not 9%."
+          ]
+        }
+      ],
+      "warmup": [
+        {
+          "id": "tsi-w01-d01-w1",
+          "label": "W1",
+          "prompt": "Write 3/4 as a decimal.",
+          "skill_id": "percent",
+          "response_type": "short_answer"
+        },
+        {
+          "id": "tsi-w01-d01-w2",
+          "label": "W2",
+          "prompt": "Find 10% of 80.",
+          "skill_id": "percent",
+          "response_type": "short_answer"
+        }
+      ],
+      "guided": [
+        {
+          "id": "tsi-w01-d01-g1",
+          "label": "G1",
+          "prompt": "Find 15% of 60.",
+          "skill_id": "percent",
+          "response_type": "short_answer",
+          "hint": "Find 10% and 5%, then combine."
+        },
+        {
+          "id": "tsi-w01-d01-g2",
+          "label": "G2",
+          "prompt": "A $50 shirt is 20% off. What is the sale price in dollars?",
+          "skill_id": "percent",
+          "response_type": "short_answer",
+          "hint": "First decide whether you are finding the savings or the amount paid."
+        }
+      ],
+      "practice": [
+        {
+          "id": "tsi-w01-d01-p1",
+          "label": "P1",
+          "prompt": "Find 12% of 250.",
+          "skill_id": "percent",
+          "response_type": "short_answer",
+          "hint": "Convert the percent to a decimal."
+        },
+        {
+          "id": "tsi-w01-d01-p2",
+          "label": "P2",
+          "prompt": "18 is 30% of what number?",
+          "skill_id": "percent",
+          "response_type": "short_answer",
+          "hint": "The unknown is the whole, not the percent."
+        },
+        {
+          "id": "tsi-w01-d01-p3",
+          "label": "P3",
+          "prompt": "A price increases from $40 to $46. What is the percent increase? Give the number before the percent sign.",
+          "skill_id": "percent",
+          "response_type": "short_answer",
+          "hint": "Compare the change with the starting price."
+        },
+        {
+          "id": "tsi-w01-d01-p4",
+          "label": "P4",
+          "prompt": "A $24 item has 8.25% sales tax. What is the final total in dollars?",
+          "skill_id": "percent",
+          "response_type": "short_answer",
+          "hint": "Add the tax to the original price."
+        }
+      ],
+      "exit": [
+        {
+          "id": "tsi-w01-d01-e1",
+          "label": "E1",
+          "prompt": "Find 18% of 150.",
+          "skill_id": "percent",
+          "response_type": "short_answer"
+        },
+        {
+          "id": "tsi-w01-d01-e2",
+          "label": "E2",
+          "prompt": "A price falls from $80 to $68. What is the percent decrease? Give the number before the percent sign.",
+          "skill_id": "percent",
+          "response_type": "short_answer"
+        }
+      ],
+      "reflection": "Which is hardest for you: finding the percent amount, finding the final amount, or finding percent change? Name the step you will check next time."
+    },
+    {
+      "day": 2,
+      "id": "tsi-w01-d02",
+      "slug": "day-02-equations",
+      "title": "Solve and check linear equations",
+      "goal": "Solve a linear equation with balanced operations and verify the result in the original equation.",
+      "success": [
+        "I can apply the same operation to both sides.",
+        "I can distribute to every term inside parentheses.",
+        "I can check a solution by substitution."
+      ],
+      "mini_lesson": [
+        "An equation states that two expressions are equal. Keep them equal by applying the same operation to both sides.",
+        "Simplify each side, distribute when needed, collect variable terms, then use inverse operations to isolate the variable. Keep negative signs attached to their terms.",
+        "Substitute the result into the original equation. In a word problem, label the unknown and include any starting fee before the per-unit charge."
+      ],
+      "examples": [
+        {
+          "prompt": "Solve 4x − 3 = 21.",
+          "steps": [
+            "Add 3 to both sides: 4x = 24.",
+            "Divide both sides by 4: x = 6.",
+            "Check: 4(6) − 3 = 21."
+          ]
+        },
+        {
+          "prompt": "Solve 3(x + 2) = 2x + 11.",
+          "steps": [
+            "Distribute: 3x + 6 = 2x + 11.",
+            "Subtract 2x and then 6: x = 5.",
+            "Check: 3(5 + 2) = 21 and 2(5) + 11 = 21."
+          ]
+        }
+      ],
+      "warmup": [
+        {
+          "id": "tsi-w01-d02-w1",
+          "label": "W1",
+          "prompt": "Evaluate 6 − (−4).",
+          "skill_id": "linear-equations",
+          "response_type": "short_answer"
+        },
+        {
+          "id": "tsi-w01-d02-w2",
+          "label": "W2",
+          "prompt": "Evaluate 3(x + 2) when x = 4.",
+          "skill_id": "linear-equations",
+          "response_type": "short_answer"
+        }
+      ],
+      "guided": [
+        {
+          "id": "tsi-w01-d02-g1",
+          "label": "G1",
+          "prompt": "Solve 3x + 5 = 26.",
+          "skill_id": "linear-equations",
+          "response_type": "short_answer",
+          "hint": "Undo the addition before the multiplication."
+        },
+        {
+          "id": "tsi-w01-d02-g2",
+          "label": "G2",
+          "prompt": "Solve 2(x − 3) = 14.",
+          "skill_id": "linear-equations",
+          "response_type": "short_answer",
+          "hint": "You may divide by 2 first or distribute first."
+        }
+      ],
+      "practice": [
+        {
+          "id": "tsi-w01-d02-p1",
+          "label": "P1",
+          "prompt": "Solve 5x − 7 = 18.",
+          "skill_id": "linear-equations",
+          "response_type": "short_answer",
+          "hint": "Undo subtracting 7."
+        },
+        {
+          "id": "tsi-w01-d02-p2",
+          "label": "P2",
+          "prompt": "Solve 4(x + 2) = 3x + 15.",
+          "skill_id": "linear-equations",
+          "response_type": "short_answer",
+          "hint": "Distribute before collecting x terms."
+        },
+        {
+          "id": "tsi-w01-d02-p3",
+          "label": "P3",
+          "prompt": "Solve x/3 + 4 = 9.",
+          "skill_id": "linear-equations",
+          "response_type": "short_answer",
+          "hint": "Isolate x/3 before multiplying."
+        },
+        {
+          "id": "tsi-w01-d02-p4",
+          "label": "P4",
+          "prompt": "A taxi charges $4 plus $2.50 per mile. The total is $19. How many miles were traveled?",
+          "skill_id": "linear-equations",
+          "response_type": "short_answer",
+          "hint": "The starting charge is paid once."
+        }
+      ],
+      "exit": [
+        {
+          "id": "tsi-w01-d02-e1",
+          "label": "E1",
+          "prompt": "Solve −2x + 9 = 1. Show a substitution check.",
+          "skill_id": "linear-equations",
+          "response_type": "short_answer"
+        },
+        {
+          "id": "tsi-w01-d02-e2",
+          "label": "E2",
+          "prompt": "A gym charges an $18 signup fee and $6 per week. A student has paid $54 total. How many weeks does that cover?",
+          "skill_id": "linear-equations",
+          "response_type": "short_answer"
+        }
+      ],
+      "reflection": "Choose one equation. Explain why your first operation keeps both sides equal."
+    },
+    {
+      "day": 3,
+      "id": "tsi-w01-d03",
+      "slug": "day-03-slope",
+      "title": "Connect slope, tables, and equations",
+      "goal": "Find a constant rate of change and identify the initial value in a linear relationship.",
+      "success": [
+        "I can calculate slope using consistent coordinate changes.",
+        "I can connect a table with y = mx + b.",
+        "I can interpret a rate and an initial value with units."
+      ],
+      "mini_lesson": [
+        "Slope m = change in y ÷ change in x = (y₂ − y₁)/(x₂ − x₁). Use the same point order in the numerator and denominator.",
+        "In y = mx + b, m is the rate and b is the value of y at x = 0. A positive slope increases; a negative slope decreases.",
+        "A horizontal line has slope 0. A vertical line has no defined slope because its change in x is zero; division by zero is undefined."
+      ],
+      "examples": [
+        {
+          "prompt": "Find slope through (1, 5) and (4, 14).",
+          "steps": [
+            "Change in y: 14 − 5 = 9. Change in x: 4 − 1 = 3.",
+            "Slope = 9 ÷ 3 = 3.",
+            "Use (1, 5): 5 = 3(1) + b, so b = 2 and y = 3x + 2."
+          ]
+        },
+        {
+          "prompt": "A rental costs C = 4h + 12 dollars for h hours. Interpret the model and find the cost for 3 hours.",
+          "steps": [
+            "The rate is $4 per hour. The initial charge is $12.",
+            "For h = 3, C = 4(3) + 12 = $24.",
+            "The initial charge is not the hourly rate."
+          ]
+        }
+      ],
+      "warmup": [
+        {
+          "id": "tsi-w01-d03-w1",
+          "label": "W1",
+          "prompt": "Find the slope through (2, 5) and (6, 13).",
+          "skill_id": "slope-representations",
+          "response_type": "short_answer"
+        },
+        {
+          "id": "tsi-w01-d03-w2",
+          "label": "W2",
+          "prompt": "What is the y-intercept of y = 2x + 7?",
+          "skill_id": "slope-representations",
+          "response_type": "short_answer"
+        }
+      ],
+      "guided": [
+        {
+          "id": "tsi-w01-d03-g1",
+          "label": "G1",
+          "prompt": "Find the slope through (1, 4) and (5, 16).",
+          "skill_id": "slope-representations",
+          "response_type": "short_answer",
+          "hint": "Label both changes before dividing."
+        },
+        {
+          "id": "tsi-w01-d03-g2",
+          "label": "G2",
+          "prompt": "For y = 2x + 5, find y when x = 4.",
+          "skill_id": "slope-representations",
+          "response_type": "short_answer",
+          "hint": "Replace x with 4, keeping the multiplication."
+        }
+      ],
+      "practice": [
+        {
+          "id": "tsi-w01-d03-p1",
+          "label": "P1",
+          "prompt": "A table contains (0, 3), (2, 9), and (4, 15). Find its constant rate of change.",
+          "skill_id": "slope-representations",
+          "response_type": "short_answer",
+          "hint": "The x-values increase by 2, not 1."
+        },
+        {
+          "id": "tsi-w01-d03-p2",
+          "label": "P2",
+          "prompt": "Write an equation in y = mx + b form for a line with slope −2 and y-intercept 7.",
+          "skill_id": "slope-representations",
+          "response_type": "short_answer",
+          "hint": "Keep the negative sign on the slope."
+        },
+        {
+          "id": "tsi-w01-d03-p3",
+          "label": "P3",
+          "prompt": "The line through (4, 1) and (4, 9) is vertical. Is its slope 0 or undefined?",
+          "skill_id": "slope-representations",
+          "response_type": "short_answer",
+          "hint": "Check the denominator in the slope formula."
+        },
+        {
+          "id": "tsi-w01-d03-p4",
+          "label": "P4",
+          "prompt": "A tank starts with 50 liters and loses 3 liters per minute. How many liters remain after 8 minutes?",
+          "skill_id": "slope-representations",
+          "response_type": "short_answer",
+          "hint": "A loss gives a negative rate."
+        }
+      ],
+      "exit": [
+        {
+          "id": "tsi-w01-d03-e1",
+          "label": "E1",
+          "prompt": "Find the slope through (−1, 5) and (3, −3).",
+          "skill_id": "slope-representations",
+          "response_type": "short_answer"
+        },
+        {
+          "id": "tsi-w01-d03-e2",
+          "label": "E2",
+          "prompt": "A rental has cost C = 4h + 12 dollars. What is the initial charge in dollars?",
+          "skill_id": "slope-representations",
+          "response_type": "short_answer"
+        }
+      ],
+      "reflection": "In a context of your choice, explain the units of slope and what the y-intercept represents."
+    },
+    {
+      "day": 4,
+      "id": "tsi-w01-d04",
+      "slug": "day-04-models",
+      "title": "Build and compare linear models",
+      "goal": "Compare two fee-and-rate models and find when their costs are equal.",
+      "success": [
+        "I can write a cost model with a starting fee and a rate.",
+        "I can set two models equal and check the shared input.",
+        "I can compare costs at a specified input."
+      ],
+      "mini_lesson": [
+        "A simple cost model is cost = starting fee + rate × quantity. Compare the same input and units for both plans.",
+        "To find when plans cost the same, set their expressions equal and solve. This is the intersection of two linear models.",
+        "The crossover tells you where costs are equal. To choose a cheaper plan for a particular situation, evaluate both models at that input."
+      ],
+      "examples": [
+        {
+          "prompt": "Plan A costs $10 + $4h; Plan B costs $4 + $6h. At how many hours h are costs equal?",
+          "steps": [
+            "Set 10 + 4h = 4 + 6h. Subtract 4h and then 4: 6 = 2h.",
+            "h = 3 hours. Both plans cost $22 at h = 3.",
+            "At 1 hour, A costs $14 and B costs $10; at 5 hours, A costs $30 and B costs $34."
+          ]
+        },
+        {
+          "prompt": "For A = 12 + 3h and B = 6 + 5h, compare the costs at h = 4.",
+          "steps": [
+            "A = 12 + 3(4) = $24.",
+            "B = 6 + 5(4) = $26.",
+            "Plan A is $2 cheaper for 4 hours."
+          ]
+        }
+      ],
+      "warmup": [
+        {
+          "id": "tsi-w01-d04-w1",
+          "label": "W1",
+          "prompt": "Evaluate 12 + 3h at h = 2.",
+          "skill_id": "compare-models",
+          "response_type": "short_answer"
+        },
+        {
+          "id": "tsi-w01-d04-w2",
+          "label": "W2",
+          "prompt": "Solve 5x = 30.",
+          "skill_id": "compare-models",
+          "response_type": "short_answer"
+        }
+      ],
+      "guided": [
+        {
+          "id": "tsi-w01-d04-g1",
+          "label": "G1",
+          "prompt": "Plan A costs 12 + 3h dollars and Plan B costs 6 + 5h dollars. At how many hours h are they equal?",
+          "skill_id": "compare-models",
+          "response_type": "short_answer",
+          "hint": "Set the two cost expressions equal."
+        },
+        {
+          "id": "tsi-w01-d04-g2",
+          "label": "G2",
+          "prompt": "For those same plans, which is cheaper at h = 2: A or B?",
+          "skill_id": "compare-models",
+          "response_type": "short_answer",
+          "hint": "Evaluate both plans at the same input."
+        }
+      ],
+      "practice": [
+        {
+          "id": "tsi-w01-d04-p1",
+          "label": "P1",
+          "prompt": "Plan A costs 20 + 4h dollars and Plan B costs 8 + 6h dollars. At how many hours are they equal?",
+          "skill_id": "compare-models",
+          "response_type": "short_answer",
+          "hint": "Compare the fixed-fee difference with the hourly-rate difference."
+        },
+        {
+          "id": "tsi-w01-d04-p2",
+          "label": "P2",
+          "prompt": "Plan A costs 10 + 2m dollars; Plan B costs 4 + 3m dollars. At m = 8, how many dollars does the cheaper plan save?",
+          "skill_id": "compare-models",
+          "response_type": "short_answer",
+          "hint": "Find both totals before subtracting."
+        },
+        {
+          "id": "tsi-w01-d04-p3",
+          "label": "P3",
+          "prompt": "Delivery A charges $5 plus $1.50 per mile. Delivery B charges $2 plus $2 per mile. At how many miles do they cost the same?",
+          "skill_id": "compare-models",
+          "response_type": "short_answer",
+          "hint": "Keep miles as the input in both models."
+        },
+        {
+          "id": "tsi-w01-d04-p4",
+          "label": "P4",
+          "prompt": "Printer A charges $15 plus $0.10 per page. Printer B charges $5 plus $0.20 per page. At how many pages are their costs equal?",
+          "skill_id": "compare-models",
+          "response_type": "short_answer",
+          "hint": "Use dollars throughout, including the per-page rates."
+        }
+      ],
+      "exit": [
+        {
+          "id": "tsi-w01-d04-e1",
+          "label": "E1",
+          "prompt": "Plan A costs 18 + 2h dollars and Plan B costs 6 + 4h dollars. At how many hours are costs equal?",
+          "skill_id": "compare-models",
+          "response_type": "short_answer"
+        },
+        {
+          "id": "tsi-w01-d04-e2",
+          "label": "E2",
+          "prompt": "Plan A costs 12 + 3h dollars and Plan B costs 6 + 5h dollars. At h = 5, how many dollars does the cheaper plan save?",
+          "skill_id": "compare-models",
+          "response_type": "short_answer"
+        }
+      ],
+      "reflection": "Explain why the plan with the lower starting fee is not always cheaper."
+    },
+    {
+      "day": 5,
+      "id": "tsi-w01-d05",
+      "slug": "day-05-check",
+      "title": "Weekly practice check and corrections",
+      "goal": "Apply the four taught skill groups independently, then explain a correction.",
+      "success": [
+        "I can show my setup before selecting an answer.",
+        "I can explain why a corrected answer makes sense."
+      ],
+      "check": [
+        {
+          "id": "tsi-w01-d05-q1",
+          "label": "Q1",
+          "prompt": "What is 15% of 80?",
+          "skill_id": "percent",
+          "response_type": "multiple_choice",
+          "options": [
+            {
+              "label": "A",
+              "text": "8",
+              "value": 8
+            },
+            {
+              "label": "B",
+              "text": "12",
+              "value": 12
+            },
+            {
+              "label": "C",
+              "text": "15",
+              "value": 15
+            },
+            {
+              "label": "D",
+              "text": "68",
+              "value": 68
+            }
+          ]
+        },
+        {
+          "id": "tsi-w01-d05-q2",
+          "label": "Q2",
+          "prompt": "A $48 jacket is discounted 25%. What is the sale price?",
+          "skill_id": "percent",
+          "response_type": "multiple_choice",
+          "options": [
+            {
+              "label": "A",
+              "text": "$12",
+              "value": 12
+            },
+            {
+              "label": "B",
+              "text": "$23",
+              "value": 23
+            },
+            {
+              "label": "C",
+              "text": "$36",
+              "value": 36
+            },
+            {
+              "label": "D",
+              "text": "$60",
+              "value": 60
+            }
+          ]
+        },
+        {
+          "id": "tsi-w01-d05-q3",
+          "label": "Q3",
+          "prompt": "A price increases from $50 to $60. What is the percent increase?",
+          "skill_id": "percent",
+          "response_type": "multiple_choice",
+          "options": [
+            {
+              "label": "A",
+              "text": "10%",
+              "value": 10
+            },
+            {
+              "label": "B",
+              "text": "About 16.7%",
+              "value": "16.7"
+            },
+            {
+              "label": "C",
+              "text": "20%",
+              "value": 20
+            },
+            {
+              "label": "D",
+              "text": "120%",
+              "value": 120
+            }
+          ]
+        },
+        {
+          "id": "tsi-w01-d05-q4",
+          "label": "Q4",
+          "prompt": "Solve 4x − 7 = 21.",
+          "skill_id": "linear-equations",
+          "response_type": "multiple_choice",
+          "options": [
+            {
+              "label": "A",
+              "text": "3.5",
+              "value": 3.5
+            },
+            {
+              "label": "B",
+              "text": "7",
+              "value": 7
+            },
+            {
+              "label": "C",
+              "text": "14",
+              "value": 14
+            },
+            {
+              "label": "D",
+              "text": "28",
+              "value": 28
+            }
+          ]
+        },
+        {
+          "id": "tsi-w01-d05-q5",
+          "label": "Q5",
+          "prompt": "Solve 3(x + 2) = 24.",
+          "skill_id": "linear-equations",
+          "response_type": "multiple_choice",
+          "options": [
+            {
+              "label": "A",
+              "text": "6",
+              "value": 6
+            },
+            {
+              "label": "B",
+              "text": "8",
+              "value": 8
+            },
+            {
+              "label": "C",
+              "text": "10",
+              "value": 10
+            },
+            {
+              "label": "D",
+              "text": "22",
+              "value": 22
+            }
+          ]
+        },
+        {
+          "id": "tsi-w01-d05-q6",
+          "label": "Q6",
+          "prompt": "What is the slope through (2, 7) and (6, 19)?",
+          "skill_id": "slope-representations",
+          "response_type": "multiple_choice",
+          "options": [
+            {
+              "label": "A",
+              "text": "1/3",
+              "value": "1/3"
+            },
+            {
+              "label": "B",
+              "text": "3",
+              "value": 3
+            },
+            {
+              "label": "C",
+              "text": "12",
+              "value": 12
+            },
+            {
+              "label": "D",
+              "text": "26",
+              "value": 26
+            }
+          ]
+        },
+        {
+          "id": "tsi-w01-d05-q7",
+          "label": "Q7",
+          "prompt": "A table contains (0, 5), (2, 11), and (4, 17). Which equation matches?",
+          "skill_id": "slope-representations",
+          "response_type": "multiple_choice",
+          "options": [
+            {
+              "label": "A",
+              "text": "y = 3x + 5",
+              "value": {
+                "m": 3,
+                "b": 5
+              }
+            },
+            {
+              "label": "B",
+              "text": "y = 5x + 3",
+              "value": {
+                "m": 5,
+                "b": 3
+              }
+            },
+            {
+              "label": "C",
+              "text": "y = 6x + 5",
+              "value": {
+                "m": 6,
+                "b": 5
+              }
+            },
+            {
+              "label": "D",
+              "text": "y = 3x",
+              "value": {
+                "m": 3,
+                "b": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "tsi-w01-d05-q8",
+          "label": "Q8",
+          "prompt": "A rental costs C = 2h + 9 dollars. What is the cost for 4 hours?",
+          "skill_id": "slope-representations",
+          "response_type": "multiple_choice",
+          "options": [
+            {
+              "label": "A",
+              "text": "$8",
+              "value": 8
+            },
+            {
+              "label": "B",
+              "text": "$11",
+              "value": 11
+            },
+            {
+              "label": "C",
+              "text": "$17",
+              "value": 17
+            },
+            {
+              "label": "D",
+              "text": "$44",
+              "value": 44
+            }
+          ]
+        },
+        {
+          "id": "tsi-w01-d05-q9",
+          "label": "Q9",
+          "prompt": "Plan A costs 14 + 2h dollars and Plan B costs 4 + 4h dollars. At how many hours do costs match?",
+          "skill_id": "compare-models",
+          "response_type": "multiple_choice",
+          "options": [
+            {
+              "label": "A",
+              "text": "2",
+              "value": 2
+            },
+            {
+              "label": "B",
+              "text": "5",
+              "value": 5
+            },
+            {
+              "label": "C",
+              "text": "9",
+              "value": 9
+            },
+            {
+              "label": "D",
+              "text": "10",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "id": "tsi-w01-d05-q10",
+          "label": "Q10",
+          "prompt": "Plan A costs 8 + 3h dollars and Plan B costs 2 + 5h dollars. At h = 4, which plan is cheaper?",
+          "skill_id": "compare-models",
+          "response_type": "multiple_choice",
+          "options": [
+            {
+              "label": "A",
+              "text": "Plan A",
+              "value": "A"
+            },
+            {
+              "label": "B",
+              "text": "Plan B",
+              "value": "B"
+            },
+            {
+              "label": "C",
+              "text": "They cost the same",
+              "value": "equal"
+            },
+            {
+              "label": "D",
+              "text": "There is not enough information",
+              "value": "unknown"
+            }
+          ]
+        }
+      ],
+      "reflection": "Choose one missed or uncertain question. Explain your original thinking, the correction, and what you will check next time. If all were correct, explain why one distractor is incorrect."
+    }
+  ]
+}

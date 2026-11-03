@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "id": "tsi-math",
+  "title": "TSI Math Advisory",
+  "student_content": "content/week-01-student.json",
+  "weeks": [
+    {
+      "id": "tsi-w01",
+      "title": "Percents and linear relationships",
+      "sessions": [
+        {
+          "id": "tsi-w01-d01",
+          "title": "Percents in everyday decisions",
+          "minutes": 30,
+          "student_lesson": "lessons/week-01/day-01-percents.md",
+          "teacher_guide": "teachers/week-01/day-01.md",
+          "timing": [
+            {
+              "minutes": 3,
+              "phase": "Retrieval"
+            },
+            {
+              "minutes": 7,
+              "phase": "Mini-lesson"
+            },
+            {
+              "minutes": 12,
+              "phase": "Guided and independent practice"
+            },
+            {
+              "minutes": 5,
+              "phase": "Independent exit ticket"
+            },
+            {
+              "minutes": 3,
+              "phase": "Reflection"
+            }
+          ]
+        },
+        {
+          "id": "tsi-w01-d02",
+          "title": "Solve and check linear equations",
+          "minutes": 30,
+          "student_lesson": "lessons/week-01/day-02-equations.md",
+          "teacher_guide": "teachers/week-01/day-02.md",
+          "timing": [
+            {
+              "minutes": 3,
+              "phase": "Retrieval"
+            },
+            {
+              "minutes": 7,
+              "phase": "Mini-lesson"
+            },
+            {
+              "minutes": 12,
+              "phase": "Guided and independent practice"
+            },
+            {
+              "minutes": 5,
+              "phase": "Independent exit ticket"
+            },
+            {
+              "minutes": 3,
+              "phase": "Reflection"
+            }
+          ]
+        },
+        {
+          "id": "tsi-w01-d03",
+          "title": "Connect slope, tables, and equations",
+          "minutes": 30,
+          "student_lesson": "lessons/week-01/day-03-slope.md",
+          "teacher_guide": "teachers/week-01/day-03.md",
+          "timing": [
+            {
+              "minutes": 3,
+              "phase": "Retrieval"
+            },
+            {
+              "minutes": 7,
+              "phase": "Mini-lesson"
+            },
+            {
+              "minutes": 12,
+              "phase": "Guided and independent practice"
+            },
+            {
+              "minutes": 5,
+              "phase": "Independent exit ticket"
+            },
+            {
+              "minutes": 3,
+              "phase": "Reflection"
+            }
+          ]
+        },
+        {
+          "id": "tsi-w01-d04",
+          "title": "Build and compare linear models",
+          "minutes": 30,
+          "student_lesson": "lessons/week-01/day-04-models.md",
+          "teacher_guide": "teachers/week-01/day-04.md",
+          "timing": [
+            {
+              "minutes": 3,
+              "phase": "Retrieval"
+            },
+            {
+              "minutes": 7,
+              "phase": "Mini-lesson"
+            },
+            {
+              "minutes": 12,
+              "phase": "Guided and independent practice"
+            },
+            {
+              "minutes": 5,
+              "phase": "Independent exit ticket"
+            },
+            {
+              "minutes": 3,
+              "phase": "Reflection"
+            }
+          ]
+        },
+        {
+          "id": "tsi-w01-d05",
+          "title": "Weekly practice check and corrections",
+          "minutes": 30,
+          "student_lesson": "lessons/week-01/day-05-check.md",
+          "teacher_guide": "teachers/week-01/day-05.md",
+          "timing": [
+            {
+              "minutes": 2,
+              "phase": "Directions"
+            },
+            {
+              "minutes": 18,
+              "phase": "Independent check"
+            },
+            {
+              "minutes": 7,
+              "phase": "Corrections"
+            },
+            {
+              "minutes": 3,
+              "phase": "Reflection"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

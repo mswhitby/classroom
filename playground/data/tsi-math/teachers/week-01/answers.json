@@ -1,0 +1,669 @@
+{
+  "schema_version": 1,
+  "items": {
+    "tsi-w01-d01-w1": {
+      "answer": 0.75,
+      "explanation": "3 ÷ 4 = 0.75.",
+      "skill_id": "percent",
+      "validation": {
+        "kind": "expression",
+        "expression": "3/4"
+      }
+    },
+    "tsi-w01-d01-w2": {
+      "answer": 8,
+      "explanation": "0.10 × 80 = 8.",
+      "skill_id": "percent",
+      "validation": {
+        "kind": "expression",
+        "expression": "10/100*80"
+      }
+    },
+    "tsi-w01-d01-g1": {
+      "answer": 9,
+      "explanation": "0.15 × 60 = 9. You can also add 10% (6) and 5% (3).",
+      "skill_id": "percent",
+      "validation": {
+        "kind": "expression",
+        "expression": "15/100*60"
+      }
+    },
+    "tsi-w01-d01-g2": {
+      "answer": 40,
+      "explanation": "The discount is 0.20 × 50 = $10. Subtract: 50 − 10 = $40.",
+      "skill_id": "percent",
+      "validation": {
+        "kind": "expression",
+        "expression": "50*(1-20/100)"
+      }
+    },
+    "tsi-w01-d01-p1": {
+      "answer": 30,
+      "explanation": "0.12 × 250 = 30.",
+      "skill_id": "percent",
+      "validation": {
+        "kind": "expression",
+        "expression": "12/100*250"
+      }
+    },
+    "tsi-w01-d01-p2": {
+      "answer": 60,
+      "explanation": "Let w be the whole: 0.30w = 18, so w = 18 ÷ 0.30 = 60.",
+      "skill_id": "percent",
+      "validation": {
+        "kind": "expression",
+        "expression": "18/(30/100)"
+      }
+    },
+    "tsi-w01-d01-p3": {
+      "answer": 15,
+      "explanation": "The $6 increase is compared with $40: 6 ÷ 40 × 100 = 15%.",
+      "skill_id": "percent",
+      "validation": {
+        "kind": "expression",
+        "expression": "(46-40)/40*100"
+      }
+    },
+    "tsi-w01-d01-p4": {
+      "answer": 25.98,
+      "explanation": "Tax = 24 × 0.0825 = $1.98. Total = $25.98.",
+      "skill_id": "percent",
+      "validation": {
+        "kind": "expression",
+        "expression": "24*(1+8.25/100)"
+      }
+    },
+    "tsi-w01-d01-e1": {
+      "answer": 27,
+      "explanation": "0.18 × 150 = 27.",
+      "skill_id": "percent",
+      "validation": {
+        "kind": "expression",
+        "expression": "18/100*150"
+      }
+    },
+    "tsi-w01-d01-e2": {
+      "answer": 15,
+      "explanation": "The decrease is $12; 12 ÷ 80 × 100 = 15%.",
+      "skill_id": "percent",
+      "validation": {
+        "kind": "expression",
+        "expression": "(80-68)/80*100"
+      }
+    },
+    "tsi-w01-d02-w1": {
+      "answer": 10,
+      "explanation": "Subtracting a negative adds: 6 + 4 = 10.",
+      "skill_id": "linear-equations",
+      "validation": {
+        "kind": "expression",
+        "expression": "6-(-4)"
+      }
+    },
+    "tsi-w01-d02-w2": {
+      "answer": 18,
+      "explanation": "3(4 + 2) = 3 × 6 = 18.",
+      "skill_id": "linear-equations",
+      "validation": {
+        "kind": "expression",
+        "expression": "3*(4+2)"
+      }
+    },
+    "tsi-w01-d02-g1": {
+      "answer": 7,
+      "explanation": "Subtract 5: 3x = 21; divide by 3: x = 7. Check: 3(7) + 5 = 26.",
+      "skill_id": "linear-equations",
+      "validation": {
+        "kind": "linear_solution",
+        "coefficients": [
+          3,
+          5,
+          0,
+          26
+        ]
+      }
+    },
+    "tsi-w01-d02-g2": {
+      "answer": 10,
+      "explanation": "Divide by 2: x − 3 = 7; add 3: x = 10. Check: 2(10 − 3) = 14.",
+      "skill_id": "linear-equations",
+      "validation": {
+        "kind": "linear_solution",
+        "coefficients": [
+          2,
+          -6,
+          0,
+          14
+        ]
+      }
+    },
+    "tsi-w01-d02-p1": {
+      "answer": 5,
+      "explanation": "Add 7 to get 5x = 25; divide by 5. Check: 25 − 7 = 18.",
+      "skill_id": "linear-equations",
+      "validation": {
+        "kind": "linear_solution",
+        "coefficients": [
+          5,
+          -7,
+          0,
+          18
+        ]
+      }
+    },
+    "tsi-w01-d02-p2": {
+      "answer": 7,
+      "explanation": "4x + 8 = 3x + 15, so x + 8 = 15 and x = 7. Both sides equal 36.",
+      "skill_id": "linear-equations",
+      "validation": {
+        "kind": "linear_solution",
+        "coefficients": [
+          4,
+          8,
+          3,
+          15
+        ]
+      }
+    },
+    "tsi-w01-d02-p3": {
+      "answer": 15,
+      "explanation": "Subtract 4: x/3 = 5. Multiply by 3: x = 15. Check: 5 + 4 = 9.",
+      "skill_id": "linear-equations",
+      "validation": {
+        "kind": "linear_solution",
+        "coefficients": [
+          "1/3",
+          4,
+          0,
+          9
+        ]
+      }
+    },
+    "tsi-w01-d02-p4": {
+      "answer": 6,
+      "explanation": "4 + 2.50m = 19; 2.50m = 15; m = 6 miles.",
+      "skill_id": "linear-equations",
+      "validation": {
+        "kind": "linear_solution",
+        "coefficients": [
+          "2.5",
+          4,
+          0,
+          19
+        ]
+      }
+    },
+    "tsi-w01-d02-e1": {
+      "answer": 4,
+      "explanation": "Subtract 9: −2x = −8; divide by −2: x = 4. Check: −8 + 9 = 1.",
+      "skill_id": "linear-equations",
+      "validation": {
+        "kind": "linear_solution",
+        "coefficients": [
+          -2,
+          9,
+          0,
+          1
+        ]
+      }
+    },
+    "tsi-w01-d02-e2": {
+      "answer": 6,
+      "explanation": "18 + 6w = 54; 6w = 36; w = 6 weeks.",
+      "skill_id": "linear-equations",
+      "validation": {
+        "kind": "linear_solution",
+        "coefficients": [
+          6,
+          18,
+          0,
+          54
+        ]
+      }
+    },
+    "tsi-w01-d03-w1": {
+      "answer": 2,
+      "explanation": "Slope = (13 − 5)/(6 − 2) = 8/4 = 2.",
+      "skill_id": "slope-representations",
+      "validation": {
+        "kind": "expression",
+        "expression": "(13-5)/(6-2)"
+      }
+    },
+    "tsi-w01-d03-w2": {
+      "answer": 7,
+      "explanation": "At x = 0, y = 7, so the y-intercept value is 7.",
+      "skill_id": "slope-representations",
+      "validation": {
+        "kind": "expression",
+        "expression": "2*0+7"
+      }
+    },
+    "tsi-w01-d03-g1": {
+      "answer": 3,
+      "explanation": "Slope = (16 − 4)/(5 − 1) = 12/4 = 3.",
+      "skill_id": "slope-representations",
+      "validation": {
+        "kind": "expression",
+        "expression": "(16-4)/(5-1)"
+      }
+    },
+    "tsi-w01-d03-g2": {
+      "answer": 13,
+      "explanation": "y = 2(4) + 5 = 13.",
+      "skill_id": "slope-representations",
+      "validation": {
+        "kind": "expression",
+        "expression": "2*4+5"
+      }
+    },
+    "tsi-w01-d03-p1": {
+      "answer": 3,
+      "explanation": "From one row to the next, y increases 6 while x increases 2. The rate is 6/2 = 3.",
+      "skill_id": "slope-representations",
+      "validation": {
+        "kind": "expression",
+        "expression": "(9-3)/(2-0)"
+      }
+    },
+    "tsi-w01-d03-p2": {
+      "answer": "y = -2x + 7",
+      "explanation": "Substitute m = −2 and b = 7 to obtain y = −2x + 7.",
+      "skill_id": "slope-representations",
+      "validation": {
+        "kind": "line",
+        "m": -2,
+        "b": 7
+      }
+    },
+    "tsi-w01-d03-p3": {
+      "answer": "undefined",
+      "explanation": "The change in x is 4 − 4 = 0, so the slope would require dividing by zero. It is undefined.",
+      "skill_id": "slope-representations",
+      "validation": {
+        "kind": "vertical_slope",
+        "points": [
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            9
+          ]
+        ]
+      }
+    },
+    "tsi-w01-d03-p4": {
+      "answer": 26,
+      "explanation": "V = 50 − 3t; at t = 8, V = 50 − 24 = 26 liters.",
+      "skill_id": "slope-representations",
+      "validation": {
+        "kind": "expression",
+        "expression": "50-3*8"
+      }
+    },
+    "tsi-w01-d03-e1": {
+      "answer": -2,
+      "explanation": "Slope = (−3 − 5)/(3 − (−1)) = −8/4 = −2.",
+      "skill_id": "slope-representations",
+      "validation": {
+        "kind": "expression",
+        "expression": "(-3-5)/(3-(-1))"
+      }
+    },
+    "tsi-w01-d03-e2": {
+      "answer": 12,
+      "explanation": "The initial charge is the value at h = 0: C = 12 dollars.",
+      "skill_id": "slope-representations",
+      "validation": {
+        "kind": "expression",
+        "expression": "4*0+12"
+      }
+    },
+    "tsi-w01-d04-w1": {
+      "answer": 18,
+      "explanation": "12 + 3(2) = 18.",
+      "skill_id": "compare-models",
+      "validation": {
+        "kind": "expression",
+        "expression": "12+3*2"
+      }
+    },
+    "tsi-w01-d04-w2": {
+      "answer": 6,
+      "explanation": "Divide both sides by 5 to get x = 6.",
+      "skill_id": "compare-models",
+      "validation": {
+        "kind": "linear_solution",
+        "coefficients": [
+          5,
+          0,
+          0,
+          30
+        ]
+      }
+    },
+    "tsi-w01-d04-g1": {
+      "answer": 3,
+      "explanation": "12 + 3h = 6 + 5h gives 6 = 2h, so h = 3. Both cost $21.",
+      "skill_id": "compare-models",
+      "validation": {
+        "kind": "linear_solution",
+        "coefficients": [
+          3,
+          12,
+          5,
+          6
+        ]
+      }
+    },
+    "tsi-w01-d04-g2": {
+      "answer": "B",
+      "explanation": "A costs 12 + 6 = $18; B costs 6 + 10 = $16. B is cheaper.",
+      "skill_id": "compare-models",
+      "validation": {
+        "kind": "cheaper",
+        "a": [
+          12,
+          3
+        ],
+        "b": [
+          6,
+          5
+        ],
+        "input": 2
+      }
+    },
+    "tsi-w01-d04-p1": {
+      "answer": 6,
+      "explanation": "20 + 4h = 8 + 6h gives 12 = 2h, so h = 6. Both cost $44.",
+      "skill_id": "compare-models",
+      "validation": {
+        "kind": "linear_solution",
+        "coefficients": [
+          4,
+          20,
+          6,
+          8
+        ]
+      }
+    },
+    "tsi-w01-d04-p2": {
+      "answer": 2,
+      "explanation": "A = $26 and B = $28; the cheaper plan A saves $2.",
+      "skill_id": "compare-models",
+      "validation": {
+        "kind": "expression",
+        "expression": "(4+3*8)-(10+2*8)"
+      }
+    },
+    "tsi-w01-d04-p3": {
+      "answer": 6,
+      "explanation": "5 + 1.50m = 2 + 2m gives 3 = 0.50m, so m = 6. Both cost $14.",
+      "skill_id": "compare-models",
+      "validation": {
+        "kind": "linear_solution",
+        "coefficients": [
+          "1.5",
+          5,
+          2,
+          2
+        ]
+      }
+    },
+    "tsi-w01-d04-p4": {
+      "answer": 100,
+      "explanation": "15 + 0.10p = 5 + 0.20p gives 10 = 0.10p, so p = 100. Both cost $25.",
+      "skill_id": "compare-models",
+      "validation": {
+        "kind": "linear_solution",
+        "coefficients": [
+          "0.1",
+          15,
+          "0.2",
+          5
+        ]
+      }
+    },
+    "tsi-w01-d04-e1": {
+      "answer": 6,
+      "explanation": "18 + 2h = 6 + 4h gives 12 = 2h, so h = 6. Both cost $30.",
+      "skill_id": "compare-models",
+      "validation": {
+        "kind": "linear_solution",
+        "coefficients": [
+          2,
+          18,
+          4,
+          6
+        ]
+      }
+    },
+    "tsi-w01-d04-e2": {
+      "answer": 4,
+      "explanation": "A = $27 and B = $31; the cheaper plan A saves $4.",
+      "skill_id": "compare-models",
+      "validation": {
+        "kind": "expression",
+        "expression": "(6+5*5)-(12+3*5)"
+      }
+    },
+    "tsi-w01-d05-q1": {
+      "answer": "B",
+      "explanation": "0.15 × 80 = 12.",
+      "skill_id": "percent",
+      "validation": {
+        "kind": "multiple_choice",
+        "correct_label": "B",
+        "calculation": {
+          "kind": "expression",
+          "expression": "15/100*80"
+        }
+      },
+      "distractor_notes": {
+        "A": "Finds only 10%.",
+        "C": "Uses the percent number as the amount.",
+        "D": "Subtracts the percent amount instead of reporting it."
+      }
+    },
+    "tsi-w01-d05-q2": {
+      "answer": "C",
+      "explanation": "The savings are $12, leaving 48 − 12 = $36.",
+      "skill_id": "percent",
+      "validation": {
+        "kind": "multiple_choice",
+        "correct_label": "C",
+        "calculation": {
+          "kind": "expression",
+          "expression": "48*(1-25/100)"
+        }
+      },
+      "distractor_notes": {
+        "A": "Reports savings, not sale price.",
+        "B": "Subtracts 25 dollars rather than 25%.",
+        "D": "Adds the savings instead of subtracting."
+      }
+    },
+    "tsi-w01-d05-q3": {
+      "answer": "C",
+      "explanation": "The $10 increase is 10/50 = 20% of the original price.",
+      "skill_id": "percent",
+      "validation": {
+        "kind": "multiple_choice",
+        "correct_label": "C",
+        "calculation": {
+          "kind": "expression",
+          "expression": "(60-50)/50*100"
+        }
+      },
+      "distractor_notes": {
+        "A": "Confuses dollar change with percent change.",
+        "B": "Divides by the new price.",
+        "D": "Reports the new price as a percent of the original, not the increase."
+      }
+    },
+    "tsi-w01-d05-q4": {
+      "answer": "B",
+      "explanation": "Add 7, then divide by 4: x = 7.",
+      "skill_id": "linear-equations",
+      "validation": {
+        "kind": "multiple_choice",
+        "correct_label": "B",
+        "calculation": {
+          "kind": "linear_solution",
+          "coefficients": [
+            4,
+            -7,
+            0,
+            21
+          ]
+        }
+      },
+      "distractor_notes": {
+        "A": "Subtracts 7 instead of adding it.",
+        "C": "Does not consistently isolate x.",
+        "D": "Stops before dividing by 4."
+      }
+    },
+    "tsi-w01-d05-q5": {
+      "answer": "A",
+      "explanation": "Divide by 3: x + 2 = 8. Subtract 2: x = 6.",
+      "skill_id": "linear-equations",
+      "validation": {
+        "kind": "multiple_choice",
+        "correct_label": "A",
+        "calculation": {
+          "kind": "linear_solution",
+          "coefficients": [
+            3,
+            6,
+            0,
+            24
+          ]
+        }
+      },
+      "distractor_notes": {
+        "B": "Stops at x + 2 = 8.",
+        "C": "Adds 2 instead of subtracting.",
+        "D": "Subtracts 2 before accounting for the factor of 3."
+      }
+    },
+    "tsi-w01-d05-q6": {
+      "answer": "B",
+      "explanation": "(19 − 7)/(6 − 2) = 12/4 = 3.",
+      "skill_id": "slope-representations",
+      "validation": {
+        "kind": "multiple_choice",
+        "correct_label": "B",
+        "calculation": {
+          "kind": "expression",
+          "expression": "(19-7)/(6-2)"
+        }
+      },
+      "distractor_notes": {
+        "A": "Reverses rise and run.",
+        "C": "Uses only the change in y.",
+        "D": "Adds the y-values."
+      }
+    },
+    "tsi-w01-d05-q7": {
+      "answer": "A",
+      "explanation": "The rate is 6/2 = 3 and y = 5 at x = 0, so y = 3x + 5.",
+      "skill_id": "slope-representations",
+      "validation": {
+        "kind": "multiple_choice",
+        "correct_label": "A",
+        "calculation": {
+          "kind": "line_points",
+          "points": [
+            [
+              0,
+              5
+            ],
+            [
+              2,
+              11
+            ],
+            [
+              4,
+              17
+            ]
+          ]
+        }
+      },
+      "distractor_notes": {
+        "B": "Swaps the rate and initial value.",
+        "C": "Uses the y step without dividing by the x step.",
+        "D": "Omits the initial value."
+      }
+    },
+    "tsi-w01-d05-q8": {
+      "answer": "C",
+      "explanation": "C = 2(4) + 9 = $17.",
+      "skill_id": "slope-representations",
+      "validation": {
+        "kind": "multiple_choice",
+        "correct_label": "C",
+        "calculation": {
+          "kind": "expression",
+          "expression": "2*4+9"
+        }
+      },
+      "distractor_notes": {
+        "A": "Omits the starting charge.",
+        "B": "Adds the rate to the starting charge without multiplying by hours.",
+        "D": "Multiplies both the rate and starting charge by hours."
+      }
+    },
+    "tsi-w01-d05-q9": {
+      "answer": "B",
+      "explanation": "14 + 2h = 4 + 4h gives 10 = 2h, so h = 5. Both cost $24.",
+      "skill_id": "compare-models",
+      "validation": {
+        "kind": "multiple_choice",
+        "correct_label": "B",
+        "calculation": {
+          "kind": "linear_solution",
+          "coefficients": [
+            2,
+            14,
+            4,
+            4
+          ]
+        }
+      },
+      "distractor_notes": {
+        "A": "Uses only the difference between hourly rates.",
+        "C": "Uses the sum of starting fees divided by the rate difference.",
+        "D": "Stops at 10 = 2h."
+      }
+    },
+    "tsi-w01-d05-q10": {
+      "answer": "A",
+      "explanation": "A costs $20; B costs $22. Plan A is cheaper by $2.",
+      "skill_id": "compare-models",
+      "validation": {
+        "kind": "multiple_choice",
+        "correct_label": "A",
+        "calculation": {
+          "kind": "cheaper",
+          "a": [
+            8,
+            3
+          ],
+          "b": [
+            2,
+            5
+          ],
+          "input": 4
+        }
+      },
+      "distractor_notes": {
+        "B": "May compare only the starting fees.",
+        "C": "May assume all comparisons are at the crossover.",
+        "D": "The supplied input and both models are enough to compare."
+      }
+    }
+  }
+}

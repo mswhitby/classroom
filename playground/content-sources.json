@@ -4,5 +4,13 @@
     "commit": "fe35f56072ffe76d91920835fd34c65ec3e0ac9a",
     "file": "course.json",
     "sha256": "b67fcb7d6897ebab80964cb4aa4d4c97fc94a6c9d70c069f000c991b26d2db03"
+  },
+  "tsi-math": {
+    "repository": "mswhitby/TSI",
+    "commit": "ed4836a76814a96537ab9a7c135764efdbd50367",
+    "refresh": "python scripts/build.py --tsi-source ../TSI",
+    "snapshot": "Week 1 sample curriculum",
+    "file": "content/week-01-student.json",
+    "sha256": "5307df34a439d0dd3469fd2ad79975ffbd527fed9b4ae3a947042c2b1481ead5"
   }
 }

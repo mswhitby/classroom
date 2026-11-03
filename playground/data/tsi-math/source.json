@@ -1,0 +1,6 @@
+{
+  "repository": "mswhitby/TSI",
+  "commit": "ed4836a76814a96537ab9a7c135764efdbd50367",
+  "refresh": "python scripts/build.py --tsi-source ../TSI",
+  "snapshot": "Week 1 sample curriculum"
+}

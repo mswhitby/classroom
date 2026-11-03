@@ -1,0 +1,150 @@
+{
+  "base_url": "https://prd-s3.pearsonperspective.com/content/resources/learningresources/",
+  "source_context": "TSIA2 code topics list; captured catalogs reconciled November 3, 2026",
+  "resources": [
+    {
+      "lrId": "15661",
+      "lrName": "Simplifying fractions",
+      "lrDescription": "Video showing simplifying fractions",
+      "lrType": "Video",
+      "lrFormat": "Instruction",
+      "benchMark": "ARE.A.2 - Perform computations with rational and irrational numbers.",
+      "locationCode": "INT",
+      "lrURL": "ma/viewresource.html?flv=flv/vmt060113 &crt=Copyright 2008 VideoMathTutor.com. Used by permission.",
+      "resolved_url": "https://prd-s3.pearsonperspective.com/content/resources/learningresources/ma/viewresource.html?flv=flv/vmt060113 &crt=Copyright 2008 VideoMathTutor.com. Used by permission.",
+      "suggested_use": "Day 1 prerequisite fraction support",
+      "source_catalogs": [
+        {
+          "level": "Proficient",
+          "strand": "Quantitative Reasoning",
+          "tier1_ID1": 1300
+        },
+        {
+          "level": "Basic",
+          "strand": "Quantitative Reasoning",
+          "tier1_ID1": 1300
+        }
+      ]
+    },
+    {
+      "lrId": "28023",
+      "lrName": "Rearrange a formula",
+      "lrDescription": "A video that explains how to rearrange a formula to isolate specific variables (Khan Academy)",
+      "lrType": "Video",
+      "lrFormat": "Instruction",
+      "benchMark": "ARE.D.4 - Convert multi representations of equations/inequalities/relationships",
+      "locationCode": "EXT",
+      "lrURL": "http://www.khanacademy.org/video/rearrange-formulas-to-isolate-specific-variables?playlist=Developmental%20Math",
+      "resolved_url": "http://www.khanacademy.org/video/rearrange-formulas-to-isolate-specific-variables?playlist=Developmental%20Math",
+      "suggested_use": "Day 2 optional equation-rearranging extension",
+      "source_catalogs": [
+        {
+          "level": "Proficient",
+          "strand": "Quantitative Reasoning",
+          "tier1_ID1": 1300
+        },
+        {
+          "level": "Basic",
+          "strand": "Quantitative Reasoning",
+          "tier1_ID1": 1300
+        }
+      ]
+    },
+    {
+      "lrId": "15486",
+      "lrName": "Rate of Change and Slope",
+      "lrDescription": "Rate of Change and Slope",
+      "lrType": "Interactive",
+      "lrFormat": "Instruction",
+      "benchMark": "ARE.B.1 - Solve problems with fractions/ratios/percentages/decimals/proportions",
+      "locationCode": "INT",
+      "lrURL": "ma/phma0078/PH_Alg1_ch06-01_Obj1.html",
+      "resolved_url": "https://prd-s3.pearsonperspective.com/content/resources/learningresources/ma/phma0078/PH_Alg1_ch06-01_Obj1.html",
+      "suggested_use": "Day 3 optional rate and slope instruction",
+      "source_catalogs": [
+        {
+          "level": "Proficient",
+          "strand": "Quantitative Reasoning",
+          "tier1_ID1": 1300
+        },
+        {
+          "level": "Basic",
+          "strand": "Quantitative Reasoning",
+          "tier1_ID1": 1300
+        }
+      ]
+    },
+    {
+      "lrId": "27118",
+      "lrName": "Enrichment: Slope",
+      "lrDescription": "A learning resource on determining the slope",
+      "lrType": "Printable",
+      "lrFormat": "Practice",
+      "benchMark": "GSR.E.1 - Make connections between geometry and algebraic equations",
+      "locationCode": "INT",
+      "lrURL": "ma/pdf/pma0333.pdf",
+      "resolved_url": "https://prd-s3.pearsonperspective.com/content/resources/learningresources/ma/pdf/pma0333.pdf",
+      "suggested_use": "Day 3 additional slope practice",
+      "source_catalogs": [
+        {
+          "level": "Advanced",
+          "strand": "Geometric and Spatial Reasoning",
+          "tier1_ID1": 1302
+        },
+        {
+          "level": "Proficient",
+          "strand": "Geometric and Spatial Reasoning",
+          "tier1_ID1": 1302
+        }
+      ]
+    },
+    {
+      "lrId": "15705",
+      "lrName": "Solving Systems Using Substitution",
+      "lrDescription": "Solving Systems Using Substitution",
+      "lrType": "Interactive",
+      "lrFormat": "Instruction",
+      "benchMark": "ARE.D.4 - Convert multi representations of equations/inequalities/relationships",
+      "locationCode": "INT",
+      "lrURL": "ma/phma0095/PH_Alg1_ch07-02_obj1.html",
+      "resolved_url": "https://prd-s3.pearsonperspective.com/content/resources/learningresources/ma/phma0095/PH_Alg1_ch07-02_obj1.html",
+      "suggested_use": "Day 4 optional substitution instruction",
+      "source_catalogs": [
+        {
+          "level": "Proficient",
+          "strand": "Quantitative Reasoning",
+          "tier1_ID1": 1300
+        },
+        {
+          "level": "Basic",
+          "strand": "Quantitative Reasoning",
+          "tier1_ID1": 1300
+        }
+      ]
+    },
+    {
+      "lrId": "28018",
+      "lrName": "Solving Systems by Graphing 2",
+      "lrDescription": "A video that explains how to solve a problem that can be modeled using a system of equations. (Khan Academy)",
+      "lrType": "Video",
+      "lrFormat": "Instruction",
+      "benchMark": "ARE.D.4 - Convert multi representations of equations/inequalities/relationships",
+      "locationCode": "EXT",
+      "lrURL": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-systems-topic/cc-8th-systems-graphically/v/graphings-systems-of-equations",
+      "resolved_url": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-systems-topic/cc-8th-systems-graphically/v/graphings-systems-of-equations",
+      "suggested_use": "Day 4 optional graphical systems explanation",
+      "source_catalogs": [
+        {
+          "level": "Proficient",
+          "strand": "Quantitative Reasoning",
+          "tier1_ID1": 1300
+        },
+        {
+          "level": "Basic",
+          "strand": "Quantitative Reasoning",
+          "tier1_ID1": 1300
+        }
+      ]
+    }
+  ]
+}
