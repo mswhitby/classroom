@@ -1,0 +1,8 @@
+import {courseUnits,unitHref} from './course-navigation.mjs?v=units-1';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+export async function unitPage(main,course,id){
+ const route=location.hash,r=await fetch('data/'+course.id+'/course.json');if(!r.ok)throw Error('Course unavailable');const manifest=await r.json();if(location.hash!==route)return;
+ const units=courseUnits(course.id,manifest),unit=units.find(u=>u.id===id);if(!unit){main.innerHTML='<h1>Unit not found</h1><a href="#/course/'+course.id+'">All units →</a>';return}
+ const title=unit.label+' '+unit.number+' · '+unit.title;document.title=title+' | '+course.title;
+ main.innerHTML='<div class="page-head"><div class="titles"><nav class="crumbs"><a href="#/course/'+course.id+'">'+esc(course.title)+'</a> / '+unit.label+' '+unit.number+'</nav><h1 class="page-title">'+esc(title)+'</h1><p class="fine">'+unit.lessons.length+' lessons</p></div></div><div class="table-wrap"><table class="data"><thead><tr><th>Lesson</th><th><span class="sr-only">Action</span></th></tr></thead><tbody>'+unit.lessons.map(l=>'<tr><td><a href="'+l.url+'">'+(unit.label==='Week'?'Day':'Lesson')+' '+l.number+' · '+esc(l.title)+'</a></td><td><a class="btn" href="'+l.url+'">Open</a></td></tr>').join('')+'</tbody></table></div>'+(unit.quiz?'<a class="btn" href="#/course/'+course.id+'/quiz/'+unit.quiz.id+'">'+esc(unit.quiz.title)+' →</a>':'')+'<nav class="unit-page-nav">'+units.filter(u=>u!==unit).map(u=>'<a href="'+unitHref(course.id,u.id)+'">'+u.label+' '+u.number+' · '+esc(u.title)+'</a>').join('')+'</nav>';
+}

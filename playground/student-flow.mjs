@@ -1,4 +1,4 @@
-import {ensureWorkspaceResize} from './workspace-resize.mjs?v=feedback-1';
+import {ensureWorkspaceResize} from './workspace-resize.mjs?v=units-1';
 let serial=0;
 // Move the existing live controls and content; never duplicate editors or student code.
 export function tabPanels(host,items,label){

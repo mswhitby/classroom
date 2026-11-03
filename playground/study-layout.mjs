@@ -1,8 +1,8 @@
-import {practiceTabs,workspaceTabs,taskSection} from './student-flow.mjs?v=feedback-1';
+import {practiceTabs,workspaceTabs,taskSection} from './student-flow.mjs?v=units-1';
 let currentCleanup=()=>{};
 export function disposeStudyLayout(){currentCleanup();currentCleanup=()=>{};document.body.classList.remove('study-page','ws','workspace-expanded','workspace-resizing');document.querySelector('main')?.classList.remove('study-main')}
 const separator=(label,orientation)=>{const e=document.createElement('div');e.className=orientation==='vertical'?'study-resize-width':'study-resize-height';e.tabIndex=0;e.setAttribute('role','separator');e.setAttribute('aria-label',label);e.setAttribute('aria-orientation',orientation);e.title=orientation==='vertical'?'Drag to change the lesson and coding widths. Arrow keys also work.':'Drag to change the height. Arrow keys also work.';return e};
-export function setupStudyLayout(main,{course,title,competency,lessonNumber,lessonCount,headingLabel,instructionTitle,taskObjective,taskInput,taskExpected}={}){
+export function setupStudyLayout(main,{course,title,competency,unitNumber,unitId,unitTitle,lessonNumber,lessonCount,headingLabel,instructionTitle,taskObjective,taskInput,taskExpected}={}){
  disposeStudyLayout();const controller=new AbortController(),signal=controller.signal;
  currentCleanup=()=>{controller.abort();document.body.classList.remove('workspace-expanded','workspace-resizing')};
  const layout=main.querySelector('.course-layout,.mobile-layout'),article=layout?.querySelector(':scope > article'),workspace=article?.querySelector('.workspace');if(!layout||!article||!workspace)return;
@@ -12,7 +12,7 @@ export function setupStudyLayout(main,{course,title,competency,lessonNumber,less
  grid.classList.add('study-grid','ws-body');copy.classList.add('study-instructions','ws-lesson');copy.classList.remove('panel');workspace.classList.add('study-workspace');
  let heading=article.querySelector('.lesson-heading');if(!heading){heading=document.createElement('header');heading.className='lesson-heading';const old=article.querySelector('h1');if(old)heading.append(old);else{const h=document.createElement('h1');h.textContent=title||'Programming practice';heading.append(h)}article.prepend(heading)}
  heading.classList.add('ws-head');const h1=heading.querySelector('h1');for(const n of [...heading.children])if(n!==h1)n.remove();
- const back=document.createElement('a');back.href='#/course/'+course;back.className='ws-back';back.textContent='‹ '+(course==='computer-science-1'?'Python':course==='game-programming'?'Game Programming':course==='uil'?'UIL':'Mobile & Web');heading.prepend(back);
+ const back=document.createElement('a');back.href='#/course/'+course;back.className='ws-back';back.textContent='‹ '+(course==='computer-science-1'?'Python':course==='game-programming'?'Game Programming':course==='uil'?'UIL':'Mobile & Web');if(unitNumber&&unitId){back.href='#/course/'+course+'/unit/'+encodeURIComponent(unitId);back.textContent='‹ Unit '+unitNumber+' · '+unitTitle;const label=document.createElement('span');label.className='lesson-number';label.textContent='Unit '+unitNumber+', Lesson '+lessonNumber+' · ';h1.prepend(label);document.title=h1.textContent+' | Playground'}else if(lessonNumber){const label=document.createElement('span');label.className='lesson-number';label.textContent='Lesson '+lessonNumber+' · ';h1.prepend(label)}heading.prepend(back);
  for(const node of [...article.children])if(node!==heading&&node!==grid){if(node.matches('.breadcrumbs'))node.remove();else copy.append(node)}
  const content=document.createElement('div');content.className='study-panel-content';content.append(...copy.childNodes);copy.append(content);
  const width=separator('Resize lesson and coding area widths','vertical');grid.insertBefore(width,workspace);

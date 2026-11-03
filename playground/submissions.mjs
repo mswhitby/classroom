@@ -35,7 +35,7 @@ export function mountSubmission({anchor,course_id,activity_id,activity_kind,getF
   const snapshot={course_id,activity_id,activity_kind,files:getFiles()};
   if(!confirm('Submit the current version of '+activity_id+'? This saves a separate hand-in. You can keep editing your draft afterward.'))return;
   busy=true;button.disabled=true;status.textContent='Submitting this version…';
-  try{const receipt=await submit(snapshot);status.textContent='Submitted '+new Date(receipt.submitted_at).toLocaleString()+'. Receipt '+receipt.id+'. Later edits and checks do not change this hand-in.'}
+  try{const receipt=await submit(snapshot);if(!receipt?.id||!receipt?.submitted_at)throw Error('Submission was not confirmed. Please retry.');document.dispatchEvent(new CustomEvent('playground-submitted',{detail:{...receipt,course_id,activity_id}}));status.textContent='Submitted '+new Date(receipt.submitted_at).toLocaleString()+'. Receipt '+receipt.id+'. Later edits and checks do not change this hand-in.'}
   catch(error){status.textContent=error.message||'Submission was not confirmed. Your draft is still saved.'}
   finally{busy=false;button.disabled=false}
  };
