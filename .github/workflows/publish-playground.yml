@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: mswhitby/playground
-          ref: 3722b2a8f7dc9219e66c284d46da859e08dddb8e
+          ref: 2f99c6f7068fd87217934ae665e5e1dc6af903a4
           path: playground
       - uses: actions/checkout@v4
         with:
@@ -70,7 +70,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add playground computer-science-1
           if ! git diff --cached --quiet; then
-            git commit -m 'Publish shared Playground redesign and native Python routes'
+            git commit -m 'Publish course units, output tabs and teacher dashboard fixes'
             git push origin HEAD:main
           fi
           gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
