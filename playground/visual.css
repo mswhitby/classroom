@@ -517,3 +517,68 @@ body.pg-app h1,body.pg-app h2,body.pg-app h3{font-family:var(--font);color:var(-
 
 /* The existing editor helper may add button classes; the reference skin stays authoritative. */
 body.pg-app button.btn-primary{background:var(--surface)!important;border-color:var(--border)!important;color:var(--text)!important}body.pg-app .ws-submit>button:last-of-type{background:var(--accent)!important;border-color:var(--accent)!important;color:var(--on-accent)!important}body.pg-app .mode-switch button.btn{background:transparent!important;border:0!important;color:var(--muted)!important}body.pg-app .mode-switch button.btn[aria-selected=true]{background:var(--surface-2)!important;color:var(--text)!important}body.pg-app #sidebar .unit-btn.btn{background:transparent!important;border:0!important;color:var(--soft)!important}body.pg-app #sidebar .sb-collapse.btn{background:transparent!important;border:0!important;color:var(--muted)!important}body.pg-app #sidebar .picker.btn{background:var(--surface)!important;color:var(--text)!important}body.pg-app #sidebar.collapsed .picker.btn{background:transparent!important;border-color:transparent!important}body.pg-app .ws-tabs .icon-btn.btn{background:transparent!important;border:0!important;color:var(--muted)!important}
+
+/* Course structure, workspace feedback, and teacher views. */
+.unit-divider th { padding:20px!important;background:var(--surface-2);border-top:2px solid var(--border);text-align:left;font-size:15px }
+.unit-divider th span { color:var(--muted);margin-right:16px;font-size:12px;text-transform:uppercase;letter-spacing:.06em }
+.unit-progress { margin-left:auto;font-size:11px;color:var(--muted);white-space:nowrap }
+.lesson-completion { width:14px;flex:none;color:var(--muted);text-align:center }
+.lesson-completion.is-complete { color:#35ca83 }
+.ws-output > .student-tabs { border-bottom:1px solid var(--border);padding:0 16px;gap:20px }
+.ws-output > .student-tabs button { border:0;border-radius:0;background:transparent;padding:12px 0;color:var(--muted);border-bottom:2px solid transparent }
+.ws-output > .student-tabs button[aria-selected=true] { color:var(--text);border-bottom-color:var(--accent) }
+.ws-output > [role=tabpanel] { padding:16px;min-width:0 }
+.ws-output [hidden] { display:none!important }
+.check-summary { display:flex;gap:12px;align-items:center;font-size:12px;color:var(--muted);margin:0 0 12px }
+.check-summary strong { color:var(--text) }
+.check-cards { display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:10px }
+.check-card { border:1px solid var(--border);border-radius:10px;padding:14px;background:var(--surface);min-width:0 }
+.check-card header { display:flex;justify-content:space-between;gap:12px;font-size:12px }
+.check-card header span,.check-card.needs-revision dd:last-child { color:var(--accent) }
+.check-card.passed header span { color:#35ca83 }
+.check-card dl { display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 12px;font-size:12px;margin:12px 0 0 }
+.check-card dt { color:var(--muted) }
+.check-card dd { margin:0;min-width:0 }
+.check-card pre { margin:0;padding:0;background:transparent;border:0;white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px }
+.teacher-dashboard { max-width:1440px!important;width:100% }
+.teacher-dashboard .panel { border:1px solid var(--border);border-radius:12px;padding:24px;margin:20px 0;background:var(--surface) }
+.teacher-dashboard .teacher-toolbar,.directory-controls,.directory-bulk { display:flex;align-items:end;flex-wrap:wrap;gap:14px;margin:20px 0 }
+.teacher-dashboard label { display:flex;flex-direction:column;gap:7px;font-size:12px;color:var(--muted) }
+.teacher-dashboard input:not([type=checkbox]),.teacher-dashboard select { font:inherit;color:var(--text);background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:10px 12px;min-height:40px;max-width:100% }
+.teacher-dashboard input[type=checkbox] { width:16px;height:16px;accent-color:var(--accent) }
+.teacher-dashboard button { flex-shrink:0 }
+.teacher-dashboard .teacher-toolbar select { min-width:260px }
+.teacher-tabs { margin:24px 0;border-bottom:1px solid var(--border) }
+.teacher-tabs button { border:0;border-bottom:2px solid transparent;border-radius:0;background:transparent;padding:14px 18px }
+.teacher-tabs button[aria-selected=true] { border-bottom-color:var(--accent);background:var(--surface-2) }
+.teacher-dashboard [role=tabpanel][hidden] { display:none!important }
+.teacher-dashboard .progress-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:20px 0 }
+.teacher-dashboard .stat { border:1px solid var(--border);border-radius:12px;padding:20px;display:grid;gap:8px }
+.teacher-dashboard .stat strong { font-size:28px }
+.teacher-dashboard .stat span,.teacher-dashboard small { color:var(--muted);font-size:12px }
+.teacher-table-wrap { overflow:auto }
+.teacher-table { width:100%;border-collapse:collapse;text-align:left }
+.teacher-table td,.teacher-table th { padding:16px;border-bottom:1px solid var(--border);vertical-align:top }
+.teacher-table small,.directory-person small { display:block;margin-top:5px }
+.directory-heading { display:flex;justify-content:space-between;align-items:center;gap:16px }
+.directory-heading span { color:var(--muted);font-size:12px }
+.directory-person { display:grid;grid-template-columns:minmax(160px,1fr) 140px minmax(220px,2fr);gap:20px;padding:20px 0;border-top:1px solid var(--border) }
+.directory-person-select,.directory-bulk label:first-child { flex-direction:row!important;align-items:center;gap:12px!important }
+.directory-person-id strong { color:var(--text);font-size:14px }
+.directory-section { display:flex;gap:8px;align-items:center;margin:8px 0 }
+.directory-section > span { flex:1 }
+.directory-assign { grid-column:3;display:flex;align-items:end;gap:10px }
+.directory-label { color:var(--muted);font-size:12px }
+.teacher-dashboard .class-form { display:grid;grid-template-columns:1fr;gap:12px;max-width:500px;margin-top:20px }
+.teacher-dashboard .progress-row { display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--border) }
+.teacher-dashboard .progress-row small { display:block;margin-top:6px }
+@media(max-width:900px){.directory-person{grid-template-columns:1fr}.directory-assign{grid-column:auto}.directory-heading{display:block}.teacher-dashboard .progress-grid{grid-template-columns:1fr}.teacher-dashboard .panel{padding:16px}.teacher-table{min-width:750px}}
+.pg-app .ws-output > .student-tabs { display:flex;gap:24px;padding:0 16px;margin:0 }
+.pg-app .ws-output > .student-tabs button { padding:12px 4px }
+.teacher-tabs { display:flex;gap:8px;overflow-x:auto }
+.pg-app #main.teacher-dashboard { display:block;padding-top:32px }
+.teacher-dashboard h1 { margin:8px 0 12px }
+.teacher-dashboard > .intro { margin:0 0 24px;color:var(--soft) }
+.pg-app .teacher-tabs button { border:0;border-radius:0;border-bottom:2px solid transparent;background:transparent;padding:14px 18px }
+.pg-app .teacher-tabs button[aria-selected=true] { border-bottom-color:var(--accent);background:var(--surface-2) }
+.teacher-dashboard .panel h2 { margin:0 0 12px }

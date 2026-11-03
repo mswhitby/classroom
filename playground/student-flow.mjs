@@ -1,10 +1,10 @@
-import {ensureWorkspaceResize} from './workspace-resize.mjs?v=redesign-2';
+import {ensureWorkspaceResize} from './workspace-resize.mjs?v=feedback-1';
 let serial=0;
 // Move the existing live controls and content; never duplicate editors or student code.
 export function tabPanels(host,items,label){
  const id='student-tabs-'+(++serial),nav=document.createElement('div');nav.className='student-tabs';nav.setAttribute('role','tablist');nav.setAttribute('aria-label',label);
  const buttons=items.map(([name,panel],i)=>{const b=document.createElement('button');b.type='button';b.id=id+'-tab-'+i;b.textContent=name;b.setAttribute('role','tab');b.setAttribute('aria-controls',id+'-panel-'+i);panel.id=panel.id||id+'-panel-'+i;b.setAttribute('aria-controls',panel.id);panel.setAttribute('role','tabpanel');panel.setAttribute('aria-labelledby',b.id);panel.tabIndex=0;nav.append(b);return b});
- function select(i,focus=false){items.forEach(([,panel],j)=>{panel.hidden=j!==i;buttons[j].setAttribute('aria-selected',String(i===j));buttons[j].tabIndex=i===j?0:-1});if(focus)buttons[i].focus()}
+ function select(i,focus=false){items.forEach(([,panel],j)=>{panel.hidden=j!==i;buttons[j].setAttribute('aria-selected',String(i===j));buttons[j].tabIndex=i===j?0:-1});items[i][1].dispatchEvent(new Event('panel-selected'));if(focus)buttons[i].focus()}
  buttons.forEach((b,i)=>{b.onclick=()=>select(i);b.onkeydown=e=>{let n=i;if(e.key==='ArrowRight')n=(i+1)%items.length;else if(e.key==='ArrowLeft')n=(i+items.length-1)%items.length;else if(e.key==='Home')n=0;else if(e.key==='End')n=items.length-1;else return;e.preventDefault();select(n,true)}});
  host.append(nav,...items.map(x=>x[1]));select(0);return name=>{const i=items.findIndex(x=>x[0]===name);if(i>=0)select(i)};
 }
@@ -59,11 +59,17 @@ export function workspaceTabs(workspace){
  const editorGrip=find('.study-resize-height,.resize-height');if(editorGrip)editorGrip.after(toolbar);
  const result=document.createElement('div');result.className='ws-output';result.setAttribute('aria-label','Program output and checks');
  const preview=find('#mobile-preview'),console=find('.mobile-console,.csharp-terminal,.terminal-pane'),output=find('#output');
- if(preview){const previewBox=preview.closest('.mobile-results');if(previewBox)result.append(previewBox);else result.append(preview)}
- if(console)result.append(console);else if(output){const label=output.previousElementSibling;if(label?.classList.contains('console-heading'))result.append(label);result.append(output)}
- for(const selector of ['#csharp-checks','#uil-checks','#mobile-feedback','#project-feedback','#check-results','#feedback','#code-status','#uil-feedback','#project-save-status','#python-feedback']){const node=find(selector);if(node)result.append(node)}
- workspace.append(result);workspace.querySelectorAll('.workspace-help,.workspace-body,.check-section,.submission,:scope > .h6').forEach(n=>{if(!n.querySelector('input,textarea,button'))n.hidden=true});
- const onCheck=()=>{result.dataset.view='checks';if(console)console.hidden=false};const onRun=()=>{result.dataset.view='output';if(console)console.hidden=false;for(const s of ['#csharp-checks','#uil-checks','#check-results']){const node=workspace.querySelector(s);if(node)node.hidden=true}};check?.addEventListener('click',onCheck);run?.addEventListener('click',onRun);
+ const consolePanel=document.createElement('section'),checksPanel=document.createElement('section'),previewPanel=document.createElement('section');
+ consolePanel.className='output-console';checksPanel.className='output-checks';previewPanel.className='output-preview';
+ if(preview){const grip=preview.nextElementSibling;previewPanel.append(preview);if(grip?.classList.contains('study-resize-height'))previewPanel.append(grip)}
+ if(console){consolePanel.append(console);consolePanel.addEventListener('panel-selected',()=>{const toggle=console.querySelector('[data-console-toggle]');if(toggle?.getAttribute('aria-expanded')==='false')toggle.click()})}else if(output){const label=output.previousElementSibling;if(label?.classList.contains('console-heading'))consolePanel.append(label);consolePanel.append(output)}
+ for(const selector of ['#csharp-checks','#uil-checks','#mobile-feedback','#project-feedback','#check-results','#feedback','#code-status','#uil-feedback','#project-save-status','#python-feedback']){const node=find(selector);if(node)checksPanel.append(node)}
+ const empty=document.createElement('p');empty.className='checks-empty fine';empty.textContent='Press Check to test your code against the published requirements.';checksPanel.prepend(empty);
+ const update=()=>{const hidden=[...checksPanel.children].some(n=>n!==empty&&!n.hidden&&n.textContent.trim());if(empty.hidden!==hidden)empty.hidden=hidden};new MutationObserver(update).observe(checksPanel,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['hidden']});
+ workspace.append(result);workspace.querySelector('.mobile-results')?.remove();const items=[['Console',consolePanel],['Checks',checksPanel]];if(preview)items.push(['Preview',previewPanel]);const select=tabPanels(result,items,'Workspace output');
+ result.querySelectorAll('[role="tab"]')[1].dataset.resultTests='';
+ workspace.querySelectorAll('.workspace-help,.workspace-body,.check-section,.submission,:scope > .h6').forEach(n=>{if(!n.querySelector('input,textarea,button'))n.hidden=true});
+ check?.addEventListener('click',()=>select('Checks'));run?.addEventListener('click',()=>select(preview?'Preview':'Console'));
  ensureWorkspaceResize(workspace);return ()=>{};
 }
 export function taskSection(prose){

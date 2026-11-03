@@ -7,7 +7,7 @@ export function mountTeacherDirectory(container,service,{classes=[],onChanged=as
  let people=[],sections=classes,disposed=false,request=0,selected=new Set(),filter='all',query='',sheetRows=[],sheetByGithub=new Map(),duplicateGithub=new Set(),sheetPeriod='all';
  container.innerHTML=`<div class="directory-heading"><h2>Registered accounts</h2><span id="directory-count" role="status"></span></div>
  <p>Every GitHub account registered on this site appears here, including people who haven't joined a class. Mark private clients separately, then organize students into sections.</p>
- <details class="panel" id="sheet-mapping" open><summary>Google Sheet roster (optional)</summary><div id="sheet-linker"></div><p id="sheet-match-summary" role="status"></p><div id="sheet-unmatched"></div></details>
+ <details class="panel" id="sheet-mapping"><summary>Google Sheet roster (optional)</summary><div id="sheet-linker"></div><p id="sheet-match-summary" role="status"></p><div id="sheet-unmatched"></div></details>
  <div class="directory-controls">
   <label>Find an account<input id="directory-search" type="search" placeholder="Name, GitHub username, or section" autocomplete="off"></label>
   <label>Show<select id="directory-filter"><option value="all">All accounts</option><option value="enrolled">Enrolled students</option><option value="unassigned">Unassigned students</option><option value="client">Private clients</option><option value="without-sheet">No Sheet match</option></select></label>
