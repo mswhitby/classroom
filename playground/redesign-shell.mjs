@@ -1,5 +1,5 @@
-import {submittedActivities,submissionKey} from './submission-history.mjs?v=home-points-1';
-import {accountCourses,forgetCourseSections,courseUnits,unitHref} from './course-navigation.mjs?v=home-points-1';
+import {submittedActivities,submissionKey} from './submission-history.mjs?v=reading-1';
+import {accountCourses,forgetCourseSections,courseUnits,unitHref} from './course-navigation.mjs?v=reading-1';
 const root=new URL('./',import.meta.url),main=document.getElementById('main'),sidebar=document.getElementById('sidebar');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const href=id=>'#/course/'+id;

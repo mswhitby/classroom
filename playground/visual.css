@@ -607,13 +607,11 @@ body.pg-app #sidebar button.unit-toggle { display:grid;place-items:center;flex:n
 body.pg-app .ws-head .ws-back { max-width:30%;white-space:normal;line-height:1.4 }
 @media(max-width:900px){body.pg-app #sidebar .class-menu{position:fixed;left:8px;right:8px;top:66px;width:auto}body.pg-app .ws-head .ws-back{max-width:100%;font-size:12px}.pg-app .ws-head{flex-wrap:wrap}.pg-app .ws-head h1{min-width:0;overflow-wrap:anywhere}}
 /* Higher-contrast dark surfaces, with code and hints visually separated. */
-:root[data-theme=dark]{--bg:#0d1117;--bar:#161b22;--surface:#161b22;--surface-2:#21262d;--code-bg:#161b22;--border:#30363d;--border-strong:#484f58;--text:#e6edf3;--soft:#c9d1d9;--muted:#9da7b3;--pass-fg:#3fb950;--fail-fg:#ff7b72}
-:root[data-theme=light]{--code-bg:#f6f8fa;--border:#d0d7de;--muted:#57606a}
-.pg-app .markdown-body pre,.pg-app .student-practice pre,.pg-app .student-learn pre { background:var(--surface-2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;color:var(--text) }
-.pg-app .markdown-body code:not(pre code),.pg-app .student-practice code:not(pre code),.pg-app .student-learn code:not(pre code){background:var(--surface-2);padding:2px 5px;border-radius:5px;color:var(--text)}
+.pg-app .study-instructions pre { background:var(--surface-2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;color:var(--text) }
+.pg-app .study-instructions code:not(pre code){background:var(--surface-2);padding:2px 5px;border-radius:5px;color:var(--text)}
 .pg-app .student-practice>details,.pg-app .student-practice #hints details,.pg-app .student-practice #lesson-hints details { background:rgba(210,153,34,.08);border:1px solid rgba(210,153,34,.3);border-left:3px solid #d29922;border-radius:8px;margin:12px 0;padding:12px 14px }
 .pg-app .student-practice details summary { color:var(--text);font-weight:500;cursor:pointer }
-.pg-app .learn-try { background:rgba(88,166,255,.08);border-left:3px solid #58a6ff;padding:14px;border-radius:6px;color:var(--soft) }
+.pg-app .study-instructions .learn-try { background:transparent;border:1px dashed var(--border-strong);border-left:3px solid var(--accent);padding:14px;border-radius:6px;color:var(--soft) }
 .pg-app .review-dialog { width:min(520px,calc(100vw - 32px));padding:24px;background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:12px }
 .pg-app .review-dialog::backdrop { background:#0009 }
 .pg-app .review-dialog label { display:grid;gap:8px }
@@ -623,3 +621,21 @@ body.pg-app .ws-head .ws-back { max-width:30%;white-space:normal;line-height:1.4
 .activity-submitted.is-submitted,[data-python-submitted].is-submitted { color:var(--pass-fg) }
 .pg-app .ws-output .check-next { margin:0 0 14px;color:var(--soft) }
 .points-available { color:var(--soft);font-size:12px;white-space:nowrap;padding:5px 9px;background:var(--surface-2);border:1px solid var(--border);border-radius:6px }
+
+/* Reading-area refinements stay inside the lesson. The shell keeps its black palette. */
+:root[data-theme=dark] .study-instructions { --soft:#c9c9cf;--muted:#a1a1aa;--surface-2:#18181b;--border:rgba(255,255,255,.14) }
+.pg-app .study-instructions { line-height:1.75 }
+.pg-app .study-instructions h2,.pg-app .study-instructions h3 { line-height:1.35;margin-top:24px;margin-bottom:12px }
+.pg-app .study-instructions pre { font:12px/1.7 var(--mono);white-space:pre-wrap;overflow-wrap:anywhere;text-align:left;margin:8px 0 }
+.pg-app .study-instructions pre code { padding:0;background:transparent;color:inherit;white-space:inherit }
+:root[data-theme=dark] .pg-app .study-instructions code:not(pre code) { color:#e9c46a }
+.pg-app .study-instructions table.examples { width:100%;table-layout:fixed;border-collapse:separate;border-spacing:10px 0 }
+.pg-app .study-instructions table.examples td { padding:4px 0;vertical-align:top }
+.pg-app .study-instructions table.examples th { text-align:left;padding:8px 0;font-size:12px;color:var(--muted) }
+body.pg-app .topbar { z-index:50 }
+body.pg-app #sidebar { z-index:40 }
+body.pg-app #sidebar .class-menu { z-index:100;overflow-x:hidden }
+.other-playgrounds-row { display:flex;flex-wrap:wrap;gap:10px }
+.other-playground { display:inline-flex;align-items:center;gap:9px;min-height:44px;padding:7px 12px 7px 9px;background:var(--surface);border:1px solid var(--border);border-radius:10px;font-size:13px;color:var(--text) }
+.other-playground:hover { background:var(--surface-2);text-decoration:none;border-color:var(--border-strong) }
+.other-playground .tile-xs { width:22px;height:22px;font-size:9px;border-radius:6px }
