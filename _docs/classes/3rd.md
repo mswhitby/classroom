@@ -21,4 +21,4 @@ The list should have five items. Turn your list in on paper.
 2. [HackerRank - Week of Oct. 13](https://www.hackerrank.com/whitbywebdev-20261013)
 
     - Sign up HackerRank using your GitHub account.
-    - [Slides.js](https://github.com/mswhitby/Mobile-App-Development-/blob/main/Slides.js) 
+    <!-- - [Slides.js](https://github.com/mswhitby/Mobile-App-Development-/blob/main/Slides.js)  -->
