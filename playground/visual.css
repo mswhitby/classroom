@@ -622,3 +622,4 @@ body.pg-app .ws-head .ws-back { max-width:30%;white-space:normal;line-height:1.4
 .activity-submitted { font-size:12px;color:var(--muted);white-space:nowrap }
 .activity-submitted.is-submitted,[data-python-submitted].is-submitted { color:var(--pass-fg) }
 .pg-app .ws-output .check-next { margin:0 0 14px;color:var(--soft) }
+.points-available { color:var(--soft);font-size:12px;white-space:nowrap;padding:5px 9px;background:var(--surface-2);border:1px solid var(--border);border-radius:6px }
