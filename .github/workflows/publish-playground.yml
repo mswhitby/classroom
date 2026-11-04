@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: mswhitby/playground
-          ref: 06274f97c863015a3431868d18d4d2126cf3c4e5
+          ref: 1c06268badf7d6adc7bf91156089fa42bee47302
           path: playground
       - uses: actions/checkout@v4
         with:
@@ -70,7 +70,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add playground computer-science-1
           if ! git diff --cached --quiet; then
-            git commit -m 'Publish home grouping, navigation labels and available points'
+            git commit -m 'Restore black shell and refine lesson reading content'
             git push origin HEAD:main
           fi
           gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
