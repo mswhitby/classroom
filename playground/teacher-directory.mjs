@@ -1,15 +1,17 @@
 // Teacher-only account directory: all registered GitHub accounts, not a pasted roster.
-import {mountGoogleSheetRoster,normalizeGithub} from './google-sheet-roster.mjs?v=saved-link-1';
+import {mountGoogleSheetRoster,normalizeGithub} from './google-sheet-roster.mjs?v=dual-period-1';
+import {sortRoster} from './roster-sort.mjs?v=dual-period-1';
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const labelFor=course=>({'computer-science-1':'Computer Science I','game-programming':'Game Programming & Design','mobile-app-dev':'Mobile App & Web',uil:'UIL Computer Science',capstone:'Capstone'})[course]||course;
 
-export function mountTeacherDirectory(container,service,{classes=[],onChanged=async()=>{},onNamesChanged=()=>{}}={}){
- let people=[],sections=classes,disposed=false,request=0,selected=new Set(),filter='all',query='',sheetRows=[],sheetByGithub=new Map(),duplicateGithub=new Set(),sheetPeriod='all',savedNames=new Map(),namesAvailable=false;
+export function mountTeacherDirectory(container,service,{classes=[],sort='last',onChanged=async()=>{},onNamesChanged=()=>{},onSortChange=()=>{}}={}){
+ let people=[],sections=classes,disposed=false,request=0,selected=new Set(),filter='all',query='',sheetRows=[],sheetByGithub=new Map(),duplicateGithub=new Set(),sheetPeriod='all',savedNames=new Map(),namesAvailable=false,sheetById=new Map(),sortBy=sort,sheetSyncAvailable=false;
  container.innerHTML=`<div class="directory-heading"><h2>Registered accounts</h2><span id="directory-count" role="status"></span></div>
  <p>Every GitHub account registered on this site appears here, including people who haven't joined a class. Mark private clients separately, then organize students into sections.</p>
- <details class="panel" id="sheet-mapping"><summary>Google Sheet roster (optional)</summary><div id="sheet-linker"></div><p id="sheet-match-summary" role="status"></p><button type="button" id="directory-save-sheet-names" class="secondary" disabled>Save matched names for future visits</button><div id="sheet-unmatched"></div></details>
+ <details class="panel" id="sheet-mapping"><summary>Google Sheet roster (optional)</summary><div id="sheet-linker"></div><p id="sheet-match-summary" role="status"></p><p id="sheet-sync-status" role="status">Verified Sheet matches are synchronized whenever Google Sheet is loaded.</p><div id="sheet-unmatched"></div></details>
  <div class="directory-controls">
   <label>Find an account<input id="directory-search" type="search" placeholder="Name, GitHub username, or section" autocomplete="off"></label>
+  <label>Sort students by<select id="directory-sort"><option value="last">Last name</option><option value="first">First name</option><option value="github">GitHub username</option></select></label>
   <label>Show<select id="directory-filter"><option value="all">All accounts</option><option value="enrolled">Enrolled students</option><option value="unassigned">Unassigned students</option><option value="client">Private clients</option><option value="without-sheet">No Sheet match</option></select></label>
   <label id="sheet-period-label" hidden>Sheet class period<select id="sheet-period"><option value="all">All periods</option></select></label>
   <button id="directory-refresh" class="secondary" type="button">Refresh accounts</button>
@@ -17,25 +19,32 @@ export function mountTeacherDirectory(container,service,{classes=[],onChanged=as
  <div class="directory-bulk"><label><input id="directory-select-visible" type="checkbox"> Select visible students</label><label>Add selected to <select id="directory-bulk-class"></select></label><button id="directory-bulk-add" type="button">Add selected</button></div>
  <p id="directory-status" role="status"></p><div id="directory-list"><p>Loading accounts…</p></div>`;
  const $=id=>container.querySelector('#'+id);
- const sheetBridge=mountGoogleSheetRoster($('sheet-linker'),{onRows:rows=>applySheetRows(rows)});
+ const sheetBridge=mountGoogleSheetRoster($('sheet-linker'),{onRows:rows=>applySheetRows(rows,{sync:rows.length>0})});
+ $('directory-sort').value=['last','first','github'].includes(sortBy)?sortBy:'last';
  const tell=message=>{$('directory-status').textContent=message};
  const active=p=>p.memberships.filter(m=>m.status==='approved'||m.status==='pending');
- const match=p=>sheetByGithub.get(normalizeGithub(p.github_account));
+ const match=p=>sheetByGithub.get(normalizeGithub(p.github_account))||sheetById.get(p.user_id)||null;
+ const effectiveSheet=(id,github='')=>sheetByGithub.get(normalizeGithub(github))||sheetById.get(id)||null;
+ const periodsFor=(id,github='')=>effectiveSheet(id,github)?.periods||[];
  const nameFor=(userId,github='',fallback='')=>{
   const p=people.find(person=>person.user_id===userId);
-  return savedNames.get(userId)|| (p&&match(p)?.name) ||fallback||p?.display_name||github||'Student';
+  const sheet=effectiveSheet(userId,github);
+  const candidate=[p?.student_name,savedNames.get(userId),fallback,p?.display_name].find(v=>v&&normalizeGithub(v)!==normalizeGithub(github));
+  return sheet?.name||candidate||github||'Student';
  };
- const visible=()=>people.filter(p=>{
+ const fieldsFor=(id,github='',fallback='')=>{const sheet=effectiveSheet(id,github);return {name:nameFor(id,github,fallback),first:sheet?.firstName||sheet?.first_name||'',last:sheet?.lastName||sheet?.last_name||'',github}};
+ const visible=()=>sortRoster(people.filter(p=>{
   const memberships=active(p);
   if(filter==='enrolled'&&(p.kind!=='student'||!memberships.length))return false;
   if(filter==='unassigned'&&(p.kind!=='student'||memberships.length))return false;
   if(filter==='client'&&p.kind!=='client')return false;
   if(filter==='without-sheet'&&match(p))return false;
-  if(sheetPeriod!=='all'&&match(p)?.period!==sheetPeriod)return false;
+  if(sheetPeriod!=='all'&&!periodsFor(p.user_id,p.github_account).includes(sheetPeriod))return false;
   const search=query.toLocaleLowerCase();
-  return !search||[p.github_account,nameFor(p.user_id,p.github_account),match(p)?.name,match(p)?.period,...memberships.map(m=>m.name),...memberships.map(m=>labelFor(m.course_id))].some(s=>String(s).toLocaleLowerCase().includes(search));
- });
- function applySheetRows(rows){
+  return !search||[p.github_account,nameFor(p.user_id,p.github_account),match(p)?.name,...periodsFor(p.user_id,p.github_account),...memberships.map(m=>m.name),...memberships.map(m=>labelFor(m.course_id))].some(s=>String(s).toLocaleLowerCase().includes(search));
+ }),sortBy,p=>fieldsFor(p.user_id,p.github_account,p.student_name||p.display_name));
+ async function applySheetRows(rows,{sync=false}={}){
+  if(disposed)return '';
   sheetRows=Array.isArray(rows)?rows:[];
   duplicateGithub=new Set();
   sheetByGithub=new Map();
@@ -43,21 +52,49 @@ export function mountTeacherDirectory(container,service,{classes=[],onChanged=as
    if(sheetByGithub.has(entry.github)){duplicateGithub.add(entry.github);sheetByGithub.delete(entry.github)}
    else if(!duplicateGithub.has(entry.github))sheetByGithub.set(entry.github,entry);
   }
-  const periods=[...new Set(sheetRows.map(r=>r.period).filter(Boolean))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
-  $('sheet-period').innerHTML='<option value="all">All periods</option>'+periods.map(p=>`<option value="${esc(p)}">${esc(p)}</option>`).join('');
-  sheetPeriod='all';
-  $('sheet-period-label').hidden=!sheetRows.length;
+  const refreshPeriodFilter=()=>{
+   const periods=[...new Set([...sheetById.values(),...sheetByGithub.values()].flatMap(r=>r.periods||[]))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
+   $('sheet-period').innerHTML='<option value="all">All periods</option>'+periods.map(p=>`<option value="${esc(p)}">${esc(p)}</option>`).join('');
+   sheetPeriod=periods.includes(sheetPeriod)?sheetPeriod:'all';
+   $('sheet-period').value=sheetPeriod;
+   $('sheet-period-label').hidden=!periods.length;
+  };
+  refreshPeriodFilter();
   const registered=new Set(people.map(p=>normalizeGithub(p.github_account)));
-  const matched=people.filter(p=>match(p)&&p.kind==='student').length;
+  const matched=people.filter(p=>p.kind==='student'&&sheetByGithub.has(normalizeGithub(p.github_account))).length;
   const missing=[...sheetByGithub.values()].filter(r=>!registered.has(r.github));
   $('sheet-match-summary').textContent=sheetRows.length
-   ? matched+' of '+people.filter(p=>p.kind==='student').length+' registered student accounts matched to Sheet usernames. '+missing.length+' Sheet usernames have no registered account. '+duplicateGithub.size+' duplicate GitHub usernames in the Sheet.'
-   : 'No Sheet loaded. Registered accounts can still be managed by GitHub username.';
-  $('directory-save-sheet-names').disabled=!namesAvailable||!matched;
+   ? matched+' registered student accounts matched. '+missing.length+' GitHub accounts have not registered. '+duplicateGithub.size+' duplicate usernames skipped.'
+   : 'Saved matches remain available across refreshes. Reconnect Google to check updated names and periods.';
   $('sheet-unmatched').innerHTML=missing.length
-   ? '<details><summary>Sheet usernames not registered ('+missing.length+')</summary><p>These students must sign in to Playground with GitHub before you can assign their accounts.</p><ul>'+missing.slice(0,200).map(r=>`<li>@${esc(r.github)} (${esc(r.period||'No period')})</li>`).join('')+'</ul></details>'
+   ? '<details><summary>Sheet usernames not registered ('+missing.length+')</summary><p>Students must sign into Playground before they can be matched.</p><ul>'+
+      missing.slice(0,200).map(r=>`<li>@${esc(r.github)} (${esc((r.periods||[]).join(', ')||'No period')})</li>`).join('')+'</ul></details>'
    :'';
   render();onNamesChanged();
+  if(!sync)return '';
+  if(!sheetSyncAvailable)throw Error('Sheet sync is unavailable. Apply the teacher Sheet roster migration first.');
+  const matchedRows=people.filter(p=>p.kind==='student'&&sheetByGithub.has(normalizeGithub(p.github_account)));
+  if(!matchedRows.length){
+   $('sheet-sync-status').textContent='No registered student accounts matched. No database changes.';
+   return 'No registered student accounts matched.';
+  }
+  const payload=matchedRows.map(p=>{
+   const row=sheetByGithub.get(normalizeGithub(p.github_account));
+   return {user_id:p.user_id,first_name:row.firstName||'',last_name:row.lastName||'',periods:row.periods||[]};
+  });
+  let added=0,updated=0,unchanged=0;
+  for(let i=0;i<payload.length;i+=200){
+   const result=await service.rpc('playground_teacher_sync_sheet',{p_rows:payload.slice(i,i+200)});
+   added+=Number(result.new)||0;updated+=Number(result.updated)||0;unchanged+=Number(result.unchanged)||0;
+  }
+  const stored=await service.rpc('playground_teacher_sheet_roster');
+  if(disposed)return '';
+  sheetById=new Map((Array.isArray(stored)?stored:[]).map(p=>[p.user_id,p]));
+  refreshPeriodFilter();
+  const message='Roster checked: '+added+' new, '+updated+' updated, '+unchanged+' unchanged. Section assignments were not changed.';
+  $('sheet-sync-status').textContent=message;
+  render();onNamesChanged();
+  return message;
  }
  function classSelectOptions(value=''){
   return '<option value="">Select section…</option>'+sections.map(c=>`<option value="${esc(c.id)}" ${c.id===value?'selected':''}>${esc(c.name)} · ${esc(labelFor(c.course_id))}</option>`).join('');
@@ -79,7 +116,7 @@ export function mountTeacherDirectory(container,service,{classes=[],onChanged=as
    const memberships=active(p),sheet=match(p);
    return `<article class="directory-person" data-person="${esc(p.user_id)}">
      <div class="directory-person-id"><label class="directory-person-select"><input type="checkbox" data-check="${esc(p.user_id)}" ${selected.has(p.user_id)?'checked':''} ${p.kind==='client'?'disabled':''} aria-label="Select ${esc(p.github_account)}">
-       <span><strong>${esc(nameFor(p.user_id,p.github_account))}</strong><small>@${esc(p.github_account)}${sheet?.period?' · Sheet period '+esc(sheet.period):''}</small></span></label><div class="directory-name-edit"><label>Student name<input type="text" data-display-name="${esc(p.user_id)}" maxlength="80" value="${esc(savedNames.get(p.user_id)||sheet?.name||'')}" placeholder="Use GitHub username"></label><button type="button" class="secondary" data-save-name="${esc(p.user_id)}" ${namesAvailable?'':'disabled'}>Save name</button><small>${savedNames.has(p.user_id)?'Saved in the teacher directory':sheet?.name?'Sheet name is temporary until saved':'Optional teacher display name'}</small></div></div>
+       <span><strong>${esc(nameFor(p.user_id,p.github_account))}</strong><small>@${esc(p.github_account)}${periodsFor(p.user_id,p.github_account).length?' · Sheet periods '+esc(periodsFor(p.user_id,p.github_account).join(', ')):''}</small></span></label><div class="directory-name-edit"><label>Teacher backup name<input type="text" data-display-name="${esc(p.user_id)}" maxlength="80" value="${esc(savedNames.get(p.user_id)||'')}" placeholder="Optional backup name"></label><button type="button" class="secondary" data-save-name="${esc(p.user_id)}" ${namesAvailable?'':'disabled'}>Save name</button><small>${sheet?.name?'Sheet name is primary':p.student_name?'Student-provided name is the backup':'GitHub username is the backup'}</small></div></div>
      <div class="directory-kind"><label>Account type<select data-kind="${esc(p.user_id)}"><option value="student" ${p.kind==='student'?'selected':''}>Student</option><option value="client" ${p.kind==='client'?'selected':''}>Private client</option></select></label></div>
      <div class="directory-sections"><div class="directory-label">Class sections</div>${memberships.length?memberships.map(m=>`<div class="directory-section"><span>${esc(m.name)} <small>· ${esc(labelFor(m.course_id))}${m.status==='pending'?' · pending':''}</small></span><button class="secondary" data-move="${esc(p.user_id)}" data-from="${esc(m.class_id)}" type="button" ${p.kind==='client'?'disabled':''}>Move</button><button class="secondary" data-remove="${esc(p.user_id)}" data-from="${esc(m.class_id)}" type="button">Remove</button></div>`).join(''):'<span class="directory-unassigned">No class assignment</span>'}</div>
      <div class="directory-assign"><label>Destination section<select data-target="${esc(p.user_id)}" ${p.kind==='client'?'disabled':''}>${classSelectOptions()}</select></label><button type="button" data-add="${esc(p.user_id)}" ${p.kind==='client'||!sections.length?'disabled':''}>Add</button></div>
@@ -101,7 +138,16 @@ export function mountTeacherDirectory(container,service,{classes=[],onChanged=as
     namesAvailable=false;
     tell('Names are temporary until the teacher display names SQL migration is applied. '+(error?.message||''));
    }
-   if(sheetRows.length)applySheetRows(sheetRows);
+   try{
+    const stored=await service.rpc('playground_teacher_sheet_roster');
+    if(disposed||ticket!==request)return;
+    sheetById=new Map((Array.isArray(stored)?stored:[]).map(p=>[p.user_id,p]));
+    sheetSyncAvailable=true;
+   }catch(error){
+    sheetSyncAvailable=false;
+    tell('Saved Sheet roster unavailable: '+(error?.message||'Apply the Sheet sync migration.'));
+   }
+   await applySheetRows(sheetRows,{sync:false});
    selected=new Set([...selected].filter(id=>people.some(p=>p.user_id===id&&p.kind==='student')));
    render();onNamesChanged();
   }catch(error){
@@ -136,18 +182,6 @@ export function mountTeacherDirectory(container,service,{classes=[],onChanged=as
  container.onclick=async e=>{
   const b=e.target.closest('button');if(!b||!container.contains(b))return;
   if(b.id==='directory-refresh'){await reload();return}
-  if(b.id==='directory-save-sheet-names'){
-   const rows=people.filter(p=>p.kind==='student'&&match(p)?.name).map(p=>({user_id:p.user_id,display_name:match(p).name}));
-   if(!rows.length||!namesAvailable)return;
-   if(!confirm('Save '+rows.length+' matched student names in the private teacher directory? This keeps names available after refresh and on other signed-in devices. No Google tokens or Sheet contents are saved.'))return;
-   b.disabled=true;
-   try{
-    let count=0;
-    for(let i=0;i<rows.length;i+=200)count+=await service.rpc('playground_teacher_save_names',{p_rows:rows.slice(i,i+200)});
-    await reload();tell('Saved '+count+' student names.');
-   }catch(error){tell(error?.message||'Could not save matched student names.')}finally{if(b.isConnected)b.disabled=false}
-   return;
-  }
   if(b.hasAttribute('data-save-name')){
    const id=b.dataset.saveName,input=container.querySelector('[data-display-name="'+id+'"]');
    if(!input||!namesAvailable)return;
@@ -155,7 +189,7 @@ export function mountTeacherDirectory(container,service,{classes=[],onChanged=as
    try{
     const name=input.value.trim();await service.rpc('playground_teacher_save_names',{p_rows:[{user_id:id,display_name:name}]});
     if(name)savedNames.set(id,name);else savedNames.delete(id);
-    render();onNamesChanged();tell(name?'Student name saved.':'Name override cleared; GitHub identity will be used.');
+    render();onNamesChanged();tell(name?'Teacher backup name saved.':'Teacher backup name cleared.');
    }catch(error){tell(error?.message||'Could not save the student name.')}finally{if(b.isConnected)b.disabled=false}
    return;
   }
@@ -167,6 +201,7 @@ export function mountTeacherDirectory(container,service,{classes=[],onChanged=as
  container.onchange=async e=>{
   const t=e.target;
   if(t.id==='directory-filter'){filter=t.value;render();return}
+   if(t.id==='directory-sort'){sortBy=t.value;onSortChange(sortBy);render();return}
   if(t.id==='directory-select-visible'){
    for(const p of visible().filter(p=>p.kind==='student'))t.checked?selected.add(p.user_id):selected.delete(p.user_id);
    render();return
@@ -202,5 +237,5 @@ export function mountTeacherDirectory(container,service,{classes=[],onChanged=as
   finally{if(b.isConnected)b.disabled=false}
  };
  refreshControls();
- return {reload,nameFor,setClasses(newClasses){sections=newClasses;render()},dispose(){disposed=true;request++;sheetBridge.dispose();sheetRows=[];sheetByGithub.clear()}};
+ return {reload,nameFor,fieldsFor,periodsFor,setSort(value){sortBy=value;$('directory-sort').value=value;render()},setClasses(newClasses){sections=newClasses;render()},dispose(){disposed=true;request++;sheetBridge.dispose();sheetRows=[];sheetByGithub.clear()}};
 }

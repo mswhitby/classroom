@@ -689,3 +689,8 @@ body.pg-app #sidebar .class-menu { z-index:100;overflow-x:hidden }
 .pg-app #section-student-details > h3 { margin:24px 0 10px }
 .pg-app #section-student-details .fine { font-size:12px }
 .pg-app .teacher-table td button { white-space:nowrap }
+
+/* One alphabetical order setting for Accounts and Class Overview. */
+.pg-app .roster-sort-label{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:12px 0 18px;font-size:13px;color:var(--soft)}
+.pg-app .roster-sort-label select{padding:8px 10px;min-width:170px;border:1px solid var(--border);border-radius:8px;color:var(--text);background:var(--code-bg)}
+.pg-app #sheet-sync-status{font-size:13px}
