@@ -9,7 +9,9 @@ order: 2
 
 [Mobile App Playground](https://www.mswhitby.com/playground/#/course/mobile-app-dev)
 - Class Code: 14A42C6F3B
-- Sign in with GitHub to submit work
+- Sign in with GitHub and join your class section to get credit for creating an account
+- Write a list of improvements that can be made to the platform or features that could be added.
+The list should have five items.
 
 # Week of Oct. 13
 
