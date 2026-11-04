@@ -30,11 +30,12 @@ export function mountSubmission({anchor,course_id,activity_id,activity_kind,getF
  const status=document.createElement('p');status.setAttribute('role','status');
  let busy=false,version=0;
  async function showGrade(id,current){
-  for(let attempt=0;attempt<30;attempt++){
+  for(let attempt=0;attempt<90;attempt++){
    if(!box.isConnected||current!==version)return;
    try{const result=await grade(id);if(!box.isConnected||current!==version)return;status.textContent='Submitted · '+gradeLabel(result);document.dispatchEvent(new CustomEvent('playground-graded',{detail:{id,course_id,activity_id,grade:result}}));if(!['queued','running'].includes(result?.status))return}catch{status.textContent='Submitted · Grade unavailable';return}
-   await new Promise(resolve=>setTimeout(resolve,3000));
+   await new Promise(resolve=>setTimeout(resolve,attempt<10?3000:10000));
   }
+  if(box.isConnected&&current===version)status.textContent='Submitted · Grading continues in Grades';
  }
 
  button.onclick=async()=>{
