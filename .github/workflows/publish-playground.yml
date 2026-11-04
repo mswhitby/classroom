@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: mswhitby/playground
-          ref: 3d888774c6aa3609cdece39645520e4957155f60
+          ref: afdd21d54e867bba617e27325b9c9d9a4f3387c4
           path: playground
       - uses: actions/checkout@v4
         with:
