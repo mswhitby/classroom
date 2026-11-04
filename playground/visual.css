@@ -645,9 +645,10 @@ body.pg-app #sidebar .class-menu { z-index:100;overflow-x:hidden }
 .pg-app .study-instructions h2,.pg-app .study-instructions h3 { font-size:16px;line-height:1.5;margin-top:22px;margin-bottom:6px }
 .pg-app .study-instructions pre { font-size:13px }
 .pg-app .study-instructions p { margin-bottom:16px }
-.lesson-link .lname { white-space:normal;overflow:visible;text-overflow:clip;line-height:1.4 }
-.lesson-link { align-items:flex-start;min-height:34px }
 
 .challenge-filters { display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px;margin:0 0 12px }
 .challenge-filters button { border-radius:999px;padding:7px 12px;font-size:12px;background:var(--surface);border:1px solid var(--border);color:var(--soft) }
 .challenge-filters button[aria-pressed=true] { background:var(--text);color:var(--bg) }
+
+.sidebar-full-title { position:fixed;z-index:120;max-width:min(340px,calc(100vw - 16px));padding:10px 14px;border:1px solid var(--border-strong);border-radius:8px;background:var(--surface-2);color:var(--text);font:13px/1.5 var(--font);box-shadow:0 6px 24px #0005;overflow-wrap:anywhere;pointer-events:none }
+.sidebar-full-title[hidden] { display:none }
