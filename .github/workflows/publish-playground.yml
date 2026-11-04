@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: mswhitby/playground
-          ref: 1c06268badf7d6adc7bf91156089fa42bee47302
+          ref: 3d888774c6aa3609cdece39645520e4957155f60
           path: playground
       - uses: actions/checkout@v4
         with:
@@ -56,7 +56,7 @@ jobs:
           python scripts/build.py
           npx playwright install --with-deps chromium
           npm run test:browser
-          python -c "from pathlib import Path; assert not [p for p in Path('dist').rglob('*') if p.suffix.lower() in {'.woff', '.woff2', '.ttf', '.otf'}], 'Font binaries must not be published'"
+          python scripts/verify-font-assets.py
       - name: Update only the two course deployment folders
         run: |
           rsync -a --delete playground/dist/ site/playground/
@@ -70,7 +70,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add playground computer-science-1
           if ! git diff --cached --quiet; then
-            git commit -m 'Restore black shell and refine lesson reading content'
+            git commit -m 'Use licensed Inter and correct script-only examples'
             git push origin HEAD:main
           fi
           gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
