@@ -1,6 +1,7 @@
 // Teacher-only account directory: all registered GitHub accounts, not a pasted roster.
 import {mountGoogleSheetRoster,normalizeGithub} from './google-sheet-roster.mjs?v=dual-period-1';
 import {sortRoster} from './roster-sort.mjs?v=dual-period-1';
+import {availableRosterPeriods,rosterPeriodsForStudent} from './roster-periods.mjs?v=all-periods-1';
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const labelFor=course=>({'computer-science-1':'Computer Science I','game-programming':'Game Programming & Design','mobile-app-dev':'Mobile App & Web',uil:'UIL Computer Science',capstone:'Capstone'})[course]||course;
 
@@ -13,7 +14,7 @@ export function mountTeacherDirectory(container,service,{classes=[],sort='last',
   <label>Find an account<input id="directory-search" type="search" placeholder="Name, GitHub username, or section" autocomplete="off"></label>
   <label>Sort students by<select id="directory-sort"><option value="last">Last name</option><option value="first">First name</option><option value="github">GitHub username</option></select></label>
   <label>Show<select id="directory-filter"><option value="all">All accounts</option><option value="enrolled">Enrolled students</option><option value="unassigned">Unassigned students</option><option value="client">Private clients</option><option value="without-sheet">No Sheet match</option></select></label>
-  <label id="sheet-period-label" hidden>Sheet class period<select id="sheet-period"><option value="all">All periods</option></select></label>
+  <label id="sheet-period-label" hidden>Class period<select id="sheet-period"><option value="all">All periods</option></select></label>
   <button id="directory-refresh" class="secondary" type="button">Refresh accounts</button>
  </div>
  <div class="directory-bulk"><label><input id="directory-select-visible" type="checkbox"> Select visible students</label><label>Add selected to <select id="directory-bulk-class"></select></label><button id="directory-bulk-add" type="button">Add selected</button></div>
@@ -26,6 +27,7 @@ export function mountTeacherDirectory(container,service,{classes=[],sort='last',
  const match=p=>sheetByGithub.get(normalizeGithub(p.github_account))||sheetById.get(p.user_id)||null;
  const effectiveSheet=(id,github='')=>sheetByGithub.get(normalizeGithub(github))||sheetById.get(id)||null;
  const periodsFor=(id,github='')=>effectiveSheet(id,github)?.periods||[];
+ const filterPeriodsFor=p=>rosterPeriodsForStudent(periodsFor(p.user_id,p.github_account),active(p));
  const nameFor=(userId,github='',fallback='')=>{
   const p=people.find(person=>person.user_id===userId);
   const sheet=effectiveSheet(userId,github);
@@ -39,7 +41,7 @@ export function mountTeacherDirectory(container,service,{classes=[],sort='last',
   if(filter==='unassigned'&&(p.kind!=='student'||memberships.length))return false;
   if(filter==='client'&&p.kind!=='client')return false;
   if(filter==='without-sheet'&&match(p))return false;
-  if(sheetPeriod!=='all'&&!periodsFor(p.user_id,p.github_account).includes(sheetPeriod))return false;
+  if(sheetPeriod!=='all'&&!filterPeriodsFor(p).includes(sheetPeriod))return false;
   const search=query.toLocaleLowerCase();
   return !search||[p.github_account,nameFor(p.user_id,p.github_account),match(p)?.name,...periodsFor(p.user_id,p.github_account),...memberships.map(m=>m.name),...memberships.map(m=>labelFor(m.course_id))].some(s=>String(s).toLocaleLowerCase().includes(search));
  }),sortBy,p=>fieldsFor(p.user_id,p.github_account,p.student_name||p.display_name));
@@ -53,7 +55,7 @@ export function mountTeacherDirectory(container,service,{classes=[],sort='last',
    else if(!duplicateGithub.has(entry.github))sheetByGithub.set(entry.github,entry);
   }
   const refreshPeriodFilter=()=>{
-   const periods=[...new Set([...sheetById.values(),...sheetByGithub.values()].flatMap(r=>r.periods||[]))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
+   const periods=availableRosterPeriods(sections,[...sheetById.values(),...sheetRows],people);
    $('sheet-period').innerHTML='<option value="all">All periods</option>'+periods.map(p=>`<option value="${esc(p)}">${esc(p)}</option>`).join('');
    sheetPeriod=periods.includes(sheetPeriod)?sheetPeriod:'all';
    $('sheet-period').value=sheetPeriod;
@@ -237,5 +239,5 @@ export function mountTeacherDirectory(container,service,{classes=[],sort='last',
   finally{if(b.isConnected)b.disabled=false}
  };
  refreshControls();
- return {reload,nameFor,fieldsFor,periodsFor,setSort(value){sortBy=value;$('directory-sort').value=value;render()},setClasses(newClasses){sections=newClasses;render()},dispose(){disposed=true;request++;sheetBridge.dispose();sheetRows=[];sheetByGithub.clear()}};
+ return {reload,nameFor,fieldsFor,periodsFor,setSort(value){sortBy=value;$('directory-sort').value=value;render()},setClasses(newClasses){sections=newClasses;applySheetRows(sheetRows,{sync:false})},dispose(){disposed=true;request++;sheetBridge.dispose();sheetRows=[];sheetByGithub.clear()}};
 }
