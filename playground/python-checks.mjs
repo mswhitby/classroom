@@ -24,3 +24,17 @@ export function harness(source,cases){
  ].join("\n")
 }
 export function normalize(s){return String(s||"").replace(/\r\n/g,"\n").replace(/\n$/,"")}
+
+// Run a published function call without requiring students to print a return value.
+export function previewHarness(source,call){return [
+ 'import ast as __ast, io as __io, json as __json, contextlib as __ctx',
+ '__env={"__name__":"student"}',
+ '__stream=__io.StringIO()',
+ 'with __ctx.redirect_stdout(__stream):',
+ '    exec(compile('+JSON.stringify(source)+',"main.py","exec"),__env)',
+ '    __name='+JSON.stringify(call.split('(',1)[0].trim()),
+ '    if __name not in __env and callable(__env.get("solution")): __env[__name]=__env["solution"]',
+ '    __value=eval(compile(__ast.parse('+JSON.stringify(call)+',mode="eval"),"sample call","eval"),__env)',
+ 'print("PLAYGROUND_PREVIEW="+__json.dumps({"call":'+JSON.stringify(call)+',"returned":repr(__value)[:5000],"printed":__stream.getvalue()[:10000]}))'
+].join('\n')}
+export function publicScore(passed,total,points){return {passedCases:passed,totalCases:total,points:Math.round(points*passed/total*100)/100,possible:points,scope:'public_examples'}}

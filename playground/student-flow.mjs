@@ -1,4 +1,4 @@
-import {ensureWorkspaceResize} from './workspace-resize.mjs?v=units-1';
+import {ensureWorkspaceResize} from './workspace-resize.mjs?v=feedback-2';
 let serial=0;
 // Move the existing live controls and content; never duplicate editors or student code.
 export function tabPanels(host,items,label){
@@ -54,7 +54,12 @@ export function workspaceTabs(workspace){
  if(run)run.textContent='Run';if(check){check.hidden=false;check.textContent='Check'}toolbar.classList.add('ws-actions');
  const more=document.createElement('details');more.className='student-more';const summary=document.createElement('summary');summary.textContent='More';more.append(summary);
  for(const b of [...toolbar.querySelectorAll(':scope > button')]){if(b===run||b===check||/reset|stop/.test(b.id))continue;if(/save/.test(b.id))b.hidden=true;else more.append(b)}
- for(const a of [...toolbar.querySelectorAll(':scope > a')])more.append(a);if(more.children.length>1)toolbar.append(more);
+ for(const a of [...toolbar.querySelectorAll(':scope > a')])more.append(a);
+ const flag=document.createElement('button');flag.type='button';flag.textContent='Flag for teacher review';flag.onclick=()=>{
+  const dialog=document.createElement('dialog');dialog.className='review-dialog';dialog.setAttribute('aria-label','Flag for teacher review');
+  dialog.innerHTML='<form><h2>Flag for teacher review</h2><p>Describe the issue with the task or result. Your teacher receives this activity and your note. This does not submit your work.</p><label>Your note<textarea name="note" rows="4" maxlength="1000" required></textarea></label><p role="status"></p><div class="actions"><button type="button" data-cancel>Cancel</button><button type="submit">Send flag</button></div></form>';
+  document.body.append(dialog);dialog.querySelector('[data-cancel]').onclick=()=>dialog.close();dialog.addEventListener('close',()=>dialog.remove(),{once:true});dialog.querySelector('form').onsubmit=async e=>{e.preventDefault();const button=dialog.querySelector('[type=submit]'),status=dialog.querySelector('[role=status]');button.disabled=true;try{await window.PlaygroundAccount.flagForReview(dialog.querySelector('textarea').value);status.textContent='Flag saved for your teacher. Your work has not been submitted.';button.hidden=true;dialog.querySelector('[data-cancel]').textContent='Close'}catch(error){status.textContent=error.message;button.disabled=false}};dialog.showModal();dialog.querySelector('textarea').focus();
+ };more.append(flag);toolbar.append(more);
  const submission=find('.submission-actions'),pageHead=workspace.closest('article')?.querySelector('.lesson-heading');if(submission&&pageHead){submission.classList.add('ws-submit');pageHead.append(submission)}
  const editorGrip=find('.study-resize-height,.resize-height');if(editorGrip)editorGrip.after(toolbar);
  const result=document.createElement('div');result.className='ws-output';result.setAttribute('aria-label','Program output and checks');

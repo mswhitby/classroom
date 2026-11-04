@@ -1,4 +1,4 @@
-import {courseUnits,unitHref} from './course-navigation.mjs?v=units-1';
+import {courseUnits,unitHref} from './course-navigation.mjs?v=feedback-2';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export async function unitPage(main,course,id){
  const route=location.hash,r=await fetch('data/'+course.id+'/course.json');if(!r.ok)throw Error('Course unavailable');const manifest=await r.json();if(location.hash!==route)return;

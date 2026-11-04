@@ -606,3 +606,19 @@ body.pg-app #sidebar button.unit-toggle { display:grid;place-items:center;flex:n
 .lesson-number { font-weight:400;color:var(--soft) }
 body.pg-app .ws-head .ws-back { max-width:30%;white-space:normal;line-height:1.4 }
 @media(max-width:900px){body.pg-app #sidebar .class-menu{position:fixed;left:8px;right:8px;top:66px;width:auto}body.pg-app .ws-head .ws-back{max-width:100%;font-size:12px}.pg-app .ws-head{flex-wrap:wrap}.pg-app .ws-head h1{min-width:0;overflow-wrap:anywhere}}
+/* Higher-contrast dark surfaces, with code and hints visually separated. */
+:root[data-theme=dark]{--bg:#0d1117;--bar:#161b22;--surface:#161b22;--surface-2:#21262d;--code-bg:#161b22;--border:#30363d;--border-strong:#484f58;--text:#e6edf3;--soft:#c9d1d9;--muted:#9da7b3;--pass-fg:#3fb950;--fail-fg:#ff7b72}
+:root[data-theme=light]{--code-bg:#f6f8fa;--border:#d0d7de;--muted:#57606a}
+.pg-app .markdown-body pre,.pg-app .student-practice pre,.pg-app .student-learn pre { background:var(--surface-2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;color:var(--text) }
+.pg-app .markdown-body code:not(pre code),.pg-app .student-practice code:not(pre code),.pg-app .student-learn code:not(pre code){background:var(--surface-2);padding:2px 5px;border-radius:5px;color:var(--text)}
+.pg-app .student-practice>details,.pg-app .student-practice #hints details,.pg-app .student-practice #lesson-hints details { background:rgba(210,153,34,.08);border:1px solid rgba(210,153,34,.3);border-left:3px solid #d29922;border-radius:8px;margin:12px 0;padding:12px 14px }
+.pg-app .student-practice details summary { color:var(--text);font-weight:500;cursor:pointer }
+.pg-app .learn-try { background:rgba(88,166,255,.08);border-left:3px solid #58a6ff;padding:14px;border-radius:6px;color:var(--soft) }
+.pg-app .review-dialog { width:min(520px,calc(100vw - 32px));padding:24px;background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:12px }
+.pg-app .review-dialog::backdrop { background:#0009 }
+.pg-app .review-dialog label { display:grid;gap:8px }
+.pg-app .review-dialog textarea { width:100%;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:8px;padding:12px;font:inherit }
+.pg-app .review-dialog p { line-height:1.6;color:var(--soft) }
+.activity-submitted { font-size:12px;color:var(--muted);white-space:nowrap }
+.activity-submitted.is-submitted,[data-python-submitted].is-submitted { color:var(--pass-fg) }
+.pg-app .ws-output .check-next { margin:0 0 14px;color:var(--soft) }

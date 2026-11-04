@@ -5,6 +5,7 @@ const json=value=>{try{return JSON.parse(value)}catch{return null}};
 const binding=(course_id,activity_id,activity_kind,type,file_name='main')=>({course_id,activity_id,activity_kind,type,file_name});
 export function describeKey(key){
  let m;
+ if((m=/^playground:python-check:((?:lesson|challenge):.+)$/.exec(key)))return binding('computer-science-1',m[1],m[1].startsWith('challenge:')?'challenge':'lesson','progress');
  if((m=/^playground:draft:game-programming:(.+)$/.exec(key)))return binding('game-programming',m[1],'programming','draft');
  if((m=/^playground:quiz-answers:game-programming:(.+)$/.exec(key)))return binding('game-programming',m[1],'quiz','draft','answers.json');
  if((m=/^playground:draft:mobile-app-dev:(.+)$/.exec(key)))return binding('mobile-app-dev',m[1],m[1].startsWith('project:')?'project':'lesson','draft');

@@ -11,7 +11,7 @@
  media.addEventListener('change',apply);addEventListener('storage',e=>{if(e.key===key){preference=load();apply()}});
  document.addEventListener('change',e=>{if(e.target.matches('[data-theme-select],#theme'))set(e.target.value)});
  document.addEventListener('DOMContentLoaded',()=>{
-  if(shellSource&&!location.pathname.endsWith('/auth-callback.html'))import(new URL('./redesign-shell.mjs?v=units-1',shellSource)).catch(()=>{});
+  if(shellSource&&!location.pathname.endsWith('/auth-callback.html'))import(new URL('./redesign-shell.mjs?v=feedback-2',shellSource)).catch(()=>{});
   document.querySelectorAll('[data-theme-select]').forEach(select=>{
    select.innerHTML='<option value="system">Use device setting</option><option value="light">Light</option><option value="dark">Dark</option>';
    const picker=select.closest('.theme-picker');if(picker){

@@ -1,5 +1,5 @@
-import {renderCheckCards} from './check-cards.mjs?v=units-1';
-import {setupStudyLayout} from './study-layout.mjs?v=units-1';
+import {renderCheckCards} from './check-cards.mjs?v=feedback-2';
+import {setupStudyLayout} from './study-layout.mjs?v=feedback-2';
 import {JavaRunner} from './java-runner.mjs';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const base='#/course/uil',data='data/uil/';

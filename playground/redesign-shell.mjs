@@ -1,5 +1,5 @@
-import {submittedActivities,submissionKey} from './submission-history.mjs?v=units-1';
-import {accountCourses,forgetCourseSections,courseUnits,unitHref} from './course-navigation.mjs?v=units-1';
+import {submittedActivities,submissionKey} from './submission-history.mjs?v=feedback-2';
+import {accountCourses,forgetCourseSections,courseUnits,unitHref} from './course-navigation.mjs?v=feedback-2';
 const root=new URL('./',import.meta.url),main=document.getElementById('main'),sidebar=document.getElementById('sidebar');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const href=id=>'#/course/'+id;
@@ -26,23 +26,26 @@ async function refreshSubmissions(){
 }
 document.addEventListener('playground-account-ready',refreshSubmissions);
 document.addEventListener('playground-submitted',e=>{const r=e.detail;if(window.PlaygroundAccount?.signedIn&&r?.id&&r.submitted_at){submissionVersion++;submitted.add(submissionKey(r.course_id,r.activity_id));sync(true)}});
-function completed(course,item){return !item.checkpoint&&submitted.has(submissionKey(course,course==='computer-science-1'?'lesson:'+item.id:item.activity||item.id))}
+function completed(course,item){return !item.checkpoint&&submitted.has(submissionKey(course,course==='computer-science-1'?(item.challenge?'challenge:':'lesson:')+item.id:item.activity||item.id))}
 function tile(id){const m=metadata[id]||['{ }','','--tile-py'];return '<span class="tile tile-xs" style="background:var('+m[2]+')">'+m[0]+'</span>'}
 let signature='';
 function sync(force=false){
  if(!main||!sidebar)return;
+ for(const badge of main.querySelectorAll('[data-activity-submitted]')){const done=submitted.has(submissionKey(badge.dataset.course,badge.dataset.activitySubmitted));const label=done?'✓ Submitted':'Not submitted';if(badge.textContent!==label)badge.textContent=label;badge.classList.toggle('is-submitted',done)}
+ for(const cell of main.querySelectorAll('[data-python-submitted]')){const done=submitted.has(submissionKey('computer-science-1',cell.dataset.pythonSubmitted));const label=done?'✓ Submitted':'Not submitted';if(cell.textContent!==label)cell.textContent=label;cell.classList.toggle('is-submitted',done)}
  const parts=location.hash.replace(/^#\/?/,'').split('/').filter(Boolean).map(x=>{try{return decodeURIComponent(x)}catch{return x}});
  const course=parts[0]==='course'?catalog.find(c=>c.id===parts[1]):parts[0]==='progress'?catalog.find(c=>c.id===parts[1]):null,workspace=document.body.classList.contains('ws');
  sidebar.hidden=!course;sidebar.inert=innerWidth<=900&&!sidebar.classList.contains('open');main.classList.toggle('main-centered',!course);document.getElementById('menu-toggle').hidden=!course;
- const progress=course?entries(course).flatMap(g=>g.items.map(i=>completed(course.id,i)?'1':'0')).join(''):'';const key=location.hash+'|'+workspace+'|'+progress;if(!force&&key===signature)return;signature=key;if(!course)return;
+ const progress=course?[...entries(course),{items:(manifests.get(course.id)?.challenges||[]).map(l=>({id:l.id,challenge:true}))}].flatMap(g=>g.items.map(i=>completed(course.id,i)?'1':'0')).join(''):'';const key=location.hash+'|'+workspace+'|'+progress;if(!force&&key===signature)return;signature=key;if(!course)return;
  const storageKey=workspace?'pg-sb-collapsed-ws':'pg-sb-collapsed',collapsed=read(storageKey,workspace?'1':'0')==='1';
  sidebar.classList.toggle('collapsed',collapsed);
  const selected=parts.at(-1),section=parts[0]==='progress'?'grades':parts[2]==='practice'||parts[2]==='projects'?'practice':'lessons';
  if(workspace){save('playground:last:'+course.id,JSON.stringify({title:main.querySelector('h1')?.textContent||'Continue lesson',url:location.hash}))}
  const rows=menuCourses.map(c=>'<div class="class-row"><div class="class-name">'+tile(c.id)+esc(c.title)+'</div><div class="sections"><a href="'+href(c.id)+'">Lessons</a><a href="'+practice(c.id)+'">Practice</a><a href="'+grade(c.id)+'">Grades</a></div></div>').join('');
- const groups=entries(course).map(g=>{
+ const outline=parts[2]==='challenge'||parts[2]==='practice'&&course.id==='computer-science-1'?[{id:'challenges',title:'Challenges',items:(manifests.get(course.id)?.challenges||[]).map(l=>({id:l.id,activity:'challenge:'+l.id,title:l.title,url:href(course.id)+'/challenge/'+encodeURIComponent(l.id),challenge:true}))}]:entries(course);
+ const groups=outline.map(g=>{
   const count=g.items.filter(i=>!i.checkpoint).length,done=g.items.filter(i=>completed(course.id,i)).length,active=parts[2]==='unit'&&g.id===selected||g.items.some(i=>i.id===selected),open=read('pg-open:'+course.id+':'+g.id,active?'1':'0')==='1';
-  const url=g.project?g.items[0]?.url:unitHref(course.id,g.id),label=g.label||'Project';
+  const url=g.id==='challenges'?practice(course.id):g.project?g.items[0]?.url:unitHref(course.id,g.id),label=g.label||'Project';
   return '<div class="unit-row'+(active?' is-current':'')+'"><button type="button" class="unit-toggle" data-unit="'+esc(g.id)+'" aria-label="'+(open?'Collapse':'Expand')+' '+label.toLowerCase()+' '+(g.number||esc(g.title))+'" aria-expanded="'+open+'"><span class="caret">›</span></button><a class="unit-title" href="'+url+'" '+(parts[2]==='unit'&&g.id===selected?'aria-current="page"':'')+'>'+ (g.number?'<span class="num">'+String(g.number).padStart(2,'0')+'</span>':'')+'<span class="uname">'+esc(g.title)+'</span></a>'+(course.id==='tsi-math'?'':'<span class="unit-progress" aria-label="'+done+' of '+count+' submitted">'+(done===count?'✓':done+'/'+count)+'</span>')+'</div><ul class="lessons" data-unit-items="'+esc(g.id)+'" '+(open?'':'hidden')+'>'+g.items.map(i=>'<li><a class="lesson-link" href="'+i.url+'" '+(i.id===selected?'aria-current="page"':'')+'>'+(course.id==='tsi-math'||i.checkpoint?'':'<span class="lesson-completion '+(completed(course.id,i)?'is-complete':'')+'" aria-label="'+(completed(course.id,i)?'Submitted':'Not submitted')+'">'+(completed(course.id,i)?'✓':'·')+'</span>')+'<span class="lname">'+esc(i.title)+'</span></a></li>').join('')+'</ul>';
  }).join('');
  const nav=(key,url,icon,label)=>'<a class="nav-link" href="'+url+'" title="'+label+'" '+(key===section?'aria-current="page"':'')+'><span class="ico" aria-hidden="true">'+icon+'</span><span class="grow">'+label+'</span></a>';

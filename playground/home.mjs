@@ -1,4 +1,4 @@
-import {accountCourses} from './course-navigation.mjs?v=units-1';
+import {accountCourses} from './course-navigation.mjs?v=feedback-2';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const meta={'computer-science-1':['py','Python','--tile-py'],'game-programming':['c#','C# · Unity','--tile-cs'],'mobile-app-dev':['js','HTML · CSS · JavaScript','--tile-js'],uil:['jv','Java','--tile-jv'],capstone:['++','Capstone','--tile-cap'],'tsi-math':['ma','Math · Open access','--tile-cap']};
 export async function homePage(main,catalog,Account,game){

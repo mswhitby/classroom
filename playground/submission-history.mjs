@@ -1,5 +1,5 @@
 export const submissionKey=(course,activity)=>course+'|'+activity;
-export function submittedActivities(rows){return new Set(rows.filter(r=>r.id&&r.submitted_at&&r.course_id&&r.activity_id).map(r=>submissionKey(r.course_id,r.activity_id)))}
+export function submittedActivities(rows){return new Set(rows.filter(r=>r.id&&r.submitted_at&&r.course_id&&r.activity_id&&!r.activity_id.startsWith('review:')).map(r=>submissionKey(r.course_id,r.activity_id)))}
 export async function loadSubmissionHistory(client,userId){
  if(!userId)return [];
  const rows=[];
