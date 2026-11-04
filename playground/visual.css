@@ -674,3 +674,18 @@ body.pg-app #sidebar .class-menu { z-index:100;overflow-x:hidden }
  .pg-app .study-instructions table.examples:has(thead th:nth-child(2)) td { display:block;padding:0 }
  .pg-app .study-instructions table.examples:has(thead th:nth-child(2)) td::before { content:attr(data-label);display:block;color:var(--muted);font:12px/1.5 var(--font) }
 }
+
+/* Teacher-only student names and section drilldowns. */
+.pg-app .directory-name-edit { display:flex;flex-wrap:wrap;align-items:end;gap:8px;margin:12px 0 0 30px }
+.pg-app .directory-name-edit label { flex:1 1 160px;min-width:0;font-size:12px;display:grid;gap:5px }
+.pg-app .directory-name-edit input { width:100%;min-width:0;padding:8px;border:1px solid var(--border);border-radius:8px }
+.pg-app .directory-name-edit small { flex-basis:100%;font-size:11px }
+.pg-app #directory-save-sheet-names { margin:10px 0 }
+.pg-app .student-detail-heading { display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap }
+.pg-app .student-detail-facts { display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin:20px 0 }
+.pg-app .student-detail-facts > div { padding:12px;background:var(--surface-2);border:1px solid var(--border);border-radius:10px;min-width:0 }
+.pg-app .student-detail-facts dt { color:var(--muted);font-size:12px;margin-bottom:6px }
+.pg-app .student-detail-facts dd { color:var(--text);margin:0;font-size:14px;overflow-wrap:anywhere }
+.pg-app #section-student-details > h3 { margin:24px 0 10px }
+.pg-app #section-student-details .fine { font-size:12px }
+.pg-app .teacher-table td button { white-space:nowrap }
