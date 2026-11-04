@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: mswhitby/playground
-          ref: 49289af3dfa816cb02682e2373652bf64536e8fd
+          ref: 75d8dc16e4c02643cb6002dd45f3659ecf8db3bd
           path: playground
       - uses: actions/checkout@v4
         with:
@@ -70,7 +70,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add playground computer-science-1
           if ! git diff --cached --quiet; then
-            git commit -m 'Restore compact sidebar and full-title previews'
+            git commit -m 'Show recorded scores and refine lesson reading'
             git push origin HEAD:main
           fi
           gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
