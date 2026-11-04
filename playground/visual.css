@@ -639,3 +639,15 @@ body.pg-app #sidebar .class-menu { z-index:100;overflow-x:hidden }
 .other-playground { display:inline-flex;align-items:center;gap:9px;min-height:44px;padding:7px 12px 7px 9px;background:var(--surface);border:1px solid var(--border);border-radius:10px;font-size:13px;color:var(--text) }
 .other-playground:hover { background:var(--surface-2);text-decoration:none;border-color:var(--border-strong) }
 .other-playground .tile-xs { width:22px;height:22px;font-size:9px;border-radius:6px }
+
+/* Match the mock's reading sizes; keep the black shell and editor styling. */
+.pg-app .study-instructions,.pg-app .study-instructions .markdown-body { font-size:15px;line-height:1.5 }
+.pg-app .study-instructions h2,.pg-app .study-instructions h3 { font-size:16px;line-height:1.5;margin-top:22px;margin-bottom:6px }
+.pg-app .study-instructions pre { font-size:13px }
+.pg-app .study-instructions p { margin-bottom:16px }
+.lesson-link .lname { white-space:normal;overflow:visible;text-overflow:clip;line-height:1.4 }
+.lesson-link { align-items:flex-start;min-height:34px }
+
+.challenge-filters { display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px;margin:0 0 12px }
+.challenge-filters button { border-radius:999px;padding:7px 12px;font-size:12px;background:var(--surface);border:1px solid var(--border);color:var(--soft) }
+.challenge-filters button[aria-pressed=true] { background:var(--text);color:var(--bg) }

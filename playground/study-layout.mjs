@@ -1,4 +1,4 @@
-import {practiceTabs,workspaceTabs,taskSection} from './student-flow.mjs?v=reading-1';
+import {practiceTabs,workspaceTabs,taskSection} from './student-flow.mjs?v=solve-1';
 let currentCleanup=()=>{};
 export function disposeStudyLayout(){currentCleanup();currentCleanup=()=>{};document.body.classList.remove('study-page','ws','workspace-expanded','workspace-resizing');document.querySelector('main')?.classList.remove('study-main')}
 const separator=(label,orientation)=>{const e=document.createElement('div');e.className=orientation==='vertical'?'study-resize-width':'study-resize-height';e.tabIndex=0;e.setAttribute('role','separator');e.setAttribute('aria-label',label);e.setAttribute('aria-orientation',orientation);e.title=orientation==='vertical'?'Drag to change the lesson and coding widths. Arrow keys also work.':'Drag to change the height. Arrow keys also work.';return e};

@@ -31,18 +31,18 @@ export function practiceTabs(copy,{objective,input,expected,submit,practiceNodes
   // Use the actual published prose when no exercise-specific hints exist.
   {const prose=lesson.querySelector('.markdown-body');if(prose){const sections=[];let section;for(const node of prose.children){if(node.tagName==='H2'){section=/practice|your task|your turn|reflection|hints/i.test(node.textContent)?null:{title:node.textContent,nodes:[]};if(section)sections.push(section)}else if(section)section.nodes.push(node)}steps.splice(1,0,...sections.filter(s=>s.nodes.length).slice(0,4))}}
   if(steps.length===1){for(const [selector,title] of [['#parameters','Identify the inputs'],['#behavior','Plan the required behavior'],['#examples,#case-list','Trace the published examples']]){const node=practice.querySelector(selector);if(node)steps.push({title,nodes:[node]})}}
-  steps.push({title:'Test and explain your solution',check:true});
+  steps.push({title:'Check your solution',check:true});
   step=Math.min(step,steps.length-1);guide.replaceChildren();
   const status=document.createElement('p');status.className='learn-status';status.setAttribute('role','status');status.textContent=`Step ${step+1} of ${steps.length}`;
   const h=document.createElement('h3');h.textContent=steps[step].title;guide.append(status,h);
   for(const node of steps[step].nodes||[]){const clone=node.cloneNode(true);for(const el of [clone,...clone.querySelectorAll('*')]){el.removeAttribute('id');el.removeAttribute('for');el.removeAttribute('aria-controls');el.removeAttribute('aria-labelledby')}clone.querySelectorAll('input,textarea,button,select').forEach(n=>n.remove());guide.append(clone)}
-  const prompt=document.createElement('p');prompt.className='learn-try';prompt.textContent=step===0?'Try it: predict one published example before editing. Identify the inputs and the required result.':steps[step].check?'Run your code, compare the actual result with every published example, and explain any change you made. Submit when you are ready.':'Try it: apply this idea to the same task in your editor. Run your code and compare the result before continuing.';guide.append(prompt);
+  const prompt=document.createElement('p');prompt.className='learn-try';prompt.textContent=step===0?'Read the task, then try an example.':steps[step].check?'Check your code. Submit when you’re ready.':'Try this step in your editor.';guide.append(prompt);
   if(steps[step].check){const check=document.createElement('button');check.type='button';check.textContent='Check my code';check.onclick=()=>{const workspace=copy.closest('.study-grid,.grid')?.querySelector('.workspace');const control=workspace?.querySelector('#check-code,#mobile-check,#project-check,#uil-check,#check');control?.click();workspace?.querySelector('[data-result-tests]')?.click()};guide.append(check)}
   const nav=document.createElement('div');nav.className='learn-navigation';for(const [label,delta] of [['Back',-1],['Next step',1]]){const button=document.createElement('button');button.type='button';button.textContent=label;button.className='secondary';button.disabled=delta<0?step===0:step===steps.length-1;button.onclick=()=>{step+=delta;build();guide.querySelector('h3').tabIndex=-1;guide.querySelector('h3').focus()};nav.append(button)}guide.append(nav);
  };
  const head=copy.querySelector('.study-panel-heading,.panel-heading');if(head)head.hidden=true;
- tabPanels(content,[['Practice',practice],['Learn',learn]],'Activity instructions');content.querySelector('.student-tabs').classList.add('mode-switch');
- const note=document.createElement('p');note.className='mode-note';note.textContent='Same task, editor, tests, and submission. Switch any time.';content.querySelector('.student-tabs').after(note);
+ tabPanels(content,[['Solve',practice],['Learn',learn]],'Activity instructions');content.querySelector('.student-tabs').classList.add('mode-switch');
+ const note=document.createElement('p');note.className='mode-note';note.textContent='Same task and editor. Switch any time.';content.querySelector('.student-tabs').after(note);
  // Canonical Markdown and Python lesson selections update after initial rendering.
  const observer=new MutationObserver(()=>{step=0;build()});observer.observe(practice,{childList:true,subtree:true,characterData:true});observer.observe(lesson,{childList:true,subtree:true,characterData:true});
  build();copy.refreshLearn=()=>{step=0;build()};
