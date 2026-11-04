@@ -11,7 +11,7 @@ order: 4
 - Class Code: 0D11649772
 - Sign in with GitHub and join your class section to get credit for creating an account
 - Write a list of improvements that can be made to the platform or features that could be added.
-The list should have five items.
+The list should have five items. Turn your list in on paper. 
 
 # Week of Oct. 26
 
