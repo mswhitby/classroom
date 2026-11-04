@@ -652,3 +652,25 @@ body.pg-app #sidebar .class-menu { z-index:100;overflow-x:hidden }
 
 .sidebar-full-title { position:fixed;z-index:120;max-width:min(340px,calc(100vw - 16px));padding:10px 14px;border:1px solid var(--border-strong);border-radius:8px;background:var(--surface-2);color:var(--text);font:13px/1.5 var(--font);box-shadow:0 6px 24px #0005;overflow-wrap:anywhere;pointer-events:none }
 .sidebar-full-title[hidden] { display:none }
+
+/* Keep the task prominent and optional hints quiet. */
+.pg-app .study-instructions code:not(pre code) { background:transparent;padding:0;border:0 }
+.pg-app .study-instructions,.pg-app .study-instructions .markdown-body,.pg-app .student-practice p,.pg-app .student-practice li,.pg-app .student-learn p,.pg-app .student-learn li { font-size:16px;line-height:1.6 }
+.pg-app .study-instructions h2,.pg-app .study-instructions h3 { font-size:17px }
+.pg-app .student-practice>details,.pg-app .student-practice #hints details,.pg-app .student-practice #lesson-hints details { padding:6px 10px;margin:8px 0;border-left-width:2px;background:rgba(210,153,34,.035) }
+.pg-app .student-practice details summary { font-size:13px;font-weight:400;line-height:1.5 }
+.pg-app .student-practice details p,.pg-app .student-practice details li { font-size:14px;line-height:1.5 }
+.pg-app .challenge-filters button { border-radius:999px;padding:7px 12px }
+.grade-work-title { display:block;color:var(--text) }
+.grade-work-meta { display:block;font-size:12px;color:var(--muted);margin-top:4px }
+.score-full { color:var(--pass-fg) }
+
+.pg-app .study-instructions { container-type:inline-size;container-name:reading }
+@container reading (max-width:440px) {
+ .pg-app .study-instructions table.examples:has(thead th:nth-child(2)) { display:block;border-spacing:0 }
+ .pg-app .study-instructions table.examples:has(thead th:nth-child(2)) thead { display:none }
+ .pg-app .study-instructions table.examples:has(thead th:nth-child(2)) tbody { display:block }
+ .pg-app .study-instructions table.examples:has(thead th:nth-child(2)) tbody tr { display:grid;grid-template-columns:minmax(0,1fr);gap:8px;margin-bottom:16px }
+ .pg-app .study-instructions table.examples:has(thead th:nth-child(2)) td { display:block;padding:0 }
+ .pg-app .study-instructions table.examples:has(thead th:nth-child(2)) td::before { content:attr(data-label);display:block;color:var(--muted);font:12px/1.5 var(--font) }
+}

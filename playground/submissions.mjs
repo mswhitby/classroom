@@ -1,3 +1,4 @@
+import {gradeLabel} from './grade-results.mjs';
 // Only an explicit Submit work action calls this service. Draft/check sync never does.
 export class SubmissionService {
  constructor(client,userId){this.client=client;this.userId=userId;this.pending=new Map()}
@@ -20,22 +21,30 @@ export class SubmissionService {
   this.pending.delete(key);return receipt;
  }
 }
-export function mountSubmission({anchor,course_id,activity_id,activity_kind,getFiles,submit,signedIn,signIn}){
+export function mountSubmission({anchor,course_id,activity_id,activity_kind,getFiles,submit,signedIn,signIn,grade,latest}){
  if(!anchor)return;
  const parent=anchor.parentElement;parent.querySelector('.submission-actions')?.remove();
  const box=document.createElement('div');box.className='submission-actions';
  const note=document.createElement('p');note.textContent='Drafts save automatically. Run tests your draft. Submit hands in a separate copy.';
  const button=document.createElement('button');button.type='button';button.textContent='Submit';button.className='btn btn-primary';
  const status=document.createElement('p');status.setAttribute('role','status');
- let busy=false;
+ let busy=false,version=0;
+ async function showGrade(id,current){
+  for(let attempt=0;attempt<30;attempt++){
+   if(!box.isConnected||current!==version)return;
+   try{const result=await grade(id);if(!box.isConnected||current!==version)return;status.textContent='Submitted · '+gradeLabel(result);document.dispatchEvent(new CustomEvent('playground-graded',{detail:{id,course_id,activity_id,grade:result}}));if(!['queued','running'].includes(result?.status))return}catch{status.textContent='Submitted · Grade unavailable';return}
+   await new Promise(resolve=>setTimeout(resolve,3000));
+  }
+ }
+
  button.onclick=async()=>{
   if(busy)return;
   if(!signedIn()){status.textContent='Sign in before submitting. Your draft is still saved.';await signIn();return}
   // Capture before the confirmation: later edits cannot change this hand-in.
   const snapshot={course_id,activity_id,activity_kind,files:getFiles()};
-  if(!confirm('Submit the current version of '+activity_id+'? This saves a separate hand-in. You can keep editing your draft afterward.'))return;
-  busy=true;button.disabled=true;status.textContent='Submitting this version…';
-  try{const receipt=await submit(snapshot);if(!receipt?.id||!receipt?.submitted_at)throw Error('Submission was not confirmed. Please retry.');document.dispatchEvent(new CustomEvent('playground-submitted',{detail:{...receipt,course_id,activity_id}}));status.textContent='Submitted '+new Date(receipt.submitted_at).toLocaleString()+'. Receipt '+receipt.id+'. Later edits and checks do not change this hand-in.'}
+  if(!confirm('Submit your current code? You can keep editing afterward.'))return;
+  busy=true;version++;button.disabled=true;status.textContent='Submitting…';
+  try{const receipt=await submit(snapshot);if(!receipt?.id||!receipt?.submitted_at)throw Error('Submission was not confirmed. Please retry.');document.dispatchEvent(new CustomEvent('playground-submitted',{detail:{...receipt,course_id,activity_id}}));status.textContent=grade?'Submitted · Checking grade…':'Submitted';if(grade)void showGrade(receipt.id,version)}
   catch(error){status.textContent=error.message||'Submission was not confirmed. Your draft is still saved.'}
   finally{busy=false;button.disabled=false}
  };
@@ -46,4 +55,5 @@ export function mountSubmission({anchor,course_id,activity_id,activity_kind,getF
   button.disabled=true;box.append(alert,login);
  }
  box.append(button,status);parent.append(box);
+ if(signedIn()&&grade&&latest)latest().then(receipt=>{if(receipt&&version===0&&box.isConnected)void showGrade(receipt.id,0)}).catch(()=>{});
 }

@@ -14,7 +14,7 @@ const practiceLabel=id=>id==='computer-science-1'?'Challenges':id==='mobile-app-
 const grade=id=>id==='tsi-math'?href(id)+'/results':'#/progress/'+id;
 function entries(c){
  const m=manifests.get(c.id);if(!m)return [];
- const groups=courseUnits(c.id,m).map(u=>({...u,items:u.lessons.map(l=>({id:l.id,activity:l.exercise?.id||l.id,title:(u.label==='Week'?'Day ':'Lesson ')+l.number+' · '+l.title,url:l.url})).concat(u.quiz?[{id:u.quiz.id,checkpoint:true,title:u.quiz.title,url:href(c.id)+'/quiz/'+u.quiz.id}]:[])}));
+ const groups=courseUnits(c.id,m).map(u=>({...u,items:u.lessons.map(l=>({id:l.id,activity:l.exercise?.id||l.id,title:u.label==='Week'?'Day '+l.number+' · '+l.title:l.title,url:l.url})).concat(u.quiz?[{id:u.quiz.id,checkpoint:true,title:u.quiz.title,url:href(c.id)+'/quiz/'+u.quiz.id}]:[])}));
  return groups.concat((m.projects||[]).map(p=>({id:p.id,title:p.title,project:true,items:p.steps.map(l=>({id:l.id,activity:'project:'+p.id,title:l.title,url:href(c.id)+'/project/'+p.id+'/'+l.id}))})));
 }
 let menuCourses=[],menuVersion=0;

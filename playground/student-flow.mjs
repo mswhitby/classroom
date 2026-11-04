@@ -25,6 +25,7 @@ export function practiceTabs(copy,{objective,input,expected,submit,practiceNodes
  let step=0;
  const build=()=>{
   if(!copy.isConnected)return;
+  for(const table of practice.querySelectorAll('table.examples')){const labels=[...table.querySelectorAll('thead th')].map(n=>n.textContent);for(const row of table.querySelectorAll('tbody tr'))[...row.children].forEach((cell,i)=>{cell.dataset.label=labels[i]||''})}
   const steps=[{title:'Understand the task',nodes:[...practice.children].filter(n=>!n.matches('details,#lesson-hints,#hints'))}];
   const authoredHints=[...practice.querySelectorAll('details')].filter(n=>/hint/i.test(n.querySelector('summary')?.textContent||''));
   for(const hint of authoredHints)steps.push({title:hint.querySelector('summary').textContent,nodes:[...hint.children].filter(n=>n.tagName!=='SUMMARY')});

@@ -1,12 +1,12 @@
 import {unitPage} from './unit-page.mjs?v=reading-1';
 import {renderCheckCards} from './check-cards.mjs?v=reading-1';
 import {tsiPage} from './tsi.mjs?v=reading-1';
-import {gradesPage} from './grades.mjs?v=reading-1';
+import {gradesPage} from './grades.mjs?v=grades-1';
 import {courseOverview} from './course-overview.mjs?v=reading-1';
 import {homePage} from './home.mjs?v=reading-1';
-import {pythonPage} from './python.mjs?v=solve-1';
+import {pythonPage} from './python.mjs?v=grades-1';
 import {classesPage,teacherPage} from './classroom-page.mjs?v=reading-1';
-import {Account,ready as accountReady} from './account.js?v=reading-1';
+import {Account,ready as accountReady} from './account.js?v=grades-1';
 import {mobileProjectPage,mobileProjectIndex} from './mobile-project.mjs?v=reading-1';
 import {uilPage} from './uil.mjs?v=reading-1';
 import {setupStudyLayout,disposeStudyLayout} from './study-layout.mjs?v=solve-1';
