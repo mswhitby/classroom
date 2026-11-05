@@ -1,0 +1,32 @@
+/* Isolated preview-only palette. Never loaded by production Playground. */
+:root, :root[data-theme="dark"] {
+ --bg:#101012; --bar:#17171b; --surface:#242429; --surface-2:#303038;
+ --code-bg:#1b1b20; --text:#f5f5f7; --soft:#c9c9d0; --muted:#a1a1aa;
+ --border:rgba(255,255,255,.09); --border-strong:rgba(255,255,255,.19);
+ --accent:#8b82fa; --on-accent:#101012; color-scheme:dark;
+}
+:root[data-theme="light"] {
+ --bg:#f0f1f5; --bar:#fff; --surface:#fff; --surface-2:#f7f8fa;
+ --code-bg:#fbfbfd; --text:#20212a; --soft:#484b58; --muted:#626570;
+ --border:rgba(30,35,55,.11); --border-strong:rgba(30,35,55,.22);
+ --accent:#5e5ce6; --on-accent:#fff; color-scheme:light;
+}
+body.pg-app { background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column; }
+.pg-app .topbar { flex:none; }
+.pg-app .main { width:100%;max-width:1280px;margin:0 auto;display:block;padding:12px 16px 70px;flex:1; }
+.preview-tag {border:1px solid var(--border-strong);border-radius:999px;padding:5px 10px;font-size:10px;letter-spacing:.09em;font-weight:800;color:var(--accent);}
+.preview-banner {display:flex;align-items:center;flex-wrap:wrap;gap:10px 20px;padding:14px clamp(20px,4vw,64px);border-bottom:1px solid var(--border);background:var(--surface);font-size:13px;}
+.preview-banner strong {color:var(--accent);white-space:nowrap;}
+.preview-banner span {color:var(--soft);flex:1;min-width:230px;}
+.preview-banner a {color:var(--accent);font-weight:600;}
+.preview-banner a:hover {text-decoration:underline;}
+.journal-card {margin-bottom:20px;box-shadow:0 8px 30px rgba(0,0,0,.15);}
+:root[data-theme=light] .journal-card {box-shadow:0 7px 22px rgba(25,30,60,.075);}
+.journal-screen {max-width:1100px;padding:28px clamp(4px,2.2vw,24px) 48px;}
+.journal-status-pill.submitted {color:var(--pass-fg);background:var(--pass-bg);}
+.preview-history {max-width:940px;margin:0 auto;padding:30px 10px;}
+.preview-history h1 {font-size:32px;margin:14px 0;}
+.preview-history .journal-card {display:grid;gap:14px;}
+.preview-history .journal-card pre {white-space:pre-wrap;overflow-wrap:anywhere;color:var(--soft);font-size:13px;}
+.preview-history .journal-card h3 {margin:0;}
+@media(max-width:650px){.pg-app .main{padding:6px 8px 36px}.brand-name{max-width:150px;overflow:hidden;text-overflow:ellipsis}.preview-tag{display:none}.preview-banner{padding:12px 16px;gap:8px}.journal-screen{padding:18px 4px 32px}}
