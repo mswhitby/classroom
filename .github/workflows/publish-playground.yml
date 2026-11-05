@@ -59,7 +59,7 @@ jobs:
           python scripts/verify-font-assets.py
       - name: Update only the two course deployment folders
         run: |
-          rsync -a --delete playground/dist/ site/playground/
+          rsync -a --delete --exclude='preview/' playground/dist/ site/playground/
           rsync -a --delete computer-science-1/docs/ site/computer-science-1/
       - name: Save built files and request the existing Pages build
         working-directory: site
