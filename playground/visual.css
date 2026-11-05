@@ -694,3 +694,29 @@ body.pg-app #sidebar .class-menu { z-index:100;overflow-x:hidden }
 .pg-app .roster-sort-label{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:12px 0 18px;font-size:13px;color:var(--soft)}
 .pg-app .roster-sort-label select{padding:8px 10px;min-width:170px;border:1px solid var(--border);border-radius:8px;color:var(--text);background:var(--code-bg)}
 .pg-app #sheet-sync-status{font-size:13px}
+
+/* Inline expandable teacher roster and verified weekly point ledger. */
+.pg-app .teacher-student-name {padding:4px 0;background:none;border:0;color:var(--text);font:inherit;font-weight:700;text-align:left;cursor:pointer;white-space:normal;overflow-wrap:anywhere}
+.pg-app .teacher-student-name:hover,.pg-app .teacher-student-name:focus-visible {color:var(--accent);text-decoration:underline}
+.pg-app .student-expansion-row td {padding:0!important;background:var(--surface-2);border-bottom:2px solid var(--border-strong)}
+.pg-app .expanded-student-card {padding:20px;max-width:100%;min-width:0;overflow-wrap:anywhere}
+.pg-app .expanded-student-card h3 {margin:0 0 8px;font-size:18px}
+.pg-app .student-weekly-total {font-size:13px;font-weight:700;color:var(--text);background:var(--surface);padding:9px 12px;border:1px solid var(--border);border-radius:8px}
+.pg-app .student-assignment-stats {display:flex;gap:9px;flex-wrap:wrap;margin:16px 0}
+.pg-app .student-assignment-stats span {padding:8px 12px;background:var(--surface);border-radius:8px;border:1px solid var(--border);font-size:12px}
+.pg-app .student-assignment-scroll {overflow-x:auto;max-width:100%;margin-top:16px}
+.pg-app .student-assignment-table {min-width:700px;font-size:13px}
+.pg-app .student-assignment-table td,.pg-app .student-assignment-table th {vertical-align:top}
+.pg-app .assignment-handins summary {cursor:pointer;white-space:nowrap;font-size:13px}
+.pg-app .assignment-handin {display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px;padding-top:8px;border-top:1px solid var(--border)}
+.pg-app .assignment-handin span small {display:block;color:var(--muted);margin-top:3px}
+.pg-app .student-inline-receipt {padding:18px;margin-top:20px;border-radius:10px;border:1px solid var(--border);background:var(--surface)}
+.pg-app .student-inline-receipt[hidden] {display:none}
+.pg-app .student-inline-receipt pre {white-space:pre-wrap;overflow-wrap:anywhere;max-height:360px;overflow:auto;font-size:12px;padding:12px;border:1px solid var(--border)}
+.pg-app .teacher-weekly-heading {display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.pg-app .teacher-weekly-heading p {color:var(--muted);font-size:13px}
+.pg-app .teacher-weekly-heading label {display:flex;align-items:center;gap:8px;white-space:nowrap}
+.pg-app .teacher-weekly-heading select {max-width:240px;min-width:170px;padding:9px;border:1px solid var(--border);border-radius:8px;color:var(--text);background:var(--surface-2)}
+.pg-app .teacher-weekly-points .teacher-table-wrap {max-height:360px;overflow:auto}
+.pg-app .teacher-weekly-points .fine {font-size:12px;margin-top:12px}
+@media (max-width:600px){.pg-app .expanded-student-card{padding:12px}.pg-app .student-weekly-total{width:100%}.pg-app .teacher-weekly-heading label{width:100%}}

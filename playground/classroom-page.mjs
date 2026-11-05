@@ -1,6 +1,8 @@
 import {COURSES,activityState} from './classroom-model.mjs?v=student-1';
 import {mountTeacherDirectory} from './teacher-directory.mjs?v=all-periods-1';
 import {sortRoster} from './roster-sort.mjs?v=dual-period-1';
+import {centralWeekStart} from './teacher-history.mjs?v=student-history-1';
+import {studentAssignmentsHtml,weeklyPointsHtml} from './teacher-student-panel.mjs?v=student-history-1';
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const options=()=>Object.entries(COURSES).map(([id,name])=>`<option value="${id}">${esc(name)}</option>`).join('');
 const courseHref=id=>'#/course/'+encodeURIComponent(id);
@@ -36,6 +38,8 @@ export async function teacherPage(main,account){
  const service=await serviceFor(main,account);if(!service||location.hash!==pageHash)return;
  if(!service.context.is_teacher){main.innerHTML='<h1>Teacher dashboard</h1><p>This GitHub account does not have teacher access.</p><a href="#/classes">Open my classes →</a>';return}
  let disposed=false,selected='',classes=[],snapshot=null,inflight=false,version=0,selectedStudent='';
+ const historyCache=new Map(),historyPending=new Map();
+ let weeklyData=null,weeklyClass='',weeklyFetchedAt=0,weekChoice=null,inlineReceipt=null;
  const preferenceKey='playground:teacher:dashboard:'+(account.user?.id||'teacher-preview');
  let preferences={};try{preferences=JSON.parse(localStorage.getItem(preferenceKey)||'{}')||{}}catch{}
  preferences.sort=['first','last','github'].includes(preferences.sort)?preferences.sort:'last';
@@ -53,38 +57,58 @@ export async function teacherPage(main,account){
  const directory=mountTeacherDirectory($('registered-directory'),service,{classes,sort:preferences.sort,onChanged:()=>refresh(),onNamesChanged:()=>{if(snapshot)render(snapshot)},onSortChange:value=>{preferences.sort=value;savePreferences();if(snapshot)render(snapshot)}});
  const displayName=m=>directory.nameFor(m.user_id,m.github_account,m.display_name);
  async function loadClasses(){classes=await service.rpc('playground_teacher_classes');if(disposed||location.hash!==pageHash)return;selected=classes.some(c=>c.id===selected)?selected:classes.some(c=>c.id===preferences.section)?preferences.section:classes[0]?.id||'';preferences.section=selected;savePreferences();$('teacher-section').innerHTML=classes.length?classes.map(c=>`<option value="${esc(c.id)}" ${c.id===selected?'selected':''}>${esc(c.name)} · ${esc(COURSES[c.course_id])}</option>`).join(''):'<option>No sections yet</option>';$('new-class-panel').open=!classes.length;if(!classes.length)selectView(2);directory.setClasses(classes);await directory.reload();await refresh()}
- function showStudentDetails(data,approved,classified){
-  const panel=$('section-student-details');
-  if(!panel)return;
-  const student=approved.find(m=>m.user_id===selectedStudent);
-  if(!student){panel.hidden=true;return}
-  const current=classified.find(m=>m.user_id===selectedStudent);
-  const work=data.practice.filter(p=>p.user_id===selectedStudent).sort((a,b)=>Date.parse(b.updated_at||0)-Date.parse(a.updated_at||0));
-  const attempts=data.checks.find(r=>r.user_id===selectedStudent);
-  const submissions=data.submissions.filter(s=>s.user_id===selectedStudent);
-  const handins=submissions.filter(s=>!s.activity_id.startsWith('review:'));
-  const signal=current?.activity.signal;
-  const passed=work.filter(p=>p.status==='completed'&&p.activity_kind!=='self-report').length;
-  panel.hidden=false;
-  panel.innerHTML=`<div class="student-detail-heading"><div><h2>${esc(displayName(student))}</h2><p>@${esc(student.github_account||'GitHub account unavailable')} · ${esc(COURSES[classes.find(c=>c.id===selected)?.course_id]||'Section')}</p></div><button type="button" class="secondary" id="close-student-details">Close details</button></div>
-   <dl class="student-detail-facts">
-    <div><dt>Enrolled</dt><dd>${esc(time(student.joined_at))}</dd></div>
-    <div><dt>Current signal</dt><dd>${esc(current?.activity.label||'No recent signal')}</dd></div>
-    <div><dt>Current activity</dt><dd>${esc(activityName(signal?.activity_id))}</dd></div>
-    <div><dt>Last page signal</dt><dd>${esc(time(signal?.last_seen_at))}</dd></div>
-    <div><dt>Last interaction</dt><dd>${esc(time(signal?.last_interaction_at))}</dd></div>
-    <div><dt>Practice passed</dt><dd>${passed} of ${work.filter(p=>p.activity_kind!=='self-report').length} tracked activities</dd></div>
-    <div><dt>Checks</dt><dd>${Number(attempts?.checks)||0} · Last ${esc(time(attempts?.last_check))}</dd></div>
-    <div><dt>Recent hand-ins</dt><dd>${handins.length} in the latest section snapshot</dd></div>
-   </dl>
-   <h3>Practice history</h3><p class="fine">Practice checks are browser-reported, not verified grades. Self-reported Unity work is marked separately.</p>
-   ${work.length?`<div class="teacher-table-wrap"><table class="teacher-table"><thead><tr><th>Activity</th><th>Kind</th><th>Result</th><th>Updated</th></tr></thead><tbody>${work.map(p=>`<tr><td>${esc(activityName(p.activity_id))}</td><td>${esc(p.activity_kind)}</td><td>${esc(p.activity_kind==='self-report'?'Self-reported: '+p.status:p.status)}</td><td>${esc(time(p.updated_at))}</td></tr>`).join('')}</tbody></table></div>`:'<p>No practice history recorded for this section course.</p>'}
-   <h3>Recent hand-ins and review flags</h3><p class="fine">The section snapshot includes at most the latest 200 hand-ins and flags, not a lifetime total. Opening a receipt shows the saved submission, not a live draft.</p>
-   ${submissions.length?submissions.map(item=>`<div class="progress-row"><span>${esc(activityName(item.activity_id))}<small>${esc(time(item.submitted_at))}</small></span><button type="button" class="secondary" data-student-receipt="${esc(item.id)}">${item.activity_id.startsWith('review:')?'Open flag':'Open hand-in'}</button></div>`).join(''):'<p>No recent hand-ins or review flags.</p>'}`;
-  panel.querySelector('#close-student-details').onclick=()=>{selectedStudent='';panel.hidden=true};
-  panel.querySelectorAll('[data-student-receipt]').forEach(button=>button.onclick=()=>{
-   $('teacher-data').querySelector('[data-receipt="'+button.dataset.studentReceipt+'"]')?.click();
+ function showInlineReceipt(receiptId){
+  const slot=$('expanded-student-card')?.querySelector('.student-inline-receipt');
+  if(!slot)return;
+  const currentClass=selected,currentStudent=selectedStudent;
+  inlineReceipt={id:receiptId,student:currentStudent,section:currentClass,html:'Opening saved hand-in…'};
+  slot.hidden=false;slot.textContent=inlineReceipt.html;
+  service.rpc('playground_teacher_submission',{p_class:currentClass,p_submission:receiptId}).then(row=>{
+   if(disposed||selected!==currentClass||selectedStudent!==currentStudent)return;
+   const content=Object.entries(row.files||{}).map(([filename,code])=>`<h5>${esc(filename)}</h5><pre><code>${esc(code)}</code></pre>`).join('');
+   inlineReceipt.html=`<div class="student-detail-heading"><h4>Submitted copy · ${esc(activityName(row.activity_id))}</h4><button type="button" class="secondary" data-close-inline-receipt>Close</button></div><p>Submitted ${esc(time(row.submitted_at))}</p>${content}`;
+   const target=$('expanded-student-card')?.querySelector('.student-inline-receipt');
+   if(target){target.hidden=false;target.innerHTML=inlineReceipt.html;target.querySelector('[data-close-inline-receipt]')?.addEventListener('click',()=>{inlineReceipt=null;target.hidden=true})}
+  }).catch(()=>{
+   if(inlineReceipt?.id===receiptId){
+    inlineReceipt.html='<p>Could not open this submitted copy.</p>';
+    const target=$('expanded-student-card')?.querySelector('.student-inline-receipt');
+    if(target){target.hidden=false;target.innerHTML=inlineReceipt.html}
+   }
   });
+ }
+ function showStudentDetails(data,approved){
+  const panel=$('expanded-student-card');
+  if(!panel||!selectedStudent)return;
+  const student=approved.find(m=>m.user_id===selectedStudent);
+  if(!student)return;
+  const key=selected+'|'+selectedStudent,existing=historyCache.get(key);
+  const chosen=weekChoice||centralWeekStart(data.server_time||new Date());
+  const earned=(weeklyData?.weeks||[]).find(r=>r.user_id===selectedStudent&&r.week_start===chosen);
+  if(existing?.error){panel.textContent=existing.error;return}
+  if(existing?.data){
+   panel.innerHTML=studentAssignmentsHtml(existing.data,{points:Number(earned?.points)||0,week:chosen});
+   panel.querySelectorAll('[data-history-receipt]').forEach(btn=>btn.onclick=()=>showInlineReceipt(btn.dataset.historyReceipt));
+   if(inlineReceipt?.student===selectedStudent&&inlineReceipt.section===selected){
+    const receipt=panel.querySelector('.student-inline-receipt');
+    receipt.hidden=false;receipt.innerHTML=inlineReceipt.html;
+    receipt.querySelector('[data-close-inline-receipt]')?.addEventListener('click',()=>{
+     inlineReceipt=null;receipt.hidden=true
+    });
+   }
+   return;
+  }
+  panel.innerHTML='<p role="status">Loading complete assignment history…</p>';
+  if(historyPending.has(key))return;
+  const promise=service.rpc('playground_teacher_student_history',{p_class:selected,p_student:selectedStudent});
+  historyPending.set(key,promise);
+  promise.then(history=>{
+   historyCache.set(key,{data:history,loadedAt:Date.now()});
+   if(!disposed&&selected+'|'+selectedStudent===key&&snapshot)showStudentDetails(snapshot,snapshot.roster.filter(m=>m.status==='approved'));
+  }).catch(error=>{
+   historyCache.set(key,{error:'Assignment history could not load: '+(error?.message||'Please refresh.')});
+   if(!disposed&&selected+'|'+selectedStudent===key&&snapshot)showStudentDetails(snapshot,snapshot.roster.filter(m=>m.status==='approved'));
+  }).finally(()=>historyPending.delete(key));
  }
  function render(data){
   const c=classes.find(c=>c.id===selected);if(!c)return;
@@ -94,10 +118,11 @@ export async function teacherPage(main,account){
   const classified=approved.map(m=>({...m,activity:data.stale?{...activityState(data.signals.filter(s=>s.user_id===m.user_id),Date.parse(data.server_time)),state:'unknown',label:'Status unavailable'}:activityState(data.signals.filter(s=>s.user_id===m.user_id),Date.parse(data.server_time))}));
   const reviewFlags=data.submissions.filter(s=>s.activity_id.startsWith('review:'));const handins=data.submissions.filter(s=>!s.activity_id.startsWith('review:'));
   const receiptCounts=new Map();for(const s of handins)receiptCounts.set(s.user_id,(receiptCounts.get(s.user_id)||0)+1);
-  $('teacher-data').innerHTML=`<div class="progress-grid"><div class="stat"><strong>${approved.length}</strong><span>Enrolled students</span></div><div class="stat"><strong>${classified.filter(m=>m.activity.state==='active').length}</strong><span>Recently interacting</span></div><div class="stat"><strong>${pending.length}</strong><span>Waiting for approval</span></div></div><section class="panel"><h2>Join requests</h2>${pending.length?pending.map(m=>`<div class="progress-row"><span>${esc(displayName(m))} <small>${esc(m.github_account||'GitHub account unavailable')}</small><small>Requested ${esc(time(m.joined_at))}</small></span><span><button data-student="${m.user_id}" data-status="approved">Approve</button> <button class="secondary" data-student="${m.user_id}" data-status="removed">Decline</button></span></div>`).join(''):'<p>No pending requests.</p>'}</section><section class="panel"><h2>Section roster &amp; activity</h2><p>All enrolled students are listed, including those who are offline. Google Sheet names are preferred; practice checks are separate from submitted work.</p><label class="roster-sort-label" for="overview-sort">Sort students by <select id="overview-sort"><option value="last" ${preferences.sort==='last'?'selected':''}>Last name</option><option value="first" ${preferences.sort==='first'?'selected':''}>First name</option><option value="github" ${preferences.sort==='github'?'selected':''}>GitHub username</option></select></label>${approved.length?`<div class="teacher-table-wrap"><table class="teacher-table"><thead><tr><th>Student</th><th>Activity signal</th><th>Current activity</th><th>Practice</th><th>Hand-ins</th><th>Details</th><th>Membership</th></tr></thead><tbody>${classified.map(m=>{const checks=data.checks.find(r=>r.user_id===m.user_id),practice=data.practice.filter(r=>r.user_id===m.user_id),signal=m.activity.signal;return `<tr><th scope="row">${esc(displayName(m))}<small>@${esc(m.github_account||'GitHub account unavailable')}${directory.periodsFor(m.user_id,m.github_account).length?' · Sheet periods '+esc(directory.periodsFor(m.user_id,m.github_account).join(', ')):''}</small></th><td><span class="activity-badge ${m.activity.state}">${esc(m.activity.label)}</span><small>${signal?'Last signal '+esc(time(signal.last_seen_at)):'No activity reported yet'}</small></td><td>${esc(activityName(signal?.activity_id))}<small>${esc(signal?.action||'')}</small></td><td>${practice.filter(p=>p.status==='completed'&&p.activity_kind!=='self-report').length} passed<small>${Number(checks?.checks)||0} checks total</small></td><td>${receiptCounts.get(m.user_id)||0}<small>In recent hand-ins</small></td><td><button class="secondary" type="button" data-student-details="${m.user_id}">View details</button></td><td><button class="secondary" data-student="${m.user_id}" data-status="removed">Remove</button></td></tr>`}).join('')}</tbody></table></div>`:'<p>No students yet. Share the join code to enroll your class.</p>'}</section><section class="panel" id="section-student-details" hidden></section><section class="panel"><h2>Flagged for teacher review</h2><p>Activity reports from students in this section. Opening a flag shows their note.</p>${reviewFlags.length?reviewFlags.map(s=>`<div class="progress-row"><span>${esc(displayName(approved.find(m=>m.user_id===s.user_id)||{user_id:s.user_id,display_name:'Student'}))} · ${esc(activityName(s.activity_id.slice(7)))}</span><button data-receipt="${s.id}">Open flag</button></div>`).join(''):'<p>No review flags.</p>'}</section><section class="panel"><h2>Recent hand-ins</h2><p>Latest 200 submissions for approved students in this section. Opening a hand-in shows the saved copy; later draft edits do not change it.</p>${handins.length?handins.map(s=>`<div class="progress-row"><span>${esc(displayName(approved.find(m=>m.user_id===s.user_id)||{user_id:s.user_id,display_name:'Student'}))} · ${esc(activityName(s.activity_id))}<small>Submitted ${esc(time(s.submitted_at))}</small></span><button class="secondary" data-receipt="${s.id}">Open hand-in</button></div>`).join(''):'<p>No hand-ins yet. Run never creates one.</p>'}</section>${removed.length?`<details class="panel"><summary>Removed or declined (${removed.length})</summary>${removed.map(m=>`<div class="progress-row"><span>${esc(displayName(m))}</span><button class="secondary" data-student="${m.user_id}" data-status="approved">Restore</button></div>`).join('')}</details>`:''}`;
+  $('teacher-data').innerHTML=`<div class="progress-grid"><div class="stat"><strong>${approved.length}</strong><span>Enrolled students</span></div><div class="stat"><strong>${classified.filter(m=>m.activity.state==='active').length}</strong><span>Recently interacting</span></div><div class="stat"><strong>${pending.length}</strong><span>Waiting for approval</span></div></div>${weeklyPointsHtml(approved.map(m=>({user_id:m.user_id,github_account:m.github_account,display_name:displayName(m)})),weeklyData,weekChoice,data.server_time||new Date())}<section class="panel"><h2>Join requests</h2>${pending.length?pending.map(m=>`<div class="progress-row"><span>${esc(displayName(m))} <small>${esc(m.github_account||'GitHub account unavailable')}</small><small>Requested ${esc(time(m.joined_at))}</small></span><span><button data-student="${m.user_id}" data-status="approved">Approve</button> <button class="secondary" data-student="${m.user_id}" data-status="removed">Decline</button></span></div>`).join(''):'<p>No pending requests.</p>'}</section><section class="panel"><h2>Section roster &amp; activity</h2><p>All enrolled students are listed, including those who are offline. Google Sheet names are preferred; practice checks are separate from submitted work.</p><label class="roster-sort-label" for="overview-sort">Sort students by <select id="overview-sort"><option value="last" ${preferences.sort==='last'?'selected':''}>Last name</option><option value="first" ${preferences.sort==='first'?'selected':''}>First name</option><option value="github" ${preferences.sort==='github'?'selected':''}>GitHub username</option></select></label>${approved.length?`<div class="teacher-table-wrap"><table class="teacher-table section-roster-table"><thead><tr><th>Student</th><th>Activity signal</th><th>Current activity</th><th>Practice</th><th>Hand-ins</th><th>Membership</th></tr></thead><tbody>${classified.map(m=>{const checks=data.checks.find(r=>r.user_id===m.user_id),practice=data.practice.filter(r=>r.user_id===m.user_id),signal=m.activity.signal;return `<tr><th scope="row"><button type="button" class="teacher-student-name" data-student-details="${esc(m.user_id)}" aria-expanded="${selectedStudent===m.user_id?'true':'false'}" aria-controls="expanded-student-card">${selectedStudent===m.user_id?'▾':'▸'} ${esc(displayName(m))}</button><small>@${esc(m.github_account||'GitHub account unavailable')}${directory.periodsFor(m.user_id,m.github_account).length?' · Sheet periods '+esc(directory.periodsFor(m.user_id,m.github_account).join(', ')):''}</small></th><td><span class="activity-badge ${m.activity.state}">${esc(m.activity.label)}</span><small>${signal?'Last signal '+esc(time(signal.last_seen_at)):'No activity reported yet'}</small></td><td>${esc(activityName(signal?.activity_id))}<small>${esc(signal?.action||'')}</small></td><td>${practice.filter(p=>p.status==='completed'&&p.activity_kind!=='self-report').length} passed<small>${Number(checks?.checks)||0} checks total</small></td><td>${receiptCounts.get(m.user_id)||0}<small>In recent hand-ins</small></td><td><button class="secondary" data-student="${m.user_id}" data-status="removed">Remove</button></td></tr>${selectedStudent===m.user_id?'<tr class="student-expansion-row"><td colspan="6"><div id="expanded-student-card"></div></td></tr>':''}`}).join('')}</tbody></table></div>`:'<p>No students yet. Share the join code to enroll your class.</p>'}</section><section class="panel"><h2>Flagged for teacher review</h2><p>Activity reports from students in this section. Opening a flag shows their note.</p>${reviewFlags.length?reviewFlags.map(s=>`<div class="progress-row"><span>${esc(displayName(approved.find(m=>m.user_id===s.user_id)||{user_id:s.user_id,display_name:'Student'}))} · ${esc(activityName(s.activity_id.slice(7)))}</span><button data-receipt="${s.id}">Open flag</button></div>`).join(''):'<p>No review flags.</p>'}</section><section class="panel"><h2>Recent hand-ins</h2><p>Latest 200 submissions for approved students in this section. Opening a hand-in shows the saved copy; later draft edits do not change it.</p>${handins.length?handins.map(s=>`<div class="progress-row"><span>${esc(displayName(approved.find(m=>m.user_id===s.user_id)||{user_id:s.user_id,display_name:'Student'}))} · ${esc(activityName(s.activity_id))}<small>Submitted ${esc(time(s.submitted_at))}</small></span><button class="secondary" data-receipt="${s.id}">Open hand-in</button></div>`).join(''):'<p>No hand-ins yet. Run never creates one.</p>'}</section>${removed.length?`<details class="panel"><summary>Removed or declined (${removed.length})</summary>${removed.map(m=>`<div class="progress-row"><span>${esc(displayName(m))}</span><button class="secondary" data-student="${m.user_id}" data-status="approved">Restore</button></div>`).join('')}</details>`:''}`;
   $('overview-sort').onchange=e=>{preferences.sort=e.target.value;savePreferences();directory.setSort(preferences.sort);render(data)};
-  showStudentDetails(data,approved,classified);
-  $('teacher-data').querySelectorAll('[data-student-details]').forEach(b=>b.onclick=()=>{selectedStudent=b.dataset.studentDetails;showStudentDetails(data,approved,classified);$('section-student-details').scrollIntoView({block:'start',behavior:'smooth'})});
+  const weeks=$('teacher-points-week');if(weeks)weeks.onchange=e=>{weekChoice=e.target.value;render(data)};
+  showStudentDetails(data,approved);
+  $('teacher-data').querySelectorAll('[data-student-details]').forEach(b=>b.onclick=()=>{selectedStudent=selectedStudent===b.dataset.studentDetails?'':b.dataset.studentDetails;inlineReceipt=null;render(data)});
   $('teacher-data').querySelectorAll('[data-student]').forEach(b=>b.onclick=async()=>{if(!confirm((b.dataset.status==='approved'?'Approve ':'Remove or decline ')+displayName(data.roster.find(m=>m.user_id===b.dataset.student)||{user_id:b.dataset.student,display_name:'Student'})+' for this section?'))return;b.disabled=true;try{await service.rpc('playground_set_member',{p_class:selected,p_student:b.dataset.student,p_status:b.dataset.status});await refresh();await directory.reload()}catch{alert('Could not change this membership. Try again.')}finally{b.disabled=false}});
   $('teacher-data').querySelectorAll('[data-receipt]').forEach(b=>b.onclick=async()=>{
    const classId=selected;const panel=$('submission-detail');panel.hidden=false;panel.replaceChildren();panel.textContent='Opening submitted copy…';
@@ -108,12 +133,22 @@ export async function teacherPage(main,account){
   if(disposed||location.hash!==pageHash||inflight)return;
   if(!selected){$('class-invitation').innerHTML='<h2>Start with your first section</h2><p>Create a section above to get its join code.</p>';$('teacher-data').replaceChildren();return}
   inflight=true;const classId=selected,request=++version;
-  try{const data=await service.rpc('playground_teacher_snapshot',{p_class:classId});if(disposed||location.hash!==pageHash||request!==version||selected!==classId)return;snapshot=data;render(data);$('teacher-updated').textContent='Updated '+new Date().toLocaleTimeString()}
+  try{
+   const checkWeekly=!weeklyData||weeklyClass!==classId||Date.now()-weeklyFetchedAt>60000;
+   const [data,weekly]=await Promise.all([
+    service.rpc('playground_teacher_snapshot',{p_class:classId}),
+    checkWeekly?service.rpc('playground_teacher_weekly_points',{p_class:classId})
+      .catch(()=>({weeks:[],method:'unavailable'})):Promise.resolve(weeklyData)
+   ]);
+   if(disposed||location.hash!==pageHash||request!==version||selected!==classId)return;
+   if(checkWeekly){weeklyData=weekly;weeklyClass=classId;weeklyFetchedAt=Date.now()}
+   snapshot=data;render(data);$('teacher-updated').textContent='Updated '+new Date().toLocaleTimeString();
+  }
   catch{if(!disposed&&location.hash===pageHash){if(snapshot)render({...snapshot,stale:true});$('teacher-updated').textContent='Could not refresh. Previous data may be out of date.'}}
   finally{inflight=false;if(!disposed&&selected!==classId)refresh()}
  }
- $('teacher-section').onchange=async()=>{selected=$('teacher-section').value;preferences.section=selected;savePreferences();selectedStudent='';snapshot=null;version++;$('submission-detail').hidden=true;$('teacher-data').textContent='Opening section…';$('class-invitation').replaceChildren();await refresh();await directory.reload()};
- $('teacher-refresh').onclick=async()=>{await refresh();await directory.reload()};
+ $('teacher-section').onchange=async()=>{selected=$('teacher-section').value;preferences.section=selected;savePreferences();selectedStudent='';snapshot=null;version++;weeklyData=null;weeklyClass='';weeklyFetchedAt=0;weekChoice=null;inlineReceipt=null;$('submission-detail').hidden=true;$('teacher-data').textContent='Opening section…';$('class-invitation').replaceChildren();await refresh();await directory.reload()};
+ $('teacher-refresh').onclick=async()=>{historyCache.clear();weeklyFetchedAt=0;await refresh();await directory.reload()};
  $('create-class').onsubmit=async e=>{e.preventDefault();const b=e.target.querySelector('button');b.disabled=true;try{const c=await service.rpc('playground_create_class',{p_name:$('section-name').value,p_course:$('section-course').value});if(disposed||location.hash!==pageHash)return;selected=c.id;$('section-name').value='';$('create-status').textContent='Section created.';await loadClasses()}catch{$('create-status').textContent='Could not create this section. Check the name and try again.'}finally{b.disabled=false}};
  try{await loadClasses()}catch{$('teacher-updated').textContent='Classes could not load. Refresh to try again.'}
  const visible=()=>{if(document.visibilityState==='visible'){if(snapshot)render({...snapshot,stale:true});refresh()}};document.addEventListener('visibilitychange',visible);
