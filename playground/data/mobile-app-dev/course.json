@@ -73,56 +73,6 @@
           "markdown": "projects/club-connect/04-test.md"
         }
       ]
-    },
-    {
-      "id": "bracket-challenge",
-      "title": "Bracket Challenge",
-      "summary": "Build an interactive eight-team March basketball bracket contest: choose winners, advance teams, score predictions, and rank sample entries.",
-      "skills": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "starterFile": "projects/bracket-challenge/starter.html",
-      "exampleFile": "projects/bracket-challenge/example.html",
-      "steps": [
-        {
-          "id": "teams",
-          "title": "Model teams and matchups",
-          "focus": "Arrays and objects",
-          "markdown": "projects/bracket-challenge/01-teams.md"
-        },
-        {
-          "id": "layout",
-          "title": "Render a responsive bracket",
-          "focus": "DOM and CSS",
-          "markdown": "projects/bracket-challenge/02-layout.md"
-        },
-        {
-          "id": "picks",
-          "title": "Pick winners and advance teams",
-          "focus": "Events and state",
-          "markdown": "projects/bracket-challenge/03-picks.md"
-        },
-        {
-          "id": "scoring",
-          "title": "Score the bracket",
-          "focus": "Functions and comparisons",
-          "markdown": "projects/bracket-challenge/04-scoring.md"
-        },
-        {
-          "id": "leaderboard",
-          "title": "Create the competition leaderboard",
-          "focus": "Forms, arrays, sorting",
-          "markdown": "projects/bracket-challenge/05-leaderboard.md"
-        },
-        {
-          "id": "test",
-          "title": "Test and extend the app",
-          "focus": "Debugging and accessibility",
-          "markdown": "projects/bracket-challenge/06-test.md"
-        }
-      ]
     }
   ]
 }
