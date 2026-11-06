@@ -37,18 +37,26 @@ jobs:
         working-directory: react
         env:
           VITE_HASH_ROUTING: 'true'
-        run: npm run build -- --base=/playground/preview/react/
-      - name: Copy preview only
+        run: npm run build -- --base=/playground/preview/
+      - name: Copy React entry page and assets, preserving other previews
         run: |
-          mkdir -p site/playground/preview/react
-          rsync -a --delete react/dist/ site/playground/preview/react/
+          mkdir -p site/playground/preview/assets
+          # The former root preview was the journals demo. Keep its own URL.
+          if [ ! -f site/playground/preview/journals.html ]; then
+            cp site/playground/preview/index.html site/playground/preview/journals.html
+          fi
+          # Only replace the React app entry, its generated assets and worker.
+          # Do not delete challenges.html, journal scripts, CSS, or other previews.
+          rsync -a react/dist/assets/ site/playground/preview/assets/
+          cp react/dist/index.html site/playground/preview/index.html
+          cp react/dist/python-worker.js site/playground/preview/python-worker.js
       - name: Publish preview without altering production assets
         working-directory: site
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add playground/preview/react
+          git add playground/preview/index.html playground/preview/assets playground/preview/python-worker.js playground/preview/journals.html
           if ! git diff --cached --quiet; then
-            git commit -m 'Publish React review with live CS1 lessons and mock other courses'
+            git commit -m 'Publish React frontend at Playground preview root, preserving journal and challenge previews'
             git push origin HEAD:main
           fi
