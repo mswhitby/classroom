@@ -1,0 +1,392 @@
+{
+  "schemaVersion": 1,
+  "notice": "Public example cases only, no hidden tests or reference implementations.",
+  "challenges": [
+    {
+      "id": "attendance-percent",
+      "examples": [
+        {
+          "input": [
+            18,
+            20
+          ],
+          "expected": 90
+        },
+        {
+          "input": [
+            2,
+            3
+          ],
+          "expected": 66
+        },
+        {
+          "input": [
+            0,
+            30
+          ],
+          "expected": 0
+        },
+        {
+          "input": [
+            7,
+            7
+          ],
+          "expected": 100
+        }
+      ]
+    },
+    {
+      "id": "competition-ranks",
+      "examples": [
+        {
+          "input": [
+            [
+              50,
+              50,
+              40,
+              20,
+              40
+            ]
+          ],
+          "expected": [
+            1,
+            1,
+            3,
+            5,
+            3
+          ]
+        },
+        {
+          "input": [
+            [
+              7,
+              12,
+              9
+            ]
+          ],
+          "expected": [
+            3,
+            1,
+            2
+          ]
+        },
+        {
+          "input": [
+            [
+              5,
+              5,
+              5
+            ]
+          ],
+          "expected": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "input": [
+            []
+          ],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "id": "confidence-total",
+      "examples": [
+        {
+          "input": [
+            [
+              true,
+              false,
+              true
+            ],
+            [
+              20,
+              18,
+              15
+            ]
+          ],
+          "expected": 35
+        },
+        {
+          "input": [
+            [
+              false,
+              false
+            ],
+            [
+              5,
+              8
+            ]
+          ],
+          "expected": 0
+        },
+        {
+          "input": [
+            [],
+            []
+          ],
+          "expected": 0
+        }
+      ]
+    },
+    {
+      "id": "count-matches",
+      "examples": [
+        {
+          "input": [
+            [
+              2,
+              1,
+              2,
+              3,
+              2
+            ],
+            2
+          ],
+          "expected": 3
+        },
+        {
+          "input": [
+            [],
+            7
+          ],
+          "expected": 0
+        },
+        {
+          "input": [
+            [
+              3,
+              4
+            ],
+            5
+          ],
+          "expected": 0
+        }
+      ]
+    },
+    {
+      "id": "longest-win-streak",
+      "examples": [
+        {
+          "input": [
+            [
+              true,
+              true,
+              false,
+              true,
+              true,
+              true
+            ]
+          ],
+          "expected": 3
+        },
+        {
+          "input": [
+            [
+              false,
+              false
+            ]
+          ],
+          "expected": 0
+        },
+        {
+          "input": [
+            []
+          ],
+          "expected": 0
+        },
+        {
+          "input": [
+            [
+              true,
+              true
+            ]
+          ],
+          "expected": 2
+        }
+      ]
+    },
+    {
+      "id": "score-line",
+      "examples": [
+        {
+          "input": [
+            "Avery",
+            18
+          ],
+          "expected": "Avery: 18 points"
+        },
+        {
+          "input": [
+            "Jordan Lee",
+            0
+          ],
+          "expected": "Jordan Lee: 0 points"
+        },
+        {
+          "input": [
+            "Mia",
+            -2
+          ],
+          "expected": "Mia: -2 points"
+        }
+      ]
+    },
+    {
+      "id": "second-largest-distinct",
+      "examples": [
+        {
+          "input": [
+            [
+              3,
+              1,
+              3,
+              2
+            ]
+          ],
+          "expected": 2
+        },
+        {
+          "input": [
+            [
+              5,
+              5
+            ]
+          ],
+          "expected": null
+        },
+        {
+          "input": [
+            [
+              -10,
+              -7,
+              -7,
+              -2
+            ]
+          ],
+          "expected": -7
+        },
+        {
+          "input": [
+            [
+              1
+            ]
+          ],
+          "expected": null
+        }
+      ]
+    },
+    {
+      "id": "sum-positives",
+      "examples": [
+        {
+          "input": [
+            [
+              -3,
+              6,
+              0,
+              2,
+              -1
+            ]
+          ],
+          "expected": 8
+        },
+        {
+          "input": [
+            [
+              -5,
+              0,
+              -1
+            ]
+          ],
+          "expected": 0
+        },
+        {
+          "input": [
+            []
+          ],
+          "expected": 0
+        }
+      ]
+    },
+    {
+      "id": "target-pairs",
+      "examples": [
+        {
+          "input": [
+            [
+              1,
+              3,
+              2,
+              2,
+              4
+            ],
+            4
+          ],
+          "expected": 2
+        },
+        {
+          "input": [
+            [
+              2,
+              2,
+              2
+            ],
+            4
+          ],
+          "expected": 3
+        },
+        {
+          "input": [
+            [
+              1,
+              2,
+              3
+            ],
+            9
+          ],
+          "expected": 0
+        },
+        {
+          "input": [
+            [],
+            1
+          ],
+          "expected": 0
+        }
+      ]
+    },
+    {
+      "id": "temperature-alert",
+      "examples": [
+        {
+          "input": [
+            32
+          ],
+          "expected": "Freeze"
+        },
+        {
+          "input": [
+            90
+          ],
+          "expected": "Heat"
+        },
+        {
+          "input": [
+            72
+          ],
+          "expected": "Normal"
+        },
+        {
+          "input": [
+            -5
+          ],
+          "expected": "Freeze"
+        }
+      ]
+    }
+  ]
+}
