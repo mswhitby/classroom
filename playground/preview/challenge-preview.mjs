@@ -37,7 +37,7 @@ function showMarkdown(text){
   if(/^\*\*Example \d+\*\*/.test(line))return '<h3>'+escaped(line.replaceAll('*',''))+'</h3>';
   if(/^[-] /.test(line))return '<p>• '+escaped(line.slice(2))+'</p>';
   if(!line.trim())return '';
-  return '<p>'+escaped(line).replace(/\\`([^`]+)\\`/g,'<code>$1</code>').replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>')+'</p>';
+  return '<p>'+escaped(line).replace(/`([^`]+)`/g,'<code>$1</code>').replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>')+'</p>';
  }).join('');
 }
 function getSelected(){return catalog.find(c=>c.id===selection)}
@@ -82,7 +82,7 @@ function csQuote(value,type){
  return String(value);
 }
 function pythonHarness(source,cases,fn){
- return ['import contextlib,io,json','__scope={"__name__":"student"}','__cases='+JSON.stringify(cases),'__results=[]',
+ return ['import contextlib,io,json','__scope={"__name__":"student"}','__cases=json.loads('+JSON.stringify(JSON.stringify(cases))+')','__results=[]',
  'try:',
  ' with contextlib.redirect_stdout(io.StringIO()): exec(compile('+JSON.stringify(source)+',"main.py","exec"),__scope)',
  ' for __case in __cases:',
