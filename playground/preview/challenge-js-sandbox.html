@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval'; connect-src 'none'; img-src 'none'; form-action 'none'; base-uri 'none'; frame-ancestors 'self'">
+<title>Isolated JavaScript examples</title></head><body><script>
+"use strict";
+window.addEventListener("message",event=>{
+ const data=event.data;
+ if(!data||data.kind!=="challenge-evaluate"||typeof data.token!=="string")return;
+ const cases=Array.isArray(data.cases)?data.cases.slice(0,20):[];
+ const output=[];
+ try {
+  const source=String(data.source||"").replace(/\bexport\s+(?=(?:async\s+)?function\s)/g,"");
+  const fn=new Function('"use strict";\n'+source+'\nreturn '+String(data.fn)+';')();
+  if(typeof fn!=="function")throw Error("Define the requested function.");
+  for(const c of cases){
+   try{
+    const got=fn(...c.input);
+    if(got&&typeof got.then==="function")throw Error("Async functions are not supported in this preview.");
+    output.push({ok:JSON.stringify(got)===JSON.stringify(c.expected),received:JSON.stringify(got)??String(got)});
+   }catch(error){output.push({ok:false,error:String(error?.message||error).slice(0,200)})}
+  }
+ }catch(error){for(const c of cases)output.push({ok:false,error:String(error?.message||error).slice(0,200)})}
+ parent.postMessage({kind:"challenge-evaluated",token:data.token,results:output},"*");
+});
+parent.postMessage({kind:"challenge-ready"},"*");
+</script></body></html>
