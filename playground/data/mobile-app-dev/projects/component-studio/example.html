@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event card demo</title>
+  <style>
+    body { font: 16px/1.5 system-ui; padding: 16px; }
+    .event-card { max-width: 24rem; padding: 16px; border: 1px solid #78689b; border-radius: 12px; }
+    .event-card button { font: inherit; padding: 12px; }
+    .event-card button:focus-visible { outline: 3px solid #6445bb; outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Event card demo</h1>
+    <section class="event-card" data-component="event-card" aria-labelledby="event-title">
+      <h2 id="event-title">Game Design Club</h2>
+      <p>Friday at 4 p.m. in Room 12. Bring one game idea.</p>
+      <button type="button" aria-pressed="false">Save event</button>
+      <p role="status">Not saved yet.</p>
+    </section>
+  </main>
+  <script>
+    const card = document.querySelector('[data-component="event-card"]');
+    const button = card.querySelector('button');
+    const status = card.querySelector('[role="status"]');
+    button.addEventListener('click', function () {
+      const saved = button.getAttribute('aria-pressed') !== 'true';
+      button.setAttribute('aria-pressed', String(saved));
+      button.textContent = saved ? 'Unsave event' : 'Save event';
+      status.textContent = saved ? 'Event saved in this demo.' : 'Not saved yet.';
+    });
+  </script>
+</body>
+</html>

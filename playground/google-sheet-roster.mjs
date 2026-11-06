@@ -1,6 +1,7 @@
 // Private, browser-only Google Sheets bridge for the teacher directory.
-// Reads only period, first name, last name, and GitHub username columns.
-// No roster rows or Google tokens are stored or sent to Supabase.
+// Reads the primary/optional second period, names, and GitHub username only.
+// Only verified matched users' name/period data may be synchronized to Supabase;
+// Google tokens, the URL, school emails, and unmatched students stay in the browser.
 const SCOPE='https://www.googleapis.com/auth/spreadsheets.readonly';
 const CLIENT_KEY='playground:google-sheets-client-id';
 const SHEET_LINK_KEY='playground:teacher-google-sheet-url';
@@ -21,17 +22,26 @@ export const normalizeGithub=value=>{
  return (match?match[1]:text).replace(/^@/,'').trim().toLowerCase();
 };
 const normalizeHeader=value=>String(value||'').replace(/\s+/g,' ').trim().toLowerCase();
-export function parseSheetColumns(headers,columns){
+export function sheetColumnIndices(headers){
  const keys=['class period','first name','last name','github username'];
  const indices=keys.map(key=>headers.findIndex(h=>normalizeHeader(h)===key));
  if(indices.some(i=>i<0))throw Error('The Sheet must have Class Period, First Name, Last Name and GitHub Username headers.');
- const [period,first,last,github]=columns;
- const length=Math.max(period?.length||0,first?.length||0,last?.length||0,github?.length||0);
+ const secondary=headers.findIndex(h=>/^class period 2(?:\b|\s|\()/i.test(normalizeHeader(h)));
+ return [...indices,...(secondary>=0?[secondary]:[])];
+}
+export function parseSheetColumns(headers,columns){
+ sheetColumnIndices(headers); // Throws on missing required columns.
+ const [period,first,last,github,secondPeriod]=columns;
+ const length=Math.max(...columns.map(col=>col?.length||0),0);
  const results=[];
  for(let i=0;i<length;i++){
   const handle=normalizeGithub(github?.[i]);
   if(!handle)continue;
-  results.push({github:handle,period:String(period?.[i]||'').trim(),name:[first?.[i],last?.[i]].map(s=>String(s||'').trim()).filter(Boolean).join(' '),row:i+2});
+  const firstName=String(first?.[i]||'').trim(),lastName=String(last?.[i]||'').trim();
+  const p1=String(period?.[i]||'').trim(),p2=String(secondPeriod?.[i]||'').trim();
+  const periods=[...new Set([p1,p2].filter(Boolean))];
+  results.push({github:handle,period:p1,periods,firstName,lastName,
+   name:[firstName,lastName].filter(Boolean).join(' '),row:i+2});
  }
  return results;
 }
@@ -56,9 +66,7 @@ export async function readPrivateSheet(url,token){
  const title=tab.properties.title,quoted="'"+title.replace(/'/g,"''")+"'";
  const head=await json(root+'/values/'+encodeURIComponent(quoted+'!1:1'),token);
  const headers=head.values?.[0]||[];
- const keys=['class period','first name','last name','github username'];
- const indices=keys.map(k=>headers.findIndex(h=>normalizeHeader(h)===k));
- if(indices.some(i=>i<0))throw Error('Expected headers are missing on the selected tab: '+keys.filter((k,i)=>indices[i]<0).join(', ')+'.');
+ const indices=sheetColumnIndices(headers);
  const params=new URLSearchParams({majorDimension:'COLUMNS'});
  for(const i of indices){const col=colName(i);params.append('ranges',quoted+'!'+col+'2:'+col)}
  const body=await json(root+'/values:batchGet?'+params.toString(),token);
@@ -95,7 +103,7 @@ function localSavedSheetLink(){try{return readSavedSheetLink(localStorage)}catch
 export function mountGoogleSheetRoster(container,{onRows=()=>{}}={}){
  let disposed=false,token=null;
  container.innerHTML='<h2>Match students from your Google Sheet</h2>'+
-  '<p>Paste the private Google Sheet link here. Google may request read-only permission to your spreadsheets broadly; this dashboard reads only four columns of the particular Sheet link you paste (name, class period, and GitHub username). No student rows are uploaded to Supabase.</p>'+
+  '<p>Paste the private Google Sheet link here. Google may request read-only permission to your spreadsheets broadly; this dashboard reads only names, GitHub username, and up to two class periods. Matched registered accounts are synchronized to your private teacher roster on every load; unmatched students and Google credentials are not uploaded.</p>'+
   '<label for="sheet-url">Google Sheet link</label><input id="sheet-url" type="url" placeholder="https://docs.google.com/spreadsheets/d/..." autocomplete="off">'+
   '<button id="sheet-connect" type="button">Connect Google & load sheet</button> <button id="sheet-forget" type="button" class="secondary" hidden>Forget saved link</button>'+
   '<p id="sheet-status" role="status"></p>'+
@@ -148,8 +156,9 @@ export function mountGoogleSheetRoster(container,{onRows=()=>{}}={}){
       status('Reading selected columns from your private Sheet…');
       const result=await readPrivateSheet(url,token);
       if(disposed)return;
-      onRows(result.rows);
-      status('Matched sheet loaded: '+result.title+' · '+result.rows.length+' rows with GitHub usernames. No student records were sent to Supabase.');
+      const summary=await onRows(result.rows);
+      if(disposed)return;
+      status('Sheet loaded: '+result.title+' · '+result.rows.length+' rows with GitHub usernames. '+(summary||'Matched student records checked against the teacher roster.'));
      }catch(e){if(!disposed)status(e.message)}
      finally{if(!disposed)$('sheet-connect').disabled=false}
     },

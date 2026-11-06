@@ -15,6 +15,7 @@ export function describeKey(key){
  if((m=/^playground:uil:check:(.+)$/.exec(key)))return binding('uil',m[1],'programming','progress');
  if(key==='playground:uil:written-answers')return binding('uil','written-01','quiz','draft','answers.json');
  if(key==='playground:uil:written-result')return binding('uil','written-01','quiz','progress');
+ if((m=/^playground:journal:(computer-science-1|game-programming|mobile-app-dev|uil|capstone):(\d{4}-\d{2}-\d{2}):(response|details)$/.exec(key)))return binding(m[1],'journal:'+m[2],'self-report','draft',m[3]==='response'?'journal.md':'journal-info.json');
  if((m=/^cs1:guided:v1:(draft|pass):(.+)$/.exec(key)))return binding('computer-science-1','lesson:'+m[2],'lesson',m[1]==='draft'?'draft':'progress');
  if((m=/^cs1:challenges:2026-10-26:(draft|pass):(.+)$/.exec(key)))return binding('computer-science-1','challenge:'+m[2],'challenge',m[1]==='draft'?'draft':'progress');
  if((m=/^cs1:unit01:(draft|pass):(.+)$/.exec(key)))return binding('computer-science-1','legacy-lesson:'+m[2],'lesson',m[1]==='draft'?'draft':'progress');
@@ -22,6 +23,10 @@ export function describeKey(key){
 }
 export function draftKey(row){
  const {course_id:c,activity_id:a,file_name:f}=row;
+ if(a.startsWith('journal:')&&['computer-science-1','game-programming','mobile-app-dev','uil','capstone'].includes(c)){
+  if(f==='journal.md')return 'playground:journal:'+c+':'+a.slice(8)+':response';
+  if(f==='journal-info.json')return 'playground:journal:'+c+':'+a.slice(8)+':details';
+ }
  if(c==='game-programming')return f==='answers.json'?'playground:quiz-answers:game-programming:'+a:f==='main'?'playground:draft:game-programming:'+a:null;
  if(c==='mobile-app-dev'&&f==='main')return 'playground:draft:mobile-app-dev:'+a;
  if(c==='uil')return a==='written-01'&&f==='answers.json'?'playground:uil:written-answers':f==='main'?'playground:uil:draft:'+a:null;

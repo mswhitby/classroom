@@ -1,4 +1,6 @@
+import {componentProjectCheckSource} from './component-project-checks.mjs';
 import {previewConsoleBridge} from './console-drawer.mjs?v=console-2';
+import {bracketProjectCheckSource} from './bracket-project-checks.mjs?v=2';
 
 // Run checks against the rendered page and its actual submit behavior.
 export function projectCheckSource(step){
@@ -53,12 +55,13 @@ export function projectCheckSource(step){
 })().catch(error=>send('error',{text:error.name+': '+error.message}));`;
 }
 
-export function buildProjectPreview(source,{token,step,check=false}={}){
+export function buildProjectPreview(source,{token,step,check=false,projectId='club-connect'}={}){
  if(!token)throw Error('A preview ID is required.');
  const bridge='<meta http-equiv="Content-Security-Policy" content="form-action &apos;none&apos;">'+'<script>'+previewConsoleBridge(token).replace(/<\/script/gi,'<\\/script')+'<\/script>';
  // Install error forwarding before any student script, including scripts in the head.
  const documentSource=String(source).replace(/^\s*<!doctype[^>]*>/i,'');
- const finish='<script>setTimeout(()=>{send("ready");'+(check?projectCheckSource(step):'')+'},50);<\/script>';
+ const checks=projectId==='component-studio'?componentProjectCheckSource(step):projectId==='bracket-challenge'?bracketProjectCheckSource(step):projectCheckSource(step);
+ const finish='<script>setTimeout(()=>{send("ready");'+(check?checks:'')+'},50);<\/script>';
  const withBridge=/<head(?:\s[^>]*)?>/i.test(documentSource)?documentSource.replace(/<head(?:\s[^>]*)?>/i,head=>head+bridge):bridge+documentSource;
  return '<!doctype html>'+withBridge+finish;
 }

@@ -73,6 +73,133 @@
           "markdown": "projects/club-connect/04-test.md"
         }
       ]
+    },
+    {
+      "id": "bracket-challenge",
+      "title": "Bracket Challenge",
+      "summary": "Build an interactive eight-team March basketball bracket contest: choose winners, advance teams, score predictions, and rank sample entries.",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "starterFile": "projects/bracket-challenge/starter.html",
+      "exampleFile": "projects/bracket-challenge/example.html",
+      "steps": [
+        {
+          "id": "scaffold",
+          "title": "Create your first HTML file",
+          "focus": "HTML document",
+          "markdown": "projects/bracket-challenge/01-scaffold.md",
+          "objective": "Create your first HTML file. Compare your entire file with this checkpoint, then run it."
+        },
+        {
+          "id": "page",
+          "title": "Add the visible page",
+          "focus": "HTML elements",
+          "markdown": "projects/bracket-challenge/02-page.md",
+          "objective": "Add the visible page. Compare your entire file with this checkpoint, then run it."
+        },
+        {
+          "id": "style",
+          "title": "Make the page readable",
+          "focus": "CSS rules",
+          "markdown": "projects/bracket-challenge/03-style.md",
+          "objective": "Make the page readable. Compare your entire file with this checkpoint, then run it."
+        },
+        {
+          "id": "teams",
+          "title": "Describe teams with data",
+          "focus": "Arrays and objects",
+          "markdown": "projects/bracket-challenge/01-teams.md",
+          "objective": "Describe teams with data. Compare your entire file with this checkpoint, then run it."
+        },
+        {
+          "id": "matchups",
+          "title": "Find the teams for a game",
+          "focus": "Functions",
+          "markdown": "projects/bracket-challenge/04-matchups.md",
+          "objective": "Find the teams for a game. Compare your entire file with this checkpoint, then run it."
+        },
+        {
+          "id": "layout",
+          "title": "Draw three rounds",
+          "focus": "DOM and loops",
+          "markdown": "projects/bracket-challenge/02-layout.md",
+          "objective": "Draw three rounds. Compare your entire file with this checkpoint, then run it."
+        },
+        {
+          "id": "picks",
+          "title": "Choose and advance winners",
+          "focus": "Events and state",
+          "markdown": "projects/bracket-challenge/03-picks.md",
+          "objective": "Choose and advance winners. Compare your entire file with this checkpoint, then run it."
+        },
+        {
+          "id": "scoring",
+          "title": "Calculate sample points",
+          "focus": "Comparisons and totals",
+          "markdown": "projects/bracket-challenge/04-scoring.md",
+          "objective": "Calculate sample points. Compare your entire file with this checkpoint, then run it."
+        },
+        {
+          "id": "leaderboard",
+          "title": "Save entries and rank them",
+          "focus": "Forms and copies",
+          "markdown": "projects/bracket-challenge/05-leaderboard.md",
+          "objective": "Save entries and rank them. Compare your entire file with this checkpoint, then run it."
+        },
+        {
+          "id": "test",
+          "title": "Test and explain the whole app",
+          "focus": "Debugging and accessibility",
+          "markdown": "projects/bracket-challenge/06-test.md",
+          "objective": "Test and explain the whole app. Compare your entire file with this checkpoint, then run it."
+        }
+      ]
+    },
+    {
+      "id": "component-studio",
+      "title": "Class Component Studio",
+      "summary": "Build one small component for a shared classroom app. Compare designs and vote, or check out separate components with assigned owners.",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Collaboration"
+      ],
+      "starterFile": "projects/component-studio/starter.html",
+      "exampleFile": "projects/component-studio/example.html",
+      "steps": [
+        {
+          "id": "plan",
+          "title": "Choose a mode and claim a component",
+          "focus": "Contracts and ownership",
+          "objective": "Agree on the component contract, owner, reviewer, and class workflow.",
+          "markdown": "projects/component-studio/01-plan.md"
+        },
+        {
+          "id": "build",
+          "title": "Build in isolation",
+          "focus": "HTML, CSS, JavaScript",
+          "objective": "Build an event card with a working save toggle and status.",
+          "markdown": "projects/component-studio/02-build.md"
+        },
+        {
+          "id": "review",
+          "title": "Review and select",
+          "focus": "Peer review and voting",
+          "objective": "Resolve peer feedback and record the teacher-approved candidate.",
+          "markdown": "projects/component-studio/03-review.md"
+        },
+        {
+          "id": "integrate",
+          "title": "Integrate and hand off",
+          "focus": "Composition and testing",
+          "objective": "Test two independent component instances and prepare the integration PR.",
+          "markdown": "projects/component-studio/04-integrate.md"
+        }
+      ]
     }
   ]
 }

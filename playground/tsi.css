@@ -24,3 +24,6 @@
  .pg-app .tsi-question .choice { min-width:0;padding:12px }
  .pg-app .tsi-results .progress-row { display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;padding:12px 0 }
 }
+
+/* Diagnostic questions need the same reading size and contrast as lesson text. */
+#math-diagnostic .tsi-question > label { font-size: 1rem; color: inherit; }
