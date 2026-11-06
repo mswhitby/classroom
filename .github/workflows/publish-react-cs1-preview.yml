@@ -1,0 +1,54 @@
+name: Publish isolated React CS1 preview
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-react-cs1-preview.yml'
+permissions:
+  contents: write
+concurrency:
+  group: publish-react-cs1-preview
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout published website
+        uses: actions/checkout@v4
+        with:
+          path: site
+          persist-credentials: true
+      - name: Checkout reviewed React frontend
+        uses: actions/checkout@v4
+        with:
+          repository: mswhitby/playground-react
+          ref: b0c62c4a34cdf70e5d7bbe199ffab06cc40159bf
+          path: react
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install and verify preview
+        working-directory: react
+        run: |
+          npm install --no-audit --no-fund
+          npm test
+      - name: Build isolated hosted preview
+        working-directory: react
+        env:
+          VITE_HASH_ROUTING: 'true'
+        run: npm run build -- --base=/playground/preview/react/
+      - name: Copy preview only
+        run: |
+          mkdir -p site/playground/preview/react
+          rsync -a --delete react/dist/ site/playground/preview/react/
+      - name: Publish preview without altering production assets
+        working-directory: site
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add playground/preview/react
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish React review with live CS1 lessons and mock other courses'
+            git push origin HEAD:main
+          fi
