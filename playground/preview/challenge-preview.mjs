@@ -96,7 +96,7 @@ function pythonHarness(source,cases,fn){
  'print("PREVIEW_CASES="+json.dumps(__results))'].join('\n');
 }
 async function runPython(source,cases,fn){
- const r=new PythonRunner({onStatus:s=>$('challenge-console').textContent=s,runTimeout:10000});runner=r;
+ const r=new PythonRunner({onStatus:s=>$('challenge-console').textContent=s,runTimeout:10000,workerFactory:()=>new Worker(new URL('../data/computer-science-1/python-worker.js',import.meta.url))});runner=r;
  try{const answer=await r.run(pythonHarness(source,cases,fn));const line=String(answer.output||'').split('\n').find(l=>l.startsWith('PREVIEW_CASES='));if(!line)throw Error(answer.error||'Python did not return check results.');return JSON.parse(line.slice(14))}
  finally{r.dispose();if(runner===r)runner=null}
 }
