@@ -58,5 +58,17 @@ jobs:
           git add playground/preview/index.html playground/preview/assets playground/preview/python-worker.js playground/preview/journals.html
           if ! git diff --cached --quiet; then
             git commit -m 'Publish React frontend at Playground preview root, preserving journal and challenge previews'
-            git push origin HEAD:main
+            # Other preview files can be updated independently. Rebase our isolated
+            # preview changes onto the newest website revision before pushing.
+            for attempt in 1 2 3; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                break
+              fi
+              if [ "$attempt" -eq 3 ]; then
+                echo 'Could not publish the preview after three attempts.'
+                exit 1
+              fi
+            done
           fi
