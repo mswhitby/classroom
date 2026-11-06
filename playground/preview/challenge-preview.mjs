@@ -22,10 +22,11 @@ let catalog=[],selection,language='python',runner,operation=0;
 const drafts=new Map(),receipts=[];
 function starter(id,lang){
  const [args,ret,fn]=fields[id][lang];
- if(lang==='python')return 'def '+fn+'('+args+') -> '+ret+':\n    # Implement the function and return a value.\n    raise NotImplementedError("Your code here")\n';
- if(lang==='javascript')return 'export function '+fn+'('+args+') {\n  // Implement the function and return a value.\n  throw new Error("Your code here");\n}\n';
- if(lang==='java')return 'public class Solution {\n    public static '+ret+' '+fn+'('+args+') {\n        // Implement the function and return a value.\n        throw new UnsupportedOperationException("Your code here");\n    }\n}\n';
- return 'using System;\n\npublic static class Solution {\n    public static '+ret+' '+fn+'('+args+') {\n        // Implement the function and return a value.\n        throw new NotImplementedException("Your code here");\n    }\n}\n';
+ if(lang==='python')return 'def '+fn+'('+args+') -> '+ret+':\n    # Write your solution here.\n    pass\n';
+ if(lang==='javascript')return 'export function '+fn+'('+args+') {\n  // Replace the placeholder with your solution.\n  return null;\n}\n';
+ const fallback=ret==='int'?'0':ret==='int[]'?(lang==='java'?'new int[0]':'Array.Empty<int>()'):ret==='String'?'""':ret==='string'?'""':'null';
+ if(lang==='java')return 'public class Solution {\n    public static '+ret+' '+fn+'('+args+') {\n        // Replace the placeholder with your solution.\n        return '+fallback+';\n    }\n}\n';
+ return 'using System;\n\npublic static class Solution {\n    public static '+ret+' '+fn+'('+args+') {\n        // Replace the placeholder with your solution.\n        return '+fallback+';\n    }\n}\n';
 }
 function showMarkdown(text){
  const lines=String(text||'').split('\n');let inside=false;
@@ -39,6 +40,25 @@ function showMarkdown(text){
   if(!line.trim())return '';
   return '<p>'+escaped(line).replace(/`([^`]+)`/g,'<code>$1</code>').replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>')+'</p>';
  }).join('');
+}
+function studentDescription(markdown){
+ // JSON cases are grader data, not instructions to build an object or dictionary.
+ return String(markdown).replace(/\n## Examples[\s\S]*?(?=\n## Constraints|$)/,'');
+}
+function showPublishedExamples(challenge,lang){
+ const names=fields[challenge.id].javascript[0].split(',').map(s=>s.trim());
+ const format=value=>{
+  if(lang==='python'&&typeof value==='boolean')return value?'True':'False';
+  if(value===null)return lang==='python'?'None':'null';
+  if(Array.isArray(value))return '['+value.map(format).join(', ')+']';
+  return JSON.stringify(value);
+ };
+ return '<section class="challenge-examples"><h2>Examples</h2>'+
+  challenge.examples.map((sample,i)=>
+   '<div class="challenge-example"><h3>Example '+(i+1)+'</h3>'+
+   '<p><strong>Given:</strong> <code>'+escaped(sample.input.map((value,index)=>(names[index]||'input'+(index+1))+' = '+format(value)).join(', '))+'</code></p>'+
+   '<p><strong>Your function returns:</strong> <code>'+escaped(format(sample.expected))+'</code></p></div>').join('')+
+  '</section>';
 }
 function getSelected(){return catalog.find(c=>c.id===selection)}
 function saveDraft(){const editor=$('challenge-editor');if(editor)drafts.set(selection+'|'+language,editor.value)}
@@ -61,7 +81,7 @@ function render(){
  renderList();
  $('challenge-title').textContent=c.title;$('challenge-summary').textContent=c.summary;
  $('challenge-badges').innerHTML='<span>'+escaped(c.difficulty)+'</span><span>'+c.points+' points</span>'+c.tags.map(t=>'<span>'+escaped(t)+'</span>').join('');
- $('challenge-problem').innerHTML=showMarkdown(c.description);
+ $('challenge-problem').innerHTML=showMarkdown(studentDescription(c.description))+showPublishedExamples(c,language);
  $('challenge-language').value=language;$('challenge-file').textContent=filenames[language];
  $('challenge-editor').value=drafts.get(selection+'|'+language)??starter(selection,language);
  $('challenge-console').textContent='Ready. Run tries the first published example; Check tries all published examples.';
