@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "source": "Ms. Whitby's Playground — original Python lessons aligned with ThinkCSPy concepts",
+  "lessons": [
+    {
+      "id": "08-lists-and-collections/01-list-indexing",
+      "unit": 8,
+      "unitName": "Lists & Collections",
+      "lesson": 1,
+      "slug": "01-list-indexing",
+      "title": "Read values from a list",
+      "concept": "Lists, indexes, negative positions",
+      "summary": "A list stores several values in order, and each can be read using its position.",
+      "mode": "function",
+      "starter": "def end_points(values):\n    # Return a new two-item list, not the original list.\n    pass\n",
+      "cases": [
+        {
+          "call": "end_points([4, 7, 9])",
+          "expected": "[4, 9]"
+        },
+        {
+          "call": "end_points([2])",
+          "expected": "[2, 2]"
+        },
+        {
+          "call": "end_points(['a', 'b'])",
+          "expected": "['a', 'b']"
+        },
+        {
+          "call": "end_points([0, -1, 3, 8])",
+          "expected": "[0, 8]"
+        }
+      ],
+      "points": 5,
+      "hints": [
+        "Select the value at index 0.",
+        "Use index -1 for the final value.",
+        "Wrap the two values in square brackets."
+      ],
+      "markdown": "08-lists-and-collections/lessons/01-list-indexing.md",
+      "functionName": "end_points"
+    },
+    {
+      "id": "08-lists-and-collections/02-copy-and-change",
+      "unit": 8,
+      "unitName": "Lists & Collections",
+      "lesson": 2,
+      "slug": "02-copy-and-change",
+      "title": "Update a copy, not the original",
+      "concept": "List copying and assignment",
+      "summary": "Lists are mutable, so programs should decide carefully whether to change the caller's data or return a modified copy.",
+      "mode": "function",
+      "starter": "def replace_last(items, value):\n    # Make a copy, edit the copy, then return it.\n    pass\n",
+      "cases": [
+        {
+          "call": "replace_last([2, 4, 6], 8)",
+          "expected": "[2, 4, 8]"
+        },
+        {
+          "call": "replace_last(['old'], 'new')",
+          "expected": "['new']"
+        },
+        {
+          "call": "replace_last([0, 0], 3)",
+          "expected": "[0, 3]"
+        },
+        {
+          "call": "replace_last(['a', 'b'], 'z')",
+          "expected": "['a', 'z']"
+        }
+      ],
+      "points": 10,
+      "hints": [
+        "Use `items.copy()` first.",
+        "Update position -1 in the copied list.",
+        "Return the copy."
+      ],
+      "markdown": "08-lists-and-collections/lessons/02-copy-and-change.md",
+      "functionName": "replace_last"
+    },
+    {
+      "id": "08-lists-and-collections/03-filter-a-list",
+      "unit": 8,
+      "unitName": "Lists & Collections",
+      "lesson": 3,
+      "slug": "03-filter-a-list",
+      "title": "Keep values that meet a rule",
+      "concept": "For loops, if statements, accumulators",
+      "summary": "A loop can inspect a collection and build a new list containing only matching items.",
+      "mode": "function",
+      "starter": "def positive_values(numbers):\n    # Keep positive numbers in a new list.\n    pass\n",
+      "cases": [
+        {
+          "call": "positive_values([-2, 7, 0, 4])",
+          "expected": "[7, 4]"
+        },
+        {
+          "call": "positive_values([])",
+          "expected": "[]"
+        },
+        {
+          "call": "positive_values([-5, -1])",
+          "expected": "[]"
+        },
+        {
+          "call": "positive_values([3, 2, 1])",
+          "expected": "[3, 2, 1]"
+        }
+      ],
+      "points": 10,
+      "hints": [
+        "Begin with an empty list.",
+        "Use a `for` loop over the input list.",
+        "Append only when the value is strictly greater than zero."
+      ],
+      "markdown": "08-lists-and-collections/lessons/03-filter-a-list.md",
+      "functionName": "positive_values"
+    },
+    {
+      "id": "08-lists-and-collections/04-build-a-leaderboard",
+      "unit": 8,
+      "unitName": "Lists & Collections",
+      "lesson": 4,
+      "slug": "04-build-a-leaderboard",
+      "title": "Build a score leaderboard",
+      "concept": "Sorted lists, reverse order and preserving data",
+      "summary": "A leaderboard orders numeric scores while leaving the original score list unchanged.",
+      "mode": "function",
+      "starter": "def top_two(scores):\n    # Return two highest scores without modifying the input.\n    pass\n",
+      "cases": [
+        {
+          "call": "top_two([12, 28, 19])",
+          "expected": "[28, 19]"
+        },
+        {
+          "call": "top_two([9, 9, 3])",
+          "expected": "[9, 9]"
+        },
+        {
+          "call": "top_two([-3, -1, -5])",
+          "expected": "[-1, -3]"
+        },
+        {
+          "call": "top_two([4, 2])",
+          "expected": "[4, 2]"
+        }
+      ],
+      "points": 15,
+      "hints": [
+        "Make a descending copy with `sorted()`.",
+        "Use `reverse=True` rather than manually swapping values.",
+        "Return a slice containing the first two items."
+      ],
+      "markdown": "08-lists-and-collections/lessons/04-build-a-leaderboard.md",
+      "functionName": "top_two"
+    }
+  ]
+}

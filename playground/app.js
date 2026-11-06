@@ -1,11 +1,11 @@
-import {unitPage} from './unit-page.mjs?v=classroom-cache-2';
+import {unitPage} from './unit-page.mjs?v=python-curriculum-20261106';
 import {journalsPage} from './journals.mjs?v=journals-1';
 import {renderCheckCards} from './check-cards.mjs?v=reading-1';
 import {tsiPage} from './tsi.mjs?v=diagnostic-1';
-import {gradesPage} from './grades.mjs?v=grades-1';
+import {gradesPage} from './grades.mjs?v=python-curriculum-20261106';
 import {courseOverview} from './course-overview.mjs?v=classroom-cache-2';
 import {homePage} from './home.mjs?v=reading-1';
-import {pythonPage} from './python.mjs?v=grades-1';
+import {pythonPage} from './python.mjs?v=python-curriculum-20261106';
 import {classesPage,teacherPage} from './classroom-page.mjs?v=student-history-20261105';
 import {Account,ready as accountReady} from './account.js?v=grades-2';
 import {mobileProjectPage,mobileProjectIndex} from './mobile-project.mjs?v=classroom-cache-2';

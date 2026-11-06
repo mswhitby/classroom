@@ -1,4 +1,4 @@
-import {courseUnits,unitHref} from './course-navigation.mjs?v=reading-1';
+import {courseUnits,unitHref} from './course-navigation.mjs?v=python-curriculum-20261106';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export async function unitPage(main,course,id){
  const route=location.hash,r=await fetch('data/'+course.id+'/course.json?v=classroom-20261106');if(!r.ok)throw Error('Course unavailable');const manifest=await r.json();if(location.hash!==route)return;

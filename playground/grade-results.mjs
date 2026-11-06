@@ -12,3 +12,19 @@ export async function assessedHistory(client,rows){
  for(let i=0;i<rows.length;i+=100){const {data,error}=await client.from('playground_grades').select('submission_id,status,points,possible,scope,passed_cases,total_cases,graded_at').in('submission_id',rows.slice(i,i+100).map(r=>r.id));if(error){if(['42P01','PGRST205'].includes(error.code))return rows.map(r=>({...r,grade:{status:'unavailable'}}));throw error}for(const g of data||[])grades.set(g.submission_id,g)}
  return rows.map(r=>({...r,grade:grades.get(r.id)||{status:'unavailable'}}));
 }
+
+/** Keep the highest verified graded attempt, not merely the most recent hand-in.
+ * This matches weekly verified-points accounting and survives later resubmissions,
+ * even if an activity is hidden from current course navigation. */
+export function bestGradedSubmissions(rows){
+ const best=new Map();
+ const ordered=[...rows].filter(r=>r?.course_id&&r?.activity_id&&!r.activity_id.startsWith('review:')).sort((a,b)=>Date.parse(b.submitted_at)-Date.parse(a.submitted_at));
+ for(const row of ordered){
+  const key=row.course_id+'|'+row.activity_id;
+  const previous=best.get(key);
+  if(!previous){best.set(key,row);continue}
+  const score=recordedScore(row.grade),prior=recordedScore(previous.grade);
+  if(score&&(!prior||score.points>prior.points))best.set(key,row);
+ }
+ return [...best.values()].sort((a,b)=>Date.parse(b.submitted_at)-Date.parse(a.submitted_at));
+}
