@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "languages": [
+    "python",
+    "java",
+    "javascript",
+    "csharp"
+  ],
+  "challenges": [
+    {
+      "id": "temperature-alert",
+      "title": "Temperature Alert",
+      "summary": "Choose a status label based on a temperature reading.",
+      "difficulty": "Very Easy",
+      "points": 5,
+      "tags": [
+        "conditionals",
+        "comparisons",
+        "functions"
+      ],
+      "prerequisites": [
+        "functions",
+        "conditionals"
+      ],
+      "suggestedCourses": [
+        "computer-science-1",
+        "game-programming",
+        "uil"
+      ],
+      "languages": [
+        "python",
+        "java",
+        "javascript",
+        "csharp"
+      ],
+      "path": "problems/temperature-alert"
+    },
+    {
+      "id": "count-matches",
+      "title": "Count Matching Events",
+      "summary": "Count how often a particular event code appears.",
+      "difficulty": "Easy",
+      "points": 10,
+      "tags": [
+        "arrays",
+        "loops",
+        "comparisons"
+      ],
+      "prerequisites": [
+        "functions",
+        "loops",
+        "arrays"
+      ],
+      "suggestedCourses": [
+        "computer-science-1",
+        "game-programming",
+        "mobile-app-dev",
+        "uil"
+      ],
+      "languages": [
+        "python",
+        "java",
+        "javascript",
+        "csharp"
+      ],
+      "path": "problems/count-matches"
+    },
+    {
+      "id": "sum-positives",
+      "title": "Sum Positive Values",
+      "summary": "Add only the positive values in a data set.",
+      "difficulty": "Easy",
+      "points": 10,
+      "tags": [
+        "arrays",
+        "loops",
+        "accumulators"
+      ],
+      "prerequisites": [
+        "functions",
+        "loops",
+        "arrays"
+      ],
+      "suggestedCourses": [
+        "computer-science-1",
+        "game-programming",
+        "mobile-app-dev",
+        "uil"
+      ],
+      "languages": [
+        "python",
+        "java",
+        "javascript",
+        "csharp"
+      ],
+      "path": "problems/sum-positives"
+    },
+    {
+      "id": "score-line",
+      "title": "Format a Score Line",
+      "summary": "Format a player score as a clear single line of text.",
+      "difficulty": "Easy",
+      "points": 10,
+      "tags": [
+        "strings",
+        "formatting",
+        "functions"
+      ],
+      "prerequisites": [
+        "variables",
+        "strings",
+        "functions"
+      ],
+      "suggestedCourses": [
+        "computer-science-1",
+        "game-programming",
+        "mobile-app-dev",
+        "uil"
+      ],
+      "languages": [
+        "python",
+        "java",
+        "javascript",
+        "csharp"
+      ],
+      "path": "problems/score-line"
+    },
+    {
+      "id": "attendance-percent",
+      "title": "Attendance Percentage",
+      "summary": "Convert an attendance fraction into a whole-number percentage.",
+      "difficulty": "Easy",
+      "points": 10,
+      "tags": [
+        "arithmetic",
+        "integer-division",
+        "functions"
+      ],
+      "prerequisites": [
+        "variables",
+        "functions",
+        "arithmetic"
+      ],
+      "suggestedCourses": [
+        "computer-science-1",
+        "game-programming",
+        "mobile-app-dev",
+        "uil"
+      ],
+      "languages": [
+        "python",
+        "java",
+        "javascript",
+        "csharp"
+      ],
+      "path": "problems/attendance-percent"
+    },
+    {
+      "id": "longest-win-streak",
+      "title": "Longest Winning Streak",
+      "summary": "Find the longest consecutive run of winning results.",
+      "difficulty": "Medium",
+      "points": 15,
+      "tags": [
+        "arrays",
+        "loops",
+        "state"
+      ],
+      "prerequisites": [
+        "functions",
+        "loops",
+        "arrays",
+        "conditionals"
+      ],
+      "suggestedCourses": [
+        "computer-science-1",
+        "game-programming",
+        "mobile-app-dev",
+        "uil"
+      ],
+      "languages": [
+        "python",
+        "java",
+        "javascript",
+        "csharp"
+      ],
+      "path": "problems/longest-win-streak"
+    },
+    {
+      "id": "confidence-total",
+      "title": "Confidence Pool Total",
+      "summary": "Compute the points earned from predictions.",
+      "difficulty": "Medium",
+      "points": 15,
+      "tags": [
+        "arrays",
+        "loops",
+        "parallel-arrays"
+      ],
+      "prerequisites": [
+        "functions",
+        "loops",
+        "arrays",
+        "conditionals"
+      ],
+      "suggestedCourses": [
+        "computer-science-1",
+        "game-programming",
+        "mobile-app-dev",
+        "uil"
+      ],
+      "languages": [
+        "python",
+        "java",
+        "javascript",
+        "csharp"
+      ],
+      "path": "problems/confidence-total"
+    },
+    {
+      "id": "second-largest-distinct",
+      "title": "Second Largest Distinct Value",
+      "summary": "Return the second-highest unique integer in a collection.",
+      "difficulty": "Medium",
+      "points": 20,
+      "tags": [
+        "arrays",
+        "comparisons",
+        "distinct-values"
+      ],
+      "prerequisites": [
+        "functions",
+        "loops",
+        "arrays",
+        "conditionals"
+      ],
+      "suggestedCourses": [
+        "computer-science-1",
+        "game-programming",
+        "mobile-app-dev",
+        "uil"
+      ],
+      "languages": [
+        "python",
+        "java",
+        "javascript",
+        "csharp"
+      ],
+      "path": "problems/second-largest-distinct"
+    },
+    {
+      "id": "target-pairs",
+      "title": "Count Pairs With Target Sum",
+      "summary": "Count pairs of positions that add to a target.",
+      "difficulty": "Hard",
+      "points": 25,
+      "tags": [
+        "arrays",
+        "nested-loops",
+        "counting"
+      ],
+      "prerequisites": [
+        "functions",
+        "loops",
+        "arrays",
+        "conditionals"
+      ],
+      "suggestedCourses": [
+        "computer-science-1",
+        "game-programming",
+        "mobile-app-dev",
+        "uil"
+      ],
+      "languages": [
+        "python",
+        "java",
+        "javascript",
+        "csharp"
+      ],
+      "path": "problems/target-pairs"
+    },
+    {
+      "id": "competition-ranks",
+      "title": "Competition Leaderboard Ranks",
+      "summary": "Assign ranks while handling tied scores and skipped positions.",
+      "difficulty": "Hard",
+      "points": 25,
+      "tags": [
+        "arrays",
+        "sorting",
+        "ties"
+      ],
+      "prerequisites": [
+        "functions",
+        "loops",
+        "arrays",
+        "sorting"
+      ],
+      "suggestedCourses": [
+        "computer-science-1",
+        "game-programming",
+        "mobile-app-dev",
+        "uil"
+      ],
+      "languages": [
+        "python",
+        "java",
+        "javascript",
+        "csharp"
+      ],
+      "path": "problems/competition-ranks"
+    }
+  ]
+}
