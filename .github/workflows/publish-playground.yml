@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: mswhitby/playground
-          ref: 63f13836f2239611a436cb7d01274084472901b8
+          ref: c6afd30f3a20bfada1f9b7cb263e58726192a5cb
           path: playground
       - uses: actions/checkout@v4
         with:
@@ -30,7 +30,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: mswhitby/mobile-app-dev
-          ref: d244168fc2d418b76778ddace1c58342ed328b83
+          ref: c2127b44a4fe3f7474ff8d30ab0c5d59fd353331
           path: mobile-app-dev
       - uses: actions/checkout@v4
         with:
@@ -70,7 +70,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add playground computer-science-1
           if ! git diff --cached --quiet; then
-            git commit -m 'Show recorded scores and refine lesson reading'
+            git commit -m 'Publish math diagnostic, beginner bracket tutorial, component studio, and journals'
             git push origin HEAD:main
           fi
           gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
