@@ -7,7 +7,7 @@ const href=id=>'#/course/'+id;
 const metadata={'computer-science-1':['py','Python','--tile-py'],'game-programming':['c#','C# · Unity','--tile-cs'],'mobile-app-dev':['js','HTML · CSS · JavaScript','--tile-js'],uil:['jv','Java','--tile-jv'],capstone:['++','Capstone','--tile-cap'],'tsi-math':['ma','Math · Open access','--tile-cap']};
 let catalog=[];const manifests=new Map();
 try{const r=await fetch(new URL('catalog.json',root));if(r.ok)catalog=await r.json()}catch{}
-await Promise.allSettled(catalog.filter(c=>c.status!=='planned').map(async c=>{const r=await fetch(new URL('data/'+c.id+'/course.json',root));if(r.ok)manifests.set(c.id,await r.json())}));
+await Promise.allSettled(catalog.filter(c=>c.status!=='planned').map(async c=>{const r=await fetch(new URL('data/'+c.id+'/course.json?v=classroom-20261106',root));if(r.ok)manifests.set(c.id,await r.json())}));
 const read=(key,fallback)=>{try{return localStorage.getItem(key)??fallback}catch{return fallback}},save=(key,v)=>{try{localStorage.setItem(key,v)}catch{}};
 const practice=id=>id==='tsi-math'?href(id)+'/lesson/'+manifests.get(id)?.weeks?.[0]?.sessions?.at(-1)?.id:id==='capstone'?href(id):id==='computer-science-1'?href(id)+'/practice':id==='mobile-app-dev'?href(id)+'/projects':id==='uil'?href(id)+'/practice':href(id)+'/practice';
 const practiceLabel=id=>id==='computer-science-1'?'Challenges':id==='mobile-app-dev'?'Projects':'Practice';

@@ -4,7 +4,7 @@ import {buildProjectPreview} from './project-preview.mjs?v=classroom-2';
 const base='#/course/mobile-app-dev',data='data/mobile-app-dev/';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const path=(id,step)=>`${base}/project/${encodeURIComponent(id)}/${encodeURIComponent(step)}`;
-async function get(file){const r=await fetch(data+file);if(!r.ok)throw Error('The project could not open. Refresh to try again.');return file.endsWith('.json')?r.json():r.text()}
+async function get(file){const r=await fetch(data+file+'?v=classroom-20261106');if(!r.ok)throw Error('The project could not open. Refresh to try again.');return file.endsWith('.json')?r.json():r.text()}
 export async function mobileProjectPage(main,id,stepId){
  const route=location.hash,c=await get('course.json'),project=c.projects?.find(p=>p.id===id);
  if(location.hash!==route)return;

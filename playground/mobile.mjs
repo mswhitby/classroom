@@ -2,7 +2,7 @@ import {createConsoleDrawer,previewConsoleBridge} from './console-drawer.mjs?v=c
 import {setupStudyLayout} from './study-layout.mjs?v=reading-1';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let course;
-async function getCourse(){if(!course){const r=await fetch('data/mobile-app-dev/course.json');if(!r.ok)throw Error('Lessons unavailable');course=await r.json()}return course}
+async function getCourse(){if(!course){const r=await fetch('data/mobile-app-dev/course.json?v=classroom-20261106');if(!r.ok)throw Error('Lessons unavailable');course=await r.json()}return course}
 export async function mobilePage(main,id){
  const route=location.hash;const c=await getCourse();if(!main.isConnected||location.hash!==route)return;
  const base='#/course/mobile-app-dev';
