@@ -41,14 +41,15 @@ jobs:
       - name: Publish only TSI preview folder
         run: |
           mkdir -p site/playground/tsi-study
-          cp tsi/preview/index.html site/playground/tsi-study/index.html
+          rm -f site/playground/tsi-study/index.html
+          rmdir site/playground/tsi-study 2>/dev/null || true
       - name: Commit TSI-only site update
         working-directory: site
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add playground/tsi-study/index.html
+          git add -A playground/tsi-study
           if ! git diff --cached --quiet; then
-            git commit -m 'Publish TSI study curriculum preview'
+            git commit -m 'Remove incorrect standalone TSI preview'
             git push origin HEAD:main
           fi
