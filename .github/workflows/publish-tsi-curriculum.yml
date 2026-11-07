@@ -1,5 +1,5 @@
 name: Publish TSI curriculum only
-# TSI-only production release after verified Playground PR #29
+# TSI-only production release after verified Playground PR #30
 on:
   push:
     branches: [main]
@@ -36,10 +36,10 @@ jobs:
           root=Path('TSI/content')
           plan=json.loads((root/'20-day-program.json').read_text())
           profiles=json.loads((root/'math-locator-profiles.json').read_text())
-          diagnostic=json.loads((root/'diagnostic-20day-v1.json').read_text())
+          diagnostic=json.loads((root/'diagnostic-24-mc-v2.json').read_text())
           assert len(plan['days'])==20
           assert len(profiles['profiles'])==81
-          assert len(diagnostic['items'])==12
+          assert len(diagnostic['items'])==24
           print('PASS: replacement TSI plan, locator and free-response diagnostic')
           PY
       - name: Publish TSI files without modifying coding courses
