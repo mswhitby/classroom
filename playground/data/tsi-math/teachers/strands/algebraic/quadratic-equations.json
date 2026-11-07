@@ -1,0 +1,26 @@
+{
+  "lesson_id": "tsi-algebraic-quadratic-equations-v1",
+  "note": "Instructional answer reference only; public repository, not a protected assessment key.",
+  "items": [
+    {
+      "question": 1,
+      "correct": "C",
+      "explanation": "x² = 9 has two real solutions, −3 and 3."
+    },
+    {
+      "question": 2,
+      "correct": "A",
+      "explanation": "3 × 4 = 12 and 3 + 4 = 7."
+    },
+    {
+      "question": 3,
+      "correct": "D",
+      "explanation": "Each factor can equal zero: x = 5 or x = −2."
+    },
+    {
+      "question": 4,
+      "correct": "B",
+      "explanation": "(x + 1)(x − 4) = x² − 3x − 4."
+    }
+  ]
+}

@@ -7,9 +7,7 @@
   },
   "tsi-math": {
     "repository": "mswhitby/TSI",
-    "commit": "ed4836a76814a96537ab9a7c135764efdbd50367",
-    "refresh": "python scripts/build.py --tsi-source ../TSI",
-    "snapshot": "Week 1 sample curriculum",
+    "commit": "55780bcf7a8f2f95c3c91bee8e1d6e7f6c26e9d7",
     "file": "content/week-01-student.json",
     "sha256": "5307df34a439d0dd3469fd2ad79975ffbd527fed9b4ae3a947042c2b1481ead5"
   },

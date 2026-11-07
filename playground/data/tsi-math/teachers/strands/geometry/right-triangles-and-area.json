@@ -1,0 +1,26 @@
+{
+  "lesson_id": "tsi-geometry-right-triangles-and-area-v1",
+  "note": "Instructional answer reference only; public repository, not a protected assessment key.",
+  "items": [
+    {
+      "question": 1,
+      "correct": "B",
+      "explanation": "5² + 12² = 169; √169 = 13."
+    },
+    {
+      "question": 2,
+      "correct": "B",
+      "explanation": "A = ½ × 14 × 5 = 35 cm²."
+    },
+    {
+      "question": 3,
+      "correct": "B",
+      "explanation": "P = 2(7 + 9) = 32 m."
+    },
+    {
+      "question": 4,
+      "correct": "C",
+      "explanation": "b² = 10² − 8² = 36; b = 6."
+    }
+  ]
+}

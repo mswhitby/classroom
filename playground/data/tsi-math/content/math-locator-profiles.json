@@ -1,0 +1,746 @@
+{
+  "schema_version": 1,
+  "source": "TSIA2_Learning_Locator.xlsx / MATH Profiles",
+  "level_order": [
+    "Basic",
+    "Proficient",
+    "Advanced"
+  ],
+  "strand_order": [
+    "quantitative",
+    "algebraic",
+    "geometry",
+    "statistics"
+  ],
+  "profiles": [
+    {
+      "code": "MATH01",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Basic",
+        "geometry": "Basic",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH02",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Basic",
+        "geometry": "Basic",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH03",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Basic",
+        "geometry": "Basic",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH04",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Basic",
+        "geometry": "Proficient",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH05",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Basic",
+        "geometry": "Proficient",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH06",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Basic",
+        "geometry": "Proficient",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH07",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Basic",
+        "geometry": "Advanced",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH08",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Basic",
+        "geometry": "Advanced",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH09",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Basic",
+        "geometry": "Advanced",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH10",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Proficient",
+        "geometry": "Basic",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH11",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Proficient",
+        "geometry": "Basic",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH12",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Proficient",
+        "geometry": "Basic",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH13",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Proficient",
+        "geometry": "Proficient",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH14",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Proficient",
+        "geometry": "Proficient",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH15",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Proficient",
+        "geometry": "Proficient",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH16",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Proficient",
+        "geometry": "Advanced",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH17",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Proficient",
+        "geometry": "Advanced",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH18",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Proficient",
+        "geometry": "Advanced",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH19",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Advanced",
+        "geometry": "Basic",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH20",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Advanced",
+        "geometry": "Basic",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH21",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Advanced",
+        "geometry": "Basic",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH22",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Advanced",
+        "geometry": "Proficient",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH23",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Advanced",
+        "geometry": "Proficient",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH24",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Advanced",
+        "geometry": "Proficient",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH25",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Advanced",
+        "geometry": "Advanced",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH26",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Advanced",
+        "geometry": "Advanced",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH27",
+      "levels": {
+        "quantitative": "Basic",
+        "algebraic": "Advanced",
+        "geometry": "Advanced",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH28",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Basic",
+        "geometry": "Basic",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH29",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Basic",
+        "geometry": "Basic",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH30",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Basic",
+        "geometry": "Basic",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH31",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Basic",
+        "geometry": "Proficient",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH32",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Basic",
+        "geometry": "Proficient",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH33",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Basic",
+        "geometry": "Proficient",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH34",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Basic",
+        "geometry": "Advanced",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH35",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Basic",
+        "geometry": "Advanced",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH36",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Basic",
+        "geometry": "Advanced",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH37",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Proficient",
+        "geometry": "Basic",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH38",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Proficient",
+        "geometry": "Basic",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH39",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Proficient",
+        "geometry": "Basic",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH40",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Proficient",
+        "geometry": "Proficient",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH41",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Proficient",
+        "geometry": "Proficient",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH42",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Proficient",
+        "geometry": "Proficient",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH43",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Proficient",
+        "geometry": "Advanced",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH44",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Proficient",
+        "geometry": "Advanced",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH45",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Proficient",
+        "geometry": "Advanced",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH46",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Advanced",
+        "geometry": "Basic",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH47",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Advanced",
+        "geometry": "Basic",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH48",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Advanced",
+        "geometry": "Basic",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH49",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Advanced",
+        "geometry": "Proficient",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH50",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Advanced",
+        "geometry": "Proficient",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH51",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Advanced",
+        "geometry": "Proficient",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH52",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Advanced",
+        "geometry": "Advanced",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH53",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Advanced",
+        "geometry": "Advanced",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH54",
+      "levels": {
+        "quantitative": "Proficient",
+        "algebraic": "Advanced",
+        "geometry": "Advanced",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH55",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Basic",
+        "geometry": "Basic",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH56",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Basic",
+        "geometry": "Basic",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH57",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Basic",
+        "geometry": "Basic",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH58",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Basic",
+        "geometry": "Proficient",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH59",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Basic",
+        "geometry": "Proficient",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH60",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Basic",
+        "geometry": "Proficient",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH61",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Basic",
+        "geometry": "Advanced",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH62",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Basic",
+        "geometry": "Advanced",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH63",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Basic",
+        "geometry": "Advanced",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH64",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Proficient",
+        "geometry": "Basic",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH65",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Proficient",
+        "geometry": "Basic",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH66",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Proficient",
+        "geometry": "Basic",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH67",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Proficient",
+        "geometry": "Proficient",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH68",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Proficient",
+        "geometry": "Proficient",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH69",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Proficient",
+        "geometry": "Proficient",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH70",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Proficient",
+        "geometry": "Advanced",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH71",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Proficient",
+        "geometry": "Advanced",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH72",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Proficient",
+        "geometry": "Advanced",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH73",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Advanced",
+        "geometry": "Basic",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH74",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Advanced",
+        "geometry": "Basic",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH75",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Advanced",
+        "geometry": "Basic",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH76",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Advanced",
+        "geometry": "Proficient",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH77",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Advanced",
+        "geometry": "Proficient",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH78",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Advanced",
+        "geometry": "Proficient",
+        "statistics": "Advanced"
+      }
+    },
+    {
+      "code": "MATH79",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Advanced",
+        "geometry": "Advanced",
+        "statistics": "Basic"
+      }
+    },
+    {
+      "code": "MATH80",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Advanced",
+        "geometry": "Advanced",
+        "statistics": "Proficient"
+      }
+    },
+    {
+      "code": "MATH81",
+      "levels": {
+        "quantitative": "Advanced",
+        "algebraic": "Advanced",
+        "geometry": "Advanced",
+        "statistics": "Advanced"
+      }
+    }
+  ]
+}

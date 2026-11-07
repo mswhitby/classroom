@@ -1,0 +1,338 @@
+{
+  "schema_version": 1,
+  "id": "tsi-math-20-day",
+  "title": "TSIA2 Mathematics — 20-Day Adaptive Study Program",
+  "duration_days": 20,
+  "minutes_per_day": 30,
+  "entry_paths": [
+    {
+      "id": "tsi-study-code",
+      "description": "MATH01–MATH81 code selects a level in each of four strands; does not lock other content."
+    },
+    {
+      "id": "teacher-placement",
+      "description": "Teacher chooses recommended starting strand, level and lesson."
+    },
+    {
+      "id": "diagnostic",
+      "description": "Diagnostic recommends per-strand starting levels; can be taken without enrolling in a section."
+    }
+  ],
+  "levels": [
+    {
+      "id": "basic",
+      "label": "Basic"
+    },
+    {
+      "id": "proficient",
+      "label": "Proficient"
+    },
+    {
+      "id": "advanced",
+      "label": "Advanced"
+    }
+  ],
+  "strands": [
+    {
+      "id": "quantitative",
+      "title": "Quantitative Reasoning"
+    },
+    {
+      "id": "algebraic",
+      "title": "Algebraic Reasoning"
+    },
+    {
+      "id": "geometry",
+      "title": "Geometric and Spatial Reasoning"
+    },
+    {
+      "id": "statistics",
+      "title": "Probabilistic and Statistical Reasoning"
+    }
+  ],
+  "daily_minutes": {
+    "retrieval": 3,
+    "learn": 8,
+    "practice": 12,
+    "check": 5,
+    "reflection": 2
+  },
+  "days": [
+    {
+      "day": 1,
+      "id": "tsi-20d-d01",
+      "title": "Diagnostic and individual study plan",
+      "strand": "diagnostic",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "diagnostic"
+    },
+    {
+      "day": 2,
+      "id": "tsi-20d-d02",
+      "title": "Number operations and rational numbers",
+      "strand": "quantitative",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "lesson"
+    },
+    {
+      "day": 3,
+      "id": "tsi-20d-d03",
+      "title": "Ratios, rates, and proportions",
+      "strand": "quantitative",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "lesson"
+    },
+    {
+      "day": 4,
+      "id": "tsi-20d-d04",
+      "title": "Percents and proportional change",
+      "strand": "quantitative",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "lesson"
+    },
+    {
+      "day": 5,
+      "id": "tsi-20d-d05",
+      "title": "Quantitative application and checkpoint",
+      "strand": "quantitative",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "checkpoint"
+    },
+    {
+      "day": 6,
+      "id": "tsi-20d-d06",
+      "title": "Expressions, exponents, and order of operations",
+      "strand": "algebraic",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "lesson"
+    },
+    {
+      "day": 7,
+      "id": "tsi-20d-d07",
+      "title": "Linear equations and inequalities",
+      "strand": "algebraic",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "lesson"
+    },
+    {
+      "day": 8,
+      "id": "tsi-20d-d08",
+      "title": "Slope, graphs, and linear models",
+      "strand": "algebraic",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "lesson"
+    },
+    {
+      "day": 9,
+      "id": "tsi-20d-d09",
+      "title": "Quadratics, factoring, and functions",
+      "strand": "algebraic",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "lesson"
+    },
+    {
+      "day": 10,
+      "id": "tsi-20d-d10",
+      "title": "Algebra application and checkpoint",
+      "strand": "algebraic",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "checkpoint"
+    },
+    {
+      "day": 11,
+      "id": "tsi-20d-d11",
+      "title": "Angles, lines, and coordinate geometry",
+      "strand": "geometry",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "lesson"
+    },
+    {
+      "day": 12,
+      "id": "tsi-20d-d12",
+      "title": "Perimeter, area, and composite figures",
+      "strand": "geometry",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "lesson"
+    },
+    {
+      "day": 13,
+      "id": "tsi-20d-d13",
+      "title": "Right triangles and similarity",
+      "strand": "geometry",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "lesson"
+    },
+    {
+      "day": 14,
+      "id": "tsi-20d-d14",
+      "title": "Surface area, volume, and transformations",
+      "strand": "geometry",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "lesson"
+    },
+    {
+      "day": 15,
+      "id": "tsi-20d-d15",
+      "title": "Geometry application and checkpoint",
+      "strand": "geometry",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "checkpoint"
+    },
+    {
+      "day": 16,
+      "id": "tsi-20d-d16",
+      "title": "Data displays, mean, median, and variability",
+      "strand": "statistics",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "lesson"
+    },
+    {
+      "day": 17,
+      "id": "tsi-20d-d17",
+      "title": "Probability and counting",
+      "strand": "statistics",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "lesson"
+    },
+    {
+      "day": 18,
+      "id": "tsi-20d-d18",
+      "title": "Statistical reasoning and two-way tables",
+      "strand": "statistics",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "lesson"
+    },
+    {
+      "day": 19,
+      "id": "tsi-20d-d19",
+      "title": "Mixed-strand targeted review and reassessment",
+      "strand": "mixed",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "reassessment"
+    },
+    {
+      "day": 20,
+      "id": "tsi-20d-d20",
+      "title": "Independent practice assessment and next-step plan",
+      "strand": "mixed",
+      "minutes": 30,
+      "level_variants": [
+        "basic",
+        "proficient",
+        "advanced"
+      ],
+      "kind": "practice-assessment"
+    }
+  ],
+  "placement": {
+    "priority": "Teacher override, then supplied MATH locator code, then diagnostic recommendation",
+    "navigation": "Recommendations shown first; Browse All exposes every lesson and level without locks",
+    "data": "Placement changes never erase history"
+  },
+  "content_contract": {
+    "student": "Original Learn worked example and 4 practice items per level, with immediate explanation after answering",
+    "assessment": "Practice and simulation distinct; simulation hides feedback until submitted",
+    "teacher": "Instructor assignment, placement, due date and points are app functionality, not public curriculum data"
+  },
+  "status": "curriculum-outline-with-draft-modules",
+  "replacement_policy": {
+    "instructional_content": "Existing TSI lessons, sequencing and learning materials may be replaced",
+    "historical_records": "Never delete student progress, points, grades or submissions; archive superseded published lesson IDs and never reuse IDs for unrelated content",
+    "publication": "Draft until validated and approved"
+  }
+}

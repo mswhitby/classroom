@@ -1,0 +1,26 @@
+{
+  "lesson_id": "tsi-statistics-mean-median-and-probability-v1",
+  "note": "Instructional answer reference only; public repository, not a protected assessment key.",
+  "items": [
+    {
+      "question": 1,
+      "correct": "B",
+      "explanation": "The sum is 24; 24 ÷ 4 = 6."
+    },
+    {
+      "question": 2,
+      "correct": "B",
+      "explanation": "Sort: 3, 5, 8, 9, 12; the middle value is 8."
+    },
+    {
+      "question": 3,
+      "correct": "A",
+      "explanation": "One of eight equally likely marbles is red."
+    },
+    {
+      "question": 4,
+      "correct": "C",
+      "explanation": "There are three even faces out of six: 3/6 = 1/2."
+    }
+  ]
+}

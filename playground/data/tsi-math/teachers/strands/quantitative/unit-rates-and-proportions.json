@@ -1,0 +1,26 @@
+{
+  "lesson_id": "tsi-quantitative-unit-rates-and-proportions-v1",
+  "note": "Instructional answer reference only; public repository, not a protected assessment key.",
+  "items": [
+    {
+      "question": 1,
+      "correct": "B",
+      "explanation": "180 ÷ 3 = 60 miles per hour."
+    },
+    {
+      "question": 2,
+      "correct": "C",
+      "explanation": "$30 ÷ 4 = $7.50 per ticket; $7.50 × 10 = $75."
+    },
+    {
+      "question": 3,
+      "correct": "C",
+      "explanation": "3.5 × 8 = 28 miles."
+    },
+    {
+      "question": 4,
+      "correct": "B",
+      "explanation": "$12.50 ÷ 5 = $2.50; 8 × $2.50 = $20."
+    }
+  ]
+}

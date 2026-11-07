@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "description": "Supplemental original four-strand lessons. Existing week-01 IDs are unchanged; answers are separate teacher-only instructional reference (public repository, not secure tests).",
+  "lessons": [
+    {
+      "id": "tsi-quantitative-unit-rates-and-proportions-v1",
+      "strand": "quantitative",
+      "title": "Unit rates and proportions",
+      "student_lesson": "lessons/strands/quantitative/unit-rates-and-proportions.md",
+      "teacher_key": "teachers/strands/quantitative/unit-rates-and-proportions.json",
+      "status": "draft",
+      "minutes": 30
+    },
+    {
+      "id": "tsi-algebraic-quadratic-equations-v1",
+      "strand": "algebraic",
+      "title": "Factoring and solving quadratics",
+      "student_lesson": "lessons/strands/algebraic/quadratic-equations.md",
+      "teacher_key": "teachers/strands/algebraic/quadratic-equations.json",
+      "status": "draft",
+      "minutes": 30
+    },
+    {
+      "id": "tsi-geometry-right-triangles-and-area-v1",
+      "strand": "geometry",
+      "title": "Right triangles and area",
+      "student_lesson": "lessons/strands/geometry/right-triangles-and-area.md",
+      "teacher_key": "teachers/strands/geometry/right-triangles-and-area.json",
+      "status": "draft",
+      "minutes": 30
+    },
+    {
+      "id": "tsi-statistics-mean-median-and-probability-v1",
+      "strand": "statistics",
+      "title": "Data summaries and probability",
+      "student_lesson": "lessons/strands/statistics/mean-median-and-probability.md",
+      "teacher_key": "teachers/strands/statistics/mean-median-and-probability.json",
+      "status": "draft",
+      "minutes": 30
+    }
+  ]
+}
