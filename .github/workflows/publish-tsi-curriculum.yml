@@ -1,5 +1,5 @@
 name: Publish TSI curriculum only
-# TSI-only production release after verified Playground PR #30 (24-question restore merged)
+# TSI-only production release after verified Playground PR #31 (read-only placement and visible strand lessons)
 on:
   push:
     branches: [main]
