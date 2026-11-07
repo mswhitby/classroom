@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "title": "TSIA2 Mathematics — Four-Strand Free-Response Diagnostic",
+  "notice": "Instructional placement only; not an official TSIA2 score predictor.",
+  "items": [
+    {
+      "id": "tsi-new-diagnostic-01",
+      "strand": "quantitative",
+      "prompt": "Compute 3/4 + 1/8 as a decimal.",
+      "answer": 0.875,
+      "explanation": "3/4 = 6/8, so 7/8 = 0.875."
+    },
+    {
+      "id": "tsi-new-diagnostic-02",
+      "strand": "quantitative",
+      "prompt": "A $60 item is discounted 20%. What is the sale price?",
+      "answer": 48,
+      "explanation": "20% of 60 is 12; 60 − 12 = 48."
+    },
+    {
+      "id": "tsi-new-diagnostic-03",
+      "strand": "quantitative",
+      "prompt": "A car travels 150 miles in 2.5 hours. What is its speed in miles per hour?",
+      "answer": 60,
+      "explanation": "150 ÷ 2.5 = 60."
+    },
+    {
+      "id": "tsi-new-diagnostic-04",
+      "strand": "algebraic",
+      "prompt": "Solve 3x + 7 = 22. Enter x.",
+      "answer": 5,
+      "explanation": "Subtract 7 and divide by 3."
+    },
+    {
+      "id": "tsi-new-diagnostic-05",
+      "strand": "algebraic",
+      "prompt": "Evaluate 2x² − 3 when x = 4.",
+      "answer": 29,
+      "explanation": "2 × 16 − 3 = 29."
+    },
+    {
+      "id": "tsi-new-diagnostic-06",
+      "strand": "algebraic",
+      "prompt": "What is the positive solution of x² − 49 = 0?",
+      "answer": 7,
+      "explanation": "x² = 49, so x = ±7; positive root is 7."
+    },
+    {
+      "id": "tsi-new-diagnostic-07",
+      "strand": "geometry",
+      "prompt": "Find the area of a triangle with base 12 and height 5.",
+      "answer": 30,
+      "explanation": "One half × 12 × 5 = 30."
+    },
+    {
+      "id": "tsi-new-diagnostic-08",
+      "strand": "geometry",
+      "prompt": "A right triangle has legs 5 and 12. Find the hypotenuse.",
+      "answer": 13,
+      "explanation": "√(25 + 144) = 13."
+    },
+    {
+      "id": "tsi-new-diagnostic-09",
+      "strand": "geometry",
+      "prompt": "Find the volume of a rectangular prism measuring 3 by 4 by 6.",
+      "answer": 72,
+      "explanation": "Volume = 3 × 4 × 6 = 72."
+    },
+    {
+      "id": "tsi-new-diagnostic-10",
+      "strand": "statistics",
+      "prompt": "Find the mean of 4, 7, 10, 11.",
+      "answer": 8,
+      "explanation": "Sum 32 divided by 4 = 8."
+    },
+    {
+      "id": "tsi-new-diagnostic-11",
+      "strand": "statistics",
+      "prompt": "Find the median of 3, 9, 5, 12, 7.",
+      "answer": 7,
+      "explanation": "Ordered: 3, 5, 7, 9, 12; middle is 7."
+    },
+    {
+      "id": "tsi-new-diagnostic-12",
+      "strand": "statistics",
+      "prompt": "A bag has 3 red and 5 blue marbles. What is the probability of drawing red? Enter a decimal.",
+      "answer": 0.375,
+      "explanation": "3 of 8 marbles are red; 3/8 = 0.375."
+    }
+  ]
+}
