@@ -1,0 +1,66 @@
+name: Publish TSI curriculum only
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/publish-tsi-curriculum.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publish-tsi-curriculum
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: site
+      - uses: actions/checkout@v4
+        with:
+          repository: mswhitby/playground
+          ref: main
+          path: playground
+      - uses: actions/checkout@v4
+        with:
+          repository: mswhitby/TSI
+          ref: main
+          path: TSI
+      - name: Validate replacement TSI curriculum
+        run: |
+          python TSI/scripts/validate_strands.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('TSI/content')
+          plan=json.loads((root/'20-day-program.json').read_text())
+          profiles=json.loads((root/'math-locator-profiles.json').read_text())
+          diagnostic=json.loads((root/'diagnostic-20day-v1.json').read_text())
+          assert len(plan['days'])==20
+          assert len(profiles['profiles'])==81
+          assert len(diagnostic['items'])==12
+          print('PASS: replacement TSI plan, locator and free-response diagnostic')
+          PY
+      - name: Publish TSI files without modifying coding courses
+        run: |
+          python - <<'PY'
+          import sys
+          from pathlib import Path
+          sys.path.insert(0,'playground/scripts')
+          from package_tsi import package_tsi
+          package_tsi(Path('site/playground'),Path('TSI'))
+          PY
+          cp playground/public/tsi.mjs site/playground/tsi.mjs
+          cp playground/public/app.js site/playground/app.js
+          node --check site/playground/tsi.mjs
+          node --check site/playground/app.js
+      - name: Commit only TSI files and shared router cache version
+        working-directory: site
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add playground/data/tsi-math playground/tsi.mjs playground/app.js
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish clean replacement TSIA2 mathematics experience'
+            git push origin HEAD:main
+          fi
