@@ -1,0 +1,223 @@
+{
+  "schema_version": 2,
+  "title": "TSIA2 Mathematics — 24-question four-strand diagnostic",
+  "notice": "Instructional placement only; not an official TSIA2 score predictor.",
+  "items": [
+    {
+      "id": "foundations-1",
+      "domain": "foundations",
+      "prompt": "Compute -6 + 9.",
+      "answer": 3,
+      "explanation": "Move 9 steps right from -6 to reach 3.",
+      "strand": "quantitative",
+      "correct_index": 0
+    },
+    {
+      "id": "foundations-2",
+      "domain": "foundations",
+      "prompt": "Compute 3/4 + 1/8. Choose the equivalent decimal.",
+      "answer": 0.875,
+      "explanation": "Rename 3/4 as 6/8, then add 1/8.",
+      "strand": "quantitative",
+      "correct_index": 1
+    },
+    {
+      "id": "foundations-3",
+      "domain": "foundations",
+      "prompt": "Compute 3 + 4 × 2.",
+      "answer": 11,
+      "explanation": "Multiply first: 3 + 8 = 11.",
+      "strand": "quantitative",
+      "correct_index": 2
+    },
+    {
+      "id": "foundations-4",
+      "domain": "foundations",
+      "prompt": "Write 0.35 as a percent. Choose the number before the percent sign.",
+      "answer": 35,
+      "explanation": "Multiply the decimal by 100.",
+      "strand": "quantitative",
+      "correct_index": 3
+    },
+    {
+      "id": "quantitative-1",
+      "domain": "quantitative",
+      "prompt": "Three notebooks cost $12. What is the cost per notebook in dollars?",
+      "answer": 4,
+      "explanation": "Divide 12 by 3.",
+      "strand": "quantitative",
+      "correct_index": 0
+    },
+    {
+      "id": "quantitative-2",
+      "domain": "quantitative",
+      "prompt": "What is 15% of 80?",
+      "answer": 12,
+      "explanation": "0.15 × 80 = 12.",
+      "strand": "quantitative",
+      "correct_index": 1
+    },
+    {
+      "id": "quantitative-3",
+      "domain": "quantitative",
+      "prompt": "A $50 jacket is discounted 20%. What is its sale price in dollars?",
+      "answer": 40,
+      "explanation": "The discount is $10, so subtract 10 from 50.",
+      "strand": "quantitative",
+      "correct_index": 2
+    },
+    {
+      "id": "quantitative-4",
+      "domain": "quantitative",
+      "prompt": "A recipe uses 2 cups of rice for 5 servings. How many cups for 15 servings?",
+      "answer": 6,
+      "explanation": "15 is three times 5, so multiply 2 by 3.",
+      "strand": "quantitative",
+      "correct_index": 3
+    },
+    {
+      "id": "linear-1",
+      "domain": "linear",
+      "prompt": "Solve 3x + 4 = 19. Find x.",
+      "answer": 5,
+      "explanation": "Subtract 4, then divide by 3.",
+      "strand": "algebraic",
+      "correct_index": 0
+    },
+    {
+      "id": "linear-2",
+      "domain": "linear",
+      "prompt": "Find the slope through (1, 3) and (3, 7).",
+      "answer": 2,
+      "explanation": "Slope = (7 - 3)/(3 - 1) = 2.",
+      "strand": "algebraic",
+      "correct_index": 1
+    },
+    {
+      "id": "linear-3",
+      "domain": "linear",
+      "prompt": "For y = 2x + 5, find y when x = 4.",
+      "answer": 13,
+      "explanation": "Substitute 4: 2(4) + 5 = 13.",
+      "strand": "algebraic",
+      "correct_index": 2
+    },
+    {
+      "id": "linear-4",
+      "domain": "linear",
+      "prompt": "Plan A costs 10 + 2m dollars; Plan B costs 4 + 3m dollars. At how many minutes m do they cost the same?",
+      "answer": 6,
+      "explanation": "10 + 2m = 4 + 3m gives m = 6.",
+      "strand": "algebraic",
+      "correct_index": 3
+    },
+    {
+      "id": "nonlinear-1",
+      "domain": "nonlinear",
+      "prompt": "Evaluate 2 to the power of 4.",
+      "answer": 16,
+      "explanation": "2 × 2 × 2 × 2 = 16.",
+      "strand": "algebraic",
+      "correct_index": 0
+    },
+    {
+      "id": "nonlinear-2",
+      "domain": "nonlinear",
+      "prompt": "Simplify x³ × x². Choose the exponent of x.",
+      "answer": 5,
+      "explanation": "Add exponents when multiplying powers with the same base.",
+      "strand": "algebraic",
+      "correct_index": 1
+    },
+    {
+      "id": "nonlinear-3",
+      "domain": "nonlinear",
+      "prompt": "What is the positive solution of x² = 49?",
+      "answer": 7,
+      "explanation": "7 × 7 = 49.",
+      "strand": "algebraic",
+      "correct_index": 2
+    },
+    {
+      "id": "nonlinear-4",
+      "domain": "nonlinear",
+      "prompt": "One factor of x² + 5x + 6 is (x + 2). The other is (x + n). Find n.",
+      "answer": 3,
+      "explanation": "2 × 3 = 6 and 2 + 3 = 5.",
+      "strand": "algebraic",
+      "correct_index": 3
+    },
+    {
+      "id": "geometry-1",
+      "domain": "geometry",
+      "prompt": "A rectangle is 8 cm long and 3 cm wide. What is its area in square centimeters?",
+      "answer": 24,
+      "explanation": "Area = length × width.",
+      "strand": "geometry",
+      "correct_index": 0
+    },
+    {
+      "id": "geometry-2",
+      "domain": "geometry",
+      "prompt": "A triangle has base 10 cm and height 6 cm. What is its area in square centimeters?",
+      "answer": 30,
+      "explanation": "Area = 1/2 × 10 × 6.",
+      "strand": "geometry",
+      "correct_index": 1
+    },
+    {
+      "id": "geometry-3",
+      "domain": "geometry",
+      "prompt": "A right triangle has legs 3 and 4. What is the hypotenuse?",
+      "answer": 5,
+      "explanation": "3² + 4² = 25; the positive square root is 5.",
+      "strand": "geometry",
+      "correct_index": 2
+    },
+    {
+      "id": "geometry-4",
+      "domain": "geometry",
+      "prompt": "A rectangular box measures 2 by 3 by 5 cm. What is its volume in cubic centimeters?",
+      "answer": 30,
+      "explanation": "Volume = 2 × 3 × 5.",
+      "strand": "geometry",
+      "correct_index": 3
+    },
+    {
+      "id": "statistics-1",
+      "domain": "statistics",
+      "prompt": "Find the mean of 4, 6, and 11.",
+      "answer": 7,
+      "explanation": "(4 + 6 + 11)/3 = 7.",
+      "strand": "statistics",
+      "correct_index": 0
+    },
+    {
+      "id": "statistics-2",
+      "domain": "statistics",
+      "prompt": "Find the median of 9, 2, 5, 8, and 1.",
+      "answer": 5,
+      "explanation": "Order the values: 1, 2, 5, 8, 9. The middle is 5.",
+      "strand": "statistics",
+      "correct_index": 1
+    },
+    {
+      "id": "statistics-3",
+      "domain": "statistics",
+      "prompt": "A bag has 3 red and 2 blue counters. What is the probability of choosing red? Choose the equivalent decimal.",
+      "answer": 0.6,
+      "explanation": "There are 3 red counters out of 5 total.",
+      "strand": "statistics",
+      "correct_index": 2
+    },
+    {
+      "id": "statistics-4",
+      "domain": "statistics",
+      "prompt": "Find the range of 3, 7, 8, and 12.",
+      "answer": 9,
+      "explanation": "Range = maximum - minimum = 12 - 3.",
+      "strand": "statistics",
+      "correct_index": 3
+    }
+  ]
+}
