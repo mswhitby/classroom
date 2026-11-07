@@ -1,5 +1,5 @@
 name: Publish TSI curriculum only
-# TSI-only production release after verified Playground PR #30
+# TSI-only production release after verified Playground PR #30 (24-question restore merged)
 on:
   push:
     branches: [main]
