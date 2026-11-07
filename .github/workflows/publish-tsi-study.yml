@@ -1,0 +1,54 @@
+name: Publish TSI study preview only
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-tsi-study.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: publish-tsi-study
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: site
+      - uses: actions/checkout@v4
+        with:
+          repository: mswhitby/TSI
+          ref: 43a8acd5746192b20a788d706a4e221b23434eee
+          path: tsi
+          persist-credentials: false
+      - name: Validate TSI preview and placement
+        run: |
+          python3 tsi/scripts/validate_strands.py
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('tsi')
+          p=json.loads((root/'content/math-locator-profiles.json').read_text())
+          d=json.loads((root/'content/20-day-program.json').read_text())
+          assert len(p['profiles'])==81
+          assert len(d['days'])==20
+          assert (root/'preview/index.html').is_file()
+          print('TSI curriculum preview ready')
+          PY
+      - name: Publish only TSI preview folder
+        run: |
+          mkdir -p site/playground/tsi-study
+          cp tsi/preview/index.html site/playground/tsi-study/index.html
+      - name: Commit TSI-only site update
+        working-directory: site
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add playground/tsi-study/index.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish TSI study curriculum preview'
+            git push origin HEAD:main
+          fi
