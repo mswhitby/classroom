@@ -35,6 +35,8 @@ exclude:
   # node_modules is checked into this legacy Jekyll repository for local CSS tools,
   # but shipping it to Pages creates a huge, unnecessary deployment artifact.
   - node_modules
+  # Large archived UIL and CodeWars resources remain in Git but are not published.
+  - _docs/uil_files
   - .idea
   - package.json
   - package-lock.json
