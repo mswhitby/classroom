@@ -23,13 +23,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: mswhitby/playground-react
-          ref: b0f1821168240da9b490c6b49571ae8a72330aa0
+          ref: a50a3863d15107b79c082263fc0e16e81ab41be4
           path: react
       - name: Checkout verified canonical read-only account bridge
         uses: actions/checkout@v4
         with:
           repository: mswhitby/playground
-          ref: 41d68c4758f32d2a314fb08a063c5ec4daf5279c
+          ref: 9df1e8f40196c0742594e524a8bf3c71a5d3214c
           path: playground
       - uses: actions/setup-node@v4
         with:
