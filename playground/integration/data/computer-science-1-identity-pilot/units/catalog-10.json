@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "source": "Ms. Whitby's Playground — original Python lessons aligned with ThinkCSPy concepts",
+  "lessons": [
+    {
+      "id": "10-algorithms-and-testing/01-while-and-sentinels",
+      "unit": 10,
+      "unitName": "Algorithms & Testing",
+      "lesson": 1,
+      "slug": "01-while-and-sentinels",
+      "title": "Repeat until a stop signal",
+      "concept": "While loops and sentinel values",
+      "summary": "A `while` loop repeats until a condition changes, making it useful when the stopping point is part of the input.",
+      "mode": "function",
+      "starter": "def before_stop(events):\n    # Count items until the sentinel 'stop' or the end.\n    pass\n",
+      "cases": [
+        {
+          "call": "before_stop(['tap', 'tap', 'stop', 'tap'])",
+          "expected": "2"
+        },
+        {
+          "call": "before_stop(['stop', 'tap'])",
+          "expected": "0"
+        },
+        {
+          "call": "before_stop(['a', 'b'])",
+          "expected": "2"
+        },
+        {
+          "call": "before_stop([])",
+          "expected": "0"
+        }
+      ],
+      "points": 10,
+      "hints": [
+        "Begin an index or counter at zero.",
+        "While the index is in bounds and the current value is not `'stop'`, move forward.",
+        "Return the number of events visited."
+      ],
+      "markdown": "10-algorithms-and-testing/lessons/01-while-and-sentinels.md",
+      "functionName": "before_stop"
+    },
+    {
+      "id": "10-algorithms-and-testing/02-decompose-a-problem",
+      "unit": 10,
+      "unitName": "Algorithms & Testing",
+      "lesson": 2,
+      "slug": "02-decompose-a-problem",
+      "title": "Break a problem into helper functions",
+      "concept": "Decomposition, pure functions",
+      "summary": "Small functions can each handle one responsibility and work together to solve a larger task.",
+      "mode": "function",
+      "starter": "def total_with_bonus(scores, bonus):\n    # Add positive scores only, then include the bonus.\n    pass\n",
+      "cases": [
+        {
+          "call": "total_with_bonus([8, -2, 5], 3)",
+          "expected": "16"
+        },
+        {
+          "call": "total_with_bonus([], 10)",
+          "expected": "10"
+        },
+        {
+          "call": "total_with_bonus([-4, 0], 2)",
+          "expected": "2"
+        },
+        {
+          "call": "total_with_bonus([1, 2, 3], 0)",
+          "expected": "6"
+        }
+      ],
+      "points": 10,
+      "hints": [
+        "Start a total at zero.",
+        "Only add a score when it is greater than zero.",
+        "Return the total plus the bonus after the loop."
+      ],
+      "markdown": "10-algorithms-and-testing/lessons/02-decompose-a-problem.md",
+      "functionName": "total_with_bonus"
+    },
+    {
+      "id": "10-algorithms-and-testing/03-search-for-a-match",
+      "unit": 10,
+      "unitName": "Algorithms & Testing",
+      "lesson": 3,
+      "slug": "03-search-for-a-match",
+      "title": "Find the first matching position",
+      "concept": "Linear search and enumerate",
+      "summary": "A linear search visits items in order and stops once it finds the first matching value.",
+      "mode": "function",
+      "starter": "def first_position(values, target):\n    # Search in order and return the first matching index.\n    pass\n",
+      "cases": [
+        {
+          "call": "first_position(['Ava', 'Kai', 'Ava'], 'Ava')",
+          "expected": "0"
+        },
+        {
+          "call": "first_position([2, 5, 2], 5)",
+          "expected": "1"
+        },
+        {
+          "call": "first_position([], 'x')",
+          "expected": "-1"
+        },
+        {
+          "call": "first_position(['a', 'b'], 'z')",
+          "expected": "-1"
+        }
+      ],
+      "points": 10,
+      "hints": [
+        "Loop using `enumerate(values)`.",
+        "Return the index as soon as the value matches.",
+        "Return -1 after checking every item without a match."
+      ],
+      "markdown": "10-algorithms-and-testing/lessons/03-search-for-a-match.md",
+      "functionName": "first_position"
+    },
+    {
+      "id": "10-algorithms-and-testing/04-build-an-event-report",
+      "unit": 10,
+      "unitName": "Algorithms & Testing",
+      "lesson": 4,
+      "slug": "04-build-an-event-report",
+      "title": "Build a data-informed event report",
+      "concept": "Counting, sorting, formatting and testing",
+      "summary": "Turn raw event records into a consistent, readable summary using several Python skills together.",
+      "mode": "function",
+      "starter": "def event_report(events):\n    # Count events, sort the labels, and return one report string.\n    pass\n",
+      "cases": [
+        {
+          "call": "event_report(['run', 'jump', 'run'])",
+          "expected": "'jump:1 | run:2'"
+        },
+        {
+          "call": "event_report([])",
+          "expected": "''"
+        },
+        {
+          "call": "event_report(['tap'])",
+          "expected": "'tap:1'"
+        },
+        {
+          "call": "event_report(['b', 'a', 'b', 'c', 'a'])",
+          "expected": "'a:2 | b:2 | c:1'"
+        }
+      ],
+      "points": 20,
+      "hints": [
+        "Build a dictionary of counts using `.get()`.",
+        "Use `sorted(counts)` to visit names alphabetically.",
+        "Create strings `name + ':' + str(count)` and join them using `' | '`."
+      ],
+      "markdown": "10-algorithms-and-testing/lessons/04-build-an-event-report.md",
+      "functionName": "event_report"
+    }
+  ]
+}
