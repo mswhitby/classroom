@@ -1,0 +1,85 @@
+name: Publish isolated React CS1 integration test
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-react-cs1-integration.yml'
+permissions:
+  contents: write
+concurrency:
+  group: publish-react-cs1-integration
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout website
+        uses: actions/checkout@v4
+        with:
+          path: site
+          persist-credentials: true
+      - name: Checkout tested React interface
+        uses: actions/checkout@v4
+        with:
+          repository: mswhitby/playground-react
+          ref: 1b322d535f359bf77eb42d7db4873c114a68232a
+          path: react
+      - name: Checkout verified canonical read-only account bridge
+        uses: actions/checkout@v4
+        with:
+          repository: mswhitby/playground
+          ref: 2f86b24bd097172be23d535b343bc4fd0a8f6172
+          path: playground
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test the canonical GET-only account and grading adapter
+        working-directory: playground
+        run: |
+          npm ci --no-audit --no-fund
+          node --test tests/react-integration-bridge.test.mjs
+      - name: Test the React read-only integration interface
+        working-directory: react
+        run: |
+          npm install --no-audit --no-fund
+          npm test
+      - name: Bundle canonical GET-only bridge
+        working-directory: playground
+        run: |
+          ./node_modules/.bin/esbuild frontend/integration-readonly.js --bundle --format=esm --platform=browser --minify --outfile=../account-bridge.js
+          grep -q playground_grades ../account-bridge.js
+      - name: Build separate CS1 integration site
+        working-directory: react
+        env:
+          VITE_HASH_ROUTING: 'true'
+          VITE_READONLY_INTEGRATION: 'true'
+        run: npm run build -- --base=/playground/integration/
+      - name: Copy ONLY isolated integration assets
+        run: |
+          mkdir -p site/playground/integration/assets
+          rsync -a react/dist/assets/ site/playground/integration/assets/
+          cp react/dist/index.html site/playground/integration/index.html
+          cp react/dist/python-worker.js site/playground/integration/python-worker.js
+          cp account-bridge.js site/playground/integration/account-bridge.js
+          grep -q '/playground/integration/assets/' site/playground/integration/index.html
+      - name: Publish only integration subtree, preserving live production and preview
+        working-directory: site
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add playground/integration/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish isolated CS1 React read-only integration test'
+            for attempt in 1 2 3; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                break
+              fi
+              if [ "$attempt" -eq 3 ]; then
+                echo 'Could not publish isolated integration after three attempts.'
+                exit 1
+              fi
+            done
+          fi
