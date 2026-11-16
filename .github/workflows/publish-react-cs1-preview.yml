@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: mswhitby/playground-react
-          ref: b565f788ae1f587f87f9926011792c97ead99697
+          ref: 34f3e021b4d2624622afb1f893c5be4594a4de87
           path: react
       - uses: actions/setup-node@v4
         with:
