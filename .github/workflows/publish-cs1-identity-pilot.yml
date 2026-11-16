@@ -1,0 +1,73 @@
+name: Publish CS1 stable-ID pilot catalog (isolated)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: classroom-content-publish
+  cancel-in-progress: false
+jobs:
+  pilot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: site
+      - uses: actions/checkout@v4
+        with:
+          repository: mswhitby/playground
+          ref: main
+          path: playground
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: mswhitby/computer-science-1
+          ref: feature/cs1-frontmatter-identity-pilot
+          path: computer-science-1
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build existing complete package and pilot identity catalog
+        run: |
+          node playground/scripts/package-python.mjs computer-science-1 staged/computer-science-1
+          (cd computer-science-1 && node scripts/build-frontmatter-catalog.mjs)
+          node --input-type=module <<'NODE'
+          import {readFileSync,writeFileSync,copyFileSync} from 'node:fs';
+          const dir='staged/computer-science-1/';
+          const base=JSON.parse(readFileSync(dir+'course.json','utf8'));
+          const pilot=JSON.parse(readFileSync('computer-science-1/build/frontmatter/course.json','utf8'));
+          const map=JSON.parse(readFileSync('computer-science-1/build/frontmatter/legacy-id-map.json','utf8'));
+          const old=new Map(base.lessons.map(x=>[x.id,x]));
+          if(pilot.lessons.length!==base.lessons.length)throw Error('Lesson count changed');
+          for(const row of pilot.lessons){
+            const prior=old.get(row.id);
+            if(!prior||row.existingPassKey!==prior.existingPassKey||row.existingDraftKey!==prior.existingDraftKey)
+              throw Error('Legacy grading keys changed: '+row.id);
+            if(row.stableId&&map[row.id]!==row.stableId)throw Error('Missing stable ID mapping: '+row.id);
+          }
+          base.lessons=pilot.lessons;
+          base.identityMigration={version:1,legacyIdMap:map};
+          writeFileSync(dir+'course.json',JSON.stringify(base,null,2)+'\n');
+          writeFileSync(dir+'legacy-id-map.json',JSON.stringify(map,null,2)+'\n');
+          console.log('Pilot verified: '+base.lessons.length+' lessons, '+Object.keys(map).length+' legacy aliases');
+          NODE
+      - name: Publish separate pilot catalog without overwriting current integration
+        run: |
+          mkdir -p site/playground/integration/data/computer-science-1-identity-pilot
+          rsync -a --delete staged/computer-science-1/ site/playground/integration/data/computer-science-1-identity-pilot/
+      - name: Commit pilot data only
+        working-directory: site
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A playground/integration/data/computer-science-1-identity-pilot/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish isolated CS1 stable-ID pilot catalog'
+            for attempt in 1 2 3; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then exit 0; fi
+              if [ "$attempt" -eq 3 ]; then exit 1; fi
+            done
+          fi
