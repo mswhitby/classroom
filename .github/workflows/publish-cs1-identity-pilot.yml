@@ -42,6 +42,7 @@ jobs:
           const base=JSON.parse(readFileSync(dir+'course.json','utf8'));
           const pilot=JSON.parse(readFileSync('computer-science-1/build/frontmatter/course.json','utf8'));
           const map=JSON.parse(readFileSync('computer-science-1/build/frontmatter/legacy-id-map.json','utf8'));
+          const challengeMap=JSON.parse(readFileSync('computer-science-1/build/frontmatter/challenge-legacy-id-map.json','utf8'));
           const old=new Map(base.lessons.map(x=>[x.id,x]));
           if(pilot.lessons.length!==base.lessons.length)throw Error('Lesson count changed');
           for(const row of pilot.lessons){
@@ -50,11 +51,22 @@ jobs:
               throw Error('Legacy grading keys changed: '+row.id);
             if(row.stableId&&map[row.id]!==row.stableId)throw Error('Missing stable ID mapping: '+row.id);
           }
+          const oldChallenges=new Map(base.challenges.map(x=>[x.id,x]));
+          if(pilot.challenges.length!==base.challenges.length)throw Error('Challenge count changed');
+          for(const row of pilot.challenges){
+            const prior=oldChallenges.get(row.id);
+            if(!prior||JSON.stringify(row.examples)!==JSON.stringify(prior.examples)||row.starter!==prior.starter)
+              throw Error('Challenge grading inputs changed: '+row.id);
+            if(row.stableId&&challengeMap[row.id]!==row.stableId)throw Error('Missing challenge stable ID mapping: '+row.id);
+          }
           base.lessons=pilot.lessons;
-          base.identityMigration={version:1,legacyIdMap:map};
+          base.challenges=pilot.challenges;
+          base.counts=pilot.counts;
+          base.identityMigration={version:1,lessonLegacyIdMap:map,challengeLegacyIdMap:challengeMap,legacyIdMap:map};
           writeFileSync(dir+'course.json',JSON.stringify(base,null,2)+'\n');
           writeFileSync(dir+'legacy-id-map.json',JSON.stringify(map,null,2)+'\n');
-          console.log('Pilot verified: '+base.lessons.length+' lessons, '+Object.keys(map).length+' legacy aliases');
+          writeFileSync(dir+'challenge-legacy-id-map.json',JSON.stringify(challengeMap,null,2)+'\n');
+          console.log('Pilot verified: '+base.lessons.length+' lessons, '+base.challenges.length+' challenges; '+Object.keys(map).length+' lesson and '+Object.keys(challengeMap).length+' challenge aliases');
           NODE
       - name: Publish separate pilot catalog without overwriting current integration
         run: |
