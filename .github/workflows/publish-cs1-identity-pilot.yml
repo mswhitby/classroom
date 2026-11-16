@@ -1,6 +1,10 @@
 name: Publish CS1 stable-ID pilot catalog (isolated)
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-cs1-identity-pilot.yml'
 permissions:
   contents: write
 concurrency:
