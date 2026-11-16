@@ -23,13 +23,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: mswhitby/playground-react
-          ref: 1b322d535f359bf77eb42d7db4873c114a68232a
+          ref: 1ab4265bb6edbc7f5b822270ce886a6ff913ccb0
           path: react
       - name: Checkout verified canonical read-only account bridge
         uses: actions/checkout@v4
         with:
           repository: mswhitby/playground
-          ref: 2f86b24bd097172be23d535b343bc4fd0a8f6172
+          ref: f166a967815a734da5f2074c89cce027129d571e
           path: playground
       - uses: actions/setup-node@v4
         with:
@@ -38,7 +38,7 @@ jobs:
         working-directory: playground
         run: |
           npm ci --no-audit --no-fund
-          node --test tests/react-integration-bridge.test.mjs
+          node --test tests/react-integration-bridge.test.mjs tests/react-teacher-readonly.test.mjs
       - name: Test the React read-only integration interface
         working-directory: react
         run: |
@@ -49,6 +49,11 @@ jobs:
         run: |
           ./node_modules/.bin/esbuild frontend/integration-readonly.js --bundle --format=esm --platform=browser --minify --outfile=../account-bridge.js
           grep -q playground_grades ../account-bridge.js
+      - name: Bundle permissioned teacher read adapter
+        working-directory: playground
+        run: |
+          ./node_modules/.bin/esbuild public/integration/teacher-readonly.js --bundle --format=esm --platform=browser --minify --outfile=../teacher-bridge.js
+          grep -q playground_teacher_snapshot ../teacher-bridge.js
       - name: Build separate CS1 integration site
         working-directory: react
         env:
@@ -62,6 +67,7 @@ jobs:
           cp react/dist/index.html site/playground/integration/index.html
           cp react/dist/python-worker.js site/playground/integration/python-worker.js
           cp account-bridge.js site/playground/integration/account-bridge.js
+          cp teacher-bridge.js site/playground/integration/teacher-bridge.js
           grep -q '/playground/integration/assets/' site/playground/integration/index.html
       - name: Publish only integration subtree, preserving live production and preview
         working-directory: site
