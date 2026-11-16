@@ -1,0 +1,77 @@
+name: Publish isolated CS1 curriculum package
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-cs1-curriculum-integration.yml'
+permissions:
+  contents: write
+concurrency:
+  group: classroom-content-publish
+  cancel-in-progress: false
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout hosted site
+        uses: actions/checkout@v4
+        with:
+          path: site
+          persist-credentials: true
+      - name: Checkout canonical curriculum packager
+        uses: actions/checkout@v4
+        with:
+          repository: mswhitby/playground
+          ref: main
+          path: playground
+          persist-credentials: false
+      - name: Checkout CS1 source only
+        uses: actions/checkout@v4
+        with:
+          repository: mswhitby/computer-science-1
+          ref: main
+          path: computer-science-1
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Package CS1 without building the Playground application
+        run: |
+          node playground/scripts/package-python.mjs computer-science-1 staged/computer-science-1
+          node - <<'JS'
+          const fs=require('node:fs');
+          const c=JSON.parse(fs.readFileSync('staged/computer-science-1/course.json','utf8'));
+          if(c.id!=='computer-science-1'||!Array.isArray(c.lessons)||c.lessons.length<24)throw Error('Invalid CS1 package');
+          const ids=new Set();
+          for(const row of [...c.lessons,...(c.challenges||[])]){
+            if(typeof row.id!=='string'||!row.id.trim()||typeof row.title!=='string'||!row.title.trim()||ids.has(row.id))throw Error('Invalid or duplicate activity id/title: '+row.id);
+            ids.add(row.id);
+          }
+          console.log('Validated '+c.lessons.length+' lessons and '+(c.challenges||[]).length+' challenges');
+          JS
+      - name: Publish only isolated CS1 content directory
+        run: |
+          mkdir -p site/playground/integration/data/computer-science-1
+          rsync -a --delete staged/computer-science-1/ site/playground/integration/data/computer-science-1/
+          test -s site/playground/integration/data/computer-science-1/course.json
+      - name: Commit isolated curriculum without touching application or production
+        working-directory: site
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A playground/integration/data/computer-science-1/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish isolated CS1 curriculum package'
+            for attempt in 1 2 3; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                break
+              fi
+              if [ "$attempt" -eq 3 ]; then
+                echo 'Isolated curriculum publish could not push after three attempts.'
+                exit 1
+              fi
+            done
+          fi
