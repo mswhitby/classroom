@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: mswhitby/playground-react
-          ref: 9d79e6b731690e84debc57f321e9eb23dc0b6bb1
+          ref: 351a91fa40dba069906caa1a99f72ace082b0e89
           path: react
       - name: Checkout verified canonical read-only account bridge
         uses: actions/checkout@v4
@@ -44,6 +44,21 @@ jobs:
         run: |
           npm install --no-audit --no-fund
           npm test
+      - name: Verify canonical CS1 Python challenge catalog before staging
+        run: |
+          node --input-type=module <<'NODE'
+          import {readFileSync} from 'node:fs';
+          const catalog=JSON.parse(readFileSync('site/playground/integration/data/computer-science-1/course.json','utf8'));
+          const items=catalog.challenges||[];
+          if(items.length!==24 || new Set(items.map(item=>item.id)).size!==24)
+            throw Error('The published CS1 challenge catalog is missing expected original IDs.');
+          for(const item of items) {
+            if(!item.title || typeof item.starter!=='string' || !item.examples?.length ||
+              item.examples.some(sample=>typeof sample.call!=='string'||typeof sample.expected!=='string'))
+              throw Error('Invalid CS1 challenge contract: '+item.id);
+          }
+          console.log('Verified 24 original CS1 Python challenge contracts.');
+          NODE
       - name: Bundle canonical GET-only bridge
         working-directory: playground
         run: |
