@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: mswhitby/playground-react
-          ref: 3700b50b286c3301f7da9f253aa285598f7dc990
+          ref: 9d79e6b731690e84debc57f321e9eb23dc0b6bb1
           path: react
       - name: Checkout verified canonical read-only account bridge
         uses: actions/checkout@v4
